@@ -1,0 +1,21 @@
+---
+permalink: sm-storage/why-dont-i-see-all-my-pools-and-or-volume-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, pools, volume groups 
+summary: No se muestra en la lista ningún pool o grupo de volúmenes al que no se pueda mover el volumen. 
+---
+= ¿Por qué no se muestran todos los pools y/o los grupos de volúmenes?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+No se muestra en la lista ningún pool o grupo de volúmenes al que no se pueda mover el volumen.
+
+Los pools o grupos de volúmenes no serán aptos por cualquiera de los motivos siguientes:
+
+* Las funcionalidades de Data Assurance (DA) de un pool o un pool de grupo de volúmenes no coinciden.
+* Un pool o un grupo de volúmenes se encuentra en un estado distinto a Optimal.
+* La capacidad de un pool o grupo de volúmenes es muy reducida.
+

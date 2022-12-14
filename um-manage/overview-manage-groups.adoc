@@ -1,0 +1,37 @@
+---
+permalink: um-manage/overview-manage-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, manage, groups 
+summary: En la página gestionar grupos, puede crear un conjunto de grupos de cabinas de almacenamiento para simplificar la gestión. 
+---
+= Información general sobre grupos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+En la página gestionar grupos, puede crear un conjunto de grupos de cabinas de almacenamiento para simplificar la gestión.
+
+
+
+== ¿Qué son los grupos de cabinas?
+
+Es posible gestionar la infraestructura física y virtualizada si se agrupa un conjunto de cabinas de almacenamiento. Las cabinas de almacenamiento pueden agruparse de modo que sea más sencillo ejecutar las tareas de supervisión o generación de informes.
+
+Existen dos tipos de grupos:
+
+* *Todo el grupo* -- el grupo todo es el grupo predeterminado e incluye todas las matrices de almacenamiento detectadas en su organización. Es posible acceder al grupo desde la vista principal.
+* *Grupo creado por el usuario* -- Un grupo creado por el usuario incluye las matrices de almacenamiento que selecciona manualmente para agregar a ese grupo. Es posible acceder a este tipo de grupo desde la vista principal.
+
+
+
+
+== ¿Cómo se configuran los grupos?
+
+En la página gestionar grupos, puede crear un grupo y, a continuación, añadir cabinas a dicho grupo.
+
+Obtenga más información:
+
+* link:create-storage-array-group.html["Configure el grupo de cabinas de almacenamiento"]
+

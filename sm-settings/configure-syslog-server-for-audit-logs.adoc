@@ -1,0 +1,51 @@
+---
+permalink: sm-settings/configure-syslog-server-for-audit-logs.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, syslog, server, audit, logs, 
+summary: Si desea archivar registros de auditoría en un servidor de syslog externo, puede configurar las comunicaciones entre ese servidor y la cabina de almacenamiento. Una vez que se establece la conexión, los registros de auditoría se guardan automáticamente en el servidor de syslog. 
+---
+= Configurar servidores de syslog para registros de auditoría
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si desea archivar registros de auditoría en un servidor de syslog externo, puede configurar las comunicaciones entre ese servidor y la cabina de almacenamiento. Una vez que se establece la conexión, los registros de auditoría se guardan automáticamente en el servidor de syslog.
+
+.Antes de empezar
+* Debe iniciar sesión con un perfil de usuario que cuente con permisos de administración de seguridad. De lo contrario, no se mostrarán las funciones de Access Management.
+* La dirección, el protocolo y el número de puerto del servidor de syslog deben estar disponibles. La dirección del servidor debe ser un nombre de dominio completo, una dirección IPv4 o una dirección IPv6.
+* Si el servidor usa un protocolo seguro (por ejemplo, TLS), debe haber disponible un certificado de entidad de certificación (CA) en el sistema local. Los certificados DE CA identifican propietarios de sitios web para lograr conexiones seguras entre servidores y clientes.
+
+
+.Pasos
+. Seleccione MENU:Settings[Access Management].
+. En la ficha Registro de auditoría, seleccione *Configurar servidores de syslog*.
++
+Se abre el cuadro de diálogo Configurar servidores de syslog.
+
+. Haga clic en *Agregar*.
++
+Se abre el cuadro de diálogo Añadir servidor de syslog.
+
+. Introduzca la información del servidor y, a continuación, haga clic en *Agregar*.
++
+** *Dirección del servidor* -- Introduzca un nombre de dominio completo, una dirección IPv4 o una dirección IPv6.
+** *Protocolo* -- Seleccione un protocolo de la lista desplegable (por ejemplo, TLS, UDP o TCP).
+** *Cargar certificado (opcional)* -- Si ha seleccionado el protocolo TLS y todavía no ha cargado un certificado de CA firmado, haga clic en *examinar* para cargar un archivo de certificado. Los registros de auditoría no se archivan en un servidor de syslog si no cuentan con un certificado de confianza.
++
+[NOTE]
+====
+Si la certificación ya no es válida en el futuro, el apretón de manos de TSL fallará. Como resultado, se publica un mensaje de error en el registro de auditoría y ya no se envían mensajes al servidor de syslog. Para resolver este problema, debe corregir la certificación en el servidor de syslog y, a continuación, ir a menú:Configuración[Registro de auditoría > Configurar servidores de syslog > probar todo].
+
+====
+** *Puerto* -- Introduzca el número de puerto para el receptor de syslog. Después de hacer clic en *Agregar*, se abre el cuadro de diálogo Configurar servidores de syslog y se muestra el servidor de syslog configurado en la página.
+
+
+. Para probar la conexión del servidor con la matriz de almacenamiento, seleccione *probar todo*.
+
+
+.Resultados
+Después de la configuración, se envían todos los registros de auditoría nuevos al servidor de syslog. Los registros anteriores no se transfieren.

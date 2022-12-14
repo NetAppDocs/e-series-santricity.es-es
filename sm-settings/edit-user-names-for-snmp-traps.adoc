@@ -1,0 +1,39 @@
+---
+permalink: sm-settings/edit-user-names-for-snmp-traps.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, edit, user, settings, snmpv3, traps, 
+summary: Puede editar definiciones de usuario para solapamientos SNMPv3. 
+---
+= Edite la configuración de usuario de las capturas SNMPv3
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede editar definiciones de usuario para solapamientos SNMPv3.
+
+.Antes de empezar
+Se debe crear un usuario para la captura SNMPv3.
+
+.Pasos
+. Seleccione MENU:Settings[Alerts].
+. Seleccione la ficha *SNMP*.
++
+Los destinos de capturas y los nombres de usuario aparecen en la tabla.
+
+. Para editar una definición de usuario, seleccione el usuario en la tabla y, a continuación, haga clic en *Configurar usuarios*.
+. En el cuadro de diálogo, haga clic en *Ver/editar configuración*.
+. Edite la siguiente información:
++
+** *Nombre de usuario* -- cambie el nombre que identifica al usuario, que puede tener hasta 31 caracteres.
+** *ID del motor* -- Seleccione el ID del motor, que se utiliza para generar claves de autenticación y cifrado para los mensajes, y debe ser único en el dominio administrativo. En la mayoría de los casos, debe seleccionar *local*. Si tiene una configuración no estándar, seleccione *personalizado*; aparece otro campo en el que debe introducir el ID de motor autorizado como una cadena hexadecimal, con un número par de caracteres de entre 10 y 32 caracteres de longitud.
+** *Credenciales de autenticación* -- Seleccione un protocolo de autenticación que garantice la identidad de los usuarios. A continuación, introduzca una contraseña de autenticación, que es obligatoria cuando se defina el protocolo de autenticación o se modifique. La contraseña debe tener entre 8 y 128 caracteres.
+** *Credenciales de privacidad* -- Seleccione un protocolo de privacidad que se utiliza para cifrar el contenido de los mensajes. A continuación, introduzca una contraseña de privacidad, que es necesaria cuando se establece o cambia el protocolo de privacidad. La contraseña debe tener entre 8 y 128 caracteres.
+
+
+
+
+.Resultados
+La pestaña SNMP de la página Alertas muestra la configuración actualizada.

@@ -1,0 +1,71 @@
+---
+permalink: sm-hardware/view-hardware-components.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, hardware, components, filtering, 
+summary: La página hardware presenta funciones de ordenación y filtrado que facilitan la búsqueda de componentes. 
+---
+= Ver componentes de hardware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La página hardware presenta funciones de ordenación y filtrado que facilitan la búsqueda de componentes.
+
+.Pasos
+. Seleccione *hardware*.
+. Use las funciones descritas en la siguiente tabla para ver los componentes de hardware.
+
+
+[cols="25h,~"]
+|===
+| Función | Descripción 
+
+
+ a| 
+Vistas frontal y trasera de la bandeja
+ a| 
+Para alternar entre las vistas frontal y trasera de la bandeja, seleccione *Mostrar parte posterior de la bandeja* o *Mostrar frente de la bandeja* en el extremo derecho (el enlace que aparece depende de la vista actual). La vista frontal muestra las unidades y todas las bahías vacías de la unidad. La vista trasera muestra las controladoras y todos los módulos IOM (ESM), los contenedores de alimentación/ventilador o las bahías vacías de la controladora. En la parte inferior de la página, también puede seleccionar *Mostrar todo frente* o *Mostrar todo detrás*.
+
+
+
+ a| 
+Filtros de vista de unidades
+ a| 
+Si la matriz de almacenamiento contiene unidades con diferentes tipos de atributos físicos y lógicos, la página *hardware* incluye filtros de vista de unidades. Estos filtros ayudan a ubicar rápidamente unidades específicas, ya que permiten limitar los tipos de unidades que se muestran en la página. En *Mostrar unidades...*, haga clic en el campo de filtro de la izquierda (de forma predeterminada, muestra *cualquier tipo de unidad*) para ver una lista desplegable de atributos físicos (por ejemplo, capacidad y velocidad). Haga clic en el campo de filtro a la derecha (de forma predeterminada, muestra *en cualquier lugar de la matriz de almacenamiento*) para ver una lista desplegable de atributos lógicos (por ejemplo, asignación de grupo de volúmenes). Es posible usar estos filtros de forma conjunta o por separado.
+
+[NOTE]
+====
+Si la cabina de almacenamiento contiene unidades que comparten todos los mismos atributos físicos, no aparece el campo *cualquier tipo de unidad* de la izquierda. Si todas las unidades están en la misma ubicación lógica, el campo *en cualquier lugar de la matriz de almacenamiento* de la derecha no aparece.
+
+====
+
+
+ a| 
+Leyenda
+ a| 
+Los componentes se muestran en determinados colores para mostrar sus estados de roles. Para expandir y colapsar las descripciones de estos estados, haga clic en *Leyenda*.
+
+
+
+ a| 
+Muestra detalles del icono de estado
+ a| 
+Los indicadores de estado pueden incluir descripciones de texto para estados de disponibilidad. Haga clic en *Mostrar detalles del icono de estado* para mostrar u ocultar este texto de estado.
+
+
+
+ a| 
+Opción Shelf e iconos de bandeja
+ a| 
+Cada vista de bandeja proporciona una lista de comandos relacionados, junto con propiedades y Estados. Haga clic en *Bandeja* para ver una lista desplegable de comandos. También es posible seleccionar uno de los iconos en la parte superior para ver el estado y las propiedades de componentes individuales: Controladoras, IOM (ESM), suministros de alimentación, ventiladores, temperatura, Baterías y SFP.
+
+
+
+ a| 
+Orden de bandejas
+ a| 
+Es posible cambiar el orden de las bandejas en la página hardware. Use las flechas arriba y abajo en la parte superior derecha de cada vista de bandeja para cambiar el orden superior/inferior de las bandejas.
+
+|===

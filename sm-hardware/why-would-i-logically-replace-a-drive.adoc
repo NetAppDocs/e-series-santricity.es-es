@@ -1,0 +1,16 @@
+---
+permalink: sm-hardware/why-would-i-logically-replace-a-drive.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, logically, replace, drive, 
+summary: Si se produce un error en una unidad o si desea reemplazarla por algún otro motivo y tiene una unidad sin asignar en la cabina de almacenamiento, puede reemplazar lógicamente la unidad con error por la unidad sin asignar. Si no tiene una unidad sin asignar, puede optar por reemplazar físicamente la unidad. 
+---
+= ¿Por qué debería reemplazar lógicamente una unidad?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si se produce un error en una unidad o si desea reemplazarla por algún otro motivo y tiene una unidad sin asignar en la cabina de almacenamiento, puede reemplazar lógicamente la unidad con error por la unidad sin asignar. Si no tiene una unidad sin asignar, puede optar por reemplazar físicamente la unidad.
+
+Los datos de la unidad original se copian o reconstruyen en la unidad de reemplazo.

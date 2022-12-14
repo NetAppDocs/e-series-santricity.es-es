@@ -1,0 +1,48 @@
+---
+permalink: sm-settings/export-saml-service-provider-files.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, export, saml, Service Provider, files, 
+summary: 'Si es necesario, se pueden exportar metadatos de proveedor de servicios para la cabina de almacenamiento y volver a importar los archivos en el sistema del proveedor de identidades (IDP).' 
+---
+= Exporte los archivos de proveedor de servicios SAML
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si es necesario, se pueden exportar metadatos de proveedor de servicios para la cabina de almacenamiento y volver a importar los archivos en el sistema del proveedor de identidades (IDP).
+
+.Antes de empezar
+* Debe iniciar sesión con un perfil de usuario que cuente con permisos de administración de seguridad. De lo contrario, no se mostrarán las funciones de Access Management.
+* SAML debe estar configurado y habilitado.
+
+
+.Acerca de esta tarea
+En esta tarea, es posible exportar metadatos de las controladoras (un archivo para cada controladora). IDP necesita estos metadatos para establecer una relación de confianza con las controladoras y procesar solicitudes de autenticación. El archivo incluye información, como el nombre de dominio o la dirección IP de la controladora, que IDP puede usar para enviar solicitudes.
+
+.Pasos
+. Seleccione MENU:Settings[Access Management].
+. Seleccione la pestaña *SAML*.
+. Seleccione *Exportar*.
++
+Se abre el cuadro de diálogo Exportar archivos del proveedor de servicios.
+
+. Para cada controlador, haga clic en *Exportar* para guardar el archivo de metadatos en el sistema local.
++
+[NOTE]
+====
+Los campos de nombre de dominio para cada controladora son de solo lectura.
+
+====
++
+Anote en qué lugar se almacena el archivo.
+
+. Desde el sistema local, busque los archivos de metadatos del proveedor de servicios que exportó.
++
+Hay un archivo con formato XML por controladora.
+
+. Desde el servidor IDP, importe los archivos de metadatos del proveedor de servicios. Puede importar los archivos directamente o introducir manualmente la información de la controladora incluida en ellos.
+. Haga clic en *Cerrar*.
+

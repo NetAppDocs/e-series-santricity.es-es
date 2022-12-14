@@ -1,0 +1,92 @@
+---
+permalink: sm-storage/interpret-performance-data.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, interpret, performance data 
+summary: Los datos de rendimiento pueden guiarlo para ajustar el rendimiento de la cabina de almacenamiento. 
+---
+= Interpretar datos de rendimiento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los datos de rendimiento pueden guiarlo para ajustar el rendimiento de la cabina de almacenamiento.
+
+Cuando se interpretan datos de rendimiento, es necesario tener en cuenta que varios factores afectan al rendimiento de la cabina de almacenamiento. En la siguiente tabla, se describen los principales aspectos que se deben tener en cuenta.
+
+[cols="25h,~"]
+|===
+| Datos de rendimiento | Implicancias para el ajuste del rendimiento 
+
+
+ a| 
+Latencia (milisegundos o ms)
+ a| 
+Supervise la actividad de I/o de un objeto específico.
+
+Identifique potencialmente objetos que son cuellos de botella:
+
+* Si un grupo de volúmenes se comparte entre varios volúmenes, es posible que los volúmenes individuales necesiten sus propios grupos de volúmenes para mejorar el rendimiento secuencial de las unidades y reducir la latencia.
+* Con los pools, se introducen latencias más grandes y es posible que existan cargas de trabajo desparejas entre unidades, por lo que los valores de latencia serán menos significativos y, por lo general, más altos.
+* Tipo de unidad y latencia por influencia de la velocidad. Con las operaciones de I/o aleatorias, los discos que giran más rápido pasan menos tiempo moviendo elementos hacia y desde diferentes lugares del disco.
+* Una cantidad muy reducida de unidades genera una cantidad mayor de comandos en la cola y un periodo más largo para que la unidad los procese, lo que aumenta la latencia general del sistema.
+* Las operaciones de I/o más grandes tienen una mayor latencia debido al tiempo adicional que supone la transferencia de datos.
+* Una latencia más alta puede indicar que el patrón de I/o es de naturaleza aleatoria. Las unidades con I/o aleatorias tendrán una mayor latencia que las que tienen flujos secuenciales.
+* Una disparidad de latencia entre unidades o volúmenes de un grupo de volúmenes común puede indicar una unidad lenta.
+
+
+
+
+ a| 
+IOPS
+ a| 
+Entre los factores que afectan a las operaciones de entrada/salida por segundo (IOPS o IO/s) se encuentran los siguientes:
+
+* Patrón de acceso (aleatorio o secuencial)
+* Tamaño de I/O.
+* Nivel de RAID
+* Tamaño del bloque de caché
+* Si el almacenamiento en caché de lectura está habilitado
+* Si el almacenamiento en caché de escritura está habilitado
+* Captura previa de lectura de caché dinámica
+* Tamaño de los segmentos
+* La cantidad de unidades en los grupos de volúmenes o la cabina de almacenamiento
+
+
+Cuanto más alta es la tasa de aciertos en caché, mayor será la tasa de I/O. Se experimentan tasas más altas de I/o con el almacenamiento en caché de escritura habilitado que con esta opción deshabilitada. Al decidir si habilitar el almacenamiento en caché de escritura para un volumen individual, observe las IOPS actuales y las IOPS máximas. Las tasas deberían ser más altas para los patrones de I/o secuenciales que para los patrones de I/o aleatorios. Más allá del patrón de I/o, habilite el almacenamiento en caché de escritura para maximizar la tasa de I/o y reducir el tiempo de respuesta de la aplicación.
+
+Pueden verse mejoras de rendimiento provocadas por el cambio de tamaño de segmentos en las estadísticas de IOPS de un volumen. Experimente para determinar el tamaño de segmento óptimo o utilice el tamaño del sistema de archivos o el tamaño de bloques de la base de datos.
+
+
+
+ a| 
+MIB/s
+ a| 
+Las tasas de transferencia o rendimiento están determinadas por el tamaño de I/o y la tasa de I/o de la aplicación. Por lo general, las solicitudes de I/o de aplicaciones pequeñas provocan tasas de transferencia más bajas, pero ofrecen una tasa de I/o más rápida y un tiempo de respuesta más corto. Con las solicitudes de I/o de aplicaciones más grandes, es posible obtener tasas de rendimiento más altas.
+
+Comprender los patrones de I/o típicos de una aplicación puede ayudar a determinar las tasas de transferencia de I/o máximas para una cabina de almacenamiento específica.
+
+
+
+ a| 
+CPU
+ a| 
+Este valor es un porcentaje de la capacidad de procesamiento que se está utilizando.
+
+Es posible que note una disparidad en el uso de CPU con los mismos tipos de objetos. Por ejemplo, el uso de CPU de una controladora es pesado o aumenta con el transcurso del tiempo, mientras que el de otra controladora es más liviano o más estable. En este caso, se recomienda cambiar la propiedad de la controladora de uno o varios volúmenes a la controladora con el porcentaje de CPU más bajo.
+
+Puede ser conveniente supervisar el uso de CPU en toda la cabina de almacenamiento. Si el uso de CPU sigue subiendo con el tiempo y el rendimiento de las aplicaciones disminuye, es posible que deba añadir más cabinas de almacenamiento. Al añadir cabinas de almacenamiento a su empresa, puede seguir satisfaciendo necesidades de aplicaciones a un nivel de rendimiento aceptable.
+
+
+
+ a| 
+Margen adicional
+ a| 
+El margen adicional se refiere a la funcionalidad de rendimiento restante de las controladoras, los canales del host de las controladoras y los canales de la unidad de las controladoras. Este valor se expresa como porcentaje, y expresa la brecha entre el máximo rendimiento posible que estos objetos pueden ofrecer y los niveles de rendimiento actuales.
+
+* Para las controladoras, el margen adicional es un porcentaje de las IOPS máximas posibles.
+* Para los canales, el margen adicional es un porcentaje del rendimiento o MIB/s máximo El rendimiento de lectura, el rendimiento de escritura y el rendimiento bidireccional se incluyen en el cálculo.
+
+
+|===

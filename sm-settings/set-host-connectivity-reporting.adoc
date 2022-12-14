@@ -1,0 +1,38 @@
+---
+permalink: sm-settings/set-host-connectivity-reporting.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, set, host, connectivity, reporting, 
+summary: Es posible habilitar la generación de informes de conectividad de host para que la cabina de almacenamiento supervise constantemente la conexión entre las controladoras y los hosts configurados, y emita alertas si se interrumpe la conexión. Esta función está habilitada de forma predeterminada. 
+---
+= Establezca la generación de informes de conectividad de host
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible habilitar la generación de informes de conectividad de host para que la cabina de almacenamiento supervise constantemente la conexión entre las controladoras y los hosts configurados, y emita alertas si se interrumpe la conexión. Esta función está habilitada de forma predeterminada.
+
+.Acerca de esta tarea
+Si se deshabilita la generación de informes de conectividad de host, el sistema ya no supervisa la conectividad ni los problemas de los controladores multivía con un host conectado a la cabina de almacenamiento.
+
+[NOTE]
+====
+Al deshabilitar la generación de informes de conectividad de host, también se deshabilita el equilibrio de carga automático que supervisa y equilibra la utilización de recursos de la controladora.
+
+====
+.Pasos
+. Seleccione MENU:Settings[System].
+. Desplácese hasta *Configuración adicional* y, a continuación, haga clic en *Activar/Desactivar generación de informes de conectividad de host*.
++
+El texto debajo de esta opción indica si se encuentra habilitada o deshabilitada.
+
++
+Se abre un cuadro de diálogo de confirmación.
+
+. Haga clic en *Sí* para continuar.
++
+Al seleccionar esta opción, es posible alternar entre habilitar o deshabilitar la función.
+
+

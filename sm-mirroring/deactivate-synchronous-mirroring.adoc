@@ -1,0 +1,32 @@
+---
+permalink: sm-mirroring/deactivate-synchronous-mirroring.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, deactivate, synchronous, mirroring, adapter, host, bus, 
+summary: 'Puede desactivar la función Synchronous Mirroring en una cabina de almacenamiento para restablecer el uso normal del puerto de host 4 del adaptador de bus de host (HBA), que estaba reservado para la transmisión de datos reflejados.' 
+---
+= Desactivar la función de mirroring síncrono
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede desactivar la función Synchronous Mirroring en una cabina de almacenamiento para restablecer el uso normal del puerto de host 4 del adaptador de bus de host (HBA), que estaba reservado para la transmisión de datos reflejados.
+
+.Antes de empezar
+Previamente deben haberse borrado todas las relaciones del reflejo síncrono. Verifique que todas las parejas reflejadas se hayan eliminado de la cabina de almacenamiento.
+
+.Pasos
+. Seleccione MENU:Storage[Synchronous Mirroring].
+. Seleccione menú:tareas no comunes[Desactivar].
++
+El sistema muestra una confirmación.
+
+. Seleccione *Sí* para confirmar.
+
+
+.Resultados
+* El puerto de host 4 de HBA de la controladora, que estaba dedicado a la comunicación de las operaciones de mirroring síncronas, ahora puede aceptar solicitudes de lectura y escritura del host.
+* Se eliminan los volúmenes de capacidad reservada en la cabina de almacenamiento.
+

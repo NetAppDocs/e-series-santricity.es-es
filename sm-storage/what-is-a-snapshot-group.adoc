@@ -1,0 +1,20 @@
+---
+permalink: sm-storage/what-is-a-snapshot-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot, group, 
+summary: Un grupo Snapshot es una recogida de imágenes Snapshot de momentos específicos de un único volumen base asociado. 
+---
+= ¿Qué es un grupo Snapshot?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un grupo Snapshot es una recogida de imágenes Snapshot de momentos específicos de un único volumen base asociado.
+
+System Manager organiza las imágenes Snapshot en _grupos Snapshot_. Los grupos Snapshot no requieren ninguna acción del usuario, pero se puede ajustar la capacidad de un grupo Snapshot en cualquier momento. Además, es posible que se muestre un mensaje para crear capacidad reservada cuando se cumplan las siguientes condiciones:
+
+* Siempre que se realiza una Snapshot de un volumen base que no tiene grupo Snapshot, System Manager crea automáticamente un grupo Snapshot. Esto genera capacidad reservada para el volumen base que se utiliza para almacenar imágenes Snapshot posteriores.
+* Siempre que se crea una programación Snapshot para un volumen base, System Manager crea automáticamente un grupo Snapshot.
+

@@ -1,0 +1,41 @@
+---
+permalink: sm-mirroring/remove-mirrored-pair.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remove, asynchronous, mirror, relationship, 
+summary: Quite una pareja reflejada para eliminar la relación de reflejo del volumen primario en la cabina de almacenamiento local y el volumen secundario en la cabina de almacenamiento remota. 
+---
+= Quite la relación de reflejo asíncrono
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Quite una pareja reflejada para eliminar la relación de reflejo del volumen primario en la cabina de almacenamiento local y el volumen secundario en la cabina de almacenamiento remota.
+
+.Acerca de esta tarea
+Revise la siguiente información sobre parejas reflejadas huérfanas:
+
+* Se crea una pareja reflejada huérfana cuando se quita un volumen miembro de un grupo de coherencia de reflejos de un lado (ya sea el lado de la cabina de almacenamiento local o el lado de la cabina de almacenamiento remota), pero no del otro lado.
+* Las parejas reflejadas huérfanas se detectan cuando se restaura la comunicación dentro de la cabina y los dos lados de la configuración reflejada concilian los parámetros de reflejo.
+* Puede eliminar una pareja reflejada para corregir un estado de pareja reflejada huérfana.
+
+
+.Pasos
+. Seleccione menu:Storage[Asynchronous Mirroring].
+. Seleccione la ficha *par reflejado*.
++
+Se muestra la tabla Mirrored Pairs con todas las parejas reflejadas asociadas con la cabina de almacenamiento.
+
+. Seleccione la pareja reflejada que desea quitar y haga clic en *Quitar*.
+. Confirme que desea eliminar la pareja reflejada y, a continuación, haga clic en *Quitar*.
+
+
+.Resultados
+System Manager realiza lo siguiente:
+
+* Quita la relación de reflejo del grupo de coherencia de reflejos en la cabina de almacenamiento local y en la cabina de almacenamiento remota, y elimina la capacidad reservada.
+* Devuelve el volumen primario y el volumen secundario a los volúmenes no reflejados a los que se puede acceder desde hosts.
+* Actualiza el icono Mirroring asíncrono con la eliminación de la pareja reflejada asíncrona.
+

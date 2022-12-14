@@ -1,0 +1,18 @@
+---
+permalink: sm-settings/why-are-there-two-sets-of-parameters-for-one-physical-port.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, parameters, physical, port, 
+summary: 'La cabina de almacenamiento EF600 puede incluir dos HIC: Una externa y una interna.' 
+---
+= ¿Por qué existen dos conjuntos de parámetros para un puerto físico?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La cabina de almacenamiento EF600 puede incluir dos HIC: Una externa y una interna.
+
+En esta configuración, la HIC externa se encuentra conectada a una HIC interna auxiliar. Cada puerto físico al que se puede obtener acceso desde la HIC externa tiene un puerto virtual asociado desde la HIC interna.
+
+Para alcanzar el rendimiento máximo de 200 GB, es necesario asignar parámetros a los puertos físico y virtual para que el host pueda establecer conexiones a ambos. Si no se asignan parámetros al puerto virtual, la HIC se ejecutará a aproximadamente la mitad de su capacidad de velocidad.

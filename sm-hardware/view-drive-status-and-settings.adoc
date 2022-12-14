@@ -1,0 +1,223 @@
+---
+permalink: sm-hardware/view-drive-status-and-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, drive, status, settings, media, 
+summary: Es posible ver el estado y la configuración de las unidades, como el tipo de medios, el tipo de interfaz y la capacidad. 
+---
+= Ver el estado y la configuración de las unidades
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible ver el estado y la configuración de las unidades, como el tipo de medios, el tipo de interfaz y la capacidad.
+
+.Pasos
+. Seleccione *hardware*.
+. Si el gráfico muestra los controladores, haga clic en *Mostrar frente de la bandeja*.
++
+El gráfico cambia y muestra las unidades en lugar de las controladoras.
+
+. Seleccione la unidad para la cual desea ver el estado y la configuración.
++
+Se abre el menú contextual de la unidad.
+
+. Seleccione *Ver configuración*.
++
+Se abrirá el cuadro de diálogo Configuración de la unidad.
+
+. Para ver todos los ajustes, haga clic en *Mostrar más valores* en la parte superior derecha del cuadro de diálogo.
++
+.Detalles del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Configuración | Descripción 
+
+
+ a| 
+Estado
+ a| 
+Muestra los Estados óptimo, sin conexión, error no crítico y con errores. El estado óptima indica la condición de funcionamiento deseada.
+
+
+
+ a| 
+Modo
+ a| 
+Muestra los modos Assigned, Unassigned, Hot Spare Standby o pieza de repuesto en uso.
+
+
+
+ a| 
+Ubicación
+ a| 
+Muestra la bandeja y el número de bahía donde se encuentra la unidad.
+
+
+
+ a| 
+Asignado a/puede proteger/Protección
+ a| 
+Si la unidad está asignada a un pool, un grupo de volúmenes o una caché SSD, este campo muestra el estado "asignado a". El valor puede ser un nombre de pool, nombre de grupo de volúmenes o nombre de caché SSD. Si la unidad está asignada a una pieza de repuesto y está en modo en espera, este campo muestra "puede proteger". Si la pieza de repuesto puede proteger un grupo de volúmenes o más, se muestra el nombre del grupo de volúmenes. Si no puede proteger un grupo de volúmenes, no se muestra ningún nombre de grupo de volúmenes.
+
+Si la unidad está asignada a una pieza de repuesto y está en modo en uso, este campo muestra "Protección". El valor es el nombre del grupo de volúmenes afectado.
+
+Si la unidad está sin asignar, este campo no aparece.
+
+
+
+ a| 
+Tipo de medios
+ a| 
+Muestra el tipo de medio de grabación que utiliza la unidad, que puede ser una unidad de disco duro (HDD) o un disco de estado sólido (SSD).
+
+
+
+ a| 
+Porcentaje de resistencia utilizado (solo se muestra si existen unidades SSD)
+ a| 
+Muestra la cantidad de datos escritos en la unidad hasta la fecha, divididos por límite de escritura teórico total.
+
+
+
+ a| 
+Tipo de interfaz
+ a| 
+Muestra el tipo de interfaz que usa la unidad, como SAS.
+
+
+
+ a| 
+Redundancia de ruta de unidades
+ a| 
+Muestra si las conexiones entre la unidad y la controladora son redundantes o no.
+
+
+
+ a| 
+Capacidad (GIB)
+ a| 
+Muestra la capacidad utilizable (capacidad configurada total) de la unidad.
+
+
+
+ a| 
+Velocidad (RPM)
+ a| 
+Muestra la velocidad en RPM (no aparece para SSD).
+
+
+
+ a| 
+Tasa de datos actual
+ a| 
+Muestra la tasa de transferencia de datos entre la unidad y la cabina de almacenamiento.
+
+
+
+ a| 
+Tamaño de sector lógico (bytes)
+ a| 
+Muestra el tamaño del sector lógico que usa la unidad.
+
+
+
+ a| 
+Tamaño de sector físico (bytes)
+ a| 
+Muestra el tamaño del sector físico que usa la unidad. Por lo general, el tamaño del sector físico es 4096 bytes para unidades de discos duros.
+
+
+
+ a| 
+La versión de firmware de la unidad
+ a| 
+Muestra el nivel de revisión del firmware de la unidad.
+
+
+
+ a| 
+Identificador a nivel mundial
+ a| 
+Muestra el identificador hexadecimal único de la unidad.
+
+
+
+ a| 
+ID de producto
+ a| 
+Muestra el identificador del producto, asignado por el fabricante.
+
+
+
+ a| 
+Número de serie
+ a| 
+Muestra el número de serie de la unidad.
+
+
+
+ a| 
+Fabricante
+ a| 
+Muestra el proveedor de la unidad.
+
+
+
+ a| 
+Fecha de fabricación
+ a| 
+Muestra la fecha en que se fabricó la unidad.
+
+
+NOTE: No está disponible para unidades NVMe.
+
+
+
+ a| 
+Compatible con la función de seguridad
+ a| 
+Muestra si la unidad es compatible con la función de seguridad (Sí) o no (no). Las unidades compatibles con la función de seguridad pueden ser unidades de cifrado de disco completo (FDE) o de estándar de procesamiento de información federal (FIPS) (nivel 140-2 o 140-3) que cifran datos durante la escritura y descifran datos durante la lectura. Estas unidades se consideran Secure-_capable_ porque se pueden usar para obtener más seguridad mediante la función Drive Security. Si está habilitada la función Drive Security para los grupos de volúmenes y pools que se utilizan con estas unidades, las unidades pasan a tener habilitada la función de seguridad-_enabled_.
+
+
+
+ a| 
+Con la función de seguridad habilitada
+ a| 
+Muestra si la unidad tiene la función de seguridad habilitada (Sí) o no (no). Las unidades con la función de seguridad habilitada se usan con Drive Security. Cuando se habilita la función Drive Security y se aplica Drive Security a un pool o un grupo de volúmenes en unidades_ compatibles con la función de seguridad, las unidades pasan a ser seguras-_enabled_. El acceso de lectura y escritura solo está disponible a través de una controladora que está configurada con la clave de seguridad correcta. Esta seguridad adicional evita el acceso no autorizado a los datos en una unidad que se quita físicamente de la cabina de almacenamiento.
+
+
+
+ a| 
+Accesibilidad de lectura/escritura
+ a| 
+Muestra si la unidad tiene acceso de lectura/escritura (Sí) o no (no).
+
+
+
+ a| 
+Identificador de clave de seguridad de unidad
+ a| 
+Muestra la clave de seguridad para unidades con la función de seguridad habilitada. Drive Security es una función de la cabina de almacenamiento que ofrece una capa adicional de seguridad con unidades de cifrado de disco completo (FDE) o unidades de estándar de procesamiento de información federal (FIPS). Cuando estas unidades se usan con la función Drive Security, se requiere una clave de seguridad para acceder a los datos. Cuando se retiran físicamente, las unidades de la cabina no pueden operar hasta que se instalan en otra cabina, instancia en la cual tendrán el estado Security Locked hasta que se proporcione la clave de seguridad correcta.
+
+
+
+ a| 
+Compatible con la función de garantía de datos (DA)
+ a| 
+Muestra si la función de garantía de datos (DA) está habilitada (Sí) o no (no). La garantía de datos (DA) es una función que comprueba y corrige los errores que se pueden producir durante la transferencia de datos a través de las controladoras hasta las unidades. Garantía de datos se puede habilitar en el nivel del pool o grupo de volúmenes, y los hosts pueden utilizar una interfaz de I/o compatible CON DA como, por ejemplo, Fibre Channel.
+
+
+
+ a| 
+Compatible con DULBE
+ a| 
+Indica si la opción error de bloque lógico no escrito o desasignado (DULBE) está habilitada (Sí) o no (no). DULBE es una opción en las unidades NVMe con la que la cabina de almacenamiento EF300 o EF600 puede admitir volúmenes con aprovisionamiento de recursos.
+
+|===
+====
+. Haga clic en *Cerrar*.
+

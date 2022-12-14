@@ -1,0 +1,43 @@
+---
+permalink: sm-storage/cancel-snapshot-image-rollback.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, cancel, snapshot, image, rollback 
+summary: 'Es posible cancelar una reversión activa en curso (con copia activa de datos), una reversión pendiente (en una cola pendiente a la espera de que se inicien los recursos) o una reversión en pausa debido a un error.' 
+---
+= Cancelar una reversión de imagen Snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible cancelar una reversión activa en curso (con copia activa de datos), una reversión pendiente (en una cola pendiente a la espera de que se inicien los recursos) o una reversión en pausa debido a un error.
+
+.Acerca de esta tarea
+Cuando se cancela una operación de reversión en curso, el volumen base se revierte a un estado inservible y se muestra con errores. Por lo tanto, piense en cancelar una operación de reversión únicamente cuando disponga de opciones de recuperación para restaurar el contenido del volumen base.
+
+[NOTE]
+====
+Si el grupo Snapshot en el que se encuentra la imagen Snapshot contiene una o varias imágenes Snapshot depuradas automáticamente, es posible que la imagen Snapshot utilizada en la operación de reversión no esté disponible en reversiones futuras.
+
+====
+.Pasos
+. Seleccione MENU:Storage[Snapshots].
+. Haga clic en la ficha *Imágenes Snapshot*.
+. Seleccione la reversión activa o en pausa y, a continuación, seleccione MENU:Rollback[Cancel].
++
+Se muestra el cuadro de diálogo Confirmar cancelación de reversión.
+
+. Haga clic en *Sí* para confirmar.
+
+
+.Resultados
+System Manager detendrá la operación de reversión. El volumen base es utilizable, pero puede contener datos incoherentes o no intactos.
+
+.Después de terminar
+Después de cancelar una operación de reversión, debe realizar una de las siguientes acciones:
+
+* Reinicie el contenido del volumen base.
+* Ejecute una nueva operación de reversión para restaurar el volumen base mediante la misma imagen Snapshot utilizada en la operación para cancelar la reversión o una imagen Snapshot diferente para ejecutar la nueva operación de reversión.
+

@@ -1,0 +1,16 @@
+---
+permalink: sm-support/which-data-am-i-collecting-in-a-customer-support-bundle.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, data, collection, autosupport, ASUP 
+summary: La función AutoSupport y la función manual Support Data Collection proporcionan medios para recoger datos en un bundle de soporte al cliente a fin de que el soporte técnico solucione y analice problemas de forma remota. 
+---
+= ¿Qué datos recojo?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La función AutoSupport y la función manual Support Data Collection proporcionan medios para recoger datos en un bundle de soporte al cliente a fin de que el soporte técnico solucione y analice problemas de forma remota.
+
+El bundle de soporte al cliente reúne todos los tipos de información acerca de la cabina de almacenamiento en un archivo comprimido único. La información recogida incluye la configuración física, la configuración lógica, la información de versión, los eventos, los archivos de registro, datos de rendimiento y rendimiento. Solo el soporte técnico utiliza la información para resolver problemas con la cabina de almacenamiento.

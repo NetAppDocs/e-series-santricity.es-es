@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/export-import-volume-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, export, import, volume group 
+summary: La migración de grupos de volúmenes permite exportar un grupo de volúmenes de forma tal que se lo pueda importar a otra cabina de almacenamiento. 
+---
+= Exportar/importar grupos de volúmenes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La migración de grupos de volúmenes permite exportar un grupo de volúmenes de forma tal que se lo pueda importar a otra cabina de almacenamiento.
+
+La función Export/Import no se admite en la interfaz de usuario de SANtricity System Manager. Deben usar la interfaz de línea de comandos (CLI) para exportar o importar un grupo de volúmenes a otra cabina de almacenamiento.

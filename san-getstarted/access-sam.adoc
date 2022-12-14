@@ -1,0 +1,59 @@
+---
+permalink: san-getstarted/access-sam.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access System Manager 
+summary: Para acceder a la interfaz de usuario de System Manager, debe dirigir un explorador a la dirección IP de la controladora. Un asistente de configuración le ayuda a comenzar con la configuración del sistema. 
+---
+= Acceda a System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para acceder a la interfaz de usuario de System Manager, debe dirigir un explorador a la dirección IP de la controladora. Un asistente de configuración le ayuda a comenzar con la configuración del sistema.
+
+.Antes de empezar
+* Instale y configure el hardware, tal y como se describe en una de las guías de configuración exprés:
++
+** https://docs.netapp.com/us-en/e-series/config-linux/index.html["Configuración exprés de Linux"^]
+** https://docs.netapp.com/us-en/e-series/config-vmware/index.html["Configuración exprés de VMware"^]
+** https://docs.netapp.com/us-en/e-series/config-windows/index.html["Configuración exprés de Windows"^]
+
+
+* Configure una estación de administración que cumpla con los siguientes requisitos:
++
+** Conectado a una red que es 1 Gbps o más rápido.
+** Conectados a la misma subred que los puertos de administración del almacenamiento.
+** Se utiliza como una estación independiente, en lugar de como un host (con conexión a I/o) que se utiliza para la gestión de datos.
+** Configuración para una gestión fuera de banda, en la que una estación de administración del almacenamiento envía comandos al sistema de almacenamiento a través de las conexiones Ethernet a la controladora.
+** Realice la configuración con un navegador compatible. Consulte link:supported-browsers-os.html["Exploradores compatibles y sistemas operativos"].
+
+
+
+
+.Pasos
+. Desde el explorador, introduzca la siguiente URL: `+https://<IPAddress>+`
++
+`IPAddress` es la dirección de una de las controladoras de la cabina de almacenamiento.
+
++
+La primera vez que se abre System Manager en una cabina sin configurar, aparece el aviso Set Administrator Password.
+
+. Introduzca la contraseña del administrador del sistema para la función admin en los campos Set Administrator Password y Confirm Password y, a continuación, haga clic en *Set Password*.
++
+Se iniciará el asistente de configuración la primera vez que inicie sesión.
+
+. Use el asistente de configuración para realizar las siguientes tareas:
++
+** *Verificar hardware (controladores y unidades)* -- verificar el número de controladores y unidades en la matriz de almacenamiento. Asigne un nombre a la cabina.
+** *Verificar hosts y sistemas operativos* -- verificar los tipos de host y sistema operativo a los que puede acceder la matriz de almacenamiento.
+** *Aceptar pools* -- acepte la configuración de pool recomendada para el método de instalación rápida. Un pool es un grupo lógico de unidades.
+** *Configurar alertas* -- permitir que System Manager reciba notificaciones automáticas cuando se produce un problema en la cabina de almacenamiento.
+** *Enable AutoSupport*: Supervise automáticamente el estado de la cabina de almacenamiento y envíe mensajes al soporte técnico.
+
+
+
+
+Para obtener más información sobre el Asistente de configuración, consulte link:../sm-interface/setup-wizard-overview.html["Información general del asistente de configuración de"].

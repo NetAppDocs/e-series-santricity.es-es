@@ -1,0 +1,22 @@
+---
+permalink: um-manage/why-dont-i-see-all-my-volumes-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, volumes missing 
+summary: Cuando se selecciona un volumen primario para una pareja reflejada, se muestra una lista con todos los volúmenes elegibles. 
+---
+= ¿Por qué no se muestran todos los volúmenes?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cuando se selecciona un volumen primario para una pareja reflejada, se muestra una lista con todos los volúmenes elegibles.
+
+Si algún volumen no es apto para el uso, no se muestra en esa lista. Es posible que los volúmenes no sean admisibles por uno de los siguientes motivos:
+
+* El volumen no está en estado óptimo.
+* El volumen ya participa en una relación de mirroring.
+* Para el mirroring síncrono, los volúmenes primario y secundario de una pareja reflejada deben ser volúmenes estándar. No pueden ser volúmenes finos o Snapshot.
+* Para el mirroring asíncrono, los volúmenes finos deben tener la expansión automática habilitada.
+

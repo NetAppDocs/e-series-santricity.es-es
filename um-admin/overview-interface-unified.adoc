@@ -1,0 +1,89 @@
+---
+permalink: um-admin/overview-interface-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, interface, GUI 
+summary: Unified Manager es una interfaz basada en Web que permite gestionar varias cabinas de almacenamiento en una sola vista. 
+---
+= Información general de la interfaz de Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager es una interfaz basada en Web que permite gestionar varias cabinas de almacenamiento en una sola vista.
+
+
+
+== Página principal
+
+Al iniciar sesión en Unified Manager, la página principal se abre en *gestionar - todo*. En esta página, puede desplazarse por una lista de cabinas de almacenamiento detectadas en la red, ver su estado y realizar operaciones en una sola cabina o en un grupo de cabinas.
+
+
+
+== Barra lateral Navegación
+
+Puede acceder a las funciones y funciones de Unified Manager desde la barra lateral de navegación.
+
+[cols="25h,~"]
+|===
+| Zona | Descripción 
+
+
+ a| 
+Gestione
+ a| 
+Detecte las cabinas de almacenamiento en la red, inicie la instancia de SANtricity System Manager de una cabina, importe la configuración de una cabina a varias, y gestione grupos de cabinas. Marque las casillas de comprobación junto a los nombres de las cabinas para realizar distintas operaciones, como importar configuraciones y crear grupos de cabinas. Los tres puntos al final de cada fila permiten acceder al menú en línea con las operaciones para cada cabina, por ejemplo, las operaciones de cambio de nombre.
+
+
+
+ a| 
+Operaciones
+ a| 
+Vea el progreso de las operaciones en lote, como la importación de la configuración de una cabina a otra.
+
+[NOTE]
+====
+Algunas operaciones no están disponibles si una cabina de almacenamiento no tiene un estado óptimo.
+
+====
+
+
+ a| 
+Gestión de certificados
+ a| 
+Administrar certificados para autenticar entre exploradores y clientes.
+
+
+
+ a| 
+Access Management
+ a| 
+Establezca la autenticación de usuario para la interfaz de Unified Manager.
+
+
+
+ a| 
+Soporte técnico
+ a| 
+Vea opciones de soporte técnico, recursos y contactos.
+
+|===
+
+
+== La configuración de la interfaz y la ayuda
+
+En la parte superior derecha de la interfaz, puede acceder a la Ayuda y a otra documentación. También puede acceder a las opciones de administración que están disponibles en el menú desplegable junto a su nombre de inicio de sesión.
+
+
+
+== Inicios de sesión y contraseñas de usuario
+
+El usuario actual que ha iniciado sesión en el sistema se muestra en la esquina superior derecha de la interfaz.
+
+Para obtener más información sobre usuarios y contraseñas, consulte:
+
+* link:administrator-password-protection-unified.html["Configure la protección con contraseña de administrador"]
+* link:change-admin-password-unified.html["Cambie la contraseña de administrador"]
+* link:../um-certificates/change-passwords-unified.html["Cambiar contraseñas de perfiles de usuario local"]
+

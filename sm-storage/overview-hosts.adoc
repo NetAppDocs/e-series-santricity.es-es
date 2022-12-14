@@ -1,0 +1,56 @@
+---
+permalink: sm-storage/overview-hosts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hosts 
+summary: Es posible configurar hosts y clústeres de hosts, que definen las conexiones entre la cabina de almacenamiento y los servidores de datos. 
+---
+= Información general sobre los hosts y los clústeres de hosts
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible configurar hosts y clústeres de hosts, que definen las conexiones entre la cabina de almacenamiento y los servidores de datos.
+
+
+
+== ¿Qué son los hosts y los clústeres de hosts?
+
+Un _host_ es un servidor que envía I/o a un volumen de una cabina de almacenamiento. Un _host cluster_ es un grupo de hosts, que se puede crear para asignar los mismos volúmenes a varios hosts.
+
+Obtenga más información:
+
+* link:host-terminology.html["Terminología de host"]
+* link:access-volumes.html["Volúmenes de acceso"]
+* link:maximum-number-of-luns.html["Número máximo de LUN"]
+
+
+
+
+== ¿Cómo se configuran los hosts y los clústeres de hosts?
+
+Para definir las conexiones de hosts, es posible permitir que un agente de contexto de host (HCA) detecte automáticamente los hosts, o bien puede ir a menu:Storage[hosts] para configurar manualmente el host. Si desea que dos o más hosts compartan el acceso al mismo conjunto de volúmenes, puede definir un clúster y asignar los volúmenes a ese clúster.
+
+Obtenga más información:
+
+* link:automatic-versus-manual-host-creation.html["Creación de hosts automática versus manual"]
+* link:how-volumes-are-assigned-to-hosts-and-host-clusters.html["Cómo se asignan volúmenes a hosts y clústeres de hosts"]
+* link:workflow-for-creating-hosts-and-assigning-volumes.html["Flujo de trabajo para la creación de hosts y la asignación de volúmenes"]
+* link:create-host-automatically.html["Crear un host automáticamente"]
+* link:create-host-manually.html["Crear hosts manualmente"]
+* link:create-host-cluster.html["Cree un clúster de hosts"]
+* link:assign-volumes.html["Asignar volúmenes a hosts"]
+
+
+
+
+== Información relacionada
+
+Obtenga más información acerca de las tareas relacionadas con hosts:
+
+* link:../sm-settings/set-automatic-load-balancing.html["Establecer equilibrio de carga automático"]
+* link:../sm-settings/set-host-connectivity-reporting.html["Establezca la generación de informes de conectividad de host"]
+* link:../sm-settings/change-default-host-type.html["Cambiar el tipo de host predeterminado"]
+

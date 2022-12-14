@@ -1,0 +1,16 @@
+---
+permalink: sm-hardware/why-do-i-need-to-change-the-controller-network-configuration.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, controller, network, configuration, gateway, 
+summary: 'Es necesario configurar la configuración de red para cada controladora —su dirección de protocolo de Internet (IP), máscara de subred y puerta de enlace— cuando se utiliza gestión fuera de banda.' 
+---
+= ¿Por qué es necesario cambiar la configuración de red de la controladora?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es necesario configurar la configuración de red para cada controladora--su dirección de protocolo de Internet (IP), máscara de subred y puerta de enlace- cuando se utiliza gestión fuera de banda.
+
+Es posible ajustar la configuración de red a través del servidor de protocolo de configuración dinámica de hosts (DHCP). Si no utiliza un servidor DHCP, debe introducir la configuración de red de forma manual.

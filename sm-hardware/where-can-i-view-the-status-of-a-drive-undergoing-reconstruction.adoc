@@ -1,0 +1,18 @@
+---
+permalink: sm-hardware/where-can-i-view-the-status-of-a-drive-undergoing-reconstruction.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, drive, reconstruction, 
+summary: Se puede ver el estado de reconstrucción de la unidad desde la consola Operaciones en curso. 
+---
+= ¿Dónde se puede ver el estado de una unidad sujeta a reconstrucción?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se puede ver el estado de reconstrucción de la unidad desde la consola Operaciones en curso.
+
+En la página Inicio, haga clic en el enlace *Ver operaciones en curso* de la parte superior derecha.
+
+Según la unidad, es posible que la reconstrucción completa demore bastante. Si se modificó la propiedad de un volumen, es posible que se realice la reconstrucción completa en lugar de la rápida.

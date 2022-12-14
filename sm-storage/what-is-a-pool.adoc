@@ -1,0 +1,18 @@
+---
+permalink: sm-storage/what-is-a-pool.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, pool, 
+summary: 'Un pool es un conjunto de unidades que se agrupan en forma lógica. Se puede usar un pool para crear uno o más volúmenes accesibles para un host. (Se crean volúmenes desde un pool o un grupo de volúmenes).' 
+---
+= ¿Qué es un pool?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un pool es un conjunto de unidades que se agrupan en forma lógica. Se puede usar un pool para crear uno o más volúmenes accesibles para un host. (Se crean volúmenes desde un pool o un grupo de volúmenes).
+
+Los pools pueden eliminar la necesidad de que los administradores supervisen el uso de cada host para determinar cuándo es posible que se queden sin espacio de almacenamiento y evitar la interrupción del servicio convencional para ajustar el tamaño del disco. Cuando un pool se está por agotar, se pueden añadir unidades adicionales al pool sin producir interrupciones, y el aumento de la capacidad es transparente para el host.
+
+Con los pools, los datos se redistribuyen automáticamente para mantener el equilibrio. Al distribuir la información de paridad y la capacidad de reserva en el pool, cada unidad del pool se puede usar para recompilar una unidad con error. Este enfoque no utiliza unidades de repuesto dedicadas, sino que reserva capacidad de conservación (repuesto) en el pool. En caso de que falle una unidad, los segmentos de otras unidades se leen para volver a crear los datos. Posteriormente, se selecciona una unidad nueva para escribir cada segmento que estaba en la unidad con error con el fin de mantener la distribución de los datos en las unidades.

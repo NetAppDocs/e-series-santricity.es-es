@@ -1,0 +1,91 @@
+---
+permalink: sm-settings/drive-security-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, drive, security, terms, 
+summary: Conozca la forma en que los términos de Drive Security se aplican a su cabina de almacenamiento. 
+---
+= Terminología de Drive Security
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Conozca la forma en que los términos de Drive Security se aplican a su cabina de almacenamiento.
+
+[cols="25h,~"]
+|===
+| Duración | Descripción 
+
+
+ a| 
+Función Drive Security
+ a| 
+Drive Security es una función de la cabina de almacenamiento que ofrece una capa adicional de seguridad con unidades de cifrado de disco completo (FDE) o unidades de estándar de procesamiento de información federal (FIPS). Cuando estas unidades se usan con la función Drive Security, se requiere una clave de seguridad para acceder a los datos. Cuando se retiran físicamente, las unidades de la cabina no pueden operar hasta que se instalan en otra cabina, instancia en la cual tendrán el estado Security Locked hasta que se proporcione la clave de seguridad correcta.
+
+
+
+ a| 
+Unidades FDE
+ a| 
+Las unidades de cifrado de disco completo (FDE) realizan el cifrado en la unidad de disco en el nivel de hardware. La unidad de disco duro contiene un chip ASIC que cifra los datos durante las escrituras y, a continuación, descifra los datos durante las lecturas.
+
+
+
+ a| 
+Unidades FIPS
+ a| 
+Las unidades con FIPS utilizan estándares de procesamiento de información federal (FIPS) 140-2 nivel 2. Son esencialmente unidades FDE que cumplen con las normas gubernamentales de los Estados Unidos para garantizar algoritmos y métodos de cifrado sólidos. Las unidades FIPS tienen normas de seguridad más rigurosas que las unidades FDE.
+
+
+
+ a| 
+Cliente de gestión
+ a| 
+Un sistema local (equipo, tablet, etc.) que incluye un explorador para acceder a System Manager.
+
+
+
+ a| 
+Frase de contraseña
+ a| 
+La frase de contraseña se utiliza para cifrar la clave de seguridad con fines de backup. La misma frase de contraseña utilizada para cifrar la clave de seguridad debe incluirse cuando se importa la clave de seguridad como resultado de una migración de unidad o un cambio de cabezal. La frase de contraseña puede tener entre 8 y 32 caracteres.
+
+[NOTE]
+====
+La frase de contraseña de Drive Security es independiente de la contraseña de administrador de la cabina de almacenamiento.
+
+====
+
+
+ a| 
+Unidades compatibles con la función de seguridad
+ a| 
+Las unidades compatibles con la función de seguridad pueden ser unidades de cifrado de disco completo (FDE) o de estándar de procesamiento de información federal (FIPS) que cifran datos durante la escritura y descifran datos durante la lectura. Estas unidades se consideran Secure-_capable_ porque se pueden usar para obtener más seguridad mediante la función Drive Security. Si está habilitada la función Drive Security para los grupos de volúmenes y pools que se utilizan con estas unidades, las unidades pasan a tener habilitada la función de seguridad-_enabled_.
+
+
+
+ a| 
+Unidades con la función de seguridad habilitada
+ a| 
+Las unidades con la función de seguridad habilitada se usan con Drive Security. Cuando se habilita la función Drive Security y se aplica Drive Security a un pool o un grupo de volúmenes en unidades_ compatibles con la función de seguridad, las unidades pasan a ser seguras__ habilitadas__. El acceso de lectura y escritura solo está disponible a través de una controladora que está configurada con la clave de seguridad correcta. Esta seguridad adicional evita el acceso no autorizado a los datos en una unidad que se quita físicamente de la cabina de almacenamiento.
+
+
+
+ a| 
+Clave de seguridad
+ a| 
+Una clave de seguridad es una cadena de caracteres que se comparte entre las unidades habilitadas para seguridad y las controladoras en una cabina de almacenamiento. Siempre que se encienden y se apagan las unidades, las unidades con la función de seguridad habilitada cambian al estado Security Locked hasta que la controladora aplica la clave de seguridad. Si se elimina una unidad habilitada para seguridad de la cabina de almacenamiento, se bloquean los datos de esa unidad. Cuando se vuelve a instalar la unidad en otra cabina de almacenamiento, se busca la clave de seguridad para que pueda volver a accederse a los datos. Para desbloquear los datos, debe aplicar la clave de seguridad original. Puede crear y gestionar claves de seguridad mediante uno de los siguientes métodos:
+
+* Gestión de claves internas: Crea y mantiene claves de seguridad en la memoria persistente de la controladora.
+* Gestión de claves externas: Crea y mantiene claves de seguridad en un servidor de gestión de claves externo.
+
+
+
+
+ a| 
+Identificador de clave de seguridad
+ a| 
+El identificador de clave de seguridad es una cadena asociada con la clave de seguridad durante su creación. El identificador se almacena en la controladora y en todas las unidades asociadas con la clave de seguridad.
+
+|===

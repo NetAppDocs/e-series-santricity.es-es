@@ -1,0 +1,23 @@
+---
+permalink: sm-hardware/turn-on-shelf-locator-light.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, shelf, locator, light, LED 
+summary: Para encontrar la ubicación física de una bandeja que se muestra en la página hardware, es posible encender la luz del localizador de la bandeja. 
+---
+= Encienda la luz del localizador de bandejas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para encontrar la ubicación física de una bandeja que se muestra en la página hardware, es posible encender la luz del localizador de la bandeja.
+
+.Pasos
+. Seleccione *hardware*.
+. Seleccione la lista desplegable de Bandeja de controladoras o Bandeja de unidades y, a continuación, seleccione *encender luz localizadora*.
++
+La luz localizadora de la bandeja se enciende.
+
+. Cuando haya localizado físicamente el estante, vuelva al cuadro de diálogo y seleccione *Apagar*.
+

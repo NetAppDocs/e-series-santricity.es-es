@@ -1,0 +1,14 @@
+---
+permalink: sm-settings/what-types-of-servers-will-revocation-checking-be-enabled-for.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, servers, revocation, checking, 
+summary: 'La cabina de almacenamiento realiza la verificación de revocación cada vez que se conecta a un servidor AutoSupport, un servidor de gestión de claves externo (EKMS), un servidor de protocolo ligero de acceso a directorios por SSL (LDAPS) o un servidor de syslog.' 
+---
+= ¿Para qué tipos de servidores se habilitará la comprobación de revocación?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La cabina de almacenamiento realiza la verificación de revocación cada vez que se conecta a un servidor AutoSupport, un servidor de gestión de claves externo (EKMS), un servidor de protocolo ligero de acceso a directorios por SSL (LDAPS) o un servidor de syslog.

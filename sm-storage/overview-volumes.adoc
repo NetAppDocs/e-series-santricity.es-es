@@ -1,0 +1,55 @@
+---
+permalink: sm-storage/overview-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volumes 
+summary: Es posible crear un volumen como contenedor en el cual las aplicaciones, las bases de datos y los sistemas de archivos almacenan datos. Al crear un volumen, también se debe seleccionar una carga de trabajo para personalizar la configuración de la cabina de almacenamiento para una aplicación específica. 
+---
+= Información general de los volúmenes y las cargas de trabajo
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible crear un volumen como contenedor en el cual las aplicaciones, las bases de datos y los sistemas de archivos almacenan datos. Al crear un volumen, también se debe seleccionar una carga de trabajo para personalizar la configuración de la cabina de almacenamiento para una aplicación específica.
+
+
+
+== ¿Qué son los volúmenes y las cargas de trabajo?
+
+A _volume_ es el componente lógico creado con capacidad específica al que debe acceder el host. Aunque es posible que un volumen conste de más de una unidad, un volumen aparece como un componente lógico para el host. Una vez definido un volumen, puede añadirlo a una carga de trabajo. Un _Workload_ es un objeto de almacenamiento que admite una aplicación, como SQL Server o Exchange, que se puede utilizar para optimizar el almacenamiento para esa aplicación.
+
+Obtenga más información:
+
+* link:how-volumes-work.html["Cómo funcionan los volúmenes"]
+* link:how-workloads-work.html["Cómo funcionan las cargas de trabajo"]
+* link:volume-terminology.html["Terminología de volúmenes"]
+* link:capacity-for-volumes.html["La forma en que se asigna la capacidad a los volúmenes"]
+* link:actions-you-can-perform-on-volumes.html["Acciones que se pueden realizar en volúmenes"]
+
+
+
+
+== ¿Cómo crea volúmenes y cargas de trabajo?
+
+En primer lugar, debe crear una carga de trabajo. Vaya a MENU:Storage[Volumes] y abra un asistente que le guiará por los pasos. A continuación, se crea un volumen a partir de la capacidad disponible en un pool o un grupo de volúmenes y, luego, se asigna la carga de trabajo que se creó.
+
+Obtenga más información:
+
+* link:workflow-for-creating-volumes.html["Flujo de trabajo para crear volúmenes"]
+* link:create-workloads.html["Crear cargas de trabajo"]
+* link:create-volumes.html["Cree volúmenes"]
+* link:add-to-workload.html["Añadir volúmenes a la carga de trabajo"]
+
+
+
+
+== Información relacionada
+
+Más información acerca de conceptos relacionados con los volúmenes:
+
+* link:data-integrity-and-data-security-for-volumes.html["Integridad y seguridad de los datos para volúmenes"]
+* link:ssd-cache-and-volumes.html["Caché SSD y volúmenes"]
+* link:thin-volume-monitoring.html["Supervisión de volúmenes finos"]
+

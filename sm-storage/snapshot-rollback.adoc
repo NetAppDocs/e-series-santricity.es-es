@@ -1,0 +1,28 @@
+---
+permalink: sm-storage/snapshot-rollback.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot, rollback 
+summary: Una operación de reversión vuelve a colocar un volumen base en el estado anterior, determinada por la snapshot seleccionada. 
+---
+= Reversión Snapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Una operación de reversión vuelve a colocar un volumen base en el estado anterior, determinada por la snapshot seleccionada.
+
+Para una reversión, es posible seleccionar una imagen Snapshot de uno de los siguientes orígenes:
+
+* *Reversión de imagen Snapshot*, para una restauración completa de un volumen base.
+* *Reversión de grupo de coherencia Snapshot*, que se puede utilizar para revertir uno o más volúmenes.
+
+
+Durante una reversión, la función Snapshot conserva todas las imágenes Snapshot del grupo. Con esta función, el host puede acceder al volumen base durante el proceso, si es necesario para operaciones de I/O.
+
+Cuando se inicia una reversión, un proceso en segundo plano revisa las direcciones de bloque lógico (LBA) para el volumen base y busca datos de copia en escritura en la imagen Snapshot de reversión que se desea restaurar. Como el host tiene acceso de lectura y escritura al volumen base, y todos los datos escritos previamente se encuentran disponibles de inmediato, el volumen de capacidad reservada debe ser suficientemente grande como para alojar todos los cambios durante el procesamiento de la reversión. La transferencia de datos continúa como una operación en segundo plano hasta que se completa la reversión.
+
+image::../media/sam1130-dwg-snapshots-rollback-overview.gif[información general sobre la reversión de instantáneas dwg de sam1130]
+
+Volumen base de esta aplicación; estos 2 objetos Snapshot en un grupo; capacidad reservada de este grupo de copias Snapshot de 3

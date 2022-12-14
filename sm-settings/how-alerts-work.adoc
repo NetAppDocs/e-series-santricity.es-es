@@ -1,0 +1,58 @@
+---
+permalink: sm-settings/how-alerts-work.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, alarm, alerts, 
+summary: Las alertas notifican a los administradores sobre eventos importantes que se producen en la cabina de almacenamiento. Las alertas se pueden enviar por correo electrónico, capturas SNMP y syslog. 
+---
+= ¿Cómo funcionan las alertas
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Las alertas notifican a los administradores sobre eventos importantes que se producen en la cabina de almacenamiento. Las alertas se pueden enviar por correo electrónico, capturas SNMP y syslog.
+
+El proceso de las alertas funciona de la siguiente manera:
+
+. Un administrador configura uno o varios de los siguientes métodos de alerta en System Manager:
++
+** *Correo electrónico* -- los mensajes se envían a direcciones de correo electrónico.
+** *SNMP* -- las capturas SNMP se envían a un servidor SNMP.
+** *Syslog* -- los mensajes se envían a un servidor syslog.
+
+
+. Cuando el monitor de eventos de la cabina de almacenamiento detecta un problema, escribe información sobre ese problema en el registro de eventos (disponible en menu:Support[Event Log]). Por ejemplo, los problemas pueden incluir eventos como un fallo de la batería, un componente que pasa del estado óptimo a sin conexión, o bien errores de redundancia en la controladora.
+. Si el monitor de eventos determina que el evento genera alertas, envía una notificación con los métodos de alerta configurados (correo electrónico, SNMP o syslog). Se considera que todos los eventos críticos generan alertas, junto con algunos eventos informativos y de advertencia.
+
+
+
+
+== Configuración de alertas
+
+Es posible configurar alertas en el asistente de configuración inicial (solo para alertas de correo electrónico) o en la página Alertas. Para comprobar la configuración actual, vaya a MENU:Settings[Alerts].
+
+El icono Alertas muestra la configuración de las alertas, que puede ser una de las siguientes:
+
+* No configurado.
+* Configurado; se ha configurado al menos un método de alerta. Para determinar qué métodos de alertas están configurados, apunte el cursor al icono.
+
+
+
+
+== Información sobre alertas
+
+Las alertas pueden incluir los siguientes tipos de información:
+
+* Nombre de la cabina de almacenamiento.
+* Tipo de error de evento relacionado con una entrada del registro de eventos.
+* La fecha y la hora en que ocurrió el evento.
+* Una breve descripción del evento.
+
+
+[NOTE]
+====
+Las alertas de syslog siguen el estándar de mensajería de RFC 5424.
+
+====

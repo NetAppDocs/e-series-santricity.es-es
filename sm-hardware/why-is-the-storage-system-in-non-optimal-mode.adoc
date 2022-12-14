@@ -1,0 +1,22 @@
+---
+permalink: sm-hardware/why-is-the-storage-system-in-non-optimal-mode.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, non-optimal, mode, 
+summary: Un sistema de almacenamiento en modo no óptimo se debe a un estado no válido de configuración del sistema. A pesar de este estado, se admite por completo el acceso de I/o normal a los volúmenes existentes; sin embargo, System Manager prohibirá algunas operaciones. 
+---
+= ¿Por qué el sistema de almacenamiento se encuentra en el modo no óptimo?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un sistema de almacenamiento en modo no óptimo se debe a un estado no válido de configuración del sistema. A pesar de este estado, se admite por completo el acceso de I/o normal a los volúmenes existentes; sin embargo, System Manager prohibirá algunas operaciones.
+
+Un sistema de almacenamiento puede realizar una transición a la configuración del sistema no válida por uno de estos motivos:
+
+* La controladora no cumple las normativas, posiblemente porque tiene un código de identificador de submodelo incorrecto (SMID) o superó el límite de funciones premium.
+* Hay una operación de servicio interno en curso, como una descarga del firmware de la unidad.
+* La controladora superó el umbral de error de paridad y entró en bloqueo.
+* Se produjo una condición general de bloqueo.
+

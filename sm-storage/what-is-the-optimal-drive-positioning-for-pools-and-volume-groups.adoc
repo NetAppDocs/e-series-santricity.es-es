@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/what-is-the-optimal-drive-positioning-for-pools-and-volume-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, optimal, drive, positioning, pools, volume groups 
+summary: Al crear pools y grupos de volúmenes, asegúrese de equilibrar la selección de unidades entre las ranuras de unidades superior e inferior. 
+---
+= ¿Cuál es el posicionamiento de unidad óptimo para pools y grupos de volúmenes?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Al crear pools y grupos de volúmenes, asegúrese de equilibrar la selección de unidades entre las ranuras de unidades superior e inferior.
+
+Para las controladoras EF600 y EF300, las ranuras de unidad 0-11 están conectadas a un puente PCI, mientras que las ranuras 12-23 están conectadas a un puente PCI diferente. Para obtener un rendimiento óptimo, se debe equilibrar la selección de unidades para incluir una cantidad prácticamente igual de unidades en las ranuras superior e inferior. Este posicionamiento garantiza que sus volúmenes no alcanzan el límite de ancho de banda antes de lo necesario.

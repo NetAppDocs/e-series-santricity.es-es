@@ -1,0 +1,33 @@
+---
+permalink: sm-support/schedule-autosupport-dispatches.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, schedule, autosupport, dispatches 
+summary: System Manager crea automáticamente una programación predeterminada para los mensajes de AutoSupport. Si lo prefiere, puede especificar su propia programación. 
+---
+= Programar mensajes de AutoSupport
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager crea automáticamente una programación predeterminada para los mensajes de AutoSupport. Si lo prefiere, puede especificar su propia programación.
+
+.Antes de empezar
+Se debe habilitar la función AutoSupport. Puede comprobar si está habilitada en la página AutoSupport.
+
+.Acerca de esta tarea
+* *Hora diaria* -- los envíos diarios se recopilan y se envían cada día durante el intervalo de tiempo especificado. System Manager selecciona un tiempo aleatorio durante el rango. Todas las opciones son en hora universal coordinada (UTC), que puede ser diferente a la hora local de la cabina de almacenamiento. Es necesario convertir la hora local de la cabina de almacenamiento a UTC.
+* *Día semanal* -- los envíos semanales se recopilan y se envían una vez por semana. System Manager selecciona un día al azar dentro de los días especificados. Anule la selección de los días en los que no desea permitir un mensaje semanal. System Manager selecciona un día al azar dentro de los días permitidos.
+* *Tiempo semanal* -- los envíos semanales se recopilan y se envían una vez por semana durante el intervalo de tiempo especificado. System Manager selecciona un tiempo aleatorio durante el rango. Todas las opciones son en hora universal coordinada (UTC), que puede ser diferente a la hora local de la cabina de almacenamiento. Es necesario convertir la hora local de la cabina de almacenamiento a UTC.
+
+
+.Pasos
+. Seleccione menú:ficha Soporte[Centro de soporte > AutoSupport].
+. Seleccione *programar mensajes de AutoSupport*.
++
+Se mostrará el asistente programar mensajes de AutoSupport.
+
+. Siga los pasos del asistente.
+

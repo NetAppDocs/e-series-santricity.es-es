@@ -1,0 +1,58 @@
+---
+permalink: sm-mirroring/role-change-of-volumes-in-a-mirrored-pair.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, role, change, between, volume, mirrored, pair, 
+summary: Es posible cambiar el rol entre los volúmenes de una pareja reflejada. Para ello, se puede degradar el volumen primario al rol secundario o promocionar el volumen secundario al rol primario. 
+---
+= Cambio de roles entre volúmenes de una pareja reflejada
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible cambiar el rol entre los volúmenes de una pareja reflejada. Para ello, se puede degradar el volumen primario al rol secundario o promocionar el volumen secundario al rol primario.
+
+[NOTE]
+====
+Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
+
+====
+Revise la siguiente información sobre la operación de cambio de roles:
+
+* Cuando se degrada un volumen primario al rol secundario, se promociona el volumen secundario de esa pareja reflejada al rol primario y viceversa.
+* Cuando se degrada el volumen primario al rol secundario, los hosts asignados a ese volumen ya no tienen acceso de escritura a él.
+* Cuando se promociona el volumen secundario al rol primario, todos los hosts con acceso a ese volumen pueden escribir en él.
+* Si la cabina de almacenamiento local no puede comunicarse con la cabina de almacenamiento remota, es posible forzar un cambio de rol en la cabina de almacenamiento local.
+
+
+
+
+== Forzar cambio de rol
+
+Es posible forzar un cambio de rol entre los volúmenes de una pareja reflejada cuando un problema de comunicación entre la cabina de almacenamiento local y la cabina de almacenamiento remota impide la promoción del volumen secundario o la degradación del volumen primario.
+
+Se puede forzar la transición del volumen en el lado secundario al rol primario. El host de recuperación podrá acceder al volumen recientemente promocionado y las operaciones empresariales podrán seguir su curso.
+
+[NOTE]
+====
+Cuando se recupera la cabina de almacenamiento remota y se resuelven todos los problemas de comunicación, se produce una condición de conflicto de mirroring síncrono y volumen primario. Los pasos de recuperación incluyen volver a sincronizar los volúmenes. Utilice Recovery Guru para recuperar el sistema de este error.
+
+====
+
+
+== ¿Cuándo se permite y no se permite una promoción forzada?
+
+La promoción forzada de un volumen de una pareja reflejada no se permite en las siguientes condiciones:
+
+* Alguno de los volúmenes de una pareja reflejada está en el proceso de sincronización inicial.
+* La pareja reflejada presenta los estados Failed, Role-Change-Pending o Role-Change-In-Progress, o alguno de los volúmenes de capacidad reservada asociados presenta errores.
+
+
+
+
+== Estado de cambio de rol en curso
+
+Si se desconectan dos cabinas de almacenamiento en una configuración de mirroring, y se fuerza la degradación del volumen primario de una pareja reflejada al rol secundario y la promoción del volumen secundario de una pareja reflejada al rol primario, A continuación, cuando se restaura la comunicación, los volúmenes en ambas cabinas de almacenamiento se colocan en el estado de cambio de rol en curso.
+
+Para completar el proceso de cambio de roles, el sistema transfiere los registros de cambios, vuelve a sincronizar, establece la pareja reflejada de vuelta a su estado operativo normal y prosigue con las sincronizaciones.

@@ -1,0 +1,61 @@
+---
+permalink: sm-storage/comparison-between-thick-volumes-and-thin-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, comparison, thick volumes, thin volumes 
+summary: Un volumen grueso siempre se aprovisiona en su totalidad, lo cual significa que toda la capacidad se asigna cuando se crea el volumen. Un volumen fino siempre se aprovisiona en medida reducida, lo cual significa que la capacidad se asigna a medida que los datos se escriben en el volumen. 
+---
+= Comparación entre volúmenes gruesos y volúmenes finos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un volumen grueso siempre se aprovisiona en su totalidad, lo cual significa que toda la capacidad se asigna cuando se crea el volumen. Un volumen fino siempre se aprovisiona en medida reducida, lo cual significa que la capacidad se asigna a medida que los datos se escriben en el volumen.
+
+[NOTE]
+====
+System Manager no proporciona ninguna opción para crear volúmenes finos. Si se desea crear volúmenes finos, se debe usar la interfaz de línea de comandos (CLI).
+
+====
+[cols="25h,~"]
+|===
+| Tipo de volumen | Descripción 
+
+
+ a| 
+Volúmenes gruesos
+ a| 
+* Los volúmenes gruesos se crean desde un pool o grupo de volúmenes.
+* En el caso de los volúmenes gruesos, se proporciona anticipadamente una gran cantidad de espacio de almacenamiento previendo las futuras necesidades de almacenamiento.
+* Los volúmenes gruesos se crean con todo el tamaño del volumen asignado previamente en el almacenamiento físico, en el momento en que se crea el volumen. La asignación previa implica que crear un volumen de 100 GIB consume en realidad 100 GIB de capacidad asignada en las unidades. Sin embargo, el espacio puede quedar sin utilizar y producir la subutilización de la capacidad de almacenamiento.
+* Al crear volúmenes gruesos, es necesario tener en cuenta que no se debe sobreasignar capacidad para un único volumen. Sobreasignar capacidad para un único volumen puede consumir rápidamente todo el almacenamiento físico del sistema.
+* Recuerde que la capacidad de almacenamiento también es necesaria para los servicios de copia (imágenes Snapshot, volúmenes Snapshot, copias de volúmenes y operaciones de mirroring asíncrono). Por lo tanto, no asigne toda la capacidad a los volúmenes gruesos. El espacio insuficiente puede bloquear la escritura en el pool o en el grupo de volúmenes. Si esta situación se presenta, recibirá una alerta por alcanzar el umbral de capacidad libre.
+
+
+
+
+ a| 
+Volúmenes finos
+ a| 
+* Los volúmenes finos se crean únicamente desde un pool, no desde un grupo de volúmenes.
+* Los volúmenes finos deben ser RAID 6.
+* Los volúmenes finos no están disponibles en los sistemas de almacenamiento EF600 o EF300.
+* Debe usar la CLI para crear volúmenes finos.
+* A diferencia de los volúmenes gruesos, el espacio necesario para los volúmenes finos no se asigna durante la creación, pero se otorga, bajo demanda, en un momento posterior.
+* Un volumen fino permite sobreasignar su tamaño. Es decir, se puede asignar un tamaño de LUN que sea mayor que el tamaño del volumen. A continuación se puede expandir el volumen según sea conveniente (si es necesario, se pueden añadir unidades en el proceso) sin expandir el tamaño del LUN y, por lo tanto, sin desconectar a los usuarios.
+* Se puede usar una reclamación de espacio de bloques de thin provisioning (UNMAP) para reclamar bloques de un volumen de Thin-Provisioning en la cabina de almacenamiento a través del comando SCSI UNMAP emitido por el host. Una cabina de almacenamiento que admite thin provisioning puede cambiar el propósito del espacio reclamado para satisfacer las solicitudes de asignación de algún otro volumen de thin provisioning dentro de la misma cabina de almacenamiento, lo cual permite emitir un mejor informe del consumo de espacio en disco y un uso más eficiente de los recursos.
+
+
+|===
+
+
+== Restricciones de los volúmenes finos
+
+Los volúmenes finos admiten todas las mismas operaciones que los volúmenes gruesos, con las siguientes excepciones:
+
+* No se puede cambiar el tamaño de los segmentos de un volumen fino.
+* No se puede habilitar la comprobación de redundancia de lectura previa de un volumen fino.
+* No se puede usar un volumen fino como volumen objetivo en la operación Copy Volume.
+* Es posible modificar el límite de la capacidad asignada de un volumen fino y el umbral de advertencia solamente en el lado primario de una pareja reflejada asíncrona. Todos los cambios realizados en esos parámetros en el lado primario se propagan automáticamente al lado secundario.
+

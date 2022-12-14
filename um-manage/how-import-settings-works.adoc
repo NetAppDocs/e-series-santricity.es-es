@@ -1,0 +1,51 @@
+---
+permalink: um-manage/how-import-settings-works.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, import, settings, 
+summary: Es posible usar Unified Manager para importar la configuración de una cabina de almacenamiento a varias cabinas de almacenamiento. La función Importar configuración es una operación en lote que permite ahorrar tiempo cuando se necesitan configurar varias cabinas en la red. 
+---
+= Cómo funciona la importación de configuración
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible usar Unified Manager para importar la configuración de una cabina de almacenamiento a varias cabinas de almacenamiento. La función Importar configuración es una operación en lote que permite ahorrar tiempo cuando se necesitan configurar varias cabinas en la red.
+
+
+
+== Configuración disponible para la importación
+
+Las siguientes configuraciones pueden importarse en varias cabinas:
+
+* *Alertas* -- métodos de alerta para enviar eventos importantes a los administradores, mediante correo electrónico, un servidor syslog o un servidor SNMP.
+* *AutoSupport*: Función que supervisa el estado de una matriz de almacenamiento y envía mensajes automáticos al soporte técnico.
+* *Servicios de directorio* -- método de autenticación de usuario que se administra a través de un servidor LDAP (protocolo ligero de acceso a directorios) y un servicio de directorio, como Active Directory de Microsoft.
+* *Configuración de almacenamiento* -- configuraciones relacionadas con lo siguiente:
++
+** Volúmenes (solo volúmenes gruesos y que no pertenecen al repositorio)
+** Grupos de volúmenes y pools
+** Asignaciones de unidad de repuesto
+
+
+* *Ajustes del sistema* -- configuraciones relacionadas con lo siguiente:
++
+** Configuración de escaneo de medios para un volumen
+** Configuración de SSD
+** Equilibrio de carga automático (no incluye la generación de informes de conectividad de host)
+
+
+
+
+
+
+== Flujo de trabajo de configuración
+
+Para importar la configuración, siga este flujo de trabajo:
+
+. En una cabina de almacenamiento que se usará como origen, configure los ajustes mediante System Manager.
+. En las cabinas de almacenamiento que se usarán como objetivo, realice una copia de seguridad de la configuración mediante System Manager.
+. Desde Unified Manager, vaya a la página *Administrar* e importe la configuración.
+. En la página *Operaciones*, revise los resultados de la operación Importar configuración.
+

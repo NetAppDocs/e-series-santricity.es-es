@@ -1,0 +1,16 @@
+---
+permalink: sm-support/workflow-for-autosupport.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, workflow, autosupport, 
+summary: En SANtricity System Manager, puede configurar la función AutoSupport siguiendo estos pasos. 
+---
+= Flujo de trabajo de la función AutoSupport
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+En System Manager, puede configurar la función AutoSupport siguiendo estos pasos.
+
+image::../media/sam1130-flw-support-asup-setup.gif[configuración de soporte de flw sam1130]

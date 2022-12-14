@@ -1,0 +1,65 @@
+---
+permalink: um-manage/what-impact-does-synchronization-priority-have-on-synchronization-rates-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, synchronization, priority, rates 
+summary: La prioridad de sincronización define la cantidad de tiempo de procesamiento que se asigna a las actividades de sincronización en relación con el rendimiento del sistema. 
+---
+= ¿Qué impacto tiene la prioridad de sincronización en las tasas de sincronización?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La prioridad de sincronización define la cantidad de tiempo de procesamiento que se asigna a las actividades de sincronización en relación con el rendimiento del sistema.
+
+El propietario de la controladora del volumen primario realiza esta operación en segundo plano. Al mismo tiempo, el propietario de la controladora procesa las escrituras de I/o en el volumen primario y las escrituras remotas asociadas en el volumen secundario. Dado que la resincronización desvía los recursos de procesamiento de la controladora de la actividad de I/o, es posible que tenga un impacto en el rendimiento de la aplicación host.
+
+Tenga en cuentas estas directrices para determinar cuánto puede demorar una prioridad de sincronización y cómo las prioridades de sincronización pueden afectar al rendimiento del sistema.
+
+Las siguientes tasas de prioridad se encuentran disponibles:
+
+* El más bajo
+* Bajo
+* Mediano
+* Alto
+* Máxima
+
+
+La tasa de prioridad más baja es compatible con el rendimiento del sistema, pero la resincronización demora más tiempo. La tasa de prioridad más alta es compatible con la resincronización, pero el rendimiento del sistema puede verse afectado.
+
+Estas directrices aproximan aproximadamente las diferencias entre las prioridades.
+
+[cols="45h,~"]
+|===
+| Tasa de prioridad para la sincronización completa | Tiempo transcurrido en comparación con la tasa de sincronización más alta 
+
+
+ a| 
+El más bajo
+ a| 
+Tiempo aproximadamente 8 veces superior a la tasa de prioridad más alta
+
+
+
+ a| 
+Bajo
+ a| 
+Tiempo aproximadamente 6 veces superior a la tasa de prioridad más alta
+
+
+
+ a| 
+Mediano
+ a| 
+Tiempo aproximadamente 3,5 veces superior a la tasa de prioridad más alta
+
+
+
+ a| 
+Alto
+ a| 
+Tiempo aproximadamente 2 veces superior a la tasa de prioridad más alta
+
+|===
+El tamaño del volumen y las cargas de la tasa de I/o del host afectan a las comparaciones de tiempo de sincronización.

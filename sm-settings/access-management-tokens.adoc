@@ -1,0 +1,50 @@
+---
+permalink: sm-settings/access-management-tokens.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access management, tokens 
+summary: Los tokens de acceso proporcionan acceso a la matriz sin exponer el nombre de usuario ni la contraseña. 
+---
+= Tokens de acceso
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los tokens de acceso proporcionan un método de autenticación con la API REST o la interfaz de línea de comandos (CLI), sin exponer los nombres de usuario ni las contraseñas. Un token está asociado a un usuario específico (incluidos los usuarios LDAP) e incluye un conjunto de permisos y una caducidad.
+
+
+
+== Acceso al token web SAML y JSON
+
+De manera predeterminada, un sistema con SAML habilitado no permite el acceso a herramientas de línea de comandos tradicionales. La API REST y la interfaz de línea de comandos se tornan inoperables porque el flujo de trabajo de la MFA requiere un redireccionamiento a un servidor de proveedor de identidades para la autenticación. Por lo tanto, debe generar tokens en System Manager, que obliga a los usuarios a autenticarse a través de MFA.
+
+
+NOTE: No es necesario habilitar SAML para usar tokens web, pero SAML se recomienda para el nivel más alto de seguridad.
+
+
+
+== Flujo de trabajo para crear y utilizar tokens
+
+. Cree un token en System Manager y determine su vencimiento.
+. Copie el texto del token en el portapapeles o descárguelo en un archivo y, a continuación, guarde el texto del token en una ubicación segura.
+. Utilice el token de la siguiente manera:
++
+** *API REST*: Para utilizar un token en una solicitud de API REST, agregue un encabezado HTTP a sus solicitudes. Por ejemplo:
+`Authorization: Bearer _<access-token-value>_`
+** *Secure CLI*: Para utilizar un token en la CLI, agregue el valor de token en la línea de comandos o utilice la ruta de acceso a un archivo que contenga el valor de token. Por ejemplo:
++
+*** Valor de token en la línea de comandos: `-t _access-token-value_`
+*** Ruta de acceso a un archivo que contiene el valor de token: `-T _access-token-file_`
+
+
+
+
+
+
+Obtenga más información:
+
+* link:access-management-tokens-create.html["Cree tokens de acceso"]
+* link:access-management-tokens-edit.html["Edite los tokens de acceso"]
+* link:access-management-tokens-revoke.html["Revocar tokens de acceso"]
+

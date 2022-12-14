@@ -1,0 +1,28 @@
+---
+permalink: um-manage/storage-array-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, storage, array, groups 
+summary: Es posible gestionar la infraestructura física y virtualizada si se agrupa un conjunto de cabinas de almacenamiento. Las cabinas de almacenamiento pueden agruparse de modo que sea más sencillo ejecutar las tareas de supervisión o generación de informes. 
+---
+= Grupos de cabinas de almacenamiento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible gestionar la infraestructura física y virtualizada si se agrupa un conjunto de cabinas de almacenamiento. Las cabinas de almacenamiento pueden agruparse de modo que sea más sencillo ejecutar las tareas de supervisión o generación de informes.
+
+
+
+== Tipos de grupos de cabinas de almacenamiento
+
+* *Todo el grupo*
++
+El grupo todo es el predeterminado e incluye a todas las cabinas de almacenamiento detectadas en la organización. Es posible acceder al grupo desde la vista principal.
+
+* *Grupo creado por el usuario*
++
+Un grupo creado por el usuario incluye las cabinas de almacenamiento que el usuario selecciona y añade manualmente al grupo. Es posible acceder a este tipo de grupo desde la vista principal.
+
+

@@ -1,0 +1,18 @@
+---
+permalink: sm-storage/what-is-preferred-controller-ownership.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, preferred, controller, ownership 
+summary: La propiedad de controladora preferida define la controladora designada como la controladora propietaria, o primaria, del volumen. 
+---
+= ¿Qué es la propiedad de controladora preferida?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La propiedad de controladora preferida define la controladora designada como la controladora propietaria, o primaria, del volumen.
+
+La propiedad de la controladora es sumamente importante y debe planificarse con cuidado. Las controladoras deben equilibrarse lo más posible en cuanto a las operaciones de I/o totales.
+
+Por ejemplo, si una controladora lee principalmente bloques de datos secuenciales grandes y la otra posee bloques de datos pequeños con lecturas y escrituras frecuentes, las cargas son muy diferentes. Conocer cuáles volúmenes contienen qué tipo de datos permite equilibrar las transferencias de I/o de forma equitativa en ambas controladoras.

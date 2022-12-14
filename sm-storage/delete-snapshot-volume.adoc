@@ -1,0 +1,37 @@
+---
+permalink: sm-storage/delete-snapshot-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, snapshot, volume 
+summary: Es posible eliminar un volumen Snapshot o un grupo de coherencia Snapshot que ya no se necesitan para fines de backup o prueba de aplicaciones de software. 
+---
+= Eliminar volumen Snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible eliminar un volumen Snapshot o un grupo de coherencia Snapshot que ya no se necesitan para fines de backup o prueba de aplicaciones de software.
+
+También es posible especificar si se desea eliminar el volumen de capacidad reservada Snapshot asociado a `read-write` volumen snapshot o conservar el volumen de capacidad reservada snapshot como volumen sin asignar.
+
+.Acerca de esta tarea
+Si se elimina un volumen base, automáticamente se eliminan todos los volúmenes Snapshot o grupos de coherencia Snapshot asociados. No se puede eliminar un volumen Snapshot que está en una copia de volumen con el estado *en curso*.
+
+.Pasos
+. Seleccione MENU:Storage[Snapshots].
+. Seleccione la ficha *volúmenes Snapshot*.
++
+System Manager muestra todos los volúmenes Snapshot asociados con la cabina de almacenamiento.
+
+. Seleccione el volumen Snapshot que desea eliminar y, a continuación, seleccione menú:tareas no comunes[Eliminar].
+. Confirme que desea realizar la operación y, a continuación, haga clic en *Eliminar*.
+
+
+.Resultados
+System Manager realiza lo siguiente:
+
+* Elimina todos los volúmenes Snapshot miembro (para un volumen Snapshot en un grupo de coherencia Snapshot).
+* Elimina todas las asignaciones de hosts asociadas.
+

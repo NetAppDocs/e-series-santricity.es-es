@@ -1,0 +1,48 @@
+---
+permalink: sm-storage/disable-snapshot-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, disable, snapshot, volume 
+summary: Es posible deshabilitar un volumen Snapshot o un volumen Snapshot en un grupo de coherencia cuando ya no se lo necesita o se desea dejar de usarlo de manera temporal. 
+---
+= Deshabilitar volumen Snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible deshabilitar un volumen Snapshot o un volumen Snapshot en un grupo de coherencia cuando ya no se lo necesita o se desea dejar de usarlo de manera temporal.
+
+.Acerca de esta tarea
+Utilice la opción Deshabilitar si se aplica alguna de estas condiciones:
+
+* Terminó sus tareas con el volumen Snapshot o el volumen Snapshot de un grupo de coherencia Snapshot por el momento.
+* Desea volver a crear el volumen Snapshot o el volumen Snapshot de un grupo de coherencia Snapshot (que está designado como de lectura y escritura) en el futuro y quiere conservar la capacidad reservada asociada para no tener que volver a crearla.
+* Desea aumentar el rendimiento de la cabina de almacenamiento deteniendo la actividad de escritura en un volumen Snapshot de lectura y escritura.
+
+
+Si el volumen Snapshot o el volumen Snapshot de un grupo de coherencia Snapshot se designa como de lectura y escritura, esta opción también le permite detener toda la actividad de escritura futura con su volumen de capacidad reservada asociado. Si decide volver a crear el volumen Snapshot o el volumen Snapshot de un grupo de coherencia Snapshot, debe seleccionar una imagen Snapshot en el mismo volumen base.
+
+[NOTE]
+====
+Si el volumen Snapshot o el volumen Snapshot de un grupo de coherencia Snapshot forma parte de una relación de copia en línea, no podrá utilizar la opción Deshabilitar en el volumen.
+
+====
+.Pasos
+. Seleccione MENU:Storage[Snapshots].
+. Seleccione la ficha *volúmenes Snapshot*.
++
+System Manager muestra todos los volúmenes Snapshot asociados con la cabina de almacenamiento.
+
+. Seleccione el volumen Snapshot que desea deshabilitar y, a continuación, seleccione menú:tareas no comunes[Deshabilitar].
+. Confirme que desea realizar la operación y haga clic en *Desactivar*.
+
+
+.Resultados
+* El volumen Snapshot sigue asociado con su volumen base.
+* El volumen Snapshot conserva su nombre WWN.
+* Si es de lectura y escritura, el volumen Snapshot conserva su capacidad reservada asociada.
+* El volumen Snapshot conserva todas las asignaciones de hosts y puede acceder a ellos. Sin embargo, se producen fallos en las solicitudes de lectura y escritura.
+* El volumen Snapshot pierde la asociación con su imagen Snapshot.
+

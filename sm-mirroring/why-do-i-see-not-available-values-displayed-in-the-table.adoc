@@ -1,0 +1,16 @@
+---
+permalink: sm-mirroring/why-do-i-see-not-available-values-displayed-in-the-table.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, Not Available 
+summary: En la tabla se enumeran los valores no disponible cuando la visualización de los datos ubicados en la cabina de almacenamiento remota no se encuentra disponible. 
+---
+= ¿Por qué se muestran valores no disponibles en la tabla?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+En la tabla se enumeran los valores no disponible cuando la visualización de los datos ubicados en la cabina de almacenamiento remota no se encuentra disponible.
+
+Para visualizar los datos de la cabina de almacenamiento remota, ejecute System Manager desde Unified Manager.

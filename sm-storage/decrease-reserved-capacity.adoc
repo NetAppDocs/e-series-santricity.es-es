@@ -1,0 +1,47 @@
+---
+permalink: sm-storage/decrease-reserved-capacity.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, decrease, reserved, capacity 
+summary: Puede utilizar la opción disminuir capacidad para reducir la capacidad reservada de los siguientes objetos de almacenamiento; grupo Snapshot, volumen Snapshot y volumen miembro de grupo de coherencia. Puede reducir la capacidad reservada solo en las cantidades que utilizó para aumentarla. 
+---
+= Reduzca la capacidad reservada
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede utilizar la opción disminuir capacidad para reducir la capacidad reservada de los siguientes objetos de almacenamiento: Grupo Snapshot, volumen Snapshot y volumen miembro de grupo de coherencia. Puede reducir la capacidad reservada solo en las cantidades que utilizó para aumentarla.
+
+.Antes de empezar
+* El objeto de almacenamiento debe contener más de un volumen de capacidad reservada.
+* El objeto de almacenamiento no debe ser un volumen de pareja reflejado.
+* Si el objeto de almacenamiento es un volumen Snapshot, debe estar deshabilitado.
+* Si el objeto de almacenamiento es un grupo Snapshot, no debe contener ninguna imagen Snapshot asociada.
+
+
+.Acerca de esta tarea
+Revise las siguientes directrices:
+
+* Es posible eliminar volúmenes de capacidad reservada solo en el orden inverso en que se añadieron.
+* No es posible reducir la capacidad reservada de un volumen Snapshot de solo lectura, ya que no tiene ninguna capacidad reservada asociada. Solo los volúmenes Snapshot que son de lectura y escritura requieren capacidad reservada.
+
+
+.Pasos
+. Seleccione MENU:almacenamiento[Pools y grupos de volúmenes].
+. Haga clic en la pestaña *capacidad reservada*.
+. Seleccione el objeto de almacenamiento para el que desea reducir la capacidad reservada y haga clic en *disminuir capacidad*.
++
+Se muestra el cuadro de diálogo disminuir capacidad reservada.
+
+. Seleccione la cantidad de capacidad en que desea reducir la capacidad reservada y haga clic en *disminuir*.
+
+
+.Resultados
+System Manager realiza lo siguiente:
+
+* Actualiza la capacidad del objeto de almacenamiento.
+* Muestra la capacidad reservada recientemente actualizada para el objeto de almacenamiento.
+* Cuando reduce la capacidad de un volumen Snapshot, System Manager hace una transición automática del volumen Snapshot al estado deshabilitado. Esto significa que el volumen Snapshot no está asociado a una imagen Snapshot y, en consecuencia, no puede asignarse a un host para I/O.
+

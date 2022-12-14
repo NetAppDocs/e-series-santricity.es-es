@@ -1,0 +1,35 @@
+---
+permalink: sm-settings/enable-or-disable-legacy-management-interface.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, enable, disable, legacy, management, interface, 
+summary: 'Es posible habilitar o deshabilitar la interfaz de gestión heredada (Symbol), que es un método de comunicación entre la cabina de almacenamiento y el cliente de gestión.' 
+---
+= Habilitar o deshabilitar la interfaz de gestión heredada
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible habilitar o deshabilitar la interfaz de gestión heredada (Symbol), que es un método de comunicación entre la cabina de almacenamiento y el cliente de gestión.
+
+.Acerca de esta tarea
+De manera predeterminada, la interfaz de gestión heredada está activada. Si se desactiva, la cabina de almacenamiento y su cliente de gestión utilizan un método más seguro de comunicación (API DE REST a través de https); sin embargo, ciertas herramientas y tareas pueden verse afectadas si se deshabilita la cabina.
+
+[NOTE]
+====
+Para el sistema de almacenamiento EF600, esta función está deshabilitada de manera predeterminada.
+
+====
+La configuración afecta a las operaciones de la siguiente manera:
+
+* *Activado* (predeterminado) -- Configuración necesaria para configurar la duplicación con la CLI y otras herramientas, como el adaptador OCI.
+* *Off* -- Configuración requerida para reforzar la confidencialidad en las comunicaciones entre la matriz de almacenamiento y el cliente de administración, y para acceder a herramientas externas. Opción recomendada para configurar un servidor de directorio (LDAP).
+
+
+.Pasos
+. Seleccione MENU:Settings[System].
+. Desplácese hacia abajo hasta *Configuración adicional* y, a continuación, haga clic en *Cambiar interfaz de administración*.
+. En el cuadro de diálogo, haga clic en *Sí* para continuar.
+

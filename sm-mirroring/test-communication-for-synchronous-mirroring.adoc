@@ -1,0 +1,34 @@
+---
+permalink: sm-mirroring/test-communication-for-synchronous-mirroring.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, test, communication, synchronous, mirroring, 
+summary: Se puede probar la comunicación entre una cabina de almacenamiento local y una cabina de almacenamiento remota para diagnosticar posibles problemas de comunicación para una pareja reflejada que está participando en un mirroring síncrono. 
+---
+= Prueba de comunicación para mirroring síncrono
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se puede probar la comunicación entre una cabina de almacenamiento local y una cabina de almacenamiento remota para diagnosticar posibles problemas de comunicación para una pareja reflejada que está participando en un mirroring síncrono.
+
+.Acerca de esta tarea
+Se ejecutan dos pruebas diferentes:
+
+* *Comunicación* -- verifica que las dos matrices de almacenamiento tengan una ruta de comunicación. La prueba de comunicación valida la comunicación entre la cabina de almacenamiento y la cabina de almacenamiento remota, así como la existencia del volumen secundario asociado con la pareja reflejada en la cabina de almacenamiento remota.
+* *Latencia* -- envía un comando de unidad de prueba SCSI al volumen secundario en la matriz de almacenamiento remota asociada con la pareja reflejada para probar la latencia mínima, media y máxima.
+
+
+.Pasos
+. Seleccione MENU:Storage[Synchronous Mirroring].
+. Seleccione la pareja reflejada que desea probar y, a continuación, seleccione *probar comunicación*.
+. Revise la información que se muestra en la ventana resultados y, si fuera necesario, siga la acción correctiva indicada.
++
+[NOTE]
+====
+Si la prueba de comunicación presenta un error, se sigue ejecutando después de cerrar este cuadro de diálogo hasta que se restablezca la comunicación entre la pareja reflejada.
+
+====
+

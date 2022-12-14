@@ -1,0 +1,32 @@
+---
+permalink: sm-hardware/reset-reboot-controller.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reset, reboot, controller 
+summary: 'Algunos problemas requieren un restablecimiento de la controladora (reinicio). Es posible restablecer la controladora incluso sin tener acceso físico a ella.' 
+---
+= Restablezca (reinicie) la controladora
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Algunos problemas requieren un restablecimiento de la controladora (reinicio). Es posible restablecer la controladora incluso sin tener acceso físico a ella.
+
+.Antes de empezar
+* La cabina de almacenamiento debe tener dos controladoras. La controladora que no se restablece debe estar en línea (en el estado óptimo).
+* Asegúrese de que no existan volúmenes en uso o que exista un controlador multivía instalado en todos los hosts que utilizan estos volúmenes.
+
+
+.Pasos
+. Seleccione *hardware*.
+. Si el gráfico muestra las unidades, haga clic en *Mostrar parte posterior de la bandeja*.
++
+El gráfico cambia y muestra las controladoras en lugar de las unidades.
+
+. Haga clic en la controladora que desea restablecer.
++
+Aparece el menú contextual de la controladora.
+
+. Seleccione *Restablecer* y confirme que desea realizar la operación.
+

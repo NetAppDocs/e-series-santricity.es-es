@@ -1,0 +1,74 @@
+---
+permalink: sm-settings/access-management-with-saml.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access management, saml 
+summary: 'Para Access Management, los administradores pueden usar las funcionalidades de lenguaje de marcado de aserción de seguridad (SAML) 2.0 que están integradas en la cabina.' 
+---
+= Access Management con SAML
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para Access Management, los administradores pueden usar las funcionalidades de lenguaje de marcado de aserción de seguridad (SAML) 2.0 que están integradas en la cabina.
+
+
+
+== Flujo de trabajo de configuración
+
+La configuración de SAML funciona de la siguiente manera:
+
+. Un administrador inicia sesión en System Manager con un perfil de usuario que incluye permisos de administración de seguridad.
++
+[NOTE]
+====
+La `admin` El usuario tiene acceso completo a todas las funciones en System Manager.
+
+====
+. El administrador se dirige a la ficha *SAML* de Access Management.
+. Un administrador configura las comunicaciones con el proveedor de identidades (IDP). Un IDP es un sistema externo que se usa para solicitar credenciales a un usuario y determinar si el usuario se autentica correctamente. Para configurar las comunicaciones con la cabina de almacenamiento, el administrador descarga el archivo de metadatos de IDP desde el sistema IDP y luego usa System Manager para cargarlo a la cabina de almacenamiento.
+. Un administrador establece una relación de confianza entre el proveedor de servicios y el IDP. Un proveedor de servicios controla la autorización de usuarios; en este caso, la controladora en la cabina de almacenamiento actúa como proveedor de servicios. Para configurar las comunicaciones, el administrador usa System Manager para exportar el archivo de metadatos del proveedor de servicios en cada controladora. Desde el sistema IDP, el administrador importa estos archivos de metadatos al IDP.
++
+[NOTE]
+====
+Los administradores también deben asegurarse de que el IDP admite la capacidad para obtener un ID de nombre en el momento de la autenticación.
+
+====
+. El administrador asigna los roles de la cabina de almacenamiento a los atributos de usuario definidos en el IDP. Para hacerlo, el administrador usa System Manager y crea las asignaciones.
+. El administrador prueba el inicio de sesión de SSO en la URL del IDP. Esta prueba garantiza que la cabina de almacenamiento y el IDP puedan comunicarse.
++
+[CAUTION]
+====
+Una vez que se habilita SAML, _no se puede deshabilitar desde la interfaz de usuario, tampoco se puede editar desde la configuración de IDP. Si necesita deshabilitar o editar la configuración de SAML, comuníquese con el soporte técnico para obtener ayuda.
+
+====
+. En System Manager, el administrador del sistema habilita SAML para la cabina de almacenamiento.
+. Los usuarios inician sesión en el sistema con sus credenciales de SSO.
+
+
+
+
+== Gestión
+
+Cuando se usa SAML con fines de autenticación, los administradores pueden realizar las siguientes tareas de administración:
+
+* Modifique o cree nuevas asignaciones de roles
+* Exporte los archivos del proveedor de servicios
+
+
+
+
+== Restricciones de acceso
+
+Cuando se habilita SAML, los usuarios no pueden detectar ni gestionar el almacenamiento de esa cabina desde Unified Manager o la interfaz de Storage Manager heredada.
+
+Además, los siguientes clientes no pueden obtener acceso a los recursos y los servicios de la cabina de almacenamiento:
+
+* Enterprise Management Window (EMW)
+* Interfaz de línea de comandos (CLI)
+* Clientes de kits de desarrollo de software (SDK)
+* Clientes en banda
+* Clientes HTTP de la API de REST de autenticación básica
+* Inicio de sesión mediante extremo estándar de la API de REST
+

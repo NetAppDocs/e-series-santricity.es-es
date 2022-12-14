@@ -1,0 +1,39 @@
+---
+permalink: sm-mirroring/change-role-between-volumes-in-a-mirrored-pair.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, role, volumes, mirrored, pair, 
+summary: Es posible realizar una reversión de roles entre los dos volúmenes de una pareja reflejada que participan en un mirroring síncrono para fines administrativos o en el caso de un desastre en la cabina de almacenamiento local. 
+---
+= Cambiar roles entre volúmenes de una pareja reflejada
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible realizar una reversión de roles entre los dos volúmenes de una pareja reflejada que participan en un mirroring síncrono. Esta tarea puede ser necesaria para fines administrativos o en el caso de un desastre en la cabina de almacenamiento local.
+
+.Acerca de esta tarea
+Es posible degradar el volumen principal al rol secundario o promocionar el volumen secundario al rol primario. Cualquier host que acceda al volumen primario tiene acceso de lectura/escritura al volumen. Cuando el volumen primario se convierte en un volumen secundario, solo se escriben en el volumen las escrituras remotas iniciadas por la controladora primaria.
+
+.Pasos
+. Seleccione MENU:Storage[Synchronous Mirroring].
+. Seleccione la pareja reflejada que contiene los volúmenes con los roles que desea cambiar y luego seleccione menu:más[Cambiar rol].
++
+El sistema muestra una confirmación.
+
+. Confirme que desea cambiar el rol de los volúmenes y seleccione *Cambiar rol*.
++
+[NOTE]
+====
+Si la cabina de almacenamiento local no puede comunicarse con la cabina de almacenamiento remota, se muestra el cuadro de diálogo no se puede establecer contacto con la cabina de almacenamiento en el sistema cuando se solicita un cambio de rol, pero la cabina de almacenamiento remota no puede contactarse. Haga clic en *Sí* para forzar el cambio de rol.
+
+====
+
+
+.Resultados
+System Manager realiza la siguiente acción:
+
+* Si el volumen asociado de la pareja reflejada puede contactarse, cambian los roles entre los volúmenes. En System Manager, se promociona el volumen secundario de la pareja reflejada al rol primario o se degrada el volumen primario de la pareja reflejada al rol secundario (según la selección).
+

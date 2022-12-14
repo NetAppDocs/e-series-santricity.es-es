@@ -1,0 +1,39 @@
+---
+permalink: sm-hardware/what-are-battery-learn-cycles.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, battery, learn, cycle, 
+summary: Un ciclo de aprendizaje es un ciclo automático para calibrar el indicador de batería inteligente. 
+---
+= ¿Qué son los ciclos de aprendizaje de la batería?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un ciclo de aprendizaje es un ciclo automático para calibrar el indicador de batería inteligente.
+
+Un ciclo de aprendizaje consta de las siguientes fases:
+
+* Descarga controlada de batería
+* Periodo de descanso
+* Carga
+
+
+Las baterías se descargan hasta un umbral predeterminado. Durante esta fase, se calibra el indicador de batería.
+
+Un ciclo de aprendizaje requiere los siguientes parámetros:
+
+* Baterías totalmente cargadas
+* Baterías que no estén sobrecalentadas
+
+
+Los ciclos de aprendizaje para sistemas de controladoras dobles se ejecutan simultáneamente. Para controladoras que tienen alimentación de backup de varias baterías o conjuntos de celdas de batería, los ciclos de aprendizaje se ejecutan secuencialmente.
+
+Los ciclos de aprendizaje se programan para comenzar automáticamente en intervalos regulares, a la misma hora y el mismo día de la semana. El intervalo entre los ciclos se describe en semanas.
+
+[NOTE]
+====
+Un ciclo de aprendizaje podría demorar varias horas para completarse.
+
+====

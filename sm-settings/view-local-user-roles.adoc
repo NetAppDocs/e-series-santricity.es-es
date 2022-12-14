@@ -1,0 +1,37 @@
+---
+permalink: sm-settings/view-local-user-roles.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, local, user, roles, 
+summary: 'Desde la pestaña roles de usuario local, es posible ver las asignaciones de los perfiles de usuario a los roles predeterminados. Estas asignaciones forman parte de los controles de acceso basados en roles (RBAC) aplicados en la cabina de almacenamiento.' 
+---
+= Ver los roles de usuario local
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Desde la pestaña roles de usuario local, es posible ver las asignaciones de los perfiles de usuario a los roles predeterminados. Estas asignaciones forman parte de los controles de acceso basados en roles (RBAC) aplicados en la cabina de almacenamiento.
+
+.Antes de empezar
+Debe iniciar sesión con un perfil de usuario que cuente con permisos de administración de seguridad. De lo contrario, no se mostrarán las funciones de Access Management.
+
+.Acerca de esta tarea
+Los perfiles de usuario y las asignaciones no pueden cambiarse. Solo las contraseñas pueden modificarse.
+
+.Pasos
+. Seleccione MENU:Settings[Access Management].
+. Seleccione la ficha *roles de usuario local*.
++
+Los perfiles de usuario se muestran en la tabla:
+
++
+** *Administrador raíz* (admin) -- Super administrador que tiene acceso a todas las funciones del sistema. Este perfil de usuario incluye todos los roles.
+** *Administrador de almacenamiento* (almacenamiento) -- el administrador responsable de todo el aprovisionamiento de almacenamiento. Este perfil de usuario incluye los siguientes roles: Administrador de almacenamiento, administrador de soporte y Supervisión.
+** *Administración de seguridad* (seguridad): El usuario responsable de la configuración de seguridad, incluidas la administración de acceso, la administración de certificados y las funciones de unidad con seguridad habilitada. Este perfil de usuario incluye los siguientes roles: Administrador de seguridad y Supervisión.
+** *Support admin* (asistencia técnica) -- el usuario responsable de recursos de hardware, datos de fallos y actualizaciones de firmware. Este perfil de usuario incluye los siguientes roles: Support Admin y Supervisión.
+** *Monitor* (monitor) -- un usuario con acceso de sólo lectura al sistema. Este perfil de usuario incluye únicamente el rol Supervisión.
+
+
+

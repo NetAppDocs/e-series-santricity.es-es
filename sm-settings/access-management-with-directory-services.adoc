@@ -1,0 +1,46 @@
+---
+permalink: sm-settings/access-management-with-directory-services.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access management, directory services, 
+summary: 'Para Access Management, los administradores pueden usar un servidor LDAP (protocolo ligero de acceso a directorios) y un servicio de directorios, como Active Directory de Microsoft.' 
+---
+= Access Management con servicios de directorio
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para Access Management, los administradores puede usar un servidor LDAP (protocolo ligero de acceso a directorios) y un servicio de directorios, como Active Directory de Microsoft.
+
+
+
+== Flujo de trabajo de configuración
+
+Si se utilizan un servidor LDAP y un servicio de directorio en la red, la configuración opera de la siguiente manera:
+
+. Un administrador inicia sesión en System Manager con un perfil de usuario que incluye permisos de administración de seguridad.
++
+[NOTE]
+====
+La `admin` el usuario tiene acceso completo a todas las funciones del sistema.
+
+====
+. El administrador introduce los ajustes de configuración del servidor LDAP. Entre ellas se encuentran el nombre de dominio, la URL y la información de la cuenta vinculada.
+. Si el servidor LDAP utiliza un protocolo seguro (LDAPS), el administrador carga una cadena de certificados de Certificate Authority (CA) para la autenticación entre el servidor LDAP y la cabina de almacenamiento.
+. Después de establecer la conexión del servidor, el administrador asigna los grupos de usuarios a los roles de la cabina de almacenamiento. Estos roles están predefinidos y no pueden modificarse.
+. El administrador prueba la conexión entre el servidor LDAP y la cabina de almacenamiento.
+. Los usuarios inician sesión en el sistema con las credenciales de LDAP/servicios de directorio asignadas.
+
+
+
+
+== Gestión
+
+Al utilizar los servicios de directorio para la autenticación, los administradores pueden realizar las siguientes tareas de gestión:
+
+* Añadir servidor de directorio.
+* Editar la configuración del servidor de directorio.
+* Asignar usuarios LDAP a roles de usuario local.
+* Quitar un servidor de directorio.
+

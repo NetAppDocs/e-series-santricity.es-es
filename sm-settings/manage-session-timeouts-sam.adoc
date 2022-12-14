@@ -1,0 +1,42 @@
+---
+permalink: sm-settings/manage-session-timeouts-sam.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, manage, session, timeouts, 
+summary: Es posible configurar los tiempos de espera en System Manager de SANtricity para que las sesiones inactivas de los usuarios se desconecten después de un periodo especificado. 
+---
+= Gestionar los tiempos de espera de sesión
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible configurar los tiempos de espera en System Manager para que las sesiones inactivas de los usuarios se desconecten después de un periodo especificado.
+
+.Acerca de esta tarea
+De manera predeterminada, el tiempo de espera de sesión para System Manager es de 30 minutos. Es posible ajustar el tiempo, o bien directamente pueden deshabilitarse los tiempos de espera de sesión.
+
+[NOTE]
+====
+Si se configura Access Management con las funcionalidades del lenguaje de marcado de aserción de seguridad (SAML) integradas en la cabina, es posible que se agote el tiempo de espera de sesión cuando la sesión SSO del usuario alcance su límite máximo. Esto puede ocurrir antes del tiempo de espera de sesión de System Manager.
+
+====
+.Pasos
+. Seleccione MENU:Settings[System].
+. En la sección General, seleccione *Habilitar/deshabilitar tiempo de espera de la sesión*.
++
+Se abre el cuadro de diálogo Habilitar/deshabilitar tiempo de espera de la sesión.
+
+. Utilice los controles de desplazamiento para aumentar o disminuir el tiempo en minutos.
++
+El tiempo de espera mínimo que puede configurarse para System Manager es de 15 minutos.
+
++
+[NOTE]
+====
+Para desactivar los tiempos de espera de sesiones, anule la selección de la casilla de verificación *establecer el lapso...*.
+
+====
+. Haga clic en *Guardar*.
+

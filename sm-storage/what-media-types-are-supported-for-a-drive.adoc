@@ -1,0 +1,14 @@
+---
+permalink: sm-storage/what-media-types-are-supported-for-a-drive.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, media, types, supported, hdd, hard disk, ssd 
+summary: 'Los siguientes tipos de medios son compatibles: Unidad de disco duro (HDD) y disco de estado sólido (SSD).' 
+---
+= ¿Qué tipos de medios son compatibles para una unidad?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los siguientes tipos de medios son compatibles: Unidad de disco duro (HDD) y disco de estado sólido (SSD).

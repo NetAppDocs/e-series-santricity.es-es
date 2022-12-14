@@ -1,0 +1,38 @@
+---
+permalink: sm-storage/snapshot-schedules-and-snapshot-consistency-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot, schedules, snapshot, consistency groups 
+summary: Utilice programaciones para recoger imágenes Snapshot y utilice grupos de coherencia Snapshot para gestionar varios volúmenes base. 
+---
+= Programaciones Snapshot y grupos de coherencia Snapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilice programaciones para recoger imágenes Snapshot y utilice grupos de coherencia Snapshot para gestionar varios volúmenes base.
+
+Para gestionar de forma fácil las operaciones Snapshot en volúmenes base, es posible utilizar las siguientes funciones:
+
+* *Horario de instantánea* -- automatizar las instantáneas para un solo volumen base.
+* *Grupo de consistencia de instantánea* -- Administrar varios volúmenes base como una sola entidad.
+
+
+
+
+== Programación Snapshot
+
+Si desea capturar Snapshot automáticamente para un volumen base, puede crear una programación. Por ejemplo, puede definir una programación para capturar imágenes Snapshot todos los sábados a la medianoche, el primer día de cada mes o en las fechas y los horarios que decida. Al alcanzar el máximo de 32 Snapshot para una sola programación, puede suspender las Snapshot programadas, aumentar la capacidad reservada o eliminar Snapshot. Es posible eliminar Snapshot manualmente o mediante la automatización del proceso de eliminación. Cuando se elimina una imagen Snapshot, se puede reutilizar la capacidad reservada adicional disponible.
+
+
+
+== Grupo de coherencia Snapshot
+
+Si desea que se capturen imágenes Snapshot de varios volúmenes al mismo tiempo, puede crear un grupo de coherencia Snapshot. Las acciones de imágenes Snapshot se realizan en el grupo de coherencia Snapshot en conjunto. Por ejemplo, puede programar Snapshot sincronizadas de todos los volúmenes con la misma Marca de hora. Los grupos de coherencia Snapshot son ideales para las aplicaciones que abarcan varios volúmenes, como las aplicaciones de base de datos que almacenan los registros en un volumen y los archivos de base de datos en otro volumen.
+
+Los volúmenes incluidos en un grupo de coherencia Snapshot se denominan volúmenes miembro. Cuando se añade un volumen a un grupo de coherencia System Manager genera automáticamente capacidad reservada nueva equivalente a ese volumen miembro. Puede definir una programación para crear de forma automática una imagen Snapshot para cada volumen miembro.
+
+image::../media/sam1130-dwg-snapshots-consistency-groups-overview.gif[información general sobre los grupos de consistencia de las instantáneas dwg de sam1130]
+
+Esta 1 capacidad reservada; este 2 volumen miembro; e imágenes Snapshot de grupo de coherencia de aplicaciones 3

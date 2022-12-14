@@ -1,0 +1,89 @@
+---
+permalink: sm-support/what-does-unreadable-sectors-data-show-me.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, unreadable, sectors, 
+summary: Es posible visualizar datos detallados sobre sectores ilegibles detectados en las unidades de la cabina de almacenamiento. 
+---
+= ¿Qué indican los datos de sectores ilegibles?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible visualizar datos detallados sobre sectores ilegibles detectados en las unidades de la cabina de almacenamiento.
+
+El registro de sectores ilegibles muestra el sector ilegible más reciente primero. El registro contiene la siguiente información sobre los volúmenes que contienen los sectores ilegibles. Es posible ordenar los campos.
+
+[cols="25h,~"]
+|===
+| Campo | Descripción 
+
+
+ a| 
+Volumen afectado
+ a| 
+Muestra la etiqueta del volumen. Si un volumen faltante contiene sectores ilegibles, aparece el identificador a nivel mundial del volumen faltante.
+
+
+
+ a| 
+Número de unidad lógica (LUN)
+ a| 
+Muestra el LUN del volumen. Si el volumen no tiene LUN, el cuadro de diálogo muestra NA.
+
+
+
+ a| 
+Asignado a.
+ a| 
+Muestra los hosts o clústeres de hosts con acceso al volumen. Si el volumen no permite el acceso de un host, un clúster de hosts o incluso un clúster predeterminado, el cuadro de diálogo muestra NA.
+
+|===
+Para ver información adicional sobre los sectores ilegibles, haga clic en el símbolo más (+) junto a un volumen.
+
+[cols="25h,~"]
+|===
+| Campo | Descripción 
+
+
+ a| 
+Fecha/hora
+ a| 
+Muestra la fecha y la hora en que se detectó el sector ilegible.
+
+
+
+ a| 
+Dirección de bloque del volumen lógico
+ a| 
+Muestra la dirección de bloque lógico (LBA) del volumen.
+
+
+
+ a| 
+Ubicación de la unidad
+ a| 
+Muestra la ubicación de la bandeja de unidades, el cajón (si la bandeja de unidades posee cajones) y la bahía.
+
+
+
+ a| 
+Dirección de bloque de la unidad lógica
+ a| 
+Muestra el LBA de la unidad.
+
+
+
+ a| 
+Tipo de fallo
+ a| 
+Muestra uno de los siguientes tipos de fallos:
+
+* *Físico* -- un error de medios físicos.
+* *Lógico* -- un error de lectura en otra parte de la franja que causa datos ilegibles. Por ejemplo, un sector ilegible debido a errores de medios en otra parte del volumen.
+* *Incoherente* -- datos de redundancia incoherentes.
+* *Garantía de datos* -- un error de Garantía de datos.
+
+
+|===

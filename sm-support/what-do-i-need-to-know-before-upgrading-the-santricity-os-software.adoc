@@ -1,0 +1,55 @@
+---
+permalink: sm-support/what-do-i-need-to-know-before-upgrading-the-santricity-os-software.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, upgrading, santricity, os, software 
+summary: Antes de actualizar el software y el firmware de la controladora, tenga en cuenta estos puntos. 
+---
+= ¿Qué se debe saber para actualizar el software del SO SANtricity?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Antes de actualizar el software y firmware de la controladora, tenga en cuenta estos puntos.
+
+* Ha leído el documento y el `readme.txt` file y ha determinado que desea realizar la actualización.
+* Sabe si desea actualizar el firmware IOM.
++
+Normalmente, es conveniente actualizar todos los componentes al mismo tiempo. Sin embargo, se puede decidir no actualizar el firmware IOM si no se desea actualizarlo como parte de la actualización de software de la controladora del sistema operativo SANtricity o si el soporte técnico indica que se degrade el firmware IOM (solo es posible degradar el firmware mediante la interfaz de línea de comandos).
+
+* Sabe si desea actualizar el archivo NVSRAM de controladora.
++
+Normalmente, es conveniente actualizar todos los componentes al mismo tiempo. Sin embargo, puede decidir no actualizar el archivo NVSRAM de la controladora si el archivo ya se revisó o es una versión personalizada y no desea sobrescribirla.
+
+* Sabe si desea activarlo ahora o más adelante.
++
+Algunos motivos para activar la actualización más adelante pueden ser:
+
++
+** *Hora del día* -- la activación del software y del firmware puede llevar mucho tiempo, por lo que es posible que desee esperar hasta que las cargas de E/S sean más livianas. Las controladoras conmutan al nodo de respaldo durante la activación, de manera que el rendimiento podría ser inferior al habitual hasta que finalice la actualización.
+** *Tipo de paquete*: Es posible que desee probar el nuevo software y firmware en una matriz de almacenamiento antes de actualizar los archivos en otras matrices de almacenamiento.
+
+
+
+
+Los siguientes componentes forman parte de la actualización de software de la controladora del sistema operativo SANtricity:
+
+* *Software de gestión* -- System Manager es el software que administra la matriz de almacenamiento.
+* *Firmware de la controladora* -- el firmware de la controladora administra las E/S entre hosts y volúmenes.
+* *NVSRAM de controladora* -- NVSRAM de controladora es un archivo de controladora que especifica las configuraciones predeterminadas para las controladoras.
+* *Firmware del IOM* -- el firmware del módulo de I/o (IOM) administra la conexión entre una controladora y una bandeja de unidades. Además, supervisa el estado de los componentes.
+* *Software de supervisor* -- Software de supervisor es la máquina virtual en un controlador en el que se ejecuta el software.
+
+
+Como parte del proceso de actualización, es posible que el controlador de conmutación al nodo de respaldo/multivía del host o el controlador de HBA también deban actualizarse para que el host pueda interactuar con las controladoras correctamente.
+
+[NOTE]
+====
+Para determinar si este es el caso, consulte https://mysupport.netapp.com/matrix["Herramienta de matriz de interoperabilidad de NetApp"^].
+
+====
+Si la cabina de almacenamiento contiene una sola controladora o no existe un controlador multivía instalado, detenga la actividad de I/o de la cabina de almacenamiento para evitar errores en la aplicación. Si la cabina de almacenamiento tiene dos controladoras y existe un controlador multivía instalado, no necesita detener la actividad de I/O.
+
+
+CAUTION: No haga cambios en la cabina de almacenamiento mientras se realiza la actualización.

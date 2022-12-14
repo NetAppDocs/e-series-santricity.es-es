@@ -1,0 +1,195 @@
+---
+permalink: sm-support/review-the-possible-software-and-firmware-upgrade-errors.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, software, firmware, upgrade, errors 
+summary: Se pueden producir errores durante la actualización del software de la controladora o la actualización del firmware de la unidad. 
+---
+= Revisar los posibles errores de actualización de software y firmware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se pueden producir errores durante la actualización del software de la controladora o la actualización del firmware de la unidad.
+
+[cols="25h,~,~"]
+|===
+| Error de descarga de firmware | Descripción | Acción recomendada 
+
+
+ a| 
+Unidades asignadas con errores
+ a| 
+No se pudo actualizar una unidad asignada en la cabina de almacenamiento.
+ a| 
+La causa de este error puede ser que la unidad no tenga la firma apropiada. Asegúrese de que la unidad afectada sea una unidad autorizada. Póngase en contacto con el soporte técnico para obtener más información.
+
+Al reemplazar una unidad, asegúrese de que la capacidad de la unidad de reemplazo sea igual o mayor que la de la unidad con error que desea reemplazar.
+
+Puede reemplazar la unidad con error mientras la cabina de almacenamiento recibe I/O.
+
+
+
+ a| 
+Unidades de repuesto integradas
+ a| 
+Si la unidad se marcó como pieza de repuesto y se usa en un grupo de volúmenes, se produce un error en la actualización del firmware.
+ a| 
+Es necesario corregir esta condición de error para poder actualizar el firmware. Ejecute System Manager y use Recovery Guru para resolver el problema.
+
+
+
+ a| 
+Grupos de volúmenes incompletos
+ a| 
+Si se omite, se quita o no responde una unidad que forma parte de un grupo de volúmenes, se considera un grupo de volúmenes incompleto. Un grupo de volúmenes incompleto impide que se actualice el firmware.
+ a| 
+Si uno o varios grupos de volúmenes o pools de discos se muestran incompletos, es necesario corregir esta condición de error para poder actualizar el firmware. Ejecute System Manager y use Recovery Guru para resolver el problema.
+
+
+
+ a| 
+Operaciones exclusivas (que no sean análisis de medios en segundo plano/paridad) en ejecución en alguno de los grupos de volúmenes
+ a| 
+No se puede actualizar el firmware si existen operaciones exclusivas en curso en un volumen.
+ a| 
+Si existe una o varias operaciones exclusivas en curso, es necesario completarlas para poder actualizar el firmware. Utilice System Manager para supervisar el progreso de las operaciones.
+
+
+
+ a| 
+Volúmenes faltantes
+ a| 
+No se puede actualizar el firmware si no se encuentra algún volumen.
+ a| 
+Es necesario corregir la condición de volumen ausente para poder actualizar el firmware. Ejecute System Manager y use Recovery Guru para resolver el problema.
+
+
+
+ a| 
+El estado de alguna de las controladoras no es óptimo
+ a| 
+No se puede actualizar el firmware si el estado de algunas de las controladoras es diferente a Optimal.
+ a| 
+Se requiere atención en una de las controladoras de la cabina de almacenamiento. Es necesario corregir esta condición para poder actualizar el firmware. Ejecute System Manager y use Recovery Guru para resolver el problema.
+
+
+
+ a| 
+Error en la verificación de la controladora de base de datos de SPM
+ a| 
+No se puede actualizar el firmware debido a que la base de datos de asignación de particiones de almacenamiento se encuentra dañada.
+ a| 
+Se produjo un error en la base de datos de asignación de particiones de almacenamiento de una controladora. Póngase en contacto con el soporte técnico para resolver este problema.
+
+
+
+ a| 
+Validación de la base de datos de configuración (si es compatible con la versión de la controladora de la cabina de almacenamiento)
+ a| 
+No se puede actualizar el firmware debido a que la base de datos de configuración se encuentra dañada.
+ a| 
+Se produjo un error en la base de datos de configuración de una controladora. Póngase en contacto con el soporte técnico para resolver este problema.
+
+
+
+ a| 
+Comprobaciones relacionadas con MEL
+ a| 
+No se puede actualizar el firmware debido a que el registro de eventos contiene errores.
+ a| 
+Póngase en contacto con el soporte técnico para resolver este problema.
+
+
+
+ a| 
+Se notificaron más de 10 eventos críticos MEL o informativos DDE en los últimos 7 días
+ a| 
+No se puede actualizar el firmware debido a que se notificaron más de 10 eventos críticos MEL o informativos DDE en los últimos 7 días.
+ a| 
+Póngase en contacto con el soporte técnico para resolver este problema.
+
+
+
+ a| 
+Se notificaron más de 2 eventos críticos MEL de página 2C en los últimos 7 días
+ a| 
+No se puede actualizar el firmware debido a que se notificaron más de 2 eventos críticos MEL de página 2C en los últimos 7 días.
+ a| 
+Póngase en contacto con el soporte técnico para resolver este problema.
+
+
+
+ a| 
+Se notificaron más de 2 eventos críticos MEL de canal de unidad degradado en los últimos 7 días
+ a| 
+No se puede actualizar el firmware debido a que se notificaron más de 2 eventos críticos MEL de canal de unidad degradado en los últimos 7 días.
+ a| 
+Póngase en contacto con el soporte técnico para resolver este problema.
+
+
+
+ a| 
+Se notificaron más de 4 entradas cruciales MEL en los últimos 7 días
+ a| 
+No se puede actualizar el firmware debido a que se notificaron más de 4 entradas de registro de eventos críticos en los últimos 7 días.
+ a| 
+Póngase en contacto con el soporte técnico para resolver este problema.
+
+
+
+ a| 
+Se requiere una dirección IP de gestión válida
+ a| 
+Se requiere una dirección IP de controladora válida para ejecutar esta operación.
+ a| 
+Póngase en contacto con el soporte técnico para resolver este problema.
+
+
+
+ a| 
+El comando requiere que se proporcione una dirección IP de gestión activa para cada controladora
+ a| 
+Se requiere una dirección IP para cada controladora asociada a la cabina de almacenamiento a fin de realizar esta operación.
+ a| 
+Póngase en contacto con el soporte técnico para resolver este problema.
+
+
+
+ a| 
+Se devuelve un tipo de archivo de descarga no controlado
+ a| 
+No se admite el archivo de descarga especificado.
+ a| 
+Póngase en contacto con el soporte técnico para resolver este problema.
+
+
+
+ a| 
+Se produjo un error durante el procedimiento de carga y descarga de firmware
+ a| 
+No se pudo descargar el firmware debido a que la controladora no pudo procesar la solicitud. Verifique que el estado de la cabina de almacenamiento sea óptimo y vuelva a intentar la operación.
+ a| 
+Si este error se vuelve a producir después de verificar que el estado de la cabina de almacenamiento es óptimo, póngase en contacto con el soporte técnico para resolver este problema.
+
+
+
+ a| 
+Se produjo un error durante el procedimiento de activación de firmware
+ a| 
+No se pudo activar el firmware debido a que la controladora no pudo procesar la solicitud. Verifique que el estado de la cabina de almacenamiento sea óptimo y vuelva a intentar la operación.
+ a| 
+Si este error se vuelve a producir después de verificar que el estado de la cabina de almacenamiento es óptimo, póngase en contacto con el soporte técnico para resolver este problema.
+
+
+
+ a| 
+Se agotó el tiempo de espera para que se reinicie la controladora \{0}
+ a| 
+El software de gestión no puede volver a conectarse con la controladora \{0} después de un reinicio. Compruebe que exista una ruta de acceso de conexión en funcionamiento a la cabina de almacenamiento y vuelva a intentar la operación si no se completó correctamente.
+ a| 
+Si este error se vuelve a producir después de verificar que el estado de la cabina de almacenamiento es óptimo, póngase en contacto con el soporte técnico para resolver este problema.
+
+|===
+Puede corregir algunas de estas condiciones mediante Recovery Guru en System Manager. No obstante, es posible que deba ponerse en contacto con el soporte técnico por alguna de las condiciones. La información acerca de la descarga más reciente del firmware de la controladora se encuentra disponible en la cabina de almacenamiento. Con esta información el soporte técnico podrá comprender las condiciones de error por las que no se pudo descargar y actualizar el firmware.

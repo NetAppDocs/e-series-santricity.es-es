@@ -1,0 +1,43 @@
+---
+permalink: sm-settings/add-syslog-servers-for-alerts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, add, syslog, servers, alerts, 
+summary: Es posible añadir un máximo de cinco servidores para las alertas de syslog. 
+---
+= Añada servidores de syslog para alertas
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible añadir un máximo de cinco servidores para las alertas de syslog.
+
+.Antes de empezar
+* Debe estar disponible la dirección del servidor de syslog. La dirección debe ser un nombre de dominio completo o una dirección IPv4 o IPv6.
+* Debe estar disponible el número de puerto UDP del servidor de syslog. Por lo general, se trata del puerto 514.
+
+
+.Pasos
+. Seleccione MENU:Settings[Alerts].
+. Seleccione la ficha *Syslog*.
+. Seleccione *Agregar servidores de syslog*.
++
+Se abre el cuadro de diálogo Añadir servidor de syslog.
+
+. Seleccione *Añadir otro servidor de syslog*.
+. Introduzca información para el servidor syslog y, a continuación, haga clic en *Agregar*.
++
+** *Dirección del servidor Syslog* -- Introduzca un nombre de dominio completo, una dirección IPv4 o una dirección IPv6.
+** *Puerto UDP* -- por lo general, el puerto UDP para syslog es 514.
+
+
++
+
+NOTE: Es posible configurar hasta cinco servidores de syslog.
+
+
+
+.Resultados
+Las direcciones del servidor de syslog aparecen en la tabla.

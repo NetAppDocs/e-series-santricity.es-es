@@ -1,0 +1,20 @@
+---
+permalink: um-manage/why-would-i-change-this-percentage-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, change, percentage 
+summary: 'En general, la capacidad reservada constituye el 20 % del volumen base para operaciones de mirroring asíncrono. Por lo general, esta capacidad es suficiente.' 
+---
+= ¿Por qué debería cambiar este porcentaje?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+En general, la capacidad reservada constituye el 20 % del volumen base para operaciones de mirroring asíncrono. Por lo general, esta capacidad es suficiente.
+
+La capacidad necesaria varía, según la frecuencia y el tamaño de las escrituras de I/o en el volumen base y el periodo durante el cual se pretenda utilizar la operación de servicios de copia del objeto de almacenamiento. Por lo general, se debe seleccionar un porcentaje alto de capacidad reservada si existe una de estas condiciones, o ambas:
+
+* Si la vida útil de la operación de servicios de copia de un objeto de almacenamiento en particular será muy prolongada.
+* Si un gran porcentaje de bloques de datos cambiará en el volumen base debido a una gran actividad de I/O. Utilice los datos históricos de rendimiento u otras utilidades del sistema operativo como ayuda para determinar la actividad de I/o típica en el volumen base.
+

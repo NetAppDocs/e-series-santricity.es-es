@@ -1,0 +1,14 @@
+---
+permalink: sm-support/take-recovery-action-on-storage-array-status.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, take, recovery, action, storage, array, status 
+summary: Es posible actuar sobre el estado actual de la cabina de almacenamiento. Para ello, se debe revisar el registro de sectores ilegibles, volver a habilitar los puertos de la unidad y borrar el modo de recuperación. 
+---
+= Realizar una acción de recuperación sobre el estado de la cabina de almacenamiento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible actuar sobre el estado actual de la cabina de almacenamiento. Para ello, se debe revisar el registro de sectores ilegibles, volver a habilitar los puertos de la unidad y borrar el modo de recuperación.

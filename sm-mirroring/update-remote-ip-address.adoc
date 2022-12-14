@@ -1,0 +1,34 @@
+---
+permalink: sm-mirroring/update-remote-ip-address.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, update, remote, ip, address, connection, 
+summary: Es posible actualizar la dirección IP de iSCSI para que se vuelva a establecer la conexión entre la cabina de almacenamiento remota y la cabina de almacenamiento local. 
+---
+= Actualice la dirección IP remota
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible actualizar la dirección IP de iSCSI para que se vuelva a establecer la conexión entre la cabina de almacenamiento remota y la cabina de almacenamiento local.
+
+.Antes de empezar
+Tanto la cabina de almacenamiento local como la remota deben configurarse para operaciones de mirroring asíncrono mediante una conexión iSCSI.
+
+.Pasos
+. Seleccione menu:Storage[Asynchronous Mirroring].
+. Seleccione la ficha *grupos de consistencia de mirroring*.
++
+La tabla de grupo de coherencia de reflejos muestra todos los grupos de coherencia de reflejos asociados con la cabina de almacenamiento.
+
+. Seleccione el grupo de coherencia de reflejos que desea actualizar y, a continuación, seleccione MENU:más[Actualizar dirección IP remota].
++
+El sistema muestra el cuadro de diálogo Actualizar dirección IP remota.
+
+. Seleccione *Actualizar* para actualizar la dirección IP de iSCSI de la matriz de almacenamiento remota.
+
+
+.Resultados
+El sistema restablece la dirección IP de la cabina de almacenamiento remota para restablecer la conexión con la cabina de almacenamiento local.

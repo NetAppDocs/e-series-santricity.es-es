@@ -1,0 +1,65 @@
+---
+permalink: sm-storage/start-snapshot-image-rollback-for-base-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, start, snapshot, image, rollback, base, volume 
+summary: Es posible ejecutar una operación de reversión para cambiar el contenido de un volumen base de modo que este coincida con el contenido guardado en una imagen Snapshot. La operación de reversión no cambia el contenido de las imágenes Snapshot asociadas con el volumen base. 
+---
+= Iniciar reversión de imagen Snapshot para un volumen base
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible ejecutar una operación de reversión para cambiar el contenido de un volumen base de modo que este coincida con el contenido guardado en una imagen Snapshot.
+
+La operación de reversión no cambia el contenido de las imágenes Snapshot asociadas con el volumen base.
+
+.Antes de empezar
+* La capacidad reservada disponible es suficiente para iniciar una operación de reversión.
+* El estado de la imagen Snapshot seleccionada y el volumen seleccionado es óptimo.
+* No existe una operación de reversión en curso en el volumen seleccionado.
+
+
+.Acerca de esta tarea
+Con la secuencia de inicio de la reversión, es posible iniciar la reversión sobre una imagen Snapshot de un volumen base y seleccionar opciones para añadir capacidad de almacenamiento. Solo se puede iniciar una operación de reversión para un volumen base a la vez.
+
+[NOTE]
+====
+El host no puede obtener acceso de lectura/escritura al volumen base existente después de que se inicia la reversión, pero puede acceder de inmediato al nuevo volumen base revertido. Es posible crear una Snapshot del volumen base justo antes de iniciar la reversión a fin de conservar el volumen base previo a la reversión para la recuperación.
+
+====
+.Pasos
+. Seleccione MENU:Storage[Snapshots].
+. Seleccione la ficha *Imágenes Snapshot*.
+. Seleccione la imagen Snapshot y, a continuación, seleccione MENU:Rollback[Start].
++
+Se muestra el cuadro de diálogo Confirmar inicio de reversión.
+
+. *Opcional:* Seleccione la opción *aumentar capacidad* si es necesario.
++
+Se muestra el cuadro de diálogo aumentar la capacidad reservada.
+
++
+.. Utilice el cuadro de desplazamiento para ajustar el porcentaje de capacidad.
++
+Si el pool o el grupo de volúmenes en el que se encuentra el objeto de almacenamiento seleccionado no tiene capacidad libre y la cabina de almacenamiento tiene capacidad sin asignar, puede añadir capacidad. Puede crear un nuevo pool o grupo de volúmenes y volver a intentar esta operación con la nueva capacidad libre de ese pool o grupo de volúmenes.
+
+.. Haga clic en *aumentar*.
+
+
+. Confirme que desea realizar esta operación y haga clic en *revertir*.
+
+
+.Resultados
+System Manager realiza lo siguiente:
+
+* Restaurará el volumen con el contenido guardado en la imagen Snapshot seleccionada.
+* Habilitará inmediatamente el acceso del host a los volúmenes revertidos. No es necesario esperar hasta que se complete la operación de reversión.
+
+
+.Después de terminar
+Seleccione MENU:Inicio[Ver operaciones en curso] para ver el progreso de la operación de reversión.
+
+Si la operación de reversión no se realiza correctamente, se coloca en pausa. Puede reanudar la operación en pausa y, si no se realiza correctamente, puede seguir el procedimiento de Recovery Guru para corregir el problema o ponerse en contacto con el soporte técnico.

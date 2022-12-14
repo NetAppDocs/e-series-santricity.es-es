@@ -1,0 +1,21 @@
+---
+permalink: sm-mirroring/why-dont-i-see-all-of-my-pools-and-volume-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, secondary, volume, 
+summary: Cuando se crea un volumen secundario para la pareja reflejada asíncrona, el sistema muestra una lista de todos los pools y los grupos de volúmenes elegibles para esa pareja reflejada asíncrona. En esa lista, no se muestra ningún pool o grupo de volúmenes que no sea elegible para su uso. 
+---
+= ¿Por qué no se muestran todos los pools y grupos de volúmenes?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cuando se crea un volumen secundario para la pareja reflejada asíncrona, el sistema muestra una lista de todos los pools y los grupos de volúmenes elegibles para esa pareja reflejada asíncrona. En esa lista, no se muestra ningún pool o grupo de volúmenes que no sea elegible para su uso.
+
+Los pools o grupos de volúmenes pueden no ser elegibles por cualquiera de los motivos siguientes.
+
+* Las funcionalidades de seguridad de un pool o un grupo de volúmenes no coinciden.
+* Un pool o un grupo de volúmenes se encuentra en un estado distinto a Optimal.
+* La capacidad de un pool o grupo de volúmenes es muy reducida.
+

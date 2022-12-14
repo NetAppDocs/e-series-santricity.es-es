@@ -1,0 +1,18 @@
+---
+permalink: sm-settings/how-do-i-know-what-certificates-need-to-be-uploaded-to-system-manager.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, certificates, external, key, management, 
+summary: Para la gestión de claves externas, debe importar dos tipos de certificados para la autenticación entre la cabina de almacenamiento y el servidor de gestión de claves, de forma tal que exista confianza mutua entre las dos entidades. 
+---
+= ¿Cómo saber qué certificados deben cargarse en System Manager para la gestión de claves externas?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para la gestión de claves externas, debe importar dos tipos de certificados para la autenticación entre la cabina de almacenamiento y el servidor de gestión de claves, de forma tal que exista confianza mutua entre las dos entidades.
+
+Un certificado de cliente valida las controladoras de la cabina de almacenamiento para que el servidor de gestión de claves pueda confiar en sus solicitudes de protocolo de interoperabilidad de gestión de claves (KMIP). Para obtener un certificado de cliente, se usa System Manager para completar una CSR para la cabina de almacenamiento. Luego, puede cargar la CSR en un servidor de gestión de claves y generar un certificado de cliente a partir de ese punto. Una vez que tenga un certificado de cliente, copie ese archivo en el host donde acceda a System Manager.
+
+Un certificado de servidor de gestión de claves valida el servidor de gestión de claves para que la cabina de almacenamiento pueda confiar en su dirección IP. Recupere el archivo de certificado de servidor del servidor de gestión de claves y copie ese archivo en el host donde va a acceder a System Manager.

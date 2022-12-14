@@ -1,0 +1,42 @@
+---
+permalink: um-manage/upgrade-considerations.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, upgrade, considerations 
+summary: Antes de usar Unified Manager para actualizar varias cabinas de almacenamiento, revise las consideraciones fundamentales como parte de la planificación. 
+---
+= Consideraciones de renovación
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Antes de usar Unified Manager para actualizar varias cabinas de almacenamiento, revise las consideraciones fundamentales como parte de la planificación.
+
+
+
+== Versiones actuales
+
+Puede ver las versiones actuales del software de sistema operativo SANtricity desde la página gestionar de Unified Manager en cada cabina de almacenamiento detectada. La versión se muestra en la columna Software de sistema operativo SANtricity. Si hace clic en la versión de sistema operativo SANtricity en cada fila, puede encontrar información de NVSRAM y del firmware de la controladora en un cuadro de diálogo emergente.
+
+
+
+== Otros componentes que requieren actualización
+
+Como parte del proceso de actualización, es posible que también necesite actualizar el controlador de conmutación al nodo de respaldo/multivía del host o el controlador de HBA de modo que el host pueda interactuar con las controladoras correctamente.
+
+Para obtener información sobre compatibilidad, consulte https://imt.netapp.com/matrix/#welcome["Matriz de interoperabilidad de NetApp"^]. Asimismo, consulte los procedimientos en las guías exprés del sistema operativo. Las guías exprés están disponibles en https://docs.netapp.com/us-en/e-series/index.html["Documentación de E-Series y SANtricity"^].
+
+
+
+== Controladoras dobles
+
+Si una cabina de almacenamiento contiene dos controladoras y existe un controlador multivía instalado, la cabina de almacenamiento puede seguir procesando las operaciones de I/o mientras se realiza la actualización. Durante la actualización, ocurre el siguiente proceso:
+
+. La controladora A conmuta todos sus LUN a la controladora B.
+. La actualización se produce en la controladora A.
+. La controladora A recupera sus LUN y todos los LUN de la controladora B.
+. La actualización se produce en la controladora B.
+
+
+Una vez que finaliza la actualización, es posible que sea necesario redistribuir los volúmenes manualmente entre las controladoras para garantizar que los volúmenes regresen a la controladora correspondiente.

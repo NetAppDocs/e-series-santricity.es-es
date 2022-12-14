@@ -1,0 +1,37 @@
+---
+permalink: sm-support/retrieve-trace-buffers.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, retrieve, trace, buffers 
+summary: Es posible recuperar los búferes de seguimiento de las controladoras y enviar el archivo al soporte técnico para su análisis. 
+---
+= Recuperar búferes de seguimiento
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible recuperar los búferes de seguimiento de las controladoras y enviar el archivo al soporte técnico para su análisis.
+
+.Acerca de esta tarea
+El firmware utiliza los búferes de seguimiento para registrar el procesamiento, especialmente las condiciones de excepción, que pueden ser de utilidad para la depuración. Es posible recuperar búferes de seguimiento sin interrupciones en el funcionamiento de la cabina de almacenamiento y con efectos mínimos sobre el rendimiento.
+
+[NOTE]
+====
+Realice esta operación solo cuando el soporte técnico se lo indique.
+
+====
+.Pasos
+. Seleccione menú:ficha Soporte[Centro de soporte > Diagnóstico].
+. Seleccione *recuperar búferes de seguimiento*.
+. Seleccione la casilla junto a cada controladora para la que desee recuperar búferes de seguimiento.
++
+Puede seleccionar una o dos controladoras. Si el mensaje de estado de la controladora a la derecha de la casilla es con errores o Deshabilitado, la casilla estará deshabilitada.
+
+. Haga clic en *Sí*.
++
+El archivo se guarda en la carpeta de descargas del explorador con el nombre de archivo `trace-buffers.7z`.
+
+. Siga las instrucciones del soporte técnico para enviar el archivo.
+

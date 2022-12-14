@@ -1,0 +1,57 @@
+---
+permalink: sm-mirroring/change-synchronization-settings-for-a-mirrored-pair.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, synchronization, settings, mirrored, pair, 
+summary: Puede cambiar la prioridad de sincronización y la política de resincronización que la pareja reflejada usa para completar la operación de resincronización después de que se interrumpe una comunicación. 
+---
+= Cambiar la configuración de sincronización para una pareja reflejada
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede cambiar la prioridad de sincronización y la política de resincronización que la pareja reflejada usa para completar la operación de resincronización después de que se interrumpe una comunicación.
+
+.Acerca de esta tarea
+Es posible editar la configuración de sincronización para una pareja reflejada solo en la cabina de almacenamiento que contiene el volumen primario.
+
+.Pasos
+. Seleccione MENU:Storage[Synchronous Mirroring].
+. Seleccione la pareja reflejada que desee editar y, a continuación, seleccione MENU:más[Editar configuración].
++
+El sistema muestra el cuadro de diálogo Ver/editar configuración.
+
+. Use la barra deslizante para editar la prioridad de sincronización.
++
+La prioridad de sincronización determina cuántos recursos del sistema se usan para completar la operación de resincronización después de que se interrumpe una comunicación, en comparación con las solicitudes de I/o de servicio.
+
++
+.Más información acerca de las tasas de sincronización
+[%collapsible]
+====
+Las tasas de prioridad de sincronización son las siguientes cinco:
+
+** El más bajo
+** Bajo
+** Mediano
+** Alto
+** Máxima
+
+
+====
++
+Si la prioridad de sincronización se configuró con la tasa mínima, se prioriza la actividad de I/o y la operación de resincronización lleva más tiempo. Si la prioridad de sincronización se configuró con la tasa máxima, la operación de resincronización tiene prioridad, pero podría afectar a la actividad de I/o de la cabina de almacenamiento.
+
+. Edite la política de resincronización según corresponda.
++
+Es posible resincronizar las parejas reflejadas en la cabina de almacenamiento remota, ya sea de forma manual o automática.
+
++
+** *Manual* (la opción recomendada) -- Seleccione esta opción para requerir que la sincronización se reanude manualmente después de restaurar la comunicación a una pareja reflejada. Esta opción proporciona la mejor oportunidad para recuperar datos.
+** *Automático* -- Seleccione esta opción para iniciar la resincronización automáticamente después de restaurar la comunicación a un par reflejado.
+
+
+. Seleccione *Guardar*.
+

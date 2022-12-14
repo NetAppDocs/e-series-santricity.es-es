@@ -1,0 +1,28 @@
+---
+permalink: sm-settings/edit-syslog-servers-for-alerts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, edit, syslog, servers, alerts, 
+summary: Es posible editar la dirección de servidor utilizada para recibir alertas de syslog. 
+---
+= Edite los servidores de syslog para las alertas
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible editar la dirección de servidor utilizada para recibir alertas de syslog.
+
+.Pasos
+. Seleccione MENU:Settings[Alerts].
+. Seleccione la ficha *Syslog*.
+. En la tabla, seleccione una dirección de servidor de syslog y, a continuación, haga clic en el icono *Editar* (lápiz) situado en el extremo derecho.
++
+La fila se convierte en un campo editable.
+
+. Edite la dirección de servidor y el número de puerto UDP y, a continuación, haga clic en el icono *Guardar* (Marca de verificación).
+
+
+.Resultados
+La dirección actualizada del servidor se muestra en la tabla.

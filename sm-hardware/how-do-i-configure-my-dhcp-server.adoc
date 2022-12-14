@@ -1,0 +1,18 @@
+---
+permalink: sm-hardware/how-do-i-configure-my-dhcp-server.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, dhcp, server, static, internet, protocol, 
+summary: 'Debe configurar un servidor de protocolo de configuración dinámica de hosts (DHCP) para utilizar direcciones de protocolo de Internet (IP) estáticas para las controladoras en la cabina de almacenamiento.' 
+---
+= ¿Cómo se configura el servidor DHCP?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Debe configurar un servidor de protocolo de configuración dinámica de hosts (DHCP) para utilizar direcciones de protocolo de Internet (IP) estáticas para las controladoras en la cabina de almacenamiento.
+
+Las direcciones IP que asigna el servidor DHCP generalmente son dinámicas y pueden cambiar debido a que tienen un periodo de concesión que expira. Algunos dispositivos, como los servidores y los enrutadores, deben utilizar direcciones estáticas. Las controladoras en la cabina de almacenamiento también deben utilizar direcciones IP estáticas.
+
+Para obtener información sobre la forma de asignar direcciones estáticas, consulte la documentación del servidor DHCP.

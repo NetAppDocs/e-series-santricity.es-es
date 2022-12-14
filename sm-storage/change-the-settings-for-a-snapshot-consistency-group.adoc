@@ -1,0 +1,80 @@
+---
+permalink: sm-storage/change-the-settings-for-a-snapshot-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, settings, snapshot, consistency group 
+summary: Es posible cambiar la configuración de un grupo de coherencia Snapshot cuando se desea cambiar el nombre de dicho grupo, la configuración de eliminación automática o la cantidad máxima de imágenes Snapshot permitidas. 
+---
+= Cambiar la configuración de un grupo de coherencia Snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible cambiar la configuración de un grupo de coherencia Snapshot cuando se desea cambiar el nombre de dicho grupo, la configuración de eliminación automática o la cantidad máxima de imágenes Snapshot permitidas.
+
+.Pasos
+. Seleccione MENU:Storage[Snapshots].
+. Haga clic en la ficha *grupos de coherencia de instantánea*.
+. Seleccione el grupo de coherencia Snapshot que desea editar y haga clic en *Ver/editar configuración*.
++
+Se muestra el cuadro de diálogo Configuración del grupo de coherencia Snapshot.
+
+. Cambie la configuración del grupo de coherencia Snapshot según corresponda.
++
+.Detalles del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Ajuste | Descripción 
+
+
+ a| 
+*Ajustes del grupo de coherencia de instantáneas*
+
+
+
+ a| 
+Nombre
+ a| 
+Es posible cambiar el nombre del grupo de coherencia Snapshot.
+
+
+
+ a| 
+Eliminación automática
+ a| 
+Deje seleccionada la casilla de comprobación si desea que las imágenes Snapshot se eliminen automáticamente después del límite especificado; use el cuadro de desplazamiento para cambiar el límite. Si desmarca esta casilla de comprobación, la creación de imágenes Snapshot se detiene después de 32 imágenes.
+
+
+
+ a| 
+Límite de la imagen Snapshot
+ a| 
+Es posible modificar la cantidad máxima de imágenes Snapshot que se permiten en un grupo.
+
+
+
+ a| 
+Programación Snapshot
+ a| 
+Este campo indica si una programación está asociada con el grupo de coherencia Snapshot.
+
+
+
+ a| 
+*Objetos asociados*
+
+
+
+ a| 
+Volúmenes miembro
+ a| 
+Se puede ver la cantidad de volúmenes miembro que están asociados al grupo de coherencia Snapshot.
+
+|===
+====
+. Haga clic en *Guardar*.
+

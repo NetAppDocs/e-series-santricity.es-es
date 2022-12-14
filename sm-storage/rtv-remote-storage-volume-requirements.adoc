@@ -1,0 +1,58 @@
+---
+permalink: sm-storage/rtv-remote-storage-volume-requirements.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remote, storage, volume, requirements 
+summary: Los volúmenes utilizados para las importaciones deben cumplir los requisitos de tamaño, estado y otros criterios. 
+---
+= Requisitos del volumen de almacenamiento remoto
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los volúmenes utilizados para las importaciones deben cumplir los requisitos de tamaño, estado y otros criterios.
+
+
+
+== Volumen de almacenamiento remoto
+
+El volumen de origen de una importación se denomina "volumen de almacenamiento remoto". Este volumen debe cumplir con los siguientes criterios:
+
+* No puede ser parte de otra importación
+* Debe tener el estado en línea
+
+
+Después de comenzar la importación, el firmware de la controladora crea un volumen de almacenamiento remoto en segundo plano. Debido a ese proceso en segundo plano, el volumen de almacenamiento remoto no puede gestionarse en System Manager y solo se puede utilizar para la operación de importación.
+
+Después de crearse, el volumen de almacenamiento remoto se trata como cualquier otro volumen estándar en el sistema E-Series, con las siguientes excepciones:
+
+* Se pueden utilizar como proxies para el dispositivo de almacenamiento remoto.
+* No se pueden usar como candidatos para otras copias de volumen o copias de Snapshot.
+* No se puede cambiar la configuración de Garantía de datos mientras la importación está en curso.
+* No puede asignarse a ningún host, ya que están reservados estrictamente para la operación de importación.
+
+
+Cada volumen de almacenamiento remoto se asocia con un solo objeto de almacenamiento remoto; sin embargo, un objeto de almacenamiento remoto se puede asociar con varios volúmenes de almacenamiento remotos. El volumen de almacenamiento remoto se identifica de forma única mediante una combinación de lo siguiente:
+
+* Identificador de objeto de almacenamiento remoto
+* Número LUN del dispositivo de almacenamiento remoto
+
+
+
+
+== Candidatos de volumen objetivo
+
+El volumen de destino es el volumen de destino en el sistema E-Series local. El volumen de destino debe cumplir con los siguientes criterios:
+
+* Debe ser un volumen RAID/DDP.
+* Debe tener una capacidad igual o mayor que el volumen de almacenamiento remoto.
+* Debe tener un tamaño de bloque que sea igual al volumen de almacenamiento remoto.
+* Debe tener un estado válido (óptimo).
+* No puede tener ninguna de las siguientes relaciones: Copia de volumen, copias Snapshot, mirroring asíncrono o síncrono.
+* No se pueden realizar operaciones de reconfiguración: Expansión de volumen dinámica, expansión de capacidad dinámica, tamaño de segmentos dinámico, migración RAID dinámica, reducción de capacidad dinámica, O desfragmentación.
+* No se puede asignar a un host antes de que se inicie la importación (sin embargo, puede asignarse una vez que finaliza la importación).
+* No se puede activar la función de lectura en caché (FRC) de Flash.
+
+
+System Manager comprueba automáticamente estos requisitos como parte del asistente Import Remote Storage. Para la selección del volumen de destino, solo se muestran los volúmenes que cumplen todos los requisitos.

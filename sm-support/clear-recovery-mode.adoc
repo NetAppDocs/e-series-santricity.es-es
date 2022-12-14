@@ -1,0 +1,43 @@
+---
+permalink: sm-support/clear-recovery-mode.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, clear, recovery, mode 
+summary: Después de restaurar la configuración de una cabina de almacenamiento, use la operación Clear Recovery Mode para reanudar las operaciones de I/o en la cabina de almacenamiento y restablecer las operaciones normales. 
+---
+= Desactivar el modo de recuperación
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Después de restaurar la configuración de una cabina de almacenamiento, use la operación Clear Recovery Mode para reanudar las operaciones de I/o en la cabina de almacenamiento y restablecer las operaciones normales.
+
+.Antes de empezar
+* Si desea que la cabina de almacenamiento regrese a una configuración previa, debe restaurar la configuración desde backup antes de desactivar el modo de recuperación.
+* Debe efectuar comprobaciones de validación o corroborar con el soporte técnico para asegurarse de que la restauración se haya realizado correctamente. Una vez que se determina que la restauración se realizó correctamente, se puede desactivar el modo de recuperación.
+
+
+.Acerca de esta tarea
+La cabina de almacenamiento contiene una base de datos de configuración que incluye un registro de la configuración lógica (pools, grupo de volúmenes, volúmenes, etc). Si elimina intencionalmente la configuración de la cabina de almacenamiento o si se daña la base de datos de configuración, la cabina de almacenamiento entra en modo de recuperación. El modo de recuperación detiene las operaciones de I/o y congela la base de datos de configuración, lo que da tiempo para llevar a cabo una de las siguientes acciones:
+
+* Restaure la configuración desde la función de backup automático almacenada en los dispositivos flash de la controladora. Debe comunicarse con el soporte técnico para hacerlo.
+* Restaure la configuración desde una operación Save Configuration Database anterior. Las operaciones Save Configuration Database se llevan a cabo a través de la interfaz de línea de comandos (CLI).
+* Vuelva a configurar la cabina de almacenamiento desde cero.
+
+
+Una vez que se pudo restaurar o redefinir la configuración de la cabina de almacenamiento y se pudo verificar que todo funciona bien, se debe desactivar manualmente el modo de recuperación.
+
+[NOTE]
+====
+Una vez que se inicia, no es posible cancelar la operación Clear Recovery Mode. Esta operación puede llevar mucho tiempo. Realice esta operación solo cuando el soporte técnico se lo indique.
+
+====
+.Pasos
+. Seleccione menú:ficha Soporte[Centro de soporte > Diagnóstico].
+. Seleccione *Desactivar modo de recuperación* y confirme que desea realizar esta operación.
++
+La opción aparece solamente si la cabina de almacenamiento se encuentra en modo de recuperación.
+
+

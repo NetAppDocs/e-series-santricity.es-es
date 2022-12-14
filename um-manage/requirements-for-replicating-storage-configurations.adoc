@@ -1,0 +1,50 @@
+---
+permalink: um-manage/requirements-for-replicating-storage-configurations.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, requirements, replicating, storage, configurations 
+summary: Antes de importar una configuración de almacenamiento desde una cabina de almacenamiento a otra, revise los requisitos y las directrices. 
+---
+= Requisitos para replicar configuraciones de almacenamiento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Antes de importar una configuración de almacenamiento desde una cabina de almacenamiento a otra, revise los requisitos y las directrices.
+
+
+
+== Bandejas
+
+* Las bandejas donde residen las controladoras deben ser idénticas en las cabinas de origen y objetivo.
+* Los ID de bandeja deben ser idénticos en las cabinas de origen y objetivo.
+* Las bandejas de expansión deben llenarse en las mismas ranuras con los mismos tipos de unidad (si la unidad se usó en la configuración, la ubicación de las unidades sin usar no importa).
+
+
+
+
+== Controladoras
+
+* El tipo de controladora puede ser diferente para las cabinas de origen y objetivo (por ejemplo, se puede importar de E2800 a E5700), pero el tipo de compartimento RBOD debe ser idéntico.
+* Las HIC, incluidas las capacidades DE GARANTÍA de DATOS del host, deben ser idénticas para las cabinas de origen y objetivo.
+* No se admite la importación de una configuración doble a una simple; sí se admite la configuración simple a doble.
+* La configuración de unidades FDE no está incluida en el proceso de importación.
+
+
+
+
+== Estado
+
+* Las cabinas objetivo deben tener el estado óptimo.
+* La cabina de origen no necesita tener el estado óptimo.
+
+
+
+
+== Reducida
+
+* La capacidad de una unidad puede variar entre las cabinas de origen y las objetivo, siempre y cuando la capacidad de volumen en la cabina objetivo sea mayor que en la de origen. (Una cabina objetivo puede tener unidades más nuevas y con mayor capacidad que la operación de replicación quizás no configure por completo en volúmenes).
+* Un volumen de pool de discos de 64 TB o mayor en la cabina de origen impide el proceso de importación en las cabinas objetivo.
+* Los volúmenes finos no están incluidos en el proceso de importación.
+

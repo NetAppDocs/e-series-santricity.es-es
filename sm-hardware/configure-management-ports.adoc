@@ -1,0 +1,98 @@
+---
+permalink: sm-hardware/configure-management-ports.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, management, port, 
+summary: La controladora incluye un puerto Ethernet que se utiliza para gestionar el sistema. De ser necesario, es posible cambiar los parámetros de transmisión y las direcciones IP. 
+---
+= Configure el puerto de gestión
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La controladora incluye un puerto Ethernet que se utiliza para gestionar el sistema. De ser necesario, es posible cambiar los parámetros de transmisión y las direcciones IP.
+
+.Acerca de esta tarea
+Durante este procedimiento, se selecciona el puerto 1 y después se establecen la velocidad y el método de direccionamiento del puerto. El puerto 1 se conecta a la red en la que el cliente de gestión puede acceder a la controladora y a System Manager.
+
+[NOTE]
+====
+No use el puerto 2 en ninguna de las controladoras. El puerto 2 está reservado para uso exclusivo del soporte técnico.
+
+====
+.Pasos
+. Seleccione *hardware*.
+. Si el gráfico muestra las unidades, haga clic en *Mostrar parte posterior de la bandeja*.
++
+El gráfico cambia y muestra las controladoras en lugar de las unidades.
+
+. Haga clic en la controladora con el puerto de gestión que desea configurar.
++
+Aparece el menú contextual de la controladora.
+
+. Seleccione *Configurar puertos de administración*.
++
+Se abre el cuadro de diálogo Configurar puertos de gestión.
+
+. Asegúrese de que aparece el puerto 1 y, a continuación, haga clic en *Siguiente*.
+. Seleccione los valores del puerto de configuración y, a continuación, haga clic en *Siguiente*.
++
+.Detalles del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Campo | Descripción 
+
+
+ a| 
+Velocidad y modo doble
+ a| 
+Conserve la opción de configuración autonegociar si desea que System Manager determine los parámetros de transmisión entre la cabina de almacenamiento y la red; o bien si conoce la velocidad y el modo de la red, seleccione los parámetros de la lista desplegable. En la lista, solamente se muestran la velocidad válida y las combinaciones dobles.
+
+
+
+ a| 
+Habilite IPv4/Habilitar IPv6
+ a| 
+Seleccione una o ambas opciones para habilitar la compatibilidad con las redes IPv4 e IPv6.
+
+|===
+====
++
+Si selecciona *Activar IPv4*, se abre un cuadro de diálogo para seleccionar la configuración IPv4 después de hacer clic en *Siguiente*. Si selecciona *Activar IPv6*, se abre un cuadro de diálogo para seleccionar la configuración de IPv6 después de hacer clic en *Siguiente*. Si selecciona ambas opciones, primero se abre el cuadro de diálogo para la configuración de IPv4 y después de hacer clic en *Siguiente*, se abre el cuadro de diálogo para la configuración de IPv6.
+
+. Configure los valores para IPv4 o IPv6 de forma automática o manual.
++
+.Detalles del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Campo | Descripción 
+
+
+ a| 
+Obtener automáticamente la configuración del servidor DHCP
+ a| 
+Seleccione esta opción para obtener automáticamente la configuración.
+
+
+
+ a| 
+Especificar manualmente la configuración estática
+ a| 
+Seleccione esta opción y después introduzca la dirección IP de la controladora. (Si lo desea, puede cortar y pegar direcciones en los campos.) En el caso de IPv4, incluya la máscara de subred y la puerta de enlace. En el caso de IPv6, incluya la dirección IP enrutable y la dirección IP del enrutador.
+
+
+NOTE: Si cambia la configuración de la dirección IP, se pierde la ruta de gestión de la cabina de almacenamiento. Si usa Unified Manager de SANtricity para gestionar globalmente las cabinas en su red, abra la interfaz de usuario y vaya a MENU:gestionar[detectar]. Si usa SANtricity Storage Manager, debe eliminar el dispositivo de Enterprise Management Window (EMW) y volver a añadirlo a EMW. Para hacerlo, seleccione menu:Edit[Añadir cabina de almacenamiento] e introduzca la nueva dirección IP.
+
+|===
+====
+. Haga clic en *Finalizar*.
+
+
+.Resultados
+La configuración del puerto de gestión se muestra en la configuración de la controladora, en la pestaña puertos de gestión.

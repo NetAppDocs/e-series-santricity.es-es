@@ -1,0 +1,17 @@
+---
+permalink: sm-settings/what-is-read-write-accessibility.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, read/write, accessibility, 
+summary: La ventana Configuración de la unidad incluye información acerca de los atributos de seguridad de la unidad. Read/Write Accessible es uno de los atributos que se muestran si se bloquearon los datos de una unidad. 
+---
+= ¿Qué es la accesibilidad de lectura/escritura?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La ventana Configuración de la unidad incluye información acerca de los atributos de seguridad de la unidad. "Read/Write Accessible" es uno de los atributos que se muestran si se bloquearon los datos de una unidad.
+
+Para ver los atributos de Drive Security, vaya a la página hardware. Seleccione una unidad, haga clic en *Ver configuración* y, a continuación, haga clic en *Mostrar más valores*. En la parte inferior de la página, el valor del atributo Accesibilidad de lectura/escritura será *Sí* cuando la unidad esté desbloqueada. El valor del atributo Accesibilidad de lectura/escritura es *no, clave de seguridad no válida* cuando la unidad está bloqueada. Si desea desbloquear una unidad segura, importe una clave de seguridad (vaya a menú:Configuración[sistema > Desbloquear unidades seguras]).

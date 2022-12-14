@@ -1,0 +1,105 @@
+---
+permalink: sm-storage/create-host-manually.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, host, manually 
+summary: Aquellos hosts que no se pueden detectar automáticamente, se pueden crear de forma manual. La creación de un host es uno de los pasos necesarios para indicar a la cabina de almacenamiento qué hosts están conectados a ella y para permitir el acceso de I/o a los volúmenes. 
+---
+= Crear hosts manualmente
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Aquellos hosts que no se pueden detectar automáticamente, se pueden crear de forma manual. La creación de un host es uno de los pasos necesarios para indicar a la cabina de almacenamiento qué hosts están conectados a ella y para permitir el acceso de I/o a los volúmenes.
+
+.Acerca de esta tarea
+Tenga en cuenta estas directrices al crear un host:
+
+* Se deben definir los puertos identificadores de host que están asociados con el host.
+* Asegúrese de proporcionar el mismo nombre que el nombre de sistema del host asignado.
+* Esta operación no funciona si el nombre que eligió ya está en uso.
+* La longitud del nombre no puede ser mayor de 30 caracteres.
+
+
+.Pasos
+. Seleccione MENU:Storage[hosts].
+. Haga clic en MENU:Create[Host].
++
+Se muestra el cuadro de diálogo Crear host.
+
+. Seleccione la configuración del host que corresponda.
++
+.Detalles del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Ajuste | Descripción 
+
+
+ a| 
+Nombre
+ a| 
+Escriba un nombre para el host nuevo.
+
+
+
+ a| 
+Tipo de sistema operativo de host
+ a| 
+Seleccione el sistema operativo que funciona en el host nuevo de la lista desplegable.
+
+
+
+ a| 
+Tipo de interfaz del host
+ a| 
+(Opcional) Si la cabina de almacenamiento es compatible con más de un tipo de interfaz del host, seleccione el tipo de interfaz del host que desea usar.
+
+
+
+ a| 
+Puertos host
+ a| 
+Debe realizar una de las siguientes acciones:
+
+** *Seleccione la interfaz de E/S*
++
+Por lo general, los puertos de host deben haber iniciado sesión y estar disponibles en la lista desplegable. Puede seleccionar los identificadores de puerto de host de la lista.
+
+** *Adición manual*
++
+Si un identificador de puerto de host no aparece en la lista, significa que el puerto de host no inició sesión. Se puede usar una utilidad de HBA o una utilidad de iniciador de iSCSI para encontrar los identificadores de puerto de host y asociarlos con el host.
+
++
+Puede introducir manualmente los identificadores de puerto de host o copiarlos/pegarlos desde la utilidad (de uno en uno) en el campo *puertos de host*.
+
++
+Se debe seleccionar un identificador de puerto de host para asociarlo con el host, pero es posible seguir seleccionando identificadores que estén asociados con el host. Cada identificador se muestra en el campo *puertos de host*. Si es necesario, también puede eliminar un identificador seleccionando *X* junto a él.
+
+
+
+
+
+ a| 
+Iniciador CHAP
+ a| 
+(Opcional) Si seleccionó o introdujo manualmente un puerto de host mediante un IQN iSCSI y desea solicitar la autenticación de un host que intenta acceder a la matriz de almacenamiento mediante un protocolo de autenticación por desafío mutuo (CHAP), seleccione la casilla de verificación *Iniciador CHAP*. Para cada puerto de host iSCSI que seleccione o introduzca manualmente, haga lo siguiente:
+
+** Introduzca el mismo secreto CHAP que se estableció en cada iniciador de host iSCSI para la autenticación de CHAP. Si va a utilizar la autenticación CHAP mutuo (autenticación bidireccional que permite la validación de un host en la cabina de almacenamiento y de una cabina de almacenamiento en el host), también debe configurar el secreto CHAP para la cabina de almacenamiento en la configuración inicial o cambiar la configuración.
+** Deje el campo en blanco si no requiere la autenticación del host.
+
+
+Actualmente, el único método de autenticación de iSCSI que utiliza System Manager es CHAP.
+
+|===
+====
+. Haga clic en *Crear*.
+
+
+.Resultados
+Una vez que el host se creó correctamente, el sistema crea un nombre predeterminado para cada puerto de host configurado para el host (etiqueta de usuario).
+
+El alias predeterminado es <``Hostname_Port Number``>. Por ejemplo, el alias predeterminado para el primer puerto creado para `host IPT is IPT_1`.

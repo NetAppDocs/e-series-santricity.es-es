@@ -1,0 +1,20 @@
+---
+permalink: sm-storage/what-is-a-snapshot-volume-and-when-does-it-need-reserved-capacity.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot, volume, reserved, capacity 
+summary: Un volumen Snapshot permite que el host acceda a los datos de la imagen Snapshot. El volumen Snapshot tiene su propia capacidad reservada que almacena cualquier modificación del volumen base sin afectar a la imagen Snapshot original. Los hosts no tienen permisos de lectura ni escritura en las imágenes Snapshot. Si desea leer o escribir datos Snapshot, cree un volumen Snapshot y asigne este volumen a un host. 
+---
+= ¿Qué es un volumen Snapshot y cuándo necesita capacidad reservada?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un volumen Snapshot permite que el host acceda a los datos de la imagen Snapshot. El volumen Snapshot tiene su propia capacidad reservada que almacena cualquier modificación del volumen base sin afectar a la imagen Snapshot original. Los hosts no tienen permisos de lectura ni escritura en las imágenes Snapshot. Si desea leer o escribir datos Snapshot, cree un volumen Snapshot y asigne este volumen a un host.
+
+Es posible crear dos tipos de volúmenes Snapshot. El tipo de volumen Snapshot determina si utiliza capacidad reservada.
+
+* *Sólo lectura* -- Un volumen de instantáneas creado como de sólo lectura proporciona una aplicación host con acceso de lectura a una copia de los datos contenidos en la imagen instantánea. Un volumen Snapshot de solo lectura no utiliza capacidad reservada.
+* *Read-write* -- un volumen de instantáneas que se crea como de lectura y escritura le permite realizar cambios en el volumen de instantáneas sin afectar a la imagen de instantánea de referencia. Un volumen Snapshot de lectura y escritura utiliza capacidad reservada para almacenar los cambios. Es posible convertir un volumen Snapshot de solo lectura a lectura y escritura en cualquier momento.
+

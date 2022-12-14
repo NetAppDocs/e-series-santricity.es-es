@@ -1,0 +1,29 @@
+---
+permalink: sm-hardware/update-battery-learn-cycles.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, update, battery, learn, cycles 
+summary: 'Un ciclo de aprendizaje es un ciclo automático para calibrar el indicador de batería inteligente. Los ciclos se programan para comenzar automáticamente, el mismo día y a la misma hora, en intervalos de 8 semanas (por controladora). Si desea configurar un programa distinto, puede ajustar los ciclos de aprendizaje.' 
+---
+= Actualice los ciclos de aprendizaje de la batería
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un ciclo de aprendizaje es un ciclo automático para calibrar el indicador de batería inteligente. Los ciclos se programan para comenzar automáticamente, el mismo día y a la misma hora, en intervalos de 8 semanas (por controladora). Si desea configurar un programa distinto, puede ajustar los ciclos de aprendizaje.
+
+.Acerca de esta tarea
+La actualización de los ciclos de aprendizaje afecta a ambas baterías de la controladora.
+
+.Pasos
+. Seleccione *hardware*.
+. Seleccione la lista desplegable para la Bandeja del controlador y, a continuación, seleccione *Ver configuración*.
+. Seleccione la ficha *baterías*.
+. Seleccione *Actualizar ciclos de aprendizaje de la batería*.
++
+Se abre el cuadro de diálogo Actualizar ciclos de aprendizaje de la batería.
+
+. Desde las listas desplegables, seleccione un día y una hora nuevos.
+. Haga clic en *Guardar*.
+

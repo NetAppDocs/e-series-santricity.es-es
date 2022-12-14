@@ -1,0 +1,18 @@
+---
+permalink: sm-storage/how-do-performance-statistics-for-individual-volumes-relate-to-the-total.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, performance, statistics, 
+summary: Las estadísticas de pools y grupos de volúmenes se calculan sumando todos los volúmenes, incluidos los volúmenes de capacidad reservada. 
+---
+= ¿Cómo se relacionan las estadísticas de rendimiento de volúmenes individuales con el total?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Las estadísticas de pools y grupos de volúmenes se calculan sumando todos los volúmenes, incluidos los volúmenes de capacidad reservada.
+
+El sistema de almacenamiento utiliza la capacidad reservada internamente con el fin de admitir volúmenes finos, Snapshot y mirroring asíncrono; esta capacidad no es visible para hosts de I/O. En consecuencia, es posible que las estadísticas de pools, controladoras y cabinas de almacenamiento no sean iguales a la suma de los volúmenes visibles.
+
+Sin embargo, para las estadísticas de aplicaciones y cargas de trabajo, solo se suman los volúmenes visibles.

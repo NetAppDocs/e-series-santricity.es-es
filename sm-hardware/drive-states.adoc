@@ -1,0 +1,135 @@
+---
+permalink: sm-hardware/drive-states.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, drive, states, 
+summary: System Manager informa sobre distintos estados de las unidades. 
+---
+= estados de unidad
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager informa sobre distintos estados de las unidades.
+
+
+
+== estados de accesibilidad
+
+[cols="25h,~"]
+|===
+| Estado | Definición 
+
+
+ a| 
+Omitida
+ a| 
+La unidad está presente físicamente, pero la controladora no puede comunicarse con ella en ningún puerto.
+
+
+
+ a| 
+Incompatible
+ a| 
+Existe una de las siguientes condiciones:
+
+* La unidad no está certificada para usar en la cabina de almacenamiento.
+* La unidad tiene un tamaño de sector diferente.
+* La unidad tiene datos de configuración inutilizables de una versión de firmware anterior o posterior.
+
+
+
+
+ a| 
+Quitada
+ a| 
+La unidad se retiró de manera incorrecta de la cabina de almacenamiento.
+
+
+
+ a| 
+Presente
+ a| 
+La controladora puede comunicarse con la unidad en ambos puertos.
+
+
+
+ a| 
+Sin respuesta
+ a| 
+La unidad no responde a los comandos.
+
+|===
+
+
+== estados de roles
+
+[cols="25h,~"]
+|===
+| Estado | Definición 
+
+
+ a| 
+Asignado
+ a| 
+La unidad es miembro de un pool o un grupo de volúmenes.
+
+
+
+ a| 
+Pieza de repuesto en uso
+ a| 
+La unidad se está usando como reemplazo de otra que tuvo errores. Las piezas de repuesto solo se usan en grupos de volúmenes, no en pools.
+
+
+
+ a| 
+Pieza de repuesto en espera
+ a| 
+La unidad está lista para usarse como reemplazo de otra que tuvo errores. Las piezas de repuesto solo se usan en grupos de volúmenes, no en pools.
+
+
+
+ a| 
+Sin asignar
+ a| 
+La unidad no es miembro de un pool ni de un grupo de volúmenes.
+
+|===
+
+
+== estados de disponibilidad
+
+[cols="25h,~"]
+|===
+| Estado | Definición 
+
+
+ a| 
+Error
+ a| 
+La unidad no funciona. Los datos en la unidad no están disponibles.
+
+
+
+ a| 
+Fallo inminente
+ a| 
+Se detectó que la unidad puede fallar pronto. Los datos en la unidad siguen estando disponibles.
+
+
+
+ a| 
+Sin conexión
+ a| 
+La unidad no está disponible para almacenar datos, generalmente debido a que forma parte de un grupo de volúmenes que se está exportando o se está sometiendo a una actualización de firmware.
+
+
+
+ a| 
+Óptimo
+ a| 
+La unidad funciona normalmente.
+
+|===

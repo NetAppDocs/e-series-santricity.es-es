@@ -1,0 +1,62 @@
+---
+permalink: sm-settings/enable-iscsi-discovery-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, enable, iscsi, discovery, settings, 
+summary: Es posible habilitar la configuración relacionada con la detección de dispositivos de almacenamiento en una red iSCSI. 
+---
+= Habilite la configuración de detección de iSCSI
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible habilitar la configuración relacionada con la detección de dispositivos de almacenamiento en una red iSCSI.
+
+La configuración de detección de objetivos permite registrar la información de iSCSI de la cabina de almacenamiento con el protocolo de servicio de nombres de almacenamiento de Internet (iSNS), y también determinar si se deben permitir las sesiones de detección sin nombre.
+
+.Antes de empezar
+Si el servidor iSNS utiliza una dirección IP estática, esa dirección debe estar disponible para registrarse en iSNS. Se admiten tanto IPv4 como IPv6.
+
+.Acerca de esta tarea
+Es posible habilitar la siguiente configuración relacionada con la detección de iSCSI:
+
+* *Activar el servidor iSNS para registrar un destino* -- cuando está activado, la cabina de almacenamiento registra la información de su nombre completo iSCSI (IQN) y su puerto del servidor iSNS. Esta opción permite la detección de iSNS para que un iniciador pueda recuperar la información de IQN y puerto del servidor iSNS.
+* *Activar sesiones de detección sin nombre* -- cuando las sesiones de detección sin nombre están habilitadas, el iniciador (host iSCSI) no necesita proporcionar el IQN del destino (controladora) durante la secuencia de inicio de sesión para una conexión de tipo de detección. Cuando se deshabilitan, los hosts deben proporcionar el IQN para establecer una sesión de detección con la controladora. Sin embargo, siempre se requiere el IQN objetivo durante una sesión normal (con I/o). Al deshabilitar esta opción, se puede evitar que los hosts iSCSI no autorizados se conecten a la controladora mediante esta dirección IP solamente.
+
+
+[NOTE]
+====
+La configuración y las funciones de iSCSI solo aparecen en la página Configuración si la cabina de almacenamiento es compatible con iSCSI.
+
+====
+.Pasos
+. Seleccione MENU:Settings[System].
+. En *Configuración de iSCSI*, haga clic en *Ver/editar configuración de detección de objetivos*.
++
+Se muestra el cuadro de diálogo Configuración de detección de objetivos. Debajo del *Activar servidor iSNS*... campo, el cuadro de diálogo indica si la controladora ya está registrada.
+
+. Para registrar el controlador, seleccione *Activar servidor iSNS para registrar mi destino* y, a continuación, seleccione una de las siguientes opciones:
++
+** *Obtener automáticamente la configuración del servidor DHCP* -- Seleccione esta opción si desea configurar el servidor iSNS usando un servidor DHCP (Dynamic Host Configuration Protocol). Tenga en cuenta que, si usa esta opción, todos los puertos iSCSI en la controladora también deben configurarse para usar DHCP. Si es necesario, actualice el puerto iSCSI de la controladora para habilitar esta opción.
++
+[NOTE]
+====
+Para que el servidor DHCP proporcione la dirección del servidor iSNS, debe configurar el servidor DHCP para que utilice la opción 43 -- ""Información específica del proveedor"." Esta opción debe incluir la dirección IPv4 del servidor iSNS en los bytes de datos 0xa-0xd (10-13).
+
+====
+** *Especificar manualmente la configuración estática* -- Seleccione esta opción si desea introducir una dirección IP estática para el servidor iSNS. (Si lo desea, puede cortar y pegar direcciones en los campos.) En el campo, introduzca una dirección IPv4 o IPv6. Si configuró ambas, IPv4 es la predeterminada. Introduzca además un puerto de escucha TCP (utilice 3205, que es el predeterminado, o especifique un valor entre 49 49152 y 65 65535).
+
+
+. Para permitir que la cabina de almacenamiento participe en sesiones de detección sin nombre, seleccione *Habilitar sesiones de detección sin nombre*.
++
+** Cuando se habilita esta opción, no se requiere que los iniciadores de iSCSI especifiquen el IQN objetivo para recuperar la información de la controladora.
+** Cuando se deshabilita, se impiden las sesiones de detección a menos que el iniciador proporcione el IQN objetivo. Al deshabilitar las sesiones de detección sin nombre, se obtiene seguridad adicional.
+
+
+. Haga clic en *Guardar*.
+
+
+.Resultados
+Se muestra una barra de progreso cuando System Manager intenta registrar la controladora en el servidor iSNS. Este proceso puede llevar hasta cinco minutos.

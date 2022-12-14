@@ -1,0 +1,35 @@
+---
+permalink: sm-support/collect-i-o-path-statistics.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, collect, i/o path, statistics 
+summary: Puede guardar el archivo de estadísticas de la ruta de I/o y enviarlo al soporte técnico para su análisis. 
+---
+= Recoja estadísticas de rutas de I/O.
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede guardar el archivo de estadísticas de la ruta de I/o y enviarlo al soporte técnico para su análisis.
+
+.Acerca de esta tarea
+El soporte técnico utiliza las estadísticas de la ruta de I/o para ayudar a diagnosticar problemas de rendimiento. Los problemas de rendimiento de la aplicación pueden producirse por la utilización de memoria, utilización de CPU, latencia de red, latencia de I/o u otros problemas. Las estadísticas de la ruta de I/o se obtienen automáticamente durante la recogida de datos de soporte, o bien es posible recogerlas manualmente. Además, si AutoSupport está activado, las estadísticas de la ruta de I/o se recopilan automáticamente y se envían a soporte técnico.
+
+Los contadores de estadísticas de la ruta de I/o vuelven a cero una vez que el usuario confirma que desea recoger las estadísticas de la ruta de I/O. Los contadores vuelven a cero incluso si después se cancela la operación. Además, los contadores también vuelven a cero cuando la controladora se restablece (reinicia).
+
+[NOTE]
+====
+Realice esta operación solo cuando el soporte técnico se lo indique.
+
+====
+.Pasos
+. Seleccione menú:ficha Soporte[Centro de soporte > Diagnóstico].
+. Seleccione *recoger estadísticas de ruta de E/S*.
+. Para confirmar que desea llevar a cabo la operación, escriba `collect`Y, a continuación, haga clic en *recopilar*.
++
+El archivo se guarda en la carpeta de descargas del explorador con el nombre de archivo `io-path-statistics.7z`.
+
+. Siga las instrucciones del soporte técnico para enviar el archivo.
+

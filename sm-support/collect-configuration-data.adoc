@@ -1,0 +1,35 @@
+---
+permalink: sm-support/collect-configuration-data.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, collect, configuration data 
+summary: Es posible guardar datos de configuración RAID de la controladora, que incluye todos los datos de los grupos de volúmenes y pools de discos. Luego, puede ponerse en contacto con el soporte técnico para obtener ayuda con la restauración de los datos. 
+---
+= Recopilar datos de configuración
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible guardar datos de configuración RAID de la controladora, que incluye todos los datos de los grupos de volúmenes y pools de discos. Luego, puede ponerse en contacto con el soporte técnico para obtener ayuda con la restauración de los datos.
+
+.Acerca de esta tarea
+En esta tarea, se describe cómo guardar el estado actual de la base de datos de configuración de RAID. Estos datos se recuperan de la ubicación de la memoria RPA de la controladora.
+
+[NOTE]
+====
+La función recoger datos de configuración guarda la misma información que el comando de la CLI para `save storageArray dbmDatabase`.
+
+====
+Solo debe realizar esta tarea cuando se lo indique una operación de Recovery Guru o el soporte técnico.
+
+.Pasos
+. Seleccione menú:ficha Soporte[Centro de soporte > Diagnóstico].
+. Seleccione *recopilar datos de configuración*.
+. En el cuadro de diálogo, haga clic en *recopilar*.
++
+El archivo, `configurationData-<arrayName>-<dateTime>.7z`, Se guarda en la carpeta de descargas del explorador.
+
+. Póngase en contacto con el soporte técnico para obtener más información sobre cómo enviar el archivo y para cargar los datos de nuevo en el sistema.
+

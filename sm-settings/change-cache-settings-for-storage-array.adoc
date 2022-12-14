@@ -1,0 +1,51 @@
+---
+permalink: sm-settings/change-cache-settings-for-storage-array.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, cache, settings, 
+summary: Se puede ajustar la configuración de la memoria caché para el vaciado y el tamaño del bloque de todos los volúmenes de la cabina de almacenamiento. 
+---
+= Modifique la configuración de caché para la cabina de almacenamiento
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se puede ajustar la configuración de la memoria caché para el vaciado y el tamaño del bloque de todos los volúmenes de la cabina de almacenamiento.
+
+.Acerca de esta tarea
+La memoria caché es un área de almacenamiento volátil temporal en la controladora que tiene un tiempo de acceso más rápido que la unidad. Para ajustar el rendimiento de la caché, se pueden modificar las siguientes opciones de configuración:
+
+[cols="25h,~"]
+|===
+| Configuración de caché | Descripción 
+
+
+ a| 
+Inicio de vaciado de caché bajo demanda
+ a| 
+La opción Iniciar purga de caché según demanda especifica el porcentaje de datos sin escribir de la caché que activan el vaciado de caché (escritura en disco). De forma predeterminada, el vaciado de caché comienza cuando los datos sin escribir alcanzan un 80 % de la capacidad. Un porcentaje mayor es una buena opción en entornos que tienen principalmente operaciones de escritura, de manera que las solicitudes de escritura nuevas se pueden procesar mediante la caché sin tener que ir al disco. Los valores de configuración más bajos son mejores para los entornos con operaciones de I/o erráticas (con ráfagas de datos), de manera que el sistema vacía la caché con frecuencia entre las ráfagas de datos. No obstante, un porcentaje inicial inferior al 80 % puede disminuir el rendimiento.
+
+
+
+ a| 
+Tamaño del bloque de caché
+ a| 
+El tamaño de bloque de la caché determina el tamaño máximo de cada bloque de la caché, que es una unidad organizativa para la gestión de la caché. De manera predeterminada, el tamaño de bloque es de 32 KiB. El sistema permite un tamaño de bloque de caché de 4, 8, 16 o 32 KiBs. Las aplicaciones utilizan distintos tamaños de bloques, que pueden afectar al rendimiento del almacenamiento. Un tamaño menor es una buena opción para los sistemas de archivos o las aplicaciones de bases de datos. Un tamaño mayor es ideal para aplicaciones que generan operaciones de I/o secuenciales, por ejemplo, multimedia.
+
+|===
+.Pasos
+. Seleccione MENU:Settings[System].
+. Desplácese hacia abajo hasta *Configuración adicional* y, a continuación, haga clic en *Cambiar configuración de caché*.
++
+Se abre el cuadro de diálogo Cambiar configuración de caché.
+
+. Ajuste los siguientes valores:
++
+** *Iniciar purga de caché de demanda* -- Seleccione un porcentaje que sea apropiado para la E/S utilizada en su entorno. Si elige un valor inferior a 80 %, es posible que note una disminución de rendimiento.
+** **Tamaño de bloque de caché -- **Elija un tamaño que sea apropiado para sus aplicaciones.
+
+
+. Haga clic en *Guardar*.
+

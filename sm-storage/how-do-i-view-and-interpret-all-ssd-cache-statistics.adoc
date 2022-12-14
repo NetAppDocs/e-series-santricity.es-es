@@ -1,0 +1,194 @@
+---
+permalink: sm-storage/how-do-i-view-and-interpret-all-ssd-cache-statistics.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, ssd cache, statistics 
+summary: Es posible visualizar estadísticas nominales y detalladas para la caché SSD. Las estadísticas nominales son un subconjunto de las estadísticas detalladas. 
+---
+= ¿Cómo se visualizan y se interpretan todas las estadísticas de caché SSD?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible visualizar estadísticas nominales y detalladas para la caché SSD. Las estadísticas nominales son un subconjunto de las estadísticas detalladas.
+
+Las estadísticas detalladas se pueden visualizar solo cuando se exportan todas las estadísticas de SSD a un `.csv` archivo. Al revisar e interpretar las estadísticas, tenga en cuenta que algunas interpretaciones provienen del análisis de una combinación de estadísticas.
+
+
+
+== Estadísticas nominales
+
+Para ver las estadísticas de caché SSD, seleccione MENU:almacenamiento[Pools y grupos de volúmenes]. Seleccione la caché SSD sobre la cual desea ver estadísticas y, a continuación, seleccione MENU:más[Ver estadísticas]. Las estadísticas nominales se muestran en el cuadro de diálogo Ver estadísticas de la caché SSD.
+
+En la siguiente lista, se incluyen estadísticas nominales, que son un subconjunto de las estadísticas detalladas.
+
+[cols="25h,~"]
+|===
+| Estadística nominal | Descripción 
+
+
+ a| 
+Lecturas/escrituras
+ a| 
+La cantidad total de lecturas de host o escrituras de host en los volúmenes con la función de caché SSD habilitada. Compare las lecturas en relación con las escrituras. Las lecturas deben ser mayores que las escrituras para un funcionamiento eficaz de la caché SSD. Cuando mayor sea la proporción de lecturas con respecto a las escrituras, mejor será el funcionamiento de la caché.
+
+
+
+ a| 
+Aciertos en caché
+ a| 
+El número de aciertos en caché.
+
+
+
+ a| 
+Aciertos en caché (%)
+ a| 
+Se deriva de los aciertos en caché/(lecturas + escrituras). El porcentaje de aciertos en caché debe ser mayor que 50 % para un funcionamiento eficaz de la caché SSD. Una cifra pequeña puede indicar varias cuestiones:
+
+* El ratio de lecturas respecto de escrituras es demasiado pequeño
+* Las lecturas no se repiten
+* La capacidad de la caché es demasiado baja
+
+
+
+
+ a| 
+Asignación en caché (%)
+ a| 
+La cantidad de almacenamiento de la caché SSD que se asigna, expresada como un porcentaje del almacenamiento de la caché SSD que está disponible para esta controladora. Derivado de bytes asignados/bytes disponibles. El porcentaje de asignación de la caché normalmente se muestra como 100 %. Si este número es menor que 100 %, significa que la caché no se preparó o que la capacidad de la caché SSD es mayor que la de todos los datos a los que se intenta acceder. En el último caso, una menor capacidad de caché SSD podría ofrecer el mismo nivel de rendimiento. Es preciso tener en cuenta que esto no indica que los datos en caché se colocaron en la caché SSD; simplemente es un paso de preparación antes de que los datos puedan colocarse en la caché SSD.
+
+
+
+ a| 
+Uso de caché (%)
+ a| 
+La cantidad de almacenamiento en la caché SSD que contiene datos de volúmenes habilitados, expresado como un porcentaje del almacenamiento de la caché SSD que se asigna. Este valor representa la utilización o la densidad de la caché SSD derivada de los bytes de datos de usuario/bytes asignados. El porcentaje de utilización de la caché normalmente es inferior al 100 %, puede que sea mucho menor. Esta cifra muestra el porcentaje de capacidad de la caché SSD que se llena con datos de caché. Esta cifra es menor que 100 %, ya que cada unidad de asignación de caché SSD, el bloque de caché SSD, se divide en unidades más pequeñas denominadas subbloques, que se llenan de manera bastante independiente. Por lo general, una cifra más alta es mejor, pero las mejoras de rendimiento pueden ser significativas incluso con una cifra menor.
+
+|===
+
+
+== Estadística detallada
+
+Las estadísticas detalladas consisten en las estadísticas normales más las estadísticas adicionales. Estas estadísticas adicionales se guardan junto con las estadísticas nominales; pero, a diferencia de las estadísticas nominales, no se muestran en el cuadro de diálogo Ver estadísticas de la caché SSD. Es posible ver las estadísticas detalladas solo después de exportar las estadísticas a `.csv` archivo.
+
+Al ver la `.csv` file, tenga en cuenta que las estadísticas detalladas se enumeran después de las estadísticas nominales:
+
+[cols="25h,~"]
+|===
+| Estadística detallada | Descripción 
+
+
+ a| 
+Bloques de lectura
+ a| 
+La cantidad de bloques en lecturas de host.
+
+
+
+ a| 
+Bloques de escritura
+ a| 
+La cantidad de bloques en escrituras de host.
+
+
+
+ a| 
+Bloques de acierto completo
+ a| 
+La cantidad de bloques en aciertos en caché. Los bloques de acierto completo indican la cantidad de bloques que se leyeron completamente de la caché SSD. La caché SSD solo ofrece beneficios en cuanto al rendimiento de las operaciones que son aciertos en caché completos.
+
+
+
+ a| 
+Aciertos parciales
+ a| 
+La cantidad de lecturas de host, donde al menos un bloque, pero no todos los bloques, se encontraban en la caché SSD. Un acierto parcial es una caché SSD *omisión* donde las lecturas se satisficieron desde el volumen base.
+
+
+
+ a| 
+Aciertos parciales - bloques
+ a| 
+La cantidad de bloques en aciertos parciales. Los aciertos en caché parciales y los bloques de acierto en caché resultan de una operación que solo tiene una porción de sus datos en la caché SSD. En este caso, la operación debe obtener los datos del volumen de la unidad de disco duro (HDD) almacenado en caché. La caché SSD no ofrece beneficios de rendimiento para este tipo de acierto. Si el número de bloques de acierto en caché parcial es mayor que los bloques de acierto en caché completo, se podría mejorar el rendimiento con un tipo de característica de I/o diferente (sistema de archivos, base de datos o servidor web). Se espera que haya una cifra mayor de aciertos y omisiones en caché en una comparación con los aciertos en caché cuando se está preparando la caché SSD.
+
+
+
+ a| 
+Pérdidas
+ a| 
+La cantidad de lecturas de host, donde ninguno de los bloques se encontraba en la caché SSD. Una omisión de caché SSD se produce cuando las lecturas se satisficieron desde el volumen base. Se espera que haya una cifra mayor de aciertos y omisiones en caché en una comparación con los aciertos en caché cuando se está preparando la caché SSD.
+
+
+
+ a| 
+Pérdidas - bloques
+ a| 
+La cantidad de bloques en omisiones.
+
+
+
+ a| 
+Completar acciones (Lecturas de host)
+ a| 
+La cantidad de lecturas de host donde se copiaron datos desde el volumen base hacia la caché SSD.
+
+
+
+ a| 
+Completar acciones(Lecturas de host) - bloques
+ a| 
+La cantidad de bloques en acciones de llenado (lecturas de host).
+
+
+
+ a| 
+Completar acciones (Escrituras de host)
+ a| 
+La cantidad de escrituras de host donde se copiaron datos desde el volumen base hacia la caché SSD. El número de completar acciones (Escrituras de host) puede ser cero para la opción de la configuración de caché que no llena la caché debido a una operación de I/o de escritura.
+
+
+
+ a| 
+Completar acciones(Escrituras de host) - bloques
+ a| 
+La cantidad de bloques en acciones de llenado (escrituras de host).
+
+
+
+ a| 
+Invalidar acciones
+ a| 
+La cantidad de veces que se invalidaron o se eliminaron datos de la caché SSD. Se realiza una operación de invalidación de caché para cada solicitud de escritura de host, cada solicitud de lectura de host con acceso forzado a la unidad (FUA), cada solicitud de verificación, y también en otras circunstancias.
+
+
+
+ a| 
+Reciclar acciones
+ a| 
+La cantidad de veces que el bloque de caché SSD se reutilizó para otro volumen base y/u otro rango de direcciones de bloque lógico (LBA). Para una operación efectiva de la caché, la cantidad de reciclados debe ser reducida comparada con la cifra sumada de operaciones de lectura y escritura. Si la cantidad de acciones de reciclado está cerca de la cifra sumada de lecturas y escrituras, se está produciendo una hiperpaginación de la caché SSD. Es necesario aumentar la capacidad de caché o la carga de trabajo no es favorable para usar con la caché SSD.
+
+
+
+ a| 
+Bytes disponibles
+ a| 
+La cantidad de bytes disponibles en la caché SSD que puede utilizar esta controladora.
+
+
+
+ a| 
+Bytes asignados
+ a| 
+La cantidad de bytes que asignó esta controladora desde la caché SSD. Los bytes asignados de la caché SSD pueden estar vacíos o contener datos de volúmenes base.
+
+
+
+ a| 
+Bytes de datos de usuario
+ a| 
+La cantidad de bytes asignados en la caché SSD que contienen datos de volúmenes base. Los bytes disponibles, los bytes asignados y los bytes de datos de usuario se usan para computar el porcentaje de asignación de caché y el porcentaje de utilización de caché.
+
+|===

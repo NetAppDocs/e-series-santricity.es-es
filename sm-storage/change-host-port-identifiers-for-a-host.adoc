@@ -1,0 +1,78 @@
+---
+permalink: sm-storage/change-host-port-identifiers-for-a-host.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, host port, identifiers, host 
+summary: Los identificadores de puerto de host se cambian cuando se desea cambiar la etiqueta de usuario en un identificador de puerto de host, agregar un nuevo identificador de puerto de host al host o eliminar un identificador de puerto de host del host. 
+---
+= Cambiar los identificadores de puerto de host para un host
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los identificadores de puerto de host se cambian cuando se desea cambiar la etiqueta de usuario en un identificador de puerto de host, agregar un nuevo identificador de puerto de host al host o eliminar un identificador de puerto de host del host.
+
+.Acerca de esta tarea
+Cuando se cambian identificadores de puerto de host, se deben tener en cuenta las siguientes directrices:
+
+* *Add* -- cuando se agrega un puerto de host, se asocia el identificador de puerto de host al host creado para conectarse a la matriz de almacenamiento. Es posible introducir información manualmente mediante una utilidad de adaptador de bus de host (HBA).
+* *Editar* -- puede editar los puertos de host para mover (asociar) un puerto de host a otro host. Es posible que se haya movido el adaptador de bus de host o iniciador de iSCSI a otro host, de modo que se debe mover (asociar) el puerto de host al nuevo host.
+* *Eliminar* -- puede eliminar puertos de host para eliminar (desasociar) puertos de host de un host.
+
+
+.Pasos
+. Seleccione MENU:Storage[hosts].
+. Seleccione el host al que se asociarán los puertos y, a continuación, haga clic en *Ver/editar configuración*.
++
+Si desea añadir puertos a un host en un clúster de hosts, expanda el clúster de hosts y seleccione el host deseado. No se pueden añadir puertos en el nivel del clúster de hosts.
+
++
+Se muestra un cuadro de diálogo en el que se proporciona la configuración actual de los hosts.
+
+. Haga clic en la ficha *puertos de host*.
++
+En el cuadro de diálogo, se muestran los identificadores de puerto de host actuales.
+
+. Cambie la configuración del identificador de puerto de host, según corresponda.
++
+[cols="25h,~"]
+|===
+| Ajuste | Descripción 
+
+
+ a| 
+Puerto de host
+ a| 
+Es posible elegir una de las siguientes opciones:
+
+** *Agregar* -- Utilice Agregar para asociar un nuevo identificador de puerto de host al host. La longitud del nombre del identificador de puerto de host se determina mediante la tecnología de interfaz del host. Los nombres de identificador de puerto de host de Fibre Channel e Infiniband deben tener 16 caracteres. Los nombres de identificador de puerto de host iSCSI tienen un máximo de 223 caracteres. El puerto debe ser único. No se permite un número de puerto que ya se haya configurado.
+** *Eliminar* -- Utilice Eliminar para eliminar (desasociar) un identificador de puerto de host. La opción Eliminar no quita físicamente el puerto de host. Esta opción elimina la asociación entre el puerto de host y el host. Salvo que se eliminen el adaptador de bus de host o el iniciador de iSCSI, la controladora seguirá reconociendo el puerto de host.
++
+[NOTE]
+====
+Si se elimina el identificador de puerto de host, el identificador ya no sigue asociado a este host. Además, el host pierde acceso a cualquiera de los volúmenes asignados a través de este identificador de puerto de host.
+
+====
+
+
+
+
+ a| 
+Etiqueta
+ a| 
+Para cambiar el nombre de la etiqueta del puerto, haga clic en el icono *Editar* (lápiz). El nombre de etiqueta del puerto debe ser único. No se permite un nombre de etiqueta que ya se haya configurado.
+
+
+
+ a| 
+Secreto CHAP
+ a| 
+Solo se muestra para los hosts iSCSI. Es posible configurar o cambiar el secreto CHAP para los iniciadores (hosts iSCSI).
+
+System Manager usa el método de protocolo de autenticación por desafío mutuo (CHAP), que valida la identidad de los destinos e iniciadores durante el enlace inicial. La autenticación se basa en una clave de seguridad compartida denominada secreto CHAP.
+
+|===
+. Haga clic en *Guardar*.
+

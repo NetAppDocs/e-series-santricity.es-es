@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/what-is-the-disabled-state.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, disabled, state 
+summary: Un volumen Snapshot en estado deshabilitado no se encuentra asignado actualmente a una imagen Snapshot. Para habilitar el volumen Snapshot, se debe utilizar la operación recrear para asignar una imagen Snapshot nueva al volumen Snapshot deshabilitado. 
+---
+= ¿Qué es el estado deshabilitado?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un volumen Snapshot en estado deshabilitado no se encuentra asignado actualmente a una imagen Snapshot. Para habilitar el volumen Snapshot, se debe utilizar la operación recrear para asignar una imagen Snapshot nueva al volumen Snapshot deshabilitado.
+
+Las características del volumen Snapshot quedan definidas por la imagen Snapshot asignada. La actividad de lectura y escritura en un volumen Snapshot en estado deshabilitado se encuentra suspendida.

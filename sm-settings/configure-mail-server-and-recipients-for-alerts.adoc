@@ -1,0 +1,77 @@
+---
+permalink: sm-settings/configure-mail-server-and-recipients-for-alerts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, mail, server, recipients, alerts, 
+summary: Para configurar las alertas por correo electrónico, debe indicar una dirección de correo electrónico del servidor y las direcciones de correo electrónico de los destinatarios de las alertas. Está permitido introducir hasta 20 direcciones de correo electrónico. 
+---
+= Configurar servidores de correo y destinatarios para las alertas
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para configurar las alertas por correo electrónico, debe indicar una dirección de correo electrónico del servidor y las direcciones de correo electrónico de los destinatarios de las alertas. Está permitido introducir hasta 20 direcciones de correo electrónico.
+
+.Antes de empezar
+* La dirección del servidor de correo debe estar disponible. La dirección puede ser IPv4 o IPv6, o bien un nombre de dominio completo.
++
+[NOTE]
+====
+Para usar un nombre de dominio completo, debe configurar un servidor DNS en ambas controladoras. Es posible configurar un servidor DNS desde la página hardware.
+
+====
+* La dirección de correo electrónico que se usará como remitente de alertas debe estar disponible. Esta es la dirección que aparece en el campo "From" del mensaje de alerta. Es necesario contar con una dirección de remitente en el protocolo SMTP; sin esa dirección, se produce un error.
+* Las direcciones de correo electrónico de los destinatarios de alertas deben estar disponibles. Por lo general, el destinatario tiene la dirección de un administrador de red o de almacenamiento. Es posible introducir hasta 20 direcciones de correo electrónico.
+
+
+.Acerca de esta tarea
+En esta tarea, se describe cómo configurar el servidor de correo, introducir las direcciones de correo electrónico del remitente y de los destinatarios, y analizar todas las direcciones de correo electrónico introducidas desde la página Alertas.
+
+[NOTE]
+====
+Las alertas por correo electrónico también pueden configurarse en el asistente de configuración inicial.
+
+====
+.Pasos
+. Seleccione MENU:Settings[Alerts].
+. Seleccione la ficha *correo electrónico*.
++
+Si aún no se configuró ningún servidor de correo, la pestaña correo electrónico muestra "Configure Mail Server".
+
+. Seleccione *Configurar el servidor de correo*.
++
+Se abre el cuadro de diálogo Configurar el servidor de correo.
+
+. Introduzca la información del servidor de correo y, a continuación, haga clic en *Guardar*.
++
+** *Dirección del servidor de correo* -- Introduzca un nombre de dominio completo, una dirección IPv4 o una dirección IPv6 del servidor de correo.
++
+[NOTE]
+====
+Para usar un nombre de dominio completo, debe configurar un servidor DNS en ambas controladoras. Es posible configurar un servidor DNS desde la página hardware.
+
+====
+** *Dirección del remitente de correo electrónico* -- Introduzca una dirección de correo electrónico válida que se utilizará como remitente del correo electrónico. Esta dirección aparece en el campo "de" del mensaje de correo electrónico.
+** *Cifrado* -- Si desea cifrar mensajes, seleccione *SMTPS* o *STARTTLS* para el tipo de cifrado y, a continuación, seleccione el número de puerto para los mensajes cifrados. De lo contrario, seleccione *Ninguno*.
+** *Nombre de usuario y contraseña* -- Si es necesario, introduzca un nombre de usuario y una contraseña para la autenticación con el remitente saliente y el servidor de correo.
+** *Incluir información de contacto en el correo electrónico* -- para incluir la información de contacto del remitente con el mensaje de alerta, seleccione esta opción e introduzca un nombre y un número de teléfono.
++
+Después de hacer clic en *Guardar*, las direcciones de correo electrónico aparecerán en la ficha correo electrónico de la página Alertas.
+
+
+
+. Seleccione *Añadir correos electrónicos*.
++
+Se abre el cuadro de diálogo Añadir correos electrónicos.
+
+. Introduzca una o más direcciones de correo electrónico para los destinatarios de alertas y, a continuación, haga clic en *Agregar*.
++
+Las direcciones de correo electrónico aparecerán en la página Alertas.
+
+. Si desea asegurarse de que las direcciones de correo electrónico son válidas, haga clic en *probar todos los correos electrónicos* para enviar mensajes de prueba a los destinatarios.
+
+
+.Resultados
+Después de configurar las alertas por correo electrónico, el monitor de eventos envía mensajes de correo electrónico a los destinatarios especificados cada vez que se produce un evento que genera alertas.

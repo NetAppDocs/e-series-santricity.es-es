@@ -1,0 +1,99 @@
+---
+permalink: sm-storage/create-snapshot-image.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, snapshot, image 
+summary: Es posible crear manualmente una imagen Snapshot desde un volumen base o un grupo de coherencia Snapshot. Esto también se denomina snapshot instantánea o imagen instantánea. 
+---
+= Crear una imagen Snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible crear manualmente una imagen Snapshot desde un volumen base o un grupo de coherencia Snapshot. Esto también se denomina _instantánea_ o _instantánea_.
+
+.Antes de empezar
+* El estado del volumen base debe ser óptima.
+* El estado de la unidad debe ser Optimal.
+* El grupo de instantáneas no podrá designarse como «citado».
+* El volumen de capacidad reservada debe tener la misma configuración de Data Assurance (DA) que el volumen base asociado para el grupo Snapshot.
+
+
+.Pasos
+. Debe realizar una de las siguientes acciones para crear una imagen Snapshot:
++
+** Seleccione MENU:Storage[Volumes]. Seleccione el objeto (volumen base o grupo de coherencia Snapshot) y, luego, seleccione menú:Servicios de copia[Crear snapshot instantánea].
+** Seleccione MENU:Storage[Snapshots]. Seleccione la ficha *Imágenes Snapshot* y, a continuación, elija menú:Crear[instantánea].
++
+Se muestra el cuadro de diálogo Crear imagen Snapshot. Seleccione el objeto (volumen base o grupo de coherencia Snapshot) y haga clic en *Siguiente*. Si se creó una imagen Snapshot anterior para el volumen o grupo de coherencia Snapshot, el sistema crea una Snapshot instantánea de inmediato. De lo contrario, si es la primera vez que se crea una imagen Snapshot para el volumen o el grupo de coherencia Snapshot, se muestra el cuadro de diálogo Confirmar creación de imagen Snapshot.
+
+
+
+. Haga clic en *Crear* para aceptar la notificación de que se necesita capacidad reservada y continuar con el paso Reservar capacidad.
++
+Se muestra el cuadro de diálogo Reservar capacidad.
+
+. Utilice el cuadro de desplazamiento para ajustar el porcentaje de capacidad y, a continuación, haga clic en *Siguiente* para aceptar el volumen del candidato destacado en la tabla.
++
+Se muestra el cuadro de diálogo Editar configuración.
+
+. Seleccione la configuración para la imagen Snapshot que corresponda y confirme que desea realizar la operación.
++
+.Detalles del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Ajuste | Descripción 
+
+
+ a| 
+*Ajustes de imagen Snapshot*
+
+
+
+ a| 
+Límite de la imagen Snapshot
+ a| 
+Deje seleccionada la casilla de comprobación si desea que las imágenes Snapshot se eliminen automáticamente después del límite especificado; use el cuadro de desplazamiento para cambiar el límite. Si desmarca esta casilla de comprobación, la creación de imágenes Snapshot se detiene después de 32 imágenes.
+
+
+
+ a| 
+*Ajustes de capacidad reservada*
+
+
+
+ a| 
+Enviarme una alerta cuando...
+ a| 
+Use el cuadro de desplazamiento para ajustar el valor del porcentaje en el cual el sistema envía una notificación de alerta cuando la capacidad reservada para un grupo Snapshot está casi completa.
+
+Cuando la capacidad reservada para el grupo Snapshot supera el umbral específico, use los avisos por adelantado para aumentar la capacidad reservada o eliminar los objetos innecesarios antes de quedarse sin espacio.
+
+
+
+ a| 
+Política para capacidad reservada completa
+ a| 
+Seleccione una de las siguientes políticas:
+
+** *Purga la imagen Snapshot más antigua* -- el sistema purga automáticamente la imagen Snapshot más antigua del grupo Snapshot, lo que libera la capacidad reservada de la imagen Snapshot para su reutilización dentro del grupo.
+** *Rechazar escrituras en volumen base*: Cuando la capacidad reservada alcanza el porcentaje máximo definido, el sistema rechaza cualquier solicitud de escritura de I/o en el volumen base que activó el acceso a la capacidad reservada.
+
+
+|===
+====
+
+
+.Resultados
+* System Manager muestra la imagen Snapshot nueva en la tabla Imágenes Snapshot. En la tabla, se muestra la imagen nueva según la Marca de hora y el volumen base o el grupo de coherencia Snapshot asociado.
+* Si la creación Snapshot queda en estado Pending, se debe a las siguientes condiciones:
++
+** El volumen base que contiene la imagen Snapshot es miembro de un grupo de reflejos asíncronos.
+** El volumen base está realizando una operación de sincronización. La creación de imágenes Snapshot finaliza apenas se completa la operación de sincronización.
+
+
+

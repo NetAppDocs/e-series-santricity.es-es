@@ -1,0 +1,27 @@
+---
+permalink: sm-mirroring/asynchronous-mirroring-why-dont-i-see-all-the-volumes-on-the-remote-storage-array.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volumes, remote, storage, array, mirrored, pair, 
+summary: Cuando se selecciona un volumen secundario en la cabina de almacenamiento remota, se muestra una lista de todos los volúmenes elegibles para esa pareja reflejada. 
+---
+= Mirroring asíncrono: ¿Por qué no se muestran todos los volúmenes en la cabina de almacenamiento remota?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cuando se selecciona un volumen secundario en la cabina de almacenamiento remota, se muestra una lista de todos los volúmenes elegibles para esa pareja reflejada.
+
+Todos los volúmenes que no son elegibles no aparecen en esa lista. Es posible que los volúmenes no sean admisibles por uno de los siguientes motivos:
+
+* El volumen no está en estado óptimo.
+* El volumen ya participa en una relación de mirroring.
+* Los atributos de volumen fino entre el volumen primario y el volumen secundario no coinciden.
+* Si utiliza Data Assurance (DA), el volumen primario y el secundario deben tener la misma configuración DE DA.
++
+** Si el volumen primario tiene la función DA habilitada, el volumen secundario también debe tenerla.
+** Si el volumen primario no tiene la función DA habilitada, el volumen secundario tampoco debe tenerla.
+
+
+

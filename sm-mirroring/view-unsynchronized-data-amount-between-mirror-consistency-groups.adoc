@@ -1,0 +1,30 @@
+---
+permalink: sm-mirroring/view-unsynchronized-data-amount-between-mirror-consistency-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, unsynchronized, data, mirror, consistency, groups, 
+summary: Es posible ver la cantidad de datos no sincronizados entre grupos de coherencia de reflejos en la cabina de almacenamiento local y en la cabina de almacenamiento remota. Mientras el grupo de coherencia de reflejos se encuentra en el estado no sincronizado, no se produce ninguna actividad de mirroring. 
+---
+= Ver cantidad de datos no sincronizados entre grupos de coherencia de reflejos
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible ver la cantidad de datos no sincronizados entre grupos de coherencia de reflejos en la cabina de almacenamiento local y en la cabina de almacenamiento remota. Mientras el grupo de coherencia de reflejos se encuentra en el estado no sincronizado, no se produce ninguna actividad de mirroring.
+
+.Acerca de esta tarea
+Es posible realizar esta tarea cuando el grupo de coherencia de reflejos seleccionado contiene parejas reflejadas y cuando la sincronización no se encuentra en curso.
+
+.Pasos
+. Seleccione menu:Storage[Asynchronous Mirroring].
+. Seleccione la ficha *grupos de consistencia de mirroring*.
++
+Se muestra la tabla Grupo de coherencia de reflejos donde se detallan los grupos de coherencia de reflejos asociados con la cabina de almacenamiento.
+
+. Haga clic en MENU:More [Ver cantidad de datos no sincronizados].
++
+Si existen datos no sincronizados, los valores de la tabla lo reflejan. En la columna de cantidad de datos, se enumera la cantidad de datos no sincronizados en MIB.
+
+

@@ -1,0 +1,81 @@
+---
+permalink: um-manage/mirroring-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, mirroring, terminology 
+summary: Conozca la forma en que los términos de mirroring se aplican a su cabina de almacenamiento. 
+---
+= Terminología de mirroring
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Conozca la forma en que los términos de mirroring se aplican a su cabina de almacenamiento.
+
+[cols="25h,~"]
+|===
+| Duración | Descripción 
+
+
+ a| 
+Cabina de almacenamiento local
+ a| 
+La cabina de almacenamiento local es aquella sobre la que se actúa en el momento.
+
+
+
+ a| 
+Grupo de coherencia de reflejos
+ a| 
+Un grupo de coherencia de reflejos es un contenedor para una o más parejas reflejadas. Para las operaciones de mirroring asíncrono, se debe crear un grupo de coherencia de reflejos. Todas las parejas reflejadas de un grupo se resincronizan de forma simultánea para mantener un punto de recuperación consistente.
+
+El mirroring síncrono no utiliza grupo de coherencia de reflejos.
+
+
+
+ a| 
+Pareja reflejada
+ a| 
+Una pareja reflejada comprende dos volúmenes: Un volumen primario y uno secundario.
+
+En el mirroring asíncrono, una pareja reflejada siempre pertenece a un grupo de coherencia de reflejos. Primero, se realizan las operaciones de escritura en el volumen primario y, luego, se replican en el secundario. Cada pareja reflejada de un grupo de coherencia de reflejos comparte la misma configuración de sincronización.
+
+
+
+ a| 
+Volumen primario
+ a| 
+El volumen primario de una pareja reflejada es el volumen de origen que se reflejará.
+
+
+
+ a| 
+Cabina de almacenamiento remota
+ a| 
+La cabina de almacenamiento remota se designa normalmente como el sitio secundario, que normalmente contiene una réplica de los datos en una configuración de mirroring.
+
+
+
+ a| 
+Capacidad reservada
+ a| 
+La capacidad reservada es la capacidad física asignada que se usa para cualquier operación de servicio de copia y objeto de almacenamiento. El host no puede leerla directamente.
+
+Se requieren estos volúmenes para que la controladora pueda guardar de forma persistente la información necesaria para mantener el mirroring en un estado operativo. Los volúmenes contienen información como registros delta y datos de copia en escritura.
+
+
+
+ a| 
+Volumen secundario
+ a| 
+El volumen secundario de una pareja reflejada está normalmente ubicado en un sitio secundario y contiene una réplica de los datos.
+
+
+
+ a| 
+Sincronización
+ a| 
+La sincronización se produce en la sincronización inicial entre la cabina de almacenamiento local y la cabina de almacenamiento remota. La sincronización también se produce cuando los volúmenes primario y secundario dejan de estar sincronizados después de una interrupción de comunicación. Cuando el enlace de comunicación se restablece, todos los datos sin replicar se sincronizan con la cabina de almacenamiento del volumen secundario.
+
+|===

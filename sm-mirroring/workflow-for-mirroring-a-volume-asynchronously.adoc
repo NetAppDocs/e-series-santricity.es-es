@@ -1,0 +1,43 @@
+---
+permalink: sm-mirroring/workflow-for-mirroring-a-volume-asynchronously.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, workflow, mirroring, asynchronously, 
+summary: El mirroring asíncrono se debe configurar mediante el siguiente flujo de trabajo. 
+---
+= Flujo de trabajo para reflejar un volumen de manera asíncrona
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El mirroring asíncrono se debe configurar mediante el siguiente flujo de trabajo.
+
+[NOTE]
+====
+Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
+
+====
+. Realice la configuración inicial en Unified Manager:
++
+.. Seleccione la cabina de almacenamiento local como el origen de la transferencia de datos.
+.. Cree un grupo de coherencia de reflejos o seleccione uno existente que funcione como contenedor para el volumen primario de la cabina local y el volumen secundario de la cabina remota. Los volúmenes primario y secundario se conocen como la "pareja reflejada". Si es la primera vez que crea el grupo de coherencia de reflejos, debe especificar si desea ejecutar sincronizaciones manuales o programadas.
+.. Seleccione un volumen primario de la cabina de almacenamiento local y determine su capacidad reservada. La capacidad reservada es la capacidad física asignada que se utilizará para la operación de copia.
+.. Seleccione una cabina de almacenamiento remota como el destino de la transferencia y un volumen secundario y, a continuación, determine su capacidad reservada.
+.. Inicie la transferencia de datos inicial desde el volumen primario hacia el volumen secundario. Según el tamaño de los volúmenes, esta transferencia inicial puede tardar varias horas.
+
+
+. Compruebe el progreso de la sincronización inicial:
++
+.. En Unified Manager, inicie la instancia de System Manager para la cabina local.
+.. En System Manager, consulte el estado de la operación de mirroring. Cuando se complete el mirroring, el estado de la pareja reflejada será "óptimo".
+
+
+. *Opcional:* puede reprogramar o realizar manualmente transferencias de datos posteriores en System Manager. Solo se transferirán los bloques nuevos y cambiados del volumen primario al volumen secundario.
++
+[NOTE]
+====
+Como la replicación asíncrona es periódica, el sistema puede consolidar los bloques cambiados y ahorrar ancho de banda de red. El impacto sobre el rendimiento de escritura y la latencia de escritura es mínimo.
+
+====
+

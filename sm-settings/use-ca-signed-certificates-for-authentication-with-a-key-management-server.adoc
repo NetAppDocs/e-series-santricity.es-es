@@ -1,0 +1,85 @@
+---
+permalink: sm-settings/use-ca-signed-certificates-for-authentication-with-a-key-management-server.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, ca-signed, certificates, authentication, key, management, server, 
+summary: Para establecer comunicaciones seguras entre un servidor de gestión de claves y las controladoras de la cabina de almacenamiento, debe configurar los conjuntos de certificados adecuados. 
+---
+= Use certificados firmados por CA para la autenticación con un servidor de gestión de claves
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para establecer comunicaciones seguras entre un servidor de gestión de claves y las controladoras de la cabina de almacenamiento, debe configurar los conjuntos de certificados adecuados.
+
+.Antes de empezar
+Debe iniciar sesión con un perfil de usuario que cuente con permisos de administración de seguridad. De lo contrario, no se mostrarán las funciones de certificación.
+
+.Acerca de esta tarea
+La autenticación entre las controladoras y un servidor de gestión de claves es un procedimiento de dos pasos.
+
+
+
+== Paso 1: Complete y envíe una CSR para la autenticación con un servidor de gestión de claves
+
+Primero, debe generar un archivo de solicitud de firma de certificación (CSR) y utilizar la CSR para solicitar un certificado de cliente firmado de una entidad de certificación (CA) que confía en el servidor de gestión de claves. También es posible crear y descargar un certificado de cliente desde el servidor de gestión de claves con el archivo CSR descargado. Un certificado de cliente valida las controladoras de la cabina de almacenamiento para que el servidor de gestión de claves pueda confiar en sus solicitudes de protocolo de interoperabilidad de gestión de claves (KMIP).
+
+.Pasos
+. Seleccione MENU:Settings[Certificates].
+. En la ficha Gestión de claves, seleccione *completar CSR*.
+. Introduzca la siguiente información:
++
+** *Nombre común* -- un nombre que identifica a esta CSR, como el nombre de la matriz de almacenamiento, que se mostrará en los archivos de certificado.
+** *Organización* -- el nombre completo y legal de su empresa u organización. Incluya sufijos, como Inc. O Corp
+** *Unidad organizativa (opcional)* -- la división de su organización que maneja el certificado.
+** *Ciudad/localidad* -- la ciudad o localidad donde está ubicada su organización.
+** *Estado/Región (opcional)* -- el estado o región donde está ubicada su organización.
+** *Código ISO de país* -- el código ISO (Organización Internacional de Normalización) de dos dígitos, como US, en el que se encuentra su organización.
+
+
+. Haga clic en *Descargar*.
++
+Se guardará un archivo CSR en el sistema local.
+
+. Solicite un certificado de cliente firmado de una CA a la que confíe el servidor de gestión de claves.
+. Cuando tenga un certificado de cliente, vaya a. <<Paso 2: Importar certificados para el servidor de gestión de claves>>.
+
+
+
+
+== Paso 2: Importar certificados para el servidor de gestión de claves
+
+Como paso siguiente, debe importar certificados para la autenticación entre la cabina de almacenamiento y el servidor de gestión de claves. Existen dos tipos de certificados: El certificado de cliente valida las controladoras de la cabina de almacenamiento, mientras que el certificado de servidor de gestión de claves valida al servidor. Debe cargar tanto el archivo de certificado de cliente para las controladoras como el archivo de certificado de servidor para el servidor de gestión de claves.
+
+.Antes de empezar
+* Tiene un archivo de certificado de cliente firmado (consulte <<Paso 1: Complete y envíe una CSR para la autenticación con un servidor de gestión de claves>>), y copió ese archivo en el host donde se accede a System Manager. Un certificado de cliente valida las controladoras de la cabina de almacenamiento para que el servidor de gestión de claves pueda confiar en sus solicitudes de protocolo de interoperabilidad de gestión de claves (KMIP).
+* Debe recuperar un archivo de certificado del servidor de gestión de claves y, a continuación, copiar ese archivo en el host donde va a acceder a System Manager. Un certificado de servidor de gestión de claves valida el servidor de gestión de claves para que la cabina de almacenamiento pueda confiar en su dirección IP. Es posible usar un certificado raíz, intermedio o de servidor para el servidor de gestión de claves.
++
+[NOTE]
+====
+Si desea obtener más información sobre el certificado de servidor, consulte la documentación del servidor de gestión de claves.
+
+====
+
+
+.Pasos
+. Seleccione MENU:Settings[Certificates].
+. En la ficha Gestión de claves, seleccione *Importar*.
++
+Se abre un cuadro de diálogo para importar los archivos de certificado.
+
+. Junto a *Seleccionar certificado de cliente*, haga clic en el botón *examinar* para seleccionar el archivo de certificado de cliente para los controladores de la matriz de almacenamiento.
++
+Se muestra el nombre del archivo en el cuadro de diálogo.
+
+. Junto a *Seleccionar certificado de servidor del servidor de administración de claves*, haga clic en el botón *examinar* para seleccionar el archivo de certificado de servidor del servidor de administración de claves. Es posible elegir un certificado raíz, intermedio o de servidor para el servidor de gestión de claves.
++
+Se muestra el nombre del archivo en el cuadro de diálogo.
+
+. Haga clic en *Importar*.
++
+Los archivos se cargan y validan.
+
+

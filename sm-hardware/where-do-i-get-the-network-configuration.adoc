@@ -1,0 +1,16 @@
+---
+permalink: sm-hardware/where-do-i-get-the-network-configuration.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, network, configuration, internet, protocol, 
+summary: 'Es posible obtener del administrador de red la dirección de protocolo de Internet (IP), la máscara de subred y la información de puerta de enlace.' 
+---
+= ¿En dónde se puede obtener la configuración de red?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible obtener del administrador de red la dirección de protocolo de Internet (IP), la máscara de subred y la información de puerta de enlace.
+
+Esta información es necesaria para configurar los puertos de las controladoras.

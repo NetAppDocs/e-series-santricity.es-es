@@ -1,0 +1,48 @@
+---
+permalink: sm-hardware/solid-state-disks-ssds.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, solid, state, disk, SSD 
+summary: 'Los discos de estado sólido (SSD) son dispositivos de almacenamiento de datos que usan memoria de estado sólido (flash) para almacenar datos en forma persistente. Los SSD emulan las unidades de discos duros convencionales y están disponibles con las mismas interfaces que usan las unidades de disco duro.' 
+---
+= Discos de estado sólido (SSD)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los discos de estado sólido (SSD) son dispositivos de almacenamiento de datos que usan memoria de estado sólido (flash) para almacenar datos en forma persistente. Los SSD emulan las unidades de discos duros convencionales y están disponibles con las mismas interfaces que usan las unidades de disco duro.
+
+
+
+== Ventajas de los discos SSD
+
+Algunas de las ventajas de los discos SSD sobre las unidades de disco duro son:
+
+* Inicio más rápido (sin aumentar velocidad de giro)
+* Latencia más baja
+* Más operaciones de I/o por segundo (IOPS)
+* Más fiabilidad con menos piezas móviles
+* Menos consumo de energía
+* Menos calor producido y menos refrigeración requerida
+
+
+
+
+== Identificación de SSD
+
+En la página hardware, es posible localizar los discos SSD en la vista de la bandeja frontal. Busque las bahías de unidades con un icono de rayo. Esto indica que existe un SSD instalado.
+
+
+
+== Grupos de volúmenes
+
+Un grupo de volúmenes debe contener unidades de un mismo tipo de medio (todos discos SSD o todas unidades de disco duro). Un grupo de volúmenes no puede contener una combinación de tipos de medios o tipos de interfaces.
+
+
+
+== Almacenamiento en caché
+
+El almacenamiento en caché de escritura de las controladoras siempre está habilitado para SSD. La caché de escritura aumenta el rendimiento y prolonga la vida útil de los discos SSD.
+
+Además de la caché de la controladora, es posible implementar una caché SSD para mejorar el rendimiento general del sistema. En la caché SSD, se copian datos de volúmenes y se almacenan en dos volúmenes de RAID internos (uno por controladora).

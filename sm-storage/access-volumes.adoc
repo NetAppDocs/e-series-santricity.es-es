@@ -1,0 +1,30 @@
+---
+permalink: sm-storage/access-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access volumes 
+summary: 'Un volumen de acceso es un volumen configurado en fábrica de la cabina de almacenamiento que se utiliza para la comunicación con la cabina de almacenamiento y el host mediante la conexión de I/o del host. El volumen de acceso requiere un número de unidad lógica (LUN).' 
+---
+= Volúmenes de acceso
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un volumen de acceso es un volumen configurado en fábrica de la cabina de almacenamiento que se utiliza para la comunicación con la cabina de almacenamiento y el host mediante la conexión de I/o del host. El volumen de acceso requiere un número de unidad lógica (LUN).
+
+El volumen de acceso se utiliza en dos instancias:
+
+* *Creación automática de host* -- el volumen de acceso es utilizado por la utilidad Agente de contexto de host (HCA) para insertar la información del host (nombre, puertos, tipo de host) en System Manager para la creación automática de host.
+* *Administración en banda* -- el volumen de acceso se utiliza para una conexión en banda para administrar la matriz de almacenamiento. Esto solo puede llevarse a cabo si la cabina de almacenamiento se gestiona con la interfaz de línea de comandos (CLI).
++
+[NOTE]
+====
+La gestión en banda no está disponible para los sistemas de almacenamiento EF600 o EF300.
+
+====
+
+
+Un volumen de acceso se crea automáticamente la primera vez que se asigna un volumen a un host. Por ejemplo, si asigna Volume_1 y Volume_2 a un host, cuando observe los resultados de esa asignación, notará la existencia de tres volúmenes (Volume_1, Volume_2 y Access).
+
+Si no desea crear hosts automáticamente ni gestionar una cabina de almacenamiento en banda con la CLI, no necesita el volumen de acceso; por lo tanto, puede eliminarlo para liberar el LUN. Esta acción quita la asignación de volumen a LUN y todas las conexiones de gestión en banda al host.

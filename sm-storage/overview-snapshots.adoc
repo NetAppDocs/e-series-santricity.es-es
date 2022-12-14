@@ -1,0 +1,69 @@
+---
+permalink: sm-storage/overview-snapshots.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshots 
+summary: La función Snapshot permite crear imágenes de un momento específico de los volúmenes de una cabina de almacenamiento y utilizarlas para realizar backups o pruebas. 
+---
+= Información general de Snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La función Snapshot permite crear imágenes de un momento específico de los volúmenes de una cabina de almacenamiento y utilizarlas para realizar backups o pruebas.
+
+
+
+== ¿Qué son las imágenes Snapshot?
+
+Un _snapshot image_ es una copia lógica de datos de volúmenes capturados en un momento específico. Al igual que un punto de restauración, las imágenes Snapshot permiten revertir a un conjunto de datos bien conocidos. Si bien el host puede acceder a la imagen Snapshot, no puede leer ni escribir allí directamente.
+
+Obtenga más información:
+
+* link:how-snapshot-storage-works.html["Cómo funciona el almacenamiento Snapshot"]
+* link:snapshot-terminology.html["Terminología Snapshot"]
+* link:base-volumes-reserved-capacity-and-snapshot-groups.html["Volúmenes base, capacidad reservada y grupos Snapshot"]
+* link:snapshot-schedules-and-snapshot-consistency-groups.html["Programaciones Snapshot y grupos de coherencia"]
+* link:snapshot-volumes.html["Volúmenes Snapshot"]
+
+
+
+
+== ¿Cómo se crean las snapshots?
+
+Es posible crear manualmente una imagen Snapshot desde un volumen base o un grupo de coherencia Snapshot. Este procedimiento está disponible en el menú:almacenamiento[instantáneas].
+
+Obtenga más información:
+
+* link:requirements-and-guidelines-for-snapshots.html["Requisitos y directrices para Snapshot"]
+* link:workflow-for-creating-snapshot-images-and-snapshot-volumes.html["Flujo de trabajo para crear imágenes y volúmenes Snapshot"]
+* link:create-snapshot-image.html["Crear una imagen Snapshot"]
+* link:schedule-snapshot-images.html["Programar imágenes Snapshot"]
+* link:create-snapshot-consistency-group.html["Crear un grupo de coherencia Snapshot"]
+* link:create-snapshot-volume.html["Crear un volumen Snapshot"]
+
+
+
+
+== ¿Cómo revertir los datos de una copia Snapshot?
+
+Un _rollback_ es el proceso de devolver los datos de un volumen base a un momento específico anterior. Es posible revertir los datos de las instantáneas desde MENU:Storage[Snapshots].
+
+Obtenga más información:
+
+* link:snapshot-rollback.html["Reversión Snapshot"]
+* link:start-snapshot-image-rollback-for-base-volume.html["Iniciar una reversión de imagen Snapshot para un volumen base"]
+* link:start-snapshot-image-rollback-for-consistency-group-member-volumes.html["Iniciar una reversión de imagen Snapshot para un miembro del grupo de coherencia"]
+
+
+
+
+== Información relacionada
+
+Obtenga más información acerca de las tareas relacionadas con las instantáneas:
+
+* link:change-the-reserved-capacity-settings-for-a-snapshot-volume.html["Cambiar la capacidad reservada para un volumen Snapshot"]
+* link:change-the-reserved-capacity-settings-for-a-snapshot-group.html["Cambiar la capacidad reservada de un grupo Snapshot"]
+

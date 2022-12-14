@@ -1,0 +1,49 @@
+---
+permalink: sm-settings/set-automatic-load-balancing.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, set, automatic, load, balancing, 
+summary: La función Automatic Load Balancing garantiza que el tráfico de I/o entrante de los hosts se gestione dinámicamente y se equilibre entre ambas controladoras. Esta función está habilitada de forma predeterminada, pero se puede deshabilitar desde System Manager. 
+---
+= Establecer equilibrio de carga automático
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La función Automatic Load Balancing garantiza que el tráfico de I/o entrante de los hosts se gestione dinámicamente y se equilibre entre ambas controladoras. Esta función está habilitada de forma predeterminada, pero se puede deshabilitar desde System Manager.
+
+.Acerca de esta tarea
+Cuando la función Automatic Load Balancing está habilitada, ejecuta las siguientes funciones:
+
+* Supervisa y equilibra automáticamente la utilización de recursos de la controladora.
+* Ajusta automáticamente la propiedad de la controladora de volumen cuando es necesario y así, optimiza el ancho de banda de I/o entre los hosts y la cabina de almacenamiento.
+
+
+Puede ser conveniente deshabilitar Automatic Load Balancing en la cabina de almacenamiento por las siguientes razones:
+
+* No se desea cambiar automáticamente la propiedad de una controladora de volumen para equilibrar la carga de trabajo.
+* Se trabaja en un entorno altamente optimizado donde la distribución de carga se configura intencionalmente para lograr una distribución específica entre las controladoras.
+
+
+.Pasos
+. Seleccione MENU:Settings[System].
+. Desplácese hasta *Configuración adicional* y, a continuación, haga clic en *Habilitar/deshabilitar equilibrio de carga automático*.
++
+El texto debajo de esta opción indica si la función se encuentra habilitada o deshabilitada.
+
++
+Se abre un cuadro de diálogo de confirmación.
+
+. Confirme haciendo clic en *Sí* para continuar.
++
+Al seleccionar esta opción, es posible alternar entre habilitar o deshabilitar la función.
+
++
+[NOTE]
+====
+Cuando esta función pasa de estar deshabilitada a habilitada, también se habilita la función Host Connectivity Reporting.
+
+====
+

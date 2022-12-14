@@ -1,0 +1,51 @@
+---
+permalink: sm-settings/what-else-do-i-need-to-do-to-configure-or-diagnose-iser-over-infiniband.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, diagnose, iser, infiniBand, 
+summary: En la tabla a continuación, se enumeran las funciones de System Manager que se pueden utilizar para configurar y gestionar sesiones Iser over InfiniBand. 
+---
+= ¿Qué más debo hacer para configurar o diagnosticar Iser over InfiniBand?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+En la tabla a continuación, se enumeran las funciones de System Manager que se pueden utilizar para configurar y gestionar sesiones Iser over InfiniBand.
+
+[NOTE]
+====
+La configuración de Iser over InfiniBand solo está disponible si la controladora de la cabina de almacenamiento incluye un puerto de gestión de hosts Iser over InfiniBand.
+
+====
+[cols="35h,~"]
+|===
+| Acción | Ubicación 
+
+
+ a| 
+Configure los puertos Iser over InfiniBand
+ a| 
+. Seleccione *hardware*.
+. Seleccione *Mostrar parte posterior de la bandeja*.
+. Seleccione una controladora.
+. Seleccione *Configurar puertos Iser over InfiniBand*.
+
+
+o.
+
+. Seleccione MENU:Settings[System].
+. Desplácese hasta *Configuración de Iser over InfiniBand* y seleccione *Configurar puertos Iser over InfiniBand*.
+
+
+
+
+ a| 
+Ver estadísticas de Iser over InfiniBand
+ a| 
+. Seleccione MENU:Settings[System].
+. Desplácese hasta *Configuración de Iser over InfiniBand* y seleccione *Ver estadísticas de Iser over InfiniBand*.
+
+
+|===

@@ -1,0 +1,95 @@
+---
+permalink: sm-mirroring/how-synchronous-mirroring-works.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, 
+summary: El mirroring síncrono replica los volúmenes de datos en tiempo real para garantizar la disponibilidad continua. 
+---
+= Cómo funciona el mirroring síncrono
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El mirroring síncrono replica los volúmenes de datos en tiempo real para garantizar la disponibilidad continua.
+
+[NOTE]
+====
+La función de mirroring no está disponible en las cabinas de almacenamiento EF600 o EF300.
+
+====
+El mirroring síncrono logra un objetivo de punto de recuperación (RPO) de cero datos perdidos mediante la conservación de una copia de los datos importantes disponible en caso de que se produzca un desastre en una de las dos cabinas de almacenamiento. La copia es idéntica a los datos de producción en cada momento, ya que cada vez que se realiza una escritura en el volumen primario, se realiza una escritura en el volumen secundario. El host no recibe la confirmación de que la escritura se realizó correctamente hasta que el volumen secundario se actualiza correctamente con los cambios realizados en el volumen primario.
+
+Este tipo de mirroring es ideal para fines de continuidad del negocio como la recuperación ante desastres.
+
+
+
+== Relación de mirroring síncrono
+
+Una relación de mirroring síncrono consiste en un volumen primario y un volumen secundario en cabinas de almacenamiento individuales. La cabina de almacenamiento que contiene el volumen primario está ubicada generalmente en el sitio primario y presta servicios para los hosts activos. La cabina de almacenamiento que contiene el volumen secundario está ubicada generalmente en un sitio secundario y contiene una réplica de los datos. El volumen secundario se usa si la cabina de almacenamiento del volumen primario no está disponible debido a, por ejemplo, una interrupción del servicio total, un incendio o un error de hardware en el sitio primario.
+
+
+
+== Sesión de mirroring síncrono
+
+El proceso de configuración de mirroring síncrono implica configurar volúmenes en parejas. Después de crear una pareja reflejada, que consiste en un volumen primario en una cabina de almacenamiento y un volumen secundario en otra, puede comenzar con el mirroring síncrono. Los pasos del mirroring síncrono se describen a continuación.
+
+image::../media/sam-1130-dwg-sync-mirroring-session.gif[sesión de duplicación de sincronización de sam 1130 dwg]
+
+. Llega una escritura del host.
+. La escritura se confirma en el volumen primario, se propaga al sistema remoto y luego se confirma en el volumen secundario.
+. La cabina de almacenamiento del volumen primario envía un mensaje de finalización de I/o al sistema host _after_ que las dos operaciones de escritura finalizaron correctamente.
+
+
+La capacidad reservada se utiliza para registrar información sobre la solicitud de escritura entrante desde un host.
+
+Cuando la controladora actual que es propietaria del volumen primario recibe una solicitud de escritura de un host, la controladora primero registra información sobre la escritura en la capacidad reservada del volumen primario. Luego escribe los datos en el volumen primario. A continuación, la controladora inicia una operación de escritura remota para copiar los bloques de datos afectados en el volumen secundario de la cabina de almacenamiento remota.
+
+Debido a que la aplicación host debe esperar que se produzca la escritura en la cabina de almacenamiento local y en toda la red de la cabina de almacenamiento remota, Se requiere una conexión muy rápida entre la cabina de almacenamiento local y la cabina de almacenamiento remota para mantener la relación de reflejo sin reducir demasiado el rendimiento de I/o local.
+
+
+
+== Recuperación tras siniestros
+
+El mirroring síncrono mantiene una copia de los datos que están físicamente distantes del sitio donde residen. Si se produce un desastre en el sitio primario, como un apagón de energía o una inundación, puede accederse rápidamente a los datos desde el sitio secundario.
+
+El volumen secundario no está disponible para aplicaciones host donde hay operaciones de mirroring síncrono en curso; por lo tanto, ante un desastre en la cabina de almacenamiento local, se puede conmutar al nodo de respaldo de la cabina de almacenamiento remota. Para conmutar al nodo de respaldo, promocione el volumen secundario al rol primario. A continuación, el host de recuperación puede acceder al volumen recientemente promovido y las operaciones empresariales pueden continuar.
+
+
+
+== Configuración de sincronización
+
+Cuando se crea una pareja reflejada, también se define la prioridad de sincronización y la política de resincronización que utiliza la pareja reflejada para completar la operación de resincronización después de una interrupción de comunicación.
+
+Si el enlace de comunicación entre las dos cabinas de almacenamiento deja de funcionar, los hosts siguen recibiendo reconocimientos de la cabina de almacenamiento local para evitar una pérdida de acceso. Cuando el enlace de comunicación vuelve a funcionar, todos los datos no replicados pueden volver a sincronizarse manual o automáticamente en la cabina de almacenamiento remota.
+
+Si los datos se resincronizan automáticamente o no depende de la política de resincronización de la pareja reflejada. Una política de resincronización automática permite que la pareja reflejada se resincronice automáticamente cuando el enlace vuelve a funcionar. Una política de resincronización manual lo obliga a reanudar manualmente la resincronización después de un problema de comunicación. Se recomienda la política de resincronización manual.
+
+Es posible editar la configuración de sincronización para una pareja reflejada solo en la cabina de almacenamiento que contiene el volumen primario.
+
+
+
+== Datos no sincronizados
+
+Los volúmenes primario y secundario dejan de estar sincronizados cuando la cabina de almacenamiento del volumen primario no puede escribir datos en el volumen secundario. Esto puede deberse a los siguientes problemas:
+
+* Problemas de red entre las cabinas de almacenamiento remota y local
+* Un volumen secundario con errores
+* Una sincronización que se suspende manualmente en la pareja reflejada
+
+
+
+
+== Una pareja reflejada huérfana
+
+Se crea un volumen de pareja reflejada huérfano cuando se elimina un volumen miembro de un lado (ya sea el lado primario o el lado secundario), pero no del otro lado.
+
+Los volúmenes de parejas reflejadas huérfanas se detectan cuando se restaura la comunicación entre las cabinas y los dos lados de la configuración reflejada concilian los parámetros de reflejo.
+
+Puede eliminar una pareja reflejada para corregir un estado de pareja reflejada huérfana.
+
+
+
+== Configuración y gestión
+
+Para habilitar y configurar el mirroring entre dos cabinas, debe usar la interfaz de Unified Manager. Una vez habilitado el mirroring, puede gestionar las parejas reflejadas y las configuraciones de sincronización en System Manager.

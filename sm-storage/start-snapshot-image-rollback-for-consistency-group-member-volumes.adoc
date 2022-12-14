@@ -1,0 +1,102 @@
+---
+permalink: sm-storage/start-snapshot-image-rollback-for-consistency-group-member-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, start, snapshot, image, rollback, snapshot, consistency, group, member, volumes 
+summary: Es posible ejecutar una operación de reversión para cambiar el contenido de los volúmenes miembro de un grupo de coherencia Snapshot de modo que este coincida con el contenido guardado en una imagen Snapshot. 
+---
+= Iniciar reversión de imagen Snapshot para volúmenes miembro de un grupo de coherencia Snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible ejecutar una operación de reversión para cambiar el contenido de los volúmenes miembro de un grupo de coherencia Snapshot de modo que este coincida con el contenido guardado en una imagen Snapshot.
+
+La operación de reversión no cambia el contenido de las imágenes Snapshot asociadas con el grupo de coherencia Snapshot.
+
+.Antes de empezar
+* La capacidad reservada disponible es suficiente para iniciar una operación de reversión.
+* El estado de la imagen Snapshot seleccionada y el volumen seleccionado es óptimo.
+* No existe una operación de reversión en curso en el volumen seleccionado.
+
+
+.Acerca de esta tarea
+Con la secuencia de inicio de la reversión, es posible iniciar la reversión sobre una imagen Snapshot de un grupo de coherencia Snapshot y seleccionar opciones para añadir capacidad de almacenamiento. Solo se puede iniciar una operación de reversión para un grupo de coherencia Snapshot a la vez.
+
+[NOTE]
+====
+El host no puede obtener acceso de lectura/escritura a los volúmenes miembro existentes después de que se inicia la reversión, pero puede obtener acceso inmediato a los nuevos volúmenes revertidos. Es posible crear una imagen Snapshot de los volúmenes miembro justo antes de iniciar la reversión a fin de conservar los volúmenes base previos a la reversión para fines de recuperación.
+
+====
+El proceso para iniciar la reversión de una imagen Snapshot de un grupo de coherencia Snapshot es un procedimiento de varios pasos.
+
+
+
+== Paso 1: Seleccionar miembros
+
+Debe seleccionar los volúmenes miembro que desea revertir.
+
+.Pasos
+. Seleccione MENU:Storage[Snapshots].
+. Seleccione la ficha *Imágenes Snapshot*.
+. Seleccione la imagen Snapshot del grupo de coherencia Snapshot y haga clic en menu:Rollback[Start].
++
+Se muestra el cuadro de diálogo Iniciar reversión.
+
+. Seleccione el o los volúmenes miembro.
+. Haga clic en *Siguiente* y siga uno de estos procedimientos:
++
+** Si alguno de los volúmenes miembro seleccionados se encuentra asociado con más de un objeto de capacidad reservada en el que se almacenan imágenes Snapshot, se muestra el cuadro de diálogo revisar capacidad. Vaya a. <<Paso 2: Revisar la capacidad>>.
+** Si ninguno de los volúmenes miembro seleccionados se encuentra asociado con más de un objeto de capacidad reservada en el que se almacenan imágenes Snapshot, se muestra el cuadro de diálogo Editar prioridad. Vaya a. <<Paso 3: Editar prioridad>>.
+
+
+
+
+
+
+== Paso 2: Revisar la capacidad
+
+Si seleccionó volúmenes miembro asociados con más de un objeto de capacidad reservada, como un grupo Snapshot y un volumen de capacidad reservada, puede revisar y aumentar la capacidad reservada para el o los volúmenes revertidos.
+
+.Pasos
+. Junto a cualquier volumen miembro con una capacidad reservada muy baja (o nula), haga clic en el enlace *aumentar capacidad* de la columna *Editar*.
++
+Se muestra el cuadro de diálogo aumentar la capacidad reservada.
+
+. Utilice el cuadro de desplazamiento para ajustar el porcentaje de capacidad y, a continuación, haga clic en *aumentar*.
++
+Si el pool o el grupo de volúmenes en el que se encuentra el objeto de almacenamiento seleccionado no tiene capacidad libre y la cabina de almacenamiento tiene capacidad sin asignar, puede añadir capacidad. Puede crear un nuevo pool o grupo de volúmenes y volver a intentar esta operación con la nueva capacidad libre de ese pool o grupo de volúmenes.
+
+. Haga clic en *Siguiente* y vaya a. <<Paso 3: Editar prioridad>>.
++
+Se muestra el cuadro de diálogo Editar prioridad.
+
+
+
+
+
+== Paso 3: Editar prioridad
+
+Es posible editar la prioridad de la operación de reversión si es necesario.
+
+.Acerca de esta tarea
+La prioridad de la reversión determina la cantidad de recursos del sistema que se deben dedicar a la operación de reversión a expensas del rendimiento del sistema.
+
+.Pasos
+. Utilice el control deslizante para ajustar la prioridad de la reversión según sea necesario.
+. Confirme que desea realizar esta operación y haga clic en *Finalizar*.
+
+
+.Resultados
+System Manager realiza lo siguiente:
+
+* Restaurará los volúmenes miembro del grupo de coherencia Snapshot con el contenido guardado en la imagen Snapshot seleccionada.
+* Habilitará inmediatamente el acceso del host a los volúmenes revertidos. No es necesario esperar hasta que se complete la operación de reversión.
+
+
+.Después de terminar
+Seleccione MENU:Inicio[Ver operaciones en curso] para ver el progreso de la operación de reversión.
+
+Si la operación de reversión no se realiza correctamente, se coloca en pausa. Puede reanudar la operación en pausa y, si no se realiza correctamente, puede seguir el procedimiento de Recovery Guru para corregir el problema o ponerse en contacto con el soporte técnico.

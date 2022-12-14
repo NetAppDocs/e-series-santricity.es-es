@@ -1,0 +1,18 @@
+---
+permalink: sm-settings/which-registration-methods-are-automatically-supported-for-iscsi.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, registration, methods,  automatically, supported, iscsi, 
+summary: 'La implementación de iSCSI es compatible con el método de detección Servicio de nombres de almacenamiento de Internet (iSNS) o con el uso del comando Send Targets.' 
+---
+= ¿Qué métodos de registro se admiten automáticamente para iSCSI?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La implementación de iSCSI es compatible con el método de detección Servicio de nombres de almacenamiento de Internet (iSNS) o con el uso del comando Send Targets.
+
+El método iSNS permite la detección iSNS entre los iniciadores (hosts iSCSI) y los objetivos (controladoras). La controladora objetivo se registra para proporcionar al servidor iSNS la información sobre el puerto y el nombre completo de iSCSI (IQN) de la controladora.
+
+Si no se configura iSNS, el host iSCSI puede enviar el comando Send Targets durante una sesión de detección iSCSI. En respuesta, la controladora devuelve la información del puerto (por ejemplo, el IQN objetivo, la dirección IP del puerto, el puerto de escucha y el grupo de puertos de destino). Este método de detección no es necesario si utiliza iSNS, dado que el iniciador del host puede recuperar las IP objetivo del servidor iSNS.

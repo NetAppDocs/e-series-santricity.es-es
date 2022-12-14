@@ -1,0 +1,56 @@
+---
+permalink: sm-settings/back-up-security-key.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, backup, security, key, 
+summary: Después de crear o de cambiar una clave de seguridad, es posible crear una copia de backup del archivo de claves en caso de que el original se dañe. 
+---
+= Realice un backup de la clave de seguridad
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Después de crear o de cambiar una clave de seguridad, es posible crear una copia de backup del archivo de claves en caso de que el original se dañe.
+
+.Acerca de esta tarea
+En esta tarea, se describe cómo realizar un backup de la clave de seguridad creada previamente. Durante este procedimiento, es posible crear una nueva frase de contraseña para el backup. No es necesario que esta frase de contraseña coincida con la utilizada cuando se creó o se modificó por última vez la clave original. La frase de contraseña se aplica solo al backup que se va a crear.
+
+.Pasos
+. Seleccione MENU:Settings[System].
+. En *Gestión de claves de seguridad*, seleccione *clave de copia de seguridad*.
++
+Se abre el cuadro de diálogo realizar backup de la clave de seguridad.
+
+. En los campos *define a pass phrase/Re-enter pass phrase*, introduzca y confirme una frase de contraseña para este backup.
++
+El valor puede tener entre 8 y 32 caracteres, y debe incluir uno de los siguientes caracteres:
+
++
+** Una letra mayúscula (o varias)
+** Un número (o varios).
+** Un carácter no alfanumérico, como !, *, @ (o varios).
+
+
++
+[CAUTION]
+====
+*Asegúrese de grabar su entrada para uso posterior*. Necesita la frase de contraseña para acceder al backup de esta clave de seguridad.
+
+====
+. Haga clic en *copia de seguridad*.
++
+Se descarga una copia de seguridad de la clave de seguridad en el host local y, a continuación, se abre el cuadro de diálogo *Confirmar/registrar copia de seguridad de la clave*.
+
++
+[NOTE]
+====
+La ruta del archivo de claves de seguridad descargado puede depender de la ubicación de descarga predeterminada del explorador.
+
+====
+. Registre la frase de contraseña en un lugar seguro y, a continuación, haga clic en *Cerrar*.
+
+
+.Después de terminar
+Debe validar la clave de seguridad de backup.

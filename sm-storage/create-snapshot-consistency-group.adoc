@@ -1,0 +1,140 @@
+---
+permalink: sm-storage/create-snapshot-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, snapshot, consistency group 
+summary: Para garantizar que las copias sean coherentes, puede crear un conjunto de varios volúmenes denominado grupo de coherencia Snapshot. 
+---
+= Crear un grupo de coherencia Snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para garantizar que las copias sean coherentes, puede crear un conjunto de varios volúmenes denominado _grupo de coherencia Snapshot_.
+
+El grupo permite realizar imágenes Snapshot de todos los volúmenes al mismo tiempo para fines de coherencia. Cada volumen que pertenece a un grupo de coherencia Snapshot se denomina _volumen miembro_. Si se añade un volumen a un grupo de coherencia Snapshot, el sistema crea automáticamente un grupo Snapshot nuevo que corresponde a este volumen miembro.
+
+.Acerca de esta tarea
+La secuencia de creación de un grupo de coherencia Snapshot permite seleccionar volúmenes miembro para el grupo y asignar capacidad a los volúmenes miembro.
+
+El proceso para crear un grupo de coherencia Snapshot es un procedimiento de varios pasos.
+
+
+
+== Paso 1: Añadir miembros a un grupo de coherencia Snapshot
+
+Seleccione miembros para especificar una recogida de los volúmenes que componen el grupo de coherencia Snapshot. Cualquier acción que se realice en el grupo de coherencia Snapshot se extiende de manera uniforme a los volúmenes miembro seleccionados.
+
+.Antes de empezar
+El estado de los volúmenes miembro debe ser óptima.
+
+.Pasos
+. Seleccione MENU:Storage[Snapshots].
+. Haga clic en la ficha *grupos de coherencia de instantánea*.
+. Seleccione menu:Crear[Grupo de coherencia Snapshot].
++
+Se muestra el cuadro de diálogo Crear grupo de coherencia Snapshot.
+
+. Seleccione los volúmenes que se añadirán como volúmenes miembro al grupo de coherencia Snapshot.
+. Haga clic en *Siguiente* y vaya a. <<Paso 2: Reservar capacidad para un grupo de coherencia Snapshot>>.
+
+
+
+
+== Paso 2: Reservar capacidad para un grupo de coherencia Snapshot
+
+Asocie la capacidad reservada al grupo de coherencia Snapshot. System Manager sugiere los volúmenes y la capacidad según las propiedades del grupo de coherencia Snapshot. Se puede aceptar la configuración recomendada para la capacidad reservada o personalizar el almacenamiento asignado.
+
+.Acerca de esta tarea
+En el cuadro de diálogo Reservar capacidad, la tabla de candidatos de volúmenes muestra solo los candidatos que admiten la capacidad reservada específica. La capacidad reservada es la capacidad física asignada que se usa para cualquier operación de servicio de copia y objeto de almacenamiento. El host no puede leerla directamente.
+
+.Pasos
+. Use el cuadro de desplazamiento para asignar la capacidad reservada para el grupo de coherencia Snapshot. Realice una de las siguientes acciones:
++
+** *Acepte la configuración predeterminada*.
++
+Use la opción recomendada Accept the default settings para asignar la capacidad reservada a cada volumen miembro con la configuración predeterminada.
+
+** *Asigne su propia configuración de capacidad reservada para satisfacer sus necesidades de almacenamiento de datos.*
++
+Utilice las siguientes directrices para asignar la capacidad reservada:
+
++
+*** La configuración predeterminada para la capacidad reservada es del 40 % del volumen base. Por lo general, esta capacidad es suficiente.
+*** La capacidad necesaria varía, según la frecuencia y el tamaño de escrituras de I/o en los volúmenes y la cantidad y la duración de la recogida de imágenes Snapshot.
+
+
+
+
+. *Opcional:* Si cambia la configuración predeterminada de capacidad reservada, haga clic en *Actualizar candidatos* para actualizar la lista de candidatos de la capacidad reservada que especificó.
+. Haga clic en *Siguiente* y vaya a. <<Paso 3: Editar la configuración para un grupo de coherencia Snapshot>>.
+
+
+
+
+== Paso 3: Editar la configuración para un grupo de coherencia Snapshot
+
+Acepte o seleccione la configuración de eliminación automática y los umbrales de alerta de capacidad reservada para el grupo de coherencia Snapshot.
+
+.Acerca de esta tarea
+La secuencia de creación de un grupo de coherencia Snapshot permite seleccionar volúmenes miembro para el grupo y asignar capacidad a los volúmenes miembro.
+
+.Pasos
+. Acepte o cambie los ajustes predeterminados del grupo de coherencia Snapshot según corresponda.
++
+.Detalles del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Ajuste | Descripción 
+
+
+ a| 
+*Ajustes del grupo de coherencia de instantáneas*
+
+
+
+ a| 
+Nombre
+ a| 
+Especifique el nombre del grupo de coherencia Snapshot.
+
+
+
+ a| 
+Habilitar la eliminación automática de imágenes Snapshot cuando...
+ a| 
+Deje seleccionada la casilla de comprobación si desea que las imágenes Snapshot se eliminen automáticamente después del límite especificado; use el cuadro de desplazamiento para cambiar el límite. Si desmarca esta casilla de comprobación, la creación de imágenes Snapshot se detiene después de 32 imágenes.
+
+
+
+ a| 
+*Ajustes de capacidad reservada*
+
+
+
+ a| 
+Enviarme una alerta cuando...
+ a| 
+Use el cuadro de desplazamiento para ajustar el valor del porcentaje en el cual el sistema envía una notificación de alerta cuando la capacidad reservada para un grupo de coherencia Snapshot está casi completa.
+
+Cuando la capacidad reservada para el grupo de coherencia Snapshot supera el umbral específico, use los avisos por adelantado para aumentar la capacidad reservada o eliminar los objetos innecesarios antes de quedarse sin espacio.
+
+
+
+ a| 
+Política para capacidad reservada completa
+ a| 
+Seleccione una de las siguientes políticas:
+
+** *Purgar imagen Snapshot más antigua* -- el sistema automáticamente purga la imagen Snapshot más antigua del grupo de coherencia Snapshot, lo cual libera la capacidad reservada de la imagen Snapshot para reutilizarla dentro del grupo.
+** *Rechazar escrituras en volumen base*: Cuando la capacidad reservada alcanza el porcentaje máximo definido, el sistema rechaza cualquier solicitud de escritura de I/o en el volumen base que activó el acceso a la capacidad reservada.
+
+
+|===
+====
+. Una vez que esté satisfecho con la configuración del grupo de coherencia Snapshot, haga clic en *Finalizar*.
+

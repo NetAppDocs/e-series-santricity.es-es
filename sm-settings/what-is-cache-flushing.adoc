@@ -1,0 +1,28 @@
+---
+permalink: sm-settings/what-is-cache-flushing.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, cache, flushing, 
+summary: Cuando la cantidad de datos no guardados que se encuentra en la caché llega a cierto nivel, la controladora guarda periódicamente en una unidad los datos en caché. Este proceso de guardado se denomina vaciado. 
+---
+= ¿Qué es el vaciado de la caché?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cuando la cantidad de datos no guardados que se encuentra en la caché llega a cierto nivel, la controladora guarda periódicamente en una unidad los datos en caché. Este proceso de guardado se denomina "vaciado".
+
+La controladora utiliza dos algoritmos para vaciar la caché: En función de la demanda y en función de la antigüedad. La controladora utiliza un algoritmo en función de la demanda hasta que la cantidad de datos en caché desciende por debajo del umbral de vaciado de caché. De manera predeterminada, un vaciado comienza cuando está en uso el 80 % de la caché.
+
+En System Manager, puede configurar el umbral «Iniciar purga de caché a demanda» para que admita mejor el tipo de I/o utilizado en su entorno. En un entorno principalmente compuesto por operaciones de escritura, debe establecer un porcentaje alto de «Iniciar purga de caché de demanda» para aumentar la probabilidad de que cualquier solicitud de escritura nueva se pueda procesar mediante la caché sin tener que ir al disco. La configuración de un porcentaje alto limita la cantidad de vaciados de caché a fin de que más datos permanezcan en la caché, lo que aumenta la posibilidad de más aciertos en caché.
+
+En un entorno en el que las operaciones de I/o son erráticas (con picos de datos), es posible utilizar un vaciado de caché bajo para que el sistema vacíe la caché con frecuencia entre los picos de datos. En un entorno diverso de operaciones de I/o que procesa diferentes cargas, o cuando se desconoce el tipo de cargas, se puede configurar un umbral del 50 % como un buen punto de partida intermedio. Tenga en cuenta que, si selecciona un porcentaje de inicio inferior al 80 %, es posible que disminuya el rendimiento, ya que los datos necesarios para la lectura del host pueden no estar disponibles. Además, un porcentaje más bajo también aumenta la cantidad de escrituras de disco necesarias para mantener el nivel de caché, lo que aumenta la sobrecarga del sistema.
+
+El algoritmo en función de la antigüedad especifica el periodo durante el cual los datos de escritura pueden permanecer en la caché antes de calificar para el vaciamiento a los discos. Las controladoras utilizan el algoritmo en función de la antigüedad hasta que se alcanza el umbral de vaciado de caché. El valor predeterminado es de 10 segundos, pero este lapso se considera solo en periodos de inactividad. No puede modificar el tiempo de vaciado en System Manager; en su lugar, debe utilizar el comando *Set Storage Array* en la interfaz de línea de comandos (CLI).
+
+[CAUTION]
+====
+*Posible pérdida de datos* -- Si activa la opción *almacenamiento en caché de escritura sin baterías* y no dispone de una fuente de alimentación universal de protección, podría perder datos. Además, puede perder datos si no tiene baterías de controlador y activa la opción *almacenamiento en caché de escritura sin baterías*.
+
+====

@@ -1,0 +1,20 @@
+---
+permalink: sm-settings/how-do-i-interpret-iser-over-infiniband-statistics.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, interpret, iser, over, infiniband, statistics, 
+summary: 'El cuadro de diálogo Ver estadísticas de Iser over InfiniBand muestra las estadísticas de destino local (protocolo) y las estadísticas de la interfaz Iser over InfiniBand (IB). Todas las estadísticas son de solo lectura y no pueden configurarse.' 
+---
+= ¿Cómo se interpretan las estadísticas de Iser over InfiniBand?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El cuadro de diálogo Ver estadísticas de Iser over InfiniBand muestra las estadísticas de destino local (protocolo) y las estadísticas de la interfaz Iser over InfiniBand (IB). Todas las estadísticas son de solo lectura y no pueden configurarse.
+
+* *Estadísticas de destino local (protocolo)* -- proporciona estadísticas para el destino Iser over InfiniBand, que muestra el acceso de nivel de bloque a sus medios de almacenamiento.
+* *Estadísticas de la interfaz Iser over InfiniBand* -- proporciona estadísticas para todos los puertos Iser over InfiniBand en la interfaz InfiniBand, que incluye estadísticas de rendimiento e información de errores de enlace asociados con cada puerto del switch.
+
+
+Es posible ver cada una de las estadísticas como estadísticas sin configurar o estadísticas de base. Las estadísticas sin configurar son todas las estadísticas recogidas desde que se iniciaron las controladoras. Las estadísticas de base son las estadísticas de un momento específico que se recogen desde el establecimiento de la hora de la línea de base.

@@ -1,0 +1,75 @@
+---
+permalink: sm-mirroring/complete-mirrored-pair-for-primary-volumes-created-on-legacy-system.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, complete, mirrored, pair, volumes, created, legacy, 
+summary: Si creó un volumen primario en una cabina de almacenamiento heredada que SANtricity System Manager no puede gestionar, es posible crear el volumen secundario en esta cabina con System Manager. 
+---
+= Completar pareja reflejada para volúmenes primarios creados en un sistema heredado
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si creó un volumen primario en una cabina de almacenamiento heredada que System Manager no puede gestionar, es posible crear el volumen secundario en esta cabina con System Manager.
+
+.Acerca de esta tarea
+Es posible realizar un mirroring asíncrono entre las cabinas heredadas que usan una interfaz diferente y las cabinas más recientes que pueden gestionarse mediante System Manager.
+
+* Si está por crear reflejos entre dos cabinas de almacenamiento que usan System Manager, puede omitir esta tarea porque ya finalizó la pareja reflejada en la secuencia de creación de parejas reflejadas.
+* Lleve a cabo esta tarea en la cabina de almacenamiento remota.
+
+
+.Pasos
+. Seleccione menu:Storage[Asynchronous Mirroring].
+. Seleccione la ficha *par reflejado*.
++
+Se muestra la tabla Mirrored Pairs con todas las parejas reflejadas asociadas con la cabina de almacenamiento.
+
+. Busque el volumen de la pareja reflejada con el estado incompleto y haga clic en el enlace *completar pareja reflejada* que aparece en la columna de la pareja reflejada.
+. Elija si desea completar la secuencia de creación de la pareja reflejada de manera automática o manual. Para ello, seleccione uno de los siguientes botones de opción:
++
+** *Automático* -- crea un nuevo volumen secundario.
++
+Acepte la configuración predeterminada del lado remoto de la pareja reflejada. Para hacerlo, seleccione un pool o grupo de volúmenes donde desee crear el volumen secundario. Use esta opción recomendada para asignar la capacidad reservada para el volumen secundario con la configuración predeterminada.
+
+** *Manual* -- Seleccione un volumen existente.
++
+Defina sus propios parámetros para el volumen secundario.
+
++
+... Haga clic en *Siguiente* para seleccionar el volumen secundario.
+... Seleccione un volumen existente que desea utilizar como volumen secundario y después haga clic en *Siguiente* para asignar la capacidad reservada.
+... Asigne la capacidad reservada. Debe realizar una de las siguientes acciones:
++
+**** Acepte la configuración predeterminada.
++
+La configuración predeterminada para la capacidad reservada es del 20 % del volumen base y, por lo general, esta capacidad es suficiente.
+
+**** Asigne su propia configuración de capacidad reservada para satisfacer sus necesidades de almacenamiento de datos relacionadas con el mirroring asíncrono.
++
+La capacidad necesaria varía, según la frecuencia y el tamaño de las escrituras de I/o en el volumen primario y el tiempo que se requiere conservar la capacidad. En general, elija una capacidad mayor para la capacidad reservada si se presentan una o ambas de estas condiciones:
+
++
+***** Se pretende conservar la pareja reflejada por un periodo prolongado.
+***** Un gran porcentaje de bloques de datos cambiará en el volumen primario debido a una gran actividad de I/O. Utilice datos históricos de rendimiento u otra utilidad del sistema operativo para determinar la actividad de I/o típica del volumen primario.
+
+
+
+
+
+
+
+
+. Seleccione *completado*.
+
+
+.Resultados
+System Manager realiza lo siguiente:
+
+* Crea el volumen secundario en la cabina de almacenamiento remota y asigna la capacidad reservada del lado remoto de la pareja reflejada.
+* Comienza la sincronización inicial entre la cabina de almacenamiento local y la remota.
+* Si el volumen que se refleja es un volumen fino, solamente los bloques asignados se transfieren al volumen secundario durante la sincronización inicial. Esta transferencia reduce la cantidad de datos que se deben transferir para completar la sincronización inicial.
+* Crea la capacidad reservada para la pareja reflejada en la cabina de almacenamiento local y la remota.
+

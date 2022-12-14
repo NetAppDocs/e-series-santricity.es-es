@@ -1,0 +1,27 @@
+---
+permalink: sm-storage/delete-snapshot-schedule.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, snapshot, schedule 
+summary: Si ya no desea recoger imágenes Snapshot, es posible eliminar una programación Snapshot existente. 
+---
+= Eliminar programación Snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si ya no desea recoger imágenes Snapshot, es posible eliminar una programación Snapshot existente.
+
+.Acerca de esta tarea
+Cuando se elimina una programación Snapshot, no se eliminan las imágenes Snapshot junto con ella. Si considera que la recogida de imágenes Snapshot puede reanudarse en algún momento, debe suspender la programación Snapshot en lugar de eliminarla.
+
+.Pasos
+. Seleccione MENU:Storage[Snapshots].
+. Haga clic en la ficha *programaciones*.
+. Seleccione la programación Snapshot que desea eliminar y confirme la operación.
+
+
+.Resultados
+El sistema elimina todos los atributos de la programación del volumen base o del grupo de coherencia Snapshot.

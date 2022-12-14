@@ -1,0 +1,164 @@
+---
+permalink: sm-mirroring/asynchronous-mirror-status.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, asynchronous, mirror, status, consistency, group, 
+summary: El estado de reflejo define el estado de los grupos de coherencia de reflejos y las parejas de volúmenes reflejadas. 
+---
+= Estado de reflejo asíncrono
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El estado de reflejo define el estado de los grupos de coherencia de reflejos y las parejas de volúmenes reflejadas.
+
+[NOTE]
+====
+Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
+
+====
+
+
+== Estado para grupos de coherencia de reflejos
+
+[cols="25h,~"]
+|===
+| Estado | Descripción 
+
+
+ a| 
+Sincronizando (sincronización inicial)
+ a| 
+El progreso de la sincronización de datos inicial que se completó entre las parejas de volúmenes reflejadas.
+
+Durante una sincronización inicial, los volúmenes pueden presentar una transición hacia los siguientes estados: Degradado/con errores/óptima/Desconocido.
+
+
+
+ a| 
+Sincronización (sincronización de intervalos)
+ a| 
+El progreso de la sincronización de datos periódica que se completó entre las parejas de volúmenes reflejadas.
+
+
+
+ a| 
+Sistema suspendido
+ a| 
+El sistema de almacenamiento suspendió la sincronización de datos en todas las parejas reflejadas en el nivel del grupo de coherencia de reflejos.
+
+Al menos una pareja reflejada en el grupo de coherencia de reflejos tiene el estado detenido o con errores.
+
+
+
+ a| 
+Usuario suspendido
+ a| 
+El usuario suspendió la sincronización de datos en todas las parejas reflejadas en el nivel del grupo de coherencia de reflejos.
+
+Este estado ayuda a reducir cualquier impacto sobre el rendimiento de la aplicación host que puede producirse mientras se copian datos modificados de la cabina de almacenamiento local a la cabina de almacenamiento remota.
+
+
+
+ a| 
+En pausa
+ a| 
+El proceso de sincronización de datos se puso en pausa temporalmente debido a un error de acceso a la cabina de almacenamiento remota.
+
+
+
+ a| 
+Huérfano
+ a| 
+Se crea un volumen de parejas reflejadas huérfanas cuando se elimina un volumen miembro de un grupo de coherencia de reflejos de un lado del grupo (el primario o el secundario), pero no del otro.
+
+Los volúmenes de parejas reflejadas huérfanas se detectan cuando se restaura la comunicación entre las cabinas y los dos lados de la configuración reflejada concilian los parámetros de reflejo.
+
+Puede eliminar una pareja reflejada para corregir un estado de pareja reflejada huérfana.
+
+
+
+ a| 
+Cambio de roles pendiente/en curso
+ a| 
+Un cambio de rol entre los grupos de coherencia de reflejos está pendiente o en curso.
+
+El cambio de inversión de roles (a un rol primario o secundario) afecta a todas las parejas reflejadas asíncronas dentro del grupo de coherencia de reflejos seleccionado.
+
+Es posible cancelar un cambio de rol pendiente, pero no un cambio de rol en curso.
+
+
+
+ a| 
+Conflicto de roles
+ a| 
+Se produjo un conflicto de roles entre grupos de coherencia de reflejos debido a un problema de comunicación entre la cabina de almacenamiento local y la cabina de almacenamiento remota durante una operación de cambio de rol.
+
+Cuando se resuelve el problema de comunicación, se produce un conflicto de roles. Utilice Recovery Guru para recuperar el sistema de este error.
+
+No se permite una promoción forzada al resolver un conflicto de roles.
+
+|===
+
+
+== Estado para parejas reflejadas
+
+El estado de una pareja reflejada indica si los datos en el volumen primario y en el volumen secundario están sincronizados.
+
+[cols="25h,~"]
+|===
+| Estado | Descripción 
+
+
+ a| 
+Sincronizando
+ a| 
+El progreso de la sincronización de datos inicial o periódica que se completó entre las parejas reflejadas.
+
+Hay dos tipos de sincronización: Sincronización inicial y sincronización periódica. El progreso de la sincronización inicial también se muestra en el cuadro de diálogo Operaciones de larga ejecución.
+
+
+
+ a| 
+Óptimo
+ a| 
+Los volúmenes de la pareja reflejada están sincronizados, lo que indica que la conexión entre la cabina de almacenamiento funciona y cada volumen está en la condición operativa deseada.
+
+
+
+ a| 
+Incompleto
+ a| 
+La pareja reflejada asíncrona está incompleta en la cabina de almacenamiento remota porque la secuencia de creación de parejas reflejadas se inició en una cabina de almacenamiento no compatible con System Manager, y la pareja reflejada no se completó en el volumen secundario.
+
+El proceso de creación de parejas reflejadas se completa cuando se agrega un volumen al grupo de coherencia de reflejos en la cabina de almacenamiento remota. Este volumen se convierte en el volumen secundario en la pareja reflejada asíncrona.
+
+La pareja reflejada se completa automáticamente si la cabina de almacenamiento remota está gestionada por System Manager.
+
+
+
+ a| 
+Error
+ a| 
+La operación de mirroring asíncrono no puede funcionar normalmente debido a una falla en el volumen primario, el volumen secundario o la capacidad reservada de reflejo.
+
+
+
+ a| 
+Huérfano
+ a| 
+Se crea un volumen de parejas reflejadas huérfanas cuando se elimina un volumen miembro de un grupo de coherencia de reflejos de un lado del grupo (el primario o el secundario), pero no del otro.
+
+Los volúmenes de parejas reflejadas huérfanas se detectan cuando se restaura la comunicación entre las dos cabinas de almacenamiento y los dos lados de la configuración reflejada concilian los parámetros de reflejo.
+
+Puede eliminar una pareja reflejada para corregir un estado de pareja reflejada huérfana.
+
+
+
+ a| 
+Detenido
+ a| 
+La pareja reflejada está en un estado detenido debido a que el grupo de coherencia de reflejos está en un estado suspendido por el sistema.
+
+|===

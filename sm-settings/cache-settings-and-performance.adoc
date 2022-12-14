@@ -1,0 +1,58 @@
+---
+permalink: sm-settings/cache-settings-and-performance.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, cache, settings, performance, 
+summary: La memoria caché es un área de almacenamiento volátil temporal en la controladora que tiene un tiempo de acceso menor que los medios con unidades. 
+---
+= Rendimiento y configuración de la caché
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La memoria caché es un área de almacenamiento volátil temporal en la controladora que tiene un tiempo de acceso menor que los medios con unidades.
+
+Con el almacenamiento en caché, es posible aumentar el rendimiento de I/o de la siguiente manera:
+
+* Los datos solicitados desde el host para una lectura pueden estar ya en la caché debido a una operación anterior. Esto elimina la necesidad de acceder a la unidad.
+* Los datos de escritura se escriben primero en la caché. Esto permite que la aplicación avance sin esperar que los datos se escriban en la unidad.
+
+
+La configuración predeterminada de la caché cumple con los requisitos de la mayoría de los entornos, pero es posible modificarla si es necesario.
+
+
+
+== Configuración de la caché de la cabina de almacenamiento
+
+Es posible especificar los siguientes valores en la página sistema para todos los volúmenes de la cabina de almacenamiento:
+
+* *Iniciar valor para vaciar* -- el porcentaje de datos no escritos en la caché que activan un vaciado de caché (escribir en disco). Cuando la caché alberga el porcentaje de inicio especificado de datos sin escribir, se activa un vaciado. De forma predeterminada, la controladora inicia el vaciado de la caché cuando la caché se encuentra un 80 % llena.
+* *Tamaño de bloque de caché* -- el tamaño máximo de cada bloque de caché, que es una unidad organizativa para la administración de caché. De forma predeterminada, el tamaño de bloque de caché es 8 KiB, pero se puede establecer en 4, 8, 16 o 32 KiB. Lo ideal es establecer el tamaño de bloque de caché en el tamaño de I/o predominante de las aplicaciones. Por lo general, los sistemas de archivos o las aplicaciones de bases de datos utilizan tamaños menores. Se recomiendan tamaños mayores para las aplicaciones de grandes transferencias de datos o I/o secuenciales
+
+
+
+
+== Configuración de la caché del volumen
+
+Es posible especificar los siguientes valores en la página volúmenes para volúmenes individuales de la cabina de almacenamiento (menú:almacenamiento[volúmenes]):
+
+* *Caché de lectura* -- la caché de lectura es un búfer que almacena datos que se han leído desde las unidades. Es posible que los datos de una operación de lectura ya deban estar en la caché debido a una operación anterior, por lo tanto, no es necesario acceder a las unidades. Los datos se conservan en la caché de lectura hasta que esta se vacía.
++
+** *Captura previa de caché de lectura dinámica*: La captura previa de lectura de caché dinámica permite a la controladora copiar otros bloques de datos secuenciales en la caché mientras lee bloques de datos de una unidad en la caché. Ese almacenamiento en caché aumenta la posibilidad de que se puedan cumplir futuras solicitudes de datos de la caché. La captura previa de lectura de la caché dinámica es importante para las aplicaciones multimedia que utilizan I/o secuencial La cantidad y la velocidad de las capturas previas de los datos en la caché se ajustan automáticamente según la velocidad y el tamaño de solicitud de las lecturas del host. El acceso aleatorio no provoca la captura previa de los datos en la caché. Esta función no se aplica cuando el almacenamiento en caché de lectura está deshabilitado.
+
+
+* *Almacenamiento en caché de escritura* -- la caché de escritura es un búfer que almacena datos del host que todavía no se han escrito en las unidades. Los datos permanecen en la caché de escritura hasta que se escriben en las unidades. El almacenamiento en caché de escritura puede aumentar el rendimiento de I/O.
++
+[CAUTION]
+====
+*Posible pérdida de datos* -- Si activa la opción *almacenamiento en caché de escritura sin baterías* y no dispone de una fuente de alimentación universal de protección, podría perder datos. Además, puede perder datos si no tiene baterías de controlador y activa la opción *almacenamiento en caché de escritura sin baterías*.
+
+====
++
+** *Almacenamiento en caché de escritura sin baterías* -- la configuración de almacenamiento en caché de escritura sin baterías permite que el almacenamiento en caché de escritura continúe incluso cuando las baterías faltan, fallan, están completamente descargadas o no están totalmente cargadas. Por lo general, no se recomienda elegir el almacenamiento en caché de escritura sin baterías porque se pueden perder los datos en caso de interrupción del suministro eléctrico. Comúnmente, la controladora desactiva en forma temporal el almacenamiento en caché de escritura hasta que se cargan las baterías o se reemplaza una batería con errores.
+** *Almacenamiento en caché de escritura con duplicación* -- el almacenamiento en caché de escritura con duplicación se produce cuando los datos escritos en la memoria caché de un controlador también se escriben en la memoria caché del otro controlador. Por lo tanto, si una controladora falla, la otra puede completar todas las operaciones de escritura pendientes. El mirroring de la caché de escritura está disponible solo si el almacenamiento en caché de escritura está habilitado y existen dos controladoras. El almacenamiento en caché de escritura con mirroring es la configuración predeterminada cuando se crea un volumen.
+
+
+

@@ -1,0 +1,152 @@
+---
+permalink: sm-settings/edit-directory-server-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, edit, directory, server, settings, role, mappings, 
+summary: Si anteriormente configuró un servidor de directorio en Access Management, es posible cambiar sus ajustes en cualquier momento. Entre estos ajustes se encuentran la información de conexión del servidor y las asignaciones de grupos a roles. 
+---
+= Editar ajustes y asignaciones de roles del servidor de directorios
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si anteriormente configuró un servidor de directorio en Access Management, es posible cambiar sus ajustes en cualquier momento. Entre estos ajustes se encuentran la información de conexión del servidor y las asignaciones de grupos a roles.
+
+.Antes de empezar
+* Debe iniciar sesión con un perfil de usuario que cuente con permisos de administración de seguridad. De lo contrario, no se mostrarán las funciones de Access Management.
+* Debe definirse un servidor de directorio.
+
+
+.Pasos
+. Seleccione MENU:Settings[Access Management].
+. Seleccione la ficha *Servicios de directorio*.
+. Si se define más de un servidor, seleccione el servidor que desea editar en la tabla.
+. Seleccione *Ver/editar configuración*.
++
+Se abre el cuadro de diálogo Configuración del servidor de directorio.
+
+. En la pestaña Configuración del servidor, cambie la configuración que desea.
++
+.Detalles del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Ajuste | Descripción 
+
+
+ a| 
+*Ajustes de configuración*
+
+
+
+ a| 
+Dominios
+ a| 
+Los nombres de dominio de los servidores LDAP. Si desea introducir varios dominios, escríbalos en una lista separada por comas. El nombre de dominio se utiliza en el inicio de sesión (_username_@_domain_) para especificar con qué servidor de directorio debe realizarse la autenticación.
+
+
+
+ a| 
+URL del servidor
+ a| 
+La URL para acceder al servidor LDAP con el formato de `ldap[s]://host:port`.
+
+
+
+ a| 
+Enlazar cuenta (opcional)
+ a| 
+La cuenta de usuario de solo lectura para realizar consultas en el servidor LDAP y buscar dentro de grupo.
+
+
+
+ a| 
+Enlazar contraseña (opcional)
+ a| 
+La contraseña de la cuenta vinculada. (Este campo se muestra cuando se introduce una cuenta vinculada.)
+
+
+
+ a| 
+Probar conexión del servidor antes de guardar
+ a| 
+Comprueba que la cabina de almacenamiento pueda comunicarse con la configuración del servidor LDAP. La prueba se produce después de hacer clic en *Guardar* en la parte inferior del cuadro de diálogo. Si se selecciona esta casilla de comprobación y la prueba falla, no se modifica la configuración. Debe resolver el error o cancelar la selección de la casilla de comprobación para omitir la prueba y volver a editar la configuración.
+
+
+
+ a| 
+*Configuración de privilegios*
+
+
+
+ a| 
+DN base de búsqueda
+ a| 
+El contexto de LDAP para buscar usuarios, normalmente en la forma de `CN=Users, DC=cpoc, DC=local`.
+
+
+
+ a| 
+Atributo de nombre de usuario
+ a| 
+El atributo que está vinculado al ID de usuario para la autenticación. Por ejemplo: `sAMAccountName`.
+
+
+
+ a| 
+Atributos de grupo
+ a| 
+Lista de atributos de grupo en el usuario, que se utiliza para la asignación de grupos a roles. Por ejemplo: `memberOf, managedObjects`.
+
+|===
+====
+. En la pestaña asignación de roles, cambie la asignación deseada.
++
+.Detalles del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Ajuste | Descripción 
+
+
+ a| 
+*Asignaciones*
+
+
+
+ a| 
+DN de grupo
+ a| 
+El nombre de dominio para asignar el grupo de usuarios LDAP. Se admiten expresiones regulares. Estos caracteres especiales de expresión regular deben escaparse con una barra invertida (`\`) si no forman parte de un patrón de expresión regular: \.[]{}()<>*+-=
+
+
+
+ a| 
+Funciones
+ a| 
+Los roles de la cabina de almacenamiento que se asignarán a Group DN. Debe seleccionar individualmente cada rol que desee incluir en este grupo. Se necesita el rol de supervisión en combinación con los demás roles para iniciar sesión en SANtricity System Manager. Entre los roles de la cabina de almacenamiento se encuentran los siguientes:
+
+** *Storage admin* -- acceso completo de lectura/escritura a los objetos de almacenamiento (por ejemplo, volúmenes y pools de discos), pero sin acceso a la configuración de seguridad.
+** *Administración de seguridad* -- acceso a la configuración de seguridad en Access Management, administración de certificados, administración de registros de auditoría y la capacidad de activar o desactivar la interfaz de administración heredada (Symbol).
+** *Support admin* -- acceso a todos los recursos de hardware en la cabina de almacenamiento, datos de fallos, eventos MEL y actualizaciones del firmware de la controladora. No brinda acceso a los objetos de almacenamiento ni a la configuración de seguridad.
+** *Monitor* -- acceso de sólo lectura a todos los objetos de almacenamiento, pero sin acceso a la configuración de seguridad.
+
+
+|===
+====
++
+[NOTE]
+====
+El rol de supervisión se requiere para todos los usuarios, incluido el administrador. System Manager no funcionará correctamente para los usuarios que no tengan el rol de supervisión.
+
+====
+. Si lo desea, haga clic en *Agregar otra asignación* para introducir más asignaciones de grupo a rol.
+. Haga clic en *Guardar*.
+
+
+.Resultados
+Una vez finalizada esta tarea, se finalizarán todas las sesiones de usuario activas. Solo se mantiene la sesión de usuario actual.

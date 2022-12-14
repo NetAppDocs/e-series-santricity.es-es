@@ -1,0 +1,97 @@
+---
+permalink: sm-interface/overview-interface-sam.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, 
+summary: Se accede a la interfaz principal para acceder a las funciones y tareas de System Manager. 
+---
+= Información general de la interfaz de System Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager es una interfaz basada en Web que permite gestionar una cabina de almacenamiento en una sola vista.
+
+
+
+== Página de inicio
+
+La página Inicio ofrece una vista de consola para la gestión cotidiana de la cabina de almacenamiento. Cuando se inicia sesión en System Manager, la página Inicio es la primera pantalla que aparece.
+
+La vista de consola incluye cuatro áreas de resumen que contienen información clave sobre el estado y la condición de la cabina de almacenamiento. Es posible encontrar más información en el área de resumen.
+
+[cols="25h,~"]
+|===
+| Zona | Descripción 
+
+
+ a| 
+Notificaciones
+ a| 
+El área de notificaciones muestra notificaciones de problemas que indican el estado de la cabina de almacenamiento y sus componentes. Además, este portlet muestra alertas automatizadas que pueden ayudarle a resolver problemas antes de que afecten a otras áreas de su entorno de almacenamiento.
+
+
+
+ a| 
+Rendimiento
+ a| 
+El área de rendimiento permite comparar y contrastar el uso de recursos a lo largo del tiempo. Es posible ver las métricas de rendimiento de una cabina de almacenamiento relacionadas con el tiempo de respuesta (IOPS), las tasas de transferencia (MIB/s) y la cantidad de capacidad de procesamiento que se utiliza (CPU).
+
+
+
+ a| 
+Capacidad
+ a| 
+El área de capacidad muestra una vista de gráfico de la capacidad asignada, la capacidad de almacenamiento libre y la capacidad de almacenamiento sin asignar en la cabina de almacenamiento.
+
+
+
+ a| 
+Jerarquía de almacenamiento
+ a| 
+El área de jerarquía de almacenamiento ofrece una vista organizada de los distintos componentes de hardware y objetos de almacenamiento gestionados por la cabina de almacenamiento. Haga clic en la flecha desplegable para realizar una determinada acción en ese componente de hardware u objeto de almacenamiento.
+
+|===
+
+
+== Configuración de la interfaz
+
+Puede cambiar las preferencias de presentación y otras configuraciones desde la interfaz principal.
+
+[cols="25h,~"]
+|===
+| Ajuste | Descripción 
+
+
+ a| 
+Preferencias de presentación
+ a| 
+Cambie los valores de capacidad y el margen de tiempo del menú desplegable Preferencias de la esquina superior derecha de la interfaz.
+
+
+
+ a| 
+Tiempos de espera de sesión
+ a| 
+Configurar los tiempos de espera para que las sesiones inactivas de los usuarios se desconecten después de un periodo especificado.
+
+
+
+ a| 
+Ayuda
+ a| 
+Acceda a la documentación de la Ayuda y a otros recursos desde el menú desplegable de la esquina superior derecha de la interfaz.
+
+|===
+
+
+== Inicios de sesión y contraseñas de usuario
+
+El usuario actual que ha iniciado sesión en el sistema se muestra en la esquina superior derecha de la interfaz.
+
+Para obtener más información sobre usuarios y contraseñas, consulte:
+
+* link:administrator-password-protection.html["Configure la protección con contraseña de administrador"]
+* link:../sm-settings/change-passwords.html["Cambiar contraseñas"]
+

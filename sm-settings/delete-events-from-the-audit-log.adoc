@@ -1,0 +1,37 @@
+---
+permalink: sm-settings/delete-events-from-the-audit-log.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, events, audit, log, 
+summary: 'Es posible borrar los eventos antiguos del registro de auditoría para que la búsqueda de eventos sea más sencilla. Tiene la opción de guardar los eventos antiguos en un archivo CSV (valores separados por comas) después de su eliminación.' 
+---
+= Elimine eventos del registro de auditoría
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible borrar los eventos antiguos del registro de auditoría para que la búsqueda de eventos sea más sencilla. Tiene la opción de guardar los eventos antiguos en un archivo CSV (valores separados por comas) después de su eliminación.
+
+.Antes de empezar
+Debe iniciar sesión con un perfil de usuario que cuente con permisos de administración de seguridad. De lo contrario, no se mostrarán las funciones de Access Management.
+
+.Pasos
+. Seleccione MENU:Settings[Access Management].
+. Seleccione la ficha *Registro de auditoría*.
+. Seleccione *Eliminar*.
++
+Se abre el cuadro de diálogo Eliminar registro de auditoría.
+
+. Seleccione o escriba el número de eventos antiguos que desea eliminar.
+. Si desea exportar los eventos eliminados a un archivo CSV (recomendado), mantenga seleccionada la casilla de comprobación. Se le pedirá que introduzca un nombre de archivo y una ubicación al hacer clic en *Eliminar* en el paso siguiente. De lo contrario, si no desea guardar eventos en un archivo CSV, haga clic en la casilla de comprobación para cancelar la selección.
+. Haga clic en *Eliminar*.
++
+Se abre un cuadro de diálogo de confirmación.
+
+. Tipo `delete` En el campo y, a continuación, haga clic en *Eliminar*.
++
+Los eventos más antiguos se eliminarán de la página Registro de auditoría.
+
+

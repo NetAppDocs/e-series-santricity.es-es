@@ -1,0 +1,30 @@
+---
+permalink: sm-storage/what-is-automatic-load-balancing.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, ALB, automatic, load, balancing 
+summary: La función Automatic Load Balancing proporciona equilibrio de I/o automatizado y garantiza que el tráfico de I/o entrante de los hosts se gestione dinámicamente y se equilibre en ambas controladoras. 
+---
+= ¿Qué es el equilibrio de carga automático?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La función Automatic Load Balancing proporciona equilibrio de I/o automatizado y garantiza que el tráfico de I/o entrante de los hosts se gestione dinámicamente y se equilibre en ambas controladoras.
+
+La función Automatic Load Balancing ofrece una gestión de recursos de I/o mejorada, ya que reacciona dinámicamente a los cambios de carga con el tiempo y ajusta automáticamente la propiedad de la controladora de volumen para corregir cualquier problema de desequilibrio de carga cuando las cargas de trabajo son distintas de una controladora a otra.
+
+La carga de trabajo de cada controladora se supervisa continuamente y, con la colaboración de los controladores multivía instalados en los hosts, es posible establecer automáticamente el equilibrio cada vez que sea necesario. Una vez que la carga de trabajo se vuelve a equilibrar de forma automática en todas las controladoras, el administrador de almacenamiento queda liberado de la carga que supone ajustar manualmente la propiedad de la controladora de volumen para admitir cambios de carga en la cabina de almacenamiento.
+
+Cuando la función Automatic Load Balancing está habilitada, ejecuta las siguientes funciones:
+
+* Supervisa y equilibra automáticamente la utilización de recursos de la controladora.
+* Ajusta automáticamente la propiedad de la controladora de volumen cuando es necesario y así, optimiza el ancho de banda de I/o entre los hosts y la cabina de almacenamiento.
+
+
+[NOTE]
+====
+Cualquier volumen asignado para utilizar una caché SSD de una controladora no es elegible para una transferencia de equilibrio de carga automática.
+
+====

@@ -1,0 +1,41 @@
+---
+permalink: sm-settings/overview-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, system settings 
+summary: Puede configurar System Manager para algunas opciones de cabina generales y funciones complementarias. 
+---
+= Información general de la configuración
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede configurar System Manager para algunas opciones de cabina generales y funciones complementarias.
+
+
+
+== ¿Qué ajustes puedo configurar?
+
+La configuración de cabina incluye:
+
+* link:cache-settings-and-performance.html["Rendimiento y configuración de la caché"]
+* link:automatic-load-balancing-overview.html"["Equilibrio de carga automático"]
+* link:how-add-on-features-work.html["Funciones complementarias"]
+* link:overview-drive-security.html["Impulse la seguridad"]
+
+
+
+
+== Tareas relacionadas
+
+Obtenga más información acerca de las tareas relacionadas con la configuración del sistema:
+
+* link:download-cli.html["Descargar la interfaz de línea de comandos (CLI)"]
+* link:create-internal-security-key.html["Cree una clave de seguridad interna"]
+* link:create-external-security-key.html["Cree una clave de seguridad externa"]
+* link:../sm-hardware/configure-iscsi-ports-hardware.html["Configure los puertos iSCSI"]
+* link:../sm-hardware/configure-nvme-over-infiniband-ports-hardware.html["Configure los puertos NVME over IB"]
+* link:../sm-hardware/configure-nvme-over-roce-ports-hardware.html["Configure los puertos NVMe over roce"]
+

@@ -1,0 +1,27 @@
+---
+permalink: sm-settings/turn-on-storage-array-locator-lights.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, locator, lights, 
+summary: 'Para encontrar la ubicación física de una cabina de almacenamiento en un armario, se pueden encender las luces (LED) localizadoras.' 
+---
+= Encender luces de localización en cabina de almacenamiento
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para encontrar la ubicación física de una cabina de almacenamiento en un armario, se pueden encender las luces (LED) localizadoras.
+
+.Pasos
+. Seleccione MENU:Settings[System].
+. En *General*, haga clic en *encender las luces localizadoras de la matriz de almacenamiento*.
++
+Se abre el cuadro de diálogo encender las luces localizadoras de la cabina de almacenamiento y se encienden las luces localizadoras de la cabina de almacenamiento correspondiente.
+
+. Cuando haya localizado físicamente la cabina de almacenamiento, regrese al cuadro de diálogo y seleccione *Apagar*.
+
+
+.Resultados
+Las luces localizadoras se apagan y el cuadro de diálogo se cierra.

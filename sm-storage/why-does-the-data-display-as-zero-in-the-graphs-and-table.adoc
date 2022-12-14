@@ -1,0 +1,69 @@
+---
+permalink: sm-storage/why-does-the-data-display-as-zero-in-the-graphs-and-table.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, zero, graphs, table 
+summary: Cuando se muestra un cero en un punto de datos en los gráficos y la tabla, significa que no hay actividad de I/o del objeto en ese momento específico. Esta situación podría ocurrir porque el host no inicia operaciones de I/o en ese objeto, o podría haber un problema con el objeto en sí. 
+---
+= ¿Por qué los datos se muestran como cero en los gráficos y la tabla?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cuando se muestra un cero en un punto de datos en los gráficos y la tabla, significa que no hay actividad de I/o del objeto en ese momento específico. Esta situación podría ocurrir porque el host no inicia operaciones de I/o en ese objeto, o podría haber un problema con el objeto en sí.
+
+La visualización de los datos históricos del objeto sigue disponible. Los gráficos y la tabla mostrarán datos distintos a cero una vez que comience la actividad de I/o del objeto.
+
+En la tabla siguiente, se enumeran los motivos más comunes por los cuales un valor de punto de datos puede ser cero en cualquier objeto dado.
+
+[cols="25h,~"]
+|===
+| Tipo de objeto de nivel de cabina | Motivo por el que los datos se muestran como cero 
+
+
+ a| 
+Volumen
+ a| 
+* El volumen no tenía asignación de host.
+
+
+
+
+ a| 
+Grupo de volúmenes
+ a| 
+* El grupo de volúmenes se está importando.
+* El grupo de volúmenes no contiene un volumen asignado a un host, el grupo de volúmenes *_y_* no contiene ninguna capacidad reservada.
+
+
+
+
+ a| 
+Unidad
+ a| 
+* Falló la unidad.
+* Se quitó la unidad.
+* La unidad está en estado desconocido.
+
+
+
+
+ a| 
+Controladora
+ a| 
+* La controladora está sin conexión.
+* Falló la controladora.
+* Se quitó la controladora.
+* La controladora está en estado desconocido.
+
+
+
+
+ a| 
+Cabina de almacenamiento
+ a| 
+* La cabina de almacenamiento no contiene volúmenes.
+
+
+|===

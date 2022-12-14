@@ -1,0 +1,44 @@
+---
+permalink: sm-storage/ssd-cache-and-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, ssd, cache, volumes 
+summary: 'Es posible añadir un volumen a la caché SSD como una manera de aumentar el rendimiento de solo lectura. La caché SSD se compone de un conjunto de unidades de disco de estado sólido (SSD) agrupadas de forma lógica en la cabina de almacenamiento.' 
+---
+= Caché SSD y volúmenes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible añadir un volumen a la caché SSD como una manera de aumentar el rendimiento de solo lectura. La caché SSD se compone de un conjunto de unidades de disco de estado sólido (SSD) agrupadas de forma lógica en la cabina de almacenamiento.
+
+[NOTE]
+====
+Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
+
+====
+
+
+== Volúmenes
+
+Se utilizan mecanismos de I/o de volúmenes simples para transferir datos desde y hacia la caché SSD. Después de almacenar datos en la caché y en la unidad SSD, las lecturas posteriores de esos datos se realizan en la caché SSD, por lo que se elimina la necesidad de acceder al volumen de la unidad de disco duro.
+
+La caché SSD es una caché secundaria para usar con la caché primaria en la memoria dinámica de acceso aleatorio (DRAM) de la controladora.
+
+* En la caché primaria, los datos se almacenan en DRAM después de la lectura en el host.
+* En la caché SSD, se copian datos de volúmenes y se almacenan en dos volúmenes de RAID internos (uno por controladora) que se crean automáticamente al crear una caché SSD.
+
+
+Los volúmenes RAID internos se usan para fines de procesamiento de la caché interna. No puede accederse a estos volúmenes desde la interfaz de usuario y no aparecen en ella. Sin embargo, estos dos volúmenes cuentan para la cantidad total de volúmenes permitidos en la cabina de almacenamiento.
+
+[NOTE]
+====
+Cualquier volumen asignado para utilizar una caché SSD de una controladora no es elegible para una transferencia de equilibrio de carga automática.
+
+====
+
+
+== Función Drive Security
+
+Para usar la caché SSD en un volumen que también utiliza Drive Security (es decir, con la función de seguridad habilitada), las funcionalidades de Drive Security del volumen y de la caché SSD deben coincidir. Si no coinciden, el volumen no tendrá la función de seguridad habilitada.

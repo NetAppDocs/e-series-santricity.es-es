@@ -1,0 +1,57 @@
+---
+permalink: um-manage/discover-single-array.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, discover, single, array 
+summary: Utilice la opción Añadir/detectar una cabina de almacenamiento única para detectar y añadir manualmente una sola cabina de almacenamiento a la red de la organización. 
+---
+= Detectar una sola cabina
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilice la opción Añadir/detectar una cabina de almacenamiento única para detectar y añadir manualmente una sola cabina de almacenamiento a la red de la organización.
+
+.Antes de empezar
+* La cabina de almacenamiento debe estar instalada y configurada correctamente.
+* Las contraseñas de las cabinas de almacenamiento deben configurarse mediante el icono Access Management de System Manager.
+
+
+.Pasos
+. En la página gestionar, seleccione *Agregar/detectar*.
++
+Se muestra el cuadro de diálogo Añadir/detectar.
+
+. Seleccione el botón de opción *detectar una única cabina de almacenamiento*.
+. Introduzca la dirección IP de una de las controladoras de la cabina de almacenamiento y haga clic en *Iniciar la detección*.
++
+Es posible que Unified Manager demore varios minutos en conectarse a la cabina de almacenamiento especificada.
+
++
+[NOTE]
+====
+Se mostrará el mensaje cabina de almacenamiento no accesible cuando no se pueda establecer la conexión con la dirección IP de la controladora especificada.
+
+====
+. Si se le solicita, resuelva los certificados autofirmados.
++
+Como parte del proceso de detección, el sistema verifica que las cabinas de almacenamiento detectadas utilicen certificados de un origen de confianza. Si no puede localizar un certificado digital para una cabina de almacenamiento, el sistema le solicita que añada una excepción de seguridad para resolver el certificado que no está firmado por una entidad de certificación (CA) reconocida.
+
+. Si se le solicita, resuelva los certificados que no son de confianza.
++
+Los certificados dejan de ser de confianza cuando una cabina de almacenamiento intenta establecer una conexión con Unified Manager, pero no se confirma que la conexión sea segura. Importe un certificado de entidad de certificación (CA) emitido por un tercero de confianza para resolver los certificados no confiables.
+
+. Haga clic en *Siguiente*.
+. *Opcional:* asocie la cabina de almacenamiento detectada a un grupo: En la lista desplegable, seleccione el grupo que desea asociar a la cabina de almacenamiento.
++
+El grupo "todo" está seleccionado de forma predeterminada.
+
+. Introduzca la contraseña de administrador para la cabina de almacenamiento que desea añadir al dominio de gestión y haga clic en *Aceptar*.
+
+
+.Después de terminar
+La cabina de almacenamiento se añade a Unified Manager y, si se especificó, también se añade al grupo seleccionado.
+
+Si se habilitó la recogida automática de datos de soporte, se recogen automáticamente datos de soporte para la cabina de almacenamiento que se añade.

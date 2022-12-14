@@ -1,0 +1,21 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-about-validating-the-security-key.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, validating, security, key, 
+summary: Después de crear una clave de seguridad, se debe validar el archivo de claves para garantizar que no esté dañado. 
+---
+= ¿Qué debo saber acerca de la validación de la clave de seguridad?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Después de crear una clave de seguridad, se debe validar el archivo de claves para garantizar que no esté dañado.
+
+Si la validación falla, haga lo siguiente:
+
+* Si el identificador de claves de seguridad no coincide con el identificador de la controladora, busque el archivo de claves de seguridad correcto y vuelva a intentar hacer la validación.
+* Si la controladora no puede descifrar la clave de seguridad para la validación, es posible que haya introducido incorrectamente la frase de contraseña. Haga doble clic en la frase de contraseña, vuelva a introducirla si fuera necesario y vuelva a intentar hacer la validación. Si vuelve a aparecer el mensaje de error, seleccione un backup del archivo de claves (si estuviera disponible) y vuelva a intentar hacer la validación.
+* Si aún no puede validar la clave de seguridad, es posible que el archivo original esté dañado. Cree un backup nuevo de la clave y valide esa copia.
+

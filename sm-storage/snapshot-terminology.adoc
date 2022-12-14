@@ -1,0 +1,96 @@
+---
+permalink: sm-storage/snapshot-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot, terms 
+summary: Conozca la forma en que los términos Snapshot se aplican a su cabina de almacenamiento. 
+---
+= Terminología Snapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Conozca la forma en que los términos Snapshot se aplican a su cabina de almacenamiento.
+
+[cols="25h,~"]
+|===
+| Duración | Descripción 
+
+
+ a| 
+Función Snapshot
+ a| 
+La función Snapshot se usa para crear y gestionar imágenes de volúmenes.
+
+
+
+ a| 
+Imagen Snapshot
+ a| 
+Una imagen Snapshot es una copia lógica de datos de volúmenes capturados en un momento específico. Al igual que un punto de restauración, las imágenes Snapshot permiten revertir a un conjunto de datos bien conocidos. Si bien el host puede acceder a la imagen Snapshot, no puede leer ni escribir allí directamente.
+
+
+
+ a| 
+Volumen base
+ a| 
+Un volumen base es el origen desde el cual se crea una imagen Snapshot. Puede ser un volumen grueso o fino y, por lo general, se asigna a un host. El volumen base puede residir en un grupo de volúmenes o un pool de discos.
+
+
+
+ a| 
+Volumen Snapshot
+ a| 
+Un volumen Snapshot permite que el host acceda a los datos de la imagen Snapshot. El volumen Snapshot tiene su propia capacidad reservada que almacena cualquier modificación del volumen base sin afectar a la imagen Snapshot original.
+
+
+
+ a| 
+Grupo Snapshot
+ a| 
+Un grupo Snapshot es una recogida de imágenes Snapshot de un volumen base único.
+
+
+
+ a| 
+Volumen de capacidad reservada
+ a| 
+Un volumen de capacidad reservada rastrea qué bloques de datos del volumen base se sobrescribieron y el contenido conservado de esos bloques.
+
+
+
+ a| 
+Programación Snapshot
+ a| 
+Una programación Snapshot es un cronograma para crear imágenes Snapshot automatizadas. A través de la programación, se puede controlar la frecuencia de la creación de imágenes.
+
+
+
+ a| 
+Grupo de coherencia Snapshot
+ a| 
+Un grupo de coherencia Snapshot es una recogida de volúmenes que se tratan como una entidad única cuando se crea una imagen Snapshot. Cada uno de estos volúmenes tiene su propia imagen Snapshot, pero todas las imágenes se crean en el mismo momento específico.
+
+
+
+ a| 
+Volumen miembro del grupo de coherencia Snapshot
+ a| 
+Cada volumen que pertenece a un grupo de coherencia Snapshot se denomina volumen miembro. Si se añade un volumen a un grupo de coherencia Snapshot, System Manager automáticamente crea un grupo Snapshot nuevo que corresponde a este volumen miembro.
+
+
+
+ a| 
+Revertir
+ a| 
+Una reversión es el proceso de regresar los datos del volumen base a un momento específico anterior.
+
+
+
+ a| 
+Capacidad reservada
+ a| 
+La capacidad reservada es la capacidad física asignada que se usa para cualquier operación de servicio de copia y objeto de almacenamiento. El host no puede leerla directamente.
+
+|===

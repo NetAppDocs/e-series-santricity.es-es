@@ -1,0 +1,21 @@
+---
+permalink: sm-storage/what-are-the-differences-between-pools-and-volume-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, pools, volume, groups 
+summary: Un pool es similar a un grupo de volúmenes, con las siguientes diferencias. 
+---
+= ¿Cuáles son las diferencias entre los pools y los grupos de volúmenes?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un pool es similar a un grupo de volúmenes, con las siguientes diferencias.
+
+* Los datos de un pool se almacenan al azar en todas las unidades del pool, a diferencia de los datos de un grupo de volúmenes, que se almacenan en el mismo conjunto de unidades.
+* Un pool tiene menos degradación del rendimiento cuando falla una unidad, y demora menos tiempo para reconstruirse.
+* Un pool tiene capacidad de conservación incorporada; por consiguiente, no requiere unidades de repuesto dedicadas.
+* Un pool permite agrupar un gran número de unidades.
+* Un pool no necesita un nivel de RAID específico.
+

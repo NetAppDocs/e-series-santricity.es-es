@@ -1,0 +1,30 @@
+---
+permalink: sm-hardware/change-shelf-ids.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, shelf, ids, 
+summary: El ID de bandeja es un número que identifica de forma exclusiva a una bandeja en una cabina de almacenamiento. Las bandejas se numeran consecutivamente, desde 00 o 01, en la parte superior izquierda de cada vista de bandeja. 
+---
+= Cambie los ID de bandeja
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El ID de bandeja es un número que identifica de forma exclusiva a una bandeja en una cabina de almacenamiento. Las bandejas se numeran consecutivamente, desde 00 o 01, en la parte superior izquierda de cada vista de bandeja.
+
+.Acerca de esta tarea
+El firmware de la controladora asigna automáticamente el ID de bandeja, pero es posible modificar ese número si desea crear un esquema de ordenamiento diferente.
+
+.Pasos
+. Seleccione *hardware*.
+. Seleccione la lista desplegable de Bandeja de controladoras o Bandeja de unidades y, a continuación, seleccione *Cambiar ID*.
+. En el cuadro de diálogo Cambiar ID de bandeja, seleccione la lista desplegable para mostrar los números disponibles.
++
+En este cuadro de diálogo no se muestran los ID actualmente asignados a las bandejas activas.
+
+. Seleccione un número disponible y, a continuación, haga clic en *Guardar*.
++
+Según el número seleccionado, el orden de las bandejas puede reorganizarse en la página hardware. Si lo desea, puede utilizar las flechas arriba/abajo en la parte superior derecha de cada bandeja para volver a ajustar el orden.
+
+

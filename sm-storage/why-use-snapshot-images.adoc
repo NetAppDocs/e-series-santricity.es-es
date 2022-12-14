@@ -1,0 +1,24 @@
+---
+permalink: sm-storage/why-use-snapshot-images.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot, images 
+summary: Se pueden utilizar snapshots como medida de protección contra el daño o la pérdida de datos, accidental o intencional, y para permitir la recuperación. 
+---
+= ¿Por qué se deben utilizar imágenes Snapshot?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se pueden utilizar snapshots como medida de protección contra el daño o la pérdida de datos, accidental o intencional, y para permitir la recuperación.
+
+Seleccione un volumen base o un grupo de volúmenes base, denominado grupo de coherencia Snapshot, y luego capture las imágenes Snapshot en una o varias de las siguientes maneras:
+
+* Puede crear una imagen Snapshot de un volumen base único o un grupo de coherencia Snapshot compuesto por varios volúmenes base.
+* Puede tomar las Snapshot de forma manual o crear una programación para que un volumen base o grupo de coherencia Snapshot capture automáticamente imágenes Snapshot de forma periódica.
+* Puede crear un volumen Snapshot de una imagen Snapshot que sea accesible desde el host.
+* Puede realizar una operación de reversión para restaurar una imagen Snapshot.
+
+
+El sistema retiene varias imágenes Snapshot como puntos de restauración que se pueden utilizar para la reversión a conjuntos de datos en buen estado en momentos específicos. La capacidad de reversión brinda protección contra la eliminación accidental de datos y los daños en los datos.

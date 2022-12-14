@@ -1,0 +1,222 @@
+---
+permalink: sm-settings/configure-saml.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, saml, 
+summary: 'Para configurar la autenticación de Access Management, puede usar las funcionalidades de lenguaje de marcado de aserción de seguridad (SAML) que están integradas en la cabina de almacenamiento. Esta configuración establece una conexión entre un proveedor de identidades y el proveedor de almacenamiento.' 
+---
+= Configure SAML
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para configurar la autenticación de Access Management, puede usar las funcionalidades de lenguaje de marcado de aserción de seguridad (SAML) que están integradas en la cabina de almacenamiento. Esta configuración establece una conexión entre un proveedor de identidades y el proveedor de almacenamiento.
+
+.Antes de empezar
+* Debe iniciar sesión con un perfil de usuario que cuente con permisos de administración de seguridad. De lo contrario, no se mostrarán las funciones de Access Management.
+* Debe conocer la dirección IP o el nombre de dominio de cada controladora de la cabina de almacenamiento.
+* Un administrador de IDP configuró un sistema IDP.
+* Un administrador de IDP comprobó que el IDP admite la capacidad para obtener un ID de nombre en el momento de la autenticación.
+* Un administrador comprobó que los relojes del servidor de IDP y de la controladora están sincronizados (ya sea mediante un servidor NTP o mediante el ajuste de la configuración del reloj de la controladora).
+* Se descargó un archivo de metadatos de IDP del sistema de IDP y ese archivo está disponible en el sistema local que se usa para acceder a System Manager.
+
+
+.Acerca de esta tarea
+Un proveedor de identidades (IDP) es un sistema externo que se usa para solicitar credenciales a un usuario y para determinar si el usuario se autentica correctamente. El IDP se puede configurar para ofrecer autenticación multifactor y para usar cualquier base de datos de usuario, como Active Directory. El equipo de seguridad es responsable de mantener el IDP. Un proveedor de servicios (SP) es un sistema que controla la autenticación y el acceso de usuario. Cuando se configura Access Management con SAML, la cabina de almacenamiento actúa como proveedor de servicios, ya que solicita la autenticación del proveedor de identidades. Para establecer una conexión entre el IDP y la cabina de almacenamiento, se deben compartir archivos de metadatos entre estas dos entidades. A continuación, se deben asignar las entidades de usuario de IDP con los roles de la cabina de almacenamiento. Y, finalmente, se debe probar la conexión y los inicios de sesión SSO antes de habilitar SAML.
+
+[NOTE]
+====
+*SAML y Directory Services*. Si SAML se habilita cuando Directory Services está configurado como método de autenticación, SAML sustituye a Directory Services en System Manager. Si se deshabilita SAML posteriormente, la configuración de Directory Services se establece en los valores anteriores.
+
+====
+[CAUTION]
+====
+*Edición y desactivación.* una vez que SAML está habilitado, _no puede_ desactivarlo a través de la interfaz de usuario, ni puede editar la configuración de IDP. Si necesita deshabilitar o editar la configuración de SAML, comuníquese con el soporte técnico para obtener ayuda.
+
+====
+La configuración de la autenticación SAML es un procedimiento de varios pasos.
+
+
+
+== Paso 1: Cargue el archivo de metadatos de IDP
+
+Para brindar información de conexión de IDP a la cabina de almacenamiento, se deben importar los metadatos de IDP en System Manager. El sistema IDP necesita los metadatos para redirigir las solicitudes de autenticación a la URL correcta y validar las respuestas recibidas. Solamente es necesario cargar un solo archivo de metadatos para la cabina de almacenamiento, incluso si hay dos controladoras.
+
+.Pasos
+. Seleccione MENU:Settings[Access Management].
+. Seleccione la pestaña *SAML*.
++
+La página muestra información general de los pasos de configuración.
+
+. Haga clic en el enlace *Import Identity Provider (IDP) file*.
++
+Se abre el cuadro de diálogo Importar archivo del proveedor de identidades.
+
+. Haga clic en *examinar* para seleccionar y cargar el archivo de metadatos IDP que copió en el sistema local.
++
+Una vez seleccionado el archivo, se muestra el ID de entidad IDP.
+
+. Haga clic en *Importar*.
+
+
+
+
+== Paso 2: Exporte los archivos del proveedor de servicios
+
+Para establecer una relación de confianza entre IDP y la cabina de almacenamiento, se deben importar los metadatos del proveedor de servicios en IDP. IDP necesita estos metadatos para establecer una relación de confianza con las controladoras y procesar las solicitudes de autorización. El archivo incluye información, como el nombre de dominio de la controladora o la dirección IP, por lo que IDP se puede comunicar con los proveedores de servicios.
+
+.Pasos
+. Haga clic en el enlace *Exportar archivos del proveedor de servicios*.
++
+Se abre el cuadro de diálogo Exportar archivos del proveedor de servicios.
+
+. Introduzca la dirección IP del controlador o el nombre DNS en el campo *controladora A* y, a continuación, haga clic en *Exportar* para guardar el archivo de metadatos en el sistema local. Si la matriz de almacenamiento incluye dos controladoras, repita este paso con la segunda controladora en el campo *controladora B*.
++
+Después de hacer clic en *Exportar*, los metadatos del proveedor de servicios se descargan en el sistema local. Anote en qué lugar se almacena el archivo.
+
+. Desde el sistema local, busque los archivos de metadatos del proveedor de servicios que exportó.
++
+Hay un archivo con formato XML por controladora.
+
+. Desde el servidor IDP, importe los archivos de metadatos del proveedor de servicios para establecer la relación de confianza. Es posible importar los archivos directamente o bien introducir manualmente la información de la controladora desde los archivos.
+
+
+
+
+== Paso 3: Asignar roles
+
+Para proporcionar autorización y acceso a System Manager a los usuarios, se deben asignar los atributos de usuario IDP y las membresías de grupo a los roles predefinidos de la cabina de almacenamiento.
+
+.Antes de empezar
+* Un administrador IDP configuró los atributos del usuario y la pertenencia al grupo en el sistema IDP.
+* Se importó el archivo de metadatos de IDP a System Manager.
+* Para la relación de confianza, se importó un archivo de metadatos del proveedor de servicios para cada controladora en el sistema IDP.
+
+
+.Pasos
+. Haga clic en el vínculo para *asignación de roles de System Manager*.
++
+Se abre el cuadro de diálogo asignación de roles.
+
+. Asigne los grupos y atributos de usuario IDP a los roles predefinidos. Un grupo puede tener varios roles asignados.
++
+.Detalles del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Ajuste | Descripción 
+
+
+ a| 
+*Asignaciones*
+
+
+
+ a| 
+Atributo de usuario
+ a| 
+Especifique un atributo (por ejemplo, "miembro de") para el grupo SAML que será asignado.
+
+
+
+ a| 
+Valor de atributo
+ a| 
+Especifique el valor de atributo para el grupo que será asignado. Se admiten expresiones regulares. Estos caracteres especiales de expresión regular deben escaparse con una barra invertida (`\`) si no forman parte de un patrón de expresión regular: \.[]{}()<>*+-=
+
+
+
+ a| 
+Funciones
+ a| 
+Haga clic en el campo y seleccione uno de los roles de la cabina de almacenamiento que se asignará al atributo. Debe seleccionar de forma individual cada rol que desee incluir. Se necesita el rol de supervisión en combinación con los demás roles para iniciar sesión en System Manager. También se requiere el rol de administración de seguridad en al menos un grupo.
+
+Los roles asignados incluyen los siguientes permisos:
+
+** *Storage admin* -- acceso completo de lectura/escritura a los objetos de almacenamiento (por ejemplo, volúmenes y pools de discos), pero sin acceso a la configuración de seguridad.
+** *Administración de seguridad* -- acceso a la configuración de seguridad en Access Management, administración de certificados, administración de registros de auditoría y la capacidad de activar o desactivar la interfaz de administración heredada (Symbol).
+** *Support admin* -- acceso a todos los recursos de hardware en la cabina de almacenamiento, datos de fallos, eventos MEL y actualizaciones del firmware de la controladora. No brinda acceso a los objetos de almacenamiento ni a la configuración de seguridad.
+** *Monitor* -- acceso de sólo lectura a todos los objetos de almacenamiento, pero sin acceso a la configuración de seguridad.
+
+
+|===
+====
++
+[NOTE]
+====
+El rol de supervisión se requiere para todos los usuarios, incluido el administrador. System Manager no funcionará correctamente para los usuarios que no tengan el rol de supervisión.
+
+====
+. Si lo desea, haga clic en *Agregar otra asignación* para introducir más asignaciones de grupo a rol.
++
+[NOTE]
+====
+Es posible modificar las asignaciones de roles después de haber habilitado SAML.
+
+====
+. Cuando termine de asignar, haga clic en *Guardar*.
+
+
+
+
+== Paso 4: Probar el inicio de sesión SSO
+
+Para garantizar la comunicación entre el sistema IDP y la cabina de almacenamiento, de manera opcional, se puede probar un inicio de sesión SSO. Esa prueba también se puede llevar a cabo durante el paso final para habilitar SAML.
+
+.Antes de empezar
+* Se importó el archivo de metadatos de IDP a System Manager.
+* Para la relación de confianza, se importó un archivo de metadatos del proveedor de servicios para cada controladora en el sistema IDP.
+
+
+.Pasos
+. Seleccione el enlace *probar inicio de sesión SSO*.
++
+Se abre un cuadro de diálogo para introducir las credenciales de SSO.
+
+. Introduzca las credenciales de inicio de sesión para un usuario, tanto con permisos de administración de seguridad como de supervisión.
++
+Se abre un cuadro de diálogo mientras el sistema prueba el inicio de sesión.
+
+. Busque el mensaje Test Successful. Si el análisis se realiza correctamente, vaya al siguiente paso para habilitar SAML.
++
+Si el análisis no se realiza correctamente, se muestra un mensaje de error con más información. Asegúrese de que:
+
++
+** El usuario pertenezca a un grupo con permisos de administración de seguridad y supervisión.
+** Los metadatos cargados para el servidor IDP sean correctos.
+** Las direcciones de las controladoras en los archivos de metadatos de SP sean correctas.
+
+
+
+
+
+
+== Paso 5: Habilite SAML
+
+El paso final es completar la configuración de SAML para la autenticación de usuarios. Durante este proceso, el sistema también le indica que pruebe un inicio de sesión SSO. El proceso de prueba de inicio de sesión con SSO se describe en el paso anterior.
+
+.Antes de empezar
+* Se importó el archivo de metadatos de IDP a System Manager.
+* Para la relación de confianza, se importó un archivo de metadatos del proveedor de servicios para cada controladora en el sistema IDP.
+* Se debe configurar al menos una asignación de rol de administración de seguridad y una de rol de supervisión.
+
+
+[CAUTION]
+====
+*Edición y desactivación.* una vez que SAML está habilitado, _no puede_ desactivarlo a través de la interfaz de usuario, ni puede editar la configuración de IDP. Si necesita deshabilitar o editar la configuración de SAML, comuníquese con el soporte técnico para obtener ayuda.
+
+====
+.Pasos
+. En la ficha *SAML*, seleccione el enlace *Habilitar SAML*.
++
+Se abre el cuadro de diálogo Confirmar acción de habilitar SAML.
+
+. Tipo `enable`Y, a continuación, haga clic en *Activar*.
+. Introduzca las credenciales de usuario para llevar a cabo una prueba de inicio de sesión SSO.
+
+
+.Resultados
+Una vez que el sistema habilita SAML, se cierran todas las sesiones activas y se inicia la autenticación de usuarios a través de SAML.

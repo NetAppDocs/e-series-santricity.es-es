@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/what-is-a-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volume 
+summary: Un volumen es un contenedor en el cual las aplicaciones, las bases de datos y los sistemas de archivos almacenan datos. Es el componente lógico que se crea para que el host acceda al almacenamiento de la cabina de almacenamiento. 
+---
+= ¿Qué es un volumen?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un volumen es un contenedor en el cual las aplicaciones, las bases de datos y los sistemas de archivos almacenan datos. Es el componente lógico que se crea para que el host acceda al almacenamiento de la cabina de almacenamiento.
+
+Un volumen se crea a partir de la capacidad disponible de un pool o un grupo de volúmenes. Un volumen tiene una capacidad definida. Aunque es posible que un volumen conste de más de una unidad, un volumen aparece como un componente lógico para el host.

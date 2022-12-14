@@ -1,0 +1,334 @@
+---
+permalink: sm-interface/operations-in-progress.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, operations in progress 
+summary: La página Operaciones en curso permite ver una lista de las operaciones de ejecución prolongada que se encuentran en ejecución o en estado suspendido, detenido o con error. Puede realizar acciones sobre ciertos tipos de operaciones. 
+---
+= Operaciones en curso
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La página Operaciones en curso permite ver una lista de las operaciones de ejecución prolongada que se encuentran en ejecución o en estado suspendido, detenido o con error. Puede realizar acciones sobre ciertos tipos de operaciones.
+
+Las operaciones de ejecución prolongada pueden afectar al rendimiento del sistema. Para algunas operaciones, tiene la opción de detener la operación o cambiar su prioridad para que las operaciones más importantes se completen primero.
+
+Algunas de las operaciones que aparecen en la página Operaciones en curso son las siguientes:
+
+[cols="1a,1a,1a"]
+|===
+| Funcionamiento | Posible estado de la operación | Acciones que se pueden realizar 
+
+
+ a| 
+Copia de volumen
+ a| 
+Completado
+ a| 
+Claro
+
+
+
+ a| 
+Copia de volumen
+ a| 
+En curso
+ a| 
+* Cambiar prioridad
+* Pare
+
+
+
+
+ a| 
+Copia de volumen
+ a| 
+Pendiente
+ a| 
+Claro
+
+
+
+ a| 
+Copia de volumen
+ a| 
+Error
+ a| 
+* Claro
+* Volver a copiar
+
+
+
+
+ a| 
+Copia de volumen
+ a| 
+Detenido
+ a| 
+* Claro
+* Volver a copiar
+
+
+
+
+ a| 
+Volume create (solo volúmenes de pool estáticos de más de 64 TIB)
+ a| 
+En curso
+ a| 
+_none_
+
+
+
+ a| 
+Volume delete (solo volúmenes de pool estáticos de más de 64 TIB)
+ a| 
+En curso
+ a| 
+_none_
+
+
+
+ a| 
+Sincronización inicial del grupo de reflejos asíncronos
+ a| 
+En curso
+ a| 
+Suspender
+
+
+
+ a| 
+Sincronización inicial del grupo de reflejos asíncronos
+ a| 
+Suspendida
+ a| 
+Reanudar
+
+
+
+ a| 
+Mirroring sincrónico
+ a| 
+En curso
+ a| 
+Suspender
+
+
+
+ a| 
+Mirroring sincrónico
+ a| 
+Suspendida
+ a| 
+Reanudar
+
+
+
+ a| 
+Reversión de la imagen Snapshot
+ a| 
+En curso
+ a| 
+Cancelar
+
+
+
+ a| 
+Reversión de la imagen Snapshot
+ a| 
+Pendiente
+ a| 
+Cancelar
+
+
+
+ a| 
+Reversión de la imagen Snapshot
+ a| 
+En pausa
+ a| 
+* Cancelar
+* Reanudar
+
+
+
+
+ a| 
+Evacuación de la unidad
+ a| 
+En curso
+ a| 
+Cancelar (depende del tipo de evacuación de la unidad)
+
+
+
+ a| 
+Añadir capacidad a un pool o grupo de volúmenes
+ a| 
+En curso
+ a| 
+_none_
+
+
+
+ a| 
+Cambiar el nivel de RAID de un volumen
+ a| 
+En curso
+ a| 
+_none_
+
+
+
+ a| 
+Reducir la capacidad de un pool
+ a| 
+En curso
+ a| 
+_none_
+
+
+
+ a| 
+Recuperación de volúmenes finos
+ a| 
+En curso
+ a| 
+_none_
+
+
+
+ a| 
+Comprobar el tiempo restante en una operación de formato de disponibilidad instantánea (IAF) para los volúmenes del pool
+ a| 
+En curso
+ a| 
+_none_
+
+
+
+ a| 
+Comprobar la redundancia de datos de un grupo de volúmenes
+ a| 
+En curso
+ a| 
+_none_
+
+
+
+ a| 
+Desfragmentar un grupo de volúmenes
+ a| 
+En curso
+ a| 
+_none_
+
+
+
+ a| 
+Inicializar un volumen
+ a| 
+En curso
+ a| 
+_none_
+
+
+
+ a| 
+Aumente la capacidad de un volumen
+ a| 
+En curso
+ a| 
+_none_
+
+
+
+ a| 
+Cambiar el tamaño de los segmentos de un volumen
+ a| 
+En curso
+ a| 
+_none_
+
+
+
+ a| 
+Copia de unidad
+ a| 
+En curso
+ a| 
+_none_
+
+
+
+ a| 
+Reconstrucción de los datos
+ a| 
+En curso
+ a| 
+_none_
+
+
+
+ a| 
+Copia posterior
+ a| 
+En curso
+ a| 
+_none_
+
+
+
+ a| 
+Borrado de unidad
+ a| 
+En curso
+ a| 
+_none_
+
+
+
+ a| 
+Importación de almacenamiento remoto
+ a| 
+En curso
+ a| 
+* Cambiar prioridad
+* Pare
+
+
+
+
+ a| 
+Importación de almacenamiento remoto
+ a| 
+Detenido
+ a| 
+* Reanudar
+* Desconectar
+
+
+
+
+ a| 
+Importación de almacenamiento remoto
+ a| 
+Error
+ a| 
+* Reanudar
+* Desconectar
+
+
+
+
+ a| 
+Importación de almacenamiento remoto
+ a| 
+Completado
+ a| 
+Desconectar
+
+|===

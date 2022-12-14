@@ -1,0 +1,53 @@
+---
+permalink: sm-settings/view-imported-certificates.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, imported, certificate, information, 
+summary: Desde la página certificados, es posible ver el tipo de certificado, la entidad emisora y el rango válido de fechas de los certificados para la cabina de almacenamiento. 
+---
+= Vea información de certificaciones importadas
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Desde la página certificados, es posible ver el tipo de certificado, la entidad emisora y el rango válido de fechas de los certificados para la cabina de almacenamiento.
+
+.Antes de empezar
+Debe iniciar sesión con un perfil de usuario que cuente con permisos de administración de seguridad. De lo contrario, no se mostrarán las funciones de certificación.
+
+.Pasos
+. Seleccione MENU:Settings[Certificates].
+. Seleccione una de las pestañas para ver información sobre los certificados.
++
+[cols="25h,~"]
+|===
+| Pestaña | Descripción 
+
+
+ a| 
+Gestión de cabinas
+ a| 
+Vea información sobre los certificados firmados por CA importados para cada controladora, incluido el archivo raíz, los archivos intermedios y los archivos de servidor.
+
+
+
+ a| 
+De confianza
+ a| 
+Vea información sobre los otros tipos de certificados importados para las controladoras. Utilice el campo de filtro en *Mostrar certificados...* para ver certificados instalados por el usuario o instalados previamente.
+
+** *Instalado por el usuario* -- certificados que un usuario cargó en la cabina de almacenamiento, los cuales pueden incluir certificados de confianza cuando la controladora funciona como cliente (en lugar de servidor), certificados LDAPS y certificados de la Federación de identidades.
+** *Preinstalado* -- certificados autofirmados incluidos con la cabina de almacenamiento.
+
+
+
+
+ a| 
+Gestión de claves
+ a| 
+Vea información sobre los certificados firmados por CA importados para un servidor de gestión de claves externo.
+
+|===
+

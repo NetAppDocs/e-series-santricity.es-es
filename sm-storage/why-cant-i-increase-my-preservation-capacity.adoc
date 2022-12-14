@@ -1,0 +1,24 @@
+---
+permalink: sm-storage/why-cant-i-increase-my-preservation-capacity.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, increase, preservation, capacity 
+summary: Si se crearon volúmenes en toda la capacidad utilizable disponible, es posible que no se pueda aumentar la capacidad de conservación. 
+---
+= ¿Por qué no puedo aumentar mi capacidad de conservación?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si se crearon volúmenes en toda la capacidad utilizable disponible, es posible que no se pueda aumentar la capacidad de conservación.
+
+La capacidad de conservación es la cantidad de capacidad (número de unidades) reservada en un pool para dar soporte a fallos de unidad potenciales. Cuando se crea un pool, el sistema reserva automáticamente una cantidad predeterminada de capacidad de conservación según el número de unidades del pool. Si creó volúmenes en toda la capacidad utilizable disponible, no puede aumentar la capacidad de conservación sin agregar capacidad al pool, ya sea sumando unidades o eliminando volúmenes.
+
+Puede cambiar la capacidad de conservación de *Pools y grupos de volúmenes*. Seleccione el pool que desea editar. Haga clic en *Ver/editar configuración* y, a continuación, seleccione la ficha *Configuración*.
+
+[NOTE]
+====
+La capacidad de conservación se especifica como el número de unidades, a pesar de que la capacidad de conservación real se distribuya en las unidades del pool.
+
+====

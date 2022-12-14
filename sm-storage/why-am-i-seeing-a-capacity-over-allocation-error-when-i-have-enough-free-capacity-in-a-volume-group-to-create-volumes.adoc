@@ -1,0 +1,27 @@
+---
+permalink: sm-storage/why-am-i-seeing-a-capacity-over-allocation-error-when-i-have-enough-free-capacity-in-a-volume-group-to-create-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, capacity, over-allocation, error, 
+summary: Es posible que el grupo de volúmenes seleccionado tenga una o más áreas de capacidad libre. Un área de capacidad libre es la capacidad libre que puede surgir después de eliminar un volumen o por no utilizar toda la capacidad libre disponible durante la creación de un volumen. 
+---
+= ¿Por qué veo un error de sobreasignación de capacidad si tengo capacidad libre suficiente en un grupo de volúmenes para crear volúmenes?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible que el grupo de volúmenes seleccionado tenga una o más áreas de capacidad libre. Un área de capacidad libre es la capacidad libre que puede surgir después de eliminar un volumen o por no utilizar toda la capacidad libre disponible durante la creación de un volumen.
+
+Cuando se crea un volumen en un grupo de volúmenes que tiene una o más áreas de capacidad libre, la capacidad del volumen se limita al área de capacidad libre más grande de ese grupo de volúmenes. Por ejemplo, si un grupo de volúmenes tiene una capacidad libre total de 15 GIB y el área de capacidad libre más grande es 10 GIB, el volumen más grande que se puede crear es de 10 GIB.
+
+Si un grupo de volúmenes tiene áreas de capacidad libre, el gráfico de grupo de volúmenes contiene un enlace que indica la cantidad de áreas de capacidad libre existentes. Seleccione el enlace para ver un cuadro emergente que indica la capacidad de cada área.
+
+Al consolidar la capacidad libre, se pueden crear volúmenes adicionales de la cantidad máxima de capacidad libre de un grupo de volúmenes. Se puede consolidar la capacidad libre existente en un grupo de volúmenes seleccionado mediante uno de los siguientes métodos:
+
+* Si se detecta al menos un área de capacidad libre para un grupo de volúmenes, se muestra la recomendación de que se debe consolidar la capacidad libre en la página Inicio del área notificación. Haga clic en el enlace *consolidar capacidad libre* para abrir el cuadro de diálogo.
+* También se puede seleccionar menu:Pools y grupos de volúmenes[tareas no comunes > consolidar la capacidad libre del grupo de volúmenes] para abrir el cuadro de diálogo.
+
+
+Si desea utilizar un área de capacidad libre específica en lugar del área de mayor capacidad, utilice la interfaz de línea de comandos (CLI) o Script Editor.

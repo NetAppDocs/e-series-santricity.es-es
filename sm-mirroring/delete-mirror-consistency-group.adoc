@@ -1,0 +1,41 @@
+---
+permalink: sm-mirroring/delete-mirror-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, delete, mirror, consistency, group, 
+summary: Es posible eliminar grupos de coherencia de reflejos que ya no son necesarios en la cabina de almacenamiento local y en la cabina de almacenamiento remota. 
+---
+= Elimine grupo de coherencia de reflejos
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible eliminar grupos de coherencia de reflejos que ya no son necesarios en la cabina de almacenamiento local y en la cabina de almacenamiento remota.
+
+.Antes de empezar
+Deben eliminarse todas las parejas reflejadas del grupo de coherencia de reflejos.
+
+.Pasos
+. Seleccione menu:Storage[Asynchronous Mirroring].
+. Seleccione la ficha *grupos de consistencia de mirroring*.
++
+Se muestra la tabla Grupo de coherencia de reflejos donde se detallan los grupos de coherencia de reflejos asociados con la cabina de almacenamiento.
+
+. Seleccione el grupo de coherencia de reflejos que desea eliminar y, a continuación, seleccione menú:tareas no comunes[Eliminar].
++
+El sistema muestra una confirmación.
+
+. Seleccione *Sí* para eliminar el grupo de consistencia en mirroring.
+
+
+.Resultados
+System Manager realiza lo siguiente:
+
+* Elimina el grupo de coherencia de reflejos en la cabina de almacenamiento local en primer lugar, y luego elimina el grupo de coherencia de reflejos en la cabina de almacenamiento remota.
+* Elimina el grupo de coherencia de reflejos de la tabla Grupo de coherencia de reflejos.
+
+
+.Después de terminar
+Ocasionalmente, es posible que existan instancias donde el grupo de coherencia de reflejos se elimina correctamente de la cabina de almacenamiento local, pero un error de comunicación impide eliminar el grupo de coherencia de reflejos de la cabina de almacenamiento remota. En este caso, debe acceder a la cabina de almacenamiento remota para eliminar el correspondiente grupo de coherencia de reflejos.

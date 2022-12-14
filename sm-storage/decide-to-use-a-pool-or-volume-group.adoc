@@ -1,0 +1,355 @@
+---
+permalink: sm-storage/decide-to-use-a-pool-or-volume-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, pool, volume group 
+summary: Es posible crear volúmenes a través de un pool o de un grupo de volúmenes. La mejor selección depende principalmente de los requisitos de almacenamiento clave, como la carga de trabajo de I/o esperada, los requisitos de rendimiento y los requisitos de protección de datos. 
+---
+= Decidir si se utilizará un pool y un grupo de volúmenes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible crear volúmenes a través de un pool o de un grupo de volúmenes. La mejor selección depende principalmente de los requisitos de almacenamiento clave, como la carga de trabajo de I/o esperada, los requisitos de rendimiento y los requisitos de protección de datos.
+
+
+
+== Motivos para elegir un pool o un grupo de volúmenes
+
+*Elegir una piscina*
+
+* Si necesita recompilaciones de la unidad más rápidas y gestión de almacenamiento simplificada, requiere volúmenes finos y/o posee una carga de trabajo altamente aleatoria.
+* Si desea distribuir los datos para cada volumen de manera aleatoria en una serie de unidades que componen el pool.
++
+No es posible configurar o cambiar el nivel de RAID de los pools ni los volúmenes en los pools. Los pools utilizan RAID nivel 6.
+
+
+
+*Elija un grupo de volúmenes*
+
+* Si necesita el máximo ancho de banda del sistema, la capacidad para modificar la configuración de almacenamiento y una carga de trabajo altamente secuencial.
+* Si desea distribuir datos en las unidades según un nivel de RAID. Es posible especificar el nivel de RAID al crear el grupo de volúmenes.
+* Si desea escribir los datos para cada volumen secuencialmente a través del conjunto de unidades que componen el grupo de volúmenes.
+
+
+[NOTE]
+====
+Debido a que los pools pueden coexistir con los grupos de volúmenes, una cabina de almacenamiento puede incluir tanto pools como grupos de volúmenes.
+
+====
+
+
+== Diferencias de funciones entre pools y grupos de volúmenes
+
+En la siguiente tabla, se incluye una comparación entre grupos de volúmenes y pools.
+
+[cols="1a,1a,1a"]
+|===
+| Uso | Piscina | Grupo de volúmenes 
+
+
+ a| 
+Carga de trabajo aleatoria
+ a| 
+Mejor
+ a| 
+Muy bien
+
+
+
+ a| 
+Carga de trabajo secuencial
+ a| 
+Muy bien
+ a| 
+Mejor
+
+
+
+ a| 
+Tiempo de recompilación de la unidad
+ a| 
+Rápido
+ a| 
+Más lento
+
+
+
+ a| 
+Rendimiento (modo óptimo)
+ a| 
+Bueno: Ideal para carga de trabajo aleatoria de bloques pequeños
+ a| 
+Bueno: Ideal para carga de trabajo secuencial de bloques grandes
+
+
+
+ a| 
+Rendimiento (modo de recompilación de la unidad)
+ a| 
+Mejor: Generalmente mejor que RAID 6
+ a| 
+Degradado: Caída de rendimiento de hasta el 40 %
+
+
+
+ a| 
+Fallos de unidad múltiples
+ a| 
+Mayor protección de datos: Recompilaciones priorizadas y más rápidas
+ a| 
+Menor protección de datos: Recompilaciones más lentas, mayor riesgo de pérdida de datos
+
+
+
+ a| 
+Agregar unidades
+ a| 
+Más rápido: Añadir al pool sobre la marcha
+ a| 
+Más lento: Requiere una operación de expansión de capacidad dinámica
+
+
+
+ a| 
+Compatibilidad con volúmenes finos
+ a| 
+Sí
+ a| 
+No
+
+
+
+ a| 
+Compatibilidad con discos de estado sólido (SSD)
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+ a| 
+Administración simplificada
+ a| 
+Sí: No es necesario asignar piezas de repuesto ni configurar RAID
+ a| 
+No: Es necesario asignar piezas de repuesto y configurar RAID
+
+
+
+ a| 
+Rendimiento ajustable
+ a| 
+No
+ a| 
+Sí
+
+|===
+
+
+== Comparación funcional de pools y grupos de volúmenes
+
+La función y el objetivo de un pool y un grupo de volúmenes son los mismos. Ambos objetos son un conjunto de unidades agrupadas lógicamente en una cabina de almacenamiento, y se usan para crear volúmenes a los que puede acceder un host.
+
+En la siguiente tabla, se ofrece información para ayudar a decidir si un pool o un grupo de volúmenes es lo que mejor se adapta a sus necesidades de almacenamiento.
+
+[cols="1a,1a,1a"]
+|===
+| Función | Piscina | Grupo de volúmenes 
+
+
+ a| 
+Compatibilidad con diferentes niveles de RAID
+ a| 
+No Siempre RAID 6 en System Manager.
+ a| 
+Sí. RAID 0, 1, 10, 5 y 6 disponibles.
+
+
+
+ a| 
+Compatibilidad con volúmenes finos
+ a| 
+Sí
+ a| 
+No
+
+
+
+ a| 
+Compatibilidad con cifrado de disco completo (FDE)
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+ a| 
+Compatibilidad con Data Assurance (DA)
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+ a| 
+Compatibilidad con protección contra pérdida de bandeja
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+ a| 
+Compatibilidad con protección contra pérdida de cajón
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+ a| 
+Compatibilidad con velocidades de unidad mixtas
+ a| 
+Se recomienda que sea la misma, pero no es obligatorio. La unidad más lenta determina la velocidad de todas las unidades.
+ a| 
+Se recomienda que sea la misma, pero no es obligatorio. La unidad más lenta determina la velocidad de todas las unidades.
+
+
+
+ a| 
+Compatible con capacidad de unidad mixta
+ a| 
+Se recomienda que sea la misma, pero no es obligatorio. La unidad más pequeña determina la capacidad de todas las unidades.
+ a| 
+Se recomienda que sea la misma, pero no es obligatorio. La unidad más pequeña determina la capacidad de todas las unidades.
+
+
+
+ a| 
+Número mínimo de unidades
+ a| 
+11
+ a| 
+Depende del nivel de RAID. RAID 0 necesita 1. RAID 1 o 10 necesita 2 (requiere un número par). El mínimo para RAID 5 es 3. El mínimo para RAID 6 es 5.
+
+
+
+ a| 
+Número máximo de unidades
+ a| 
+Hasta el límite máximo para la cabina de almacenamiento
+ a| 
+RAID 1 y 10: Hasta el límite máximo de la cabina de almacenamiento - RAID 5, 6 unidades
+
+
+
+ a| 
+Es posible elegir unidades individuales al crear un volumen
+ a| 
+No
+ a| 
+Sí
+
+
+
+ a| 
+Es posible especificar el tamaño de los segmentos al crear un volumen
+ a| 
+Sí. Compatibilidad con 128 K.
+ a| 
+Sí
+
+
+
+ a| 
+Es posible especificar las características de I/o al crear un volumen
+ a| 
+No
+ a| 
+Sí. Es compatible con sistema de archivos, base de datos, multimedia y opciones personalizadas.
+
+
+
+ a| 
+Protección ante fallos de unidad
+ a| 
+Utiliza la capacidad de conservación en cada unidad del pool para que la reconstrucción sea más rápida.
+ a| 
+Utiliza una unidad de repuesto. La reconstrucción está limitada por las IOPS de la unidad.
+
+
+
+ a| 
+Advertencia cuando se llega al límite de capacidad
+ a| 
+Sí. Es posible configurar una alerta cuando la capacidad utilizada llega a un porcentaje de la capacidad máxima.
+ a| 
+No
+
+
+
+ a| 
+Compatibilidad con migración a otra cabina de almacenamiento
+ a| 
+No Requiere migrar a un grupo de volúmenes en primer lugar.
+ a| 
+Sí
+
+
+
+ a| 
+Tamaño de segmentos dinámico (DSS)
+ a| 
+No
+ a| 
+Sí
+
+
+
+ a| 
+Es posible cambiar el nivel de RAID
+ a| 
+No
+ a| 
+Sí
+
+
+
+ a| 
+Ampliación de volumen (aumentar capacidad)
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+ a| 
+Ampliación de capacidad (añadir capacidad)
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+ a| 
+Reducción de capacidad
+ a| 
+Sí
+ a| 
+No
+
+|===
+[NOTE]
+====
+Los tipos de unidades mixtas (HDD, SSD) no son compatibles con pools o grupos de volúmenes.
+
+====

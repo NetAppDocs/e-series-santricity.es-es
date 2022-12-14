@@ -1,0 +1,40 @@
+---
+permalink: sm-support/collect-support-data-manually.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, collect, support, data, manually 
+summary: Es posible recopilar distintas clases de inventario, Estados y datos de rendimiento acerca de la cabina de almacenamiento en un único archivo. El soporte técnico puede utilizar el archivo para la solución de problemas y un análisis más profundo. 
+---
+= Recopilar manualmente datos de soporte
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible recopilar distintas clases de inventario, Estados y datos de rendimiento acerca de la cabina de almacenamiento en un único archivo. El soporte técnico puede utilizar el archivo para la solución de problemas y un análisis más profundo.
+
+.Acerca de esta tarea
+++ ++
+
+[NOTE]
+====
+Si la función AutoSupport está activada, también puede recopilar estos datos en la ficha *AutoSupport* y seleccionando *Enviar envío AutoSupport*.
+
+====
+Solo se puede ejecutar una operación de recogida a la vez. Si intenta iniciar otra operación, recibirá un mensaje de error.
+
+[NOTE]
+====
+Realice esta operación solo cuando el soporte técnico se lo indique.
+
+====
+.Pasos
+. Seleccione menú:ficha Soporte[Centro de soporte > Diagnóstico].
+. Seleccione *recopilar datos de soporte*.
+. Haga clic en *recoger*.
++
+El archivo se guarda en la carpeta de descargas del explorador con el nombre `support-data.7z`. Si la bandeja tiene cajones, los datos diagnósticos de esa bandeja se archivan en otro archivo comprimido con el nombre `tray-component-state-capture.7z`.
+
+. Siga las instrucciones del soporte técnico para enviar el archivo.
+

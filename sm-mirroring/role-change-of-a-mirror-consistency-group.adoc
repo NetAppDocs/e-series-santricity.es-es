@@ -1,0 +1,66 @@
+---
+permalink: sm-mirroring/role-change-of-a-mirror-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, role, change, mirror, consistency, group, secondary, mirror, consistency, group, 
+summary: Es posible cambiar el rol entre las parejas reflejadas de un grupo de coherencia de reflejos. Para ello, se puede degradar el grupo de coherencia de reflejos primario al rol secundario o promocionar el grupo de coherencia de reflejos secundario al rol primario. 
+---
+= Cambio de roles de un grupo de coherencia de reflejos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible cambiar el rol entre las parejas reflejadas de un grupo de coherencia de reflejos. Para ello, se puede degradar el grupo de coherencia de reflejos primario al rol secundario o promocionar el grupo de coherencia de reflejos secundario al rol primario.
+
+[NOTE]
+====
+Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
+
+====
+Revise la siguiente información sobre la operación de cambio de roles:
+
+* El cambio de rol afecta a todas las parejas reflejadas dentro del grupo de coherencia de reflejos seleccionado.
+* Cuando se degrada un grupo de coherencia de reflejos al rol secundario, también se degradan todas las parejas reflejadas dentro de ese grupo de coherencia de reflejos al rol secundario y viceversa.
+* Cuando se degrada el grupo de coherencia de reflejos primario al rol secundario, los hosts asignados a los volúmenes miembro de ese grupo ya no tienen acceso de escritura a ellos.
+* Cuando se promociona un grupo de coherencia de reflejos al rol primario, todos los hosts con acceso a los volúmenes miembro dentro de ese grupo pueden escribir en ellos.
+* Si la cabina de almacenamiento local no puede comunicarse con la cabina de almacenamiento remota, es posible forzar un cambio de rol en la cabina de almacenamiento local.
+
+
+
+
+== Forzar cambio de rol
+
+Es posible forzar un cambio de rol entre los grupos de coherencia de reflejos cuando un problema de comunicación entre la cabina de almacenamiento local y la cabina de almacenamiento remota impide la promoción de los volúmenes miembro dentro del grupo de coherencia de reflejos secundario o la degradación de los volúmenes miembro dentro de la coherencia de reflejos primario grupo.
+
+Se puede forzar la transición del grupo de coherencia de reflejos en el lado secundario al rol primario. El host de recuperación podrá acceder a los volúmenes miembro recientemente promocionados dentro de ese grupo de coherencia de reflejos y las operaciones empresariales podrán seguir su curso.
+
+
+
+== ¿Cuándo se permite y no se permite una promoción forzada?
+
+La promoción forzada de un grupo de coherencia de reflejos solo se permite si todos los volúmenes miembro del grupo de coherencia de reflejos están sincronizados y tienen puntos de recuperación consistentes.
+
+La promoción forzada de un grupo de coherencia de reflejos no se permite en las siguientes condiciones:
+
+* Alguno de los volúmenes miembro de un grupo de coherencia de reflejos está en el proceso de sincronización inicial.
+* Alguno de los volúmenes miembro de un grupo de coherencia de reflejos no tiene una imagen de un momento específico del punto de recuperación (por ejemplo, debido a un error de capacidad reservada completa).
+* El grupo de coherencia de reflejos no contiene volúmenes miembro.
+* El grupo de coherencia de reflejos presenta los estados Failed, Role-Change-Pending o Role-Change-In-Progress, o alguno de los volúmenes miembro o los volúmenes de capacidad reservada asociados presenta errores.
+
+
+
+
+== Conflicto de roles del grupo de reflejos
+
+Cuando se resuelve un problema de comunicación entre las cabinas de almacenamiento local y remota, se produce una condición de conflicto de roles en grupo de reflejos. Utilice Recovery Guru para recuperar el sistema de este error. No se permite la promoción forzada para resolver un conflicto de doble rol.
+
+Para evitar la condición de conflicto de roles en grupo de reflejos y los pasos de recuperación subsiguientes, espere hasta que se restablezca la conexión entre las cabinas de almacenamiento para forzar el cambio de rol.
+
+
+
+== Estado de cambio de rol en curso
+
+Si se desconectan dos cabinas de almacenamiento en una configuración de mirroring, y se fuerza la degradación del lado primario de un grupo de coherencia de reflejos al rol secundario y la promoción del lado secundario de un grupo de coherencia de reflejos al rol primario, A continuación, cuando se restaura la comunicación, los grupos de coherencia de reflejos en ambas cabinas de almacenamiento se colocan en el estado de cambio de rol en curso.
+
+Para completar el proceso de cambio de roles, el sistema transfiere los registros de cambios, vuelve a sincronizar, establece el grupo de coherencia de reflejos de vuelta a su estado operativo normal y prosigue con las sincronizaciones periódicas.

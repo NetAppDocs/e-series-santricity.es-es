@@ -1,0 +1,22 @@
+---
+permalink: sm-storage/snapshot-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot, volumes 
+summary: 'Es posible crear un volumen Snapshot y asignarlo a un host para leer o escribir datos Snapshot. El volumen Snapshot comparte las mismas características que el volumen base (nivel de RAID, características de I/o, etc.).' 
+---
+= Volúmenes Snapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible crear un volumen Snapshot y asignarlo a un host para leer o escribir datos Snapshot. El volumen Snapshot comparte las mismas características que el volumen base (nivel de RAID, características de I/o, etc.).
+
+Al crear un volumen Snapshot, es posible designarlo como __Read-onl__y o _Read-write Accessible_.
+
+Cuando se crean volúmenes Snapshot de solo lectura, no es necesario añadir capacidad reservada. Cuando se crean volúmenes Snapshot de lectura/escritura, es necesario añadir capacidad reservada para proporcionar acceso de escritura.
+
+image::../media/sam1130-dwg-snapshots-volumes-overview.gif[información general sobre los volúmenes de instantáneas dwg de sampl30]
+
+Volumen base de esta aplicación; servidor de aplicaciones 2; volumen Snapshot de sólo lectura de 3; volumen Snapshot de lectura y escritura de 4; capacidad reservada de esta versión 5

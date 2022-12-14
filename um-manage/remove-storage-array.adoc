@@ -1,0 +1,29 @@
+---
+permalink: um-manage/remove-storage-array.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, remove, storage, arrays, 
+summary: Es posible quitar una o varias cabinas de almacenamiento si ya no se van a gestionar desde Unified Manager de SANtricity. 
+---
+= Quite las cabinas de almacenamiento de SANtricity Unified Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible quitar una o varias cabinas de almacenamiento si ya no se van a gestionar desde Unified Manager.
+
+.Acerca de esta tarea
+No es posible acceder a ninguna de las cabinas de almacenamiento que se quiten. Sin embargo, puede establecerse una conexión con cualquiera de las cabinas de almacenamiento eliminadas si se apunta un explorador directamente a su dirección IP o nombre de host.
+
+Al quitar una cabina de almacenamiento, ni ella ni sus datos se ven afectados de forma alguna. Si una cabina de almacenamiento se quita por error, es posible volver a añadirla.
+
+.Pasos
+. Seleccione la página *Administrar*.
+. Seleccione una o varias cabinas de almacenamiento que desee quitar.
+. Seleccione menú:tareas no comunes[Quitar cabina de almacenamiento].
++
+La cabina de almacenamiento se elimina de todas las vistas de SANtricity Unified Manager.
+
+

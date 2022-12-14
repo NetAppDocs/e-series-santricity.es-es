@@ -1,0 +1,31 @@
+---
+permalink: sm-support/disable-autosupport-maintenance-window.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, disable, autosupport, ASUP, maintenance window 
+summary: Deshabilite la ventana de mantenimiento AutoSupport para permitir la creación automática de incidencias ante eventos de error. Cuando se deshabilita la ventana de mantenimiento AutoSupport, la cabina de almacenamiento utilizará AutoSupport para abrir un caso en soporte si existe un problema. 
+---
+= Deshabilite la ventana de mantenimiento AutoSupport
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Deshabilite la ventana de mantenimiento AutoSupport para permitir la creación automática de incidencias ante eventos de error. Cuando se deshabilita la ventana de mantenimiento AutoSupport, la cabina de almacenamiento utilizará AutoSupport para abrir un caso en soporte si existe un problema.
+
+.Pasos
+. Seleccione menú:ficha Soporte[Centro de soporte > AutoSupport].
+. Seleccione *Deshabilitar la ventana de mantenimiento de AutoSupport*.
+. Introduzca la dirección de correo electrónico para recibir una confirmación de que se procesó la solicitud de deshabilitar la ventana de mantenimiento.
++
+Según la configuración existente, se podrán introducir hasta cinco direcciones de correo electrónico. Si desea agregar más de una dirección, seleccione *Agregar otro correo electrónico* para abrir otro campo.
+
+. Haga clic en *Sí*.
++
+Se habilita la creación automática de incidencias de AutoSupport ante eventos de error.
+
+
+
+.Después de terminar
+La ventana de mantenimiento no se finalizará hasta que los servidores de AutoSupport procesen la solicitud de la cabina de almacenamiento. Espere hasta recibir un correo electrónico de confirmación antes de continuar.

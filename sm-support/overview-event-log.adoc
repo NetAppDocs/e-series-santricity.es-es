@@ -1,0 +1,41 @@
+---
+permalink: sm-support/overview-event-log.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, event, log 
+summary: Use el registro de eventos para ver un registro histórico de los cambios y los eventos producidos en la cabina de almacenamiento. 
+---
+= Información general sobre el registro de eventos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El registro de eventos es un registro histórico de los eventos producidos en la cabina de almacenamiento, lo que ayuda al soporte técnico a solucionar problemas de eventos que pueden producir errores.
+
+Es posible utilizar el registro de eventos como herramienta de diagnóstico complementaria a Recovery Guru para buscar el origen de eventos de cabina de almacenamiento. Consulte siempre Recovery Guru en primer lugar si intenta recuperarse de errores de componentes en la cabina de almacenamiento.
+
+
+
+== Categorías de eventos
+
+Los eventos del registro de eventos se categorizan con diferentes Estados. Los eventos para los que debe realizar acciones tienen los siguientes Estados:
+
+* Crítico
+* Advertencia
+
+
+Los eventos que son informativos y no requieren acción inmediata son los siguientes:
+
+* Informativo
+
+
+
+
+== Eventos críticos
+
+Los eventos críticos indican un problema con la cabina de almacenamiento. Si se resuelve el evento crítico de inmediato, es posible que se evite la pérdida de acceso a los datos.
+
+Cuando se produce un evento crítico, este se añade al registro de eventos. Todos los eventos críticos se envían a la consola de gestión SNMP o al destinatario de correo electrónico que se configuró para recibir notificaciones de alerta. Si no se conoce el ID de bandeja en el momento del evento, el ID de bandeja se muestra como "Shelf unknown".
+
+Cuando reciba un evento crítico, consulte el procedimiento de Recovery Guru para acceder a una descripción detallada de ese evento. Complete el procedimiento de Recovery Guru para corregir el evento crítico. Para corregir ciertos eventos críticos, es posible que deba comunicarse con el soporte técnico.

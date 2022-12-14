@@ -1,0 +1,30 @@
+---
+permalink: sm-storage/what-is-segment-sizing.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, segment, size, storage, raid 
+summary: 'Un segmento es la cantidad de datos en kilobytes (KiB) que se almacenan en una unidad antes de que la cabina de almacenamiento pase a la unidad siguiente en la franja (grupo RAID). El tamaño de segmento aplica solo a grupos de volúmenes, no a pools.' 
+---
+= ¿Qué es el tamaño de segmento?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un segmento es la cantidad de datos en kilobytes (KiB) que se almacenan en una unidad antes de que la cabina de almacenamiento pase a la unidad siguiente en la franja (grupo RAID). El tamaño de segmento aplica solo a grupos de volúmenes, no a pools.
+
+El tamaño de los segmentos está definido por la cantidad de bloques de datos que contiene. Para determinar el tamaño de segmento, se debe conocer el tipo de datos que se almacenará en un volumen. Si una aplicación utiliza habitualmente escrituras y lecturas aleatorias pequeñas (IOPS), por lo general, funcionará mejor un tamaño de segmento más pequeño. Por el contrario, si la aplicación realiza escrituras y lecturas secuenciales grandes (rendimiento), por lo general, funcionará mejor un tamaño de segmento grande.
+
+Independientemente de si una aplicación utiliza escrituras y lecturas aleatorias pequeñas o escrituras y lecturas secuenciales grandes, la cabina de almacenamiento rendirá mejor si el tamaño del segmento es mayor al tamaño típico del fragmento de bloque de datos. Habitualmente, esto facilita y agiliza el acceso de las unidades a los datos, lo cual resulta importante para un mejor rendimiento de la cabina de almacenamiento.
+
+
+
+== Entornos en los que el rendimiento de IOPS es importante
+
+En un entorno de operaciones de I/o por segundo (IOPS), la cabina de almacenamiento tiene un mejor rendimiento si se utiliza un tamaño de segmento mayor al tamaño típico del bloque de datos ("fragmento"") que se lee/escribe en una unidad. Esto garantiza que cada fragmento se escriba en una unidad única.
+
+
+
+== Entornos en los que el rendimiento es importante
+
+En un entorno de rendimiento, el tamaño del segmento debe ser una fracción entera de las unidades totales para los datos y del tamaño de fragmento de datos típico (tamaño de I/o). Esto permite la distribución de los datos como una franja única en las unidades del grupo de volúmenes, lo que lleva a lecturas y escrituras más rápidas.

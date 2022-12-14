@@ -1,0 +1,43 @@
+---
+permalink: um-certificates/overview-access-management-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, access management, authentication 
+summary: Access Management es un método para configurar la autenticación de usuario en SANtricity Unified Manager. 
+---
+= Información general de Access Management
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Access Management es un método para configurar la autenticación de usuario en Unified Manager.
+
+
+
+== ¿Qué métodos de autenticación están disponibles?
+
+Están disponibles los siguientes métodos de autenticación:
+
+* *Roles de usuario local* -- la autenticación se administra mediante funciones RBAC (control de acceso basado en roles). Los roles de usuario local incluyen perfiles de usuario predefinidos con permisos de acceso específicos.
+* *Servicios de directorio* -- la autenticación se administra a través de un servidor LDAP (protocolo ligero de acceso a directorios) y un servicio de directorio, como Active Directory de Microsoft.
+
+
+Obtenga más información:
+
+* link:how-access-management-works-unified.html["Cómo funciona Access Management"]
+* link:access-management-terminology-unified.html["Terminología de Access Management"]
+* link:permissions-for-mapped-roles-unified.html["Permisos para roles asignados"]
+
+
+
+
+== ¿Cómo se configura Access Management?
+
+El software SANtricity está preconfigurado para usar roles de usuario local. Si desea utilizar LDAP, puede configurarlo en la página Access Management.
+
+Obtenga más información:
+
+* link:access-management-with-local-user-roles-unified.html["Access Management con roles de usuario local"]
+* link:access-management-with-directory-services-unified.html["Access Management con servicios de directorio"]
+

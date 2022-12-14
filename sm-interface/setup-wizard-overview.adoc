@@ -1,0 +1,114 @@
+---
+permalink: sm-interface/setup-wizard-overview.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, setup wizard 
+summary: Utilice el asistente de configuración para configurar la cabina de almacenamiento, incluido el hardware, los hosts, las aplicaciones, las cargas de trabajo, Pools, alertas y AutoSupport. 
+---
+= Información general del asistente de configuración
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilice el asistente de configuración para configurar la cabina de almacenamiento, incluido el hardware, los hosts, las aplicaciones, las cargas de trabajo, Pools, alertas y AutoSupport.
+
+
+
+== Configuración por primera vez
+
+Cuando se abre por primera vez System Manager, aparece el asistente de configuración. El asistente de configuración le solicita que realice tareas de configuración básicas, como asignar un nombre a la cabina de almacenamiento, configurar los hosts, seleccionar aplicaciones y crear pools de almacenamiento.
+
+
+NOTE: Antes de continuar con la configuración inicial, vaya al centro de actualización (menú:Soporte[Centro de actualización]) y asegúrese de que el software de sistema operativo SANtricity está actualizado. Si es necesario, actualice a la versión más reciente y actualice el explorador para continuar con la configuración. Para obtener más información, consulte link:../sm-support/overview-upgrade-center.html["Información general del centro de actualización"].
+
+Si cancela el asistente, no podrá volver a ejecutarlo manualmente. El asistente se vuelve a ejecutar automáticamente cuando abre System Manager o actualiza el explorador y se cumple _al menos una_ de las siguientes condiciones:
+
+* No se detectan pools ni grupos de volúmenes.
+* No se detectan cargas de trabajo.
+* No hay notificaciones configuradas.
+
+
+
+
+== Terminología
+
+El asistente de configuración usa los siguientes términos.
+
+[cols="25h,~"]
+|===
+| Duración | Descripción 
+
+
+ a| 
+Cliente más
+ a| 
+Una aplicación es un programa de software como Microsoft SQL Server o Microsoft Exchange.
+
+
+
+ a| 
+Alerta
+ a| 
+Las alertas notifican a los administradores sobre eventos importantes que se producen en las cabinas de almacenamiento. Se pueden enviar por correo electrónico, capturas SNMP o syslog.
+
+
+
+ a| 
+AutoSupport
+ a| 
+La función AutoSupport supervisa el estado de una cabina de almacenamiento y envía mensajes automáticos al soporte técnico.
+
+
+
+ a| 
+Hardware subyacente
+ a| 
+El hardware del sistema de almacenamiento incluye las cabinas de almacenamiento, las controladoras y las unidades.
+
+
+
+ a| 
+Host
+ a| 
+Un host es un servidor que envía I/o a un volumen de una cabina de almacenamiento.
+
+
+
+ a| 
+Objeto
+ a| 
+Un objeto es cualquier componente de almacenamiento lógico o físico. Los objetos lógicos incluyen grupos de volúmenes, pools y volúmenes. Los objetos físicos abarcan la cabina de almacenamiento, las controladoras de las cabinas, los hosts y las unidades.
+
+
+
+ a| 
+Piscina
+ a| 
+Un pool es un conjunto de unidades que se agrupan en forma lógica. Se puede usar un pool para crear uno o más volúmenes accesibles para un host. (Se crean volúmenes desde un pool o un grupo de volúmenes).
+
+
+
+ a| 
+Volumen
+ a| 
+Un volumen es un contenedor en el cual las aplicaciones, las bases de datos y los sistemas de archivos almacenan datos. Es el componente lógico que se crea para que el host acceda al almacenamiento de la cabina de almacenamiento.
+
+Un volumen se crea a partir de la capacidad disponible de un pool o un grupo de volúmenes. Un volumen tiene una capacidad definida. Aunque es posible que un volumen conste de más de una unidad, un volumen aparece como un componente lógico para el host.
+
+
+
+ a| 
+Grupo de volúmenes
+ a| 
+Un grupo de volúmenes es un contenedor para volúmenes con características compartidas. Un grupo de volúmenes tiene una capacidad definida y un nivel de RAID. Se puede usar un grupo de volúmenes para crear uno o más volúmenes a los que se pueda acceder mediante un host. (Los volúmenes se crean a partir de un pool o un grupo de volúmenes).
+
+
+
+ a| 
+Carga de trabajo
+ a| 
+Una carga de trabajo es un objeto de almacenamiento que admite una aplicación. Se pueden definir una o más cargas de trabajo o instancias por aplicación. En algunas aplicaciones, el sistema configura la carga de trabajo para contener volúmenes con características subyacentes similares. Estas características de volumen se optimizan según el tipo de aplicación que es compatible con la carga de trabajo. Por ejemplo, si crea una carga de trabajo que es compatible con la aplicación Microsoft SQL Server y, a continuación, crea volúmenes para esa carga de trabajo, las características de volumen subyacentes se optimizan para ser compatibles con Microsoft SQL Server.
+
+|===

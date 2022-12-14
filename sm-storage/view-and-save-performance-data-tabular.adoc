@@ -1,0 +1,37 @@
+---
+permalink: sm-storage/view-and-save-performance-data-tabular.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, save, tabular, performance, 
+summary: Es posible ver y guardar datos de gráficos de rendimiento en una tabla de resultados. Esto permite filtrar los datos que se desean ver. 
+---
+= Ver y guardar los datos de rendimiento tabulares
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible ver y guardar datos de gráficos de rendimiento en una tabla de resultados. Esto permite filtrar los datos que se desean ver.
+
+.Pasos
+. Desde cualquier gráfico de datos de rendimiento, haga clic en *Iniciar vista de tabla*.
++
+Se muestra una tabla con todos los datos de rendimiento de los objetos seleccionados.
+
+. Use el menú desplegable para la selección de objetos y el filtro, según sea necesario.
+. Haga clic en el botón *Mostrar/ocultar columnas* para seleccionar las columnas que desea incluir en la tabla.
++
+Es posible hacer clic en cada casilla de comprobación para seleccionar o anular la selección de un elemento.
+
+. Seleccione *Exportar* en la parte inferior de la pantalla para guardar la vista tabular en un archivo de valores separados por comas (CSV).
++
+Aparece el cuadro de diálogo Exportar tabla, que indica el número de filas que se van a exportar y el formato de archivo de la exportación (valores separados por comas o formato CSV).
+
+. Haga clic en *Exportar* para continuar con la descarga o haga clic en *Cancelar*.
++
+En función de la configuración del explorador, el archivo se guarda o se le solicita que elija un nombre y una ubicación para el archivo.
+
++
+El formato predeterminado del nombre de archivo es `performanceStatistics-yyyy-mm-dd_hh-mm-ss.csv`, que incluye la fecha y la hora en que se exportó el archivo.
+
+

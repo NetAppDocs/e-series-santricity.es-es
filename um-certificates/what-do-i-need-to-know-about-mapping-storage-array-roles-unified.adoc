@@ -1,0 +1,33 @@
+---
+permalink: um-certificates/what-do-i-need-to-know-about-mapping-storage-array-roles-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, mapping, storage, array, roles 
+summary: Antes de asignar grupos a roles, revise las directrices. 
+---
+= ¿Qué debo saber acerca de la asignación de roles de la cabina de almacenamiento?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Antes de asignar grupos a roles, revise las directrices.
+
+Las funcionalidades de RBAC incluyen los siguientes roles:
+
+* *Storage admin* -- acceso completo de lectura/escritura a los objetos de almacenamiento de las matrices, pero sin acceso a la configuración de seguridad.
+* *Security admin* -- acceso a la configuración de seguridad en Access Management y Certificate Management.
+* *Support admin* -- acceso a todos los recursos de hardware en matrices de almacenamiento, datos de fallos y eventos MEL. No brinda acceso a los objetos de almacenamiento ni a la configuración de seguridad.
+* *Monitor* -- acceso de sólo lectura a todos los objetos de almacenamiento, pero sin acceso a la configuración de seguridad.
+
+
+[NOTE]
+====
+El rol de supervisión se requiere para todos los usuarios, incluido el administrador.
+
+====
+Si usa un servidor de protocolo ligero de acceso a directorios (LDAP) y servicios de directorio, asegúrese de que:
+
+* Un administrador haya definido grupos de usuarios en el servicio de directorio.
+* Conoce los nombres de dominio de los grupos de usuarios LDAP.
+

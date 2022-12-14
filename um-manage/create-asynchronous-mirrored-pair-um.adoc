@@ -1,0 +1,165 @@
+---
+permalink: um-manage/create-asynchronous-mirrored-pair-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, create, asynchronous, mirrored, pair 
+summary: Para configurar el mirroring asíncrono, debe crear una pareja reflejada que incluya un volumen primario en la cabina local y un volumen secundario en la cabina remota. 
+---
+= Cree una pareja reflejada asíncrona
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para configurar el mirroring asíncrono, debe crear una pareja reflejada que incluya un volumen primario en la cabina local y un volumen secundario en la cabina remota.
+
+[NOTE]
+====
+Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
+
+====
+.Antes de empezar
+Antes de crear una pareja reflejada, debe cumplir con los requisitos para Unified Manager:
+
+* El proxy de servicios web se encuentra en ejecución.
+* Unified Manager se ejecuta en el host local a través de una conexión HTTPS.
+* SANtricity Unified Manager debe mostrar los certificados SSL válidos para la cabina de almacenamiento. Es posible aceptar un certificado autofirmado o instalar una certificación de seguridad propia con Unified Manager. Para hacerlo, debe navegar hasta MENU:Certificate[Gestión de certificados].
+
+
+También debe cumplir con los siguientes requisitos para las cabinas de almacenamiento y los volúmenes:
+
+* Cada cabina de almacenamiento debe tener dos controladoras.
+* Las dos cabinas de almacenamiento se encuentran detectadas en Unified Manager.
+* Cada controladora en la cabina primaria y la cabina secundaria debe tener un puerto Ethernet de gestión configurado y debe estar conectada a la red.
+* Las cabinas de almacenamiento deben tener la versión de firmware 7.84 como mínimo. (Cada una puede ejecutar versiones de sistema operativo diferentes).
+* Debe conocer la contraseña de las cabinas de almacenamiento remota y local.
+* Debe tener suficiente capacidad libre en la cabina de almacenamiento remota para crear un volumen secundario mayor o igual que el volumen primario que desea reflejar.
+* Las cabinas de almacenamiento local y remota se encuentran conectadas a través de una estructura Fibre Channel o una interfaz iSCSI.
+* Creó el volumen primario y el volumen secundario que desea usar en la relación de reflejo asíncrono.
+* El volumen secundario deber tener al menos el tamaño del volumen primario.
+
+
+.Acerca de esta tarea
+El proceso para crear una pareja reflejada asíncrona es un procedimiento de varios pasos.
+
+
+
+== Paso 1: Cree o seleccione un grupo de coherencia de reflejos
+
+En este paso, debe crear un grupo de coherencia de reflejos nuevo o seleccionar uno existente. Un grupo de coherencia de reflejos es un contenedor para los volúmenes primario y secundario (la pareja reflejada), y especifica el método de resincronización deseado (manual o automático) para todas las parejas del grupo.
+
+.Pasos
+. En la página *gestionar*, seleccione la matriz de almacenamiento local que desea utilizar para el origen.
+. Seleccione menu:acciones[Crear pareja reflejada asíncrona].
++
+Se abrirá el asistente Crear pareja reflejada asíncrona.
+
+. Seleccione un grupo de coherencia de reflejos existente o cree uno nuevo.
++
+Para seleccionar un grupo existente, asegúrese de que *un grupo de consistencia de mirroring* existente está seleccionado y, a continuación, seleccione el grupo de la tabla. Un grupo de coherencia puede incluir varias parejas reflejadas.
+
++
+Para crear un grupo nuevo, realice lo siguiente:
+
++
+.. Seleccione *Un nuevo grupo de coherencia de reflejos* y, a continuación, haga clic en *Siguiente*.
+.. Introduzca un nombre único que describa mejor los datos de los volúmenes que se reflejarán entre las dos cabinas de almacenamiento. Un nombre sólo puede contener letras, números y los caracteres especiales de subrayado (_), guión (-) y el signo de hash (#). Un nombre no puede superar los 30 caracteres y no puede contener espacios.
+.. Seleccione la cabina de almacenamiento remota en la que desea establecer una relación de reflejo con la cabina de almacenamiento local.
++
+[NOTE]
+====
+Si la cabina de almacenamiento remota está protegida con contraseña, el sistema solicita la contraseña.
+
+====
+.. Elija si desea sincronizar las parejas reflejadas de forma manual o automática:
++
+*** *Manual* -- Seleccione esta opción para iniciar manualmente la sincronización de todas las parejas reflejadas dentro de este grupo. Tenga en cuenta que, cuando desee realizar una resincronización más tarde, deberá iniciar System Manager para la cabina de almacenamiento primaria y, a continuación, deberá ir al menú:almacenamiento[Mirroring asíncrono], seleccionar el grupo en la pestaña *grupos de coherencia de reflejos* y seleccionar MENU:más[Resincronizar manualmente].
+*** *Automático* -- Seleccione el intervalo deseado en *minutos*, *horas* o *días*, desde el comienzo de la actualización anterior hasta el comienzo de la siguiente. Por ejemplo, si se establece el intervalo de sincronización en 30 minutos y el proceso de sincronización comienza a las 4:00 p. m., el siguiente proceso comenzará a las 4:30 p. m.
+
+
+.. Seleccione las opciones de alerta deseadas:
++
+*** Para las sincronizaciones manuales, especifique el umbral (que se define según el porcentaje de capacidad restante) cuando desea recibir alertas.
+*** Para las sincronizaciones automáticas, puede establecer tres métodos de alerta: cuando la sincronización no se completa en un lapso específico, cuando los datos del punto de recuperación en la cabina remota son más antiguos que un límite de tiempo específico y cuando la capacidad reservada está cerca de un umbral específico (definido por el porcentaje de capacidad restante).
+
+
+
+
+. Seleccione *Siguiente* y vaya a. <<Paso 2: Seleccione el volumen primario>>.
++
+Si definió un grupo de coherencia de reflejos nuevo, Unified Manager crea el grupo de coherencia de reflejos en la cabina de almacenamiento local primero y, a continuación, crea el grupo de coherencia de reflejos en la cabina de almacenamiento remota. Para ver y gestionar el grupo de coherencia de reflejos, inicie la instancia de System Manager de cada cabina.
+
++
+[NOTE]
+====
+Si Unified Manager crea correctamente el grupo de coherencia de reflejos en la cabina de almacenamiento local, pero no logra crearlo en la cabina de almacenamiento remota, elimina automáticamente el grupo de coherencia de reflejos de la cabina de almacenamiento local. Si se produce un error mientras Unified Manager intenta eliminar el grupo de coherencia de reflejos, es necesario eliminarlo en forma manual.
+
+====
+
+
+
+
+== Paso 2: Seleccione el volumen primario
+
+En este paso, se selecciona el volumen primario que se usará en la relación de reflejo y se asigna la capacidad reservada. Si selecciona un volumen primario en la cabina de almacenamiento local, el sistema muestra una lista de todos los volúmenes elegibles para esa pareja reflejada. Si algún volumen no es apto para el uso, no se muestra en esa lista.
+
+Todos los volúmenes que añada al grupo de coherencia de reflejos de la cabina de almacenamiento local tendrán el rol primario en la relación de reflejo.
+
+.Pasos
+. En la lista de volúmenes elegibles, seleccione el volumen que desea usar como el volumen primario y haga clic en *Siguiente* para asignar la capacidad reservada.
+. En la lista de candidatos elegibles, seleccione la capacidad reservada para el volumen primario.
++
+Tenga en cuenta las siguientes directrices:
+
++
+** La configuración predeterminada para la capacidad reservada es del 20 % del volumen base y, por lo general, esta capacidad es suficiente. Si cambia el porcentaje, haga clic en *Actualizar candidatos*.
+** La capacidad necesaria varía, según la frecuencia y el tamaño de las escrituras de I/o en el volumen primario y el tiempo que se requiere conservar la capacidad.
+** En general, elija una capacidad mayor para la capacidad reservada si se presentan una o ambas de estas condiciones:
++
+*** Se pretende conservar la pareja reflejada por un periodo prolongado.
+*** Un gran porcentaje de bloques de datos cambiará en el volumen primario debido a una gran actividad de I/O. Utilice datos históricos de rendimiento u otra utilidad del sistema operativo para determinar la actividad de I/o típica del volumen primario.
+
+
+
+
+. Seleccione *Siguiente* y vaya a. <<Paso 3: Seleccione el volumen secundario>>.
+
+
+
+
+== Paso 3: Seleccione el volumen secundario
+
+En este paso, se selecciona el volumen secundario que se usará en la relación de reflejo y se asigna la capacidad reservada. Si selecciona un volumen secundario en la cabina de almacenamiento remota, el sistema muestra una lista de todos los volúmenes aptos para esa pareja reflejada. Si algún volumen no es apto para el uso, no se muestra en esa lista.
+
+Todos los volúmenes que añada al grupo de coherencia de reflejos de la cabina de almacenamiento remota tendrán el rol secundario en la relación de reflejo.
+
+.Pasos
+. En la lista de volúmenes elegibles, seleccione el volumen que desea usar como el volumen secundario en la pareja reflejada y haga clic en *Siguiente* para asignar la capacidad reservada.
+. En la lista de candidatos elegibles, seleccione la capacidad reservada para el volumen secundario.
++
+Tenga en cuenta las siguientes directrices:
+
++
+** La configuración predeterminada para la capacidad reservada es del 20 % del volumen base y, por lo general, esta capacidad es suficiente. Si cambia el porcentaje, haga clic en *Actualizar candidatos*.
+** La capacidad necesaria varía, según la frecuencia y el tamaño de las escrituras de I/o en el volumen primario y el tiempo que se requiere conservar la capacidad.
+** En general, elija una capacidad mayor para la capacidad reservada si se presentan una o ambas de estas condiciones:
++
+*** Se pretende conservar la pareja reflejada por un periodo prolongado.
+*** Un gran porcentaje de bloques de datos cambiará en el volumen primario debido a una gran actividad de I/O. Utilice datos históricos de rendimiento u otra utilidad del sistema operativo para determinar la actividad de I/o típica del volumen primario.
+
+
+
+
+. Seleccione *Finalizar* para completar la secuencia de duplicación asíncrona.
+
+
+.Resultados
+Unified Manager realiza las siguientes acciones:
+
+* Comienza la sincronización inicial entre la cabina de almacenamiento local y la remota.
+* Crea la capacidad reservada para la pareja reflejada en la cabina de almacenamiento local y la remota.
+
+
+
+NOTE: Si el volumen que se está reflejando es fino, solo los bloques de aprovisionamiento (capacidad asignada en lugar de capacidad notificada) se transfieren al volumen secundario durante la sincronización inicial. Esto reduce la cantidad de datos que se deben transferir para completar la sincronización inicial.

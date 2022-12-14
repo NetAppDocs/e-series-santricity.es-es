@@ -1,0 +1,44 @@
+---
+permalink: sm-mirroring/change-mirror-consistency-group-role-to-primary-or-secondary.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, mirror, consistency group, primary, secondary 
+summary: Es posible cambiar el rol entre grupos de coherencia de reflejos para fines administrativos o en el caso de un desastre en la cabina de almacenamiento local. 
+---
+= Cambie el rol de un grupo de coherencia de reflejos a primario o secundario
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible cambiar el rol entre grupos de coherencia de reflejos para fines administrativos o en el caso de un desastre en la cabina de almacenamiento local.
+
+.Acerca de esta tarea
+Los grupos de coherencia de reflejos creados en la cabina de almacenamiento local conservan el rol primario. Los grupos de coherencia de reflejos creados en la cabina de almacenamiento remota conservan el rol secundario. Es posible degradar el grupo de coherencia de reflejos local a un rol secundario o promocionar el grupo de coherencia de reflejos remoto a un rol primario.
+
+.Pasos
+. Seleccione menu:Storage[Asynchronous Mirroring].
+. Seleccione la ficha *grupos de consistencia de mirroring*.
++
+Se muestra la tabla Grupo de coherencia de reflejos donde se detallan los grupos de coherencia de reflejos asociados con la cabina de almacenamiento.
+
+. Seleccione el grupo de coherencia de reflejos con el rol que desea cambiar y, a continuación, seleccione menu:más[Cambiar rol a <Primary | Secondary>]*>*.
++
+El sistema muestra una confirmación.
+
+. Confirme que desea cambiar el rol del grupo de consistencia en mirroring y haga clic en *Cambiar rol*.
++
+[NOTE]
+====
+Se muestra el cuadro de diálogo no se puede establecer contacto con la cabina de almacenamiento en el sistema cuando se solicita un cambio de rol, pero la cabina de almacenamiento remota no puede contactarse. Haga clic en *Sí* para forzar el cambio de rol.
+
+====
+
+
+.Resultados
+System Manager realiza lo siguiente:
+
+* En la tabla del grupo de coherencia de reflejos, se muestran los Estados "pending" o "in-progress", para indicar una operación pendiente o en curso, junto al grupo de coherencia de reflejos donde se está produciendo el cambio de rol. Puede cancelar una operación de cambio de rol pendiente haciendo clic en el enlace *Cancelar* que se encuentra dentro de la celda de la tabla.
+* Si es posible comunicarse con el grupo de coherencia de reflejos asociado, cambian los roles entre los grupos de coherencia de reflejos. En System Manager, se promueve el grupo de coherencia de reflejos secundario a un rol primario o se degrada el grupo de coherencia de reflejos primario a un rol secundario (según la selección). El cambio de rol afecta a todas las parejas reflejadas dentro del grupo de coherencia de reflejos seleccionado.
+

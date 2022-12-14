@@ -1,0 +1,16 @@
+---
+permalink: sm-settings/why-is-it-important-to-record-security-key-information.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, record, security, key, 
+summary: Si pierde la información de la clave de seguridad y no cuenta con un backup, podría perder los datos al reubicar las unidades con la función de seguridad habilitada o actualizar una controladora. La clave de seguridad es necesaria para desbloquear los datos en las unidades. 
+---
+= ¿Por qué es importante registrar la información de claves de seguridad?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si pierde la información de la clave de seguridad y no cuenta con un backup, podría perder los datos al reubicar las unidades con la función de seguridad habilitada o actualizar una controladora. La clave de seguridad es necesaria para desbloquear los datos en las unidades.
+
+Asegúrese de registrar el identificador de la clave de seguridad, la frase de contraseña asociada y la ubicación en el host local en donde se guardó el archivo de claves de seguridad.

@@ -1,0 +1,18 @@
+---
+permalink: sm-hardware/what-is-a-dhcp-server.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, dhcp, server, configuration, protocol, 
+summary: 'El protocolo de configuración dinámica de hosts (DHCP) es un protocolo que automatiza la tarea de asignar una dirección de protocolo de Internet (IP).' 
+---
+= ¿Qué es un servidor DHCP?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El protocolo de configuración dinámica de hosts (DHCP) es un protocolo que automatiza la tarea de asignar una dirección de protocolo de Internet (IP).
+
+Cada dispositivo conectado a una red TCP/IP debe tener asignada una dirección IP única. Estos dispositivos incluyen las controladoras de la cabina de almacenamiento.
+
+Sin DHCP, el administrador de red introduce estas direcciones IP manualmente. Con DHCP, cuando un cliente necesita iniciar operaciones TCP/IP, el cliente transmite una solicitud de información de la dirección. El servidor DHCP recibe la solicitud, asigna una dirección nueva por una cantidad de tiempo específica, que se denomina periodo de concesión, y envía esa dirección al cliente. Con DHCP, un dispositivo puede tener una dirección IP diferente cada vez que se conecta a la red. En algunos sistemas, la dirección IP del dispositivo puede cambiar incluso mientras el dispositivo todavía está conectado.

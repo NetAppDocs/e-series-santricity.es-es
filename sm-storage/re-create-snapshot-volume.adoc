@@ -1,0 +1,61 @@
+---
+permalink: sm-storage/re-create-snapshot-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, re-create, snapshot, volume 
+summary: Es posible volver a crear un volumen Snapshot o un volumen Snapshot de grupo de coherencia Snapshot que se haya deshabilitado anteriormente. Cuando se vuelve a crear un volumen Snapshot, se requiere menos tiempo que crear uno nuevo. 
+---
+= Vuelva a crear el volumen Snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible volver a crear un volumen Snapshot o un volumen Snapshot de grupo de coherencia Snapshot que se haya deshabilitado anteriormente. Cuando se vuelve a crear un volumen Snapshot, se requiere menos tiempo que crear uno nuevo.
+
+.Antes de empezar
+* El volumen Snapshot debe estar en un estado óptimo o deshabilitado.
+* Todos los volúmenes Snapshot miembro deben estar en estado deshabilitado para poder volver a crear el volumen Snapshot del grupo de coherencia Snapshot.
+
+
+.Acerca de esta tarea
+No se puede volver a crear un volumen Snapshot miembro individual; solo se puede volver a crear el volumen Snapshot de grupo de coherencia Snapshot completo.
+
+[NOTE]
+====
+Si el volumen Snapshot o el volumen Snapshot de grupo de coherencia Snapshot forma parte de una relación de copia en línea, no se puede ejecutar la opción de recreación en el volumen.
+
+====
+.Pasos
+. Seleccione MENU:Storage[Snapshots].
+. Seleccione la ficha *volúmenes Snapshot*.
++
+Se muestra la tabla volúmenes Snapshot con todos los volúmenes Snapshot asociados con la cabina de almacenamiento.
+
+. Seleccione el volumen Snapshot que desea volver a crear y haga clic en menú:tareas no comunes[Volver a crear].
++
+Se muestra el cuadro de diálogo Volver a crear el volumen Snapshot.
+
+. Seleccione una de las siguientes opciones:
++
+** *Una imagen Snapshot existente creada a partir de <name> para volúmenes*
++
+Seleccione esta opción para indicar la imagen Snapshot existente a partir de la cual desea volver a crear el volumen Snapshot.
+
+** *Una nueva imagen instantánea (instantánea) del volumen <name>*
++
+Seleccione esta opción para crear una imagen Snapshot nueva a partir de la cual desea volver a crear el volumen Snapshot.
+
+
+
+. Haga clic en *Volver a crear*.
+
+
+.Resultados
+System Manager realiza lo siguiente:
+
+* Elimina todo `write` datos en cualquier volumen de repositorios snapshot asociado.
+* Mantiene los mismos parámetros de los volúmenes deshabilitados anteriormente para el volumen Snapshot o el volumen Snapshot de grupo de coherencia Snapshot.
+* Conserva el nombre original del volumen Snapshot o del volumen Snapshot de grupo de coherencia Snapshot.
+

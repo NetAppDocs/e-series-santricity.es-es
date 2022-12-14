@@ -1,0 +1,42 @@
+---
+permalink: sm-mirroring/suspend-or-resume-mirror-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, suspend, resume, synchronization, mirror, consistency, group, 
+summary: Se puede suspender o reanudar la sincronización de datos en todas las parejas reflejadas dentro de un grupo de coherencia de reflejos, que es más eficiente que hacerlo en parejas reflejadas individuales. 
+---
+= Suspender o reanudar la sincronización de un grupo de coherencia de reflejos
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se puede suspender o reanudar la sincronización de datos en todas las parejas reflejadas dentro de un grupo de coherencia de reflejos, que es más eficiente que hacerlo en parejas reflejadas individuales.
+
+.Acerca de esta tarea
+La suspensión y la reanudación de la sincronización en los grupos ayuda a reducir el impacto en el rendimiento de la aplicación host, lo cual puede ocurrir mientras se copian los datos modificados de la cabina de almacenamiento local en la cabina de almacenamiento remota.
+
+El estado del grupo de coherencia de reflejos y sus parejas reflejadas sigue suspendido hasta que se utiliza la opción Reanudar para reanudar la actividad de sincronización.
+
+.Pasos
+. Seleccione menu:Storage[Asynchronous Mirroring].
+. Seleccione la ficha *grupos de consistencia de mirroring*.
++
+Aparece la tabla de grupo de coherencia de reflejos y se muestran todos los grupos de coherencia de reflejos asociados con la cabina de almacenamiento.
+
+. Seleccione el grupo de coherencia de reflejos que desea suspender o reanudar y, a continuación, seleccione menú:más[Suspender] o menú:más[Reanudar].
++
+El sistema muestra una confirmación.
+
+. Seleccione *Sí* para confirmar.
+
+
+.Resultados
+System Manager realiza lo siguiente:
+
+* Suspende o reanuda la transferencia de datos entre todas las parejas reflejadas de un grupo de coherencia de reflejos sin quitar la relación de reflejo.
+* Registra los datos que se escribieron en el lado primario del grupo de consistencia en mirroring mientras el grupo de consistencia en mirroring está suspendido y escribe los datos automáticamente en el lado secundario del grupo de consistencia en mirroring cuando se reanuda el grupo de consistencia en mirroring. No es necesario realizar una sincronización completa.
+* En el caso de los grupos de consistencia en mirroring _suspended_, muestra *suspendido por el usuario* en la tabla grupos de consistencia en mirroring.
+* En el caso de un grupo de coherencia de reflejos _reanudado_, los datos que se escribieron en los volúmenes primarios mientras el grupo de coherencia reflejos estaba suspendido se escriben en los volúmenes secundarios inmediatamente. La sincronización periódica se reanuda si se estableció un intervalo de sincronización automática.
+

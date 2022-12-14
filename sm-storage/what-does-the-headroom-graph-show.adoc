@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/what-does-the-headroom-graph-show.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, headroom, graph, show, performance, capability 
+summary: El gráfico margen adicional se relaciona con la funcionalidad de rendimiento restante de las controladoras de la cabina de almacenamiento. Este gráfico está visible en la página Inicio y en la pestaña Vista física del icono rendimiento. 
+---
+= ¿Qué se muestra en el gráfico de margen adicional?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El gráfico margen adicional se relaciona con la funcionalidad de rendimiento restante de las controladoras de la cabina de almacenamiento. Este gráfico está visible en la página Inicio y en la pestaña Vista física del icono rendimiento.
+
+En el gráfico margen adicional, se muestra la funcionalidad de rendimiento restante de los objetos físicos del sistema de almacenamiento. Pase el cursor por un punto del gráfico para ver los porcentajes de funcionalidad de IOPS y MIB/s restante para la controladora A y la controladora B.

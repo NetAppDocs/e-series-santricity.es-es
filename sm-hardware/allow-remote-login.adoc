@@ -1,0 +1,69 @@
+---
+permalink: sm-hardware/allow-remote-login.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remote, login, 
+summary: El inicio de sesión remoto permite que los usuarios fuera de la red de área local inicien una sesión SSH y cambien la configuración en la controladora. 
+---
+= Configuración del inicio de sesión remoto (SSH)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Al habilitar el inicio de sesión remoto, permite que los usuarios fuera de la red de área local inicien una sesión SSH y accedan a la configuración en la controladora.
+
+Para las versiones 11.74 y posteriores de SANtricity, también puede configurar la autorización multifactor (MFA) exigiendo a los usuarios que introduzcan una clave SSH o una contraseña de SSH. En las versiones 11.73 y anteriores de SANtricity, esta función _not_ incluye una opción para la autorización multifactor con claves y contraseñas SSH.
+
+[CAUTION]
+====
+*Riesgo de seguridad* -- por razones de seguridad, sólo el personal de soporte técnico debe utilizar la función de inicio de sesión remoto.
+
+====
+.Pasos
+. Seleccione *hardware*.
+. Si el gráfico muestra las unidades, haga clic en *Mostrar parte posterior de la bandeja*.
++
+El gráfico cambia y muestra las controladoras en lugar de las unidades.
+
+. Haga clic en la controladora para la que desea configurar el inicio de sesión remoto.
++
+Aparece el menú contextual de la controladora.
+
+. Seleccione *Configurar inicio de sesión remoto (SSH)*. (Para las versiones 11.73 y anteriores de SANtricity, este elemento de menú es *Cambiar inicio de sesión remoto*.)
++
+Se abre el cuadro de diálogo para habilitar el inicio de sesión remoto.
+
+. Seleccione la casilla de verificación *Activar inicio de sesión remoto*.
++
+Esta configuración proporciona el inicio de sesión remoto con tres opciones de autorización:
+
++
+** *Sólo contraseña*. Para esta opción, ya ha terminado y puede hacer clic en *Guardar*. Si tiene un sistema doble, puede habilitar el inicio de sesión remoto en la segunda controladora siguiendo los pasos anteriores.
+** *Clave SSH o contraseña*. Para esta opción, continúe con el siguiente paso.
+** *Tanto la contraseña como la clave SSH*. Para esta opción, seleccione la casilla de verificación *requerir clave pública autorizada y contraseña para el inicio de sesión remoto* y continúe con el siguiente paso.
+
+
+. Rellene el campo *clave pública autorizada*. Este campo contiene una lista de claves públicas autorizadas, en el formato del archivo OpenSSH *authorized_keys*.
++
+Al rellenar el campo *clave pública autorizada*, tenga en cuenta las siguientes directrices:
+
++
+** El campo *clave pública autorizada* se aplica a ambos controladores y sólo debe configurarse en el primer controlador.
+** El archivo *Authorized_Keys* debe contener sólo una clave por línea. Las líneas que comienzan con # y las líneas vacías se omiten. Para obtener más información acerca del formato de archivo, consulte link:https://www.ssh.com/academy/ssh/authorized-keys-openssh["Configuración de claves autorizadas para OpenSSH"^].
+** Un archivo *Authorized_keys* debería tener un aspecto similar al siguiente ejemplo:
++
+[listing]
+----
+ssh-rsa
+AAAAB3NzaC1yc2EAAAADAQABAAABAQDJlG20rYTk4ok+xFjkPHYp/R0LfJqEYDLXA5AJ49w3DvAWLrUg+1CpNq76WSqmQBmoG9jgbcAB5ABGdswdeMQZHilJcu29iJ3OKKv6SlCulAj1tHymwtbdhPuipd2wIDAQAB
+----
+
+
+. Cuando haya terminado, haga clic en *Guardar*.
+. En el caso de los sistemas dobles, puede habilitar el inicio de sesión remoto en la segunda controladora siguiendo los pasos anteriores. Si está configurando la opción tanto para una contraseña como para una clave SSH, asegúrese de volver a seleccionar la casilla de verificación *requerir clave pública autorizada y contraseña para el inicio de sesión remoto*.
+. Después de que el soporte técnico termine de solucionar problemas, puede desactivar el inicio de sesión remoto volviendo al cuadro de diálogo Configurar inicio de sesión remoto y deseleccionando la casilla de verificación *Activar inicio de sesión remoto*. Si se habilitó el inicio de sesión remoto en una segunda controladora, se abre un cuadro de diálogo de confirmación y se permite deshabilitar el inicio de sesión remoto también en la segunda.
++
+Al deshabilitar el inicio de sesión remoto, se cierran todas las sesiones SSH vigentes y se rechazan todas las solicitudes de inicio de sesión nuevas.
+
+

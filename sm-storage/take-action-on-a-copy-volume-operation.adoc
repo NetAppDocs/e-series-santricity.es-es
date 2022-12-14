@@ -1,0 +1,68 @@
+---
+permalink: sm-storage/take-action-on-a-copy-volume-operation.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, copy, volume, 
+summary: Es posible ver una operación de copia de volumen en curso y detenerla, cambiar su prioridad, volver a copiarla o eliminarla. 
+---
+= Actuar sobre una operación de copia de volumen
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible ver una operación de copia de volumen en curso y detenerla, cambiar su prioridad, volver a copiarla o eliminarla.
+
+.Pasos
+. Seleccione MENU:Inicio[Ver operaciones en curso].
++
+Se muestra el cuadro de diálogo Operaciones en curso.
+
+. Busque la operación Copiar volumen sobre la que desea actuar y, a continuación, haga clic en el enlace de la columna *acciones* para realizar una de las siguientes acciones.
++
+Lea todo el texto de precaución que se proporciona en los cuadros de diálogo, especialmente cuando desee detener una operación.
+
++
+[cols="25h,~"]
+|===
+| Acción | Descripción 
+
+
+ a| 
+Pare
+ a| 
+Puede detener una operación de copia de volumen mientras su estado sea en curso, pendiente o con errores.
+
+Cuando se detiene una copia de volumen, todos los hosts asignados obtienen acceso de escritura al volumen de origen. Si se escriben datos en el volumen de origen, los datos en el volumen objetivo ya no coincidirán con los datos en el volumen de origen.
+
+
+
+ a| 
+Cambiar prioridad
+ a| 
+Puede cambiar la prioridad de una operación de copia de volumen mientras su estado sea en curso para seleccionar la velocidad a la que se debe completar la operación de copia de volumen.
+
+
+
+ a| 
+Volver a copiar
+ a| 
+Puede volver a copiar un volumen si desea iniciar nuevamente una operación de copia de volumen detenida o cuando se producen errores o interrupciones en una operación de copia de volumen. La operación de copia de volumen se iniciará nuevamente de cero.
+
+Al volver a copiar, esta acción sobrescribirá los datos existentes en el volumen objetivo y anulará todos los volúmenes Snapshot asociados con ese volumen, si existe alguno.
+
+
+
+ a| 
+Claro
+ a| 
+Puede quitar la operación de copia de volumen mientras su estado sea en curso, pendiente o con errores.
+
+[NOTE]
+====
+Asegúrese de que desea realizar esta operación antes de seleccionar *Borrar*. No se mostrará ningún cuadro de diálogo de confirmación.
+
+====
+|===
+

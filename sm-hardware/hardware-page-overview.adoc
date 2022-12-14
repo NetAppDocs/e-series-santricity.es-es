@@ -1,0 +1,72 @@
+---
+permalink: sm-hardware/hardware-page-overview.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hardware, page, components, 
+summary: La página hardware ofrece una descripción gráfica de los componentes físicos de la cabina de almacenamiento. Desde aquí, es posible comprobar el estado de los componentes y realizar algunas funciones relacionadas con ellos. 
+---
+= Componentes y página hardware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La página hardware ofrece una descripción gráfica de los componentes físicos de la cabina de almacenamiento. Desde aquí, es posible comprobar el estado de los componentes y realizar algunas funciones relacionadas con ellos.
+
+
+
+== Bandejas
+
+Una bandeja es un componente que contiene el hardware de la cabina de almacenamiento (controladoras, contenedor de alimentación/ventilador y unidades). Existen dos clases de bandejas:
+
+* *Bandeja de controladoras* -- contiene las unidades, contenedores de alimentación/ventilador y controladores.
+* *Bandeja de unidades* (o *Bandeja de expansión*): Contiene unidades, contenedores de alimentación/ventilador y dos módulos de entrada/salida (IOM). Los IOM, también denominados módulos de servicio de entorno (ESM), incluyen puertos SAS que conectan la bandeja de unidades con la bandeja de controladoras.
+
+
+Las bandejas están disponibles en tres tamaños con capacidad para 12, 24 o 60 unidades. Cada bandeja incluye un número de ID, que asigna el firmware de la controladora. El ID se muestra en la esquina superior izquierda de la vista de bandeja.
+
+La vista de bandeja en la página hardware muestra los componentes delanteros o traseros. Puede alternar entre las dos vistas seleccionando *Mostrar parte posterior de la estantería* o *Mostrar frente de la estantería* en la parte superior derecha de la vista de estantería. También puede seleccionar *Mostrar todo frente* o *Mostrar todo detrás* en la parte inferior de la página. Las vistas delantera y trasera muestran lo siguiente:
+
+* *Componentes delanteros* -- Drives y bahías de unidades vacías.
+* *Componentes traseros* -- controladoras y contenedores de alimentación/ventilador (para bandejas de controladoras) o los IOM y los contenedores de alimentación/ventilador (para bandejas de unidades).
+
+
+Es posible ejecutar las siguientes funciones relacionadas con las bandejas:
+
+* Encender la luz de localización de la bandeja para poder encontrar la ubicación física de la bandeja en el armario o rack.
+* Cambiar el número de ID que se muestra en la esquina superior izquierda de la vista de bandeja.
+* Ver la configuración de la bandeja, como los tipos de unidades instaladas y el número de serie.
+* Mover las vistas de bandejas hacia arriba o hacia abajo para que coincidan con la disposición física en la cabina de almacenamiento.
+
+
+
+
+== Controladoras
+
+Una controladora es la combinación de hardware y firmware que implementa funciones de cabina de almacenamiento y gestión. Incluye la memoria caché, el soporte para unidades y el soporte de interfaz host.
+
+Es posible ejecutar las siguientes funciones relacionadas con las controladoras:
+
+* Configurar la velocidad y las direcciones IP de los puertos de gestión.
+* Configurar las conexiones de hosts iSCSI (en caso de que el usuario posea hosts iSCSI).
+* Configurar un servidor de protocolo de tiempo de redes (NTP) y un servidor de sistema de nombres de dominio (DNS).
+* Ver el estado y la configuración de las controladoras.
+* Permitir que usuarios fuera de la red de área local inicien una sesión SSH y cambien la configuración en la controladora.
+* Colocar la controladora en los modos en línea, sin conexión y de servicio.
+
+
+
+
+== Unidades
+
+La cabina de almacenamiento puede incluir unidades de disco duro (HDD) o unidades de estado sólido (SSD). Según el tamaño de la bandeja, puede instalarse un máximo de 12, 24 o 60 unidades en la bandeja.
+
+Se pueden ejecutar las siguientes funciones relacionadas con las unidades:
+
+* Encender la luz de localización de la unidad para poder encontrar la ubicación física de la unidad en la bandeja.
+* Ver el estado y la configuración de las unidades.
+* Volver a asignar la unidad (reemplazar lógicamente la unidad con error por una unidad sin asignar) y reconstruir manualmente la unidad si es necesario.
+* Relevar manualmente las funciones de una unidad para poder reemplazarla. (Si se produce un fallo en una unidad, es posible copiar el contenido de la unidad antes de sustituirla).
+* Asignar o anular la asignación de piezas de repuesto.
+* Borrar unidades.
+

@@ -1,0 +1,55 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-about-mapping-storage-array-roles.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, mapping, roles, 
+summary: Antes de asignar grupos a roles, revise las siguientes directrices. 
+---
+= ¿Qué debo saber acerca de la asignación de roles de la cabina de almacenamiento?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Antes de asignar grupos a roles, revise las siguientes directrices.
+
+Las funcionalidades de control de acceso basado en roles (RBAC) incorporadas en la cabina de almacenamiento incluyen los siguientes roles:
+
+* *Storage admin* -- acceso completo de lectura/escritura a los objetos de almacenamiento (por ejemplo, volúmenes y pools de discos), pero sin acceso a la configuración de seguridad.
+* *Administración de seguridad* -- acceso a la configuración de seguridad en Access Management, administración de certificados, administración de registros de auditoría y la capacidad de activar o desactivar la interfaz de administración heredada (Symbol).
+* *Support admin* -- acceso a todos los recursos de hardware en la cabina de almacenamiento, datos de fallos, eventos MEL y actualizaciones del firmware de la controladora. No brinda acceso a los objetos de almacenamiento ni a la configuración de seguridad.
+* *Monitor* -- acceso de sólo lectura a todos los objetos de almacenamiento, pero sin acceso a la configuración de seguridad.
+
+
+
+
+== Servicios de directorio
+
+Si usa un servidor de protocolo ligero de acceso a directorios (LDAP) y servicios de directorio, asegúrese de que:
+
+* Un administrador haya definido grupos de usuarios en el servicio de directorio.
+* Conoce los nombres de dominio de los grupos de usuarios LDAP. Se admiten expresiones regulares. Estos caracteres especiales de expresión regular deben escaparse con una barra invertida (`\`) si no forman parte de un patrón de expresión regular:
++
+[listing]
+----
+\.[]{}()<>*+-=!?^$|
+----
+* El rol de supervisión se requiere para todos los usuarios, incluido el administrador. System Manager no funcionará correctamente para los usuarios que no tengan el rol de supervisión.
+
+
+
+
+== SAML
+
+Si usa las funcionalidades de lenguaje de marcado de aserción de seguridad (SAML) incorporadas en la cabina de almacenamiento, asegúrese de que:
+
+* Un administrador de proveedor de identidades (IDP) haya configurado atributos de usuario y pertenencia a grupos en el sistema del IDP.
+* Conoce los nombres de pertenencia a grupos.
+* Conoce el valor de atributo para el grupo que será asignado. Se admiten expresiones regulares. Estos caracteres especiales de expresión regular deben escaparse con una barra invertida (`\`) si no forman parte de un patrón de expresión regular:
++
+[listing]
+----
+\.[]{}()<>*+-=!?^$|
+----
+* El rol de supervisión se requiere para todos los usuarios, incluido el administrador. System Manager no funcionará correctamente para los usuarios que no tengan el rol de supervisión.
+

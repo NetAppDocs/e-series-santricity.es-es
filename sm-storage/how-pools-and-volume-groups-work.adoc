@@ -1,0 +1,83 @@
+---
+permalink: sm-storage/how-pools-and-volume-groups-work.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, pools, volume group, 
+summary: 'Para aprovisionar almacenamiento, es posible crear un pool o un grupo de volúmenes que contendrá las unidades de disco duro (HDD) o los discos de estado sólido (SSD) que se desean usar en la cabina de almacenamiento.' 
+---
+= Cómo funcionan los pools y los grupos de volúmenes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para aprovisionar almacenamiento, es posible crear un pool o un grupo de volúmenes que contendrá las unidades de disco duro (HDD) o los discos de estado sólido (SSD) que se desean usar en la cabina de almacenamiento.
+
+El hardware físico se aprovisiona en componentes lógicos para que los datos puedan organizarse y recuperarse fácilmente. Se admiten dos tipos de agrupamientos:
+
+* Piscinas
+* Grupos de volúmenes RAID
+
+
+Los pools y los grupos de volúmenes son las unidades de almacenamiento de nivel superior en una cabina de almacenamiento: Separan la capacidad de las unidades en divisiones gestionables. Dentro de estas divisiones lógicas se encuentran los volúmenes individuales o LUN, donde se almacenan los datos. En la siguiente figura, se ilustra este concepto.
+
+image::../media/sam1130-dwg-volumes-drive-structure-pools-and-volume-groups.gif[grupos de estructura de unidades de volúmenes dwg y grupos de volúmenes de sampl30]
+
+Hacia esta 1 LUN de host; hacia estos 2 volúmenes; grupos o pools de volúmenes de 3; hacia estas 4 unidades de disco duro o SSD de software
+
+Cuando se implementa un sistema de almacenamiento, el primer paso es presentar la capacidad disponible de las unidades a los distintos hosts mediante:
+
+* Creación de pools o grupos de volúmenes con capacidad suficiente
+* Adición de la cantidad de unidades requerida para satisfacer los requisitos de rendimiento del pool o grupo de volúmenes
+* Selección del nivel adecuado de protección RAID (si se usan grupos de volúmenes) para satisfacer requisitos comerciales específicos
+
+
+Es posible tener pools o grupos de volúmenes en el mismo sistema de almacenamiento, pero una unidad no puede formar parte de más de un pool o grupo de volúmenes. Los volúmenes que se presentan a los hosts para I/o se crean a continuación, con el espacio del pool o grupo de volúmenes.
+
+
+
+== Piscinas
+
+Los pools están diseñados para añadir unidades de disco duro físicas a un gran espacio de almacenamiento y proporcionar protección RAID. Un pool crea muchos conjuntos RAID virtuales de la cantidad de unidades totales asignadas al pool y reparte los datos de manera uniforme entre todas las unidades participantes. Si se pierde o se añade una unidad, System Manager vuelve a equilibrar dinámicamente los datos entre todas las unidades activas.
+
+Los pools funcionan como otro nivel de RAID y virtualizan la arquitectura RAID subyacente para optimizar el rendimiento y la flexibilidad cuando se realizan tareas de reconstrucción, ampliación de unidades y gestión de pérdida de unidades. System Manager establece automáticamente el nivel de RAID en 6 con una configuración de 8+2 (ocho discos de datos más dos discos de paridad).
+
+
+
+=== Emparejamiento de unidades
+
+Es posible seleccionar HDD o SSD para usar en pools; sin embargo, como sucede con los grupos de volúmenes, todas las unidades del pool deben usar la misma tecnología. Los controladores seleccionan automáticamente las unidades que deben incluirse; por lo tanto, debe asegurarse de contar con la cantidad suficiente de unidades para la tecnología seleccionada.
+
+
+
+=== Gestión de unidades con error
+
+Los pools tienen una capacidad mínima de 11 discos; sin embargo, se reserva la capacidad equivalente a una unidad para capacidad de reserva en caso de fallo de unidad. Esta capacidad de reserva se denomina «capacidad de conservación».
+
+Cuando se crean pools, se conserva una cierta capacidad para uso de emergencia. Esta capacidad se expresa en términos de una cantidad de unidades en System Manager, pero la implementación real se reparte entre todo el pool de unidades. La cantidad predeterminada de capacidad que se conserva se basa en la cantidad de unidades del pool.
+
+Después de crear el pool, es posible cambiar el valor de capacidad de conservación a más o menos capacidad, o incluso configurarlo para que no exista capacidad de conservación (valor equivalente a 0 unidades). La cantidad máxima de capacidad que puede conservarse (expresada como cantidad de unidades) es 10, pero la capacidad que está disponible puede ser menor, según la cantidad total de unidades en el pool.
+
+
+
+== Grupos de volúmenes
+
+Los grupos de volúmenes definen de qué forma se asigna la capacidad a los volúmenes en el sistema de almacenamiento. Las unidades de disco se organizan en grupos y volúmenes RAID entre las unidades en un grupo RAID. Por lo tanto, las opciones de configuración de grupos de volúmenes identifican qué unidades forman parte del grupo y qué nivel de RAID se utiliza.
+
+Cuando se crea un grupo de volúmenes, las controladoras seleccionan automáticamente las unidades que se incluirán en el grupo. Debe seleccionar manualmente el nivel de RAID para el grupo. La capacidad del grupo de volúmenes es la cantidad total de unidades seleccionadas multiplicadas por su capacidad.
+
+
+
+=== Emparejamiento de unidades
+
+Debe emparejar las unidades del grupo de volúmenes según el tamaño y el rendimiento. Si existen unidades pequeñas y grandes en el grupo de volúmenes, se reconocen todas las unidades con el tamaño de capacidad menor. Si existen unidades lentas y rápidas en el grupo de volúmenes, se reconocen todas las unidades con la velocidad menor. Estos factores afectan al rendimiento y a la capacidad general del sistema de almacenamiento.
+
+No puede combinar tecnologías de unidad distintas (unidades de disco duro y unidades SSD). RAID 3, 5 y 6 se limitan a un máximo de 30 unidades. RAID 1 y RAID 10 utilizan mirroring y, en consecuencia, estos grupos de volúmenes tienen una cantidad uniforme de discos.
+
+
+
+=== Gestión de unidades con error
+
+Los grupos de volúmenes utilizan unidades de repuesto como reserva en caso de fallos en los volúmenes RAID 1/10, RAID 3, RAID 5 o RAID 6 incluidos en un grupo de volúmenes. Una unidad de repuesto no contiene datos y añade otro nivel de redundancia a una cabina de almacenamiento.
+
+Si se produce un error en una unidad de la cabina de almacenamiento, la unidad de repuesto automáticamente sustituye a la unidad con error sin necesidad de realizar un cambio físico. Si la unidad de repuesto está disponible cuando se produce un error en una unidad, la controladora utiliza datos de redundancia para reconstruir los datos de la unidad con error en la unidad de repuesto.

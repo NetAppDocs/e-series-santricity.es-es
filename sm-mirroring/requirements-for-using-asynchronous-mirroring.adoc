@@ -1,0 +1,124 @@
+---
+permalink: sm-mirroring/requirements-for-using-asynchronous-mirroring.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, requirements, asynchronous, mirroring, 
+summary: Si planea utilizar la función de mirroring asíncrono, tenga en cuenta los siguientes requisitos. 
+---
+= Requisitos para mirroring asíncrono
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si planea utilizar la función de mirroring asíncrono, tenga en cuenta los siguientes requisitos.
+
+
+
+== Unified Manager
+
+Para habilitar y configurar el mirroring entre dos cabinas, debe usar la interfaz de Unified Manager. Unified Manager debe estar instalado en un sistema host junto con el proxy de servicios web.
+
+* El proxy de servicios web se encuentra en ejecución.
+* Unified Manager se ejecuta en el host local a través de una conexión HTTPS.
+* SANtricity Unified Manager debe mostrar los certificados SSL válidos para la cabina de almacenamiento. Es posible aceptar un certificado autofirmado o instalar una certificación de seguridad propia con Unified Manager. Para hacerlo, debe navegar hasta MENU:Certificate[Gestión de certificados].
+
+
+
+
+== Cabinas de almacenamiento
+
+[NOTE]
+====
+La función de mirroring no está disponible en las cabinas de almacenamiento EF600 o EF300.
+
+====
+* Debe tener dos cabinas de almacenamiento.
+* Cada cabina de almacenamiento debe tener dos controladoras.
+* Las dos cabinas de almacenamiento se encuentran detectadas en Unified Manager.
+* Cada controladora en la cabina primaria y la cabina secundaria debe tener un puerto Ethernet de gestión configurado y debe estar conectada a la red.
+* Las cabinas de almacenamiento deben tener la versión de firmware 7.84 como mínimo. (Cada una puede ejecutar versiones de sistema operativo diferentes).
+* Debe conocer la contraseña de las cabinas de almacenamiento remota y local.
+* Debe tener suficiente capacidad libre en la cabina de almacenamiento remota para crear un volumen secundario mayor o igual que el volumen primario que desea reflejar.
+* Las cabinas de almacenamiento local y remota se encuentran conectadas a través de una estructura Fibre Channel o una interfaz iSCSI.
+
+
+
+
+== Conexiones admitidas
+
+En el mirroring asíncrono, se pueden usar las conexiones FC o iSCSI, o ambas, para la comunicación entre los sistemas de almacenamiento local y remoto. Cuando se crea un grupo de coherencia de reflejos, el administrador puede seleccionar FC o iSCSI para ese grupo si se establecen ambas conexiones en la cabina de almacenamiento remota. No existe conmutación al nodo de respaldo de un tipo de canal al otro.
+
+En el mirroring asíncrono, se utilizan los puertos de I/o del host de la cabina de almacenamiento para transferir los datos reflejados del área primaria a la secundaria.
+
+* *Duplicación a través de una interfaz Fibre Channel (FC)*
++
+Cada controladora de la cabina de almacenamiento dedica su puerto de host FC numerado más alto a las operaciones de mirroring.
+
++
+Si la controladora tiene tanto puertos base FC como puertos FC de tarjeta de interfaz del host (HIC), en la HIC se encuentra el puerto numerado más alto. Se cerrará la sesión de cualquier host que haya iniciado sesión en el puerto dedicado y no se aceptará ninguna solicitud de inicio de sesión de host. Solo se aceptan las solicitudes I/o en este puerto de las controladoras que participan en las operaciones de mirroring.
+
++
+Los puertos de mirroring dedicados deben pertenecer al entorno estructural de FC que sea compatible con el servicio de directorio y las interfaces del servicio de nombres. En particular, FC-AL y punto a punto no son opciones de conectividad compatibles entre las controladoras que participan en las relaciones de mirroring.
+
+* *Duplicación a través de una interfaz iSCSI*
++
+A diferencia de FC, iSCSI no requiere un puerto dedicado. Cuando se utiliza el mirroring asíncrono en entornos iSCSI, no es necesario dedicar ninguno de los puertos iSCSI front-end de la cabina de almacenamiento para usarlos con mirroring asíncrono; esos puertos se comparten tanto para las conexiones de tráfico de reflejos asíncronos como de I/o de host a cabina.
+
++
+La controladora conserva una lista de los sistemas de almacenamiento remoto con los cuales el iniciador de iSCSI intenta establecer una sesión. El primer puerto que logra establecer una conexión iSCSI se utiliza para todas las comunicaciones subsiguientes con esa cabina de almacenamiento remota. Si no se produce la comunicación, se intenta una nueva sesión con todos los puertos disponibles.
+
++
+Los puertos iSCSI se configuran en el nivel de la cabina, puerto por puerto. La comunicación entre controladoras para la mensajería de configuración y la transferencia de datos utiliza la configuración global, lo que incluye:
+
++
+** VLAN: Tanto los sistemas locales como los remotos deben tener el mismo valor de VLAN para comunicarse
+** Puertos de escucha iSCSI
+** Tramas gigantes
+** Prioridad para Ethernet
++
+[NOTE]
+====
+La comunicación entre las controladoras iSCSI debe utilizar un puerto con conexión a un host y no el puerto Ethernet de gestión.
+
+====
+
+
++
+En el mirroring asíncrono, se utilizan los puertos de I/o del host de la cabina de almacenamiento para transferir los datos reflejados del área primaria a la secundaria. Debido a que el mirroring asíncrono está previsto para redes de mayor latencia y menor coste, las conexiones iSCSI (y, por lo tanto, basadas en TCP/IP) son buenas opciones. Cuando se utiliza el mirroring asíncrono en entornos iSCSI, no es necesario dedicar ninguno de los puertos iSCSI front-end de la cabina para usarlos con mirroring asíncrono; esos puertos se comparten tanto para las conexiones de tráfico de reflejos asíncronos como de I/o de host a cabina
+
+
+
+
+
+== Candidatos de volumen reflejado
+
+* El nivel de RAID, los parámetros de almacenamiento en caché y el tamaño de los segmentos pueden ser diferentes en los volúmenes primario y secundario de una pareja reflejada asíncrona.
+* El volumen secundario deber tener al menos el tamaño del volumen primario.
+* Un volumen puede participar solo en una relación de reflejo.
+* Los candidatos de volúmenes deben compartir las mismas funcionalidades de seguridad de datos.
++
+** Si el volumen primario es compatible con FIPS, el volumen secundario debe ser compatible con FIPS.
+** Si el volumen primario es compatible con FDE, el volumen secundario debe ser compatible con FDE.
+** Si el volumen primario no utiliza Drive Security, el volumen secundario no debe usar Drive Security.
+
+
+
+
+
+
+== Capacidad reservada
+
+* Se requiere un volumen de capacidad reservada en el volumen primario y en el volumen secundario de una pareja reflejada para registrar la información de escritura que se utiliza en la recuperación de los restablecimientos de la controladora y otras interrupciones temporales.
+* Debido a que tanto el volumen primario como el volumen secundario de una pareja reflejada requieren capacidad reservada adicional, debe asegurarse de contar con capacidad libre disponible en ambas cabinas de almacenamiento de la relación de reflejo.
+
+
+
+
+== Función Drive Security
+
+* Si utiliza unidades compatibles con la función de seguridad, tanto el volumen primario como el secundario deben tener una configuración de seguridad compatible. Esta restricción no se aplica; por lo tanto, debe verificarlo por su cuenta.
+* Si utiliza unidades compatibles con la función de seguridad, tanto el volumen primario como el secundario deberían usar el mismo tipo de unidad. Esta restricción no se aplica; por lo tanto, debe verificarlo por su cuenta.
+* Si utiliza Data Assurance (DA), el volumen primario y el secundario deben tener la misma configuración DE DA.
+

@@ -1,0 +1,41 @@
+---
+permalink: um-manage/overview-import-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, import, settings 
+summary: Es posible importar la configuración desde una cabina de almacenamiento a otra, incluidas las alertas, la función AutoSupport y los servicios de directorio. 
+---
+= Información general de importación de la configuración
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La función Importar configuración permite realizar una operación en lote para importar la configuración de una cabina a varias. Esta función permite ahorrar tiempo cuando se necesitan configurar varias matrices en la red.
+
+
+
+== ¿Qué configuración se puede importar?
+
+Es posible importar métodos de alerta, configuraciones de AutoSupport, configuraciones de servicios de directorio, configuraciones de almacenamiento (como grupos de volúmenes y pools) y configuraciones del sistema (como equilibrio de carga automático).
+
+Obtenga más información:
+
+* link:how-import-settings-works.html["Cómo funciona la importación de configuración"]
+* link:requirements-for-replicating-storage-configurations.html["Requisitos para replicar configuraciones de almacenamiento"]
+
+
+
+
+== ¿Cómo se realiza una importación por lotes?
+
+En una cabina de almacenamiento que se usará como origen, abra System Manager y configure los ajustes deseados. A continuación, desde Unified Manager, vaya a la página gestionar e importe la configuración a una o varias cabinas.
+
+Obtenga más información:
+
+* link:import-alert-settings.html["Importar la configuración de alerta"]
+* link:import-autosupport-settings.html["Importe la configuración de AutoSupport"]
+* link:import-directory-services-settings.html["Importe la configuración de servicios de directorio"]
+* link:import-storage-configuration-settings.html["Importe los ajustes de configuración de almacenamiento"]
+* link:import-system-settings.html["Importe la configuración del sistema"]
+

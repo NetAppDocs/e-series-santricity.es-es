@@ -1,0 +1,51 @@
+---
+permalink: sm-storage/how-snapshot-storage-works.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, snapshot, storage 
+summary: La función Snapshot utiliza la tecnología copy-on-write para almacenar imágenes Snapshot y utilizar la capacidad reservada asignada. 
+---
+= Cómo funciona el almacenamiento Snapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La función Snapshot utiliza la tecnología copy-on-write para almacenar imágenes Snapshot y utilizar la capacidad reservada asignada.
+
+
+
+== Cómo se utilizan las imágenes Snapshot
+
+Una imagen Snapshot es una copia lógica de solo lectura del contenido de un volumen capturado en un momento particular en el tiempo. Es posible usar Snapshot para protegerse contra la pérdida de datos.
+
+Las imágenes Snapshot también son útiles para los entornos de prueba. Mediante la creación de una copia virtual de los datos, es posible probar los datos mediante la Snapshot sin alterar el volumen. Además, los hosts no tienen acceso de escritura a imágenes Snapshot, por lo que las Snapshot siempre son un recurso de backup seguro.
+
+
+
+== Creación de Snapshot
+
+A medida que se crean Snapshot, la función Snapshot almacena datos de imágenes de la siguiente manera:
+
+* Cuando se crea una imagen Snapshot, la imagen coincide exactamente con el volumen base. La función Snapshot utiliza la tecnología copy-on-write. Después de realizar la Snapshot, la primera escritura en cualquier bloque o conjunto de bloques en el volumen base provoca la copia de los datos originales en la capacidad reservada antes de la escritura de los datos nuevos en el volumen base.
+* Las Snapshot posteriores incluyen solo bloque de datos modificados. Antes de sobrescribir los datos en el volumen base, la función Snapshot utiliza su tecnología copy-on-write para guardar las imágenes requeridas de los sectores afectados en la capacidad reservada de la Snapshot.
++
+image::../media/sam1130-dwg-snapshots-cow-overview.gif[información general sobre las instantáneas de la vaca de sam1130 dwg]
+
+
+
+Volumen base de esta aplicación 1 (capacidad física del disco); 2 Snapshots (capacidad lógica del disco); capacidad reservada de esta aplicación 3 (capacidad física del disco)
+
+* La capacidad reservada almacena bloques de datos originales para las porciones del volumen base que se modificaron después de realizar la Snapshot, e incluye un índice para realizar un seguimiento de los cambios. Por lo general, el tamaño de la capacidad reservada es el 40 % del volumen base de manera predeterminada. (Si se necesita más capacidad reservada, es posible aumentarla.)
+* Las imágenes Snapshot se almacenan en un orden específico según su Marca de hora. Solo la imagen Snapshot más antigua de un volumen base está disponible para su eliminación manual.
+
+
+
+
+== Restauración de Snapshot
+
+Para restaurar datos en un volumen base, es posible usar un volumen Snapshot o una imagen Snapshot:
+
+* *Volumen Snapshot* -- Si necesita recuperar archivos eliminados, cree un volumen de instantáneas a partir de una imagen Snapshot en buen estado y, a continuación, asígnela al host.
+* *Imagen Snapshot* -- Si necesita restaurar un volumen base a un momento específico, utilice una imagen Snapshot anterior para revertir los datos al volumen base.
+

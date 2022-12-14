@@ -1,0 +1,24 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-about-certificate-revocation-checking.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, certificate, revocation, checking, 
+summary: 'System Manager permite verificar certificados revocados mediante un servidor de protocolo de estado de certificado en línea (OCSP), en lugar de cargar listas de revocación de certificados (CRL).' 
+---
+= ¿Qué debo saber acerca de la comprobación de revocación de certificados?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager permite verificar certificados revocados mediante un servidor de protocolo de estado de certificado en línea (OCSP), en lugar de cargar listas de revocación de certificados (CRL).
+
+Los certificados revocados ya no deberán considerarse de confianza. Un certificado puede ser revocado por varios motivos; por ejemplo, si la entidad de certificación (CA) emitió el certificado incorrectamente, una clave privada quedó en riesgo o la entidad identificada no cumplió con los requisitos de la política.
+
+Después de establecer una conexión con un servidor OCSP en System Manager, la cabina de almacenamiento realiza la verificación de revocación cada vez que se conecta a un servidor de AutoSupport, un servidor de gestión de claves externo (EKMS), un servidor de protocolo ligero de acceso a directorios por SSL (LDAPS) o un servidor de syslog. La cabina de almacenamiento intenta validar los certificados de tales servidores para asegurarse de que no se hayan revocado. A continuación, el servidor obtiene los valores "good", "revoked" o "unknown" para ese certificado. Si el certificado se revoca o la cabina no puede conectarse al servidor de OCSP, la conexión se rechaza.
+
+[NOTE]
+====
+La especificación de una dirección de respuesta de OCSP en System Manager o en la interfaz de línea de comandos (CLI) anula la dirección de OCSP que se encontró en el archivo de certificado.
+
+====

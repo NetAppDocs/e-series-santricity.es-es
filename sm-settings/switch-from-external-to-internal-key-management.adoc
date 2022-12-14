@@ -1,0 +1,50 @@
+---
+permalink: sm-settings/switch-from-external-to-internal-key-management.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, switch, external, internal, key, management, 
+summary: Se puede modificar el método de gestión de Drive Security de un servidor de claves externo a un método interno utilizado por la cabina de almacenamiento. La clave de seguridad definida previamente para la gestión de claves externas luego se utiliza para la gestión de claves internas. 
+---
+= Alternar de gestión de claves internas a externas
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se puede modificar el método de gestión de Drive Security de un servidor de claves externo a un método interno utilizado por la cabina de almacenamiento. La clave de seguridad definida previamente para la gestión de claves externas luego se utiliza para la gestión de claves internas.
+
+.Acerca de esta tarea
+En esta tarea, se deshabilita la gestión de claves externas y se descarga una nueva copia de backup en el host local. La clave existente se sigue usando para Drive Security, pero se gestionará internamente en la cabina de almacenamiento.
+
+.Pasos
+. Seleccione MENU:Settings[System].
+. En *Gestión de claves de seguridad*, seleccione *Desactivar administración de claves externa*.
++
+Se abre el cuadro de diálogo Deshabilitar gestión de claves externa.
+
+. En *definir una frase de contraseña/Volver a introducir la frase de contraseña*, introduzca y confirme una frase de contraseña para el backup de la clave. El valor puede tener entre 8 y 32 caracteres, y debe incluir uno de los siguientes caracteres:
++
+** Una letra mayúscula (o varias). Se debe tener en cuenta que la frase de contraseña distingue mayúsculas de minúsculas.
+** Un número (o varios).
+** Un carácter no alfanumérico, como !, *, @ (o varios).
+
+
++
+[CAUTION]
+====
+_Asegúrese de registrar las entradas para uso futuro_. Si se necesita transferir una unidad con la función de seguridad habilitada de la cabina de almacenamiento, se deben conocer el identificador y la frase de contraseña para desbloquear los datos de la unidad.
+
+====
+. Haga clic en *Desactivar*.
++
+La clave de backup se descarga en el host local.
+
+. Anote el identificador de claves, la frase de la contraseña y la ubicación del archivo de claves descargado y, a continuación, haga clic en *Cerrar*.
+
+
+.Resultados
+Drive Security ahora se gestiona internamente mediante la cabina de almacenamiento.
+
+.Después de terminar
+Debe validar la clave de seguridad para asegurarse de que no se haya dañado el archivo de claves.

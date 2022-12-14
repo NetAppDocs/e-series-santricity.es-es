@@ -1,0 +1,54 @@
+---
+permalink: um-manage/import-alert-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, import, alert, settings 
+summary: Es posible importar la configuración de alerta de una cabina de almacenamiento en otras cabinas de almacenamiento. Esta operación en lote permite ahorrar tiempo cuando se necesitan configurar varias matrices en la red. 
+---
+= Importar la configuración de alerta
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible importar la configuración de alerta de una cabina de almacenamiento en otras cabinas de almacenamiento. Esta operación en lote permite ahorrar tiempo cuando se necesitan configurar varias matrices en la red.
+
+.Antes de empezar
+* Las alertas se configuran en la instancia de System Manager correspondiente a la cabina de almacenamiento que se quiere usar como origen (menu:Configuración[Alertas]).
+* La configuración actual de las cabinas de almacenamiento objetivo cuenta con una copia de seguridad en System Manager (menú:Configuración[sistema > Guardar configuración de la cabina de almacenamiento]).
+
+
+.Acerca de esta tarea
+Puede seleccionar las opciones de correo electrónico, SNMP o alertas de syslog para la operación de importación. La configuración importada incluye lo siguiente:
+
+* *Alertas por correo electrónico* -- una dirección de servidor de correo y las direcciones de correo electrónico de los destinatarios de las alertas.
+* *Alertas Syslog* -- una dirección de servidor syslog y un puerto UDP.
+* *Alertas SNMP* -- un nombre de comunidad y una dirección IP para el servidor SNMP.
+
+
+.Pasos
+. En la página gestionar, haga clic en *Importar configuración*.
++
+Se abre el asistente Importar configuración.
+
+. En el cuadro de diálogo Seleccionar configuración, seleccione *Alertas por correo electrónico*, *Alertas SNMP* o *Alertas Syslog* y, a continuación, haga clic en *Siguiente*.
++
+Se abre un cuadro de diálogo para seleccionar la cabina de almacenamiento.
+
+. En el cuadro de diálogo Seleccionar origen, seleccione la matriz con la configuración que desea importar y, a continuación, haga clic en *Siguiente*.
+. En el cuadro de diálogo Seleccionar objetivos, elija una o más cabinas para que reciban la nueva configuración.
++
+[NOTE]
+====
+Las cabinas de almacenamiento con una versión de firmware inferior a 8.50 no están disponibles y no pueden seleccionarse. Asimismo, una cabina no aparecerá en este cuadro de diálogo si Unified Manager no puede comunicarse con esa cabina (por ejemplo, si está desconectada o si tiene problemas de red o con un certificado o una contraseña).
+
+====
+. Haga clic en *Finalizar*.
++
+En la página Operaciones, se muestran los resultados de la operación de importación. Si se produce un error en la operación, puede hacer clic en la fila para ver más información.
+
+
+
+.Resultados
+Las cabinas de almacenamiento objetivo ahora están configuradas para enviar alertas a los administradores mediante correo electrónico, SNMP o syslog.

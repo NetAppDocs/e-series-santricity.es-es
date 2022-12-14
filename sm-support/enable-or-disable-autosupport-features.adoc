@@ -1,0 +1,41 @@
+---
+permalink: sm-support/enable-or-disable-autosupport-features.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, enable, disable, autosupport, 
+summary: Es posible habilitar la función AutoSupport y las funciones individuales de AutoSupport durante la configuración inicial, o bien es posible habilitarlas o deshabilitarlas más adelante. 
+---
+= Habilitar o deshabilitar funciones de AutoSupport
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible habilitar la función AutoSupport y las funciones individuales de AutoSupport durante la configuración inicial, o bien es posible habilitarlas o deshabilitarlas más adelante.
+
+.Antes de empezar
+Si desea habilitar AutoSupport OnDemand o Remote Diagnostics, el método de entrega de AutoSupport debe configurarse en HTTPS.
+
+.Acerca de esta tarea
+Es posible deshabilitar la función AutoSupport en cualquier momento, pero se recomienda especialmente dejarla habilitada. Habilitar la función AutoSupport puede acelerar significativamente la detección y resolución de problemas cuando se producen fallos en la cabina de almacenamiento.
+
+La función AutoSupport cuenta con tres funciones individuales que se habilitan por separado.
+
+* *Basic AutoSupport* -- permite que la cabina de almacenamiento recopile y envíe datos al soporte técnico automáticamente.
+* *AutoSupport OnDemand* -- permite al soporte técnico solicitar la retransmisión de un envío anterior de AutoSupport cuando se necesita solucionar un problema. Todas las transmisiones se inician en la cabina de almacenamiento, no en el servidor de AutoSupport. La cabina de almacenamiento realiza comprobaciones periódicas con el servidor de AutoSupport para determinar si existen solicitudes de retransmisión pendientes y responde de manera acorde.
+* *Diagnóstico remoto* -- permite al soporte técnico solicitar un nuevo mensaje de AutoSupport actualizado cuando se necesita para solucionar un problema. Todas las transmisiones se inician en la cabina de almacenamiento, no en el servidor de AutoSupport. La cabina de almacenamiento realiza comprobaciones periódicas con el servidor de AutoSupport para determinar si existen solicitudes nuevas pendientes y responde de manera acorde.
+
+
+.Pasos
+. Seleccione menú:ficha Soporte[Centro de soporte > AutoSupport].
+. Seleccione *Activar/desactivar funciones de AutoSupport*.
+. Seleccione las casillas ubicadas junto a las funciones de AutoSupport que desea habilitar.
++
+Las funciones dependen una de otra, como lo indican las marcas de los elementos en el cuadro de diálogo. Por ejemplo, debe habilitar AutoSupport OnDemand para poder habilitar Remote Diagnostics.
+
+. Haga clic en *Guardar*.
++
+Si deshabilita AutoSupport, se muestra una notificación en la página Inicio. Puede descartar la notificación haciendo clic en *Ignorar*.
+
+

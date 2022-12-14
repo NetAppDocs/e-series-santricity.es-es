@@ -1,0 +1,55 @@
+---
+permalink: sm-hardware/overview-hardware.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hardware, page, 
+summary: Es posible comprobar el estado de los componentes en la página hardware y realizar algunas funciones relacionadas con ellos. 
+---
+= Información general de los componentes de hardware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible comprobar el estado de los componentes en la página hardware y realizar algunas funciones relacionadas con ellos.
+
+
+
+== ¿Qué componentes puedo gestionar?
+
+Es posible comprobar el estado de los componentes y realizar algunas funciones relacionadas con estos componentes:
+
+* **Bandejas** -- a _shelf_ es un componente que contiene el hardware de la cabina de almacenamiento (controladoras, contenedores de alimentación/ventilador y unidades). Las bandejas están disponibles en tres tamaños con capacidad para 12, 24 o 60 unidades.
+* **Controllers** -- A _Controller_ es la combinación de hardware y firmware que implementa funciones de cabina de almacenamiento y administración. Incluye la memoria caché, el soporte para unidades y los puertos para las conexiones de host.
+* ** Drives** -- a _drive_ puede ser una unidad de disco duro (HDD) o una unidad de estado sólido (SSD). Según el tamaño de la bandeja, puede instalarse un máximo de 12, 24 o 60 unidades en la bandeja.
+
+
+Obtenga más información:
+
+* link:hardware-page-overview.html["Página hardware"]
+* link:hardware-terminology.html["Terminología de hardware"]
+
+
+
+
+== ¿Cómo puedo ver los componentes de hardware?
+
+Vaya a la página hardware, que ofrece una descripción gráfica de los componentes físicos de la cabina de almacenamiento. Puede alternar entre las vistas frontal y trasera de las estanterías de arrays seleccionando *Mostrar parte posterior de la estantería* o *Mostrar frente de la estantería* en la parte superior derecha de la vista de la estantería.
+
+Obtenga más información:
+
+* link:view-shelf-component-status-and-settings.html["Ver el estado y la configuración de componentes de bandejas"]
+* link:view-controller-settings.html["Ver la configuración de la controladora"]
+* link:view-drive-status-and-settings.html["Ver el estado y la configuración de las unidades"]
+
+
+
+
+= Información relacionada
+
+Más información acerca de conceptos relacionados con el hardware:
+
+* link:controller-states.html["estados de la controladora"]
+* link:drive-states.html["estados de unidad"]
+* link:what-is-shelf-loss-protection-and-drawer-loss-protection.html["Protección contra pérdida de bandeja y protección contra pérdida de cajón"]
+

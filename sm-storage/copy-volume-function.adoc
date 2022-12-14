@@ -1,0 +1,131 @@
+---
+permalink: sm-storage/copy-volume-function.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, copy, volume, 
+summary: La función Copy Volume permite crear una copia de un momento específico de un volumen. Para ello, se crean dos volúmenes independientes, el volumen de origen y el volumen objetivo en la misma cabina de almacenamiento. 
+---
+= Información general acerca de Copy Volume
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La función Copy Volume permite crear una copia de un momento específico de un volumen. Para ello, se crean dos volúmenes independientes, el volumen de origen y el volumen objetivo en la misma cabina de almacenamiento.
+
+Por medio de esta función se realiza una copia byte por byte del volumen de origen al volumen objetivo, que permite que los datos del volumen objetivo queden idénticos a los datos del volumen de origen.
+
+
+
+== Copiado de datos para aumentar el acceso
+
+A medida que cambian los requisitos de almacenamiento de volúmenes, se puede usar la función Copy Volume para copiar datos de pools o grupos de volúmenes que utilizan unidades de menor capacidad a pools o grupos de volúmenes que utilizan unidades de mayor capacidad. Por ejemplo, se puede usar la función Copy Volume para lo siguiente:
+
+* Transferir datos a unidades más grandes
+* Cambiar a unidades con mayor tasa de transferencia de datos
+* Cambiar a unidades que utilizan nuevas tecnologías para un mayor rendimiento
+* Cambiar de un volumen fino a un volumen grueso
+
+
+
+
+== Cambiar de un volumen fino a un volumen grueso
+
+Si se desea cambiar un volumen fino a un volumen grueso, se debe usar la operación Copy Volume para crear una copia del volumen fino. El objetivo de una operación Copy Volume siempre es obtener un volumen grueso.
+
+[NOTE]
+====
+System Manager no proporciona ninguna opción para crear volúmenes finos. Si se desea crear volúmenes finos, se debe usar la interfaz de línea de comandos (CLI).
+
+====
+
+
+== Datos de respaldo
+
+La función Copy Volume permite crear un backup de un volumen, ya que copia datos de un volumen a otro en la misma cabina de almacenamiento. Se puede usar el volumen objetivo como backup para el volumen de origen, para la prueba del sistema o para realizar un backup a otro dispositivo, como una unidad de cinta.
+
+
+
+== Restaurar los datos de un volumen Snapshot al volumen base
+
+Si se necesitan restaurar datos en el volumen base desde su volumen Snapshot asociado, se puede usar la función Copy Volume para copiar datos del volumen Snapshot al volumen base. Se puede crear una copia del volumen de los datos del volumen Snapshot y, luego, copiar los datos al volumen base.
+
+
+
+== Volúmenes de origen y objetivo
+
+En la siguiente tabla, se especifican los tipos de volúmenes que se pueden usar como volúmenes de origen y objetivo con la función Copy Volume.
+
+[cols="1a,1a,1a,1a"]
+|===
+| Tipo de volumen | Volumen de origen de copia de volumen sin conexión | Volumen de origen de copia de volumen en línea | Volumen objetivo en línea y sin conexión 
+
+
+ a| 
+Volumen grueso de un pool
+ a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+ a| 
+Volumen grueso de un grupo de volúmenes
+ a| 
+Sí
+ a| 
+Sí
+ a| 
+Sí
+
+
+
+ a| 
+Volumen fino
+ a| 
+Sí
+ a| 
+Sí
+ a| 
+No
+
+
+
+ a| 
+Volumen Snapshot
+ a| 
+Sí 1
+ a| 
+No
+ a| 
+No
+
+
+
+ a| 
+Volumen base Snapshot
+ a| 
+Sí
+ a| 
+No
+ a| 
+No
+
+
+
+ a| 
+Volumen primario de reflejos remoto
+ a| 
+Sí 2
+ a| 
+No
+ a| 
+Sí
+
+|===
+Con esta acción, no se puede utilizar la copia del volumen Snapshot hasta que finalice la operación de copia en línea.
+
+Esta regla 2 Si el volumen de origen es un volumen primario, la capacidad del volumen objetivo debe ser igual o mayor que la capacidad utilizable del volumen de origen.

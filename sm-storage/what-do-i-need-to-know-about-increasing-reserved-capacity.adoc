@@ -1,0 +1,25 @@
+---
+permalink: sm-storage/what-do-i-need-to-know-about-increasing-reserved-capacity.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reserved, capacity 
+summary: Por lo general, se debe aumentar la capacidad cuando se recibe una advertencia que indica que la capacidad reservada corre el peligro de completarse. Es posible aumentar la capacidad reservada únicamente en incrementos de 8 GIB. 
+---
+= ¿Qué debo saber acerca del aumento de la capacidad reservada?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Por lo general, se debe aumentar la capacidad cuando se recibe una advertencia que indica que la capacidad reservada corre el peligro de completarse. Es posible aumentar la capacidad reservada únicamente en incrementos de 8 GIB.
+
+* Debe tener suficiente capacidad libre en el pool o el grupo de volúmenes para poder realizar una expansión si es necesario.
++
+Si no hay capacidad libre en ningún pool o grupo de volúmenes, es posible añadir capacidad sin asignar en forma de unidades no utilizadas a un pool o un grupo de volúmenes.
+
+* El volumen en el pool o el grupo de volúmenes debe tener el estado óptima y no debe estar en ningún estado de modificación.
+* Debe existir capacidad libre en el pool o grupo de volúmenes que desea usar para aumentar la capacidad.
+* No es posible aumentar la capacidad reservada para un volumen Snapshot de solo lectura. Solo los volúmenes Snapshot que son de lectura y escritura requieren capacidad reservada.
+
+
+Para las operaciones Snapshot, la capacidad reservada generalmente es el 40 % del volumen base. Para las operaciones de mirroring asíncrono, generalmente es el 20 % del volumen base. Use un porcentaje más alto si cree que el volumen base se someterá a muchos cambios, o si la expectativa de duración estimada de una operación de servicio de copia de un objeto de almacenamiento será muy larga.

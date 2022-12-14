@@ -1,0 +1,50 @@
+---
+permalink: sm-settings/overview-alerts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, Alerts, 
+summary: Es posible configurar System Manager para que envíe alertas de cabina de almacenamiento por correo electrónico, capturas SNMP y mensajes de syslog. 
+---
+= Información general sobre las alertas
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible configurar System Manager para que envíe alertas de cabina de almacenamiento por correo electrónico, capturas SNMP y mensajes de syslog.
+
+
+
+== ¿Qué son las alertas?
+
+_Alerts_ notifica a los administradores sobre eventos importantes que se producen en la cabina de almacenamiento. Los eventos pueden incluir problemas como un fallo de batería, un componente que pasa de estado óptimo a sin conexión o errores de redundancia en la controladora. Se considera que todos los eventos críticos generan alertas, junto con algunos eventos informativos y de advertencia.
+
+Obtenga más información:
+
+* link:how-alerts-work.html["¿Cómo funcionan las alertas"]
+* link:alerts-terminology.html["Terminología de alertas"]
+
+
+
+
+== ¿Cómo se configuran las alertas?
+
+Es posible configurar las alertas que se enviarán como mensaje a una o varias direcciones de correo electrónico, como una captura SNMP a un servidor SNMP, o como un mensaje a un servidor de syslog. La configuración de alertas está disponible en MENU:Settings[Alerts].
+
+Obtenga más información:
+
+* link:configure-mail-server-and-recipients-for-alerts.html["Configurar servidores de correo y destinatarios para las alertas"]
+* link:configure-syslog-server-for-alerts.html["Configurar el servidor de syslog para las alertas"]
+* link:configure-snmp-alerts.html["Configurar las alertas SNMP"]
+
+
+
+
+== Información relacionada
+
+Más información sobre conceptos relacionados con las alertas:
+
+* link:../sm-support/overview-event-log.html["Información general sobre el registro de eventos"]
+* link:why-are-timestamps-inconsistent-between-the-array-and-alerts.html["Marcas de tiempo incoherentes"]
+

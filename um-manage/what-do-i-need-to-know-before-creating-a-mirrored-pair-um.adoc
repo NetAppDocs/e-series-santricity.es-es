@@ -1,0 +1,30 @@
+---
+permalink: um-manage/what-do-i-need-to-know-before-creating-a-mirrored-pair-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, creating, mirrored, pair 
+summary: Antes de crear una pareja reflejada, siga estas directrices. 
+---
+= ¿Qué debo saber antes de crear una pareja reflejada?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Antes de crear una pareja reflejada, siga estas directrices.
+
+* Debe tener dos cabinas de almacenamiento.
+* Cada cabina de almacenamiento debe tener dos controladoras.
+* Las dos cabinas de almacenamiento se encuentran detectadas en Unified Manager.
+* Cada controladora en la cabina primaria y la cabina secundaria debe tener un puerto Ethernet de gestión configurado y debe estar conectada a la red.
+* Las cabinas de almacenamiento deben tener la versión de firmware 7.84 como mínimo. (Cada una puede ejecutar versiones de sistema operativo diferentes).
+* Debe conocer la contraseña de las cabinas de almacenamiento remota y local.
+* Debe tener suficiente capacidad libre en la cabina de almacenamiento remota para crear un volumen secundario mayor o igual que el volumen primario que desea reflejar.
+* El mirroring asíncrono se admite en controladoras con puertos de host Fibre Channel (FC) o iSCSI, mientras que el mirroring síncrono solo se admite en controladoras con puertos de host FC.
+
+
+[NOTE]
+====
+Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
+
+====

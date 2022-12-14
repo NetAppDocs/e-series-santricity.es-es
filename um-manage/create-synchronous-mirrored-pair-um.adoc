@@ -1,0 +1,148 @@
+---
+permalink: um-manage/create-synchronous-mirrored-pair-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, create, synchronous, mirrored, pair 
+summary: Para configurar el mirroring síncrono, debe crear una pareja reflejada que incluya un volumen primario en la cabina local y un volumen secundario en la cabina remota. 
+---
+= Cree una pareja reflejada síncrona
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para configurar el mirroring síncrono, debe crear una pareja reflejada que incluya un volumen primario en la cabina local y un volumen secundario en la cabina remota.
+
+[NOTE]
+====
+Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
+
+====
+.Antes de empezar
+Antes de crear una pareja reflejada, debe cumplir con los requisitos para Unified Manager:
+
+* El proxy de servicios web se encuentra en ejecución.
+* Unified Manager se ejecuta en el host local a través de una conexión HTTPS.
+* SANtricity Unified Manager debe mostrar los certificados SSL válidos para la cabina de almacenamiento. Es posible aceptar un certificado autofirmado o instalar una certificación de seguridad propia con Unified Manager. Para hacerlo, debe navegar hasta MENU:Certificate[Gestión de certificados].
+
+
+También debe cumplir con los siguientes requisitos para las cabinas de almacenamiento y los volúmenes:
+
+* Las dos cabinas de almacenamiento que planea usar para el mirroring se detectaron en Unified Manager.
+* Cada cabina de almacenamiento debe tener dos controladoras.
+* Cada controladora en la cabina primaria y la cabina secundaria debe tener un puerto Ethernet de gestión configurado y debe estar conectada a la red.
+* Las cabinas de almacenamiento deben tener la versión de firmware 7.84 como mínimo. (Cada una puede ejecutar versiones de sistema operativo diferentes).
+* Debe conocer la contraseña de las cabinas de almacenamiento remota y local.
+* Las cabinas de almacenamiento local y remota se encuentran conectadas a través de una estructura Fibre Channel.
+* Creó el volumen primario y el volumen secundario que desea usar en la relación de reflejo síncrono.
+* El volumen primario deber ser un volumen estándar. No puede ser un volumen fino ni un volumen Snapshot.
+* El volumen secundario deber ser un volumen estándar. No puede ser un volumen fino ni un volumen Snapshot.
+* El volumen secundario deber tener al menos el mismo tamaño que el volumen primario.
+
+
+.Acerca de esta tarea
+El proceso para crear parejas reflejadas síncronas es un procedimiento de varios pasos.
+
+
+
+== Paso 1: Seleccione el volumen primario
+
+En este paso, se selecciona el volumen primario que se usará en la relación de reflejo síncrono. Si selecciona un volumen primario en la cabina de almacenamiento local, el sistema muestra una lista de todos los volúmenes elegibles para esa pareja reflejada. Si algún volumen no es apto para el uso, no se muestra en esa lista. El volumen que seleccione tendrá el rol primario en la relación de reflejo.
+
+.Pasos
+. En la página *gestionar*, seleccione la matriz de almacenamiento local que desea utilizar para el origen.
+. Seleccione menu:acciones[Crear pareja reflejada síncrona].
++
+Se abrirá el asistente Crear pareja reflejada síncrona.
+
+. En la lista de volúmenes elegibles, seleccione el volumen que desea usar como el volumen primario en el reflejo.
+. Seleccione *Siguiente* y vaya a. <<Paso 2: Seleccione el volumen secundario>>.
+
+
+
+
+== Paso 2: Seleccione el volumen secundario
+
+En este paso, seleccione el volumen secundario que desea usar en la relación de reflejo. Si selecciona un volumen secundario en la cabina de almacenamiento remota, el sistema muestra una lista de todos los volúmenes aptos para esa pareja reflejada. Si algún volumen no es apto para el uso, no se muestra en esa lista. El volumen que seleccione tendrá el rol secundario en la relación de reflejo.
+
+.Pasos
+. Seleccione la cabina de almacenamiento remota en la que desea establecer una relación de reflejo con la cabina de almacenamiento local.
++
+[NOTE]
+====
+Si la cabina de almacenamiento remota está protegida con contraseña, el sistema solicita la contraseña.
+
+====
++
+** Las cabinas de almacenamiento se enumeran en una lista por nombre. Si no asignó ningún nombre a una cabina de almacenamiento, esta se muestra en la lista como "unnamed".
+** Si la cabina de almacenamiento que desea utilizar no aparece en la lista, asegúrese de que se haya detectado en Unified Manager.
+
+
+. En la lista de volúmenes elegibles, seleccione el volumen que desea usar como el volumen secundario en el reflejo.
++
+[NOTE]
+====
+Si se eligió un volumen secundario con una capacidad mayor a la del volumen primario, la capacidad utilizable se restringe al tamaño del volumen primario.
+
+====
+. Haga clic en *Siguiente* y vaya a. <<Paso 3: Seleccione la configuración de sincronización>>.
+
+
+
+
+== Paso 3: Seleccione la configuración de sincronización
+
+En este paso, se seleccionan las opciones de configuración que determinan la forma en que se deben sincronizar los datos después de una interrupción de comunicación. Es posible establecer la prioridad que tendrá en cuenta el propietario de la controladora del volumen primario para resincronizar los datos con el volumen secundario después de una interrupción de comunicación. Además, es necesario seleccionar la política de resincronización: Manual o automática.
+
+.Pasos
+. Use la barra de desplazamiento para configurar la prioridad de sincronización.
++
+La prioridad de sincronización determina cuántos recursos del sistema se usan para completar la sincronización inicial y la operación de resincronización después de una interrupción de la comunicación en comparación con las solicitudes de I/o del servicio.
+
++
+La prioridad que se configure en este cuadro de diálogo se aplicará tanto al volumen primario, como al secundario. Para modificar la tasa del volumen primario en otro momento, deberá ir a System Manager y seleccionar MENU:almacenamiento[Mirroring síncrono > más > Editar configuración].
+
++
+Las tasas de prioridad de sincronización son las siguientes cinco:
+
++
+** El más bajo
+** Bajo
+** Mediano
+** Alto
+** Máxima
++
+Si la prioridad de sincronización se configuró con la tasa mínima, se prioriza la actividad de I/o y la operación de resincronización lleva más tiempo. Si la prioridad de sincronización se configuró con la tasa máxima, la operación de resincronización tiene prioridad, pero podría afectar a la actividad de I/o de la cabina de almacenamiento.
+
+
+
+. Elija si desea volver a sincronizar las parejas reflejadas de la cabina de almacenamiento remota en forma manual o automática.
++
+** *Manual* (la opción recomendada) -- Seleccione esta opción para requerir que la sincronización se reanude manualmente después de restaurar la comunicación a una pareja reflejada. Esta opción proporciona la mejor oportunidad para recuperar datos.
+** *Automático* -- Seleccione esta opción para iniciar la resincronización automáticamente después de restaurar la comunicación a un par reflejado.
++
+Para reanudar la sincronización manualmente, vaya a System Manager y seleccione MENU:Storage[Synchronous Mirroring], resalte la pareja reflejada en la tabla y seleccione *Reanudar* en *más*.
+
+
+
+. Haga clic en *Finalizar* para completar la secuencia de duplicación sincrónica.
+
+
+.Resultados
+Una vez que se activa el mirroring, el sistema ejecuta las siguientes acciones:
+
+* Comienza la sincronización inicial entre la cabina de almacenamiento local y la remota.
+* Configura la prioridad de sincronización y la política de resincronización.
+* Reserva el puerto que tiene el número más alto de la HIC de la controladora para reflejar la transmisión de datos.
++
+Las solicitudes de I/o que se reciben en este puerto son aceptadas únicamente de la controladora remota preferida, propietaria del volumen secundario en la pareja reflejada. (Se permiten las reservas en el volumen primario.)
+
+* Crea dos volúmenes de capacidad reservada, uno para cada controladora, que se utilizan para registrar información de escritura para recuperarse de reinicios de controladoras y otras interrupciones temporales.
++
+La capacidad de cada volumen es 128 MIB. Sin embargo, si los volúmenes se colocan en un pool, se reservarán 4 GIB para cada volumen.
+
+
+
+.Después de terminar
+Vaya a System Manager y seleccione MENU:Inicio[Ver operaciones en curso] para ver el progreso de la operación de mirroring síncrono. Es posible que esta operación demore y que afecte el rendimiento del sistema.

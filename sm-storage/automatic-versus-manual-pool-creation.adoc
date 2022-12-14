@@ -1,0 +1,47 @@
+---
+permalink: sm-storage/automatic-versus-manual-pool-creation.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, automatic, manual, pool 
+summary: Es posible crear pools de manera automática o manual para permitir el agrupamiento del almacenamiento físico para luego asignarlo dinámicamente según sea necesario. Cuando se crea un pool, es posible añadir unidades físicas. 
+---
+= Creación de pools automática versus manual
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible crear pools de manera automática o manual para permitir el agrupamiento del almacenamiento físico para luego asignarlo dinámicamente según sea necesario. Cuando se crea un pool, es posible añadir unidades físicas.
+
+
+
+== Creación automática
+
+La creación de pools automática se inicia cuando System Manager detecta capacidad sin asignar en una cabina de almacenamiento. Cuando se detecta capacidad sin asignar, System Manager solicita automáticamente crear uno o varios pools, añadir la capacidad sin asignar a un pool existente, o ambas opciones.
+
+La creación de pools automática se produce cuando se cumple alguna de estas condiciones:
+
+* La cabina de almacenamiento no contiene pools y existen unidades similares suficientes para crear un pool nuevo.
+* Se añaden nuevas unidades a una cabina de almacenamiento que contiene al menos un pool.
+
+
+Cada unidad en un pool debe ser del mismo tipo (unidad de disco duro o unidad de estado sólido) y tener una capacidad similar. System Manager solicita al usuario que complete las siguientes tareas:
+
+* Cree un solo pool si existe una cantidad suficiente de unidades de esos tipos.
+* Cree varios pools si la capacidad sin asignar consta de diferentes tipos de unidades.
+* Añada las unidades a un pool existente si ya existe un pool definido en la cabina de almacenamiento, y añada nuevas unidades del mismo tipo al pool.
+* Añada las unidades del mismo tipo al pool existente y use los otros tipos de unidades para crear distintos pools si las unidades nuevas son de distinto tipo.
+
+
+
+
+== Creación manual
+
+Quizás sea conveniente crear un pool manualmente cuando la creación automática no puede determinar cuál es la mejor configuración. Esta situación puede ocurrir por uno de los siguientes motivos:
+
+* Las unidades nuevas pueden añadirse potencialmente a varios pools.
+* Uno o varios de los candidatos de pool nuevos pueden usar protección contra pérdida de bandeja o protección contra pérdida de cajón.
+* Uno o varios de los candidatos a pool existentes no pueden mantener su estatus de protección contra pérdida de bandeja o protección contra pérdida de cajón.
+
+
+También es posible que desee crear un pool manualmente si tiene varias aplicaciones en la cabina de almacenamiento y no quiere que compitan por los mismos recursos de la unidad. En este caso, puede considerarse la creación manual de un pool más pequeño para una o varias de aplicaciones. Puede asignar solo uno o dos volúmenes en lugar de asignar la carga de trabajo a un pool más grande que tiene varios volúmenes en los cuales se pueden distribuir los datos. La creación manual de un pool individual dedicado a la carga de trabajo de una aplicación específica puede permitir que las operaciones de cabina de almacenamiento sean más rápidas y con menos contención.

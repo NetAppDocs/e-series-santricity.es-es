@@ -1,0 +1,107 @@
+---
+permalink: sm-support/view-storage-array-profile.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, storage, array, profile 
+summary: El perfil de la cabina de almacenamiento proporciona una descripción de todos los componentes y las propiedades de la cabina de almacenamiento. 
+---
+= Ver el perfil de la cabina de almacenamiento
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El perfil de la cabina de almacenamiento proporciona una descripción de todos los componentes y las propiedades de la cabina de almacenamiento.
+
+.Acerca de esta tarea
+Es posible usar el perfil de la cabina de almacenamiento a modo de ayuda durante la recuperación o como información general de la configuración actual de la cabina de almacenamiento. Puede ser conveniente guardar una copia del perfil de la cabina de almacenamiento en el cliente de gestión y conservar una copia impresa del perfil de la cabina de almacenamiento con la cabina de almacenamiento. Cree una nueva copia del perfil de la cabina de almacenamiento si cambia la configuración.
+
+.Pasos
+. Seleccione menú:ficha Soporte[Centro de soporte > Recursos de soporte].
+. Desplácese hasta *Iniciar información detallada de la matriz de almacenamiento* y, a continuación, seleccione *Perfil de la matriz de almacenamiento*.
++
+Se muestra el informe en la pantalla.
+
++
+.Detalles del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Sección | Descripción 
+
+
+ a| 
+Cabina de almacenamiento
+ a| 
+Se muestran todas las opciones que se pueden configurar y las opciones estáticas del sistema para la cabina de almacenamiento. Estas opciones incluyen la cantidad de controladoras, bandejas de unidades, unidades, pools de discos, grupos de volúmenes, Volúmenes y unidades de repuesto; la cantidad máxima de bandejas de unidades, unidades, discos de estado sólido (SSD) y volúmenes permitidos; la cantidad de grupos Snapshot, imágenes Snapshot, volúmenes Snapshot y grupos de coherencia; información sobre funciones; información sobre versiones de firmware; información sobre el número de serie del chasis; estado de AutoSupport e información de programación de AutoSupport; La configuración para la recogida automática de datos de soporte y la recogida programada de datos de soporte, el identificador a nivel mundial (WWID) de la cabina de almacenamiento y la configuración de análisis de medios y caché.
+
+
+
+ a| 
+Reducida
+ a| 
+Se muestra una lista de todos los dispositivos de almacenamiento de la cabina de almacenamiento. Según la configuración de la cabina de almacenamiento, en la sección de almacenamiento, podrían mostrarse las siguientes subsecciones.
+
+** *Disk Pools* -- muestra una lista de todos los grupos de discos en la matriz de almacenamiento.
+** *Grupos de volúmenes* -- muestra una lista de todos los grupos de volúmenes de la cabina de almacenamiento. Los volúmenes y la capacidad libre se enumeran en el orden en que se crearon.
+** *Volumes* -- muestra una lista de todos los volúmenes de la matriz de almacenamiento. La información descrita incluye el nombre del volumen, el estado del volumen, la capacidad, el nivel de RAID, el grupo de volúmenes o pool de discos, el tipo de unidad y detalles adicionales.
+** *Volúmenes faltantes* -- muestra una lista de todos los volúmenes de la matriz de almacenamiento que actualmente tienen un estado faltante. La información descrita incluye el identificador a nivel mundial (WWID) para cada volumen faltante.
+
+
+
+
+ a| 
+Servicios de copia
+ a| 
+Se muestra una lista de todos los servicios de copias que se usan para la cabina de almacenamiento. Según la configuración de la cabina de almacenamiento, en la sección de servicios de copias, podrían mostrarse las siguientes subsecciones:
+
+** *Copias de volumen* -- muestra una lista de todos los pares de copias en la matriz de almacenamiento. La información descrita incluye el número de copias, los nombres de las parejas de copias, el estado, la Marca de hora de inicio y detalles adicionales.
+** *Grupos Snapshot* -- muestra una lista de todos los grupos de instantáneas de la matriz de almacenamiento.
+** *Imágenes Snapshot* -- muestra una lista de todas las instantáneas de la matriz de almacenamiento.
+** *Volúmenes Snapshot* -- muestra una lista de todos los volúmenes Snapshot de la matriz de almacenamiento.
+** *Grupos de consistencia* -- muestra una lista de todos los grupos de consistencia de la matriz de almacenamiento.
+** *Volúmenes miembro* -- muestra una lista de todos los volúmenes miembro de grupo de coherencia de la cabina de almacenamiento.
+** * Grupos de duplicación* -- muestra una lista de todos los volúmenes duplicados.
+** *Capacidad reservada*: Se muestra una lista de todos los volúmenes de capacidad reservada de la cabina de almacenamiento.
+
+
+
+
+ a| 
+Asignaciones de host
+ a| 
+Se muestra una lista de las asignaciones de hosts de la cabina de almacenamiento. La información descrita incluye el nombre del volumen, el número de unidad lógica (LUN), el ID de la controladora, el nombre de host o el nombre del clúster de hosts y el estado del volumen. La información adicional enumerada incluye definiciones de topología y definiciones de tipos de hosts.
+
+
+
+ a| 
+Hardware subyacente
+ a| 
+Se muestra una lista de todo el hardware de la cabina de almacenamiento. Según la configuración de la cabina de almacenamiento, en la sección de hardware, podrían mostrarse las siguientes subsecciones.
+
+** *Controladores* -- muestra una lista de todas las controladoras de la matriz de almacenamiento e incluye la ubicación, el estado y la configuración del controlador. Además, se incluye información del canal de unidades, información del canal de hosts e información del puerto Ethernet.
+** *Drives* -- muestra una lista de todas las unidades de la matriz de almacenamiento. Las unidades se enumeran por orden de ID de bandeja, ID de cajón e ID de ranura. La información descrita incluye el ID de bandeja, el ID de cajón, el ID de ranura, el estado, la capacidad bruta, El tipo de medio, el tipo de interfaz, la tasa de datos actual, el ID de producto y la versión de firmware de cada unidad. En la sección de la unidad, también se incluye información del canal de unidades, información de cobertura de piezas de repuesto e información sobre deterioro (solo para unidades SSD). La información sobre deterioro incluye el porcentaje de resistencia usado, que es la cantidad de datos escritos en la unidad SSD hasta la fecha, dividida por el límite de escritura teórico total para las unidades.
+** *Canales de unidad* -- muestra información de todos los canales de unidad de la matriz de almacenamiento. La información descrita incluye el estado de los canales, el estado de los enlaces (si corresponde), el número de unidades y el número acumulativo de errores.
+** *Bandejas* -- muestra información de todas las estanterías de la matriz de almacenamiento. La información descrita incluye los tipos de unidades y la información de estado de cada componente de la bandeja. Es posible que los componentes de la bandeja incluyan paquetes de batería, transceptores de factor de forma pequeño conectable (SFP), contenedores de alimentación/ventilador o contenedores de módulos de entrada/salida (IOM). En la sección de hardware, también se muestra el identificador de clave de seguridad si la cabina de almacenamiento usa una clave de seguridad.
+
+
+
+
+ a| 
+Funciones
+ a| 
+Se muestra una lista de los paquetes de funciones instalados y la cantidad máxima permitida de grupos Snapshot, snapshots (heredadas) y volúmenes por host o clúster de hosts. La información de la sección funciones también incluye datos sobre seguridad de unidades; es decir, si la cabina de almacenamiento tiene la función de seguridad habilitada o deshabilitada.
+
+|===
+====
+. Para buscar en el perfil de la matriz de almacenamiento, escriba un término de búsqueda en el cuadro de texto *Buscar* y haga clic en *Buscar*.
++
+Se destacan todos los términos que coinciden. Para desplazarse por todos los resultados, uno a la vez, haga clic en *Buscar*.
+
+. Para guardar el perfil de la matriz de almacenamiento, haga clic en *Guardar*.
++
+El archivo se guarda en la carpeta de descargas del explorador con el nombre `storage-array-profile.txt`.
+
+

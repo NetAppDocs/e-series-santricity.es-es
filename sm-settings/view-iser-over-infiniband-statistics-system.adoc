@@ -1,0 +1,34 @@
+---
+permalink: sm-settings/view-iser-over-infiniband-statistics-system.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, iser, over, infiniBand, statistics, 
+summary: Si la controladora de la cabina de almacenamiento incluye un puerto Iser over InfiniBand, es posible ver datos sobre las conexiones del host. 
+---
+= Ver estadísticas de Iser over InfiniBand
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si la controladora de la cabina de almacenamiento incluye un puerto Iser over InfiniBand, es posible ver datos sobre las conexiones del host.
+
+.Acerca de esta tarea
+En System Manager, se muestran los siguientes tipos de estadísticas de Iser over InfiniBand. Todas las estadísticas son de solo lectura y no pueden configurarse.
+
+* *Estadísticas de destino local (protocolo)* -- proporciona estadísticas para el destino Iser over InfiniBand, que muestra el acceso de nivel de bloque a sus medios de almacenamiento.
+* *Estadísticas de la interfaz Iser over InfiniBand* -- proporciona estadísticas para todos los puertos Iser en la interfaz InfiniBand, que incluye estadísticas de rendimiento e información de errores de enlace asociados con cada puerto del switch.
+
+
+Es posible ver cada una de las estadísticas como estadísticas sin configurar o estadísticas de base. Las estadísticas sin configurar son todas las estadísticas recogidas desde que se iniciaron las controladoras. Las estadísticas de base son las estadísticas de un momento específico que se recogen desde el establecimiento de la hora de la línea de base.
+
+.Pasos
+. Seleccione MENU:Settings[System].
+. Seleccione *Ver estadísticas de Iser over InfiniBand*.
+. Haga clic en una pestaña para ver los diferentes conjuntos de estadísticas.
+. *Opcional:* para establecer la línea de base, haga clic en *establecer nueva línea de base*.
++
+La configuración de la línea de base establece un nuevo punto de partida para la recogida de estadísticas. La misma línea de base se usa para todas las estadísticas de Iser over InfiniBand.
+
+

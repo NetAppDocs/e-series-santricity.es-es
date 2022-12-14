@@ -1,0 +1,14 @@
+---
+permalink: sm-storage/what-is-security-capable-drive-security.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, secure-capable, drive, security 
+summary: 'Drive Security es una función que evita el acceso no autorizado a datos almacenados en unidades con la función de seguridad habilitada cuando la unidad se quita de la cabina de almacenamiento. Estas unidades pueden ser unidades de cifrado de disco completo (FDE) o de estándar de procesamiento de información federal (FIPS).' 
+---
+= ¿Qué significa ser compatible con la función de seguridad (Drive Security)?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Drive Security es una función que evita el acceso no autorizado a datos almacenados en unidades con la función de seguridad habilitada cuando la unidad se quita de la cabina de almacenamiento. Estas unidades pueden ser unidades de cifrado de disco completo (FDE) o de estándar de procesamiento de información federal (FIPS).

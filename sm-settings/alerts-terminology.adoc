@@ -1,0 +1,89 @@
+---
+permalink: sm-settings/alerts-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, alerts, terms, 
+summary: Conozca la forma en que los términos de alertas se aplican a su cabina de almacenamiento. 
+---
+= Terminología de alertas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Conozca la forma en que los términos de alertas se aplican a su cabina de almacenamiento.
+
+[cols="25h,~"]
+|===
+| Componente | Descripción 
+
+
+ a| 
+Monitor de eventos
+ a| 
+El monitor de eventos reside en la cabina de almacenamiento y se ejecuta como una tarea en segundo plano. Cuando el monitor de eventos detecta anomalías en la cabina de almacenamiento, escribe información acerca de los problemas en el registro de eventos. Los problemas pueden incluir eventos como un fallo de batería, un componente que pasa de estado óptimo a sin conexión o errores de redundancia en la controladora. Si el monitor de eventos determina que el evento genera alertas, envía una notificación con los métodos de alerta configurados (correo electrónico, SNMP o syslog). Se considera que todos los eventos críticos generan alertas, junto con algunos eventos informativos y de advertencia.
+
+
+
+ a| 
+Servidor de correo
+ a| 
+El servidor de correo se usa para enviar y recibir alertas de correo electrónico. El servidor utiliza un protocolo para la transferencia simple de correo electrónico (SMTP).
+
+
+
+ a| 
+SNMP
+ a| 
+El protocolo simple de gestión de redes (SNMP) es un protocolo estándar de Internet que se usa para gestionar y compartir información entre dispositivos en redes de IP.
+
+
+
+ a| 
+Captura SNMP
+ a| 
+Una captura SNMP es una notificación que se envía a un servidor SNMP. La captura tiene información acerca de problemas importantes en la cabina de almacenamiento.
+
+
+
+ a| 
+Destino de capturas SNMP
+ a| 
+El destino de una captura SNMP es la dirección IPv4 o IPv6 del servidor que ejecuta un servicio SNMP.
+
+
+
+ a| 
+Nombre de comunidad
+ a| 
+Un nombre de comunidad es una cadena que actúa como contraseña para el servidor de red en un entorno SNMP.
+
+
+
+ a| 
+Archivo MIB
+ a| 
+El archivo de base de datos de información de gestión (MIB) define los datos que se están supervisando y gestionando en la cabina de almacenamiento. Se debe copiar y compilar en el servidor mediante la aplicación de servicio SNMP. El archivo MIB está disponible en el software System Manager del sitio de soporte.
+
+
+
+ a| 
+Variables MIB
+ a| 
+Las variables de la base de datos de información de gestión (MIB) pueden mostrar valores, como el nombre de cabina de almacenamiento, la ubicación de la cabina y una persona de contacto, en respuesta a las solicitudes SNMP GetRequests.
+
+
+
+ a| 
+Syslog
+ a| 
+Syslog es un protocolo que utilizan los dispositivos de red para enviar mensajes de eventos a un servidor de registro.
+
+
+
+ a| 
+UDP
+ a| 
+El protocolo de datagramas de usuario (UDP) es un protocolo de capa de transporte que especifica un número de puerto de origen y de destino en los encabezados de paquete.
+
+|===

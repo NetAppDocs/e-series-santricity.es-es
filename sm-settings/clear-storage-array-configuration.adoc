@@ -1,0 +1,102 @@
+---
+permalink: sm-settings/clear-storage-array-configuration.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, clear, storage, array, configuration, 
+summary: Use la operación Clear Configuration cuando desee eliminar todos los pools, los grupos de volúmenes, los volúmenes, las definiciones de hosts y las asignaciones de hosts de la cabina de almacenamiento. 
+---
+= Borrar la configuración de la cabina de almacenamiento
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Use la operación Clear Configuration cuando desee eliminar todos los pools, los grupos de volúmenes, los volúmenes, las definiciones de hosts y las asignaciones de hosts de la cabina de almacenamiento.
+
+.Antes de empezar
+Antes de borrar la configuración de la cabina de almacenamiento, realice un backup de los datos.
+
+.Acerca de esta tarea
+Clear Storage Array Configuration contiene dos opciones:
+
+* *Volumen*: Normalmente, puede utilizar la opción volumen para volver a configurar una matriz de almacenamiento de prueba como una matriz de almacenamiento de producción. Por ejemplo, puede configurar una cabina de almacenamiento para pruebas y después, una vez terminadas las pruebas, eliminar la configuración de prueba y configurar la cabina de almacenamiento para un entorno de producción.
+* *Storage Array*: Normalmente, puede utilizar la opción Storage Array para mover una matriz de almacenamiento a otro departamento o grupo. Por ejemplo, puede que utilice una cabina de almacenamiento en Engineering y ahora Engineering consigue una nueva cabina de almacenamiento, por lo que desea mover la cabina de almacenamiento actual a Administración para volver a configurarla.
++
+La opción cabina de almacenamiento elimina algunas opciones de configuración adicionales.
+
+
+
+[cols="1a,1a,1a"]
+|===
+|  | Volumen | Cabina de almacenamiento 
+
+
+ a| 
+Elimina pools y grupos de volúmenes
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
+Elimina volúmenes
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
+Elimina hosts y clústeres de hosts
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
+Elimina asignaciones de hosts
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
+Elimina el nombre de la cabina de almacenamiento
+ a| 
+ a| 
+X
+
+
+
+ a| 
+Restablece la configuración de caché de la cabina de almacenamiento a su valor predeterminado
+ a| 
+ a| 
+X
+
+|===
+[CAUTION]
+====
+*Riesgo de pérdida de datos* -- esta operación elimina todos los datos de la matriz de almacenamiento. (No ejecuta un borrado seguro.) No es posible cancelar esta operación una vez que se inicia. Realice esta operación solo cuando el soporte técnico se lo indique.
+
+====
+.Pasos
+. Seleccione MENU:Settings[System].
+. Seleccione *Borrar configuración de la matriz de almacenamiento*.
+. En la lista desplegable, seleccione *volumen* o *matriz de almacenamiento*.
+. *Opcional:* Si desea guardar la configuración (no los datos), utilice los vínculos del cuadro de diálogo.
+. Confirme que desea llevar a cabo la operación.
+
+
+.Resultados
+* La configuración actual se elimina y se destruyen todos los datos existentes de la cabina de almacenamiento.
+* Todas las unidades quedan sin asignar.
+

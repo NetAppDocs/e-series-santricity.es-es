@@ -1,0 +1,41 @@
+---
+permalink: sm-support/view-autosupport-log.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, autosupport, log 
+summary: El registro de AutoSupport proporciona información sobre estado, historial de mensajes y errores detectados durante la entrega de envíos de AutoSupport. 
+---
+= Ver el registro de AutoSupport
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El registro de AutoSupport proporciona información sobre estado, historial de mensajes y errores detectados durante la entrega de envíos de AutoSupport.
+
+.Acerca de esta tarea
+Pueden existir varios archivos de registro. Cuando el archivo de registro actual alcanza los 200 KB, se archiva y se crea un nuevo archivo de registro. El nombre del archivo de registro archivado es `ASUPMessages.n`, donde _n_ es un entero de 1 a 9. Si existen varios archivos de registro, es posible ver el registro más reciente o uno anterior.
+
+* *Registro actual* -- muestra una lista de los últimos eventos capturados.
+* *Archived log* -- muestra una lista de eventos anteriores.
+
+
+.Pasos
+. Seleccione menú:ficha Soporte[Centro de soporte > AutoSupport].
+. Seleccione *Ver registro de AutoSupport*.
++
+Se muestra el cuadro de diálogo donde se enumera el registro de AutoSupport actual.
+
+. Si desea ver registros de AutoSupport anteriores, seleccione el botón de opción *Archived* y, a continuación, seleccione un registro de la lista desplegable *Select AutoSupport log*.
++
+Se muestra la opción archivada únicamente si existen registros archivados en la cabina de almacenamiento.
+
++
+En el cuadro de diálogo, se muestra el registro de AutoSupport seleccionado.
+
+. *Opcional:* para buscar el registro AutoSupport, escriba un término en el cuadro *Buscar* y haga clic en *Buscar*.
++
+Vuelva a hacer clic en *Buscar* para buscar más apariciones del término.
+
+

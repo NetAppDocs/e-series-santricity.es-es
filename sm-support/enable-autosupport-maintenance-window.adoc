@@ -1,0 +1,35 @@
+---
+permalink: sm-support/enable-autosupport-maintenance-window.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, enable, autosupport, ASUP, maintenance window 
+summary: Habilite la ventana de mantenimiento de AutoSupport para evitar la creación automática de incidencias durante eventos de error. En el modo de operación normal, la cabina de almacenamiento utiliza AutoSupport para abrir un caso en soporte si existe un problema. 
+---
+= Habilite la ventana de mantenimiento de AutoSupport
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Habilite la ventana de mantenimiento de AutoSupport para evitar la creación automática de incidencias durante eventos de error. En el modo de operación normal, la cabina de almacenamiento utiliza AutoSupport para abrir un caso en soporte si existe un problema.
+
+.Pasos
+. Seleccione menú:ficha Soporte[Centro de soporte > AutoSupport].
+. Seleccione *Activar la ventana Mantenimiento de AutoSupport*.
+. Introduzca la dirección de correo electrónico para recibir una confirmación de que se procesó la solicitud de la ventana de mantenimiento.
++
+Según la configuración existente, se podrán introducir hasta cinco direcciones de correo electrónico. Si desea agregar más de una dirección, seleccione *Agregar otro correo electrónico* para abrir otro campo.
+
+. Especifique la duración (en horas) para habilitar la ventana de mantenimiento.
++
+La duración máxima admitida es de 72 horas.
+
+. Haga clic en *Sí*.
++
+La creación automática de incidencias de AutoSupport durante eventos de error se evita temporalmente según la ventana de duración especificada.
+
+
+
+.Después de terminar
+La ventana de mantenimiento no se inicia hasta que los servidores de AutoSupport procesan la solicitud de la cabina de almacenamiento. Espere hasta recibir un correo electrónico de confirmación antes de realizar actividades de mantenimiento en la cabina de almacenamiento.

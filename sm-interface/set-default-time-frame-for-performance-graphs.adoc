@@ -1,0 +1,23 @@
+---
+permalink: sm-interface/set-default-time-frame-for-performance-graphs.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, time, graphs 
+summary: Es posible cambiar el plazo predeterminado que se muestra en los gráficos de rendimiento. 
+---
+= Establecer el plazo predeterminado para los gráficos de rendimiento
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible cambiar el plazo predeterminado que se muestra en los gráficos de rendimiento.
+
+.Acerca de esta tarea
+Los gráficos de rendimiento que se muestran en la página Inicio y la página rendimiento indican inicialmente el plazo de 1 hora. Las preferencias se almacenan en un almacenamiento local del explorador para que todos los usuarios puedan tener su propia configuración.
+
+.Pasos
+. Seleccione MENU:Preferencias[establecer preferencias].
+. En la lista desplegable, seleccione *5 minutos*, *1 hora*, *8 horas*, *1 día* o *7 días*, y confirme que desea llevar a cabo la operación.
+

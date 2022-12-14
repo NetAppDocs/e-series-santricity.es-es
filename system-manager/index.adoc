@@ -1,0 +1,13 @@
+---
+layout: landing-page 
+sidebar: sidebar 
+permalink: system-manager/index.html 
+summary: La documentación del software SANtricity permite instalar, configurar y mantener la cabina de almacenamiento. 
+---
+= Gestión de cabinas únicas con System Manager 11.7
+:hardbreaks:
+:allow-uri-read: 
+:linkattrs: 
+:imagesdir: ./media/
+
+

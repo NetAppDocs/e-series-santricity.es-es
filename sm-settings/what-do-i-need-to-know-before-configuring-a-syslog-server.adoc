@@ -1,0 +1,23 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-before-configuring-a-syslog-server.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configuring, syslog, server, 
+summary: Es posible archivar registros de auditoría en un servidor de syslog externo. 
+---
+= ¿Qué debo saber antes de configurar un servidor de syslog?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible archivar registros de auditoría en un servidor de syslog externo.
+
+Antes de configurar un servidor de syslog, tenga en cuenta las siguientes directrices.
+
+* Asegúrese de conocer la dirección, el protocolo y el número de puerto del servidor. La dirección del servidor debe ser un nombre de dominio completo, una dirección IPv4 o una dirección IPv6.
+* Si el servidor usa un protocolo seguro (por ejemplo, TLS), debe haber disponible un certificado de entidad de certificación (CA) en el sistema local. Los certificados DE CA identifican propietarios de sitios web para lograr conexiones seguras entre servidores y clientes.
+* Después de la configuración, se envían todos los registros de auditoría nuevos al servidor de syslog. Los registros anteriores no se transfieren.
+* La configuración de la política de sobrescritura (disponible en *View/Edit Settings*) no afecta a la forma en que se gestionan los registros con una configuración de servidor syslog.
+* Los registros de auditoría tienen el formato de mensajería RFC 5424.
+

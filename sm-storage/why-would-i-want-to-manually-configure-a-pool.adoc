@@ -1,0 +1,28 @@
+---
+permalink: sm-storage/why-would-i-want-to-manually-configure-a-pool.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, manually, configure, pool 
+summary: Los ejemplos siguientes describen por qué se configuraría un pool de forma manual. 
+---
+= ¿Por qué debería configurar manualmente un pool?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los ejemplos siguientes describen por qué se configuraría un pool de forma manual.
+
+* Si tiene varias aplicaciones en la cabina de almacenamiento y no quiere que compitan por los mismos recursos de la unidad, puede considerar la creación manual de un pool más pequeño para una o varias de las aplicaciones.
++
+Puede asignar solo uno o dos volúmenes en lugar de asignar la carga de trabajo a un pool más grande que tiene varios volúmenes en los cuales se pueden distribuir los datos. La creación manual de un pool individual dedicado a la carga de trabajo de una aplicación específica puede permitir que las operaciones de cabina de almacenamiento sean más rápidas y con menos contención.
+
++
+Para crear manualmente un pool: Seleccione *almacenamiento* y, a continuación, seleccione *Pools y grupos de volúmenes*. En la pestaña toda la capacidad, haga clic en menu:Create[Pool].
+
+* Si hay varios pools del mismo tipo de unidad, se muestra un mensaje que indica que System Manager no puede recomendar automáticamente las unidades para un pool. Sin embargo, es posible añadir manualmente las unidades a un pool existente.
++
+Para añadir unidades manualmente a un pool existente: En la página Pools y grupos de volúmenes, seleccione el pool y haga clic en *Añadir capacidad*.
+
+

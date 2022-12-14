@@ -1,0 +1,38 @@
+---
+permalink: sm-settings/reset-management-certificates.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reset, management, certificates, 
+summary: Es posible revertir los certificados que se usan en las controladoras de los certificados firmados por CA a los certificados autofirmados de fábrica. 
+---
+= Restablezca los certificados de gestión
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible revertir los certificados que se usan en las controladoras de los certificados firmados por CA a los certificados autofirmados de fábrica.
+
+.Antes de empezar
+* Debe iniciar sesión con un perfil de usuario que cuente con permisos de administración de seguridad. De lo contrario, no se mostrarán las funciones de certificación.
+* Se deben importar de forma previa los certificados firmados por CA.
+
+
+.Acerca de esta tarea
+La función Restablecer elimina los archivos de certificados firmados por CA actuales de cada controladora. A continuación, las controladoras revierten al uso de certificados autofirmados.
+
+.Pasos
+. Seleccione MENU:Settings[Certificates].
+. En la ficha Administración de matrices, seleccione *Restablecer*.
++
+Se abre el cuadro de diálogo Confirmar restablecimiento de certificados de gestión.
+
+. Tipo `reset` En el campo y, a continuación, haga clic en *Restablecer*.
++
+Una vez que se actualiza el explorador, es posible que el explorador bloquee el acceso al sitio de destino e informe de que el sitio utiliza HTTP estricto Transport Security. Esta condición surge cuando se cambia a certificados autofirmados. Para borrar la condición que bloquea el acceso al destino, debe borrar los datos de navegación del explorador.
+
+
+
+.Resultados
+Las controladoras revierten al uso de certificados autofirmados. Como resultado, el sistema solicita a los usuarios que acepten manualmente el certificado autofirmado para sus sesiones.

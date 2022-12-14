@@ -1,0 +1,49 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-before-configuring-and-enabling-saml.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configuring, enabling, SAML, 
+summary: 'Antes de configurar y habilitar las funcionalidades de lenguaje de marcado de aserción de seguridad (SAML) para la autenticación, asegúrese de cumplir con los siguientes requisitos y comprender las restricciones de SAML.' 
+---
+= ¿Qué debo saber antes de configurar y habilitar SAML?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Antes de configurar y habilitar las funcionalidades de lenguaje de marcado de aserción de seguridad (SAML) para la autenticación, asegúrese de cumplir con los siguientes requisitos y comprender las restricciones de SAML.
+
+
+
+== Requisitos
+
+Antes de comenzar, compruebe lo siguiente:
+
+* Se configuró un proveedor de identidades (IDP) en la red. Un IDP es un sistema externo que se usa para solicitar credenciales a un usuario y determinar si el usuario se autentica correctamente. El equipo de seguridad es responsable de mantener el IDP.
+* Un administrador IDP configuró los atributos y los grupos del usuario en el sistema IDP.
+* Un administrador de IDP comprobó que el IDP admite la capacidad para obtener un ID de nombre en el momento de la autenticación.
+* Un administrador comprobó que los relojes del servidor de IDP y de la controladora están sincronizados (ya sea mediante un servidor NTP o mediante el ajuste de la configuración del reloj de la controladora).
+* Se descargó un archivo de metadatos de IDP del sistema de IDP y ese archivo está disponible en el sistema local que se usa para acceder a System Manager.
+* Conoce la dirección IP o el nombre de dominio de cada controladora de la cabina de almacenamiento.
+
+
+
+
+== Restricciones
+
+Además de los requisitos mencionados más arriba, asegúrese de comprender las siguientes restricciones:
+
+* Una vez que se habilita SAML, _no se puede deshabilitar desde la interfaz de usuario, tampoco se puede editar desde la configuración de IDP. Si necesita deshabilitar o editar la configuración de SAML, comuníquese con el soporte técnico para obtener ayuda. Se recomienda que pruebe los inicios de sesión SSO para poder habilitar SAML en el paso final de la configuración. (El sistema también hace una prueba de inicio de sesión SSO antes de habilitar SAML.)
+* Si deshabilita SAML en el futuro, el sistema restaura automáticamente la configuración anterior (local User roles o Directory Services).
+* Si Directory Services está actualmente configurado para la autenticación de usuario, SAML anula esa configuración.
+* Cuando se configura SAML, los siguientes clientes no pueden acceder a los recursos de la cabina de almacenamiento:
++
+** Enterprise Management Window (EMW)
+** Interfaz de línea de comandos (CLI)
+** Clientes de kits de desarrollo de software (SDK)
+** Clientes en banda
+** Clientes HTTP de la API de REST de autenticación básica
+** Inicio de sesión mediante extremo estándar de la API de REST
+
+
+

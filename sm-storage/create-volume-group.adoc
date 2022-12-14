@@ -1,0 +1,282 @@
+---
+permalink: sm-storage/create-volume-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, volume, group 
+summary: Es posible usar un grupo de volúmenes para crear uno o varios volúmenes a los que el host puede acceder. Un grupo de volúmenes es un contenedor para volúmenes con características compartidas, como nivel de RAID y capacidad. 
+---
+= Cree un grupo de volúmenes
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible usar un grupo de volúmenes para crear uno o varios volúmenes a los que el host puede acceder. Un grupo de volúmenes es un contenedor para volúmenes con características compartidas, como nivel de RAID y capacidad.
+
+Con unidades de mayor capacidad y la capacidad para distribuir volúmenes en controladoras, crear más de un volumen por grupo de volúmenes es una buena manera de utilizar la capacidad de almacenamiento y proteger los datos.
+
+.Antes de empezar
+Revise estas directrices para poder crear un grupo de volúmenes:
+
+* Se necesita al menos una unidad sin asignar.
+* Existen límites en la cantidad de unidades que se pueden tener en un único grupo de volúmenes. Estos límites varían según el nivel de RAID.
+* Para habilitar la protección de bandeja/cajón, debe crear un grupo de volúmenes que utilice unidades ubicadas en al menos tres bandejas o cajones, a menos que utilice RAID 1, donde dos bandejas/cajones es el valor mínimo.
+* Si tiene una cabina de almacenamiento EF600 o EF300 y piensa crear un grupo de volúmenes manualmente, asegúrese de que cada controladora tenga acceso a un mismo número de unidades en las primeras 12 ranuras y un mismo número de unidades en las últimas 12 ranuras. Esta configuración ayuda a las controladoras a usar ambos autobuses PCIe de la unidad de forma más eficaz. Actualmente, System Manager permite seleccionar unidades en la función Avanzada al crear un grupo de volúmenes.
+* Revise de qué manera la selección del nivel de RAID afecta a la capacidad resultante del grupo de volúmenes:
++
+** Si selecciona RAID 1, debe añadir dos unidades al mismo tiempo para asegurarse de que se haya seleccionado una pareja reflejada. Las operaciones de mirroring y segmentación (denominada RAID 10 o RAID 1+0) se logran cuando se seleccionan cuatro o más unidades.
+** Si selecciona RAID 5, debe añadir un mínimo de tres unidades para crear el grupo de volúmenes.
+** Si selecciona RAID 6, debe añadir un mínimo de cinco unidades para crear el grupo de volúmenes.
+
+
+
+
+.Pasos
+. Seleccione MENU:almacenamiento[Pools y grupos de volúmenes].
+. Haga clic en MENU:Create[Grupo de volúmenes].
++
+Se muestra el cuadro de diálogo Crear un grupo de volúmenes.
+
+. Escriba un nombre para el grupo de volúmenes.
+. Seleccione el nivel de RAID que mejor cumpla sus requisitos de almacenamiento y protección de datos.
++
+Aparece la tabla de candidatos del grupo de volúmenes, donde se muestran solo los candidatos compatibles con el nivel de RAID seleccionado.
+
+. *Opcional:* Si tiene más de un tipo de unidad en la matriz de almacenamiento, seleccione el tipo de unidad que desea utilizar.
++
+Aparece la tabla de candidatos del grupo de volúmenes, donde se muestran solo los candidatos compatibles con el tipo de unidad y el nivel de RAID seleccionados.
+
+. *Opcional:* puede seleccionar el método automático o el método manual para definir las unidades que se utilizarán en el grupo de volúmenes. El método automático es la selección predeterminada.
++
+Para seleccionar unidades manualmente, haga clic en el enlace *selección manual de unidades (avanzada)*. Al hacer clic en esta opción, cambia a *Seleccionar automáticamente unidades (avanzadas)*.
+
++
+El método manual permite seleccionar las unidades específicas que componen el grupo de volúmenes. Es posible seleccionar unidades sin asignar específicas para obtener la capacidad requerida. Si la cabina de almacenamiento contiene unidades con tipos de medios diferentes o tipos de interfaces diferentes, es posible seleccionar solo la capacidad sin configurar de un solo tipo de unidad para crear el grupo de volúmenes.
+
++
+[NOTE]
+====
+Solo los expertos que entienden la redundancia de unidades y las configuraciones de unidades óptimas deben usar el método manual.
+
+====
+. Según las características de la unidad que se muestran, seleccione las unidades que desea usar en el grupo de volúmenes y, a continuación, haga clic en *Crear*.
++
+Las características de la unidad que se muestran dependen de si se seleccionó el método automático o el método manual.
+
++
+.Características de unidades del método Automatic
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Característica | Uso 
+
+
+ a| 
+Capacidad libre
+ a| 
+Muestra la capacidad disponible en GIB. Seleccione un candidato de grupo de volúmenes con capacidad para las necesidades de almacenamiento de la aplicación.
+
+
+
+ a| 
+Unidades totales
+ a| 
+Muestra la cantidad de unidades disponibles para este grupo de volúmenes. Seleccione un candidato de grupo de volúmenes con la cantidad de unidades que desea.
+
+
+
+ a| 
+Tamaño de bloque de unidad (solo EF300 y EF600)
+ a| 
+Muestra el tamaño de bloque (tamaño de sector) que las unidades del grupo pueden escribir. Los valores pueden incluir:
+
+** 512 -- tamaño del sector de 512 bytes.
+** 4K: Tamaño del sector de 4,096 bytes.
+
+
+
+
+ a| 
+Compatible con la función de seguridad
+ a| 
+Indica si este candidato de grupo de volúmenes está compuesto enteramente por unidades compatibles con la función de seguridad, que pueden ser unidades de cifrado de disco completo (FDE) o unidades de estándar de procesamiento de información federal (FIPS).
+
+** Es posible proteger un grupo de volúmenes con Drive Security, pero todas las unidades deben ser compatibles con la función de seguridad para usar esa función.
+** Si desea crear un grupo de volúmenes solo con FDE, busque *Sí - FDE* en la columna compatible con la función de seguridad. Si desea crear un grupo de volúmenes solo con FIPS, busque *Sí - FIPS* o *Sí - FIPS (mixta)*. "Mixto" indica una combinación de unidades de 140-2 y 140-3 niveles. Si usa una combinación de estos niveles, tenga en cuenta que el grupo de volúmenes luego funcionará con el nivel de seguridad más bajo (140-2).
+** Puede crear un grupo de volúmenes compuesto por unidades que sean compatibles con la función de seguridad o no, o que presenten una combinación de niveles de seguridad. Si las unidades del grupo de volúmenes incluyen unidades que no son compatibles con la función de seguridad, el grupo de volúmenes no podrá ser seguro.
+
+
+
+
+ a| 
+Habilitar seguridad?
+ a| 
+Ofrece la opción de habilitar la función Drive Security con unidades que sean compatibles con la función de seguridad. Si el grupo de volúmenes es compatible con la función de seguridad y se configuró una clave de seguridad, seleccione la casilla de comprobación para habilitar Drive Security.
+
+
+NOTE: La única manera de eliminar Drive Security después de habilitarla es eliminar el grupo de volúmenes y borrar las unidades.
+
+
+
+ a| 
+Compatible con DA
+ a| 
+Indica si Data Assurance (DA) está disponible para el grupo. La garantía de datos (DA) comprueba y corrige los errores que se pueden producir durante la transferencia de datos a través de las controladoras hasta las unidades.
+
+Si desea usar DA, seleccione un grupo de volúmenes con capacidad DA. (Para unidades compatibles con DA, LA función DA se habilita automáticamente en los volúmenes creados en el pool).
+
+Un grupo de volúmenes puede contener unidades con o sin capacidad DA, pero todas las unidades deben poseer capacidad DA para que pueda usarse esta función.
+
+
+
+ a| 
+Capacidad de aprovisionamiento de recursos (solo EF300 y EF600)
+ a| 
+Muestra si el aprovisionamiento de recursos está disponible para este grupo. El aprovisionamiento de recursos es una función disponible en las cabinas de almacenamiento EF300 y EF600, lo que permite poner en uso los volúmenes de inmediato sin proceso de inicialización en segundo plano.
+
+
+
+ a| 
+Protección contra pérdida de bandeja
+ a| 
+Indica si la protección contra pérdida de bandeja está disponible. La protección contra pérdida de bandeja garantiza accesibilidad a los datos en los volúmenes de un grupo de volúmenes si se produce una pérdida total de comunicación con una bandeja.
+
+
+
+ a| 
+Protección contra pérdida de cajón
+ a| 
+Muestra si la protección contra pérdida de cajón está disponible, que solo se ofrece si se utiliza una bandeja de unidades que contiene cajones. La protección contra pérdida de cajón garantiza accesibilidad a los datos en los volúmenes de un grupo de volúmenes si se produce una pérdida total de comunicación con un solo cajón en una bandeja de unidades.
+
+
+
+ a| 
+Tamaños de bloque de volumen compatibles (solo EF300 y EF600)
+ a| 
+Muestra los tamaños de bloque que se pueden crear para los volúmenes del grupo:
+
+** 512n -- 512 bytes nativos.
+** 512e -- emulado 512 bytes.
+** 4K -- 4,096 bytes.
+
+
+|===
+====
++
+.Características de unidades del método Manual
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Característica | Uso 
+
+
+ a| 
+Tipo de medios
+ a| 
+Indica el tipo de medio. Se admiten los siguientes tipos de medios:
+
+** Unidad de disco duro
+** Unidad de estado sólido (SSD)
+
+
+Un grupo de volúmenes debe contener unidades de un mismo tipo de medio (todos discos SSD o todas unidades de disco duro). Un grupo de volúmenes no puede contener una combinación de tipos de medios o tipos de interfaces.
+
+
+
+ a| 
+Tamaño de bloque de unidad (solo EF300 y EF600)
+ a| 
+Muestra el tamaño de bloque (tamaño de sector) que las unidades del grupo pueden escribir. Los valores pueden incluir:
+
+** 512 -- tamaño del sector de 512 bytes.
+** 4K: Tamaño del sector de 4,096 bytes.
+
+
+
+
+ a| 
+Capacidad de unidad
+ a| 
+Indica la capacidad de la unidad.
+
+** Siempre que sea posible, seleccione unidades con una capacidad igual a la de las unidades actuales en el grupo de volúmenes.
+** Si debe añadir unidades sin asignar con una capacidad menor, tenga en cuenta que se reducirá la capacidad utilizable de cada unidad actual en el grupo de volúmenes. Por lo tanto, la capacidad de las unidades es la misma en todo el grupo de volúmenes.
+** Si debe añadir unidades sin asignar con una capacidad mayor, tenga en cuenta que se reducirá la capacidad utilizable de las unidades sin asignar que añada para que coincida con las capacidades actuales de las unidades en el grupo de volúmenes.
+
+
+
+
+ a| 
+Soporte
+ a| 
+Indica la ubicación del soporte de la unidad.
+
+
+
+ a| 
+Ranura
+ a| 
+Indica la ubicación de la ranura de la unidad.
+
+
+
+ a| 
+Velocidad (RPM)
+ a| 
+Indica la velocidad de la unidad.
+
+
+
+ a| 
+Tamaño de sector lógico
+ a| 
+Indica el tamaño y el formato del sector.
+
+
+
+ a| 
+Compatible con la función de seguridad
+ a| 
+Indica si este candidato de grupo de volúmenes está compuesto enteramente por unidades compatibles con la función de seguridad, que pueden ser unidades de cifrado de disco completo (FDE) o unidades de estándar de procesamiento de información federal (FIPS).
+
+** Es posible proteger un grupo de volúmenes con Drive Security, pero todas las unidades deben ser compatibles con la función de seguridad para usar esa función.
+** Si desea crear un grupo de volúmenes solo con FDE, busque *Sí - FDE* en la columna compatible con la función de seguridad. Si desea crear un grupo de volúmenes solo con FIPS, busque *Sí - FIPS* o *Sí - FIPS (mixta)*. "Mixto" indica una combinación de unidades de 140-2 y 140-3 niveles. Si usa una combinación de estos niveles, tenga en cuenta que el grupo de volúmenes luego funcionará con el nivel de seguridad más bajo (140-2).
+** Puede crear un grupo de volúmenes compuesto por unidades que sean compatibles con la función de seguridad o no, o que presenten una combinación de niveles de seguridad. Si las unidades del grupo de volúmenes incluyen unidades que no son compatibles con la función de seguridad, el grupo de volúmenes no podrá ser seguro.
+
+
+
+
+ a| 
+Compatible con DA
+ a| 
+Indica si Data Assurance (DA) está disponible para el grupo. La garantía de datos (DA) comprueba y corrige los errores que se pueden producir durante la comunicación de los datos a través de las controladoras hasta las unidades.
+
+Si desea usar DA, seleccione un grupo de volúmenes con capacidad DA. (Para unidades compatibles con DA, LA función DA se habilita automáticamente en los volúmenes creados en el pool).
+
+Un grupo de volúmenes puede contener unidades con o sin capacidad DA, pero todas las unidades deben poseer capacidad DA para que pueda usarse esta función.
+
+
+
+ a| 
+Tamaños de bloque de volumen compatibles (solo EF300 y EF600)
+ a| 
+Muestra los tamaños de bloque que se pueden crear para los volúmenes del grupo:
+
+** 512n -- 512 bytes nativos.
+** 512e -- emulado 512 bytes.
+** 4K -- 4,096 bytes.
+
+
+
+
+ a| 
+Capacidad de aprovisionamiento de recursos (solo EF300 y EF600)
+ a| 
+Muestra si el aprovisionamiento de recursos está disponible para este grupo. El aprovisionamiento de recursos es una función disponible en las cabinas de almacenamiento EF300 y EF600, lo que permite poner en uso los volúmenes de inmediato sin proceso de inicialización en segundo plano.
+
+|===
+====
+

@@ -1,0 +1,86 @@
+---
+permalink: sm-mirroring/asynchronous-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, asynchronous, mirroring, terms, 
+summary: Conozca la forma en que los términos de mirroring asíncrono se aplican a su cabina de almacenamiento. 
+---
+= Terminología de mirroring asíncrono
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Conozca la forma en que los términos de mirroring asíncrono se aplican a su cabina de almacenamiento.
+
+[cols="25h,~"]
+|===
+| Duración | Descripción 
+
+
+ a| 
+Cabina de almacenamiento local
+ a| 
+La cabina de almacenamiento local es aquella sobre la que se actúa en el momento.
+
+Cuando se observa *primario* en la columna rol local, la cabina de almacenamiento contiene el volumen que tiene el rol primario en la relación de reflejo. Cuando se observa *secundario* en la columna rol local, la cabina de almacenamiento contiene el volumen que tiene el rol secundario en la relación de reflejo.
+
+
+
+ a| 
+Grupo de coherencia de reflejos
+ a| 
+Un grupo de coherencia de reflejos es un contenedor para una o más parejas reflejadas. Para las operaciones de mirroring asíncrono, se debe crear un grupo de coherencia de reflejos.
+
+
+
+ a| 
+Pareja reflejada
+ a| 
+Una pareja reflejada comprende dos volúmenes: Un volumen primario y uno secundario.
+
+En el mirroring asíncrono, una pareja reflejada siempre pertenece a un grupo de coherencia de reflejos. Primero, se realizan las operaciones de escritura en el volumen primario y, luego, se replican en el secundario. Cada pareja reflejada de un grupo de coherencia de reflejos comparte la misma configuración de sincronización.
+
+
+
+ a| 
+Volumen primario
+ a| 
+El volumen primario de una pareja reflejada es el volumen de origen que se reflejará.
+
+
+
+ a| 
+Cabina de almacenamiento remota
+ a| 
+La cabina de almacenamiento remota se designa normalmente como el sitio secundario, que normalmente contiene una réplica de los datos en una configuración de mirroring.
+
+
+
+ a| 
+Capacidad reservada
+ a| 
+La capacidad reservada es la capacidad física asignada que se usa para cualquier operación de servicio de copia y objeto de almacenamiento. El host no puede leerla directamente.
+
+
+
+ a| 
+Cambio de roles
+ a| 
+El cambio de rol es asignar el rol primario al volumen secundario y viceversa.
+
+
+
+ a| 
+Volumen secundario
+ a| 
+El volumen secundario de una pareja reflejada está normalmente ubicado en un sitio secundario y contiene una réplica de los datos.
+
+
+
+ a| 
+Sincronización
+ a| 
+La sincronización se produce en la sincronización inicial entre la cabina de almacenamiento local y la cabina de almacenamiento remota. La sincronización también se produce cuando los volúmenes primario y secundario dejan de estar sincronizados después de una interrupción de comunicación. Cuando el enlace de comunicación se restablece, todos los datos sin replicar se sincronizan con la cabina de almacenamiento del volumen secundario.
+
+|===

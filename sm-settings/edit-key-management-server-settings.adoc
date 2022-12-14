@@ -1,0 +1,30 @@
+---
+permalink: sm-settings/edit-key-management-server-settings.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, edit, key, management, server, settings, 
+summary: Si configuró la gestión de claves externas, es posible ver y editar los ajustes del servidor de gestión de claves en cualquier momento. 
+---
+= Editar configuración del servidor de gestión de claves
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si configuró la gestión de claves externas, es posible ver y editar los ajustes del servidor de gestión de claves en cualquier momento.
+
+.Pasos
+. Seleccione MENU:Settings[System].
+. En *Gestión de claves de seguridad*, seleccione *Ver/editar configuración del servidor de administración de claves*.
+. Edite la información en los siguientes campos:
++
+** *Dirección del servidor de administración de claves* -- Introduzca el nombre de dominio completo o la dirección IP (IPv4 o IPv6) del servidor utilizado para la administración de claves.
+** *Número de puerto de administración de claves* -- Introduzca el número de puerto utilizado para las comunicaciones del Protocolo de interoperabilidad de administración de claves (KMIP).
++
+*Opcional:* puede incluir otro servidor de claves haciendo clic en *Agregar servidor de claves*.
+
+
+
+. Haga clic en *Guardar*.
+

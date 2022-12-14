@@ -1,0 +1,19 @@
+---
+permalink: sm-storage/is-there-a-limit-on-the-number-of-drives-i-can-remove-from-a-pool.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, limit, number, pool, drive, 
+summary: System Manager establece límites en cuanto a la cantidad de unidades que pueden eliminarse de un pool. 
+---
+= ¿Existe un límite para la cantidad de unidades que pueden eliminarse de un pool?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager establece límites en cuanto a la cantidad de unidades que pueden eliminarse de un pool.
+
+* No se puede reducir la cantidad de unidades en un pool a menos de 11.
+* No se pueden eliminar unidades si no hay suficiente capacidad libre en el pool para contener los datos de las unidades eliminadas cuando esos datos se redistribuyen a las unidades restantes del pool.
+* Es posible eliminar un máximo de 60 unidades al mismo tiempo. Si selecciona más de 60, se deshabilitará la opción Quitar unidades. Si necesita eliminar más de 60 unidades, repita la operación Quitar unidades.
+

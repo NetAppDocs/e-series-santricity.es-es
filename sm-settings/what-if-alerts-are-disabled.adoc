@@ -1,0 +1,16 @@
+---
+permalink: sm-settings/what-if-alerts-are-disabled.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, alerts, disabled, 
+summary: Si desea que los administradores reciban notificaciones sobre eventos importantes que suceden en la cabina de almacenamiento, se debe configurar un método de alerta. 
+---
+= ¿Qué sucede si se deshabilitan las alertas?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si desea que los administradores reciban notificaciones sobre eventos importantes que suceden en la cabina de almacenamiento, se debe configurar un método de alerta.
+
+Para las cabinas de almacenamiento gestionadas con SANtricity System Manager, es posible configurar alertas desde la página Alertas. Las notificaciones de alerta se pueden enviar por correo electrónico, capturas SNMP o mensajes de syslog. Además, las alertas por correo electrónico pueden configurarse desde el asistente de configuración inicial.

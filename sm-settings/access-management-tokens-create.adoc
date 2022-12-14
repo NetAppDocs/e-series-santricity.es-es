@@ -1,0 +1,58 @@
+---
+permalink: sm-settings/access-management-tokens-create.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access management, create tokens 
+summary: Puede crear tokens de acceso, que se utilizan para autenticar con la API DE REST o la interfaz de línea de comandos en lugar de un nombre de usuario y una contraseña. 
+---
+= Cree tokens de acceso
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede crear un token de acceso para la autenticación con la API DE REST o la interfaz de línea de comandos (CLI) en lugar de un nombre de usuario y una contraseña.
+
+
+NOTE: Los tokens no tienen contraseñas, por lo que debe administrarlas con cuidado.
+
+.Pasos
+. Seleccione MENU:Settings[Access Management].
+. Seleccione la ficha *tokens de acceso*.
+. Seleccione *Ver/editar configuración de token de acceso*. En el cuadro de diálogo, asegúrese de que la casilla de verificación *Habilitar tokens de acceso* está activada. Haga clic en *Guardar* para cerrar el cuadro de diálogo.
+. Seleccione *Crear símbolo de acceso*.
+. En el cuadro de diálogo, seleccione la duración del token que será válido.
++
+
+NOTE: Cuando caduque el token, se producirá un error en los intentos de autenticación del usuario.
+
+. Haga clic en *Crear.*
+. En el cuadro de diálogo, seleccione una de las siguientes opciones:
++
+** *Copiar* para guardar el texto del token en el portapapeles.
+** *Descargar* para guardar el texto del token en un archivo.
++
+
+NOTE: Asegúrese de guardar el texto del token. Esta es la única oportunidad para ver el texto antes de cerrar el diálogo.
+
+
+
+. Haga clic en *Cerrar*.
+. Utilice el token de la siguiente manera:
++
+** *API REST*: Para utilizar un token en una solicitud de API REST, agregue un encabezado HTTP a sus solicitudes. Por ejemplo:
+`Authorization: Bearer _<access-token-value>_`
+** *Secure CLI*: Para utilizar un token en la CLI, agregue el valor de token en la línea de comandos o utilice la ruta de acceso a un archivo que contenga el valor de token. Por ejemplo:
++
+*** Valor de token en la línea de comandos: `-t _access-token-value_`
+*** Ruta de acceso a un archivo que contiene el valor de token: `-T _access-token-file_`
++
+
+NOTE: La interfaz de línea de comandos solicita al usuario un valor de token de acceso en la línea de comandos si no se especifica ningún nombre de usuario, contraseña ni token.
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+---
+permalink: sm-storage/why-cant-i-choose-another-amount-to-decrease-by.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, decrease, reserved capacity 
+summary: Es posible reducir la capacidad reservada solo en la cantidad que se utilizó para aumentarla. La capacidad reservada de los volúmenes miembro puede quitarse solo en el orden inverso al que se añadió. 
+---
+= ¿Por qué no puedo elegir otra cantidad para disminuirla?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible reducir la capacidad reservada solo en la cantidad que se utilizó para aumentarla. La capacidad reservada de los volúmenes miembro puede quitarse solo en el orden inverso al que se añadió.
+
+No es posible reducir la capacidad reservada de un objeto de almacenamiento si se da alguna de las condiciones siguientes:
+
+* Si el objeto de almacenamiento es un volumen de pareja reflejada.
+* Si el objeto de almacenamiento contiene solo un volumen para la capacidad reservada. El objeto de almacenamiento debe contener al menos dos volúmenes para la capacidad reservada.
+* Si el objeto de almacenamiento es un volumen Snapshot deshabilitado.
+* Si el objeto de almacenamiento contiene una o más imágenes Snapshot asociadas.
+
+
+Solo se pueden quitar volúmenes de capacidad reservada en el orden inverso al que se añadieron.
+
+No es posible reducir la capacidad reservada de un volumen Snapshot de solo lectura, ya que no tiene ninguna capacidad reservada asociada. Solo los volúmenes Snapshot que son de lectura y escritura requieren capacidad reservada.

@@ -1,0 +1,17 @@
+---
+permalink: sm-settings/how-do-i-configure-snmp-or-syslog-alerts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, snmp, syslog, alerts, 
+summary: 'Además de las alertas por correo electrónico, es posible configurar el envío de alertas mediante capturas de protocolo simple de gestión de redes (SNMP) o mensajes de syslog.' 
+---
+= ¿Cómo se configuran las alertas de SNMP o syslog?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Además de las alertas por correo electrónico, es posible configurar el envío de alertas mediante capturas de protocolo simple de gestión de redes (SNMP) o mensajes de syslog.
+
+Para configurar las alertas de SNMP o syslog, vaya a MENU:Configuración[Alertas].

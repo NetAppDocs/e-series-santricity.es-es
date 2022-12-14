@@ -1,0 +1,129 @@
+---
+permalink: um-manage/discover-multiple-arrays.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, discover, multiple, storage, arrays 
+summary: Detecte varias cabinas para descubrir todas las cabinas de almacenamiento de la subred donde reside el servidor de gestión y añadir automáticamente las cabinas detectadas al dominio de gestión. 
+---
+= Detectar varias cabinas de almacenamiento
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Detecte varias cabinas para descubrir todas las cabinas de almacenamiento de la subred donde reside el servidor de gestión y añadir automáticamente las cabinas detectadas al dominio de gestión.
+
+.Antes de empezar
+* Inició sesión con un perfil de usuario que cuenta con permisos de administración de seguridad.
+* La cabina de almacenamiento debe estar instalada y configurada correctamente.
+* Las contraseñas de las cabinas de almacenamiento deben configurarse mediante el icono Access Management de System Manager.
+* Para resolver certificados que no son de confianza, debe tener archivos de certificado de confianza de una entidad de certificación (CA) y los archivos de certificado están disponibles en el sistema local.
+
+
+La detección de cabinas es un procedimiento de varios pasos.
+
+
+
+== Paso 1: Introduzca la dirección de red
+
+Se debe introducir un rango de direcciones de red para buscar dentro de la subred local. Todas las cabinas a las que se puede acceder correctamente se muestran en la página detectar, y se pueden añadir al dominio de gestión.
+
+Si necesita detener la operación de detección por cualquier motivo, haga clic en *Detener detección*.
+
+.Pasos
+. En la página gestionar, seleccione *Agregar/detectar*.
++
+Se muestra el cuadro de diálogo Añadir/detectar.
+
+. Seleccione el botón de opción *detectar todas las cabinas de almacenamiento en un rango de red*.
+. Introduzca la dirección de red inicial y la dirección de red final para buscar en la subred local y, a continuación, haga clic en *Iniciar detección*.
++
+Se inicia el proceso de detección. El proceso puede tardar varios minutos en completarse. La tabla de la página detectar se carga a medida que se van detectando las cabinas de almacenamiento.
+
++
+[NOTE]
+====
+Si no se detectan cabinas gestionables, compruebe que las cabinas de almacenamiento estén bien conectadas a la red y que las direcciones asignadas se encuentren dentro del rango correspondiente. Haga clic en *nuevos parámetros de descubrimiento* para volver a la página Agregar/detectar.
+
+====
+. Revise la lista de cabinas de almacenamiento detectadas.
+. Marque la casilla de comprobación junto a la cabina de almacenamiento que desea añadir al dominio de gestión y haga clic en *Siguiente*.
++
+Unified Manager comprueba las credenciales de cada cabina que se añade al dominio de gestión. Es posible que deba resolver los certificados autofirmados y los certificados no confiables que estén asociados con esa cabina.
+
+. Haga clic en *Siguiente* para continuar con el siguiente paso del asistente.
+
+
+
+
+== Paso 2: Resuelva los certificados autofirmados durante la detección
+
+Como parte del proceso de detección, el sistema comprueba que las cabinas de almacenamiento estén usando certificados de un origen de confianza.
+
+.Pasos
+. Debe realizar una de las siguientes acciones:
++
+** Si confía en las conexiones con las cabinas de almacenamiento detectadas, continúe a la siguiente tarjeta del asistente. Los certificados autofirmados se marcarán como certificados de confianza y las cabinas de almacenamiento se añadirán a Unified Manager.
+** Si no confía en dichas conexiones, seleccione *Cancelar* y valide la estrategia de certificado de seguridad de cada cabina de almacenamiento antes de añadir cualquiera de ellas a Unified Manager.
+
+
+. Haga clic en *Siguiente* para continuar con el siguiente paso del asistente.
+
+
+
+
+== Paso 3: Resolver certificados que no son de confianza durante la detección
+
+Los certificados dejan de ser de confianza cuando una cabina de almacenamiento intenta establecer una conexión con Unified Manager, pero no se confirma que la conexión sea segura. Durante el proceso de detección de cabinas, puede resolver certificados que no son de confianza al importar un certificado de una entidad de certificación (CA) (o certificado firmado por CA) que emitió un tercero de confianza.
+
+Es posible que necesite instalar otros certificados de CA de confianza si se da alguna de las siguientes condiciones:
+
+* Añadió recientemente una cabina de almacenamiento.
+* Uno o ambos certificados caducaron.
+* Uno o ambos certificados fueron revocados.
+* Falta un certificado raíz o intermedio en uno o ambos certificados.
+
+
+.Pasos
+. Marque la casilla de comprobación junto a una cabina de almacenamiento para la cual desee resolver certificados que no son de confianza; a continuación, seleccione el botón **Importar**.
++
+Se abre un cuadro de diálogo para importar los archivos de certificado de confianza.
+
+. Haga clic en *examinar* para seleccionar los archivos de certificado para las matrices de almacenamiento.
++
+Se muestran los nombres de los archivos en el cuadro de diálogo.
+
+. Haga clic en *Importar*.
++
+Los archivos se cargan y validan.
+
++
+[NOTE]
+====
+Si una cabina de almacenamiento tiene problemas de certificados que no son de confianza y aún no se han resuelto, no se podrá añadir a Unified Manager.
+
+====
+. Haga clic en *Siguiente* para continuar con el siguiente paso del asistente.
+
+
+
+
+== Paso 4: Proporcionar contraseñas
+
+Debe introducir las contraseñas de las cabinas de almacenamiento que desea añadir al dominio de gestión.
+
+.Pasos
+. Introduzca la contraseña para cada cabina de almacenamiento que desea añadir a Unified Manager.
+. *Opcional:* asocie las matrices de almacenamiento a un grupo: En la lista desplegable, seleccione el grupo que desee asociar a las matrices de almacenamiento seleccionadas.
+. Haga clic en *Finalizar*.
+
+
+.Después de terminar
+Las cabinas de almacenamiento se añaden al dominio de gestión y se asocian con el grupo seleccionado (si se especificó alguno).
+
+[NOTE]
+====
+Unified Manager puede tardar varios minutos en conectarse a las cabinas de almacenamiento especificadas.
+
+====

@@ -1,0 +1,223 @@
+---
+permalink: sm-storage/schedule-snapshot-images.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, schedule, snapshot, images 
+summary: Es posible crear una programación Snapshot para habilitar la recuperación por un problema con el volumen base y para ejecutar backups programados. Se pueden crear Snapshot de volúmenes base o grupos de coherencia Snapshot a diario, semanal o mensualmente, a cualquier hora del día. 
+---
+= Programar imágenes Snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible crear una programación Snapshot para habilitar la recuperación por un problema con el volumen base y para ejecutar backups programados. Se pueden crear Snapshot de volúmenes base o grupos de coherencia Snapshot a diario, semanal o mensualmente, a cualquier hora del día.
+
+.Antes de empezar
+El estado del volumen base debe ser óptima.
+
+.Acerca de esta tarea
+En esta tarea, se describe la forma de crear una programación Snapshot para un volumen base o un grupo de coherencia Snapshot existente.
+
+[NOTE]
+====
+También se puede crear una programación Snapshot en el mismo momento que se crea una imagen Snapshot de un volumen base o un grupo de coherencia Snapshot.
+
+====
+.Pasos
+. Realice una de las siguientes acciones para crear una programación Snapshot:
++
+** Seleccione MENU:Storage[Volumes].
++
+Seleccione el objeto (volumen o grupo de coherencia Snapshot) para esta programación Snapshot y haga clic en menu:Servicios de copia[Crear programación Snapshot].
+
+** Seleccione MENU:Storage[Snapshots].
++
+Seleccione la ficha *programas* y haga clic en *Crear*.
+
+
+
+. Seleccione el objeto (volumen o grupo de coherencia Snapshot) para esta programación Snapshot y haga clic en *Siguiente*.
++
+Se muestra el cuadro de diálogo Crear programación Snapshot.
+
+. Realice una de las siguientes acciones:
++
+** *Utilice una programación definida anteriormente de otro objeto de instantánea*.
++
+Asegúrese de que se muestren las opciones avanzadas. Haga clic en *Mostrar más opciones*. Haga clic en *Importar programación*, seleccione el objeto con la programación que desea importar y, a continuación, haga clic en *Importar*.
+
+** *Modificar las opciones básicas o avanzadas*.
++
+En la esquina superior derecha del cuadro de diálogo, haga clic en *Mostrar más opciones* para ver todas las opciones y, a continuación, consulte la siguiente tabla.
+
+
+
++
+.Detalles del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Campo | Descripción 
+
+
+ a| 
+*Ajustes básicos*
+
+
+
+ a| 
+Seleccione días
+ a| 
+Seleccione días individuales de la semana para las imágenes Snapshot.
+
+
+
+ a| 
+Hora de inicio
+ a| 
+En la lista desplegable, seleccione una nueva hora de inicio para las Snapshot diarias (se proporcionan opciones en incrementos de media hora). La hora de inicio predeterminada es media hora antes de la hora actual.
+
+
+
+ a| 
+Zona horaria
+ a| 
+En la lista desplegable, seleccione la zona horaria de su cabina.
+
+
+
+ a| 
+*Ajustes avanzados*
+
+
+
+ a| 
+Día / mes
+ a| 
+Seleccione una de las siguientes opciones:
+
+** *Diario / Semanal* -- Seleccione días individuales para la sincronización de instantáneas. También puede seleccionar la casilla de verificación *Seleccionar todos los días* en la parte superior derecha si desea una programación diaria.
+** *Mensual / Anual* -- Seleccione meses individuales para las instantáneas de sincronización. En el campo *el día*, introduzca los días del mes para ejecutar las sincronizaciones. Las entradas válidas son de *1* a *31* y *último*. Puede separar varios días con coma o punto y coma. Utilice un guion para indicar fechas inclusivas. Por ejemplo: 1,3,4,10-15,último. También puede seleccionar la casilla de verificación *Seleccionar todos los meses* en la parte superior derecha si desea una programación mensual.
+
+
+
+
+ a| 
+Hora de inicio
+ a| 
+En la lista desplegable, seleccione una nueva hora de inicio para las Snapshot diarias (se proporcionan opciones en incrementos de media hora). La hora de inicio predeterminada es media hora antes de la hora actual.
+
+
+
+ a| 
+Zona horaria
+ a| 
+En la lista desplegable, seleccione la zona horaria de su cabina.
+
+
+
+ a| 
+Snapshot por día/tiempo entre snapshots
+ a| 
+Seleccione la cantidad de imágenes Snapshot que desea crear por día. Si selecciona más de una, seleccione también la hora entre una imagen Snapshot y otra. Si desea crear varias imágenes Snapshot, asegúrese de disponer de capacidad reservada suficiente.
+
+
+
+ a| 
+Crear imagen Snapshot ahora mismo?
+ a| 
+Seleccione esta casilla de comprobación para crear una imagen instantánea además de las imágenes automáticas programadas.
+
+
+
+ a| 
+Start/End date o no end date
+ a| 
+Introduzca la fecha de inicio para que comiencen las sincronizaciones. Introduzca también una fecha de finalización o seleccione *sin fecha de finalización*.
+
+|===
+====
+. Realice una de las siguientes acciones:
++
+** Si el objeto es un grupo de coherencia de instantánea, haga clic en *Crear* para aceptar la configuración y crear la programación.
+** Si el objeto es un volumen, haga clic en *Siguiente* para asignar capacidad reservada a las imágenes Snapshot.
++
+En la tabla Volume Candidate, solo se muestran los candidatos que admiten la capacidad reservada especificada. La capacidad reservada es la capacidad física asignada que se usa para cualquier operación de servicio de copia y objeto de almacenamiento. El host no puede leerla directamente.
+
+
+
+. Utilice el cuadro de desplazamiento para asignar capacidad reservada a las imágenes Snapshot. Realice una de las siguientes acciones:
++
+** *Acepte la configuración predeterminada.*
++
+Utilice esta opción recomendada para asignar capacidad reservada a las imágenes Snapshot con la configuración predeterminada.
+
+** *Asigne su propia configuración de capacidad reservada para satisfacer sus necesidades de almacenamiento de datos.*
++
+Si cambia los ajustes predeterminados de capacidad reservada, haga clic en *Actualizar candidatos* para actualizar la lista de candidatos de la capacidad reservada que especificó.
+
++
+Utilice las siguientes directrices para asignar la capacidad reservada:
+
++
+*** La configuración predeterminada para la capacidad reservada es del 40 % del volumen base. Por lo general, esta capacidad es suficiente.
+*** La capacidad necesaria varía, según la frecuencia y el tamaño de escrituras de I/o en los volúmenes y la cantidad y la duración de la recogida de imágenes Snapshot.
+
+
+
+
+. Haga clic en *Siguiente*.
++
+Se muestra el cuadro de diálogo Editar configuración.
+
+. Edite la configuración de la programación de instantáneas según sea necesario y, a continuación, haga clic en *Finalizar*.
++
+.Detalles del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Ajuste | Descripción 
+
+
+ a| 
+*Límite de imagen Snapshot*
+
+
+
+ a| 
+Habilitar la eliminación automática de imágenes Snapshot cuando...
+ a| 
+Deje seleccionada la casilla de comprobación si desea que las imágenes Snapshot se eliminen automáticamente después del límite especificado; use el cuadro de desplazamiento para cambiar el límite. Si desmarca esta casilla de comprobación, la creación de imágenes Snapshot se detiene después de 32 imágenes.
+
+
+
+ a| 
+*Ajustes de capacidad reservada*
+
+
+
+ a| 
+Enviarme una alerta cuando...
+ a| 
+Utilice el cuadro de desplazamiento para ajustar el punto porcentual en el que el sistema debe enviar una notificación de alerta si la capacidad reservada para una programación está casi completa.
+
+Cuando la capacidad reservada para la programación supere el umbral especificado, utilice los avisos por adelantado para aumentar la capacidad reservada o eliminar los objetos innecesarios antes de agotar el espacio restante.
+
+
+
+ a| 
+Política para capacidad reservada completa
+ a| 
+Seleccione una de las siguientes políticas:
+
+** *Purga la imagen Snapshot más antigua* -- el sistema purga automáticamente la imagen Snapshot más antigua, lo que libera la capacidad reservada de la imagen Snapshot para que se pueda reutilizar dentro del grupo Snapshot.
+** *Rechazar escrituras en volumen base*: Cuando la capacidad reservada alcanza el porcentaje máximo definido, el sistema rechaza cualquier solicitud de escritura de I/o en el volumen base que activó el acceso a la capacidad reservada.
+
+
+|===
+====
+

@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/why-would-i-disable-a-snapshot-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, disable, snapshot, volume 
+summary: El volumen Snapshot se deshabilita cuando se desea asignar un volumen Snapshot diferente a la imagen Snapshot. Se puede reservar el volumen Snapshot deshabilitado para usarlo más adelante. 
+---
+= ¿Por qué debería deshabilitar un volumen Snapshot?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El volumen Snapshot se deshabilita cuando se desea asignar un volumen Snapshot diferente a la imagen Snapshot. Se puede reservar el volumen Snapshot deshabilitado para usarlo más adelante.
+
+Si ya no necesita el volumen Snapshot o el volumen Snapshot del grupo de coherencia y no tiene intenciones de volver a crear ese volumen más adelante, debe eliminar el volumen en lugar de deshabilitarlo.

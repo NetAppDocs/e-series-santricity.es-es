@@ -1,0 +1,87 @@
+---
+permalink: sm-settings/create-internal-security-key.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, internal, security, key, 
+summary: Para usar la función Drive Security, se puede crear una clave de seguridad interna que compartan las controladoras y las unidades compatibles con la función de seguridad de la cabina de almacenamiento. Las claves internas se conservan en la memoria persistente de la controladora. 
+---
+= Cree una clave de seguridad interna
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para usar la función Drive Security, se puede crear una clave de seguridad interna que compartan las controladoras y las unidades compatibles con la función de seguridad de la cabina de almacenamiento. Las claves internas se conservan en la memoria persistente de la controladora.
+
+.Antes de empezar
+* Se deben instalar unidades compatibles con la función de seguridad en la cabina de almacenamiento. Estas unidades pueden ser de cifrado de disco completo (FDE) o de estándar de procesamiento de información federal (FIPS).
+* Se debe habilitar la función Drive Security. De lo contrario, se abre el cuadro de diálogo no puede crearse una clave de seguridad durante esta tarea. Si fuera necesario, comuníquese con el proveedor de almacenamiento para pedir indicaciones sobre cómo habilitar la función Drive Security.
+
+
+[NOTE]
+====
+Si se instalan unidades FDE y FIPS en la cabina de almacenamiento, ambas compartirán la misma clave de seguridad.
+
+====
+.Acerca de esta tarea
+En esta tarea, se deben definir un identificador y una frase de contraseña para asociarlos con la clave de seguridad interna.
+
+[NOTE]
+====
+La frase de contraseña de Drive Security es independiente de la contraseña de administrador de la cabina de almacenamiento.
+
+====
+.Pasos
+. Seleccione MENU:Settings[System].
+. En *Gestión de claves de seguridad*, seleccione *Crear clave interna*.
++
+Si todavía no generó una clave de seguridad, se abre el cuadro de diálogo Crear clave de seguridad.
+
+. Introduzca información en los siguientes campos:
++
+** *Definir un identificador de claves de seguridad*: Puede aceptar el valor predeterminado (Marca de tiempo y nombre de la cabina de almacenamiento, que genera el firmware de la controladora) o introducir el valor deseado. Puede introducir hasta 189 caracteres alfanuméricos sin espacios, puntuación ni símbolos.
++
+[NOTE]
+====
+Se generarán otros caracteres automáticamente, incorporados a ambos extremos de la cadena que introdujo. Los caracteres generados garantizan que el identificador sea único.
+
+====
+** *Definir una frase de contraseña/Volver a introducir la frase de contraseña* -- Introduzca y confirme una frase de contraseña. El valor puede tener entre 8 y 32 caracteres, y debe incluir uno de los siguientes caracteres:
++
+*** Una letra mayúscula (o varias). Se debe tener en cuenta que la frase de contraseña distingue mayúsculas de minúsculas.
+*** Un número (o varios).
+*** Un carácter no alfanumérico, como !, *, @ (o varios).
+
+
+
+
++
+[CAUTION]
+====
+*Asegúrese de grabar sus entradas para un uso posterior*. Si se necesita transferir una unidad con la función de seguridad habilitada de la cabina de almacenamiento, se deben conocer el identificador y la frase de contraseña para desbloquear los datos de la unidad.
+
+====
+. Haga clic en *Crear*.
++
+La clave de seguridad se almacena en una ubicación inaccesible de la controladora. Además de la clave real, se descarga un archivo de claves cifrado del explorador.
+
++
+[NOTE]
+====
+La ruta del archivo descargado podría depender de la ubicación predeterminada de las descargas del explorador.
+
+====
+. Anote el identificador de claves, la frase de la contraseña y la ubicación del archivo de claves descargado y, a continuación, haga clic en *Cerrar*.
+
+
+.Resultados
+Ahora se pueden crear grupos de volúmenes o pools con la función de seguridad habilitada o puede habilitar la seguridad en los grupos de volúmenes y pools existentes.
+
+[NOTE]
+====
+Cada vez que se apagan y se vuelven a encender las unidades, todas las unidades con la función de seguridad habilitada cambian al estado Security Locked. En este estado, no se puede acceder a los datos hasta que la controladora aplica la clave de seguridad correcta durante la inicialización de la unidad. Si alguien quita físicamente la unidad bloqueada y la instala en otro sistema, el estado Security Locked evita el acceso no autorizado de los datos.
+
+====
+.Después de terminar
+Debe validar la clave de seguridad para asegurarse de que no se haya dañado el archivo de claves.

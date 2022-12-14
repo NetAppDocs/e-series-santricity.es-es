@@ -1,0 +1,188 @@
+---
+permalink: sm-storage/create-snapshot-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, snapshot, volume 
+summary: Se crea un volumen Snapshot para ofrecer acceso de host a la imagen Snapshot de un volumen o un grupo de coherencia Snapshot. Es posible designar el volumen Snapshot como de solo lectura o de lectura y escritura. 
+---
+= Crear un volumen Snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se crea un volumen Snapshot para ofrecer acceso de host a la imagen Snapshot de un volumen o un grupo de coherencia Snapshot. Es posible designar el volumen Snapshot como de solo lectura o de lectura y escritura.
+
+.Acerca de esta tarea
+La secuencia de creación del volumen Snapshot permite crear un volumen Snapshot desde una imagen Snapshot, y ofrece opciones para asignar capacidad reservada si el volumen es de lectura/escritura. Es posible designar un volumen Snapshot como:
+
+* Un volumen Snapshot de solo lectura ofrece una aplicación host con acceso de lectura a una copia de los datos incluidos en la imagen Snapshot, pero sin la capacidad para modificarla. Un volumen Snapshot de solo lectura no tiene capacidad reservada asociada.
+* Un volumen Snapshot de lectura y escritura le ofrece a la aplicación host acceso de escritura a una copia de los datos incluidos en la imagen Snapshot. Tiene su propia capacidad reservada, que se usa para guardar todas las modificaciones posteriores realizadas por la aplicación host al volumen base sin afectar a la imagen Snapshot de referencia.
+
+
+El proceso para crear un volumen Snapshot tiene varios pasos.
+
+
+
+== Paso 1: Revise los miembros de un volumen Snapshot
+
+Seleccione una imagen Snapshot de un volumen base o un grupo de coherencia Snapshot. Si selecciona una imagen de grupo de coherencia Snapshot, aparecen los volúmenes miembro del grupo de coherencia Snapshot para su revisión.
+
+.Pasos
+. Seleccione MENU:Storage[Snapshots].
+. Seleccione la ficha *volúmenes Snapshot*.
+. Seleccione *Crear*.
++
+Se muestra el cuadro de diálogo Crear volumen Snapshot.
+
+. Seleccione la imagen Snapshot (volumen o grupo de coherencia Snapshot) que desea convertir en volumen Snapshot y, a continuación, haga clic en *Siguiente*. Utilice una entrada de texto en el campo *filtro* para restringir la lista.
++
+Si se seleccionó una imagen Snapshot de grupo de coherencia Snapshot, se muestra el cuadro de diálogo revisar miembros.
+
++
+En el cuadro de diálogo revisar miembros, revise la lista de volúmenes seleccionados para su conversión a volúmenes Snapshot y haga clic en *Siguiente*.
+
+. Vaya a. <<Paso 2: Asignar volumen Snapshot a un host>>.
+
+
+
+
+== Paso 2: Asignar volumen Snapshot a un host
+
+Seleccione un host o un clúster de hosts específico para asignarlo al volumen Snapshot. La asignación otorga acceso al volumen Snapshot para un host o un clúster de hosts. Puede elegir asignar un host más adelante, si fuera necesario.
+
+.Antes de empezar
+* Los hosts o clústeres de hosts válidos existen en la página hosts.
+* Deben haberse definido los identificadores de puerto de host correspondientes.
+* Antes de crear un volumen con la función DA habilitada, verifique que la conexión de host prevista sea compatible con la función Data Assurance (DA). Si alguna de las conexiones de host de las controladoras de la cabina de almacenamiento no admite DA, los hosts asociados no podrán acceder a los datos de los volúmenes con la función DA habilitada.
+
+
+.Acerca de esta tarea
+Al asignar volúmenes, tenga en cuenta estas directrices:
+
+* El sistema operativo de un host puede tener límites específicos acerca de la cantidad de volúmenes a los que puede acceder el host.
+* Es posible definir una asignación de hosts para cada volumen Snapshot en la cabina de almacenamiento.
+* Los volúmenes asignados se comparten entre controladoras de la cabina de almacenamiento.
+* Un host o un clúster de hosts no puede usar dos veces el mismo número de unidad lógica (LUN) para acceder a un volumen Snapshot. Se debe usar un LUN único.
+
+
+[NOTE]
+====
+La asignación de un volumen a un host no se realiza correctamente si se intenta asignar un volumen a un clúster de hosts que tiene conflictos con una asignación establecida para un host del clúster de hosts.
+
+====
+.Pasos
+. En el cuadro de diálogo *asignar al host*, seleccione el host o clúster de hosts que desea asignar al nuevo volumen. Si desea crear el volumen sin asignar un host, seleccione *asignar más tarde* en la lista desplegable.
+. Seleccione el modo de acceso. Elija una de las siguientes opciones:
++
+** *Read/write* -- esta opción proporciona al host acceso de lectura/escritura al volumen Snapshot y requiere capacidad reservada.
+** *Sólo lectura* -- esta opción proporciona al host acceso de sólo lectura al volumen Snapshot y no requiere capacidad reservada.
+
+
+. Haga clic en *Siguiente* y siga uno de estos procedimientos:
++
+** Si el volumen Snapshot es de lectura/escritura, se muestra el cuadro de diálogo revisar capacidad. Vaya a. <<Paso 3: Reservar capacidad para un volumen Snapshot>>.
+** Si el volumen Snapshot es de solo lectura, se muestra el cuadro de diálogo Editar prioridad. Vaya a. <<Paso 4: Editar la configuración de un volumen Snapshot>>.
+
+
+
+
+
+
+== Paso 3: Reservar capacidad para un volumen Snapshot
+
+Asocie la capacidad reservada a un volumen Snapshot de lectura/escritura. System Manager sugiere los volúmenes y la capacidad según las propiedades del volumen base o del grupo de coherencia Snapshot. Se puede aceptar la configuración recomendada para la capacidad reservada o personalizar el almacenamiento asignado.
+
+.Acerca de esta tarea
+Es posible aumentar o reducir la capacidad reservada del volumen Snapshot según se requiera. Si la capacidad reservada de la Snapshot es más grande de lo necesario, es posible reducir su tamaño para liberar espacio que necesitan otros volúmenes lógicos.
+
+.Pasos
+. Utilice el cuadro de desplazamiento para asignar la capacidad reservada al volumen Snapshot.
++
+En la tabla candidato de volumen, solo se muestran los candidatos que admiten la capacidad reservada especificada.
+
++
+Realice una de las siguientes acciones:
+
++
+** *Acepte la configuración predeterminada*.
++
+Utilice esta opción recomendada para asignar la capacidad de reserva al volumen Snapshot con la configuración predeterminada.
+
+** *Asigne su propia configuración de capacidad reservada para satisfacer sus necesidades de almacenamiento de datos*.
++
+Si cambia los ajustes predeterminados de capacidad reservada, haga clic en *Actualizar candidatos* para actualizar la lista de candidatos de la capacidad reservada que especificó.
+
++
+Utilice las siguientes directrices para asignar la capacidad reservada:
+
++
+*** La configuración predeterminada para la capacidad reservada es del 40 % del volumen base y, por lo general, esta capacidad es suficiente.
+*** La capacidad necesaria varía, según la frecuencia y el tamaño de escrituras de I/o en los volúmenes y la cantidad y la duración de la recogida de imágenes Snapshot.
+
+
+
+
+. *Opcional:* Si crea un volumen Snapshot para un grupo de coherencia Snapshot, la opción "Cambiar candidato" aparece en la tabla candidatos de capacidad reservada. Haga clic en *Cambiar candidato* para seleccionar un candidato de capacidad reservada alternativo.
+. Haga clic en *Siguiente* y vaya a. <<Paso 4: Editar la configuración de un volumen Snapshot>>.
+
+
+
+
+== Paso 4: Editar la configuración de un volumen Snapshot
+
+Cambie la configuración de un volumen Snapshot, por ejemplo, nombre, almacenamiento en caché, umbrales de alerta de capacidad reservada, etc.
+
+.Acerca de esta tarea
+El volumen se puede añadir a una caché de unidad de estado sólido (SSD) como una manera de mejorar el rendimiento de solo lectura. La caché SSD consiste en una serie de unidades SSD que se agrupan lógicamente en una cabina de almacenamiento.
+
+.Pasos
+. Acepte o cambie los ajustes del volumen Snapshot según corresponda.
++
+.Detalles del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Ajuste | Descripción 
+
+
+ a| 
+*Ajustes de volumen Snapshot*
+
+
+
+ a| 
+Nombre
+ a| 
+Especifique el nombre del volumen Snapshot.
+
+
+
+ a| 
+Habilite la caché SSD
+ a| 
+Seleccione esta opción para habilitar el almacenamiento en caché de solo lectura en SSD. NOTA: Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
+
+
+
+ a| 
+*Ajustes de capacidad reservada*
+
+
+
+ a| 
+Enviarme una alerta cuando...
+ a| 
+*Sólo aparece para un volumen de instantánea de lectura/escritura*.
+
+Use el cuadro de desplazamiento para ajustar el valor del porcentaje en el cual el sistema envía una notificación de alerta cuando la capacidad reservada para un grupo Snapshot está casi completa.
+
+Cuando la capacidad reservada para el grupo Snapshot supera el umbral específico, use los avisos por adelantado para aumentar la capacidad reservada o eliminar los objetos innecesarios antes de quedarse sin espacio.
+
+|===
+====
+. Revise la configuración del volumen Snapshot. Haga clic en *Atrás* para realizar cualquier cambio.
+. Cuando esté satisfecho con la configuración del volumen Snapshot, haga clic en *Finalizar*.
+

@@ -1,0 +1,38 @@
+---
+permalink: sm-storage/create-host-automatically.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, host, automatically 
+summary: 'Puede dejar que el agente de contexto de host (HCA) detecte automáticamente los hosts y, luego, verificar que la información sea correcta. La creación de un host es uno de los pasos necesarios para indicar a la cabina de almacenamiento qué hosts están conectados a ella y para permitir el acceso de I/o a los volúmenes.' 
+---
+= Crear un host automáticamente
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede dejar que el agente de contexto de host (HCA) detecte automáticamente los hosts y, luego, verificar que la información sea correcta. La creación de un host es uno de los pasos necesarios para indicar a la cabina de almacenamiento qué hosts están conectados a ella y para permitir el acceso de I/o a los volúmenes.
+
+.Antes de empezar
+Asegúrese de que el agente de contexto de host (HCA) esté instalado y se ejecute en cada host conectado a la cabina de almacenamiento. Los hosts que tienen HCA instalado y están conectados a la cabina de almacenamiento se crean automáticamente. Para instalar HCA, instale SANtricity Storage Manager en el host y seleccione la opción Host. HCA no está disponible en todos los sistemas operativos compatibles. Si no está disponible, debe crear el host manualmente.
+
+.Pasos
+. Seleccione MENU:Storage[hosts].
++
+En la tabla, se indican los hosts que se crearon automáticamente.
+
+. Verifique que la información provista por HCA sea correcta (nombre, tipo de host, identificadores de puertos de host).
++
+Si necesita cambiar alguna información, seleccione el host y, a continuación, haga clic en *Ver/editar configuración*.
+
+. *Opcional:* Si desea que el host creado automáticamente esté en un clúster, cree un clúster de hosts y agregue el host o los hosts.
+
+
+.Resultados
+Una vez que el host se creó automáticamente, el sistema muestra los siguientes elementos en la tabla del icono hosts.
+
+* El nombre de host derivado del nombre de sistema del host.
+* Los puertos identificadores del host que están asociados con el host.
+* El tipo de sistema operativo del host.
+

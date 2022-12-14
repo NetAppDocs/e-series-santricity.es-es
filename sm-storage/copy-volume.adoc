@@ -1,0 +1,100 @@
+---
+permalink: sm-storage/copy-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, copy volume 
+summary: 'Se pueden copiar datos de un volumen a otro de la misma cabina de almacenamiento y crear un duplicado físico de un momento específico (clon) de un volumen de origen.' 
+---
+= Copiar volumen
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se pueden copiar datos de un volumen a otro de la misma cabina de almacenamiento y crear un duplicado físico de un momento específico (clon) de un volumen de origen.
+
+.Antes de empezar
+* Se debe suspender toda la actividad de I/o del volumen de origen y objetivo.
+* Se deben desmontar todos los sistemas de archivos del volumen de origen y del volumen objetivo.
+* Si se usó el volumen objetivo en una operación Copy Volume anterior, ya no se necesitan esos datos o si ya se realizó un backup de esos datos.
+
+
+.Acerca de esta tarea
+El volumen de origen es el volumen que acepta I/o del host y almacena los datos de la aplicación. Cuando comienza la operación Copy Volume, los datos del volumen de origen se copian íntegramente en el volumen objetivo.
+
+El volumen objetivo es un volumen estándar que conserva una copia de los datos del volumen de origen. El volumen objetivo es idéntico al volumen de origen una vez que finaliza la operación Copy Volume. El volumen objetivo debe tener la misma capacidad o más que el volumen de origen, no obstante, puede tener un nivel de RAID diferente.
+
+.Más información acerca de las copias en línea y sin conexión
+[%collapsible]
+====
+*Copia en línea*
+
+Una copia en línea crea una copia de un momento específico de cualquier volumen dentro de la cabina de almacenamiento, mientras todavía es posible escribir en ese volumen durante la ejecución de la copia. Para obtener esta función, se crea una copia de Snapshot del volumen y se usa la copia de Snapshot como volumen de origen real. El volumen para el cual se crea una imagen de un momento específico se denomina volumen base y puede ser un volumen estándar o fino de la cabina de almacenamiento.
+
+*Copia sin conexión*
+
+Una copia sin conexión lee datos del volumen de origen y los copia en un volumen objetivo, mientras suspende todas las actualizaciones al volumen de origen con la copia en curso. Todas las actualizaciones al volumen de origen se suspenden para evitar que se generen incoherencias cronológicas en el volumen objetivo. La relación de copia de volumen sin conexión se da entre un volumen de origen y un volumen objetivo.
+
+====
+[NOTE]
+====
+Una operación Copy Volume sobrescribe los datos en el volumen objetivo y omite todos los volúmenes Snapshot asociados con el volumen objetivo, si corresponde.
+
+====
+.Pasos
+. Seleccione MENU:Storage[Volumes].
+. Seleccione el volumen que desea usar como origen para la operación Copy Volume y, luego, seleccione MENU:Servicios de copia[Copy volume].
++
+Se muestra el cuadro de diálogo Copiar volumen-Seleccionar objetivo.
+
+. Seleccione el volumen objetivo al que se desea copiar los datos.
++
+En la tabla que se muestra en este cuadro de diálogo, se indican todos los volúmenes objetivo aptos.
+
+. Use la barra de desplazamiento para configurar la prioridad de copiado para la operación Copy Volume.
++
+La prioridad de copiado determina cuántos recursos del sistema se usan para completar la operación Copy Volume en comparación con las solicitudes de I/o de servicio.
+
++
+.Más información acerca de las tasas de prioridad de copiado
+[%collapsible]
+====
+Las tasas de prioridad de copiado son las siguientes cinco:
+
+** El más bajo
+** Bajo
+** Mediano
+** Alto
+** Máxima
+
+
+Si la prioridad de copiado se configuró con la tasa mínima, se prioriza la actividad de I/o y la operación Copy Volume lleva más tiempo. Si la prioridad de copiado se configuró con la tasa máxima, la operación Copy Volume tiene prioridad, pero podría afectar a la actividad de I/o de la cabina de almacenamiento.
+
+====
+. Seleccione si desea crear una copia en línea o sin conexión. Para crear una copia en línea, active la casilla de verificación **mantener el volumen de origen en línea durante la operación de copia**.
+. Debe realizar una de las siguientes acciones:
++
+** Para realizar una operación de copia _online_, haga clic en *Siguiente* para continuar con el cuadro de diálogo *capacidad de reserva*.
+** Para realizar una operación de copia _offline_, haga clic en *Finalizar* para iniciar la copia sin conexión.
+
+
+. Si decide crear una copia en línea, establezca la capacidad reservada necesaria para almacenar datos y otra información para la copia en línea y, a continuación, haga clic en *Finalizar* para iniciar la copia en línea.
++
+En la tabla Volume Candidate, solo se muestran los candidatos que admiten la capacidad reservada especificada. La capacidad reservada es la capacidad física asignada que se usa para cualquier operación de servicio de copia y objeto de almacenamiento. El host no puede leerla directamente.
+
++
+Utilice las siguientes directrices para asignar la capacidad reservada:
+
++
+** La configuración predeterminada para la capacidad reservada es del 40 % del volumen base y, por lo general, esta capacidad es suficiente.
+** No obstante, la capacidad reservada varía, según la cantidad de cambios en los datos originales. Cuanto más tiempo está activo un objeto de almacenamiento, mayor es la capacidad reservada.
+
+
+
+
+.Resultados
+System Manager copia todos los datos del volumen de origen al volumen objetivo. Una vez que finaliza la operación Copy Volume, el volumen objetivo pasa automáticamente a ser solo de lectura para los hosts.
+
+.Después de terminar
+Seleccione MENU:Inicio[Ver operaciones en curso] para ver el progreso de la operación Copy Volume. Es posible que esta operación demore y que afecte el rendimiento del sistema.

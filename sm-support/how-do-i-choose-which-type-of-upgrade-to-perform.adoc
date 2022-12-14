@@ -1,0 +1,24 @@
+---
+permalink: sm-support/how-do-i-choose-which-type-of-upgrade-to-perform.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, upgrade, perform 
+summary: El tipo de actualización a realizar en la unidad se selecciona según el estado del pool o el grupo de volúmenes. 
+---
+= ¿Cómo selecciono el tipo de actualización que debo realizar?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El tipo de actualización a realizar en la unidad se selecciona según el estado del pool o el grupo de volúmenes.
+
+* *En línea*
++
+Si el pool o el grupo de volúmenes es compatible con la redundancia y está en estado óptimo, se puede usar el método en línea para actualizar el firmware de la unidad. El método en línea descarga el firmware _mientras la cabina de almacenamiento procesa operaciones de I/o_ en los volúmenes asociados que utilizan estas unidades. No es necesario detener las operaciones de I/o hacia los volúmenes asociados que utilizan estas unidades. Estas unidades se actualizan de a una por vez en los volúmenes asociados con ellas. Si la unidad no está asignada a un pool o un grupo de volúmenes, su firmware puede actualizarse con los métodos en línea o sin conexión. El rendimiento del sistema puede verse afectado cuando se utiliza el método en línea para actualizar el firmware de la unidad.
+
+* *Fuera de línea*
++
+Si el pool o el grupo de volúmenes no es compatible con la redundancia (RAID 0) o se degrada, debe utilizar el método sin conexión para actualizar el firmware de la unidad. El método sin conexión actualizará el firmware _solo cuando se detenga toda la actividad de I/o hacia los volúmenes asociados que utilizan estas unidades. Debe detener las operaciones de I/o hacia todos los volúmenes asociados que utilizan estas unidades. Si la unidad no está asignada a un pool o un grupo de volúmenes, su firmware puede actualizarse con los métodos en línea o sin conexión.
+
+

@@ -1,0 +1,72 @@
+---
+permalink: um-manage/storage-array-status.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, storage, array, status, communication, 
+summary: Unified Manager muestra el estado de cada cabina de almacenamiento detectada. 
+---
+= Ver el estado de la cabina de almacenamiento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager muestra el estado de cada cabina de almacenamiento detectada.
+
+Vaya a la página *Administrar - todo*. En esta página, es posible ver el estado de la conexión entre el proxy de servicios web y la cabina de almacenamiento.
+
+Los indicadores de estado se describen en la siguiente tabla.
+
+[cols="25h,~"]
+|===
+| Estado | Lo que indica 
+
+
+ a| 
+Óptimo
+ a| 
+La cabina de almacenamiento tiene el estado óptimo. No hay problemas de certificados y la contraseña es válida.
+
+
+
+ a| 
+Contraseña no válida
+ a| 
+Se proporcionó una contraseña no válida para la cabina de almacenamiento.
+
+
+
+ a| 
+Certificado no confiable
+ a| 
+Una o varias conexiones con la cabina de almacenamiento no son de confianza porque el certificado HTTPS está autofirmado o no se ha importado; o bien, se trata de un certificado firmado por una CA y los certificados de CA raíz e intermedios no se importaron.
+
+
+
+ a| 
+Necesita atención
+ a| 
+Hay un problema con la cabina de almacenamiento que requiere de su intervención para corregirlo.
+
+
+
+ a| 
+Bloqueo
+ a| 
+La cabina de almacenamiento está en estado bloqueado.
+
+
+
+ a| 
+Desconocido
+ a| 
+No se contactó a la cabina de almacenamiento. Esto puede ocurrir cuando el proxy de servicios web se está iniciando y aún no estableció contacto con la cabina de almacenamiento, o bien cuando la cabina se encuentra sin conexión y nunca se la contactó desde que se inició el proxy de servicios web.
+
+
+
+ a| 
+Sin conexión
+ a| 
+El proxy de servicios web se había contactado previamente con la cabina de almacenamiento, pero ahora perdió toda conexión con ella.
+
+|===

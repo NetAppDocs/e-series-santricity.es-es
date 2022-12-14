@@ -1,0 +1,90 @@
+---
+permalink: sm-mirroring/how-asynchronous-mirroring-works.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, asynchronous, mirroring, 
+summary: El mirroring asíncrono copia los volúmenes de datos bajo demanda o por programación, lo que minimiza o evita el tiempo de inactividad que se puede producir por pérdidas o daños en los datos. 
+---
+= Cómo funciona el mirroring asíncrono
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El mirroring asíncrono copia los volúmenes de datos bajo demanda o por programación, lo que minimiza o evita el tiempo de inactividad que se puede producir por pérdidas o daños en los datos.
+
+[NOTE]
+====
+La función de mirroring no está disponible en las cabinas de almacenamiento EF600 o EF300.
+
+====
+El mirroring asíncrono captura el estado de un volumen primario en un momento específico y copia solo los datos que han cambiado desde la última captura de imagen. El sitio primario se puede actualizar de inmediato y el sitio secundario se puede actualizar según lo permita el ancho de banda. La información se guarda en la caché y se envía más tarde, a medida que los recursos de red se vuelven disponibles.
+
+Este tipo de mirroring es ideal para satisfacer la demanda de operaciones ininterrumpidas y, en general, es mucho más eficiente para la red en procesos periódicos como backup y archivado. Algunos motivos para utilizar el mirroring asíncrono son los siguientes:
+
+* Consolidación de backup remoto.
+* Protección contra desastres locales o de área amplia.
+* Desarrollo y prueba de aplicaciones en una imagen de un momento específico de datos en directo.
+
+
+
+
+== Sesión de mirroring asíncrono
+
+El mirroring asíncrono captura el estado de un volumen primario en un momento específico y copia solo los datos que han cambiado desde la última captura de imagen. El mirroring asíncrono permite actualizar el sitio primario inmediatamente y el sitio secundario a medida que el ancho de banda lo permita. La información se guarda en la caché y se envía más tarde, a medida que los recursos de red se vuelven disponibles.
+
+Una sesión activa de mirroring asíncrono se compone de cuatro pasos primarios.
+
+image::../media/sam-1130-dwg-async-mirroring-session.gif[sesión de mirroring asíncrono sam 1130 dwg]
+
+. Una operación de escritura se produce primero en la cabina de almacenamiento del volumen primario.
+. El estado de la operación se devuelve al host.
+. Todos los cambios en el volumen primario se registran y se realiza un seguimiento sobre ellos.
+. Todos los cambios se envían a la cabina de almacenamiento del volumen secundario como proceso en segundo plano.
+
+
+Estos pasos se repiten según los intervalos de sincronización definidos, o bien los pasos pueden repetirse manualmente si no existen intervalos definidos.
+
+El mirroring asíncrono transfiere datos al sitio remoto únicamente según los intervalos establecidos, de modo que las operaciones locales de I/o no se vean tan afectadas por las conexiones de red lentas. Debido a que esta transferencia no está vinculada con las operaciones locales de I/o, no afecta al rendimiento de la aplicación. Por lo tanto, el mirroring asíncrono puede utilizar conexiones más lentas, como iSCSI, y ejecutarse en distancias más largas entre los sistemas de almacenamiento local y remoto.
+
+Las cabinas de almacenamiento deben tener la versión de firmware 7.84 como mínimo. (Cada una puede ejecutar versiones de sistema operativo diferentes).
+
+
+
+== Grupos de coherencia de reflejos y parejas reflejadas
+
+Es posible crear un grupo de coherencia de reflejos para establecer la relación de mirroring entre la cabina de almacenamiento remota y local. La relación de mirroring asíncrono consiste en una pareja reflejada: Un volumen primario en una cabina de almacenamiento y un volumen secundario en otra.
+
+La cabina de almacenamiento que contiene el volumen primario está ubicada generalmente en el sitio primario y presta servicios para los hosts activos. La cabina de almacenamiento que contiene el volumen secundario está ubicada generalmente en un sitio secundario y contiene una réplica de los datos. Por lo general, el volumen secundario contiene una copia de backup de los datos y se usa para la recuperación ante desastres.
+
+
+
+== Configuración de sincronización
+
+Cuando se crea una pareja reflejada, también se define la prioridad de sincronización y la política de resincronización que utiliza la pareja reflejada para completar la operación de resincronización después de una interrupción de comunicación.
+
+Al crear un grupo de coherencia de reflejos, también se define la prioridad de sincronización y la política de resincronización para todas las parejas reflejadas dentro del grupo. Las parejas reflejadas utilizan la prioridad de sincronización y la política de resincronización para completar la operación de resincronización después de una interrupción de comunicación.
+
+Los volúmenes primario y secundario en una pareja reflejada pueden dejar de estar sincronizados cuando la cabina de almacenamiento del volumen primario no puede escribir datos en el volumen secundario. Esta condición puede deberse a los siguientes problemas:
+
+* Problemas de red entre las cabinas de almacenamiento remota y local.
+* Un volumen secundario con errores.
+* Una sincronización que se suspende manualmente en la pareja reflejada.
+* Conflicto de roles del grupo de reflejos.
+
+
+Puede sincronizar datos en la cabina de almacenamiento remota de forma manual o automática.
+
+
+
+== Capacidad reservada y mirroring asíncrono
+
+La capacidad reservada se utiliza para realizar un seguimiento de las diferencias entre el volumen primario y secundario cuando no se produce una sincronización. También realiza un seguimiento de las estadísticas de sincronización para cada pareja reflejada.
+
+Cada volumen de una pareja reflejada requiere su propia capacidad reservada.
+
+
+
+== Configuración y gestión
+
+Para habilitar y configurar el mirroring entre dos cabinas, debe usar la interfaz de Unified Manager. Una vez habilitado el mirroring, puede gestionar las parejas reflejadas y las configuraciones de sincronización en System Manager.

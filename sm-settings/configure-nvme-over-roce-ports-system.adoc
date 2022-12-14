@@ -1,0 +1,94 @@
+---
+permalink: sm-settings/configure-nvme-over-roce-ports-system.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, nvme, roce, ports, 
+summary: 'Si la controladora incluye una conexión para NVMe over roce (RDMA over Converged Ethernet), es posible configurar las opciones del puerto NVMe desde la página sistema.' 
+---
+= Configure los puertos NVMe over roce
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si la controladora incluye una conexión para NVMe over roce (RDMA over Converged Ethernet), es posible configurar las opciones del puerto NVMe desde la página sistema.
+
+.Antes de empezar
+* La controladora debe incluir un puerto de host NVMe over roce; de lo contrario, los ajustes de NVMe over roce no estarán disponibles en System Manager.
+* Se debe conocer la dirección IP de la conexión de host.
+
+
+.Pasos
+. Seleccione MENU:Settings[System].
+. En *Configuración de NVMe over roce*, seleccione *Configurar puertos NVMe over roce*.
+. Seleccione la controladora que tenga el puerto NVMe over roce que desea configurar. Haga clic en *Siguiente*.
+. Seleccione el puerto de HIC que desea configurar de la lista desplegable. Haga clic en *Siguiente*.
+. Configure las opciones del puerto.
++
+Para ver todas las configuraciones de puerto, haga clic en el enlace *Mostrar más opciones de puerto* situado a la derecha del cuadro de diálogo.
+
++
+.Detalles del campo
+[%collapsible]
+====
+[cols="1a,1a"]
+|===
+| Opción de configuración de puertos | Descripción 
+
+
+ a| 
+Velocidad de puerto ethernet configurada
+ a| 
+Seleccione la velocidad que coincida que la capacidad de velocidad del SFP en el puerto.
+
+
+
+ a| 
+Habilite IPv4/Habilitar IPv6
+ a| 
+Seleccione una o ambas opciones para habilitar la compatibilidad con las redes IPv4 e IPv6.
+
+
+NOTE: Si desea deshabilitar el acceso al puerto, cancele la selección de las dos casillas de comprobación.
+
+
+
+ a| 
+Tamaño de MTU (disponible haciendo clic en *Mostrar más opciones de puerto*).
+ a| 
+De ser necesario, introduzca un nuevo tamaño en bytes para la unidad de transmisión máxima (MTU).
+
+El tamaño de MTU predeterminado es de 1500 bytes por trama. Debe introducir un valor entre 1500 y 9000.
+
+|===
+====
++
+Si seleccionó *Activar IPv4*, se abre un cuadro de diálogo para seleccionar la configuración IPv4 después de hacer clic en *Siguiente*. Si seleccionó *Activar IPv6*, se abre un cuadro de diálogo para seleccionar la configuración de IPv6 después de hacer clic en *Siguiente*. Si seleccionó ambas opciones, primero se abre el cuadro de diálogo de configuración IPv4 y después de hacer clic en *Siguiente*, se abre el cuadro de diálogo de configuración de IPv6.
+
+. Configure los valores para IPv4 o IPv6 de forma automática o manual.
++
+.Detalles del campo
+[%collapsible]
+====
+[cols="1a,1a"]
+|===
+| Opción de configuración de puertos | Descripción 
+
+
+ a| 
+Obtener configuración automáticamente
+ a| 
+Seleccione esta opción para obtener automáticamente la configuración.
+
+
+
+ a| 
+Especificar manualmente la configuración estática
+ a| 
+Seleccione esta opción e introduzca una dirección estática en los campos. (Si lo desea, puede cortar y pegar direcciones en los campos.) En el caso de IPv4, incluya la máscara de subred y la puerta de enlace. En el caso de IPv6, incluya la dirección IP enrutable y la dirección IP del enrutador. Si desea configurar una cabina de almacenamiento EF600 con una HIC de 200 GB, este cuadro de diálogo muestra dos conjuntos de campos para los parámetros de red: Uno para un puerto físico (externo) y uno para un puerto virtual (interno). Debe asignar parámetros exclusivos a cada puerto. Estos ajustes permiten que el host establezca una ruta entre cada puerto y que la HIC alcance el rendimiento máximo. Si no se asigna una dirección IP al puerto virtual, la HIC se ejecutará a aproximadamente la mitad de su capacidad de velocidad.
+
+|===
+====
+. Haga clic en *Finalizar*.
+

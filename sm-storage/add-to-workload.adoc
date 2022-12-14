@@ -1,0 +1,46 @@
+---
+permalink: sm-storage/add-to-workload.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, add workload, volume 
+summary: Es posible añadir uno o más volúmenes a una carga de trabajo nueva o ya existente, en el caso de volúmenes que actualmente no estén asociados con una carga de trabajo. 
+---
+= Añadir volúmenes a la carga de trabajo
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible añadir uno o más volúmenes a una carga de trabajo nueva o ya existente, en el caso de volúmenes que actualmente no estén asociados con una carga de trabajo.
+
+.Acerca de esta tarea
+Los volúmenes no se asocian a una carga de trabajo si se los creó mediante la interfaz de línea de comandos (CLI) o si se migraron (importaron/exportaron) desde una cabina de almacenamiento diferente.
+
+.Pasos
+. Seleccione MENU:Storage[Volumes].
+. Seleccione la ficha *aplicaciones y cargas de trabajo*.
++
+Se muestra la vista aplicaciones y cargas de trabajo.
+
+. Seleccione *Agregar a carga de trabajo*.
++
+Se muestra el cuadro de diálogo Seleccionar carga de trabajo.
+
+. Realice una de las siguientes acciones:
++
+** *Añadir volúmenes a una carga de trabajo existente* -- Seleccione esta opción para agregar volúmenes a una carga de trabajo existente.
++
+Use el menú desplegable para seleccionar una carga de trabajo. El tipo de aplicación asociada a la carga de trabajo se asigna a los volúmenes que se añaden a esta carga de trabajo.
+
+** *Añadir volúmenes a una nueva carga de trabajo* -- Seleccione esta opción para definir una nueva carga de trabajo para un tipo de aplicación y agregar volúmenes a la nueva carga de trabajo.
+
+
+. Seleccione *Siguiente* para continuar con la secuencia de añadir a carga de trabajo.
++
+Se muestra el cuadro de diálogo Seleccionar volúmenes.
+
+. Seleccione los volúmenes que desea añadir a la carga de trabajo.
+. Revise los volúmenes que desea añadir a la carga de trabajo seleccionada.
+. Cuando esté satisfecho con la configuración de su carga de trabajo, haga clic en *Finalizar*.
+

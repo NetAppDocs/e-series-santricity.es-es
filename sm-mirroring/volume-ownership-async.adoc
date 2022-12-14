@@ -1,0 +1,33 @@
+---
+permalink: sm-mirroring/volume-ownership-async.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, volume, ownership, async, change, preferred, controller, owner, mirrored, pair, 
+summary: Es posible cambiar el propietario preferido de la controladora de una pareja reflejada. 
+---
+= Propiedad del volumen
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible cambiar el propietario preferido de la controladora de una pareja reflejada.
+
+[NOTE]
+====
+Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
+
+====
+Si el volumen primario de la pareja reflejada pertenece a la controladora A, el volumen secundario también pertenecerá a la controladora A en la cabina De almacenamiento remota. Al cambiar el propietario del volumen primario, se modificará automáticamente el propietario del volumen secundario para garantizar que los dos volúmenes pertenezcan a la misma controladora. Los cambios de propiedad actuales en el lado primario se propagan automáticamente a los cambios de propiedad correspondientes en el lado secundario.
+
+Por ejemplo, un volumen primario que pertenece a la controladora A y que luego se cambia a la controladora B. En este caso, la próxima escritura remota cambia la propiedad de la controladora del volumen secundario de la controladora A a la B. Debido a que los cambios en la propiedad de la controladora en el lado secundario son controlados por el lado primario, no requieren ninguna intervención especial del administrador de almacenamiento.
+
+
+
+== Se restablece la controladora
+
+El restablecimiento de una controladora produce un cambio de propiedad de los volúmenes en el lado primario del propietario preferido de la controladora a la controladora alternativa de la cabina de almacenamiento.
+
+A veces, el restablecimiento de una controladora o un ciclo de alimentación de la cabina de almacenamiento interrumpen una escritura remota antes de que se pueda escribir en el volumen secundario. En este caso, la controladora no necesita realizar una sincronización completa de la pareja reflejada.
+
+Cuando se interrumpe una escritura remota durante el restablecimiento de una controladora, el nuevo propietario de la controladora en el lado primario lee la información almacenada en un archivo de registro en el volumen de capacidad reservada del propietario preferido de la controladora. El nuevo propietario de la controladora luego copia los bloques de datos afectados del volumen primario al secundario, lo que elimina la necesidad de una sincronización completa de los volúmenes reflejados.

@@ -1,0 +1,58 @@
+---
+permalink: sm-support/view-unreadable-sectors-log.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, unreadable, sectors, log 
+summary: Es posible guardar el registro de sectores ilegibles y enviar el archivo al soporte técnico para el análisis. 
+---
+= Ver el registro de sectores ilegibles
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible guardar el registro de sectores ilegibles y enviar el archivo al soporte técnico para el análisis.
+
+.Acerca de esta tarea
+El registro de sectores ilegibles contiene registros detallados de sectores ilegibles causados por los informes de errores irrecuperables de medios que generan las unidades. Los sectores ilegibles se detectan durante operaciones normales de I/o y de modificación, como reconstrucciones. Cuando se detectan sectores ilegibles en una cabina de almacenamiento, aparece una alerta que indica que se requiere atención para la cabina de almacenamiento. Recovery Guru distingue qué condición de sector ilegible necesita atención. No se pueden recuperar los datos contenidos en un sector ilegible y estos datos deben considerarse perdidos.
+
+El registro de sectores ilegibles puede almacenar hasta 1,000 sectores ilegibles. Cuando el registro de sectores ilegibles alcanza las 1,000 entradas, se aplican las siguientes condiciones:
+
+* Si se detectan sectores ilegibles nuevos durante la reconstrucción, esta última falla y no se registra ninguna entrada.
+* Para los sectores ilegibles nuevos detectados durante las operaciones de I/o, fallan las I/o y no se registra ninguna entrada.
++
+[NOTE]
+====
+Estas acciones incluyen escrituras RAID 5 y RAID 6 que se habrían realizado correctamente antes del desbordamiento.
+
+====
+
+
+[CAUTION]
+====
+*Posible pérdida de datos* -- la recuperación de sectores ilegibles es un procedimiento complicado que puede implicar varios métodos diferentes. Realice esta operación solo cuando el soporte técnico se lo indique.
+
+====
+.Pasos
+. Seleccione menú:ficha Soporte[Centro de soporte > Diagnóstico].
+. Seleccione *Ver/borrar sectores ilegibles*.
+. Para guardar el registro de sectores ilegibles:
++
+.. En la primera columna de la tabla, es posible seleccionar los volúmenes individuales para los cuales se desea guardar el registro de sectores ilegibles (haga clic en la casilla de comprobación junto a cada volumen) o es posible seleccionar todos los volúmenes (seleccione la casilla de comprobación del encabezado de la tabla).
++
+Para buscar volúmenes específicos, puede ordenar cualquiera de las columnas o escribir caracteres en el cuadro *filtro*.
+
+.. Haga clic en *Guardar*.
+
+
++
+El archivo se guarda en la carpeta de descargas del explorador con el nombre `unreadable-sectors.txt`.
+
+. Si el soporte técnico le indica que borre el registro de sectores ilegibles, siga los siguientes pasos:
++
+.. En la primera columna de la tabla, es posible seleccionar los volúmenes individuales para los cuales se desea borrar el registro de sectores ilegibles (haga clic en la casilla de comprobación junto a cada volumen) o es posible seleccionar todos los volúmenes (seleccione la casilla de comprobación del encabezado de la tabla).
+.. Haga clic en *Borrar* y confirme que desea realizar la operación.
+
+
+

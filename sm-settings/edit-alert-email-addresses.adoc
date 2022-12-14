@@ -1,0 +1,37 @@
+---
+permalink: sm-settings/edit-alert-email-addresses.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, edit, email, addresses, alerts, 
+summary: Es posible cambiar las direcciones de correo electrónico de los destinatarios que recibieron alertas por correo electrónico. 
+---
+= Editar direcciones de correo electrónico para alertas
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible cambiar las direcciones de correo electrónico de los destinatarios que recibieron alertas por correo electrónico.
+
+.Antes de empezar
+Las direcciones de correo electrónico que pretende editar deben estar definidas en la pestaña correo electrónico de la página Alertas.
+
+.Pasos
+. Seleccione MENU:Settings[Alerts].
+. Seleccione la ficha *correo electrónico*.
+. En la tabla *Dirección de correo electrónico*, seleccione la dirección que desea cambiar y, a continuación, haga clic en el icono *Edición* (lápiz) situado en el extremo derecho.
++
+La fila se convierte en un campo editable.
+
+. Introduzca una dirección nueva y, a continuación, haga clic en el icono *Guardar* (Marca de verificación).
++
+[NOTE]
+====
+Si desea cancelar los cambios, seleccione el icono *Cancelar* (X).
+
+====
+
+
+.Resultados
+La pestaña correo electrónico de la página Alertas muestra las direcciones de correo electrónico actualizadas.

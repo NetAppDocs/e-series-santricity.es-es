@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/maximum-number-of-luns.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, maximum, luns 
+summary: 'La cabina de almacenamiento tiene un número máximo de números de unidad lógica (LUN) que pueden usarse para cada host.' 
+---
+= Número máximo de LUN
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La cabina de almacenamiento tiene un número máximo de números de unidad lógica (LUN) que pueden usarse para cada host.
+
+El número máximo depende del sistema operativo del host. La cabina de almacenamiento realiza un seguimiento del número de LUN utilizados. Si se intenta asignar un volumen a un host que supera la cantidad máxima de LUN, el host no podrá acceder al volumen.

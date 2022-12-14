@@ -1,0 +1,16 @@
+---
+permalink: sm-support/what-is-configuration-data.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configuration, data, collect, database 
+summary: Al seleccionar recopilar datos de configuración, el sistema guarda el estado actual de la base de datos de configuración RAID. 
+---
+= ¿Qué son los datos de configuración?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Al seleccionar recopilar datos de configuración, el sistema guarda el estado actual de la base de datos de configuración RAID.
+
+La base de datos de configuración de RAID incluye todos los datos para grupos de volúmenes y pools de discos en la controladora. La función recoger datos de configuración guarda la misma información que el comando de la CLI para `save storageArray dbmDatabase`.

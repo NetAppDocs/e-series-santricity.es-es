@@ -1,0 +1,74 @@
+---
+permalink: sm-hardware/limit-the-drive-view.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, limit, drive, view, 
+summary: Si la cabina de almacenamiento incluye unidades con diferentes tipos de atributos físicos y lógicos, la página hardware ofrece campos de filtros para limitar la vista de unidades y localizar unidades específicas. 
+---
+= Limite la vista de unidades
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si la cabina de almacenamiento incluye unidades con diferentes tipos de atributos físicos y lógicos, la página hardware ofrece campos de filtros para limitar la vista de unidades y localizar unidades específicas.
+
+.Acerca de esta tarea
+Los filtros de unidades pueden limitar la vista a solo ciertos tipos de unidades físicas (por ejemplo, todas las SAS), con ciertos atributos de seguridad (por ejemplo, compatibles con la función de seguridad) en ciertas ubicaciones lógicas (por ejemplo, grupo de volúmenes 1). Es posible usar estos filtros de forma conjunta o por separado.
+
+[NOTE]
+====
+Si todas las unidades comparten los mismos atributos físicos, el campo de filtro *Mostrar unidades...* no aparece. Si todas las unidades comparten los mismos atributos lógicos, el campo de filtro *en cualquier lugar de la matriz de almacenamiento* no aparece.
+
+====
+.Pasos
+. Seleccione *hardware*.
+. En el primer campo de filtro (en *Mostrar unidades...*), haga clic en la flecha desplegable para mostrar los tipos de unidades y atributos de seguridad disponibles.
++
+Los tipos de unidades pueden ser los siguientes:
+
++
+** Tipo de medio de unidad (unidad de estado sólido, disco duro)
+** Tipo de interfaz de unidad
+** Capacidad de unidad (de la más alta a la más baja)
+** Los atributos de seguridad de velocidad de unidad (de la más alta a la más baja) pueden ser los siguientes:
+** Compatible con la función de seguridad
+** Con la función de seguridad habilitada
+** Compatible con DA (Data Assurance)
+** Conforme a FIPS
+** Conforme a la normativa FIPS (FIPS 140-2)
+** Conforme a FIPS (FIPS 140-3)
++
+Si todas las unidades comparten algunos de estos atributos, no se mostrarán en la lista desplegable. Por ejemplo, si la cabina de almacenamiento incluye todas las unidades SSD con interfaces SAS y velocidades de 15 15000 RPM, pero algunas unidades SSD poseen diferentes capacidades, la lista desplegable muestra solo las capacidades como opción de filtrado.
+
++
+Cuando se selecciona una opción en el campo, las unidades que no coinciden con los criterios del filtro se atenúan en la vista gráfica.
+
+
+
+. En el segundo cuadro de filtro, haga clic en la flecha desplegable para mostrar las ubicaciones lógicas disponibles para las unidades.
++
+[NOTE]
+====
+Si necesita borrar sus criterios de filtro, seleccione *Borrar* en el extremo derecho de los cuadros de filtro.
+
+====
++
+Las ubicaciones lógicas pueden ser las siguientes:
+
++
+** Piscinas
+** Grupos de volúmenes
+** Pieza de repuesto
+** Caché SSD
+** Sin asignar
++
+Cuando se selecciona una opción en el campo, las unidades que no coinciden con los criterios del filtro se atenúan en la vista gráfica.
+
+
+
+. Opcionalmente, puede seleccionar *encender las luces de localización* en el extremo derecho de los campos de filtro para encender las luces de localización de las unidades mostradas.
++
+Esta acción ayuda a localizar físicamente las unidades en la cabina de almacenamiento.
+
+

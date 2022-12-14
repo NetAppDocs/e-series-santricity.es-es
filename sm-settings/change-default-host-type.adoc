@@ -1,0 +1,36 @@
+---
+permalink: sm-settings/change-default-host-type.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, default, host, type, 
+summary: Use la opción de configuración Cambiar el sistema operativo del host predeterminado para cambiar el tipo de host predeterminado en el nivel de la cabina de almacenamiento. En general, se debe cambiar el tipo de host predeterminado antes de conectar hosts a la cabina de almacenamiento o al añadir hosts adicionales. 
+---
+= Cambiar el tipo de host predeterminado
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Use la opción de configuración Cambiar el sistema operativo del host predeterminado para cambiar el tipo de host predeterminado en el nivel de la cabina de almacenamiento. En general, se debe cambiar el tipo de host predeterminado antes de conectar hosts a la cabina de almacenamiento o al añadir hosts adicionales.
+
+.Acerca de esta tarea
+Tenga en cuenta estas directrices:
+
+* Si todos los hosts que piensa conectar a la cabina de almacenamiento tienen el mismo sistema operativo (entorno de host homogéneo), cambie el tipo de host para que coincida con el sistema operativo.
+* Si hay hosts con diferentes sistemas operativos que piensa conectar a la cabina de almacenamiento (entorno de host heterogéneo), cambie el tipo de host para que coincida con la mayoría de los sistemas operativos de los hosts.
++
+Por ejemplo, si va a conectar ocho hosts diferentes a la cabina de almacenamiento y seis de ellos tienen un sistema operativo Windows, debe seleccionar Windows como tipo de sistema operativo de host predeterminado.
+
+* Si la mayoría de los hosts conectados poseen una combinación de sistemas operativos diferentes, cambie el tipo de host a opción predeterminada de fábrica.
++
+Por ejemplo, si va a conectar ocho hosts diferentes a la cabina de almacenamiento y dos de ellos tienen un sistema operativo Windows, tres ejecutan un sistema operativo VMware, Y otros tres ejecutan un sistema operativo Linux, debe seleccionar opción predeterminada de fábrica como el tipo de sistema operativo del host predeterminado.
+
+
+
+.Pasos
+. Seleccione MENU:Settings[System].
+. Desplácese hasta *Configuración adicional* y, a continuación, haga clic en *Cambiar el tipo de sistema operativo del host* predeterminado.
+. Seleccione el tipo de sistema operativo de host que desea usar como predeterminado.
+. Haga clic en *Cambiar*.
+

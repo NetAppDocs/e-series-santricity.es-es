@@ -1,0 +1,16 @@
+---
+permalink: um-manage/why-is-it-recommended-to-use-a-manual-synchronization-policy-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, manual, synchronization, policy 
+summary: Se recomienda la resincronización manual debido a que esta permite gestionar el proceso de resincronización de un modo que garantiza la mejor oportunidad para recuperar los datos. 
+---
+= ¿Por qué se recomienda usar la política de sincronización manual?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se recomienda la resincronización manual debido a que esta permite gestionar el proceso de resincronización de un modo que garantiza la mejor oportunidad para recuperar los datos.
+
+Si utiliza una política de resincronización automática y surgen problemas de comunicación ocasionales durante la resincronización, podrían dañarse temporalmente los datos del volumen secundario. Una vez finalizada la resincronización, los datos se corrigen.

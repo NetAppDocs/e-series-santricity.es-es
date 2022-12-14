@@ -1,0 +1,31 @@
+---
+permalink: sm-support/view-software-and-firmware-inventory.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, software, firmware, inventory 
+summary: En el inventario de software y firmware, se enumeran las versiones de firmware para cada componente de la cabina de almacenamiento. 
+---
+= Ver el inventario de software y firmware
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+En el inventario de software y firmware, se enumeran las versiones de firmware para cada componente de la cabina de almacenamiento.
+
+.Acerca de esta tarea
+Una cabina de almacenamiento está compuesta por muchos componentes, que pueden incluir controladoras, unidades, cajones y módulos de entrada/salida (IOM). Cada uno de estos componentes contiene firmware. Algunas versiones de firmware dependen de otras versiones de firmware. Para captar información sobre todas las versiones de firmware de la cabina de almacenamiento, se debe ver el inventario de software y firmware. El soporte técnico puede analizar el inventario de software y firmware para detectar incoherencias de firmware.
+
+.Pasos
+. Seleccione menú:ficha Soporte[Centro de soporte > Recursos de soporte].
+. Desplácese hasta *Iniciar información detallada de la matriz de almacenamiento* y, a continuación, seleccione *Inventario de software y firmware*.
++
+En la pantalla, se muestra el informe Inventario de software y firmware.
+
+. Para guardar el inventario de software y firmware, haga clic en *Guardar*.
++
+El archivo se guarda en la carpeta de descargas del explorador con el nombre de archivo `firmware-inventory.txt`.
+
+. Siga las instrucciones del soporte técnico para enviar el archivo.
+

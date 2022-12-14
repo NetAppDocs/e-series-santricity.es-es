@@ -1,0 +1,110 @@
+---
+permalink: um-manage/overview-upgrade-center-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, upgrade, center 
+summary: En el Centro de actualización, puede gestionar las actualizaciones de NVSRAM y de software de sistema operativo SANtricity para varias cabinas de almacenamiento. 
+---
+= Información general del centro de actualización
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+En el Centro de actualización, puede gestionar las actualizaciones de NVSRAM y de software de sistema operativo SANtricity para varias cabinas de almacenamiento.
+
+
+
+== ¿Cómo funcionan las actualizaciones?
+
+Descargue el software de sistema operativo más reciente y después actualice una o varias cabinas.
+
+
+
+=== Actualizar el flujo de trabajo
+
+Los siguientes pasos constituyen un flujo de trabajo de alto nivel para ejecutar actualizaciones de software.
+
+. Descargue el archivo de software del sistema operativo SANtricity más reciente en el sitio de soporte (hay un enlace disponible en Unified Manager, en la página Soporte). Guarde el archivo en el sistema host de gestión (el host desde donde se accede a Unified Manager en un explorador) y descomprima el archivo.
+. En Unified Manager, puede cargar el archivo de software del sistema operativo SANtricity y el archivo NVSRAM en el repositorio (un área del servidor proxy de servicios web donde se almacenan los archivos). Puede añadir archivos desde MENU:Centro de actualización[Actualizar software de sistema operativo SANtricity o desde Centro de actualización > gestionar el repositorio de software].
+. Una vez que se hayan cargado los archivos en el repositorio, seleccione el archivo que usará en la actualización. En la página Actualizar software de sistema operativo SANtricity (menú:Centro de actualización[Actualizar software de sistema operativo SANtricity]), puede seleccionar el archivo de software de sistema operativo SANtricity y el archivo de NVSRAM. Después de seleccionar un archivo de software, se muestra en la página una lista con las cabinas de almacenamiento compatibles. A continuación, seleccione las cabinas de almacenamiento que desea actualizar con el nuevo software. (No puede seleccionar cabinas incompatibles).
+. Luego, puede iniciar una transferencia y activación inmediatas del software, o puede optar por preconfigurar los archivos para su activación más adelante. Durante el proceso de actualización, Unified Manager realiza las siguientes tareas:
++
+.. Realiza una comprobación del estado de las cabinas de almacenamiento para determinar si existe alguna condición que pudiera impedir que se complete la actualización. Si ocurre un error en la comprobación del estado de alguna cabina, puede omitir esa cabina en particular y continuar la actualización de las otras cabinas. Otra opción es detener el proceso por completo y solucionar los problemas de las cabinas que presentaron errores.
+.. Transfiere los archivos de actualización a cada controladora.
+.. Reinicia las controladoras y activa el nuevo software del sistema operativo SANtricity de a una controladora por vez. Durante la activación, el archivo del sistema operativo SANtricity existente se reemplaza por el nuevo archivo.
++
+[NOTE]
+====
+También es posible especificar que el software se active en otro momento.
+
+====
+
+
+
+
+
+
+=== Actualización inmediata o almacenamiento temporal
+
+Puede activar la actualización de inmediato o almacenarla temporalmente para otro momento. Puede optar por activarlos más tarde por los siguientes motivos:
+
+* *Hora del día* -- la activación del software puede llevar mucho tiempo, por lo que es posible que desee esperar hasta que las cargas de E/S sean más livianas. Según la carga de I/o y el tamaño de caché, la actualización de una controladora generalmente puede demorar entre 15 y 25 minutos en completarse. Las controladoras se reinician y conmutan al nodo de respaldo durante la activación, de manera que el rendimiento podría ser inferior al habitual hasta que finalice la actualización.
+* *Tipo de paquete*: Es posible que desee probar el nuevo software y firmware en una matriz de almacenamiento antes de actualizar los archivos en otras matrices de almacenamiento.
+
+
+Para activar el software almacenado temporalmente, vaya al menú:Soporte[Centro de actualización] y haga clic en *Activar* en el área etiquetada como actualización de software del controlador de sistema operativo SANtricity.
+
+
+
+=== Comprobación del estado
+
+Una comprobación del estado se ejecuta como parte del proceso de actualización, pero es posible ejecutarla por separado, antes de comenzar (vaya a menú:Centro de actualización[Comprobación del estado previa a la actualización]).
+
+La comprobación del estado evalúa todos los componentes de la cabina de almacenamiento para garantizar que se pueda proceder con la actualización. Las siguientes condiciones podrían evitar la actualización:
+
+* Unidades asignadas con errores
+* Piezas de repuesto en uso
+* Grupos de volúmenes incompletos
+* Operaciones exclusivas en ejecución
+* Volúmenes faltantes
+* Estado no óptimo de la controladora
+* Cantidad excesiva de eventos en el registro de eventos
+* Fallo de validación de la base de datos de configuración
+* Unidades con versiones de DACstore anteriores
+
+
+
+
+== ¿Qué debo saber antes de actualizar?
+
+Antes de actualizar varias cabinas de almacenamiento, revise las consideraciones fundamentales como parte de la planificación.
+
+
+
+=== Versiones actuales
+
+Puede ver las versiones actuales del software de sistema operativo SANtricity desde la página gestionar de Unified Manager en cada cabina de almacenamiento detectada. La versión se muestra en la columna Software de sistema operativo SANtricity. Si hace clic en la versión de sistema operativo SANtricity en cada fila, puede encontrar información de NVSRAM y del firmware de la controladora en un cuadro de diálogo emergente.
+
+
+
+=== Otros componentes que requieren actualización
+
+Como parte del proceso de actualización, es posible que también necesite actualizar el controlador de conmutación al nodo de respaldo/multivía del host o el controlador de HBA de modo que el host pueda interactuar con las controladoras correctamente.
+
+Para obtener información sobre compatibilidad, consulte https://imt.netapp.com/matrix/#welcome["Matriz de interoperabilidad de NetApp"^]. Asimismo, consulte los procedimientos en las guías exprés del sistema operativo. Las guías exprés están disponibles en https://docs.netapp.com/us-en/e-series/index.html["Documentación de E-Series y SANtricity"^].
+
+
+
+=== Controladoras dobles
+
+Si una cabina de almacenamiento contiene dos controladoras y existe un controlador multivía instalado, la cabina de almacenamiento puede seguir procesando las operaciones de I/o mientras se realiza la actualización. Durante la actualización, ocurre el siguiente proceso:
+
+. La controladora A conmuta todos sus LUN a la controladora B.
+. La actualización se produce en la controladora A.
+. La controladora A recupera sus LUN y todos los LUN de la controladora B.
+. La actualización se produce en la controladora B.
+
+
+Una vez que finaliza la actualización, es posible que sea necesario redistribuir los volúmenes manualmente entre las controladoras para garantizar que los volúmenes regresen a la controladora correspondiente.

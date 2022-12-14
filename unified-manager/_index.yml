@@ -1,0 +1,41 @@
+---
+indexpage:
+  tiles:
+  - title: Configuración
+    links:
+    - title: Información general de la interfaz de Unified Manager
+      url: "../um-admin/overview-interface-unified.html"
+    - title: Configure la contraseña de administrador
+      url: "../um-admin/administrator-password-protection-unified.html"
+  - title: Detectar cabinas de almacenamiento
+    links:
+    - title: Consideraciones de detección
+      url: "../um-manage/considerations-for-discovering-arrays.html"
+    - title: Cabina única
+      url: "../um-manage/discover-single-array.html"
+    - title: Varias cabinas
+      url: "../um-manage/discover-multiple-arrays.html"
+  - title: Gestione las cabinas
+    links:
+    - title: Grupos de cabinas de almacenamiento
+      url: "../um-manage/overview-manage-groups.html"
+    - title: Estado de la cabina de almacenamiento
+      url: "../um-manage/storage-array-status.html"
+    - title: Actualizar el software de
+      url: "../um-manage/upgrade-controller-firmware.html"
+  - title: Gestión del acceso
+    links:
+    - title: Acceso de usuarios
+      url: "../um-certificates/how-access-management-works-unified.html"
+    - title: Certificados
+      url: "../um-certificates/how-certificates-work-unified.html"
+    - title: Servicios de directorio
+      url: "../um-certificates/access-management-with-directory-services-unified.html"
+  - title: Gestionar configuración
+    links:
+    - title: Importar la configuración
+      url: "../um-manage/how-import-settings-works.html"
+    - title: Cambiar la configuración de contraseña
+      url: "../um-certificates/change-local-user-passwords-settings-unified.html"
+    - title: Cambie la configuración del servidor de directorio
+      url: "../um-certificates/edit-directory-server-settings-unified.html"

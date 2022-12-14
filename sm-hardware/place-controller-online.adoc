@@ -1,0 +1,32 @@
+---
+permalink: sm-hardware/place-controller-online.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, place, controller, online 
+summary: Si una controladora se encuentra en estado sin conexión o en modo de servicio, es posible colocarla nuevamente en línea. 
+---
+= Coloque una controladora en línea
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si una controladora se encuentra en estado sin conexión o en modo de servicio, es posible colocarla nuevamente en línea.
+
+.Pasos
+. Seleccione *hardware*.
+. Si el gráfico muestra las unidades, haga clic en *Mostrar parte posterior de la bandeja*.
++
+El gráfico cambia y muestra las controladoras en lugar de las unidades.
+
+. Haga clic en una controladora que se encuentre en estado sin conexión o en modo de servicio.
++
+Aparece el menú contextual de la controladora.
+
+. Seleccione *colocar en línea* y confirme que desea realizar la operación.
+
+
+.Resultados
+El controlador multivía puede demorar hasta 10 minutos en detectar una ruta de restauración preferida.
+
+Los volúmenes pertenecientes originalmente a esta controladora se moverán automáticamente de vuelta a la controladora a medida que se reciban solicitudes de I/o para cada volumen. En algunos casos, es posible que necesite redistribuir manualmente los volúmenes con el comando *redistribuir volúmenes*.

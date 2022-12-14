@@ -1,0 +1,27 @@
+---
+permalink: sm-mirroring/synchronous-mirroring-what-do-i-need-to-know-before-creating-a-mirrored-pair.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronous mirroring, 
+summary: Las parejas reflejadas se configuran en la interfaz de Unified Manager y, posteriormente, se gestionan en System Manager. 
+---
+= Mirroring síncrono: ¿Qué debo saber antes de crear una pareja reflejada?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Las parejas reflejadas se configuran en la interfaz de Unified Manager y, posteriormente, se gestionan en System Manager.
+
+Antes de crear una pareja reflejada, siga estas directrices:
+
+* Debe tener dos cabinas de almacenamiento.
+* Cada cabina de almacenamiento debe tener dos controladoras.
+* Cada controladora en la cabina primaria y la cabina secundaria debe tener un puerto Ethernet de gestión configurado y debe estar conectada a la red.
+* Las cabinas de almacenamiento local y remota se encuentran conectadas a través de una estructura Fibre Channel.
+* Las cabinas de almacenamiento deben tener la versión de firmware 7.84 como mínimo. (Cada una puede ejecutar versiones de sistema operativo diferentes).
+* Debe conocer la contraseña de las cabinas de almacenamiento remota y local.
+* Debe tener suficiente capacidad libre en la cabina de almacenamiento remota para crear un volumen secundario mayor o igual que el volumen primario que desea reflejar.
+* Instaló el proxy de servicios web y Unified Manager. Las parejas reflejadas se configuran en la interfaz de Unified Manager.
+* Las dos cabinas de almacenamiento se encuentran detectadas en Unified Manager.
+

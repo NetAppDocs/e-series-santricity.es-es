@@ -1,0 +1,84 @@
+---
+permalink: sm-hardware/hot-spare-drives.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hot, spare, drives, raid1, raid6, raid5 
+summary: Las piezas de repuesto actúan como unidades en espera en los grupos de volúmenes RAID 1, RAID 5 o RAID 6 de System Manager. 
+---
+= Información general de la unidad de repuesto
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Las piezas de repuesto actúan como unidades en espera en los grupos de volúmenes RAID 1, RAID 5 o RAID 6 de System Manager.
+
+Son unidades completamente funcionales que no contienen datos. Si falla una unidad en el grupo de volúmenes, la controladora reconstruye automáticamente los datos de la unidad con error en una unidad asignada como pieza de repuesto.
+
+Las piezas de repuesto no son unidades dedicadas a grupos de volúmenes específicos. Pueden usarse para cualquier unidad con error en la cabina de almacenamiento siempre que la pieza de repuesto y la unidad compartan estos atributos:
+
+* Igual capacidad (o una pieza de repuesto con mayor capacidad)
+* Mismo tipo de medio (por ejemplo, HDD o SSD)
+* Mismo tipo de interfaz (por ejemplo, SAS)
+
+
+
+
+== Cómo identificar las piezas de repuesto
+
+Es posible asignar piezas de repuesto con el asistente de configuración inicial o en la página hardware. Para determinar si hay piezas de repuesto asignadas, vaya a la página hardware y busque todas las bahías de unidad que aparecen en color rosa.
+
+
+
+== Cómo funciona la cobertura de piezas de repuesto
+
+La cobertura de piezas de repuesto funciona de la siguiente manera:
+
+* Se reserva una unidad sin asignar como pieza de repuesto para los grupos de volúmenes RAID 1, RAID 5 o RAID 6.
++
+[NOTE]
+====
+No pueden usarse piezas de repuesto para pools, ya que estos utilizan un método diferente de protección de datos. En lugar de reservar una unidad adicional, los pools asignan capacidad de reserva (denominada _preservation Capacity_) dentro de cada unidad en el pool. Si falla una unidad dentro del pool, la controladora reconstruye los datos en esa capacidad de reserva.
+
+====
+* Si falla una unidad dentro de un grupo de volúmenes RAID 1, RAID 5 o RAID 6, la controladora utiliza automáticamente datos de redundancia para reconstruir los datos de la unidad con error. La pieza de repuesto sustituye automáticamente la unidad con error sin que se requiera un intercambio físico.
+* Luego de reemplazar físicamente la unidad con error, se realiza una operación de copyback de la unidad de repuesto a la unidad reemplazada. Si se designó la unidad de repuesto como miembro permanente de un grupo de volúmenes, no se necesita esa operación.
+* La disponibilidad de la protección contra pérdida de soporte y la protección contra pérdida de cajón en un grupo de volúmenes dependen de la ubicación de las unidades que incluye ese grupo de volúmenes. La protección contra pérdida de soporte y la protección contra pérdida de cajón pueden no estar disponibles debido a una unidad con error y a la ubicación de la unidad de repuesto. Para asegurarse de que la protección contra pérdida de soporte y la protección contra pérdida de cajón no se vean afectadas, debe reemplazar una unidad con error para iniciar el proceso de copyback.
+* El volumen de la cabina de almacenamiento permanece en línea y accesible mientras reemplaza la unidad con error, ya que la unidad de repuesto sustituye automáticamente la unidad con error.
+
+
+
+
+== Consideraciones sobre la capacidad de la unidad de repuesto
+
+Seleccione una unidad con una capacidad mayor o igual que la capacidad total de la unidad que desea proteger. Por ejemplo, si tiene una unidad de 18 GIB con una capacidad configurada de 8 GIB, puede usar una unidad de 9 GIB o más como pieza de repuesto. Por regla general, no asigne una unidad como pieza de repuesto a menos que su capacidad sea mayor o igual que la capacidad de la unidad más grande en la cabina de almacenamiento.
+
+[NOTE]
+====
+Si no hay piezas de repuesto disponibles con la misma capacidad física, puede usarse una unidad de menor capacidad como pieza de repuesto si la "capacidad utilizada" de la unidad es menor o igual a la capacidad de la unidad de repuesto.
+
+====
+
+
+== Consideraciones sobre tipos de medios e interfaces
+
+La unidad utilizada como pieza de repuesto debe compartir el mismo tipo de medio y tipo de interfaz que las unidades que protegerá. Por ejemplo, una unidad de disco duro no puede actuar como pieza de repuesto de unidades SSD.
+
+
+
+== Consideraciones sobre unidades compatibles con la función de seguridad
+
+Una unidad compatible con la función de seguridad, como FDE o FIPS, puede actuar como pieza de repuesto para unidades con o sin funcionalidades de seguridad. Sin embargo, una unidad no compatible con la función de seguridad no puede actuar como pieza de repuesto para unidades con funcionalidades de seguridad.
+
+Cuando se selecciona una unidad con la función de seguridad habilitada para usar como pieza de repuesto, System Manager le advierte que ejecute la función Secure Erase antes de continuar. Secure Erase restablece los atributos de seguridad de la unidad para que sea compatible con la función de seguridad, pero no para que tenga la función de seguridad habilitada.
+
+[NOTE]
+====
+Cuando se habilita la función Drive Security y se crea un pool o un grupo de volúmenes desde unidades compatibles con la función de seguridad, las unidades pasan a ser _Secure-enabled_. El acceso de lectura y escritura solo está disponible a través de una controladora que está configurada con la clave de seguridad correcta. Esta seguridad adicional evita el acceso no autorizado a los datos en una unidad que se quita físicamente de la cabina de almacenamiento.
+
+====
+
+
+== Cantidad recomendada de unidades de repuesto
+
+Si utilizó el asistente de configuración inicial para crear automáticamente piezas de repuesto, System Manager crea una pieza de repuesto cada 30 unidades de un tipo de medio y un tipo de interfaz en particular. De lo contrario, puede crear manualmente unidades de repuesto entre los grupos de volúmenes en la cabina de almacenamiento.

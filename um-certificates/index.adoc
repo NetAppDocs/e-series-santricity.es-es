@@ -1,0 +1,12 @@
+---
+permalink: um-certificates/index.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= Unified Manager 5 de SANtricity
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+

@@ -1,0 +1,16 @@
+---
+permalink: sm-settings/what-is-cache-block-size.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, cache, block, size, 
+summary: La controladora de la cabina de almacenamiento organiza su caché en bloques, que son fragmentos de memoria que pueden tener un tamaño de 8, 16 o 32 KiB. Todos los volúmenes del sistema de almacenamiento comparten el mismo espacio de caché; por lo tanto, los volúmenes solo pueden tener un tamaño de bloque de caché. 
+---
+= ¿Qué es el tamaño de bloque de caché?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La controladora de la cabina de almacenamiento organiza su caché en "bloques", que son fragmentos de memoria que pueden tener un tamaño de 8, 16 o 32 KiB. Todos los volúmenes del sistema de almacenamiento comparten el mismo espacio de caché; por lo tanto, los volúmenes solo pueden tener un tamaño de bloque de caché.
+
+Las aplicaciones utilizan diferentes tamaños de bloque, lo que puede afectar el rendimiento del almacenamiento. De manera predeterminada, el tamaño de bloque en System Manager es de 32 KiB, pero se puede modificar el valor a 8, 16 o 32 KiB. Un tamaño menor es una buena opción para los sistemas de archivos o las aplicaciones de bases de datos. Un tamaño mayor es una buena opción para aplicaciones que requieren grandes transferencias de datos, operaciones de I/o secuenciales o alto ancho de banda, como las aplicaciones multimedia.

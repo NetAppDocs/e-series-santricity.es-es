@@ -1,0 +1,53 @@
+---
+permalink: um-certificates/resolve-untrusted-certificates-certificate-page.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, resolve, untrusted, certificates 
+summary: Los certificados dejan de ser de confianza cuando una cabina de almacenamiento intenta establecer una conexión con SANtricity Unified Manager, pero no se confirma que la conexión sea segura. 
+---
+= Resuelva los certificados que no son de confianza
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los certificados dejan de ser de confianza cuando una cabina de almacenamiento intenta establecer una conexión con Unified Manager, pero no se confirma que la conexión sea segura.
+
+En la página Certificado, puede resolver certificados que no son de confianza al importar un certificado autofirmado de la cabina de almacenamiento o al importar un certificado de una entidad de certificación (CA) que emitió un tercero de confianza.
+
+.Antes de empezar
+* Inició sesión con un perfil de usuario que cuenta con permisos de administración de seguridad.
+* Si tiene pensado importar un certificado firmado por una CA:
++
+** Generó una solicitud de firma de certificación (archivo .CSR) para cada controladora en la cabina de almacenamiento y la envió a la CA.
+** La CA devolvió archivos de certificado de confianza.
+** Los archivos de certificado están disponibles en el sistema local.
+
+
+
+
+.Acerca de esta tarea
+Es posible que necesite instalar otros certificados de CA de confianza si se da alguna de las siguientes condiciones:
+
+* Añadió recientemente una cabina de almacenamiento.
+* Uno o ambos certificados caducaron.
+* Uno o ambos certificados fueron revocados.
+* Falta un certificado raíz o intermedio en uno o ambos certificados.
+
+
+.Pasos
+. Seleccione *Gestión de certificados*.
+. Seleccione la ficha *Trusted*.
++
+Esta página muestra todos los certificados notificados para las cabinas de almacenamiento.
+
+. Seleccione menú:Importar[certificados] para importar un certificado de CA o menú:Importar[certificados de la cabina de almacenamiento autofirmados] para importar un certificado autofirmado.
++
+Para limitar la vista, puede utilizar el campo de filtrado *Mostrar certificados...* o puede ordenar las filas de certificados haciendo clic en uno de los encabezados de columna.
+
+. En el cuadro de diálogo, seleccione el certificado y, a continuación, haga clic en *Importar*.
++
+El certificado se carga y se valida.
+
+

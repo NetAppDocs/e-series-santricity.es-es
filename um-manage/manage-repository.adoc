@@ -1,0 +1,58 @@
+---
+permalink: um-manage/manage-repository.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, manage, software, repository 
+summary: En el repositorio de software, figuran todos los archivos de software relacionados con el proxy de servicios web. 
+---
+= Gestionar el repositorio de software
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+En el repositorio de software, figuran todos los archivos de software relacionados con el proxy de servicios web.
+
+Si no puede ver el archivo que desea utilizar, puede utilizar la opción gestionar repositorio de software para importar uno o más archivos de sistema operativo SANtricity al sistema host donde se ejecutan el proxy de servicios web y Unified Manager. También puede optar por eliminar uno o varios de los archivos de sistema operativo SANtricity que están disponibles en el repositorio de software.
+
+.Antes de empezar
+Si añade archivos de sistema operativo SANtricity, asegúrese de que estén disponibles en el sistema local.
+
+.Pasos
+. En la vista principal, seleccione *gestionar* y, a continuación, elija MENU:Centro de actualización[gestionar el repositorio de software].
++
+Se muestra el cuadro de diálogo gestionar el repositorio de software.
+
+. Realice una de las siguientes acciones:
++
+[cols="25h,~"]
+|===
+| Opción | Haga esto 
+
+
+ a| 
+Importar
+ a| 
+.. Haga clic en *Importar.*
+.. Haga clic en *examinar* y, a continuación, desplácese hasta la ubicación en la que residen los archivos del sistema operativo que desea agregar.
++
+Los archivos de sistema operativo tienen un nombre similar a `N2800-830000-000.dlp`.
+
+.. Seleccione uno o más archivos de sistema operativo que desee agregar y, a continuación, haga clic en *Importar*.
+
+
+
+
+ a| 
+Eliminar
+ a| 
+.. Seleccione uno o varios archivos de sistema operativo que desee quitar del repositorio de software.
+.. Haga clic en *Eliminar*.
+
+
+|===
+
+
+.Resultados
+Si seleccionó Importar, los archivos se cargan y se validan. Si seleccionó Eliminar, los archivos se quitan del repositorio de software.

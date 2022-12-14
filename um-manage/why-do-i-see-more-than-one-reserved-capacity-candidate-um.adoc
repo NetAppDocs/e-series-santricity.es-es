@@ -1,0 +1,16 @@
+---
+permalink: um-manage/why-do-i-see-more-than-one-reserved-capacity-candidate-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, reserved, capacity, candidate 
+summary: Si existe más de un volumen en un pool o grupo de volúmenes que cumple con el porcentaje de capacidad seleccionado para el objeto de almacenamiento, se mostrarán varios candidatos. 
+---
+= ¿Por qué se muestra más de un candidato de capacidad reservada?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si existe más de un volumen en un pool o grupo de volúmenes que cumple con el porcentaje de capacidad seleccionado para el objeto de almacenamiento, se mostrarán varios candidatos.
+
+Para actualizar la lista de candidatos recomendados, es posible modificar el porcentaje de espacio de la unidad física que desea reservar en el volumen base para las operaciones de servicios de copia. Se mostrarán los mejores candidatos en función de su selección.

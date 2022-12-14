@@ -1,0 +1,38 @@
+---
+permalink: sm-support/retrieve-health-image.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, retrieve, health, image 
+summary: Es posible revisar la imagen de estado de una controladora. Una imagen de estado es un volcado de datos sin formato de la memoria del procesador de la controladora que el soporte técnico puede utilizar para diagnosticar un problema con una controladora. 
+---
+= Recuperar una imagen de estado
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible revisar la imagen de estado de una controladora. Una imagen de estado es un volcado de datos sin formato de la memoria del procesador de la controladora que el soporte técnico puede utilizar para diagnosticar un problema con una controladora.
+
+.Acerca de esta tarea
+El firmware genera automáticamente una imagen de estado cuando detecta ciertos errores. Después de que se genera una imagen de estado, se reinicia la controladora con el error y se registra un evento en el registro de eventos.
+
+Si se activó AutoSupport, la imagen de estado se envía automáticamente al soporte técnico. Si no se activó AutoSupport, es necesario ponerse en contacto con el soporte técnico para obtener instrucciones sobre la forma de recuperar la imagen de estado y enviarla al soporte para su análisis.
+
+[NOTE]
+====
+Realice esta operación solo cuando el soporte técnico se lo indique.
+
+====
+.Pasos
+. Seleccione menú:ficha Soporte[Centro de soporte > Diagnóstico].
+. Seleccione *recuperar imagen médica*.
++
+Puede revisar la sección de detalles para ver el tamaño de la imagen de estado antes de descargar el archivo.
+
+. Haga clic en *recoger*.
++
+El archivo se guarda en la carpeta de descargas del explorador con el nombre `health-image.7z`.
+
+. Siga las instrucciones del soporte técnico para enviar el archivo.
+

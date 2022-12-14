@@ -1,0 +1,19 @@
+---
+permalink: um-certificates/what-do-i-need-to-know-before-adding-a-directory-server-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, adding, directory, server 
+summary: Antes de añadir un servidor de directorio en Access Management, debe cumplir ciertos requisitos. 
+---
+= ¿Qué debo saber antes de añadir un servidor de directorio?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Antes de añadir un servidor de directorio en Access Management, debe cumplir ciertos requisitos.
+
+* Debe haber grupos de usuarios definidos en el servicio de directorio.
+* Deben estar disponibles las credenciales del servidor LDAP, incluidos el nombre de dominio y la URL del servidor y, de manera opcional, el nombre de usuario y la contraseña de la cuenta de enlace.
+* En el caso de los servidores LDAPS que utilizan un protocolo seguro, se debe instalar la cadena de certificados del servidor LDAP en la máquina local.
+

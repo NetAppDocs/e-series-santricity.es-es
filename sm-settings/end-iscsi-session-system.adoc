@@ -1,0 +1,32 @@
+---
+permalink: sm-settings/end-iscsi-session-system.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, end, iSCSI, session, 
+summary: Es posible finalizar una sesión iSCSI que no se necesita. Se pueden realizar sesiones iSCSI con hosts o cabinas de almacenamiento remotas en una relación de reflejo asíncrono. 
+---
+= Finalice la sesión iSCSI
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible finalizar una sesión iSCSI que no se necesita. Se pueden realizar sesiones iSCSI con hosts o cabinas de almacenamiento remotas en una relación de reflejo asíncrono.
+
+.Acerca de esta tarea
+Es posible que desee finalizar una sesión iSCSI por los siguientes motivos:
+
+* *Acceso no autorizado* -- Si un iniciador iSCSI está conectado y no debe tener acceso, puede finalizar la sesión iSCSI para forzar al iniciador iSCSI fuera de la matriz de almacenamiento. El iniciador de iSCSI puede haber iniciado sesión porque el método de autenticación Ninguno estaba disponible.
+* *Tiempo de inactividad del sistema* -- Si necesita desconectar una matriz de almacenamiento y observa que los iniciadores iSCSI todavía están conectados, puede finalizar las sesiones iSCSI para sacar los iniciadores iSCSI de la matriz de almacenamiento.
+
+
+.Pasos
+. Seleccione MENU:Settings[System].
+. Seleccione *Ver/finalizar sesiones iSCSI*.
++
+Se muestra una lista de las sesiones iSCSI actuales.
+
+. Seleccione la sesión que desea finalizar
+. Haga clic en *Finalizar sesión* y confirme que desea realizar la operación.
+

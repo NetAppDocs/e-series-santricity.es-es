@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/why-would-i-suspend-a-snapshot-schedule.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series,  suspend, snapshot, schedule 
+summary: Cuando se suspende una programación, no se ejecutan las creaciones de imágenes Snapshot programadas. Es posible poner en pausa una programación Snapshot para conservar el espacio de almacenamiento, y reanudar las Snapshot programadas más adelante. 
+---
+= ¿Por qué debería suspender una programación Snapshot?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cuando se suspende una programación, no se ejecutan las creaciones de imágenes Snapshot programadas. Es posible poner en pausa una programación Snapshot para conservar el espacio de almacenamiento, y reanudar las Snapshot programadas más adelante.
+
+Si no necesita la programación Snapshot, debe eliminarla en lugar de suspenderla.

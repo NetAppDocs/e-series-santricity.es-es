@@ -1,0 +1,103 @@
+---
+permalink: sm-storage/performance-graphs-guidelines.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, performance, 
+summary: La página rendimiento ofrece gráficos y tablas de datos que permiten evaluar el rendimiento de la cabina de almacenamiento en varias áreas clave. 
+---
+= Gráficos de rendimiento y directrices
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La página rendimiento ofrece gráficos y tablas de datos que permiten evaluar el rendimiento de la cabina de almacenamiento en varias áreas clave.
+
+Las funciones de rendimiento permiten realizar estas tareas:
+
+* Vea los datos de rendimiento casi en tiempo real para determinar si una cabina de almacenamiento está experimentando problemas.
+* Exportar datos de rendimiento para construir una vista histórica de una cabina de almacenamiento e identificar cuándo comenzó un problema o qué lo provocó.
+* Seleccionar los objetos, las métricas de rendimiento y el periodo que se desean visualizar.
+* Comparar métricas.
+
+
+Los datos de rendimiento se pueden ver en tres formatos:
+
+* * Gráficos en tiempo real* -- traza los datos de rendimiento de un gráfico casi en tiempo real.
+* * Tabulaciones en tiempo casi real* -- enumera los datos de rendimiento en una tabla en casi tiempo real.
+* *Archivo CSV exportado* -- permite guardar los datos de rendimiento tabulares en un archivo de valores separados por comas para su posterior visualización y análisis.
+
+
+
+
+== Características de los formatos de datos de rendimiento
+
+[cols="1a,1a,1a,1a,1a"]
+|===
+| *Tipo de monitorización del rendimiento* | *Intervalo de muestreo* | *Duración de la hora mostrada* | *Número máximo de objetos visualizados* | *Capacidad para guardar datos* 
+
+
+ a| 
+Gráficos en tiempo real, activos
+
+Gráficos en tiempo real, históricos
+ a| 
+10 s (activo)
+
+5 min (histórico)
+
+Los puntos de datos visualizados dependen del lapso seleccionado
+ a| 
+El lapso predeterminado es 1 hora.
+
+Opciones:
+
+* 5 minutos
+* 1 hora
+* 8 horas
+* 1 día
+* 7 días
+* 30 días
+
+ a| 
+5
+ a| 
+No
+
+
+
+ a| 
+Tabulaciones casi en tiempo real (vista de tabla)
+ a| 
+10 segundos -1 horas
+ a| 
+Valor más actual
+ a| 
+Ilimitada
+ a| 
+Sí
+
+
+
+ a| 
+Archivo de valores separados por comas (CSV)
+ a| 
+Depende del lapso seleccionado
+ a| 
+Depende del lapso seleccionado
+ a| 
+Ilimitada
+ a| 
+Sí
+
+|===
+
+
+== Directrices para visualizar datos de rendimiento
+
+* La recogida de datos de rendimiento siempre está activada. No existe una opción para desactivarla.
+* Cada vez que transcurre un intervalo de muestreo, se consulta a la cabina de almacenamiento y se actualizan los datos.
+* Para los datos gráficos, el lapso de 5 minutos admite una actualización de 10 segundos promediada cada 5 minutos. El resto de los lapsos se actualizan cada 5 minutos, promediado por el lapso seleccionado.
+* Los datos de rendimiento en las vistas gráficas se actualizan en tiempo real. Los datos de rendimiento en las vista de tabla se actualizan casi en tiempo real.
+* Si un objeto supervisado se modifica durante el lapso en que se recogen datos, es posible que ese objeto no tenga un conjunto de puntos de datos completo que abarque el lapso seleccionado. Por ejemplo, los conjuntos de volúmenes pueden cambiar a medida que los volúmenes se crean, eliminan, asignan o se anula su asignación; o bien mientras se añaden, eliminan o fallan unidades.
+

@@ -1,0 +1,37 @@
+---
+permalink: sm-mirroring/deactivate-asynchronous-mirroring.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, deactivate, asynchronous, mirroring, remote, 
+summary: Es posible desactivar el mirroring asíncrono en las cabinas de almacenamiento local y remota para restablecer el uso normal de los puertos dedicados en las cabinas de almacenamiento. 
+---
+= Desactivar las operaciones de mirroring asíncrono
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible desactivar el mirroring asíncrono en las cabinas de almacenamiento local y remota para restablecer el uso normal de los puertos dedicados en las cabinas de almacenamiento.
+
+.Antes de empezar
+* Se deben haber borrado previamente todas las relaciones de reflejo. Verifique que todos los grupos de coherencia de reflejos y las parejas reflejadas se hayan eliminado de las cabinas de almacenamiento local y remota.
+* La cabina de almacenamiento local y la cabina de almacenamiento remota deben conectarse a través de una interfaz de estructura Fibre Channel o iSCSI.
+
+
+.Acerca de esta tarea
+Cuando se desactiva el mirroring asíncrono, no se puede realizar ningún tipo de actividad de reflejo en las cabinas de almacenamiento local y remota.
+
+.Pasos
+. Seleccione menu:Storage[Asynchronous Mirroring].
+. Seleccione menú:tareas no comunes[Desactivar].
++
+El sistema muestra una confirmación.
+
+. Seleccione *Sí* para confirmar.
+
+
+.Resultados
+* Los canales de host HBA de la controladora que estaban dedicados a la comunicación de las operaciones de mirroring asíncrono ahora pueden aceptar solicitudes de lectura y escritura del host.
+* Ninguno de los volúmenes de esta cabina de almacenamiento puede participar en relaciones de reflejo como volumen primario o secundario.
+

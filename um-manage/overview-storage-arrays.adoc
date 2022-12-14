@@ -1,0 +1,42 @@
+---
+permalink: um-manage/overview-storage-arrays.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, discover, storage, arrays 
+summary: Para gestionar los recursos de almacenamiento, primero se deben detectar las cabinas de almacenamiento en la red. 
+---
+= Información general de detección
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para gestionar los recursos de almacenamiento, primero se deben detectar las cabinas de almacenamiento en la red.
+
+
+
+== ¿Cómo se detectan cabinas?
+
+Utilice la página Añadir/detectar para encontrar y añadir las cabinas de almacenamiento que desea gestionar en la red de la organización. Es posible detectar varias cabinas de almacenamiento o una sola. Para hacerlo, debe introducir direcciones IP de red y, a continuación, Unified Manager intentar establecer conexiones individuales con cada dirección IP de ese rango.
+
+Obtenga más información:
+
+* link:considerations-for-discovering-arrays.html["Consideraciones sobre la detección de cabinas"]
+* link:discover-multiple-arrays.html["Detectar varias cabinas de almacenamiento"]
+* link:discover-single-array.html["Detectar una sola cabina"]
+
+
+
+
+== ¿Cómo se gestionan las cabinas?
+
+Después de descubrir las matrices, vaya a la página *gestionar - todo*. En esta página, puede desplazarse por una lista de cabinas de almacenamiento detectadas en la red, ver su estado y realizar operaciones en una sola cabina o en un grupo de cabinas.
+
+Si desea gestionar una sola cabina, puede seleccionarla y abrir System Manager.
+
+Obtenga más información:
+
+* link:launch-considerations.html["Consideraciones para acceder a System Manager"]
+* link:launch-system-manager.html["Gestione una cabina de almacenamiento individual"]
+* link:storage-array-status.html["Ver el estado de la cabina de almacenamiento"]
+

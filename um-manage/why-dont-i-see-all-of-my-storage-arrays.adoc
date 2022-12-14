@@ -1,0 +1,21 @@
+---
+permalink: um-manage/why-dont-i-see-all-of-my-storage-arrays.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, arrays missing 
+summary: Durante la operación Importar configuración, es posible que algunas cabinas de almacenamiento no estén disponibles en el cuadro de diálogo de selección de objetivos. 
+---
+= ¿Por qué no se muestran todas las cabinas de almacenamiento?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Durante la operación Importar configuración, es posible que algunas cabinas de almacenamiento no estén disponibles en el cuadro de diálogo de selección de objetivos.
+
+Que las cabinas de almacenamiento no aparezcan puede deberse a los siguientes motivos:
+
+* La versión de firmware es inferior a 8.50.
+* La cabina de almacenamiento se encuentra sin conexión.
+* El sistema no puede comunicarse con esa cabina (por ejemplo, la cabina tiene problemas de red o con un certificado o una contraseña).
+

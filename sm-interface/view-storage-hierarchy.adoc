@@ -1,0 +1,121 @@
+---
+permalink: sm-interface/view-storage-hierarchy.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, storage hierarchy 
+summary: La jerarquía de almacenamiento en la interfaz principal ofrece una vista organizada de los distintos componentes de hardware y objetos de almacenamiento gestionados por la cabina de almacenamiento. 
+---
+= Ver la jerarquía de almacenamiento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La jerarquía de almacenamiento en la interfaz principal ofrece una vista organizada de los distintos componentes de hardware y objetos de almacenamiento gestionados por la cabina de almacenamiento.
+
+Para ver la jerarquía de almacenamiento, vaya a la página Inicio y haga clic en la flecha desplegable de un componente de la cabina de almacenamiento u objeto de almacenamiento. Una cabina de almacenamiento está compuesta por un conjunto de componentes físicos y lógicos.
+
+
+
+== Componentes físicos
+
+En esta tabla, se describen los componentes físicos de una cabina de almacenamiento.
+
+[cols="25h,~"]
+|===
+| Componente | Descripción 
+
+
+ a| 
+Controladora
+ a| 
+Una controladora consta de una placa, un firmware y un software. Controla las unidades e implementa las funciones de System Manager.
+
+
+
+ a| 
+Bandeja
+ a| 
+Una bandeja es un compartimento que se instala en un armario o rack. Incluye componentes de hardware para la cabina de almacenamiento. Existen dos tipos de bandejas: Una bandeja de controladoras y una de unidades. La bandeja de controladoras incluye controladoras y unidades. Una bandeja de unidades incluye módulos de I/o (IOM) y unidades.
+
+[NOTE]
+====
+Si la cabina de almacenamiento contiene tipos de medios o de interfaz diferentes, se muestra una bandeja de unidades para cada tipo de unidad.
+
+====
+
+
+ a| 
+Unidad
+ a| 
+Una unidad es un dispositivo mecánico electromagnético o un dispositivo de memoria de estado sólido que proporciona medios de almacenamiento físico para datos.
+
+
+
+ a| 
+Host
+ a| 
+Un host es un servidor que envía I/o a un volumen de una cabina de almacenamiento.
+
+
+
+ a| 
+Adaptador de bus de host (HBA)
+ a| 
+Un adaptador de bus de host (HBA) es una placa que se encuentra en un host y tiene uno o más puertos de host.
+
+
+
+ a| 
+Puerto de host
+ a| 
+Un puerto de host es un puerto en un adaptador de bus de host (HBA) que facilita la conexión física a una controladora y se usa en operaciones de I/O.
+
+
+
+ a| 
+Cliente de gestión
+ a| 
+Un cliente de gestión es el equipo donde se instala un explorador para acceder a System Manager.
+
+|===
+
+
+== Componentes lógicos
+
+Las unidades de la cabina de almacenamiento proporcionan capacidad de almacenamiento físico para los datos. System Manager se utiliza para configurar la capacidad física en los componentes lógicos, como pools, grupos de volúmenes y volúmenes. Estos componentes son las herramientas que se utilizan para configurar, almacenar, mantener y conservar datos en la cabina de almacenamiento. En esta tabla, se describen los componentes lógicos de una cabina de almacenamiento.
+
+[cols="25h,~"]
+|===
+| Componente | Descripción 
+
+
+ a| 
+Piscina
+ a| 
+Un pool es un conjunto de unidades que se agrupan en forma lógica. Se puede usar un pool para crear uno o más volúmenes accesibles para un host. (Se crean volúmenes desde un pool o un grupo de volúmenes).
+
+
+
+ a| 
+Grupo de volúmenes
+ a| 
+Un grupo de volúmenes es un contenedor para volúmenes con características compartidas. Un grupo de volúmenes tiene una capacidad definida y un nivel de RAID. Se puede usar un grupo de volúmenes para crear uno o más volúmenes a los que se pueda acceder mediante un host. (Los volúmenes se crean a partir de un pool o un grupo de volúmenes).
+
+
+
+ a| 
+Volumen
+ a| 
+Un volumen es un contenedor en el cual las aplicaciones, las bases de datos y los sistemas de archivos almacenan datos. Es el componente lógico que se crea para que el host acceda al almacenamiento de la cabina de almacenamiento.
+
+
+
+ a| 
+Número de unidad lógica (LUN)
+ a| 
+Un número de unidad lógica (LUN) es el número asignado al espacio de dirección que utiliza un host para acceder a un volumen. El volumen se presenta al host como capacidad en forma de LUN.
+
+Cada host tiene su propio espacio de dirección de LUN. Por lo tanto, distintos hosts pueden utilizar el mismo LUN para acceder a diferentes volúmenes.
+
+|===

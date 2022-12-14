@@ -1,0 +1,48 @@
+---
+permalink: sm-settings/overview-certificates.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, certificates, 
+summary: 'Es posible utilizar System Manager para crear solicitudes de firma de certificados (CSR), importar certificados y gestionar certificados existentes.' 
+---
+= Información general sobre certificados
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible utilizar System Manager para crear solicitudes de firma de certificados (CSR), importar certificados y gestionar certificados existentes.
+
+
+
+== ¿Qué son los certificados?
+
+_Certificates_ son archivos digitales que identifican entidades en línea, como sitios web y servidores, para comunicaciones seguras en Internet. Existen dos tipos de certificados: Un _certificado firmado_ es validado por una entidad de certificación (CA) y un _certificado autofirmado_ es validado por el propietario de la entidad en lugar de por un tercero.
+
+Obtenga más información:
+
+* link:how-certificates-work-sam.html["Cómo funcionan los certificados"]
+* link:certificate-terminology.html["Terminología de certificados"]
+
+
+
+
+== ¿Cómo se configuran los certificados firmados?
+
+Primero, se genera una solicitud de firma desde System Manager y, a continuación, se envía el archivo a una CA. Una vez que la CA devuelve los archivos de certificado, se deben importar mediante System Manager.
+
+Obtenga más información:
+
+* link:use-ca-signed-certificates-for-controllers.html["Use certificados firmados por CA para las controladoras"]
+* link:use-ca-signed-certificates-for-authentication-with-a-key-management-server.html["Use certificados firmados por CA para la autenticación con un servidor de gestión de claves"]
+
+
+
+
+== Información relacionada
+
+Obtenga más información acerca de las tareas relacionadas con los certificados:
+
+* link:view-imported-certificates.html["Vea información de certificaciones importadas"]
+* link:enable-certificate-revocation-checking.html["Habilite la comprobación de revocación de certificados"]
+

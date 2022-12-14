@@ -1,0 +1,53 @@
+---
+permalink: sm-mirroring/synchronous-mirroring-status.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, status, 
+summary: El estado de una pareja reflejada síncrona indica si los datos en el volumen primario y el volumen secundario están sincronizados. El estado de reflejo es independiente del estado de componente de los volúmenes en la pareja reflejada. 
+---
+= Estado de mirroring síncrono
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El estado de una pareja reflejada síncrona indica si los datos en el volumen primario y el volumen secundario están sincronizados. El estado de reflejo es independiente del estado de componente de los volúmenes en la pareja reflejada.
+
+[NOTE]
+====
+Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
+
+====
+Las parejas reflejadas síncronas pueden tener uno de los siguientes Estados:
+
+* *Óptimo*
++
+Indica que los volúmenes de la pareja reflejada están sincronizados, lo que significa que la conexión estructural entre la cabina de almacenamiento funciona y cada volumen está en la condición operativa deseada.
+
+* *Sincronización*
++
+Muestra el progreso de la sincronización de datos entre las parejas reflejadas. Este estado también se muestra durante la sincronización inicial.
+
++
+Después de la interrupción de un enlace de comunicación, solo se copian al volumen secundario los bloques de datos que cambiaron en el volumen primario durante la interrupción del enlace.
+
+* *No sincronizado*
++
+Indica que la cabina de almacenamiento del volumen primario no puede escribir los datos entrantes en la cabina remota. El host local puede seguir escribiendo en el volumen primario, pero no se producen escrituras remotas. Existen distintas condiciones que pueden evitar que la cabina de almacenamiento del volumen primario escriba los datos entrantes en el volumen secundario, por ejemplo:
+
++
+** No se puede acceder al volumen secundario.
+** No se puede acceder a la cabina de almacenamiento remota.
+** No se puede acceder a la conexión estructural entre las cabinas de almacenamiento.
+** No se puede actualizar el volumen secundario con un identificador a nivel mundial (WWID).
+
+
+* *Suspendido*
++
+Indica que el usuario suspendió la operación de mirroring síncrono. Cuando se suspende una pareja reflejada, no se realiza ningún intento para comunicarse con el volumen secundario. Las escrituras en el volumen primario se registran de forma persistente en los volúmenes de capacidad reservada de reflejos.
+
+* *Error*
++
+Indica que la operación de mirroring síncrono no funciona normalmente debido a un fallo en el volumen primario, el volumen secundario o la capacidad reservada de reflejos.
+
+

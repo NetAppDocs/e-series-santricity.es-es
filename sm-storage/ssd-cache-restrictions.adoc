@@ -1,0 +1,36 @@
+---
+permalink: sm-storage/ssd-cache-restrictions.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, ssd, cache, restrictions 
+summary: Obtenga información acerca de las restricciones en el uso de la caché SSD en una cabina de almacenamiento. 
+---
+= Restricciones de la caché SSD
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Obtenga información acerca de las restricciones en el uso de la caché SSD en una cabina de almacenamiento.
+
+
+
+== Restricciones
+
+* Cualquier volumen asignado para utilizar una caché SSD de una controladora no es elegible para una transferencia de equilibrio de carga automática.
+* Actualmente, solo se admite una caché SSD por cabina de almacenamiento.
+* La capacidad máxima de la caché SSD utilizable en una cabina de almacenamiento es 5 TB.
+* Las imágenes Snapshot no admiten la función SSD Cache.
+* Caché SSD no está disponible en los sistemas de almacenamiento EF600 o EF300.
+* Si importa o exporta volúmenes que tienen habilitada o deshabilitada la función SSD Cache, los datos en caché no se importan ni se exportan.
+* No puede quitar la última unidad de una caché SSD sin antes eliminar la caché SSD.
+
+
+
+
+== Restricciones con Drive Security
+
+* Solo es posible habilitar la seguridad en la caché SSD cuando se crea la caché SSD. No se puede habilitar la seguridad posteriormente como en un volumen.
+* Si se combinan unidades compatibles y no compatibles con la función de seguridad en la caché SSD, no se puede habilitar Drive Security en estas unidades.
+* Los volúmenes con la función de seguridad habilitada deben tener una caché SSD que se encuentre habilitada para la función de seguridad.
+

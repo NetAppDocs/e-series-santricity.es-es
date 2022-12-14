@@ -1,0 +1,39 @@
+---
+permalink: sm-storage/overview-performance.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, performance 
+summary: La página rendimiento ofrece maneras sencillas para supervisar el rendimiento de la cabina de almacenamiento. 
+---
+= Información general sobre rendimiento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La página rendimiento ofrece maneras sencillas para supervisar el rendimiento de la cabina de almacenamiento.
+
+
+
+== ¿Qué puedo aprender de los datos de rendimiento?
+
+Los gráficos y las tablas de rendimiento muestran datos de rendimiento casi en tiempo real, lo que ayuda a determinar si una cabina de almacenamiento está experimentando problemas. También puede guardar los datos de rendimiento para construir una vista histórica de una cabina de almacenamiento e identificar cuándo comenzó un problema o qué lo provocó.
+
+Obtenga más información:
+
+* link:performance-graphs-guidelines.html["Gráficos de rendimiento y directrices"]
+* link:performance-terminology.html["Condiciones de rendimiento"]
+
+
+
+
+== ¿Cómo puedo ver los datos de rendimiento?
+
+Los datos de rendimiento están disponibles en la página Inicio y en la página almacenamiento.
+
+Obtenga más información:
+
+* link:view-performance-data-graphical.html["Ver los datos de rendimiento gráficos"]
+* link:view-and-save-performance-data-tabular.html["Ver y guardar los datos de rendimiento tabulares"]
+* link:interpret-performance-data.html["Interpretar datos de rendimiento"]
+

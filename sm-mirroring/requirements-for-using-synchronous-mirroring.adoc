@@ -1,0 +1,87 @@
+---
+permalink: sm-mirroring/requirements-for-using-synchronous-mirroring.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, requirements, synchronous, mirroring, 
+summary: Si planea utilizar la función de mirroring síncrono, tenga en cuenta los siguientes requisitos. 
+---
+= Requisitos para mirroring síncrono
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si planea utilizar la función de mirroring síncrono, tenga en cuenta los siguientes requisitos.
+
+
+
+== Unified Manager
+
+Para habilitar y configurar el mirroring entre dos cabinas, debe usar la interfaz de Unified Manager. Unified Manager debe estar instalado en un sistema host junto con el proxy de servicios web.
+
+* El proxy de servicios web se encuentra en ejecución.
+* Unified Manager se ejecuta en el host local a través de una conexión HTTPS.
+* SANtricity Unified Manager debe mostrar los certificados SSL válidos para la cabina de almacenamiento. Es posible aceptar un certificado autofirmado o instalar una certificación de seguridad propia con Unified Manager. Para hacerlo, debe navegar hasta MENU:Certificate[Gestión de certificados].
+
+
+
+
+== Cabinas de almacenamiento
+
+[NOTE]
+====
+La función de mirroring no está disponible en las cabinas de almacenamiento EF300 o EF600.
+
+====
+* Debe tener dos cabinas de almacenamiento.
+* Cada cabina de almacenamiento debe tener dos controladoras.
+* Las dos cabinas de almacenamiento se encuentran detectadas en Unified Manager.
+* Cada controladora en la cabina primaria y la cabina secundaria debe tener un puerto Ethernet de gestión configurado y debe estar conectada a la red.
+* Las cabinas de almacenamiento deben tener la versión de firmware 7.84 como mínimo. (Cada una puede ejecutar versiones de sistema operativo diferentes).
+* Debe conocer la contraseña de las cabinas de almacenamiento remota y local.
+* Debe tener suficiente capacidad libre en la cabina de almacenamiento remota para crear un volumen secundario mayor o igual que el volumen primario que desea reflejar.
+* Las cabinas de almacenamiento local y remota se encuentran conectadas a través de una estructura Fibre Channel.
+
+
+
+
+== Conexiones admitidas
+
+La comunicación para la función Synchronous Mirroring solo se admite en las controladoras con puertos de host Fibre Channel (FC).
+
+La función utiliza el puerto de host con el número más alto de cada controladora en la cabina de almacenamiento local y la cabina de almacenamiento remota. Por lo general, el puerto de host 4 del adaptador de bus de host (HBA) de la controladora se reserva para la transmisión de datos reflejados.
+
+
+
+== Candidatos de volumen reflejado
+
+* El nivel de RAID, los parámetros de almacenamiento en caché y el tamaño de los segmentos pueden ser diferentes en los volúmenes primario y secundario de una pareja reflejada síncrona.
+* Los volúmenes primario y secundario de una pareja reflejada síncrona deben ser volúmenes estándar. No pueden ser volúmenes finos o Snapshot.
+* El volumen secundario deber tener al menos el tamaño del volumen primario.
+* Solo el volumen primario puede contener Snapshot asociadas y/o ser el volumen objetivo o de origen en una operación de copia de volumen.
+* Un volumen puede participar solo en una relación de reflejo.
+* Existen límites para la cantidad de volúmenes que se admiten en una cabina de almacenamiento determinada. Asegúrese de que la cantidad de volúmenes configurados en la cabina de almacenamiento sea menor que el límite admitido. Cuando se activa el mirroring síncrono, los dos volúmenes de capacidad reservada creados se cuentan para el límite de volúmenes.
+
+
+
+
+== Capacidad reservada
+
+* Se requiere capacidad reservada en el volumen primario y en el volumen secundario para registrar la información de escritura que se utiliza en la recuperación de los restablecimientos de la controladora y otras interrupciones temporales.
+* Los volúmenes de capacidad reservada se crean automáticamente cuando se activa el mirroring síncrono. Debido a que tanto el volumen primario como el volumen secundario de una pareja reflejada requieren capacidad reservada, debe asegurarse de contar con capacidad libre suficiente en ambas cabinas de almacenamiento que participan en la relación de reflejo síncrono.
+
+
+
+
+== Función Drive Security
+
+* Si utiliza unidades compatibles con la función de seguridad, tanto el volumen primario como el secundario deben tener una configuración de seguridad compatible. Esta restricción no se aplica; por lo tanto, debe verificarlo por su cuenta.
+* Si utiliza unidades compatibles con la función de seguridad, tanto el volumen primario como el secundario deberían usar el mismo tipo de unidad. Esta restricción no se aplica; por lo tanto, debe verificarlo por su cuenta.
++
+** Si el volumen primario utiliza unidades de cifrado de disco completo (FDE), el volumen secundario debe usar unidades FDE.
+** Si el volumen primario utiliza unidades validadas con el estándar de procesamiento de información federal 140-2 (FIPS), el volumen secundario también debe utilizarlas 140-2.
+
+
+* Si utiliza Data Assurance (DA), el volumen primario y el secundario deben tener la misma configuración DE DA.
+

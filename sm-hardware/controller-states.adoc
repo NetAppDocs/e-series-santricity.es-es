@@ -1,0 +1,50 @@
+---
+permalink: sm-hardware/controller-states.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, controller, states, 
+summary: 'Una controladora se puede colocar en tres estados distintos: En línea, sin conexión y modo de servicio.' 
+---
+= estados de la controladora
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Una controladora se puede colocar en tres estados distintos: En línea, sin conexión y modo de servicio.
+
+
+
+== Estado en línea
+
+El estado en línea es el estado de funcionamiento normal de la controladora. Significa que la controladora funciona con normalidad y está disponible para operaciones de I/O.
+
+Cuando se coloca una controladora en el estado en línea, su estado se configura como Optimal.
+
+
+
+== Estado sin conexión
+
+Por lo general, el estado sin conexión se usa para preparar una controladora para reemplazarla cuando hay dos controladoras en la cabina de almacenamiento. La controladora puede pasar al estado sin conexión por los siguientes dos motivos: El usuario puede introducir un comando explícito o se puede producir un error en la controladora. Una controladora puede salir del estado sin conexión solo si se emite otro comando explícito o si se reemplaza la controladora que produjo un error. Solo se puede colocar una controladora sin conexión si hay dos controladoras en la cabina de almacenamiento.
+
+Si una controladora se encuentra en un estado sin conexión, es porque se presentaron las siguientes condiciones:
+
+* La controladora no está disponible para I/O.
+* No se puede gestionar la cabina de almacenamiento por medio de esa controladora.
+* Todos los volúmenes que actualmente pertenecen a esa controladora se mueven a la otra controladora.
+* Está deshabilitado el mirroring de la caché y todos los volúmenes se cambian a escritura mediante el modo de caché.
+
+
+
+
+== Modo de servicio
+
+El modo de servicio, por lo general, es una condición que solo utiliza el soporte técnico para transferir todos los volúmenes de la cabina de almacenamiento a una controladora a fin de poder efectuar un diagnóstico en la otra controladora. Una controladora se debe colocar manualmente en el modo de servicio y volver a colocarse en línea manualmente una vez que finaliza la operación de mantenimiento.
+
+Si una controladora se encuentra en el modo de servicio, se debe a las siguientes condiciones:
+
+* La controladora no está disponible para I/O.
+* El soporte técnico puede acceder a la controladora por medio del puerto serie o la conexión a redes para analizar los problemas potenciales.
+* Todos los volúmenes que actualmente pertenecen a esa controladora se mueven a la otra controladora.
+* Está deshabilitado el mirroring de la caché y todos los volúmenes se cambian a escritura mediante el modo de caché.
+

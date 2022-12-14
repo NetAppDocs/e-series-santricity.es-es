@@ -1,0 +1,31 @@
+---
+permalink: sm-settings/edit-community-names-for-snmp-traps.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, edit, communities, smpv2c, traps, 
+summary: Puede editar nombres de comunidad para capturas SNMPv2c. 
+---
+= Editar comunidades para capturas SNMPv2c
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede editar nombres de comunidad para capturas SNMPv2c.
+
+.Antes de empezar
+Se debe crear un nombre de comunidad.
+
+.Pasos
+. Seleccione MENU:Setting[Alerts].
+. Seleccione la ficha *SNMP*.
++
+Los destinos de capturas y los nombres de comunidad aparecen en la tabla.
+
+. Seleccione *Configurar comunidades*.
+. Introduzca el nuevo nombre de comunidad y haga clic en *Guardar*. Los nombres de comunidades deben consistir únicamente en caracteres ASCII imprimibles.
+
+
+.Resultados
+La pestaña SNMP de la página Alertas muestra el nombre actualizado de la comunidad.

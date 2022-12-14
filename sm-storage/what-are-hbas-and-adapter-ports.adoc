@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/what-are-hbas-and-adapter-ports.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hbas, adapter, ports 
+summary: 'Un adaptador de bus de host (HBA) es una placa que se encuentra en un host y tiene uno o más puertos de host. Un puerto de host es un puerto en un adaptador de bus de host (HBA) que facilita la conexión física a una controladora y se usa en operaciones de I/O.' 
+---
+= ¿Qué son los HBA y los puertos de adaptador?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un adaptador de bus de host (HBA) es una placa que se encuentra en un host y tiene uno o más puertos de host. Un puerto de host es un puerto en un adaptador de bus de host (HBA) que facilita la conexión física a una controladora y se usa en operaciones de I/O.
+
+Los puertos de adaptador en el HBA se denominan puertos de host. La mayoría de los HBA tiene uno o dos puertos de host. El HBA tiene un identificador a nivel mundial (WWID) y cada puerto de host de HBA tiene un WWID único. Los identificadores de puertos de host se usan para asociar el HBA adecuado al host físico cuando se crea manualmente el host mediante SANtricity System Manager o se crea automáticamente el host mediante el agente de contexto de host.

@@ -1,0 +1,21 @@
+---
+permalink: um-certificates/why-cant-i-log-in-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, log in, login 
+summary: Si recibe un error al intentar iniciar sesión, revise estas causas posibles. 
+---
+= ¿Por qué no puedo iniciar sesión?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si recibe un error al intentar iniciar sesión, revise estas causas posibles.
+
+Los errores de inicio de sesión pueden ocurrir por uno de estos motivos:
+
+* Introdujo un nombre de usuario o contraseña incorrectos.
+* No tiene privilegios suficientes.
+* Intentó iniciar sesión reiteradamente sin éxito y se activó el modo de bloqueo. Aguarde 10 minutos y vuelva a intentarlo.
+

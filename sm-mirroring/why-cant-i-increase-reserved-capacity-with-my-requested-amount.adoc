@@ -1,0 +1,26 @@
+---
+permalink: sm-mirroring/why-cant-i-increase-reserved-capacity-with-my-requested-amount.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, increase, reserved, capacity, 
+summary: Es posible aumentar la capacidad reservada únicamente en incrementos de 4 GIB. 
+---
+= ¿Por qué no puedo aumentar la capacidad reservada con la cantidad que he solicitado?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible aumentar la capacidad reservada únicamente en incrementos de 4 GIB.
+
+Revise las siguientes directrices:
+
+* Debe tener suficiente capacidad libre en el pool o el grupo de volúmenes para poder realizar una expansión si es necesario.
++
+Si no hay capacidad libre en ningún pool o grupo de volúmenes, es posible añadir capacidad sin asignar en forma de unidades no utilizadas a un pool o un grupo de volúmenes.
+
+* El volumen en el pool o el grupo de volúmenes debe tener el estado óptima y no debe estar en ningún estado de modificación.
+* Debe existir capacidad libre en el pool o grupo de volúmenes que desea usar para aumentar la capacidad.
+
+
+Para las operaciones de mirroring asíncrono, generalmente es el 20 % del volumen base. Use un porcentaje más alto si cree que el volumen base se someterá a muchos cambios, o si la expectativa de duración estimada de una operación de servicio de copia de un objeto de almacenamiento será muy larga.

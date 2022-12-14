@@ -1,0 +1,21 @@
+---
+permalink: sm-settings/when-should-i-synchronize-storage-array-clocks.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronize, storage, array, clock, 
+summary: 'Se deben sincronizar manualmente los relojes de las controladoras en la cabina de almacenamiento si se observa que las marcas de tiempo que se muestran en System Manager no están alineadas con las marcas de tiempo del cliente de gestión (el ordenador que accede a System Manager por medio del explorador). Esta tarea es necesaria solo si no se habilitó el protocolo de tiempo de redes (NTP) en System Manager.' 
+---
+= ¿Cuándo se deben sincronizar los relojes de la cabina de almacenamiento?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se deben sincronizar manualmente los relojes de las controladoras en la cabina de almacenamiento si se observa que las marcas de tiempo que se muestran en System Manager no están alineadas con las marcas de tiempo del cliente de gestión (el ordenador que accede a System Manager por medio del explorador). Esta tarea es necesaria solo si no se habilitó el protocolo de tiempo de redes (NTP) en System Manager.
+
+[NOTE]
+====
+Se recomienda enfáticamente utilizar un servidor NTP en lugar de sincronizar manualmente los relojes. NTP sincroniza automáticamente los relojes con un servidor externo que utiliza el protocolo de tiempo de redes simple (SNTP).
+
+====
+Se puede comprobar el estado de sincronización desde el cuadro de diálogo Sincronizar relojes de cabinas de almacenamiento, que se encuentra disponible en la página sistema. Si las horas que aparecen en el cuadro de diálogo no coinciden, ejecute una sincronización. Puede ver este cuadro de diálogo periódicamente y verificar si las horas que muestran los relojes de las controladoras se distanciaron y ya no están sincronizadas.

@@ -1,0 +1,130 @@
+---
+permalink: sm-storage/performance-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, performance, terms 
+summary: Conozca la forma en que los términos de rendimiento se aplican a su cabina de almacenamiento. 
+---
+= Terminología de rendimiento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Conozca la forma en que los términos de rendimiento se aplican a su cabina de almacenamiento.
+
+[cols="25h,~"]
+|===
+| Duración | Descripción 
+
+
+ a| 
+Cliente más
+ a| 
+Una aplicación es un programa de software como SQL o Exchange.
+
+
+
+ a| 
+CPU
+ a| 
+CPU es la sigla en inglés para la unidad central de procesamiento. La CPU indica el porcentaje de capacidad de procesamiento de la cabina de almacenamiento que está en uso.
+
+
+
+ a| 
+Host
+ a| 
+Un host es un servidor que envía I/o a un volumen de una cabina de almacenamiento.
+
+
+
+ a| 
+IOPS
+ a| 
+IOPS es la sigla en inglés para las operaciones de I/o por segundo.
+
+
+
+ a| 
+Latencia
+ a| 
+La latencia es el intervalo de tiempo entre una solicitud, como un comando de lectura o escritura, y la respuesta del host o la cabina de almacenamiento.
+
+
+
+ a| 
+LUN
+ a| 
+Un número de unidad lógica (LUN) es el número asignado al espacio de dirección que utiliza un host para acceder a un volumen. El volumen se presenta al host como capacidad en forma de LUN.
+
+Cada host tiene su propio espacio de dirección de LUN. Por lo tanto, distintos hosts pueden utilizar el mismo LUN para acceder a diferentes volúmenes.
+
+
+
+ a| 
+MIB
+ a| 
+MIB es la contracción de mebibyte (mega binary byte). Un MIB es 220 o 1,048,576 bytes. Se compara con MB, que representa un valor sobre la base de 10. Un MB equivale a 1,024 bytes.
+
+
+
+ a| 
+Objeto
+ a| 
+Un objeto es cualquier componente de almacenamiento lógico o físico.
+
+Los objetos lógicos incluyen grupos de volúmenes, pools y volúmenes. Los objetos físicos abarcan la cabina de almacenamiento, las controladoras de las cabinas, los hosts y las unidades.
+
+
+
+ a| 
+Piscina
+ a| 
+Un pool es un conjunto de unidades que se agrupan en forma lógica. Se puede usar un pool para crear uno o más volúmenes accesibles para un host. (Se crean volúmenes desde un pool o un grupo de volúmenes).
+
+
+
+ a| 
+Lea
+ a| 
+La lectura es la forma abreviada de "operación de lectura", lo que se produce cuando el host solicita datos de la cabina de almacenamiento.
+
+
+
+ a| 
+Volumen
+ a| 
+Un volumen es un contenedor en el cual las aplicaciones, las bases de datos y los sistemas de archivos almacenan datos. Es el componente lógico que se crea para que el host acceda al almacenamiento de la cabina de almacenamiento.
+
+Un volumen se crea a partir de la capacidad disponible de un pool o un grupo de volúmenes. Un volumen tiene una capacidad definida. Aunque es posible que un volumen conste de más de una unidad, un volumen aparece como un componente lógico para el host.
+
+
+
+ a| 
+Nombre del volumen
+ a| 
+Un nombre de volumen es una cadena de caracteres que se asignan al volumen cuando se crea. Se puede aceptar el nombre predeterminado o se puede proporcionar un nombre más descriptivo que indique el tipo de datos almacenados en el volumen.
+
+
+
+ a| 
+Grupo de volúmenes
+ a| 
+Un grupo de volúmenes es un contenedor para volúmenes con características compartidas. Un grupo de volúmenes tiene una capacidad definida y un nivel de RAID. Se puede usar un grupo de volúmenes para crear uno o más volúmenes a los que se pueda acceder mediante un host. (Los volúmenes se crean a partir de un pool o un grupo de volúmenes).
+
+
+
+ a| 
+Carga de trabajo
+ a| 
+Una carga de trabajo es un objeto de almacenamiento que admite una aplicación. Se pueden definir una o más cargas de trabajo o instancias por aplicación. En algunas aplicaciones, el sistema configura la carga de trabajo para contener volúmenes con características subyacentes similares. Estas características de volumen se optimizan según el tipo de aplicación que es compatible con la carga de trabajo. Por ejemplo, si crea una carga de trabajo que es compatible con la aplicación Microsoft SQL Server y, a continuación, crea volúmenes para esa carga de trabajo, las características de volumen subyacentes se optimizan para ser compatibles con Microsoft SQL Server.
+
+
+
+ a| 
+Escritura
+ a| 
+La escritura es la forma abreviada de "operación de escritura", cuando se envían datos desde el host hacia la cabina con fines de almacenamiento.
+
+|===

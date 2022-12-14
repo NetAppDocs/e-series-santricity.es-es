@@ -1,0 +1,32 @@
+---
+permalink: sm-settings/access-management-tokens-edit.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, access management, edit tokens 
+summary: Puede editar la configuración de los tokens de acceso, lo que incluye los tiempos de caducidad y la capacidad de crear nuevos tokens. 
+---
+= Edite la configuración del token de acceso
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede editar la configuración de los tokens de acceso, lo que incluye los tiempos de caducidad y la capacidad de crear nuevos tokens.
+
+.Pasos
+. Seleccione MENU:Settings[Access Management].
+. Seleccione la ficha *tokens de acceso*.
+. Seleccione *Ver/editar configuración de token de acceso*.
+. En el cuadro de diálogo, puede realizar una o ambas tareas:
++
+** Activar o desactivar la creación de token.
+** Cambiar la caducidad de los tokens existentes.
++
+
+NOTE: Al anular la selección del valor *Habilitar tokens de acceso*, se evita tanto la creación de token como la autenticación de token. Si vuelve a activar esta configuración más tarde, se pueden volver a utilizar tokens no vencidos. Si desea revocar permanentemente todos los tokens existentes, consulte link:access-management-tokens-revoke.html["Revocar tokens de acceso"].
+
+
+
+. Haga clic en *Guardar*.
+

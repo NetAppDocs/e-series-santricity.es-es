@@ -1,0 +1,47 @@
+---
+permalink: sm-settings/add-on-feature-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, add-on, feature, terms 
+summary: Conozca la forma en que los términos de las funciones complementarias se aplican a su cabina de almacenamiento. 
+---
+= Terminología de la función complementaria
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Conozca la forma en que los términos de las funciones complementarias se aplican a su cabina de almacenamiento.
+
+[cols="25h,~"]
+|===
+| Duración | Descripción 
+
+
+ a| 
+Identificador de habilitación de la función
+ a| 
+Un identificador de habilitación de la función es una cadena única que identifica una cabina de almacenamiento específica. Este identificador garantiza que cuando se obtiene la función excepcional, esta se asocie únicamente con una cabina de almacenamiento en particular. Esta cadena aparece en la sección funciones adicionales de la página sistema.
+
+
+
+ a| 
+Archivo de claves de función
+ a| 
+Un archivo de claves de función es un archivo que se recibe para desbloquear y habilitar una función excepcional o un paquete de funciones.
+
+
+
+ a| 
+Paquete de funciones
+ a| 
+Un paquete de funciones es un paquete que cambia los atributos de la cabina de almacenamiento (por ejemplo, cambiar el protocolo Fibre Channel a iSCSI). Los paquetes de funciones requieren una clave especial para habilitarlos.
+
+
+
+ a| 
+Función excepcional
+ a| 
+Una función prémium es una opción adicional que requiere una clave para habilitarla. No se incluye en la configuración estándar de System Manager.
+
+|===

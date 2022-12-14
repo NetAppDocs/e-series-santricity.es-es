@@ -1,0 +1,48 @@
+---
+permalink: sm-storage/how-workloads-work.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, application, workloads, volume, 
+summary: Al crear un volumen, se debe seleccionar una carga de trabajo para personalizar la configuración de la cabina de almacenamiento para una aplicación específica. 
+---
+= Cómo funcionan las cargas de trabajo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Al crear un volumen, se debe seleccionar una carga de trabajo para personalizar la configuración de la cabina de almacenamiento para una aplicación específica.
+
+Una carga de trabajo es un objeto de almacenamiento que admite una aplicación. Se pueden definir una o más cargas de trabajo o instancias por aplicación. En algunas aplicaciones, el sistema configura la carga de trabajo para contener volúmenes con características subyacentes similares. Estas características de volumen se optimizan según el tipo de aplicación que es compatible con la carga de trabajo. Por ejemplo, si crea una carga de trabajo que es compatible con la aplicación Microsoft SQL Server y, a continuación, crea volúmenes para esa carga de trabajo, las características de volumen subyacentes se optimizan para ser compatibles con Microsoft SQL Server.
+
+Durante la creación de un volumen, el sistema indica que se deben responder preguntas acerca del uso de las cargas de trabajo. Por ejemplo, si se crean volúmenes para Microsoft Exchange, se consultará cuántos buzones se necesitan, cuáles son los requisitos de capacidad promedio del buzón y cuántas copias de la base de datos se desean. El sistema utiliza esta información para crear una configuración de volumen óptima para el usuario, que se puede editar en caso de ser necesario. De manera opcional, es posible omitir este paso en la secuencia de creación de volúmenes.
+
+
+
+== Tipos de cargas de trabajo
+
+Es posible crear dos tipos de cargas de trabajo: Específicas para una aplicación y de otro tipo.
+
+* *Específico de la aplicación*. Cuando se crean volúmenes con una carga de trabajo específica de la aplicación, el sistema puede recomendar una configuración de volumen optimizada para minimizar la contención entre las operaciones de I/o de la carga de trabajo de la aplicación y demás tráfico de la instancia de la aplicación. Las características del volumen, como tipo de I/o, tamaño de segmentos, propiedad de la controladora, y caché de lectura y escritura, se recomiendan y se optimizan automáticamente para las cargas de trabajo que se crean para los siguientes tipos de aplicaciones.
++
+** Microsoft® SQL Server™
+** Microsoft® Exchange Server™
+** Aplicaciones de videovigilancia
+** VMware ESXi™ (para volúmenes que se usarán con Virtual Machine File System)
++
+Se puede revisar la configuración de volumen recomendada y editar, añadir o eliminar volúmenes y características recomendados por el sistema mediante el cuadro de diálogo Añadir/editar volúmenes.
+
+
+
+* *Otros* (o aplicaciones sin compatibilidad con la creación de volúmenes específicos). Otras cargas de trabajo utilizan una configuración de volumen que debe especificar manualmente cuando desea crear una carga de trabajo no asociada con una aplicación específica, o si el sistema no posee la optimización integrada para la aplicación que piensa utilizar en la cabina de almacenamiento. Debe especificar manualmente la configuración del volumen en el cuadro de diálogo Añadir/editar volúmenes.
+
+
+
+
+== Vistas de aplicaciones y cargas de trabajo
+
+Para ver aplicaciones y cargas de trabajo, ejecute System Manager de SANtricity. Desde esa interfaz, es posible ver la información asociada a una carga de trabajo específica de la aplicación de dos maneras diferentes:
+
+* Es posible seleccionar la pestaña *aplicaciones y cargas de trabajo* en el icono volúmenes para ver los volúmenes de la cabina de almacenamiento agrupados por carga de trabajo, además del tipo de aplicación con la que está asociada la carga de trabajo.
+* Puede seleccionar la pestaña *aplicaciones y cargas de trabajo* en el icono rendimiento para ver métricas de rendimiento (latencia, IOPS y MB) de objetos lógicos. Los objetos se agrupan por aplicación y carga de trabajo asociada. Al recoger estos datos de rendimiento en intervalos regulares, se pueden establecer mediciones de referencia y analizar tendencias, que pueden ayudar a investigar problemas relacionados con el rendimiento de I/O.
+

@@ -1,0 +1,14 @@
+---
+permalink: sm-support/view-storage-array-information.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, storage, array, 
+summary: Es posible ver el perfil de la cabina de almacenamiento y las versiones de firmware para cada componente de la cabina de almacenamiento. 
+---
+= Vea información de la cabina de almacenamiento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible ver el perfil de la cabina de almacenamiento y las versiones de firmware para cada componente de la cabina de almacenamiento.

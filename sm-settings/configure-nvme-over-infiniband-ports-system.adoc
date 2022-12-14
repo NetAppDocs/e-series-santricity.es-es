@@ -1,0 +1,37 @@
+---
+permalink: sm-settings/configure-nvme-over-infiniband-ports-system.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, nvme, over, InfiniBand, ports, 
+summary: Si la controladora incluye una conexión NVMe over InfiniBand, los ajustes del puerto NVMe se pueden configurar desde la página sistema. 
+---
+= Configure los puertos NVMe over InfiniBand
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si la controladora incluye una conexión NVMe over InfiniBand, los ajustes del puerto NVMe se pueden configurar desde la página sistema.
+
+.Antes de empezar
+* La controladora debe incluir un puerto de host NVMe over InfiniBand; de lo contrario, los ajustes de NVMe over InfiniBand no estarán disponibles en System Manager.
+* Se debe conocer la dirección IP de la conexión de host.
+
+
+[NOTE]
+====
+La configuración y las funciones de NVMe over InfiniBand aparecen solamente si la controladora de la cabina de almacenamiento contiene un puerto NVMe over InfiniBand.
+
+====
+.Pasos
+. Seleccione MENU:Settings[System].
+. En *Configuración de NVMe over InfiniBand*, seleccione *Configurar puertos NVMe over InfiniBand*.
+. Seleccione la controladora que tenga el puerto NVMe over InfiniBand que desea configurar. Haga clic en *Siguiente*.
+. Seleccione el puerto de HIC que desea configurar de la lista desplegable e introduzca la dirección IP.
++
+Si desea configurar una cabina de almacenamiento EF600 con una HIC de 200 GB, este cuadro de diálogo muestra dos campos de dirección IP: Uno para un puerto físico (externo) y uno para un puerto virtual (interno). Debe asignar una dirección IP exclusiva a cada puerto. Estos ajustes permiten que el host establezca una ruta entre cada puerto y que la HIC alcance el rendimiento máximo. Si no se asigna una dirección IP al puerto virtual, la HIC se ejecutará a aproximadamente la mitad de su capacidad de velocidad.
+
+. Haga clic en *Finalizar*.
+. Restablezca el puerto NVMe over InfiniBand. Para ello, haga clic en *Sí*.
+

@@ -1,0 +1,36 @@
+---
+permalink: um-admin/manage-session-timeouts-unified.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, manage, session, timeouts 
+summary: Es posible configurar tiempos de espera en SANtricity System Manager para que las sesiones inactivas de los usuarios se desconecten después de un periodo especificado. 
+---
+= Gestionar los tiempos de espera de sesión
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible configurar tiempos de espera en System Manager para que las sesiones inactivas de los usuarios se desconecten después de un periodo especificado.
+
+.Acerca de esta tarea
+De manera predeterminada, el tiempo de espera de sesión para Unified Manager es de 30 minutos. Es posible ajustar el tiempo, o bien directamente pueden deshabilitarse los tiempos de espera de sesión.
+
+.Pasos
+. En la barra de menú, seleccione la flecha desplegable junto a su nombre de inicio de sesión.
+. Seleccione *Activar/Desactivar tiempo de espera de sesión*.
++
+Se abre el cuadro de diálogo Habilitar/deshabilitar tiempo de espera de la sesión.
+
+. Utilice los controles de desplazamiento para aumentar o disminuir el tiempo en minutos.
++
+El tiempo de espera mínimo que puede configurarse es de 15 minutos.
+
++
+[NOTE]
+====
+Para desactivar los tiempos de espera de sesiones, desactive la casilla de verificación *establecer el lapso...*.
+
+====
+. Haga clic en *Guardar*.
+

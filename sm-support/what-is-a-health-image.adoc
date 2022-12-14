@@ -1,0 +1,16 @@
+---
+permalink: sm-support/what-is-a-health-image.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, health, images, controller, memory, processor 
+summary: Una imagen de estado es un volcado de datos sin formato de la memoria del procesador de la controladora que el soporte técnico puede utilizar para diagnosticar un problema con una controladora. 
+---
+= ¿Qué es una imagen de estado?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Una imagen de estado es un volcado de datos sin formato de la memoria del procesador de la controladora que el soporte técnico puede utilizar para diagnosticar un problema con una controladora.
+
+El firmware genera automáticamente una imagen de estado cuando detecta ciertos errores. En determinadas situaciones de solución de problemas, el soporte técnico puede solicitar la recuperación del archivo de imagen de estado y su envío.

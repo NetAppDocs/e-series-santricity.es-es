@@ -1,0 +1,62 @@
+---
+permalink: sm-mirroring/increase-reserved-capacity.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, increase, reserved, capacity 
+summary: Es posible aumentar la capacidad reservada, que es la capacidad asignada físicamente para cualquier operación de servicio de copia en un objeto de almacenamiento. 
+---
+= Aumente la capacidad reservada
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible aumentar la capacidad reservada, que es la capacidad asignada físicamente para cualquier operación de servicio de copia en un objeto de almacenamiento.
+
+Para las operaciones Snapshot, generalmente representa el 40 % del volumen base; para las operaciones de mirroring asíncrono, generalmente se trata del 20 % del volumen base. En términos generales, se aumenta la capacidad reservada cuando se recibe una advertencia de que la capacidad reservada del objeto de almacenamiento se está llenando.
+
+.Antes de empezar
+* El volumen en el pool o el grupo de volúmenes debe tener el estado óptima y no debe estar en ningún estado de modificación.
+* Debe existir capacidad libre en el pool o grupo de volúmenes que desea usar para aumentar la capacidad.
++
+Si no hay capacidad libre en ningún pool o grupo de volúmenes, es posible añadir capacidad sin asignar en forma de unidades no utilizadas a un pool o un grupo de volúmenes.
+
+
+
+.Acerca de esta tarea
+Es posible aumentar la capacidad reservada solo en incrementos de 8 GIB para los siguientes objetos de almacenamiento:
+
+* Grupo Snapshot
+* Volumen Snapshot
+* Volumen miembro del grupo de coherencia
+* Volumen de pareja reflejada
+
+
+Use un porcentaje alto si considera que el volumen primario se someterá a muchos cambios o si la vida útil de una operación de servicio de copia será muy prolongada.
+
+[NOTE]
+====
+No es posible aumentar la capacidad reservada para un volumen Snapshot de solo lectura. Solo los volúmenes Snapshot que son de lectura y escritura requieren capacidad reservada.
+
+====
+.Pasos
+. Seleccione MENU:almacenamiento[Pools y grupos de volúmenes].
+. Seleccione la pestaña *capacidad reservada*.
+. Seleccione el objeto de almacenamiento para el que desea aumentar la capacidad reservada y haga clic en *aumentar capacidad*.
++
+Se muestra el cuadro de diálogo aumentar la capacidad reservada.
+
+. Utilice el cuadro de desplazamiento para ajustar el porcentaje de capacidad.
++
+Si no hay capacidad libre en el pool o el grupo de volúmenes que contiene el objeto de almacenamiento seleccionado y la cabina de almacenamiento posee capacidad sin asignar, es posible crear un nuevo pool o grupo de volúmenes. Puede volver a intentar esta operación con la nueva capacidad libre en ese pool o grupo de volúmenes.
+
+. Haga clic en *aumentar*.
+
+
+.Resultados
+System Manager realiza lo siguiente:
+
+* Aumenta la capacidad reservada del objeto de almacenamiento.
+* Muestra la capacidad reservada recientemente añadida.
+

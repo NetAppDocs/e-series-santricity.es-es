@@ -1,0 +1,33 @@
+---
+permalink: sm-support/view-nvme-over-fabrics-statistics-support.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, view, nvme, over, fabrics, statistics 
+summary: Es posible ver datos acerca de las conexiones NVMe over Fabrics a la cabina de almacenamiento. 
+---
+= Ver estadísticas de NVMe over Fabrics
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible ver datos acerca de las conexiones NVMe over Fabrics a la cabina de almacenamiento.
+
+.Acerca de esta tarea
+En System Manager, se muestran los siguientes tipos de estadísticas de NVMe over Fabrics. Todas las estadísticas son de solo lectura y no pueden configurarse.
+
+* *Estadísticas del subsistema NVMe* -- muestra estadísticas para la controladora NVMe y su cola. La controladora NVMe ofrece una ruta de acceso entre un host y los espacios de nombres en la cabina de almacenamiento. Es posible revisar las estadísticas del subsistema NVMe para consultar elementos, como errores de conexión, reinicios y apagados.
+* *Estadísticas de la interfaz RDMA* -- proporciona estadísticas para todos los puertos NVMe over Fabrics de la interfaz RDMA, que incluye estadísticas de rendimiento e información de errores de enlace asociados con cada puerto del switch. Esta pestaña solo se muestra cuando existen puertos NVMe over Fabrics disponibles.
+
+
+Es posible ver cada una de las estadísticas como estadísticas sin configurar o estadísticas de base. Las estadísticas sin configurar son todas las estadísticas recogidas desde que se iniciaron las controladoras. Las estadísticas de base son las estadísticas de un momento específico que se recogen desde el establecimiento de la hora de la línea de base.
+
+.Pasos
+. Seleccione menú:ficha Soporte[Centro de soporte > Diagnóstico].
+. Seleccione *Ver estadísticas de NVMe over Fabrics*.
+. Para establecer la línea de base, haga clic en *establecer nueva línea de base*.
++
+La configuración de la línea de base establece un nuevo punto de partida para la recogida de estadísticas. Se usa la misma línea de base para todas las estadísticas de NVMe.
+
+

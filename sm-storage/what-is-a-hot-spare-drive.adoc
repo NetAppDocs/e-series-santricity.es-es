@@ -1,0 +1,24 @@
+---
+permalink: sm-storage/what-is-a-hot-spare-drive.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, hot, spare, drive 
+summary: Las piezas de repuesto actúan como unidades en espera en los grupos de volúmenes RAID 1, RAID 5 o RAID 6. Son unidades completamente funcionales que no contienen datos. Si se produce un error en una unidad del grupo de volúmenes, la controladora automáticamente reconstruye los datos de la unidad con error en una pieza de repuesto. 
+---
+= ¿Qué es una unidad de repuesto?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Las piezas de repuesto actúan como unidades en espera en los grupos de volúmenes RAID 1, RAID 5 o RAID 6. Son unidades completamente funcionales que no contienen datos. Si se produce un error en una unidad del grupo de volúmenes, la controladora automáticamente reconstruye los datos de la unidad con error en una pieza de repuesto.
+
+Si se produce un error en una unidad de la cabina de almacenamiento, la unidad de repuesto automáticamente sustituye a la unidad con error sin necesidad de realizar un cambio físico. Si la unidad de repuesto está disponible cuando se produce un error en una unidad, la controladora utiliza datos de redundancia para reconstruir los datos de la unidad con error en la unidad de repuesto.
+
+Una unidad de repuesto no está dedicada a un grupo de volúmenes específico. Sino que se puede usar la unidad de repuesto en lugar de cualquier unidad con error de la cabina de almacenamiento con la misma capacidad o una menor. Una unidad de repuesto debe ser del mismo tipo de medio (HDD o SSD) que las unidades que protege.
+
+[NOTE]
+====
+Las unidades de repuesto no son compatibles con los pools. En lugar de las unidades de repuesto, los pools utilizan la capacidad de conservación dentro de cada unidad que compone el pool.
+
+====

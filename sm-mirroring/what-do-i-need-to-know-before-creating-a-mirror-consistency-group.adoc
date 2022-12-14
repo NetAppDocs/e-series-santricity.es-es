@@ -1,0 +1,39 @@
+---
+permalink: sm-mirroring/what-do-i-need-to-know-before-creating-a-mirror-consistency-group.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, mirror, consistency, group, 
+summary: Siga estas directrices para poder crear un grupo de coherencia de reflejos. 
+---
+= ¿Qué debo saber antes de crear un grupo de coherencia de reflejos?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Siga estas directrices para poder crear un grupo de coherencia de reflejos.
+
+[NOTE]
+====
+Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
+
+====
+El grupo de coherencia se crea en Unified Manager en el asistente Crear pareja reflejada.
+
+Cumpla con los siguientes requisitos para Unified Manager:
+
+* El proxy de servicios web se encuentra en ejecución.
+* Unified Manager se ejecuta en el host local a través de una conexión HTTPS.
+* SANtricity Unified Manager debe mostrar los certificados SSL válidos para la cabina de almacenamiento. Es posible aceptar un certificado autofirmado o instalar una certificación de seguridad propia con Unified Manager. Para hacerlo, debe navegar hasta MENU:Certificate[Gestión de certificados].
+
+
+También debe cumplir con los siguientes requisitos para las cabinas de almacenamiento:
+
+* Las dos cabinas de almacenamiento se encuentran detectadas en Unified Manager.
+* Cada cabina de almacenamiento debe tener dos controladoras.
+* Cada controladora en la cabina primaria y la cabina secundaria debe tener un puerto Ethernet de gestión configurado y debe estar conectada a la red.
+* Las cabinas de almacenamiento deben tener la versión de firmware 7.84 como mínimo. (Cada una puede ejecutar versiones de sistema operativo diferentes).
+* Debe conocer la contraseña de las cabinas de almacenamiento remota y local.
+* Las cabinas de almacenamiento local y remota se encuentran conectadas a través de una estructura Fibre Channel o una interfaz iSCSI.
+

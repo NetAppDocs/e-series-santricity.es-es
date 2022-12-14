@@ -1,0 +1,16 @@
+---
+permalink: sm-interface/what-if-i-dont-see-all-of-my-hardware-components.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, verify hardware 
+summary: Si no se ven todos los componentes de hardware en el cuadro de diálogo verificar hardware, es posible que una bandeja de unidades no esté conectada correctamente o que se haya instalado una bandeja incompatible en la cabina de almacenamiento. 
+---
+= ¿Qué sucede si no veo todos mis componentes de hardware?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si no se ven todos los componentes de hardware en el cuadro de diálogo verificar hardware, es posible que una bandeja de unidades no esté conectada correctamente o que se haya instalado una bandeja incompatible en la cabina de almacenamiento.
+
+Verifique que se hayan conectado correctamente todas las bandejas de unidades. Si no está seguro de cuáles bandejas de unidades son compatibles, póngase en contacto con el soporte técnico.

@@ -1,0 +1,20 @@
+---
+permalink: sm-mirroring/why-would-i-update-my-remote-storage-arrays-ip-address.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, update, remote, ip, address, 
+summary: La dirección IP de la cabina de almacenamiento remota se actualiza cuando cambia la dirección IP de un puerto iSCSI y la cabina de almacenamiento local no puede comunicarse con la cabina de almacenamiento remota. 
+---
+= ¿Por qué debería actualizar la dirección IP de la cabina de almacenamiento remota?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La dirección IP de la cabina de almacenamiento remota se actualiza cuando cambia la dirección IP de un puerto iSCSI y la cabina de almacenamiento local no puede comunicarse con la cabina de almacenamiento remota.
+
+Cuando se establece una relación de mirroring asíncrono con una conexión iSCSI, tanto la cabina de almacenamiento remota como la local guardan un registro de la dirección IP de la cabina de almacenamiento remota en la configuración de mirroring asíncrono. Si cambia la dirección IP de un puerto iSCSI, la cabina de almacenamiento remota que intenta utilizar ese puerto se encuentra con un error de comunicación.
+
+La cabina de almacenamiento con la dirección IP modificada envía un mensaje a cada cabina de almacenamiento remota asociada con los grupos de coherencia de reflejos configurados para reflejar a través de una conexión iSCSI. Las cabinas de almacenamiento que reciben este mensaje actualizan automáticamente su dirección IP objetivo remota.
+
+Si la cabina de almacenamiento con la dirección IP modificada no puede enviar el mensaje entre cabinas a una cabina de almacenamiento remota, el sistema envía una alerta del problema de conectividad. Utilice la opción Actualizar dirección IP remota para volver a establecer la conexión con la cabina de almacenamiento local.

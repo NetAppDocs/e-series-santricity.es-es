@@ -1,0 +1,16 @@
+---
+permalink: sm-interface/how-does-identifying-applications-help-me-manage-my-storage-array.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, 
+summary: Cuando se identifican aplicaciones, System Manager recomienda automáticamente una configuración de volumen que optimiza el almacenamiento según el tipo de aplicación. 
+---
+= ¿Cómo ayuda la identificación de aplicaciones a gestionar la cabina de almacenamiento?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cuando se identifican aplicaciones, System Manager recomienda automáticamente una configuración de volumen que optimiza el almacenamiento según el tipo de aplicación.
+
+La optimización de volúmenes por aplicación puede aumentar la eficiencia de las operaciones de almacenamiento de datos. Las características como el tipo de I/o, el tamaño de segmento, la propiedad de controladora y la caché de lectura y escritura se incluyen en la configuración de volumen. Además, es posible visualizar datos de rendimiento por aplicación y por carga de trabajo para evaluar la latencia, las I/o por segundo y los MIB/seg de aplicaciones y de sus cargas de trabajo asociadas.

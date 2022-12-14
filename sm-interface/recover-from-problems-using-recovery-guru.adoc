@@ -1,0 +1,41 @@
+---
+permalink: sm-interface/recover-from-problems-using-recovery-guru.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, Recovery Guru 
+summary: Recovery Guru es un componente de System Manager para diagnosticar problemas en la cabina de almacenamiento y recomendar procedimientos de recuperación para corregir los problemas. 
+---
+= Recuperarse de problemas mediante Recovery Guru
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Recovery Guru es un componente de System Manager para diagnosticar problemas en la cabina de almacenamiento y recomendar procedimientos de recuperación para corregir los problemas.
+
+.Pasos
+. Seleccione *Inicio*.
+. Haga clic en el enlace con la etiqueta *recuperar de _n_ problemas* en la parte superior central de la ventana.
++
+Se muestra el cuadro de diálogo Recovery Guru.
+
+. Seleccione el primer problema detallado en la lista de resumen y siga las instrucciones del procedimiento de recuperación para corregir el problema. Cuando sea necesario, siga las instrucciones de reemplazo para reemplazar componentes con errores. Repita este paso con cada problema de la lista.
++
+Una cabina de almacenamiento puede presentar varios problemas relacionados. En este caso, el orden en que se corrijan los problemas puede afectar el resultado. Seleccione y corrija los problemas en el orden en que se detallan en la lista de resumen.
+
++
+Si un contenedor de suministro de alimentación presenta varios errores, estos se agrupan y se muestran como un solo problema en la lista de resumen. Si un contenedor de ventilador presenta varios errores, estos también se muestran como un solo problema.
+
+. Para asegurarse de que el procedimiento de recuperación se ha realizado correctamente, haga clic en *Volver a comprobar*.
++
+Si seleccionó un problema de un grupo de reflejos asíncronos o un miembro de un grupo de reflejos asíncronos, primero haga clic en *Borrar* para borrar el error de la controladora y luego haga clic en *Volver a comprobar* para eliminar el evento de Recovery Guru.
+
++
+Una vez corregidos todos los problemas, el icono de la cabina de almacenamiento de atención requerida se convertirá en el icono óptimo. En algunos problemas, se muestra un icono de corrección mientras existe una operación, como la reconstrucción, en curso.
+
+. *Opcional:* para guardar la información de Recovery Guru en un archivo, haga clic en el icono *Guardar*.
++
+El archivo se guarda en la carpeta de descargas del explorador con el nombre `recovery-guru-failure-yyyy-mm-dd-hh-mm-ss-mmm.html`.
+
+. Para imprimir la información de Recovery Guru, haga clic en el icono *Imprimir*.
+

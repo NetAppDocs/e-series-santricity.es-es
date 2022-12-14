@@ -1,0 +1,92 @@
+---
+permalink: sm-storage/change-the-settings-for-a-snapshot-schedule.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, settings, snapshot, schedule 
+summary: En el caso de una programación Snapshot, se pueden cambiar los horarios o la frecuencia de las recogidas automáticas. 
+---
+= Cambiar la configuración de una programación Snapshot
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+En el caso de una programación Snapshot, se pueden cambiar los horarios o la frecuencia de las recogidas automáticas.
+
+.Acerca de esta tarea
+Es posible importar la configuración de una programación Snapshot existente, o bien se puede modificar la configuración según sea necesario.
+
+Dado que la programación Snapshot está asociada a un grupo Snapshot o de coherencia Snapshot, la capacidad reservada puede verse afectada por los cambios realizados en la configuración de la programación.
+
+.Pasos
+. Seleccione MENU:Storage[Snapshots].
+. Haga clic en la ficha *programaciones*.
+. Seleccione la programación de instantáneas que desea cambiar y, a continuación, haga clic en *Editar*.
++
+Se muestra el cuadro de diálogo Editar programación Snapshot.
+
+. Debe realizar una de las siguientes acciones:
++
+** *Utilice una programación definida anteriormente de otro objeto de instantánea* -- haga clic en *Importar programación*, seleccione el objeto con la programación que desea importar y, a continuación, haga clic en *Importar*.
+** *Edite la configuración del programa* -- consulte Detalles del campo a continuación.
++
+.Detalles del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Ajuste | Descripción 
+
+
+ a| 
+Día / mes
+ a| 
+Seleccione una de las siguientes opciones:
+
+*** *Diario / Semanal* -- Seleccione días individuales para la sincronización de instantáneas. También puede seleccionar la casilla de verificación *Seleccionar todos los días* en la parte superior derecha si desea una programación diaria.
+*** *Mensual / Anual* -- Seleccione meses individuales para las instantáneas de sincronización. En el campo *el día*, introduzca los días del mes para ejecutar las sincronizaciones. Las entradas válidas son de *1* a *31* y *último*. Puede separar varios días con coma o punto y coma. Utilice un guion para indicar fechas inclusivas. Por ejemplo: 1,3,4,10-15,último. También puede seleccionar la casilla de verificación *Seleccionar todos los meses* en la parte superior derecha si desea una programación mensual.
+
+
+
+
+ a| 
+Hora de inicio
+ a| 
+En la lista desplegable, seleccione una hora de inicio para los snapshots diarios. Las selecciones se ofrecen en incrementos de media hora. La hora de inicio predeterminada es media hora antes de la hora actual.
+
+
+
+ a| 
+Zona horaria
+ a| 
+En la lista desplegable, seleccione la zona horaria de la cabina de almacenamiento.
+
+
+
+ a| 
+Snapshot por día
+
+Tiempo entre Snapshot
+ a| 
+Seleccione la cantidad de imágenes Snapshot que desea crear por día.
+
+Si selecciona más de una opción, seleccione además el tiempo transcurrido entre los puntos de restauración. En caso de existir varios puntos de restauración, asegúrese de contar con capacidad reservada suficiente.
+
+
+
+ a| 
+Fecha de inicio
+
+Fecha de finalización
+
+Sin fecha de finalización
+ a| 
+Introduzca la fecha de inicio para que comiencen las sincronizaciones. Introduzca también una fecha de finalización o seleccione *sin fecha de finalización*.
+
+|===
+====
+
+
+. Haga clic en *Guardar*.
+

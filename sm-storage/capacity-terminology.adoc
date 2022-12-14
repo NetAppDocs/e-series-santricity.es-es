@@ -1,0 +1,184 @@
+---
+permalink: sm-storage/capacity-terminology.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, capacity terms 
+summary: Conozca la forma en que los términos de capacidad se aplican a su cabina de almacenamiento. 
+---
+= Terminología de capacidad
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Conozca la forma en que los términos de capacidad se aplican a su cabina de almacenamiento.
+
+
+
+== Objetos de almacenamiento
+
+La siguiente terminología describe los diferentes tipos de objetos de almacenamiento que pueden interactuar con la cabina de almacenamiento.
+
+[cols="25h,~"]
+|===
+| Objeto de almacenamiento | Descripción 
+
+
+ a| 
+Host
+ a| 
+Un host es un servidor que envía I/o a un volumen de una cabina de almacenamiento.
+
+
+
+ a| 
+LUN
+ a| 
+Un número de unidad lógica (LUN) es el número asignado al espacio de dirección que utiliza un host para acceder a un volumen. El volumen se presenta al host como capacidad en forma de LUN.
+
+Cada host tiene su propio espacio de dirección de LUN. Por lo tanto, distintos hosts pueden utilizar el mismo LUN para acceder a diferentes volúmenes.
+
+
+
+ a| 
+Grupo de coherencia de reflejos
+ a| 
+Un grupo de coherencia de reflejos es un contenedor para una o más parejas reflejadas. Para las operaciones de mirroring asíncrono, se debe crear un grupo de coherencia de reflejos.
+
+
+
+ a| 
+Pareja de volúmenes reflejados
+ a| 
+Una pareja reflejada comprende dos volúmenes: Un volumen primario y uno secundario.
+
+
+
+ a| 
+Piscina
+ a| 
+Un pool es un conjunto de unidades que se agrupan en forma lógica. Se puede usar un pool para crear uno o más volúmenes accesibles para un host. (Se crean volúmenes desde un pool o un grupo de volúmenes).
+
+
+
+ a| 
+Grupo de coherencia Snapshot
+ a| 
+Un grupo de coherencia Snapshot es una recogida de volúmenes que se tratan como una entidad única cuando se crea una imagen Snapshot. Cada uno de estos volúmenes tiene su propia imagen Snapshot, pero todas las imágenes se crean en el mismo momento específico.
+
+
+
+ a| 
+Grupo Snapshot
+ a| 
+Un grupo Snapshot es una recogida de imágenes Snapshot de un volumen base único.
+
+
+
+ a| 
+Volumen Snapshot
+ a| 
+Un volumen Snapshot permite que el host acceda a los datos de la imagen Snapshot. El volumen Snapshot tiene su propia capacidad reservada que almacena cualquier modificación del volumen base sin afectar a la imagen Snapshot original.
+
+
+
+ a| 
+Volumen
+ a| 
+Un volumen es un contenedor en el cual las aplicaciones, las bases de datos y los sistemas de archivos almacenan datos. Es el componente lógico que se crea para que el host acceda al almacenamiento de la cabina de almacenamiento.
+
+
+
+ a| 
+Grupo de volúmenes
+ a| 
+Un grupo de volúmenes es un contenedor para volúmenes con características compartidas. Un grupo de volúmenes tiene una capacidad definida y un nivel de RAID. Se puede usar un grupo de volúmenes para crear uno o más volúmenes a los que se pueda acceder mediante un host. (Los volúmenes se crean a partir de un pool o un grupo de volúmenes).
+
+|===
+
+
+== Capacidad de almacenamiento
+
+La siguiente terminología describe los diferentes tipos de capacidad que se utilizan en la cabina de almacenamiento.
+
+[cols="25h,~"]
+|===
+| Tipo de capacidad | Descripción 
+
+
+ a| 
+Capacidad asignada
+ a| 
+La capacidad asignada es la capacidad física asignada de las unidades en un pool o grupo de volúmenes.
+
+Se utiliza la capacidad asignada para crear volúmenes y para operaciones de servicios de copia.
+
+
+
+ a| 
+Capacidad libre
+ a| 
+La capacidad libre es la capacidad disponible en un pool o grupo de volúmenes que todavía no se asignó a la creación de un volumen ni las operaciones de servicio de copia y objetos de almacenamiento.
+
+
+
+ a| 
+Capacidad de pool o grupo de volúmenes
+ a| 
+La capacidad de pool, volumen o grupo de volúmenes es la capacidad de una cabina de almacenamiento que se asignó a un pool o un grupo de volúmenes. Esta capacidad se usa para crear volúmenes y atender las diversas necesidades de capacidad de las operaciones de servicios de copia y objetos de almacenamiento.
+
+
+
+ a| 
+Capacidad inutilizable en pool
+ a| 
+La capacidad inutilizable del pool es el espacio del pool que no se puede usar debido al desequilibrio de los tamaños de las unidades.
+
+
+
+ a| 
+Capacidad de conservación
+ a| 
+La capacidad de conservación es la cantidad de capacidad (cantidad de unidades) que se reserva en un pool para admitir fallos de unidad potenciales.
+
+
+
+ a| 
+Capacidad notificada
+ a| 
+La capacidad notificada es la capacidad que se informa al host y a la que el host puede acceder.
+
+
+
+ a| 
+Capacidad reservada
+ a| 
+La capacidad reservada es la capacidad física asignada que se usa para cualquier operación de servicio de copia y objeto de almacenamiento. El host no puede leerla directamente.
+
+
+
+ a| 
+Caché SSD
+ a| 
+[NOTE]
+====
+Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
+
+====
+La caché SSD es un conjunto de unidades de disco de estado sólido (SSD) que se agrupan lógicamente en la cabina de almacenamiento. La función SSD Cache almacena en caché los datos a los que se accede con más frecuencia (datos "activos") en las unidades SSD de menor latencia para acelerar dinámicamente las cargas de trabajo de la aplicación.
+
+
+
+ a| 
+Capacidad sin asignar
+ a| 
+La capacidad sin asignar es el espacio de una cabina de almacenamiento que *no* se asignó a un pool o a un grupo de volúmenes.
+
+
+
+ a| 
+Capacidad escrita
+ a| 
+La capacidad escrita es la cantidad que se escribió de la capacidad reservada asignada para volúmenes finos.
+
+|===

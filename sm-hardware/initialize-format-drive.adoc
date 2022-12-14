@@ -1,0 +1,37 @@
+---
+permalink: sm-hardware/initialize-format-drive.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, initialize, format, drive, 
+summary: 'Si se mueven unidades asignadas de una cabina de almacenamiento a otra, deben inicializarse (formatearse) las unidades para poder utilizarlas en la cabina de almacenamiento nueva.' 
+---
+= Inicialice (formatear) una unidad
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si se mueven unidades asignadas de una cabina de almacenamiento a otra, deben inicializarse (formatearse) las unidades para poder utilizarlas en la cabina de almacenamiento nueva.
+
+.Acerca de esta tarea
+La inicialización elimina la información de configuración previa de una unidad y la devuelve al estado sin asignar. De esa manera, la unidad está disponible para añadirse a un nuevo pool o grupo de volúmenes en la nueva cabina de almacenamiento.
+
+Utilice la operación de inicialización de unidades cuando mueve una sola unidad. No es necesario inicializar unidades si se mueve un grupo de volúmenes entero de una cabina de almacenamiento a otra.
+
+[CAUTION]
+====
+*Posible pérdida de datos* -- cuando se inicializa una unidad, se pierden todos los datos de la unidad. Realice esta operación solo cuando el soporte técnico se lo indique.
+
+====
+.Pasos
+. Seleccione *hardware*.
+. Si el gráfico muestra los controladores, haga clic en *Mostrar frente de la bandeja*.
++
+El gráfico cambia y muestra las unidades en lugar de las controladoras.
+
+. Haga clic en la unidad que desea inicializar.
++
+Aparece el menú contextual de la unidad.
+
+. Seleccione *inicializar* y confirme que desea realizar la operación.
+

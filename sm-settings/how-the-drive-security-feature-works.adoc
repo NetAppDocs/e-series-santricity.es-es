@@ -1,0 +1,65 @@
+---
+permalink: sm-settings/how-the-drive-security-feature-works.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, Drive Security, 
+summary: 'Drive Security es una función de la cabina de almacenamiento que ofrece una capa adicional de seguridad con unidades de cifrado de disco completo (FDE) o unidades de estándar de procesamiento de información federal (FIPS).' 
+---
+= Cómo opera la función Drive Security
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Drive Security es una función de la cabina de almacenamiento que ofrece una capa adicional de seguridad con unidades de cifrado de disco completo (FDE) o unidades de estándar de procesamiento de información federal (FIPS).
+
+Cuando estas unidades se usan con la función Drive Security, se requiere una clave de seguridad para acceder a los datos. Cuando se retiran físicamente, las unidades de la cabina no pueden operar hasta que se instalan en otra cabina, instancia en la cual tendrán el estado Security Locked hasta que se proporcione la clave de seguridad correcta.
+
+
+
+== Cómo implementar Drive Security
+
+Para implementar Drive Security, siga estos pasos.
+
+. Equipe la cabina de almacenamiento con unidades compatibles con la función de seguridad, ya sea con unidades FDE o FIPS. (Para los volúmenes que requieren compatibilidad con FIPS, debe utilizar únicamente unidades FIPS. Si se mezclan unidades FIPS y FDE en un grupo de volúmenes o un pool, todas las unidades se tratarán como unidades FDE. Además, una unidad FDE no puede añadirse a ni usarse como pieza de repuesto en un grupo de volúmenes o un pool completamente FIPS.)
+. Cree una clave de seguridad, que es una cadena de caracteres compartida por la controladora y las unidades para acceso de lectura/escritura. Es posible crear una clave interna desde la memoria persistente de la controladora o una clave externa desde un servidor de gestión de claves. Para la gestión de claves externas, debe establecerse una autenticación con el servidor de gestión de claves.
+. Habilite Drive Security para pools y grupos de volúmenes:
++
+** Cree un pool o grupo de volúmenes (busque *Sí* en la columna *compatible con la función de seguridad* de la tabla candidatos).
+** Seleccione un pool o grupo de volúmenes cuando cree un volumen nuevo (busque *Sí* junto a *compatible con la función de seguridad* en la tabla de candidatos de pools y grupos de volúmenes).
+
+
+
+
+
+
+== Cómo funciona Drive Security en el nivel de unidad
+
+Una unidad compatible con la función de seguridad, FDE o FIPS, cifra los datos durante la escritura y descifra los datos durante la lectura. Estas operaciones de cifrado y descifrado no afectan al rendimiento ni al flujo de trabajo del usuario. Cada unidad tiene su propia clave de cifrado, que jamás puede transferirse de la unidad.
+
+La función Drive Security ofrece una capa adicional de protección en unidades compatibles con la función de seguridad. Cuando se seleccionan grupos de volúmenes o pools en estas unidades para Drive Security, las unidades buscan una clave de seguridad antes de permitir el acceso a los datos. Es posible habilitar Drive Security para pools y grupos de volúmenes en cualquier momento sin afectar a los datos existentes en la unidad. Sin embargo, no es posible deshabilitar Drive Security sin borrar todos los datos en la unidad.
+
+
+
+== Cómo funciona Drive Security en el nivel de cabina de almacenamiento
+
+Con la función Drive Security, se crea una clave de seguridad que se comparte entre las unidades con la función de seguridad habilitada y las controladoras en una cabina de almacenamiento. Siempre que se encienden y se apagan las unidades, las unidades con la función de seguridad habilitada cambian al estado Security Locked hasta que la controladora aplica la clave de seguridad.
+
+Si se quita una unidad con la función de seguridad habilitada de la cabina de almacenamiento y se vuelve a instalar en otra, la unidad tendrá el estado Security Locked. La unidad reubicada busca la clave de seguridad para que pueda volver a accederse a los datos. Para desbloquear los datos, debe aplicar la clave de seguridad desde la cabina de almacenamiento de origen. Después de un proceso de desbloqueo correcto, la unidad reubicada utilizará la clave de seguridad ubicada en la cabina de almacenamiento objetivo, y el archivo de claves de seguridad importado ya no será necesario.
+
+[NOTE]
+====
+Para la gestión de claves internas, la clave de seguridad se almacena en una ubicación inaccesible de la controladora. No está en formato legible, y el usuario no puede acceder a ella.
+
+====
+
+
+== Cómo funciona Drive Security en el nivel de volumen
+
+Al crear un pool o un grupo de volúmenes desde unidades compatibles con la función de seguridad, también es posible habilitar Drive Security para estos pools o grupos de volúmenes. La opción Drive Security permite que las unidades y los pools y los grupos de volúmenes asociados tengan la función de seguridad-_enabled_.
+
+Tenga en cuenta las siguientes directrices antes de crear pools y grupos de volúmenes con la función de seguridad habilitada:
+
+* Los grupos de volúmenes y los pools deben estar compuestos en su totalidad por unidades compatibles con la función de seguridad. (Para los volúmenes que requieren compatibilidad con FIPS, debe utilizar únicamente unidades FIPS. Si se mezclan unidades FIPS y FDE en un grupo de volúmenes o un pool, todas las unidades se tratarán como unidades FDE. Además, una unidad FDE no puede añadirse a ni usarse como pieza de repuesto en un grupo de volúmenes o un pool completamente FIPS.)
+* Los grupos de volúmenes y los pools deben tener el estado Optimal.
+

@@ -1,0 +1,71 @@
+---
+permalink: sm-interface/problem-notification.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, notifications 
+summary: System Manager utiliza iconos y otros métodos para notificar los problemas en la cabina de almacenamiento. 
+---
+= Información general sobre notificaciones de problemas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+System Manager utiliza iconos y otros métodos para notificar los problemas en la cabina de almacenamiento.
+
+
+
+== Iconos
+
+System Manager utiliza estos iconos para indicar el estado de la cabina de almacenamiento y sus componentes.
+
+[cols="1a,1a"]
+|===
+| . | Descripción 
+
+
+ a| 
+image:../media/sam1130-ss-icon-status-success.gif[""]
+ a| 
+Óptimo
+
+
+
+ a| 
+image:../media/sam1130-ss-icon-status-failure.gif[""]
+ a| 
+No óptimo o con error
+
+
+
+ a| 
+image:../media/sam1130-ss-icon-status-service.gif[""]
+ a| 
+Se requiere atención o corrección
+
+
+
+ a| 
+image:../media/sam1130-ss-icon-status-caution.gif[""]
+ a| 
+Precaución
+
+|===
+System Manager muestra estos iconos en diversas ubicaciones.
+
+* En el área Notifications de la página Inicio, se muestra el icono de error y un mensaje.
+* En el área de navegación, se muestra el icono de error con el icono de la página Home.
+* En la página componentes, se muestra el icono de error en el gráfico de unidades y controladoras.
+
+
+
+
+== Alertas y LED
+
+Además, System Manager notifica los problemas de otras maneras.
+
+* System Manager envía notificaciones SNMP o mensajes de error por correo electrónico.
+* Se encienden los indicadores LED de acción de servicio requerida en el hardware.
+
+
+Al recibir una notificación de un problema, utilice Recovery Guru como ayuda para corregir el problema. Cuando sea necesario, utilice la documentación del hardware con los pasos de recuperación para reemplazar componentes con errores.

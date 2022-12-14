@@ -1,0 +1,73 @@
+---
+permalink: sm-storage/how-do-i-maintain-shelf-drawer-loss-protection.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, shelf, drawer, loss, protection 
+summary: Para mantener la protección contra pérdida de bandeja/cajón para un pool o un grupo de volúmenes, use los criterios especificados en la siguiente tabla. 
+---
+= ¿Cómo se mantiene la protección contra pérdida de bandeja/cajón?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para mantener la protección contra pérdida de bandeja/cajón para un pool o un grupo de volúmenes, use los criterios especificados en la siguiente tabla.
+
+[cols="1a,1a,1a"]
+|===
+| Nivel | Criterios para la protección contra pérdida de bandeja/cajón | Cantidad mínima de bandejas/cajones requeridos 
+
+
+ a| 
+Piscina
+ a| 
+Para las bandejas, el pool no debe contener más de dos unidades en una sola bandeja.
+
+Para los cajones, el pool debe incluir la misma cantidad de unidades en cada uno de ellos.
+ a| 
+6 para bandejas
+
+5 para cajones
+
+
+
+ a| 
+RAID 6
+ a| 
+El grupo de volúmenes no contiene más de dos unidades por bandeja o cajón.
+ a| 
+3
+
+
+
+ a| 
+RAID 3 o RAID 5
+ a| 
+Cada unidad del grupo de volúmenes está ubicada en una bandeja o un cajón por separado.
+ a| 
+3
+
+
+
+ a| 
+RAID 1
+ a| 
+Cada unidad de una pareja reflejada debe ubicarse en una bandeja o un cajón por separado.
+ a| 
+2
+
+
+
+ a| 
+RAID 0
+ a| 
+No se puede lograr la protección contra pérdida de bandeja/cajón.
+ a| 
+No aplicable
+
+|===
+[NOTE]
+====
+La protección contra pérdida de bandeja/cajón no se mantiene si una unidad ya tuvo fallos en el pool o el grupo de volúmenes. En este caso, la pérdida de acceso a la bandeja o el cajón de unidades y, en consecuencia, a otra unidad en el pool o el grupo de volúmenes provoca la pérdida de datos.
+
+====

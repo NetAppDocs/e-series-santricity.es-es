@@ -1,0 +1,55 @@
+---
+permalink: sm-support/autosupport-feature-overview.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, autosupport, ASUP 
+summary: La función AutoSupport supervisa el estado de una cabina de almacenamiento y envía mensajes automáticos al soporte técnico. 
+---
+= Información general sobre la función AutoSupport
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La función AutoSupport supervisa el estado de una cabina de almacenamiento y envía mensajes automáticos al soporte técnico.
+
+El soporte técnico utiliza los datos de AutoSupport de manera reactiva para acelerar el diagnóstico y la resolución de problemas del cliente, y de manera proactiva para detectar y evitar potenciales problemas.
+
+Los datos de AutoSupport incluyen información sobre la configuración, el estado, el rendimiento y los eventos del sistema de una cabina de almacenamiento. Los datos de AutoSupport no incluyen datos de usuario. Los mensajes pueden enviarse inmediatamente o según una programación (diaria y semanal).
+
+
+
+== Ventajas clave
+
+Algunas de las ventajas clave de la función AutoSupport son las siguientes:
+
+* Resolución de incidencias más rápida
+* Supervisión sofisticada para gestionar los incidentes de forma más rápida
+* Informes automatizados de acuerdo con una programación, además de generación de informes automatizada sobre eventos críticos
+* Solicitudes de reemplazo de hardware automatizadas para ciertos componentes, como unidades
+* Alertas no intrusivas para notificar problemas y ofrecer información para que el soporte técnico tome acciones correctivas
+* Herramientas de análisis de AutoSupport que supervisan los mensajes por si surgen problemas de configuración conocidos
+
+
+
+
+== Funciones individuales de AutoSupport
+
+La función AutoSupport cuenta con tres funciones individuales que se habilitan por separado.
+
+* *Basic AutoSupport* -- permite que la cabina de almacenamiento recopile y envíe datos al soporte técnico automáticamente.
+* *AutoSupport OnDemand* -- permite al soporte técnico solicitar la retransmisión de un envío anterior de AutoSupport cuando se necesita solucionar un problema. Todas las transmisiones se inician en la cabina de almacenamiento, no en el servidor de AutoSupport. La cabina de almacenamiento realiza comprobaciones periódicas con el servidor de AutoSupport para determinar si existen solicitudes de retransmisión pendientes y responde de manera acorde.
+* *Diagnóstico remoto* -- permite al soporte técnico solicitar un nuevo mensaje de AutoSupport actualizado cuando se necesita para solucionar un problema. Todas las transmisiones se inician en la cabina de almacenamiento, no en el servidor de AutoSupport. La cabina de almacenamiento realiza comprobaciones periódicas con el servidor de AutoSupport para determinar si existen solicitudes nuevas pendientes y responde de manera acorde.
+
+
+
+
+== Diferencia entre AutoSupport y recoger datos de soporte
+
+Existen dos métodos para recoger datos de soporte en la cabina de almacenamiento:
+
+* *Función AutoSupport* -- los datos se recopilan automáticamente.
+* *Opción de recopilar datos de soporte* -- los datos deben recopilarse y enviarse manualmente.
+
+
+La función AutoSupport es más fácil de usar, ya que los datos se recogen y se envían automáticamente. Los datos de AutoSupport pueden utilizarse proactivamente para evitar problemas antes de que sucedan. La función AutoSupport acelera la solución de problemas, ya que el soporte técnico ya tiene acceso a los datos. Por estos motivos, la función AutoSupport es el método de recogida de datos preferido.

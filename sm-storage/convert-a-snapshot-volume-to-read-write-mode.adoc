@@ -1,0 +1,68 @@
+---
+permalink: sm-storage/convert-a-snapshot-volume-to-read-write-mode.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, convert, snapshot, volume, read-write mode 
+summary: Se puede convertir un volumen Snapshot o un volumen Snapshot del grupo de coherencia Snapshot de solo lectura al modo de lectura/escritura si fuera necesario. 
+---
+= Convierta un volumen Snapshot al modo de lectura/escritura
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se puede convertir un volumen Snapshot o un volumen Snapshot del grupo de coherencia Snapshot de solo lectura al modo de lectura/escritura si fuera necesario.
+
+Un volumen Snapshot que se convierte para permitir la lectura/escritura tiene su propia capacidad reservada. Esta capacidad se usa para guardar cualquier modificación subsiguiente que realice la aplicación host al volumen base sin afectar a la imagen Snapshot de referencia.
+
+.Pasos
+. Seleccione MENU:Storage[Snapshots].
+. Seleccione la ficha *volúmenes Snapshot*.
++
+Se muestra la tabla volúmenes Snapshot con todos los volúmenes Snapshot asociados con la cabina de almacenamiento.
+
+. Seleccione el volumen Snapshot de sólo lectura que desea convertir y, a continuación, haga clic en *convertir a lectura/escritura*.
++
+Aparece el cuadro de diálogo convertir a lectura/escritura con el paso *capacidad de reserva* activado. En la tabla candidato de volumen, solo se muestran los candidatos que admiten la capacidad reservada especificada.
+
+. Si desea asignar la capacidad reservada para el volumen Snapshot de lectura/escritura, debe realizar una de las siguientes acciones.
++
+** *Acepte la configuración predeterminada* -- utilice esta opción recomendada para asignar la capacidad reservada para el volumen Snapshot con la configuración predeterminada.
+** *Asigne su propia configuración de capacidad reservada para satisfacer sus necesidades de almacenamiento de datos* -- asigne la capacidad reservada usando las siguientes directrices.
++
+*** La configuración predeterminada para la capacidad reservada es del 40 % del volumen base y, por lo general, esta capacidad es suficiente.
+*** La capacidad necesaria varía, según la frecuencia y el tamaño de escrituras de I/o en el volumen.
+
+
+
+
+. Seleccione *Siguiente* para revisar o editar la configuración.
++
+Se muestra el cuadro de diálogo Editar configuración.
+
+. Acepte o especifique la configuración para el volumen de instantánea según corresponda y, a continuación, seleccione *Finalizar* para convertir el volumen de instantánea.
++
+.Detalles del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Ajuste | Descripción 
+
+
+ a| 
+*Ajustes de capacidad reservada*
+
+
+
+ a| 
+Enviarme una alerta cuando...
+ a| 
+Use el cuadro de desplazamiento para ajustar el valor del porcentaje en el cual el sistema envía una notificación de alerta cuando la capacidad reservada para un grupo Snapshot está casi completa.
+
+Cuando la capacidad reservada para el volumen Snapshot supera el umbral específico, el sistema envía una alerta que da tiempo a aumentar la capacidad reservada o eliminar los objetos innecesarios.
+
+|===
+====
+

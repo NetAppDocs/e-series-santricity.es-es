@@ -1,0 +1,200 @@
+---
+permalink: sm-interface/what-are-the-keyboard-shortcuts.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, keyboard shortcuts 
+summary: Es posible navegar por System Manager usando solo el teclado. 
+---
+= ¿Cuáles son los métodos abreviados de teclado?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible navegar por System Manager usando solo el teclado.
+
+
+
+== Navegación general
+
+[cols="1a,1a"]
+|===
+| Acción | Método abreviado de teclado 
+
+
+ a| 
+Moverse al elemento siguiente.
+ a| 
+Pestaña
+
+
+
+ a| 
+Moverse al elemento anterior.
+ a| 
+Mayús + lengüeta
+
+
+
+ a| 
+Seleccionar un elemento.
+ a| 
+Introduzca
+
+
+
+ a| 
+Lista desplegable: Moverse al elemento siguiente o anterior.
+ a| 
+Flecha arriba o abajo
+
+
+
+ a| 
+Casilla de verificación: Seleccione un elemento.
+ a| 
+Barra espaciadora
+
+
+
+ a| 
+Botones de opción: Cambiar entre elementos.
+ a| 
+Flecha arriba o abajo
+
+
+
+ a| 
+Texto expansible: Expandir o contraer un elemento.
+ a| 
+Introduzca
+
+|===
+
+
+== Navegación por tablas
+
+[cols="1a,1a"]
+|===
+| Acción | Método abreviado de teclado 
+
+
+ a| 
+Seleccionar una fila.
+ a| 
+Tabulador para seleccionar una fila, luego presionar Intro
+
+
+
+ a| 
+Desplazarse hacia arriba o hacia abajo.
+ a| 
+Flecha abajo/arriba o Av Pág/Re Pág
+
+
+
+ a| 
+Cambiar el orden de selección de una columna.
+ a| 
+Tabulador para seleccionar el encabezado de una columna, luego presionar Intro
+
+|===
+
+
+== Navegación por calendario
+
+[cols="1a,1a"]
+|===
+| Acción | Método abreviado de teclado 
+
+
+ a| 
+Moverse al mes anterior.
+ a| 
+Re Pág
+
+
+
+ a| 
+Moverse al mes siguiente.
+ a| 
+AV Pág
+
+
+
+ a| 
+Moverse al año anterior.
+ a| 
+Control + Re Pág
+
+
+
+ a| 
+Moverse al año siguiente.
+ a| 
+Control + Av Pág
+
+
+
+ a| 
+Abrir el seleccionador de fechas, si estuviera cerrado.
+ a| 
+Control + Inicio
+
+
+
+ a| 
+Moverse al mes actual.
+ a| 
+Control/comando + Inicio
+
+
+
+ a| 
+Moverse al día anterior.
+ a| 
+Control/comando + izquierda
+
+
+
+ a| 
+Moverse al día siguiente.
+ a| 
+Control/comando + derecha
+
+
+
+ a| 
+Moverse a la semana anterior.
+ a| 
+Control/comando + Arriba
+
+
+
+ a| 
+Moverse a la semana siguiente.
+ a| 
+Control/comando + abajo
+
+
+
+ a| 
+Seleccionar la fecha deseada.
+ a| 
+Introduzca
+
+
+
+ a| 
+Cerrar el seleccionador de fecha y borrar la fecha.
+ a| 
+Control/comando + fin
+
+
+
+ a| 
+Cerrar el seleccionador de fecha sin seleccionar nada.
+ a| 
+Escape
+
+|===

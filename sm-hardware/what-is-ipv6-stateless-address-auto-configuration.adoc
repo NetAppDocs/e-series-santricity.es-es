@@ -1,0 +1,28 @@
+---
+permalink: sm-hardware/what-is-ipv6-stateless-address-auto-configuration.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, ipv6, stateless, address, auto, configuration, 
+summary: Gracias a la configuración automática sin estado, los hosts no obtienen direcciones ni otra información de configuración desde un servidor. 
+---
+= ¿Qué es la configuración automática de direcciones IPv6 sin estado?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Gracias a la configuración automática sin estado, los hosts no obtienen direcciones ni otra información de configuración desde un servidor.
+
+La configuración automática sin estado en IPv6 cuenta con direcciones locales de enlace, multidifusión y protocolo de descubrimiento cercano (ND). La IPv6 puede generar un ID de interfaz de una dirección a partir de la dirección de capa de enlace de datos subyacente.
+
+La configuración automática sin estado y la configuración automática con estado se complementan. Por ejemplo, el host puede utilizar la configuración automática sin estado para configurar sus propias direcciones, pero la configuración automática con estado para obtener otra información. Gracias a la configuración automática con estado, los hosts obtienen direcciones y otra información de configuración desde un servidor. El protocolo de Internet versión 6 (IPv6) también define un método por el cual todas las direcciones IP de una red pueden volver a numerarse de una vez. La IPv6 define un método para que los dispositivos en la red configuren automáticamente su dirección IP y otros parámetros sin la necesidad de un servidor.
+
+Los dispositivos realizan estos pasos cuando utilizan la configuración automática sin estado:
+
+. *Generar una dirección local de enlace* -- el dispositivo genera una dirección local de enlace, que tiene 10 bits, seguida de 54 ceros, y seguido del ID de interfaz de 64 bits.
+. *Pruebe la singularidad de una dirección de enlace local* -- el nodo realiza pruebas para asegurarse de que la dirección de enlace local que genera no está ya en uso en la red local. El nodo envía un mensaje de solicitud de cercanía mediante el protocolo ND. En respuesta, la red local escucha un mensaje de anuncio de cercanía, que indica que otro dispositivo ya está usando la dirección de enlace local. Por lo tanto, debe crearse una dirección de enlace local nueva o fallará la configuración automática y deberá utilizarse otro método.
+. *Asignar una dirección de enlace local* -- Si el dispositivo supera la prueba de singularidad, el dispositivo asigna la dirección de enlace local a su interfaz IP. La dirección de enlace local se puede utilizar para la comunicación en la red local, pero no en Internet.
+. *Póngase en contacto con el router* -- el nodo intenta ponerse en contacto con un router local para obtener más información acerca de cómo continuar la configuración. Este contacto se realiza ya sea escuchando los mensajes de anuncio del enrutador que se envían periódicamente o enviando un mensaje de solicitud al enrutador específico para solicitarle información acerca de cómo continuar.
+. *Proporcionar dirección al nodo* -- el router proporciona dirección al nodo acerca de cómo proceder con la configuración automática. Como alternativa, el enrutador le comunica al host cómo determinar la dirección global de Internet.
+. *Configurar la dirección global* -- el host se configura con su dirección global única de Internet. Esta dirección por lo general se forma a partir de un prefijo de red que el enrutador proporciona al host.
+

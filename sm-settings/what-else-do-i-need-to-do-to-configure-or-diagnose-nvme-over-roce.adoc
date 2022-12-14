@@ -1,0 +1,51 @@
+---
+permalink: sm-settings/what-else-do-i-need-to-do-to-configure-or-diagnose-nvme-over-roce.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, diagnose, nvme, roce, 
+summary: Es posible configurar y gestionar NVMe over roce desde las páginas hardware y Configuración. 
+---
+= ¿Qué más debo hacer para configurar o diagnosticar NVMe over roce?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible configurar y gestionar NVMe over roce desde las páginas hardware y Configuración.
+
+[NOTE]
+====
+La configuración de NVMe over roce solo está disponible si la controladora de la cabina de almacenamiento incluye un puerto NVMe over roce.
+
+====
+[cols="35h,~"]
+|===
+| Acción | Ubicación 
+
+
+ a| 
+Configure los puertos NVMe over roce
+ a| 
+. Seleccione *hardware*.
+. Seleccione *Mostrar parte posterior de la bandeja*.
+. Seleccione una controladora.
+. Seleccione *Configurar puertos NVMe over roce*.
+
+
+o.
+
+. Seleccione MENU:Settings[System].
+. Desplácese hasta *Configuración de NVMe over roce* y seleccione *Configurar puertos NVMe over roce*.
+
+
+
+
+ a| 
+Ver estadísticas de NVMe over Fabrics
+ a| 
+. Seleccione MENU:Settings[System].
+. Desplácese hasta *Configuración de NVMe over roce* y seleccione *Ver estadísticas de NVMe over Fabrics*.
+
+
+|===

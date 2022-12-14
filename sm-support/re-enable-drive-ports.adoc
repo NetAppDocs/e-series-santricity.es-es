@@ -1,0 +1,26 @@
+---
+permalink: sm-support/re-enable-drive-ports.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, re-enable, drive, ports 
+summary: Es posible indicar a la controladora que se ha tomado esa acción correctiva para recuperar el sistema de una condición de conexión incorrecta. 
+---
+= Vuelva a habilitar puertos de unidad
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible indicar a la controladora que se ha tomado esa acción correctiva para recuperar el sistema de una condición de conexión incorrecta.
+
+.Pasos
+. Seleccione menú:ficha Soporte[Centro de soporte > Diagnóstico].
+. Seleccione *Volver a habilitar puertos de unidad* y confirme que desea realizar la operación.
++
+Esta opción solo se muestra cuando la cabina de almacenamiento contiene puertos de unidad deshabilitados.
+
++
+La controladora vuelve a habilitar los puertos SAS que se deshabilitaron al detectar una conexión incorrecta.
+
+

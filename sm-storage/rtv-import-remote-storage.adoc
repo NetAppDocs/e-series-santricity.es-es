@@ -1,0 +1,122 @@
+---
+permalink: sm-storage/rtv-import-remote-storage.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, import, remote, storage 
+summary: Para iniciar la importación de almacenamiento desde un sistema remoto a un sistema de almacenamiento E-Series local, utilice el asistente Importar almacenamiento remoto. 
+---
+= Importe el almacenamiento remoto
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para iniciar la importación de almacenamiento desde un sistema remoto a un sistema de almacenamiento E-Series local, utilice el asistente Importar almacenamiento remoto.
+
+.Antes de empezar
+* El sistema de almacenamiento E-Series debe estar configurado para comunicarse con el sistema de almacenamiento remoto.
++
+[NOTE]
+====
+La configuración del hardware se describe en la guía de usuario de la función de almacenamiento remoto, disponible en el centro de documentación de E-Series y SANtricity en https://docs.netapp.com/us-en/e-series/remote-storage-volumes/setup-remote-volumes-concept.html["Configure el hardware"^], y en https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf["Informe técnico sobre almacenamiento remoto"^].
+
+====
+* Para el sistema de almacenamiento remoto, recopile la siguiente información:
++
+** IQN de iSCSI
+** Direcciones IP de iSCSI
+** Número de LUN del dispositivo de almacenamiento remoto (volumen de origen)
+
+
+* Para el sistema de almacenamiento E-Series local, cree o seleccione un volumen que usará para la importación de datos. Consulte link:create-volumes.html["Cree volúmenes"]. El volumen objetivo debe cumplir con los siguientes requisitos:
++
+** Coincide con el tamaño de bloque del dispositivo de almacenamiento remoto (el volumen de origen).
+** Tiene una capacidad igual o mayor que el dispositivo de almacenamiento remoto.
+** Tiene un estado óptimo y está disponible.
+
+
+
+
+Para obtener una lista completa de los requisitos, consulte link:rtv-remote-storage-volume-requirements.html["Requisitos del volumen de almacenamiento remoto"].
+
+* *Recomendado:* haga una copia de seguridad de los volúmenes en el sistema de almacenamiento remoto antes de iniciar el proceso de importación.
+
+
+.Acerca de esta tarea
+En esta tarea, se crea un mapa entre el dispositivo de almacenamiento remoto y un volumen en el sistema de almacenamiento E-Series local. Cuando finalice la configuración, se iniciará la importación.
+
+[NOTE]
+====
+Dado que muchas variables pueden afectar a la operación de importación y a su tiempo de finalización, recomendamos que realice primero importaciones más pequeñas de «prueba». Utilice estas pruebas para asegurarse de que todas las conexiones funcionan según lo esperado y de que la operación de importación finaliza en un tiempo adecuado.
+
+====
+.Pasos
+. Seleccione MENU:Storage[Remote Storage].
+. Haga clic en *Importar almacenamiento remoto*.
++
+Se muestra el asistente para importar el almacenamiento remoto.
+
+. En *Paso 1a* del panel Configurar origen, introduzca la información de conexión. Si desea agregar otra conexión iSCSI, haga clic en *Añadir otra dirección IP* para incluir una dirección IP adicional para el almacenamiento remoto. Cuando haya terminado, haga clic en *Siguiente*.
++
+.Detalles del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Ajuste | Descripción 
+
+
+ a| 
+Nombre
+ a| 
+Introduzca un nombre para el dispositivo de almacenamiento remoto e identificarlo en la interfaz de System Manager.
+
+Un nombre puede incluir hasta 30 caracteres, y puede contener sólo letras, números y los siguientes caracteres especiales: Subrayado (_), guión (-), y el signo de hash (#). Un nombre no puede contener espacios.
+
+
+
+ a| 
+Propiedades de la conexión iSCSI
+ a| 
+Introduzca las propiedades de conexión del dispositivo de almacenamiento remoto:
+
+** *Nombre completo iSCSI (IQN)*: Introduzca el IQN iSCSI.
+** *Dirección IP*: Introduzca la dirección IPv4.
+** *Puerto*: Introduzca el número de puerto que se va a utilizar para las comunicaciones entre los dispositivos de origen y destino. De manera predeterminada, el número de puerto es 3260.
+
+
+|===
+====
++
+Después de hacer clic en *Siguiente*, se muestra el *Paso 1b* del panel Configurar origen.
+
+. En el campo *LUN*, seleccione el número de LUN del dispositivo de almacenamiento remoto que se va a utilizar como fuente y, a continuación, haga clic en *Siguiente*.
++
+Se abre el panel Configurar destino y se muestran candidatos de volumen que sirven como objetivo para la importación. Algunos volúmenes no se muestran en la lista de candidatos debido a la disponibilidad de los volúmenes, la capacidad o el tamaño de los bloques.
+
+. En la tabla, seleccione un volumen objetivo en el sistema de almacenamiento E-Series. Si es necesario, use el control deslizante para cambiar la prioridad de importación. Haga clic en *Siguiente*. Escriba para confirmar la operación en el siguiente cuadro de diálogo `continue`Y, a continuación, haga clic en *continuar*.
++
+Si el volumen objetivo tiene una capacidad mayor que el volumen de origen, no se informa de la capacidad adicional al host conectado al sistema E-Series. Para usar la nueva capacidad, debe ejecutar una operación de ampliación de sistema de archivos en el host una vez completada la operación de importación y desconectada.
+
++
+Después de confirmar la configuración en el cuadro de diálogo, se muestra el panel revisar.
+
+. En el panel Revisión, compruebe que los ajustes son precisos y, a continuación, haga clic en *Finalizar* para iniciar la importación.
++
+Se abre otro cuadro de diálogo preguntándole si desea iniciar otra importación.
+
+. Si es necesario, haga clic en *Sí* para crear otra importación de almacenamiento remoto. Al hacer clic en *Sí*, se vuelve a *Paso 1a* del panel Configurar origen, donde puede seleccionar la configuración existente o agregar una nueva. Si no desea crear otra importación, haga clic en *no* para salir del cuadro de diálogo.
++
+Una vez iniciado el proceso de importación, se sobrescribe todo el volumen objetivo con los datos copiados. Si el host escribe todos los datos nuevos en el volumen objetivo durante el proceso, esos datos nuevos se propagan nuevamente al dispositivo remoto (volumen de origen).
+
+. Vea el progreso de la operación en el cuadro de diálogo Ver operaciones en el panel almacenamiento remoto.
+
+
+.Resultados
+El tiempo requerido para completar la operación de importación depende del tamaño del sistema de almacenamiento remoto, de la configuración de prioridad para la importación y de la cantidad de carga de I/o tanto en los sistemas de almacenamiento como en los volúmenes asociados.
+
+Una vez finalizada la importación, el volumen local es un duplicado del dispositivo de almacenamiento remoto.
+
+.Después de terminar
+Cuando esté listo para romper la relación entre los dos volúmenes, seleccione *desconectar* en el objeto de importación de la vista Operaciones en curso. Una vez que se desconecta la relación, el rendimiento del volumen local vuelve a la normalidad y ya no se ve afectado por la conexión remota.

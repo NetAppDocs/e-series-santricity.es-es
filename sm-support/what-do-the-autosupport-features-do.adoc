@@ -1,0 +1,19 @@
+---
+permalink: sm-support/what-do-the-autosupport-features-do.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, autosupport features, ASUP 
+summary: La función AutoSupport cuenta con tres funciones individuales que se habilitan por separado. 
+---
+= ¿Qué hacen las funciones de AutoSupport?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La función AutoSupport cuenta con tres funciones individuales que se habilitan por separado.
+
+* *Basic AutoSupport* -- permite que la cabina de almacenamiento recopile y envíe datos al soporte técnico automáticamente.
+* *AutoSupport OnDemand* -- permite al soporte técnico solicitar la retransmisión de un envío anterior de AutoSupport cuando se necesita solucionar un problema. Todas las transmisiones se inician en la cabina de almacenamiento, no en el servidor de AutoSupport. La cabina de almacenamiento realiza comprobaciones periódicas con el servidor de AutoSupport para determinar si existen solicitudes de retransmisión pendientes y responde de manera acorde.
+* *Diagnóstico remoto* -- permite al soporte técnico solicitar un nuevo mensaje de AutoSupport actualizado cuando se necesita para solucionar un problema. Todas las transmisiones se inician en la cabina de almacenamiento, no en el servidor de AutoSupport. La cabina de almacenamiento realiza comprobaciones periódicas con el servidor de AutoSupport para determinar si existen solicitudes nuevas pendientes y responde de manera acorde.
+

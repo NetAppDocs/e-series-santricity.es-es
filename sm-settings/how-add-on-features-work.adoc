@@ -1,0 +1,26 @@
+---
+permalink: sm-settings/how-add-on-features-work.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, add-on, features, 
+summary: Las funciones adicionales son las que no se incluyen en la configuración estándar de System Manager y pueden requerir una clave para su habilitación. Una función complementaria puede ser una sola función excepcional o un paquete de funciones agrupadas. 
+---
+= Cómo trabajar con las funciones complementarias
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Las funciones adicionales son las que no se incluyen en la configuración estándar de System Manager y pueden requerir una clave para su habilitación. Una función complementaria puede ser una sola función excepcional o un paquete de funciones agrupadas.
+
+Los siguientes pasos proporcionan información general sobre cómo habilitar una función excepcional o un paquete de funciones:
+
+. Obtenga la siguiente información:
++
+** El número de serie del chasis y el identificador de habilitación de la función, el cual identifica la cabina de almacenamiento para la función que se instalará. Estos elementos están disponibles en System Manager.
+** El código de activación de la función, que está disponible en el sitio de soporte al adquirir la función.
+
+
+. Obtenga la clave de función. Para ello, póngase en contacto con el proveedor de almacenamiento o acceda al sitio de activación de funciones prémium. Proporcione el número de serie del chasis, el identificador de habilitación y el código de función para la activación.
+. En System Manager, habilite la función excepcional o el paquete de funciones con el archivo de claves de función.
+

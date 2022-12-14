@@ -1,0 +1,19 @@
+---
+permalink: sm-hardware/change-view-order-of-shelves.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, view, order, shelves 
+summary: Puede cambiar el orden de las bandejas que se muestran en la página hardware para que coincidan con el orden físico de las bandejas de un armario. 
+---
+= Cambiar el orden de vista de las bandejas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede cambiar el orden de las bandejas que se muestran en la página hardware para que coincidan con el orden físico de las bandejas de un armario.
+
+.Pasos
+. Seleccione *hardware*.
+. En la parte superior derecha de la vista de una bandeja, seleccione las flechas hacia arriba o hacia abajo para reorganizar el orden de las bandejas que se muestran en la página hardware.
+

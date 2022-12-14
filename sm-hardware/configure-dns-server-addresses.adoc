@@ -1,0 +1,60 @@
+---
+permalink: sm-hardware/configure-dns-server-addresses.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, dns, server, addresses, 
+summary: 'El sistema de nombres de dominio (DNS) se utiliza para resolver nombres de dominio completos de las controladoras y un servidor de protocolo de tiempo de redes (NTP). Los puertos de gestión de la cabina de almacenamiento pueden ser compatibles con los protocolos IPv4 o IPv6 simultáneamente.' 
+---
+= Configurar las direcciones del servidor DNS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El sistema de nombres de dominio (DNS) se utiliza para resolver nombres de dominio completos de las controladoras y un servidor de protocolo de tiempo de redes (NTP). Los puertos de gestión de la cabina de almacenamiento pueden ser compatibles con los protocolos IPv4 o IPv6 simultáneamente.
+
+.Antes de empezar
+* Debe haber un servidor DNS instalado y configurado en la red.
+* Conoce la dirección del servidor DNS primario y un servidor DNS de respaldo opcional. Las direcciones pueden ser IPv4 o IPv6.
+
+
+.Acerca de esta tarea
+En este procedimiento, se describe cómo especificar la dirección de un servidor DNS primario y de respaldo. El servidor DNS de respaldo puede configurarse opcionalmente para utilizarse en caso en que falle el servidor DNS primario.
+
+[NOTE]
+====
+Si ya configuró los puertos de gestión de la cabina de almacenamiento con el protocolo de configuración dinámica de hosts (DHCP) y tiene uno o más servidores DNS o NTP asociados con la configuración de DHCP, no necesita configurar manualmente DNS ni NTP. En este caso, la cabina de almacenamiento debería haber obtenido automáticamente las direcciones de los servidores DNS/NTP. De todos modos, debe seguir las instrucciones que se presentan a continuación para abrir el cuadro de diálogo y asegurarse de que se hayan detectado las direcciones correctas.
+
+====
+.Pasos
+. Seleccione *hardware*.
+. Si el gráfico muestra las unidades, haga clic en *Mostrar parte posterior de la bandeja*.
++
+El gráfico cambia y muestra las controladoras en lugar de las unidades.
+
+. Seleccione la controladora para configurar.
++
+Aparece el menú contextual de la controladora.
+
+. Seleccione *Configurar servidor DNS*.
++
+Se abre el cuadro de diálogo Configurar servidor del sistema de nombres de dominio (DNS).
+
+. Seleccione una de las siguientes opciones:
++
+** *Obtener automáticamente las direcciones del servidor DNS desde el servidor DHCP* -- se muestran las direcciones del servidor DNS detectadas.
++
+[NOTE]
+====
+Si la cabina de almacenamiento está configurada para usar una dirección DNS estática, no aparecen servidores DNS.
+
+====
+** *Especificar manualmente las direcciones del servidor DNS* -- Introduzca una dirección del servidor DNS primario y una dirección del servidor DNS de respaldo. El servidor de respaldo es opcional. (Estos campos de dirección aparecen después de seleccionar el botón de opción.) Las direcciones pueden ser IPv4 o IPv6.
+
+
+. Haga clic en *Guardar*.
+. Repita estos pasos para la otra controladora.
+
+
+.Resultados
+La configuración de DNS se muestra en la ficha *DNS / NTP* de la configuración del controlador.

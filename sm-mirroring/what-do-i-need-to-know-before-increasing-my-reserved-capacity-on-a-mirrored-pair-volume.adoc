@@ -1,0 +1,30 @@
+---
+permalink: sm-mirroring/what-do-i-need-to-know-before-increasing-my-reserved-capacity-on-a-mirrored-pair-volume.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, reserved, capacity, mirrored, pair, volume, 
+summary: Por lo general, se debe aumentar la capacidad reservada cuando se recibe una advertencia que indica que la capacidad reservada para una pareja reflejada está por completarse. Es posible aumentar la capacidad reservada únicamente en incrementos de 8 GIB. 
+---
+= ¿Qué debo saber antes de aumentar la capacidad reservada en un volumen de parejas reflejadas?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Por lo general, se debe aumentar la capacidad reservada cuando se recibe una advertencia que indica que la capacidad reservada para una pareja reflejada está por completarse. Es posible aumentar la capacidad reservada únicamente en incrementos de 8 GIB.
+
+Para operaciones de mirroring asíncrono, la capacidad reservada, por lo general, representa el 20 % del volumen base. Elija una capacidad mayor para capacidad reservada si existe una de las siguientes condiciones o ambas:
+
+* Se pretende conservar la pareja reflejada por un periodo prolongado.
+* Un gran porcentaje de bloques de datos cambiará en el volumen primario debido a una gran actividad de I/O. Utilice datos históricos de rendimiento u otra utilidad del sistema operativo para determinar la actividad de I/o típica del volumen primario.
+
+
+Es posible aumentar la capacidad reservada para una pareja reflejada llevando a cabo una de las siguientes acciones:
+
+* Ajuste el porcentaje de capacidad para un volumen de parejas reflejadas seleccionando MENU:almacenamiento[Pools y grupos de volúmenes] y luego haga clic en la pestaña *capacidad reservada*.
+* Cree un volumen nuevo usando la capacidad libre que esté disponible en un pool o grupo de volúmenes.
++
+Si no hay capacidad libre en ningún pool o grupo de volúmenes, es posible añadir capacidad sin configurar en forma de unidades sin usar a un pool o grupo de volúmenes.
+
+

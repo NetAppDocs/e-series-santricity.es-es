@@ -1,0 +1,31 @@
+---
+permalink: sm-settings/why-cant-i-log-in.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, log, in, login 
+summary: Si recibe un error al intentar iniciar sesión en System Manager, revise estas causas posibles. 
+---
+= ¿Por qué no puedo iniciar sesión?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si recibe un error al intentar iniciar sesión en System Manager, revise estas causas posibles.
+
+Los errores de inicio de sesión en System Manager pueden ocurrir por uno de estos motivos:
+
+* Introdujo un nombre de usuario o contraseña incorrectos.
+* No tiene privilegios suficientes.
+* El servidor de directorio (si está configurado) puede no estar disponible. Si este es el caso, intente iniciar sesión con un rol de usuario local.
+* Intentó iniciar sesión reiteradamente sin éxito y se activó el modo de bloqueo. Aguarde 10 minutos y vuelva a intentarlo.
+* Se activó la condición de bloqueo y es posible que el registro de auditoría esté completo. Vaya a Access Management y elimine los eventos anteriores del registro de auditoría.
+* La autenticación SAML está habilitada. Actualice el explorador para iniciar sesión.
+
+
+Los errores de inicio de sesión en una cabina de almacenamiento remota para tareas de mirroring pueden ocurrir por uno de estos motivos:
+
+* Introdujo una contraseña incorrecta.
+* Intentó iniciar sesión reiteradamente sin éxito y se activó el modo de bloqueo. Aguarde 10 minutos para volver a iniciar sesión.
+* Se alcanzó la cantidad máxima de conexiones de clientes en la controladora. Busque clientes o usuarios múltiples.
+

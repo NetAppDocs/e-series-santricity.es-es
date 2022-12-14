@@ -1,0 +1,76 @@
+---
+permalink: um-manage/mirroring-overview.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, mirroring, 
+summary: Unified Manager incluye opciones de configuración para las funciones de mirroring de SANtricity, con las cuales los administradores pueden replicar datos entre dos cabinas de almacenamiento para la protección de los datos. 
+---
+= Cómo funciona el mirroring
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager incluye opciones de configuración para las funciones de mirroring de SANtricity, con las cuales los administradores pueden replicar datos entre dos cabinas de almacenamiento para la protección de los datos.
+
+[NOTE]
+====
+Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
+
+====
+
+
+== Tipos de mirroring
+
+Las aplicaciones de SANtricity incluyen dos tipos de mirroring: Asíncrono y síncrono.
+
+El mirroring asíncrono copia los volúmenes de datos bajo demanda o por programación, lo que minimiza o evita el tiempo de inactividad que se puede producir por pérdidas o daños en los datos. El mirroring asíncrono captura el estado de un volumen primario en un momento específico y copia solo los datos que han cambiado desde la última captura de imagen. El sitio primario se puede actualizar de inmediato y el sitio secundario se puede actualizar según lo permita el ancho de banda. La información se guarda en la caché y se envía más tarde, a medida que los recursos de red se vuelven disponibles. Este tipo de mirroring es ideal para los procesos periódicos como el backup y el archivado.
+
+El mirroring síncrono replica los volúmenes de datos en tiempo real para garantizar la disponibilidad continua. El propósito es lograr un objetivo de punto de recuperación (RPO) de cero datos perdidos mediante la copia de datos importantes disponibles en caso de que se produzca un desastre en una de las dos cabinas de almacenamiento. La copia es idéntica a los datos de producción en cada momento, ya que cada vez que se realiza una escritura en el volumen primario, se realiza una escritura en el volumen secundario. El host no recibe la confirmación de que la escritura se realizó correctamente hasta que el volumen secundario se actualiza con los cambios realizados en el volumen primario. Este tipo de mirroring es ideal para fines de continuidad del negocio como la recuperación ante desastres.
+
+
+
+== Diferencias entre los tipos de mirroring
+
+En la siguiente tabla, se describen las principales diferencias entre los dos tipos de mirroring.
+
+[cols="1a,1a,1a"]
+|===
+| Atributo | Asíncrona | Síncrona 
+
+
+ a| 
+Método de replicación
+ a| 
+Momento específico: El mirroring se ejecuta bajo demanda o automáticamente de acuerdo con una programación definida por el usuario.
+ a| 
+Continuo: El mirroring se ejecuta automáticamente de forma continua; se copian datos en cada escritura del host.
+
+
+
+ a| 
+Distancia
+ a| 
+Admite largas distancias entre las cabinas. Generalmente, solo las funcionalidades de la red y la tecnología de extensión de canal limitan la distancia.
+ a| 
+Limitado a distancias menores entre las cabinas. Generalmente, la distancia debe ser inferior o igual a 10 km (6.2 millas) con respecto a la cabina de almacenamiento local para satisfacer los requisitos de latencia y rendimiento de la aplicación.
+
+
+
+ a| 
+Método de comunicación
+ a| 
+Una red Fibre Channel o IP estándar.
+ a| 
+Solo red Fibre Channel.
+
+
+
+ a| 
+Tipos de volúmenes
+ a| 
+Estándares o finos.
+ a| 
+Solo estándares.
+
+|===

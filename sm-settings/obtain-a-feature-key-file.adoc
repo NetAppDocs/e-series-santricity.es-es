@@ -1,0 +1,50 @@
+---
+permalink: sm-settings/obtain-a-feature-key-file.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, obtain, feature, key, file, 
+summary: Para habilitar una función excepcional o un paquete de funciones en una cabina de almacenamiento, primero es necesario obtener un archivo de claves de función. Una clave se asociada con una sola cabina de almacenamiento. 
+---
+= Obtener un archivo de claves de función
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para habilitar una función excepcional o un paquete de funciones en una cabina de almacenamiento, primero es necesario obtener un archivo de claves de función. Una clave se asociada con una sola cabina de almacenamiento.
+
+.Acerca de esta tarea
+En esta tarea, se describe cómo obtener la información requerida para la función y, a continuación, enviar una solicitud para un archivo de claves de función. Entre la información requerida se encuentra la siguiente:
+
+* Número de serie del chasis
+* Identificador de habilitación de la función
+* Código de activación de la función
+
+
+.Pasos
+. En System Manager, busque y registre el número de serie del chasis. Para ver este número de serie, debe pasar el ratón por el icono Centro de soporte.
+. En System Manager, busque Identificador de habilitación de funciones. Vaya a MENU:Settings[System] y, a continuación, desplácese hacia abajo hasta *Add-ons*. Busque *Identificador de habilitación de funciones*. Registre el número de la opción Identificador de habilitación de funciones.
+. Busque y registre el código para la activación de la función. Para paquetes de funciones, este código se proporciona en las instrucciones correspondientes para realizar la conversión.
++
+Es posible acceder a las instrucciones de NetApp en https://www.netapp.com/support-and-training/documentation/eseries-santricity/["Centro de documentación para sistemas E-Series y EF-Series de NetApp"^].
+
++
+Para funciones excepcionales, es posible acceder al código de activación en el sitio de soporte de la siguiente manera:
+
++
+.. Inicie sesión en https://mysupport.netapp.com/site/global/dashboard["Soporte de NetApp"^].
+.. Vaya a *licencias de software* para su producto.
+.. Introduzca el número de serie del chasis de la cabina de almacenamiento y, a continuación, haga clic en *Ir*.
+.. Busque los códigos de activación de la función en la columna *clave de licencia*.
+.. Registre el contenido de la opción Feature Activation Code de la función deseada.
+
+
+. Para solicitar un archivo de claves de función, envíe un correo electrónico o un documento de texto al proveedor de almacenamiento con la siguiente información: Número de serie del chasis, el identificador de habilitación y el código para la activación de la función.
++
+También puede ir a. http://partnerspfk.netapp.com["Activación de licencias de NetApp: Activación de funciones prémium de matriz de almacenamiento"^] e introduzca la información requerida para obtener la función o el paquete de funciones. (Las instrucciones en este sitio son para funciones excepcionales, no paquetes de funciones.)
+
+
+
+.Después de terminar
+Una vez que tenga el archivo de claves de la función, podrá habilitar la función excepcional o el paquete de funciones.

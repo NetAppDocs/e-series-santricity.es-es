@@ -1,0 +1,20 @@
+---
+permalink: sm-settings/how-do-i-interpret-nvme-over-fabrics-statistics.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, interpret, nvme, over, Fabrics, statistics, 
+summary: El cuadro de diálogo Ver estadísticas de NVMe over Fabrics muestra estadísticas para el subsistema NVMe y la interfaz RDMA. Todas las estadísticas son de solo lectura y no pueden configurarse. 
+---
+= ¿Cómo se interpretan las estadísticas de NVMe over Fabrics?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El cuadro de diálogo Ver estadísticas de NVMe over Fabrics muestra estadísticas para el subsistema NVMe y la interfaz RDMA. Todas las estadísticas son de solo lectura y no pueden configurarse.
+
+* *Estadísticas del subsistema NVMe* -- muestra estadísticas para la controladora NVMe y su cola. La controladora NVMe ofrece una ruta de acceso entre un host y los espacios de nombres en la cabina de almacenamiento. Es posible revisar las estadísticas del subsistema NVMe para consultar elementos, como errores de conexión, reinicios y apagados. Para obtener más información sobre estas estadísticas, haga clic en *Ver leyenda de encabezados de tabla*.
+* *Estadísticas de la interfaz RDMA* -- proporciona estadísticas para todos los puertos NVMe over Fabrics de la interfaz RDMA, que incluye estadísticas de rendimiento e información de errores de enlace asociados con cada puerto del switch. Esta pestaña solo se muestra cuando existen puertos NVMe over Fabrics disponibles. Para obtener más información sobre las estadísticas, haga clic en *Ver leyenda de encabezados de tabla*.
+
+
+Es posible ver cada una de las estadísticas como estadísticas sin configurar o estadísticas de base. Las estadísticas sin configurar son todas las estadísticas recogidas desde que se iniciaron las controladoras. Las estadísticas de base son las estadísticas de un momento específico que se recogen desde el establecimiento de la hora de la línea de base.

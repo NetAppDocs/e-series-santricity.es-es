@@ -1,0 +1,37 @@
+---
+permalink: sm-settings/configure-login-banner.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, configure, login, banner, 
+summary: Puede crear un banner de inicio de sesión que se presente a los usuarios antes de que puedan establecer sesiones en System Manager de SANtricity. El banner puede incluir un aviso de asesoría y un mensaje de consentimiento. 
+---
+= Configure el banner de inicio de sesión
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede crear un banner de inicio de sesión que se presente a los usuarios antes de que puedan establecer sesiones en System Manager. El banner puede incluir un aviso de asesoría y un mensaje de consentimiento.
+
+.Acerca de esta tarea
+Al crear un banner, este aparece antes de la pantalla de inicio de sesión en un cuadro de diálogo.
+
+.Pasos
+. Seleccione MENU:Settings[System].
+. En la sección General, seleccione *Configurar banner de inicio de sesión*.
++
+Se abre el cuadro de diálogo Configurar banner de inicio de sesión.
+
+. Introduzca el texto que desea que aparezca en el banner de inicio de sesión.
++
+[NOTE]
+====
+No use formato HTML ni otras etiquetas de marcado.
+
+====
+. Haga clic en *Guardar*.
+
+
+.Resultados
+La próxima vez que los usuarios inicien sesión en System Manager, el texto se abrirá en un cuadro de diálogo. Los usuarios deben hacer clic en *Aceptar* para continuar con la pantalla de inicio de sesión.

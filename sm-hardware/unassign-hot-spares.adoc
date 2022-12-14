@@ -1,0 +1,43 @@
+---
+permalink: sm-hardware/unassign-hot-spares.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, change, hot, spare, unassign, 
+summary: Es posible cambiar el estado de una pieza de repuesto a una unidad sin asignar. 
+---
+= Anular asignación de piezas de repuesto
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible cambiar el estado de una pieza de repuesto a una unidad sin asignar.
+
+.Antes de empezar
+La pieza de repuesto debe estar en estado óptimo, en espera.
+
+.Acerca de esta tarea
+No se puede anular la asignación de una pieza de repuesto que esté reemplazando a una unidad con error. Si la pieza de repuesto no está en estado óptimo, siga los procedimientos de Recovery Guru para corregir cualquier problema antes de intentar anular la asignación de la unidad.
+
+.Pasos
+. Seleccione *hardware*.
+. Si el gráfico muestra los controladores, haga clic en *Mostrar frente de la bandeja*.
++
+El gráfico cambia y muestra las unidades en lugar de las controladoras.
+
+. Seleccione la unidad de la pieza de repuesto (se muestra en rosa) para la cual desea anular la asignación.
++
+Si existen líneas diagonales en la bahía de unidad rosa, la pieza de repuesto se encuentra en uso y no puede anularse su asignación.
+
++
+Se abre el menú contextual de la unidad.
+
+. Desde la lista desplegable de la unidad, seleccione *Anular asignación de pieza de repuesto*.
++
+En el cuadro de diálogo, se muestran todos los grupos de volúmenes afectados. Para ello, es necesario quitar esta pieza de repuesto y si otras piezas de repuesto las protegen.
+
+. Confirme la operación de anulación de asignación.
+
+
+.Resultados
+La unidad regresa al estado sin asignar (se muestra en gris).

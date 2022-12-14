@@ -1,0 +1,61 @@
+---
+permalink: sm-storage/rtv-remote-storage-requirements.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, remote, storage, requirements 
+summary: Antes de utilizar la función almacenamiento remoto, revise los siguientes requisitos y restricciones. 
+---
+= Requisitos de funciones de almacenamiento remoto
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Antes de utilizar la función almacenamiento remoto, revise los siguientes requisitos y restricciones.
+
+
+
+== Protocolos compatibles
+
+Se admiten los siguientes protocolos:
+
+* ISCSI
+* IPv4
+
+
+Para obtener información actualizada sobre soporte y configuración de E-Series, consulte https://imt.netapp.com/matrix/#welcome["Herramienta de matriz de interoperabilidad de NetApp"^].
+
+
+
+== Requisitos de hardware
+
+El sistema de almacenamiento E-Series debe incluir:
+
+* Dos controladoras (modo doble)
+* Conexiones iSCSI para las dos controladoras E-Series para comunicarse con el sistema de almacenamiento remoto a través de una o varias conexiones iSCSI
+* SANtricity OS 11.71 o superior
+* Función de almacenamiento remoto habilitada en el ID de submodelo (SMID)
+
+
+El sistema remoto puede ser un sistema de almacenamiento E-Series o un sistema de otro proveedor. Debe incluir:
+
+* Interfaces compatibles con iSCSI
+
+
+
+
+== Restricciones
+
+La función de almacenamiento remoto tiene las siguientes restricciones:
+
+* Debe deshabilitarse la función de mirroring.
+* El volumen de destino del sistema E-Series no debe tener snapshots.
+* El volumen de destino del sistema E-Series no debe asignarse a ningún host antes de que se inicie la importación.
+* El volumen de destino del sistema E-Series debe tener deshabilitado el aprovisionamiento de recursos.
+* No se admiten asignaciones directas del volumen de almacenamiento remoto a un host o varios hosts.
+* No se admite el proxy de servicios web.
+* No se admiten los secretos CHAP de iSCSI.
+* SMcli no es compatible.
+* No se admite el almacén de datos de VMware.
+* Solo se puede actualizar un sistema de almacenamiento de la pareja de relación/importación a la vez cuando existe una pareja de importación.
+

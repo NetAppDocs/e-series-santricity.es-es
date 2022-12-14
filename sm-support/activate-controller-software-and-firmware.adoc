@@ -1,0 +1,53 @@
+---
+permalink: sm-support/activate-controller-software-and-firmware.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, activate, controller, software, firmware 
+summary: Puede optar por activar los archivo de actualización inmediatamente o esperar hasta un momento más conveniente. 
+---
+= Activar el software y el firmware de la controladora
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede optar por activar los archivo de actualización inmediatamente o esperar hasta un momento más conveniente.
+
+.Acerca de esta tarea
+Puede descargar y transferir los archivos sin activarlos. Puede optar por activarlos más tarde por los siguientes motivos:
+
+* *Hora del día* -- la activación del software y del firmware puede llevar mucho tiempo, por lo que es posible que desee esperar hasta que las cargas de E/S sean más livianas. Las controladoras conmutan al nodo de respaldo durante la activación, de manera que el rendimiento podría ser inferior al habitual hasta que finalice la actualización.
+* *Tipo de paquete*: Es posible que desee probar el nuevo software y firmware en una matriz de almacenamiento antes de actualizar los archivos en otras matrices de almacenamiento.
+
+
+Cuando existe software o firmware transferido, pero no activado, se muestra una notificación en el área Notificaciones de la página principal de System Manager y también en la página Centro de actualización.
+
+[CAUTION]
+====
+No se puede detener el proceso de activación una vez iniciado.
+
+====
+.Pasos
+. Seleccione MENU:Support[Upgrade Center].
+. En el área etiquetada como actualización de software de controlador de sistema operativo SANtricity, haga clic en *Activar* y confirme que desea realizar la operación.
++
+Es posible cancelar la operación durante la comprobación del estado previa a la actualización, pero no durante la activación.
+
++
+Se inicia la comprobación del estado previa a la actualización. Si la comprobación del estado previa a la actualización se realiza correctamente, el proceso de actualización procede a activar los archivos. Si la comprobación del estado previa a la actualización tiene errores, use Recovery Guru o póngase en contacto con el soporte técnico para resolver el problema. Para algunos tipos de condiciones, el soporte técnico puede aconsejarle continuar con la actualización a pesar de los errores seleccionando la casilla de verificación *permitir actualización*.
+
++
+Cuando la comprobación del estado previa a la actualización se realiza correctamente, se produce la activación. El tiempo que requiere la activación depende de la configuración de la cabina de almacenamiento y los componentes que se van a activar.
+
+. *Opcional:* para ver una lista de lo que se actualizó, haga clic en *Guardar registro*.
++
+El archivo se guarda en la carpeta de descargas del explorador con el nombre `drive_upgrade_log-timestamp.txt`.
+
+
+
+.Después de terminar
+* Verifique que todos los componentes aparezcan en la página hardware.
+* Verifique las nuevas versiones de software y firmware. Para ello, consulte el cuadro de diálogo Inventario de software y firmware (vaya al menú:Soporte[Centro de actualización] y, a continuación, haga clic en el vínculo *Inventario de software y firmware*).
+* Si actualizó NVSRAM de controladora, toda la configuración personalizada aplicada a la NVSRAM existente se pierde durante el proceso de activación. Se debe volver a aplicar la configuración personalizada a la NVSRAM una vez que finaliza el proceso de activación.
+

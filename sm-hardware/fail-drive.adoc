@@ -1,0 +1,49 @@
+---
+permalink: sm-hardware/fail-drive.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, fail, drive, 
+summary: Es posible hacer que una unidad falle de forma manual, si se reciben instrucciones para hacerlo. 
+---
+= Hacer que una unidad falle
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible hacer que una unidad falle de forma manual, si se reciben instrucciones para hacerlo.
+
+.Acerca de esta tarea
+System Manager supervisa las unidades en la cabina de almacenamiento. Cuando detecta que una unidad está generando muchos errores, Recovery Guru envía una notificación de fallo de unidad inminente. Si sucede esto y existe una unidad de reemplazo disponible, quizás desee hacer que la unidad falle como medida preventiva. Si no tiene una unidad de reemplazo disponible, puede esperar a que la unidad falle por sí misma.
+
+[CAUTION]
+====
+*Posible pérdida de acceso a los datos* -- esta operación podría provocar la pérdida de datos o la pérdida de redundancia de datos. Realice esta operación solo cuando el soporte técnico o Recovery Guru se lo indiquen.
+
+====
+.Pasos
+. Seleccione *hardware*.
+. Si el gráfico muestra los controladores, haga clic en *Mostrar frente de la bandeja*.
++
+El gráfico cambia y muestra las unidades en lugar de las controladoras.
+
+. Haga clic en la unidad que desea que falle.
++
+Aparece el menú contextual de la unidad.
+
+. Seleccione *error*.
+. Mantenga seleccionada la casilla de verificación *Copiar contenido de la unidad antes de la conmutación*.
++
+La opción de copia aparecerá solo para las unidades asignadas y para los grupos de volúmenes que no poseen una configuración RAID 0.
+
++
+Antes de hacer que la unidad falle, asegúrese de copiar su contenido. Según la configuración, es posible que se pierdan potencialmente todos los datos o la redundancia de datos en el pool o el grupo de volúmenes asociado, si primero no se copian los contenidos de la unidad.
+
++
+La opción de copia permite una recuperación más rápida de la unidad que la reconstrucción, y reduce la posibilidad de un fallo del volumen si otra unidad presenta errores durante la operación de copia.
+
+. Confirme que desea que la unidad falle.
++
+Después de que falle la unidad, espere al menos 30 segundos para quitarla.
+
+

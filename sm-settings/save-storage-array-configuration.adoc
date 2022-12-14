@@ -1,0 +1,72 @@
+---
+permalink: sm-settings/save-storage-array-configuration.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, save, storage array, configuration, 
+summary: Es posible guardar la información de configuración de una cabina de almacenamiento en un archivo de script para ahorrar tiempo al configurar cabinas de almacenamiento adicionales con las mismas opciones. 
+---
+= Guarde la configuración de la cabina de almacenamiento
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible guardar la información de configuración de una cabina de almacenamiento en un archivo de script para ahorrar tiempo al configurar cabinas de almacenamiento adicionales con las mismas opciones.
+
+.Antes de empezar
+La cabina de almacenamiento no debe estar sujeta a ninguna operación por la que se modifique su configuración lógica. Algunos ejemplos de estas operaciones son crear o eliminar volúmenes, descargar firmware de controladora, asignar o modificar unidades de repuesto, o añadir capacidad (unidades) a un grupo de volúmenes.
+
+.Acerca de esta tarea
+Al guardar la configuración de una cabina de almacenamiento, se genera un script de interfaz de línea de comandos (CLI) con las opciones de la cabina de almacenamiento, la configuración de los volúmenes, la configuración de los hosts o las asignaciones de host a volumen para la cabina de almacenamiento. Se puede usar este script de CLI generado para replicar una configuración a otra cabina de almacenamiento con la misma configuración de hardware.
+
+No obstante, no se debe usar este script de CLI para la recuperación ante desastres. En lugar de eso, para restaurar el sistema, utilice el archivo de backup de base de datos de configuración que creó manualmente o póngase en contacto con el soporte técnico para obtener estos datos de los datos de AutoSupport más recientes.
+
+Esta operación _not_ guarda estos valores:
+
+* Duración de la batería
+* Hora del día de la controladora
+* Opciones de la memoria estática de acceso aleatorio no volátil (NVSRAM)
+* Funciones excepcionales
+* Contraseña de la cabina de almacenamiento
+* Estado operativo y estados de los componentes de hardware
+* Estado operativo (excepto que sea óptimo) y estados de los grupos de volúmenes
+* Servicios de copia, como el mirroring y la copia de volumen
+
+
+[CAUTION]
+====
+*Riesgo de errores en la aplicación* -- no utilice esta opción si la matriz de almacenamiento está sufriendo una operación que cambiará cualquier configuración lógica. Algunos ejemplos de estas operaciones son crear o eliminar volúmenes, descargar firmware de controladora, asignar o modificar unidades de repuesto, o añadir capacidad (unidades) a un grupo de volúmenes.
+
+====
+.Pasos
+. Seleccione MENU:Settings[System].
+. Seleccione *Guardar configuración de la matriz de almacenamiento*.
+. Seleccione los elementos de la configuración que desea guardar:
++
+** Configuración de cabina de almacenamiento
+** Configuración de volúmenes
+** Configuración de hosts
+** Asignaciones de host a volumen
+
+
++
+[NOTE]
+====
+Si selecciona el elemento *asignaciones de host a volumen*, el elemento *Configuración de volumen* y el elemento *Configuración de host* también se seleccionan de forma predeterminada. No puede guardar "asignaciones de hosts a volúmenes" sin guardar también "Configuración del volumen" y "Configuración de host".
+
+====
+. Haga clic en *Guardar*.
++
+El archivo se guarda en la carpeta de descargas del explorador con el nombre `storage-array-configuration.cfg`.
+
+
+
+.Después de terminar
+Para cargar la configuración guardada de una cabina de almacenamiento en otra cabina de almacenamiento, utilice la interfaz de línea de comandos de SANtricity (SMcli) con el `-f` para aplicar la `.cfg` archivo.
+
+[NOTE]
+====
+También puede cargar la configuración guardada de una cabina de almacenamiento en otras cabinas de almacenamiento mediante la interfaz de Unified Manager (seleccione MENU:gestionar[Importar configuración]).
+
+====

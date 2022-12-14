@@ -1,0 +1,126 @@
+---
+permalink: sm-storage/how-do-i-know-which-host-operating-system-type-is-correct.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, host operating system, type, 
+summary: 'El campo Tipo de sistema operativo de host contiene el sistema operativo del host. Es posible seleccionar el tipo de host recomendado en la lista desplegable, o bien permitir que el agente de contexto de host (HCA) configure el host y el tipo de sistema operativo de host adecuado.' 
+---
+= ¿Cómo saber cuál es el tipo de sistema operativo de host correcto?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El campo Tipo de sistema operativo de host contiene el sistema operativo del host. Es posible seleccionar el tipo de host recomendado en la lista desplegable, o bien permitir que el agente de contexto de host (HCA) configure el host y el tipo de sistema operativo de host adecuado.
+
+Los tipos de hosts que aparecen en la lista desplegable dependen del modelo de cabina de almacenamiento y la versión del firmware. Las versiones más recientes muestran primero las opciones más comunes, que son las más probables ser apropiadas. La aparición en esta lista no implica que la opción esté totalmente admitida.
+
+[NOTE]
+====
+Para obtener más información sobre la compatibilidad con hosts, consulte https://imt.netapp.com/matrix/#welcome["Herramienta de matriz de interoperabilidad de NetApp"^].
+
+====
+En la lista pueden aparecer algunos de los siguientes tipos de hosts:
+
+[cols="35h,~"]
+|===
+| Tipo de sistema operativo de host | Sistema operativo (SO) y controlador multivía 
+
+
+ a| 
+Linux DM-MP (Kernel 3.10 o posterior)
+ a| 
+Es compatible con sistemas operativos Linux que utilizan una solución de conmutación por error multivía de Device Mapper con un kernel 3.10 o posterior.
+
+
+
+ a| 
+VMware ESXi
+ a| 
+Es compatible con los sistemas operativos VMware ESXi que ejecutan la arquitectura nativa del complemento multivía (NMP) mediante el módulo VMware incorporado Storage Array Type Policy SATP_ALUA.
+
+
+
+ a| 
+Windows (en clúster o sin clúster)
+ a| 
+Admite configuraciones en clúster o no en clúster de Windows que no ejecuten el controlador multivía de ATTO.
+
+
+
+ a| 
+Clúster ATTO (todos los sistemas operativos)
+ a| 
+Admite todas las configuraciones de clúster con el controlador ATTO Technology, Inc. Y multipathing.
+
+
+
+ a| 
+Linux (Veritas DMP)
+ a| 
+Admite sistemas operativos Linux mediante una solución multivía Veritas DMP.
+
+
+
+ a| 
+Linux (ATTO)
+ a| 
+Admite sistemas operativos Linux que usan un controlador ATTO Technology, Inc. Y multiruta.
+
+
+
+ a| 
+Mac OS (ATTO)
+ a| 
+Admite versiones de Mac OS que usan un controlador ATTO Technology, Inc. Y multipathing.
+
+
+
+ a| 
+Windows (ATTO)
+ a| 
+Admite sistemas operativos Windows que usan un controlador ATTO Technology, Inc. Y multiruta.
+
+
+
+ a| 
+FlexArray (ALUA)
+ a| 
+Admite un sistema FlexArray de NetApp mediante ALUA para accesos múltiples.
+
+
+
+ a| 
+SVC DE IBM
+ a| 
+Es compatible con la configuración de la controladora de volúmenes SAN de IBM.
+
+
+
+ a| 
+Predeterminado de fábrica
+ a| 
+Reservada para el inicio inicial de la cabina de almacenamiento. Si el tipo de sistema operativo del host está configurado como valor predeterminado de fábrica, cambie este valor para que coincida con el sistema operativo del host y el controlador multivía que se ejecuta en el host conectado.
+
+
+
+ a| 
+Linux DM-MP (Kernel 3.9 o anterior)
+ a| 
+Es compatible con sistemas operativos Linux que utilizan una solución de conmutación por error multivía de Device Mapper con un kernel 3.9 o anterior.
+
+
+
+ a| 
+Ventana en clúster (obsoleto)
+ a| 
+Si el tipo de sistema operativo del host está establecido en este valor, utilice la opción Windows (almacenado en clúster o no en clúster).
+
+|===
+Después de instalar el HCA y de conectar el almacenamiento al host, el HCA envía la topología del host a la controladoras de almacenamiento a través de la ruta de I/O. Según la topología del host, las controladoras de almacenamiento definen automáticamente el host y los puertos de host asociados para luego establecer el tipo de host.
+
+[NOTE]
+====
+Si el HCA no selecciona el tipo de host recomendado, debe configurar manualmente el tipo de host.
+
+====

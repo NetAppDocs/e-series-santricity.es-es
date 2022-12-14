@@ -1,0 +1,24 @@
+---
+permalink: sm-settings/why-does-the-cannot-access-other-controller-dialog-appear.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, Cannot, Access, Other, Controller 
+summary: 'Cuando se realizan ciertas operaciones relacionadas con los certificados de CA (por ejemplo, la importación de un certificado), es posible que aparezca un cuadro de diálogo que le solicite aceptar un certificado autofirmado para la segunda controladora.' 
+---
+= ¿Por qué se muestra el cuadro de diálogo no se puede acceder a otra controladora?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cuando se realizan ciertas operaciones relacionadas con los certificados de CA (por ejemplo, la importación de un certificado), es posible que aparezca un cuadro de diálogo que le solicite aceptar un certificado autofirmado para la segunda controladora.
+
+En las cabinas de almacenamiento con dos controladoras (configuraciones dúplex), este cuadro de diálogo aparece en ocasiones si System Manager de SANtricity no puede comunicarse con la segunda controladora, o bien si el explorador no puede aceptar el certificado durante un determinado punto en una operación.
+
+Si se abre este cuadro de diálogo, haga clic en *Aceptar certificado autofirmado* para continuar. Si otro cuadro de diálogo le solicita una contraseña, introduzca la contraseña de administrador que utiliza para acceder a System Manager.
+
+En caso de que este cuadro de diálogo se muestre nuevamente y no pueda completar una tarea de certificado, intente uno de los procedimientos a continuación:
+
+* Utilice un tipo de explorador diferente para acceder a esta controladora, acepte el certificado y continúe.
+* Acceda a la segunda controladora con System Manager, acepte el certificado autofirmado y luego regrese a la primera controladora y continúe.
+

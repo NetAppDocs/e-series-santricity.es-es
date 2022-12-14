@@ -1,0 +1,66 @@
+---
+permalink: sm-hardware/assign-hot-spares-hardware.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, assign, hot, spares, raid, 
+summary: Es posible asignar una pieza de repuesto como unidad en espera para protección de datos adicional en grupos de volúmenes RAID 1, RAID 5 o RAID 6. Si falla una unidad en estos grupos de volúmenes, la controladora reconstruye los datos de la unidad con error en la pieza de repuesto. 
+---
+= Asigne piezas de repuesto
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible asignar una pieza de repuesto como unidad en espera para protección de datos adicional en grupos de volúmenes RAID 1, RAID 5 o RAID 6. Si falla una unidad en estos grupos de volúmenes, la controladora reconstruye los datos de la unidad con error en la pieza de repuesto.
+
+.Antes de empezar
+* Deben crearse grupos de volúmenes RAID 1, RAID 5 o RAID 6. (Las piezas de repuesto no pueden usarse para pools. Un pool utiliza capacidad de reserva dentro de cada unidad para la protección de datos.)
+* Debe haber disponible una unidad que cumpla los siguientes criterios:
++
+** Sin asignar, con estado óptima.
+** El mismo tipo de medio que las unidades del grupo de volúmenes (por ejemplo, SSD).
+** El mismo tipo de interfaz que las unidades del grupo de volúmenes (por ejemplo, SAS).
+** Una capacidad igual o mayor que la capacidad utilizada de las unidades en el grupo de volúmenes.
+
+
+
+
+.Acerca de esta tarea
+En esta tarea, se describe cómo asignar manualmente una pieza de repuesto en la página hardware. La cobertura recomendada es dos piezas de repuesto por conjunto de unidades.
+
+[NOTE]
+====
+Las piezas de repuesto también pueden asignarse desde el asistente de configuración inicial. Para determinar si las piezas de repuesto ya están asignadas, busque las bahías de unidades que se muestran en color rosa en la página hardware.
+
+====
+.Pasos
+. Seleccione *hardware*.
+. Si el gráfico muestra los controladores, haga clic en *Mostrar frente de la bandeja*.
++
+El gráfico cambia y muestra las unidades en lugar de las controladoras.
+
+. Seleccione una unidad sin asignar (color gris) que desee usar como pieza de repuesto.
++
+Se abre el menú contextual de la unidad.
+
+. Seleccione *asignar pieza de repuesto*.
++
+Si la unidad tiene la función de seguridad habilitada, se abre el cuadro de diálogo secure erase drive? Para usar una unidad con la función de seguridad habilitada como pieza de repuesto, debe ejecutarse la operación Secure Erase, con el fin de eliminar todos sus datos y restablecer sus atributos de seguridad.
+
++
+[CAUTION]
+====
+*Posible pérdida de datos* -- Asegúrese de que ha seleccionado la unidad correcta. Una vez finalizada la operación borrado seguro, los datos no se pueden recuperar.
+
+====
++
+Si la unidad tiene *no* la función de seguridad habilitada, se abre el cuadro de diálogo Confirmar asignación de unidad de repuesto.
+
+. Revise el texto en el cuadro de diálogo y confirme la operación.
++
+La unidad aparece de color rosa en la página hardware, lo que indica que ahora es una pieza de repuesto.
+
+
+
+.Resultados
+Si falla una unidad dentro de un grupo de volúmenes RAID 1, RAID 5 o RAID 6, la controladora utiliza automáticamente datos de redundancia para reconstruir los datos de la unidad con error en la pieza de repuesto.

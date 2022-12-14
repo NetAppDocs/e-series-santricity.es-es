@@ -1,0 +1,110 @@
+---
+permalink: sm-storage/requirements-and-guidelines-for-snapshots.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, requirements, guidelines, snapshots 
+summary: Al crear y utilizar Snapshot, revise los siguientes requisitos y directrices. 
+---
+= Requisitos y directrices para Snapshot
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Al crear y utilizar Snapshot, revise los siguientes requisitos y directrices.
+
+
+
+== Imágenes Snapshot y grupos Snapshot
+
+* Cada imagen Snapshot se asocia con exactamente un grupo Snapshot.
+* Se crea un grupo Snapshot la primera vez que se crea una imagen Snapshot instantánea o programada para un objeto asociado. Esto genera capacidad reservada.
++
+Es posible ver los grupos Snapshot en la página Pools y grupos de volúmenes.
+
+* No se producen imágenes Snapshot programadas cuando la cabina de almacenamiento se encuentra apagada o sin conexión.
+* Si se elimina un grupo Snapshot que contiene una programación Snapshot, también se elimina esa programación.
+* Si existe un volumen Snapshot que ya no se necesita, es posible reutilizarlo, junto con la capacidad reservada asociada, en lugar de eliminarlo. Esto crea un volumen Snapshot diferente del mismo volumen base. Es posible volver a asociar el volumen Snapshot o el volumen Snapshot de grupo de coherencia Snapshot a la misma imagen Snapshot o una diferente, siempre y cuando la imagen Snapshot se encuentre en el mismo volumen base.
+
+
+
+
+== Grupo de coherencia Snapshot
+
+* Un grupo de coherencia Snapshot contiene un grupo Snapshot para cada volumen miembro del grupo de coherencia Snapshot.
+* Es posible asociar un grupo de coherencia Snapshot con una sola programación.
+* Si se elimina un grupo de coherencia Snapshot que contiene una programación Snapshot, también se elimina esa programación.
+* No se puede gestionar de forma individual un grupo Snapshot asociado a un grupo de coherencia Snapshot. En lugar de eso, se deben ejecutar las operaciones de gestión (crear una imagen Snapshot, eliminar una imagen Snapshot o un grupo Snapshot y revertir la imagen Snapshot) en el nivel del grupo de coherencia Snapshot.
+
+
+
+
+== Volumen base
+
+* Un volumen Snapshot debe tener la misma configuración de Data Assurance (DA) y seguridad que el volumen base asociado.
+* No se puede crear un volumen Snapshot a partir de un volumen base con errores.
+* Si el volumen base reside en un grupo de volúmenes, los volúmenes miembro de cualquier grupo de coherencia Snapshot asociado pueden residir en un pool o un grupo de volúmenes.
+* Si un volumen reside en un pool, todos los volúmenes miembro de cualquier grupo de coherencia Snapshot asociado deben residir en el mismo pool que el volumen base.
+
+
+
+
+== Capacidad reservada
+
+* La capacidad reservada se asocia a un solo volumen base.
+* El uso de una programación puede generar grandes cantidades de imágenes Snapshot. Asegúrese de contar con suficiente capacidad reservada para las Snapshot programadas.
+* El volumen de capacidad reservada para un grupo de coherencia Snapshot debe tener la misma configuración de Data Assurance (DA) y seguridad que el volumen base asociado para el volumen miembro del grupo de coherencia Snapshot.
+
+
+
+
+== Imágenes Snapshot pendientes
+
+La creación de una imagen Snapshot puede permanecer en estado pendiente en las siguientes condiciones:
+
+* El volumen base que contiene la imagen Snapshot es miembro de un grupo de reflejos asíncronos.
+* El volumen base está realizando una operación de sincronización. La creación de imágenes Snapshot finaliza apenas se completa la operación de sincronización.
+
+
+
+
+== Cantidad máxima de imágenes Snapshot
+
+* Si un volumen es miembro de un grupo de coherencia Snapshot, System Manager crea un grupo Snapshot para ese volumen miembro. Este grupo Snapshot cuenta para la cantidad máxima permitida de grupos Snapshot por volumen base.
+* Si intenta crear una imagen Snapshot en un grupo Snapshot o un grupo de coherencia Snapshot, pero el grupo asociado alcanzó la cantidad máxima de imágenes Snapshot, tiene dos opciones:
++
+** Habilite la eliminación automática para el grupo Snapshot o el grupo de coherencia Snapshot.
+** Elimine manualmente una o más imágenes Snapshot del grupo Snapshot o del grupo de coherencia Snapshot y vuelva a intentar la operación.
+
+
+
+
+
+
+== Eliminación automática
+
+Si se habilitó la eliminación automática en el grupo Snapshot o el grupo de coherencia Snapshot, cuando el sistema crea una imagen Snapshot nueva para el grupo, System Manager elimina la imagen más antigua.
+
+
+
+== Operación de reversión
+
+* No se pueden realizar las siguientes acciones con una operación de reversión en curso:
++
+** Eliminar la imagen Snapshot que se está utilizando para la reversión
+** Crear una imagen Snapshot nueva para un volumen base que está participando en una operación de reversión
+** Modificar la política de repositorio lleno del grupo Snapshot asociado
+
+
+* No se puede iniciar una operación de reversión si hay alguna de estas operaciones en curso:
++
+** Ampliación de capacidad (añadir capacidad a un pool o un grupo de volúmenes)
+** Expansión de volumen (aumentar la capacidad de un volumen)
+** Cambio de nivel de RAID de un grupo de volúmenes
+** Cambio de tamaño de los segmentos de un volumen
+
+
+* No se puede iniciar una operación de reversión si el volumen base está participando en una copia de volumen.
+* No se puede iniciar una operación de reversión si el volumen base es un volumen secundario en un reflejo remoto.
+* Se produce un error en la operación de reversión si la capacidad utilizada en el volumen del repositorio Snapshot asociado contiene sectores ilegibles.
+

@@ -1,0 +1,42 @@
+---
+permalink: sm-support/what-type-of-data-is-collected-through-autosupport.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, data, collected, autosupport, ASUP 
+summary: 'La función AutoSupport contiene tres tipos de mensajes estándares: Mensajes de evento, mensajes programados y mensajes de diagnóstico bajo demanda y remotos.' 
+---
+= ¿Qué tipo de datos se recopilan mediante la función AutoSupport?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La función AutoSupport contiene tres tipos de mensajes estándares: Mensajes de evento, mensajes programados y mensajes de diagnóstico bajo demanda y remotos.
+
+Los datos de AutoSupport no incluyen datos de usuario.
+
+* *Mensajes de evento*
++
+Cuando suceden eventos en el sistema que justifican la notificación proactiva al soporte técnico, la función AutoSupport envía automáticamente un mensaje activado por el evento.
+
++
+** Se envían cuando ocurre un evento de soporte en la cabina de almacenamiento gestionada.
+** Incluyen una Snapshot general de lo que sucedía en la cabina de almacenamiento en el momento en el que ocurrió el evento.
+
+
+* *Mensajes programados*
++
+La función AutoSupport envía automáticamente varios mensajes con una programación regular.
+
++
+** *Mensajes diarios* -- enviados una vez cada día durante un intervalo de tiempo configurable por el usuario. Incluyen los registros de eventos del sistema y los datos de rendimiento actuales.
+** *Mensajes semanales* -- enviados una vez cada semana durante un intervalo de tiempo y un día configurables por el usuario. Incluyen información de estado del sistema y la configuración.
+
+
+* *Mensajes de diagnóstico bajo demanda y remoto de AutoSupport*
++
+** *AutoSupport OnDemand* -- permite al soporte técnico solicitar la retransmisión de un envío anterior de AutoSupport cuando se necesita solucionar un problema. Todas las transmisiones se inician en la cabina de almacenamiento, no en el servidor de AutoSupport. La cabina de almacenamiento realiza comprobaciones periódicas con el servidor de AutoSupport para determinar si existen solicitudes de retransmisión pendientes y responde de manera acorde.
+** *Diagnóstico remoto* -- permite al soporte técnico solicitar un nuevo mensaje de AutoSupport actualizado cuando se necesita para solucionar un problema. Todas las transmisiones se inician en la cabina de almacenamiento, no en el servidor de AutoSupport. La cabina de almacenamiento realiza comprobaciones periódicas con el servidor de AutoSupport para determinar si existen solicitudes nuevas pendientes y responde de manera acorde.
+
+
+

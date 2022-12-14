@@ -1,0 +1,80 @@
+---
+permalink: sm-settings/how-access-management-works.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, authentication, users, roles, access, Management, 
+summary: Access Management es un método para establecer la autenticación de usuario en SANtricity System Manager. 
+---
+= Cómo funciona Access Management
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Access Management es un método para establecer la autenticación de usuario en System Manager.
+
+La configuración y la autenticación de usuarios funcionan de la siguiente manera:
+
+. Un administrador inicia sesión en System Manager con un perfil de usuario que incluye permisos de administración de seguridad.
++
+[NOTE]
+====
+La primera vez que se inicia sesión, el nombre de usuario `admin` se muestra automáticamente y no se puede cambiar. La `admin` el usuario tiene acceso completo a todas las funciones del sistema.
+
+====
+. El administrador navega hasta Access Management en la interfaz de usuario. La cabina de almacenamiento está preconfigurada para utilizar roles de usuario local, que son una implementación de capacidades RBAC (control de acceso basado en roles).
+. El administrador configura uno o varios de los siguientes métodos de autenticación:
++
+** *Roles de usuario local* -- la autenticación se gestiona a través de capacidades RBAC aplicadas en la cabina de almacenamiento. Los roles de usuario local incluyen perfiles de usuario predefinidos con permisos de acceso específicos. Los administradores pueden usar estos roles de usuario local como el único método de autenticación o usarlos en combinación con un servicio de directorio. No hace falta configurar nada más allá de las contraseñas de los usuarios.
+** *Servicios de directorio* -- la autenticación se administra a través de un servidor LDAP (protocolo ligero de acceso a directorios) y un servicio de directorio, como Active Directory de Microsoft. Un administrador se conecta con el servidor LDAP y luego asigna los usuarios LDAP a los roles de usuario local integrados en la cabina de almacenamiento.
+** *SAML* -- la autenticación se gestiona a través de un proveedor de identidades (IDP) utilizando el lenguaje de marcado de aserción de seguridad (SAML) 2.0. Un administrador establece comunicación entre el sistema IDP y la cabina de almacenamiento, y luego asigna los usuarios IDP a los roles de usuario local integrados en la cabina de almacenamiento.
+
+
+. El administrador ofrece credenciales de inicio de sesión en System Manager para los usuarios.
+. Los usuarios inician sesión en el sistema con sus credenciales.
++
+[NOTE]
+====
+Si la autenticación se gestiona con SAML y un SSO (inicio de sesión único), el sistema puede omitir el diálogo de inicio de sesión de System Manager.
+
+====
++
+Durante el inicio de sesión, el sistema realiza las siguientes tareas en segundo plano:
+
++
+** Autentica el nombre de usuario y la contraseña en relación con la cuenta de usuario.
+** Determina los permisos del usuario según los roles asignados.
+** Ofrece acceso al usuario a las tareas en la interfaz de usuario.
+** Muestra el nombre de usuario en la esquina superior derecha de la interfaz.
+
+
+
+
+
+
+== Tareas disponibles en System Manager
+
+El acceso a las tareas depende de los roles asignados a un usuario, entre los cuales se encuentran los siguientes:
+
+* *Storage admin* -- acceso completo de lectura/escritura a los objetos de almacenamiento (por ejemplo, volúmenes y pools de discos), pero sin acceso a la configuración de seguridad.
+* *Administración de seguridad* -- acceso a la configuración de seguridad en Access Management, administración de certificados, administración de registros de auditoría y la capacidad de activar o desactivar la interfaz de administración heredada (Symbol).
+* *Support admin* -- acceso a todos los recursos de hardware en la cabina de almacenamiento, datos de fallos, eventos MEL y actualizaciones del firmware de la controladora. No brinda acceso a los objetos de almacenamiento ni a la configuración de seguridad.
+* *Monitor* -- acceso de sólo lectura a todos los objetos de almacenamiento, pero sin acceso a la configuración de seguridad.
+
+
+Una tarea no disponible está atenuada o no aparece en la interfaz de usuario. Por ejemplo, un usuario con el rol de supervisión puede ver toda la información sobre los volúmenes, pero no puede acceder a funciones para modificarlos. Las pestañas para funciones como *Servicios de copia* y *Agregar a carga de trabajo* estarán atenuadas; sólo *Ver/Editar configuración* está disponible.
+
+
+
+== Limitaciones en Unified Manager y Storage Manager
+
+Si se configura SAML para una cabina de almacenamiento, los usuarios no pueden detectar ni gestionar el almacenamiento de esa cabina desde las interfaces de Unified Manager o heredada de Storage Manager.
+
+Cuando se configuran los roles de usuario local y los servicios de directorio, los usuarios deben introducir credenciales para poder realizar cualquiera de las siguientes funciones:
+
+* Cambiar el nombre de la cabina de almacenamiento
+* Actualizar el firmware de la controladora
+* Cargar una configuración de la cabina de almacenamiento
+* Ejecutar un script
+* Intentar realizar una operación activa cuando se agotó el tiempo de espera de una sesión no utilizada
+

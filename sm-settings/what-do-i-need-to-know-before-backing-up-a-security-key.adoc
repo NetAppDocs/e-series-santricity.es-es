@@ -1,0 +1,33 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-before-backing-up-a-security-key.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, backing up, security, key, 
+summary: Si la clave de seguridad original se daña y no existe un backup, se perderá el acceso a los datos de las unidades al migrarlas de una cabina de almacenamiento a otra. 
+---
+= ¿Qué debo saber antes de realizar un backup de una clave de seguridad?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si la clave de seguridad original se daña y no existe un backup, se perderá el acceso a los datos de las unidades al migrarlas de una cabina de almacenamiento a otra.
+
+Antes de realizar el backup de una clave de seguridad, tenga en cuenta las siguientes directrices:
+
+* Asegúrese de conocer el identificador de claves de seguridad y la frase de contraseña del archivo de claves original.
++
+[NOTE]
+====
+Solo las claves internas usan identificadores. Cuando se crea el identificador, se crean caracteres adicionales que se anexan automáticamente a ambos extremos de la cadena del identificador. Los caracteres generados garantizan que el identificador sea único.
+
+====
+* Es posible crear una frase de contraseña nueva para el backup. No es necesario que esta frase de contraseña coincida con la utilizada cuando se creó o se modificó por última vez la clave original. La frase de contraseña solo se aplica al backup que se crea.
++
+[NOTE]
+====
+La frase de contraseña para Drive Security no debería confundirse con la contraseña del administrador de la cabina de almacenamiento. La frase de contraseña para Drive Security protege los backups de una clave de seguridad. La contraseña del administrador protege toda la cabina de almacenamiento de un acceso no autorizado.
+
+====
+* El archivo de claves de seguridad de backup se descarga en el cliente de gestión. La ruta del archivo descargado podría depender de la ubicación predeterminada de las descargas del explorador. Asegúrese de registrar dónde se almacena la información de la clave de seguridad.
+

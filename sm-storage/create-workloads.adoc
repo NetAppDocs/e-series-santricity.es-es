@@ -1,0 +1,45 @@
+---
+permalink: sm-storage/create-workloads.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, create, workloads 
+summary: Es posible crear cargas de trabajo para cualquier tipo de aplicación. 
+---
+= Crear cargas de trabajo
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible crear cargas de trabajo para cualquier tipo de aplicación.
+
+.Acerca de esta tarea
+Una carga de trabajo es un objeto de almacenamiento que admite una aplicación. Se pueden definir una o más cargas de trabajo o instancias por aplicación. En algunas aplicaciones, el sistema configura la carga de trabajo para contener volúmenes con características subyacentes similares. Estas características de volumen se optimizan según el tipo de aplicación que es compatible con la carga de trabajo. Por ejemplo, si crea una carga de trabajo que es compatible con la aplicación Microsoft SQL Server y, a continuación, crea volúmenes para esa carga de trabajo, las características de volumen subyacentes se optimizan para ser compatibles con Microsoft SQL Server.
+
+System Manager recomienda una configuración de volumen optimizada solo para los siguientes tipos de aplicaciones:
+
+* Microsoft® SQL Server™
+* Microsoft® Exchange Server™
+* Videovigilancia
+* VMware ESXi ™ (para volúmenes que se usarán con el sistema de archivos de máquinas virtuales)
+
+
+Tenga en cuenta estas directrices:
+
+* _Cuando se usa una carga de trabajo específica para una aplicación, el sistema recomienda una configuración de volumen optimizada para minimizar la contención entre las operaciones de I/o de la carga de trabajo de la aplicación y otro tráfico de la instancia de la aplicación. Es posible revisar la configuración de volumen recomendada y luego editar, añadir o eliminar los volúmenes y las características recomendados por el sistema mediante el cuadro de diálogo Añadir/editar volúmenes.
+* _Cuando utilice otros tipos de aplicación_, especifique manualmente la configuración de volumen con el cuadro de diálogo Añadir/editar volúmenes.
+
+
+.Pasos
+. Seleccione MENU:Storage[Volumes].
+. Seleccione MENU:Create[Workload].
++
+Se muestra el cuadro de diálogo Crear carga de trabajo de la aplicación.
+
+. Utilice la lista desplegable para seleccionar el tipo de aplicación para la que desea crear la carga de trabajo y luego escriba el nombre de la carga de trabajo.
+. Haga clic en *Crear*.
+
+
+.Después de terminar
+Está listo para añadir capacidad de almacenamiento a la carga de trabajo creada. Utilice la opción *Crear volumen* para crear uno o varios volúmenes para una aplicación y para asignar cantidades específicas de capacidad a cada volumen.

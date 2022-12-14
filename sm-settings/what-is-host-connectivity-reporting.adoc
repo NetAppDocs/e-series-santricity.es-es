@@ -1,0 +1,28 @@
+---
+permalink: sm-settings/what-is-host-connectivity-reporting.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, host, connectivity, reporting, 
+summary: Cuando la opción de generación de informes de conectividad de host está habilitada, la cabina de almacenamiento supervisa continuamente la conexión entre las controladoras y los hosts configurados, y luego notifica si se interrumpió la conexión. 
+---
+= ¿Qué es la generación de informes de conectividad de host?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Cuando la opción de generación de informes de conectividad de host está habilitada, la cabina de almacenamiento supervisa continuamente la conexión entre las controladoras y los hosts configurados, y luego notifica si se interrumpió la conexión.
+
+Pueden producirse interrupciones en la conexión si hay algún cable suelto, dañado o faltante, o si hay otro problema con el host. En estas situaciones, es posible que el sistema abra un mensaje de Recovery Guru:
+
+* *Pérdida de redundancia del host* -- se abre si alguno de los controladores no puede comunicarse con el host.
+* *Tipo de host incorrecto* -- se abre si el tipo de host se ha especificado incorrectamente en la matriz de almacenamiento, lo que podría dar lugar a problemas de conmutación por error.
+
+
+Puede ser conveniente deshabilitar la generación de informes de conectividad de host cuando la operación de reinicio de una controladora puede demorar más que el tiempo de espera de conexión. Cuando se deshabilita esta función, se suprimen los mensajes de Recovery Guru.
+
+[NOTE]
+====
+Además, al deshabilitar la generación de informes de conectividad de host también se deshabilita el equilibrio de carga automático, que supervisa y equilibra el uso de recursos de la controladora. Sin embargo, si se vuelve a habilitar la generación de informes de conectividad de host, la función de equilibrio de carga automático no se vuelve a habilitar automáticamente.
+
+====

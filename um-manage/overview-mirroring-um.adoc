@@ -1,0 +1,45 @@
+---
+permalink: um-manage/overview-mirroring-um.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, mirroring 
+summary: Utilice las funciones de mirroring para replicar datos entre una cabina de almacenamiento local y una cabina de almacenamiento remota, ya sea de forma asíncrona o síncrona. 
+---
+= Información general de mirroring
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilice las funciones de mirroring para replicar datos entre una cabina de almacenamiento local y una cabina de almacenamiento remota, ya sea de forma asíncrona o síncrona.
+
+[NOTE]
+====
+Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
+
+====
+
+
+== ¿Qué es el mirroring?
+
+Las aplicaciones de SANtricity incluyen dos tipos de mirroring: Asíncrono y síncrono. El mirroring asíncrono copia los volúmenes de datos bajo demanda o por programación, lo que minimiza o evita el tiempo de inactividad que se puede producir por pérdidas o daños en los datos. El mirroring síncrono replica los volúmenes de datos en tiempo real para garantizar la disponibilidad continua.
+
+Obtenga más información:
+
+* link:mirroring-overview.html["Cómo funciona el mirroring"]
+* link:mirroring-terminology.html["Terminología de mirroring"]
+
+
+
+
+== ¿Cómo se configura el mirroring?
+
+El mirroring síncrono o asíncrono se debe configurar en Unified Manager y, posteriormente, se debe utilizar System Manager para gestionar las sincronizaciones.
+
+Obtenga más información:
+
+* link:mirroring-configuration-workflow.html["Flujo de trabajo de configuración de mirroring"]
+* link:requirements-for-using-mirroring.html["Requisitos para usar el mirroring"]
+* link:create-asynchronous-mirrored-pair-um.html["Cree una pareja reflejada asíncrona"]
+* link:create-synchronous-mirrored-pair-um.html["Cree una pareja reflejada síncrona"]
+

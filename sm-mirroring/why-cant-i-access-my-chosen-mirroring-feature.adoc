@@ -1,0 +1,33 @@
+---
+permalink: sm-mirroring/why-cant-i-access-my-chosen-mirroring-feature.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, mirroring, access 
+summary: La función de mirroring se configura en la interfaz de Unified Manager. 
+---
+= ¿Por qué no puedo acceder a la función de mirroring seleccionada?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La función de mirroring se configura en la interfaz de Unified Manager.
+
+[NOTE]
+====
+La función de mirroring no está disponible en las cabinas de almacenamiento EF600 o EF300.
+
+====
+Para habilitar y configurar el mirroring entre dos cabinas, compruebe lo siguiente:
+
+* El proxy de servicios web se encuentra en ejecución. (Unified Manager se encuentra instalado en un sistema host junto con el proxy de servicios web.)
+* Unified Manager se ejecuta en el host local a través de una conexión HTTPS.
+* Las dos cabinas de almacenamiento que se desean usar para el mirroring se detectaron en Unified Manager.
+* Unified Manager tiene certificados SSL válidos para las cabinas de almacenamiento. Puede aceptar un certificado autofirmado o instalar certificados firmados por CA desde Unified Manager.
+
+
+Para obtener instrucciones de configuración, consulte lo siguiente:
+
+* link:../um-manage/create-asynchronous-mirrored-pair-um.html["Crear una pareja reflejada asíncrona (en Unified Manager)"]
+* link:../um-manage/create-synchronous-mirrored-pair-um.html["Crear una pareja reflejada síncrona (en Unified Manager)"]
+

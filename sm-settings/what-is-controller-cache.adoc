@@ -1,0 +1,32 @@
+---
+permalink: sm-settings/what-is-controller-cache.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, controller, cache, 
+summary: 'La caché de la controladora es un espacio de memoria física que optimiza dos tipos de operaciones de I/o (entrada/salida): Entre las controladoras y los hosts, y entre las controladoras y los discos.' 
+---
+= ¿Qué es la caché de la controladora?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La caché de la controladora es un espacio de memoria física que optimiza dos tipos de operaciones de I/o (entrada/salida): Entre las controladoras y los hosts, y entre las controladoras y los discos.
+
+En el caso de las transferencias de datos de lectura y escritura, los hosts y las controladoras se comunican a través de conexiones de alta velocidad. Sin embargo, la comunicación del back-end de la controladora a los discos es más lenta debido a que los discos son dispositivos relativamente lentos.
+
+Cuando la caché de la controladora recibe los datos, la controladora reconoce qué aplicaciones host son las que ahora tienen los datos. De este modo, las aplicaciones host no necesitan esperar a que se escriban las operaciones de I/o en el disco. En cambio, las aplicaciones pueden continuar con sus operaciones. Los datos en caché también están a disposición de las aplicaciones de servidor, lo que elimina la necesidad de lecturas adicionales del disco para acceder a los datos.
+
+La caché de la controladora afecta al rendimiento general de la cabina de almacenamiento de diversas maneras:
+
+* La caché actúa como un búfer, de modo que las transferencias de datos entre disco y host no necesitan sincronizarse.
+* Los datos de una operación de escritura o lectura del host pueden estar en caché desde una operación anterior, lo que elimina la necesidad de acceder al disco.
+* Si se utiliza el almacenamiento en caché de escritura, el host puede enviar comandos de escritura posteriores antes de que los datos de una operación de escritura anterior se escriban en el disco.
+* Si la captura previa de caché está habilitada, el acceso de lectura secuencial se optimiza. La captura previa de caché hace que una operación de lectura tenga más probabilidades de encontrar los datos en la caché, en lugar de leer los datos del disco.
+
+
+[CAUTION]
+====
+*Posible pérdida de datos* -- Si activa la opción *almacenamiento en caché de escritura sin baterías* y no dispone de una fuente de alimentación universal de protección, podría perder datos. Además, puede perder datos si no tiene baterías de controlador y activa la opción *almacenamiento en caché de escritura sin baterías*.
+
+====

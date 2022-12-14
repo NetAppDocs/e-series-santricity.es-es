@@ -1,0 +1,25 @@
+---
+permalink: sm-storage/monitor-thin-volumes.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, monitor, thin, volumes 
+summary: Es posible supervisar el espacio de los volúmenes finos y generar las alertas apropiadas que permitan evitar condiciones de falta de capacidad. 
+---
+= Supervise volúmenes finos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Es posible supervisar el espacio de los volúmenes finos y generar las alertas apropiadas que permitan evitar condiciones de falta de capacidad.
+
+[NOTE]
+====
+Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
+
+====
+[NOTE]
+====
+System Manager de SANtricity no proporciona ninguna opción para crear volúmenes finos. Si se desea crear volúmenes finos, se debe usar la interfaz de línea de comandos (CLI).
+
+====

@@ -1,0 +1,20 @@
+---
+permalink: sm-settings/what-types-of-events-are-recorded-in-the-audit-log.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, events, recorded, audit, log, 
+summary: El registro de auditoría puede incluir eventos de modificación, o bien tanto eventos de modificación como de solo lectura. 
+---
+= ¿Qué tipo de eventos se registran en el registro de auditoría?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El registro de auditoría puede incluir eventos de modificación, o bien tanto eventos de modificación como de solo lectura.
+
+Según la configuración de la política, se muestran los siguientes tipos de eventos:
+
+* *Eventos de modificación* -- acciones del usuario desde System Manager que involucran cambios en el sistema, como el aprovisionamiento de almacenamiento.
+* *Eventos de modificación y de sólo lectura* -- acciones del usuario que involucran cambios en el sistema, así como eventos que involucran la visualización o descarga de información, como la visualización de asignaciones de volumen.
+

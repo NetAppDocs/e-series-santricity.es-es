@@ -1,0 +1,76 @@
+---
+permalink: sm-mirroring/test-communication-for-mirror-consistency-groups.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, test, communication, mirror, consistency, groups, 
+summary: Se puede probar el enlace de comunicación para diagnosticar posibles problemas de comunicación entre la cabina de almacenamiento local y la cabina de almacenamiento remota asociada con un grupo de coherencia de reflejos. 
+---
+= Prueba de comunicación para grupo de coherencia de reflejos
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se puede probar el enlace de comunicación para diagnosticar posibles problemas de comunicación entre la cabina de almacenamiento local y la cabina de almacenamiento remota asociada con un grupo de coherencia de reflejos.
+
+.Antes de empezar
+El grupo de coherencia de reflejos que desea probar debe existir en las cabinas de almacenamiento local y remota.
+
+.Acerca de esta tarea
+Se pueden ejecutar cuatro pruebas distintas:
+
+* *Conectividad* -- verifica que los dos controladores tengan una ruta de comunicación. La prueba de conectividad envía un mensaje entre cabinas entre las cabinas de almacenamiento y, a continuación, valida la existencia del grupo de coherencia de reflejos correspondiente en la cabina de almacenamiento remota. También valida que los volúmenes miembro del grupo de coherencia de reflejos en la cabina de almacenamiento remota coincidan con los volúmenes miembro del grupo de coherencia de reflejos en la cabina de almacenamiento local.
+* *Latencia* -- envía un comando de unidad de prueba SCSI a cada volumen reflejado en la matriz de almacenamiento remota asociada con el grupo de consistencia de mirroring para probar la latencia mínima, media y máxima.
+* *Bandwidth* -- envía dos mensajes entre matrices a la matriz de almacenamiento remota para probar el ancho de banda mínimo, medio y máximo, así como la velocidad de enlace negociada del puerto en la matriz que realiza la prueba.
+* *Conexiones de puerto*: Muestra el puerto que se utiliza para la duplicación en la matriz de almacenamiento local y el puerto que recibe los datos reflejados en la matriz de almacenamiento remota.
+
+
+.Pasos
+. Seleccione menu:Storage[Asynchronous Mirroring].
+. Seleccione la ficha *grupos de consistencia en mirroring* y, a continuación, seleccione el grupo de consistencia en mirroring que desea probar.
+. Seleccione *probar comunicación*.
++
+Se muestra el cuadro de diálogo probar comunicación.
+
+. Seleccione una o más pruebas de comunicación para realizar entre las matrices de almacenamiento local y remota asociadas con el grupo de consistencia de mirroring seleccionado y, a continuación, haga clic en *probar*.
+. Revise la información que se muestra en la ventana resultados.
++
+[cols="35h,~"]
+|===
+| Estado de la prueba de comunicación | Descripción 
+
+
+ a| 
+Normal sin errores
+ a| 
+El grupo de coherencia de reflejos se comunica correctamente.
+
+
+
+ a| 
+Estado superado (pero no normal)
+ a| 
+Se debe comprobar que no haya problemas de red ni de conexión, y se debe volver a realizar la prueba.
+
+
+
+ a| 
+Estado con errores
+ a| 
+Se indica el motivo del fallo. Consulte Recovery Guru para corregir el problema.
+
+
+
+ a| 
+Error de conexión de puerto
+ a| 
+El motivo puede ser que la cabina de almacenamiento local no está conectada o que no se puede contactar a la cabina de almacenamiento remota. Consulte Recovery Guru para corregir el problema.
+
+|===
+
+
+.Resultados
+Cuando se completa la prueba de comunicación, el cuadro de diálogo muestra los Estados normal, superada o con errores.
+
+Si el resultado de la prueba de comunicación es con errores, la prueba se sigue ejecutando después de cerrar este cuadro de diálogo hasta que se restablezca la comunicación entre los grupos de coherencia de reflejos.

@@ -1,0 +1,22 @@
+---
+permalink: sm-support/what-do-i-need-to-know-before-upgrading-drive-firmware.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, upgrading, drive, firmware 
+summary: Antes de actualizar el firmware de la unidad, tenga en cuenta los siguientes puntos. 
+---
+= ¿Qué debo saber antes de actualizar el firmware de la unidad?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Antes de actualizar el firmware de la unidad, tenga en cuenta los siguientes puntos.
+
+* Como medida de precaución, haga un backup de los datos mediante un backup de disco a disco, una copia de volumen (a un grupo de volúmenes que no esté afectado por la actualización de firmware programada) o un reflejo remoto.
+* Tal vez resulte conveniente actualizar solo algunas unidades para probar el comportamiento, con el fin de garantizar que el firmware nuevo funcione correctamente. Si el firmware nuevo funciona correctamente, actualice las unidades restantes.
+* Si tiene unidades con error, corrija esos errores antes de comenzar la actualización de firmware.
+* Si las unidades pueden hacer una actualización sin conexión, detenga la actividad de I/o de todos los volúmenes asociados con las unidades. Cuando se detiene la actividad de I/o, no pueden producirse operaciones de configuración asociadas a tales volúmenes.
+* No quite ninguna unidad mientras se actualiza el firmware de la unidad.
+* No haga ningún cambio de configuración en la cabina de almacenamiento mientras se actualiza el firmware de la unidad.
+

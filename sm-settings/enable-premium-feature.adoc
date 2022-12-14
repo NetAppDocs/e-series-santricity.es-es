@@ -1,0 +1,41 @@
+---
+permalink: sm-settings/enable-premium-feature.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, enable, premium, feature, 
+summary: Una función prémium es una opción adicional que requiere una clave para habilitarla. 
+---
+= Habilite una función excepcional
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Una función prémium es una opción adicional que requiere una clave para habilitarla.
+
+.Antes de empezar
+* Obtuvo una clave de función. Si es necesario, comuníquese con soporte técnico para obtener una clave.
+* Cargó el archivo de claves en el cliente de gestión (el sistema con un explorador para acceder a System Manager).
+
+
+.Acerca de esta tarea
+En esta tarea, se describe cómo usar System Manager para habilitar una función excepcional.
+
+[NOTE]
+====
+Si desea deshabilitar una función excepcional, debe utilizar el comando Deshabilitar función de cabina de almacenamiento (`disable storageArray) (featurePack | feature=featureAttributeList`) En la interfaz de línea de comandos (CLI).
+
+====
+.Pasos
+. Seleccione MENU:Settings[System].
+. En *Complementos*, seleccione *Activar característica Premium*.
++
+Se abre el cuadro de diálogo Habilitar una función prémium.
+
+. Haga clic en *examinar* y, a continuación, seleccione el archivo de claves.
++
+El nombre del archivo aparece en el cuadro de diálogo.
+
+. Haga clic en *Activar*.
+

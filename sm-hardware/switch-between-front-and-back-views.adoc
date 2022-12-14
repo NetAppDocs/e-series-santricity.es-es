@@ -1,0 +1,30 @@
+---
+permalink: sm-hardware/switch-between-front-and-back-views.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, switch, front, back, views, shelves 
+summary: La página hardware puede mostrar la vista frontal o la vista trasera de las bandejas. 
+---
+= Alternar entre las vistas frontal y trasera
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La página hardware puede mostrar la vista frontal o la vista trasera de las bandejas.
+
+.Acerca de esta tarea
+La vista trasera muestra las controladoras/IOM y los contenedores de alimentación/ventilador. La vista frontal muestra las unidades.
+
+.Pasos
+. Seleccione *hardware*.
+. Si el gráfico muestra las unidades, haga clic en *Mostrar parte posterior de la bandeja*.
++
+El gráfico cambia y muestra las controladoras en lugar de las unidades.
+
+. Si el gráfico muestra los controladores, haga clic en *Mostrar frente de la bandeja*.
++
+El gráfico cambia y muestra las unidades en lugar de las controladoras.
+
+. Opcionalmente, puede seleccionar *Mostrar todo frente* o *Mostrar todo detrás*, ubicado en la parte inferior de la página.
+

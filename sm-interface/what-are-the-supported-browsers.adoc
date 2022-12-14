@@ -1,0 +1,61 @@
+---
+permalink: sm-interface/what-are-the-supported-browsers.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, browser support 
+summary: En System Manager se admiten las siguientes versiones de exploradores. 
+---
+= ¿Qué exploradores son compatibles?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+En System Manager se admiten las siguientes versiones de exploradores.
+
+[cols="1a,1a"]
+|===
+| Navegador | Versión mínima 
+
+
+ a| 
+Google Chrome
+ a| 
+79
+
+
+
+ a| 
+Mozilla Firefox
+ a| 
+70
+
+
+
+ a| 
+Safari
+ a| 
+12
+
+
+
+ a| 
+Microsoft Edge
+ a| 
+79
+
+
+
+ a| 
+Entorno heredado de Microsoft Edge
+ a| 
+18
+
+
+
+ a| 
+Microsoft Internet Explorer (MSIE)
+ a| 
+11
+
+|===

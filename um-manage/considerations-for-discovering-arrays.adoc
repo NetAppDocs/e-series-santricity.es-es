@@ -1,0 +1,59 @@
+---
+permalink: um-manage/considerations-for-discovering-arrays.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, considerations, discovering, arrays 
+summary: Para poder mostrar y gestionar los recursos de almacenamiento, Unified Manager debe detectar las cabinas de almacenamiento que se desean gestionar en la red de la organización. Es posible detectar varias cabinas de almacenamiento o una sola. 
+---
+= Consideraciones sobre la detección de cabinas
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para poder mostrar y gestionar los recursos de almacenamiento, Unified Manager debe detectar las cabinas de almacenamiento que se desean gestionar en la red de la organización. Es posible detectar varias cabinas de almacenamiento o una sola.
+
+
+
+== Detección de varias cabinas de almacenamiento
+
+Si decide detectar varias cabinas de almacenamiento, debe introducir un rango de direcciones IP de red. A continuación, Unified Manager intentar establecer conexiones individuales con cada dirección IP de ese rango. Cada cabina de almacenamiento a la que se accedió correctamente se muestra en la página detectar y se puede añadir al dominio de gestión.
+
+
+
+== Detección de una sola cabina de almacenamiento
+
+Si decide detectar una sola cabina de almacenamiento, debe introducir la dirección IP única para una de las controladoras de la cabina de almacenamiento. A continuación, se añade la cabina de almacenamiento individual.
+
+[NOTE]
+====
+Unified Manager detecta y muestra solamente la dirección IP única o la dirección IP dentro del rango asignado a una controladora. Si existen controladoras alternativas o direcciones IP asignadas a estas controladoras que no se incluyen en esta dirección IP única o este rango de direcciones IP, Unified Manager no las detectará ni las mostrará. Sin embargo, una vez añadida la cabina de almacenamiento, se detectarán todas las direcciones IP asociadas y se mostrarán en la vista gestionar.
+
+====
+
+
+== Credenciales de usuario
+
+Como parte del proceso de detección, debe suministrar la contraseña de administrador para cada cabina de almacenamiento que desee añadir.
+
+
+
+== Certificados de servicios web
+
+Como parte del proceso de detección, Unified Manager verifica que las cabinas de almacenamiento detectadas utilicen certificados de un origen de confianza. Unified Manager utiliza dos tipos de autenticación basada en certificados para todas las conexiones que establece con el explorador:
+
+* *Certificados de confianza*
++
+Para las cabinas de almacenamiento detectadas mediante Unified Manager, es posible que deba instalar certificados de confianza adicionales suministrados por la entidad de certificación.
+
++
+Utilice el botón *Importar* para importar estos certificados. Si ya se conectó a esta cabina anteriormente, los certificados de una o ambas controladoras caducaron o se revocaron, o no se encuentra un certificado intermedio o de raíz en la cadena de certificados, Debe sustituir el certificado caducado o revocado, o añadir el certificado intermedio o de raíz ausente para gestionar la cabina de almacenamiento.
+
+* *Certificados autofirmados*
++
+Además, se pueden utilizar certificados autofirmados. Si el administrador intenta detectar las cabinas sin importar los certificados firmados, Unified Manager muestra un cuadro de diálogo de error en el que el administrador puede aceptar el certificado autofirmado. El certificado autofirmado de la cabina de almacenamiento se marcará como de confianza y la cabina de almacenamiento se añadirá a Unified Manager.
+
++
+Si no confía en las conexiones a la cabina de almacenamiento, seleccione *Cancelar* y valide la estrategia de certificación de seguridad de la cabina de almacenamiento antes de añadir la cabina de almacenamiento a Unified Manager.
+
+

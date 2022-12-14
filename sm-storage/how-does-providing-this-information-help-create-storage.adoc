@@ -1,0 +1,20 @@
+---
+permalink: sm-storage/how-does-providing-this-information-help-create-storage.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, workload 
+summary: La información de carga de trabajo se utiliza para optimizar características del volumen como tipo de E/S, tamaño de segmento y caché de lectura/escritura para la carga de trabajo seleccionada. Estas características optimizadas dictan la forma en que la carga de trabajo interactúa con los componentes de la cabina de almacenamiento. 
+---
+= ¿Cómo ayuda esta información a crear almacenamiento?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La información de carga de trabajo se utiliza para optimizar características del volumen como tipo de E/S, tamaño de segmento y caché de lectura/escritura para la carga de trabajo seleccionada. Estas características optimizadas dictan la forma en que la carga de trabajo interactúa con los componentes de la cabina de almacenamiento.
+
+Según la información de carga de trabajo que se proporcione, System Manager crea los volúmenes apropiados y los coloca en los pools o los grupos de volúmenes disponibles actualmente en el sistema. El sistema crea los volúmenes y optimiza sus características según las prácticas recomendadas vigentes para la carga de trabajo seleccionada.
+
+Antes de terminar de crear volúmenes para una carga de trabajo determinada, puede revisar la configuración de volumen recomendada y editar, añadir o eliminar los volúmenes y las características que recomienda el sistema mediante el cuadro de diálogo Añadir/editar volúmenes.
+
+Para obtener información sobre las prácticas recomendadas, consulte la documentación específica de la aplicación.

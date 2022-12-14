@@ -1,0 +1,46 @@
+---
+permalink: sm-settings/synchronize-storage-array-clocks.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, synchronize, storage, array, clocks, 
+summary: 'Si el protocolo de tiempo de redes (NTP) no está habilitado, los relojes de las controladoras se pueden configurar manualmente, de manera que queden sincronizados con el cliente de gestión (el sistema que se utiliza para ejecutar el explorador que accede a System Manager de SANtricity).' 
+---
+= Sincronice los relojes de la cabina de almacenamiento
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si el protocolo de tiempo de redes (NTP) no está habilitado, los relojes de las controladoras se pueden configurar manualmente, de manera que queden sincronizados con el cliente de gestión (el sistema que se utiliza para ejecutar el explorador que accede a System Manager).
+
+.Acerca de esta tarea
+La sincronización garantiza que las marcas de tiempo del evento del registro de eventos coincidan con las marcas de tiempo escritas en los archivos de registro del host. Durante el proceso de sincronización, las controladoras siguen estando disponibles y siguen siendo operativas.
+
+[NOTE]
+====
+Si la opción NTP se encuentra habilitada en System Manager, no se debe usar esta opción para sincronizar los relojes. En cambio, NTP sincroniza automáticamente los relojes con un host externo que utiliza el protocolo de tiempo de redes simple (SNTP).
+
+====
+[NOTE]
+====
+Una vez que se realiza la sincronización, se puede observar que las estadísticas de rendimiento se pierden o se alteran, las programaciones se ven afectadas (ASUP, snapshots, etc.) y las marcas de tiempo de los datos de registro se alteran. Para evitar este problema, se puede usar NTP.
+
+====
+.Pasos
+. Seleccione MENU:Settings[System].
+. En *General*, haga clic en *Sincronizar relojes de cabinas de almacenamiento*.
++
+Se abre el cuadro de diálogo Sincronizar relojes de cabinas de almacenamiento. Muestra la fecha y hora actuales de la controladora y el equipo que se usa como cliente de gestión.
+
++
+[NOTE]
+====
+Para las cabinas de almacenamiento simples, solo se muestra una controladora.
+
+====
+. Si las horas que aparecen en el cuadro de diálogo no coinciden, haga clic en *Sincronizar*.
+
+
+.Resultados
+Una vez que la sincronización se haya realizado correctamente, las marcas de tiempo del evento serán las mismas para el registro de eventos y los registros de host.
