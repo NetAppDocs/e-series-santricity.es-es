@@ -8712,4 +8712,6 @@
   <block id="c7c7a6a5641f33e348244f9c43010e16" category="sidebar">Requisitos de funciones</block>
   <block id="551705bacc367306569170afabb0a315" category="sidebar">Requisitos del volumen</block>
   <block id="85ecd630da2e3481551a9ee213eb40fe" category="sidebar">Gestione el almacenamiento remoto</block>
+  <block id="17fbe20fbbd5b537dbcef5b0ec0d1dea" category="section-title">Nuevas funciones en la versión 11,75</block>
+  <block id="fc663b28a8d6054c2d97e0b897d7291f" category="paragraph">Los sistemas deben ejecutar 11.70.5 para actualizarse a la versión 11,80.x o una versión posterior.</block>
 </blocks>

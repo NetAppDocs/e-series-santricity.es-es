@@ -16,6 +16,12 @@ En la siguiente tabla, se describen las nuevas funciones de SANtricity System Ma
 
 
 
+== Nuevas funciones en la versión 11,75
+
+Los sistemas deben ejecutar 11.70.5 para actualizarse a la versión 11,80.x o una versión posterior.
+
+
+
 == Nuevas funciones en la versión 11.74
 
 [cols="35h,~"]
