@@ -31,3 +31,20 @@ Si usa un servidor de protocolo ligero de acceso a directorios (LDAP) y servicio
 * Un administrador haya definido grupos de usuarios en el servicio de directorio.
 * Conoce los nombres de dominio de los grupos de usuarios LDAP.
 
+
+
+
+== SAML
+
+Si usa las funcionalidades de lenguaje de marcado de aserción de seguridad (SAML) incorporadas en la cabina de almacenamiento, asegúrese de que:
+
+* Un administrador de proveedor de identidades (IDP) haya configurado atributos de usuario y pertenencia a grupos en el sistema del IDP.
+* Conoce los nombres de pertenencia a grupos.
+* Conoce el valor de atributo para el grupo que será asignado. Se admiten expresiones regulares. Estos caracteres especiales de expresión regular deben escaparse con una barra invertida (`\`) si no forman parte de un patrón de expresión regular:
++
+[listing]
+----
+\.[]{}()<>*+-=!?^$|
+----
+* El rol de supervisión se requiere para todos los usuarios, incluido el administrador. Unified Manager no funcionará correctamente para los usuarios que no tengan el rol de supervisión.
+

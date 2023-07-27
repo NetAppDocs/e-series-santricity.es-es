@@ -15,7 +15,7 @@ El mirroring síncrono replica los volúmenes de datos en tiempo real para garan
 
 [NOTE]
 ====
-La función de mirroring no está disponible en las cabinas de almacenamiento EF600 o EF300.
+El mirroring síncrono no está disponible en las cabinas de almacenamiento EF600 o EF300.
 
 ====
 El mirroring síncrono logra un objetivo de punto de recuperación (RPO) de cero datos perdidos mediante la conservación de una copia de los datos importantes disponible en caso de que se produzca un desastre en una de las dos cabinas de almacenamiento. La copia es idéntica a los datos de producción en cada momento, ya que cada vez que se realiza una escritura en el volumen primario, se realiza una escritura en el volumen secundario. El host no recibe la confirmación de que la escritura se realizó correctamente hasta que el volumen secundario se actualiza correctamente con los cambios realizados en el volumen primario.

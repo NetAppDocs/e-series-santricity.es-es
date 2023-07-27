@@ -20,8 +20,8 @@ Debe iniciar sesión con un perfil de usuario que cuente con permisos de adminis
 Esta tarea elimina el certificado de gestión actual del sistema host donde están instalados el proxy de servicios web y Unified Manager. Una vez restablecido el certificado, el sistema host se revierte al uso del certificado autofirmado.
 
 .Pasos
-. Seleccione *Gestión de certificados*.
-. En la ficha Administración, seleccione *Restablecer*.
+. Selecciona *Ajustes > Certificados*.
+. Seleccione la pestaña *Array Management* y, a continuación, seleccione *Reset*.
 +
 Se abre el cuadro de diálogo Confirmar restablecimiento de certificado de gestión.
 

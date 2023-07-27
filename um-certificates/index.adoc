@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= Unified Manager 5 de SANtricity
+= Unified Manager 6 de SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

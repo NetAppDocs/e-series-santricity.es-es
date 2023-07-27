@@ -15,7 +15,7 @@ Utilice las funciones de mirroring para replicar datos entre una cabina de almac
 
 [NOTE]
 ====
-Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
+El mirroring síncrono no está disponible en los sistemas de almacenamiento EF600 o EF300.
 
 ====
 

@@ -24,9 +24,9 @@ La página hardware presenta funciones de ordenación y filtrado que facilitan l
 
 
  a| 
-Vistas frontal y trasera de la bandeja
+Vistas de unidades, controladoras y componentes
  a| 
-Para alternar entre las vistas frontal y trasera de la bandeja, seleccione *Mostrar parte posterior de la bandeja* o *Mostrar frente de la bandeja* en el extremo derecho (el enlace que aparece depende de la vista actual). La vista frontal muestra las unidades y todas las bahías vacías de la unidad. La vista trasera muestra las controladoras y todos los módulos IOM (ESM), los contenedores de alimentación/ventilador o las bahías vacías de la controladora. En la parte inferior de la página, también puede seleccionar *Mostrar todo frente* o *Mostrar todo detrás*.
+Para cambiar entre las vistas frontal y trasera de la bandeja, seleccione * Unidades * o * Controladores y componentes * en el extremo derecho (el enlace que aparece depende de la vista actual). La vista *Drives* muestra las unidades y las bahías de unidades vacías. La vista *Controladores y componentes* muestra los controladores y cualquier módulo IOM (ESM), contenedores de alimentación/ventilador o bahías de controlador vacías. En la parte inferior de la página, también puede seleccionar *Mostrar todas las unidades*.
 
 
 

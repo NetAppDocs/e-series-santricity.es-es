@@ -86,7 +86,7 @@ Sí
  a| 
 Volumen fino
  a| 
-Sí
+Sí 1
  a| 
 Sí
  a| 
@@ -97,7 +97,7 @@ No
  a| 
 Volumen Snapshot
  a| 
-Sí 1
+Sí 2
  a| 
 No
  a| 
@@ -119,13 +119,15 @@ No
  a| 
 Volumen primario de reflejos remoto
  a| 
-Sí 2
+Sí^3^
  a| 
 No
  a| 
 Sí
 
 |===
-Con esta acción, no se puede utilizar la copia del volumen Snapshot hasta que finalice la operación de copia en línea.
+^1^ El volumen objetivo debe tener una capacidad igual o superior a la Capacidad notificada de un volumen fino.
 
-Esta regla 2 Si el volumen de origen es un volumen primario, la capacidad del volumen objetivo debe ser igual o mayor que la capacidad utilizable del volumen de origen.
+^2^ No se puede usar la copia del volumen Snapshot hasta que finalice la operación de copia en línea.
+
+^3^ Si el volumen de origen es un volumen primario, la capacidad del volumen objetivo debe ser igual o mayor que la capacidad utilizable del volumen de origen.

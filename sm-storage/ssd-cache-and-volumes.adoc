@@ -13,11 +13,6 @@ summary: 'Es posible añadir un volumen a la caché SSD como una manera de aumen
 [role="lead"]
 Es posible añadir un volumen a la caché SSD como una manera de aumentar el rendimiento de solo lectura. La caché SSD se compone de un conjunto de unidades de disco de estado sólido (SSD) agrupadas de forma lógica en la cabina de almacenamiento.
 
-[NOTE]
-====
-Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
-
-====
 
 
 == Volúmenes

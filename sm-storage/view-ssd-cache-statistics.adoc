@@ -14,11 +14,6 @@ summary: Es posible ver estadísticas de la caché SSD, como lecturas, escritura
 [role="lead"]
 Es posible ver estadísticas de la caché SSD, como lecturas, escrituras, aciertos en caché, porcentaje de asignación de caché, y el porcentaje de utilización de la caché.
 
-[NOTE]
-====
-Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
-
-====
 Las estadísticas nominales, que son un subconjunto de estadísticas detalladas, se muestran en el cuadro de diálogo Ver estadísticas de la caché SSD. Es posible ver estadísticas detalladas de la caché SSD solo cuando se exportan todas las estadísticas de SSD a un `.csv` archivo.
 
 Al revisar e interpretar las estadísticas, tenga en cuenta que algunas interpretaciones provienen del análisis de una combinación de estadísticas.

@@ -15,12 +15,12 @@ Los sistemas E-Series incluyen el software SANtricity para el aprovisionamiento 
 
 En este sitio se describe cómo utilizar las siguientes interfaces de gestión de SANtricity:
 
-* System Manager: Interfaz basada en web utilizada para gestionar una controladora en una cabina de almacenamiento.
+* System Manager: Una interfaz basada en web que se utiliza para gestionar una cabina de almacenamiento individual en la red.
 * Unified Manager: Interfaz basada en web que se utiliza para ver y gestionar todas las cabinas de almacenamiento de la red.
 
 
 
-NOTE: Las cabinas de almacenamiento EF600 y EF300 no admiten las funciones de mirroring, volúmenes finos o caché SSD.
+NOTE: Las cabinas de almacenamiento EF600 y EF300 no admiten el mirroring síncrono o los volúmenes finos.
 
 
 
@@ -92,7 +92,7 @@ Ver datos de diagnóstico, gestionar actualizaciones y configurar AutoSupport, q
 
 == Unified Manager de SANtricity
 
-Unified Manager es un software basado en web que se utiliza para gestionar todo el dominio. Desde una vista central, puede ver el estado de todas las cabinas E-Series y EF-Series más recientes, como E2800, EF280, EF300, E5700, EF570 Y EF600. También puede realizar operaciones en lote en cabinas de almacenamiento seleccionadas.
+Unified Manager es un software basado en web que se utiliza para gestionar todo el dominio. Desde una vista central puede ver el estado de todas las cabinas E-Series y EF-Series más recientes, como E2800, EF280, EF300, E5700, EF570 Y EF600. También puede realizar operaciones en lote en cabinas de almacenamiento seleccionadas.
 
 Unified Manager se encuentra instalado en un servidor de gestión junto con el proxy de servicios web. Para acceder a Unified Manager, se abre un explorador e introduce la URL que indica el servidor donde está instalado el proxy de servicios web.
 

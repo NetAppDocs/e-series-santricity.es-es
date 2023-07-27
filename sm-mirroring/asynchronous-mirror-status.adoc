@@ -13,11 +13,6 @@ summary: El estado de reflejo define el estado de los grupos de coherencia de re
 [role="lead"]
 El estado de reflejo define el estado de los grupos de coherencia de reflejos y las parejas de volúmenes reflejadas.
 
-[NOTE]
-====
-Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
-
-====
 
 
 == Estado para grupos de coherencia de reflejos

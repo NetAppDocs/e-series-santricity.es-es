@@ -25,6 +25,6 @@ Antes de crear una pareja reflejada, siga estas directrices.
 
 [NOTE]
 ====
-Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
+El mirroring síncrono no está disponible en los sistemas de almacenamiento EF600 o EF300.
 
 ====

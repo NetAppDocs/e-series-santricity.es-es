@@ -17,18 +17,14 @@ Para acelerar de manera dinámica el rendimiento del sistema, se puede usar la f
 .Antes de empezar
 La cabina de almacenamiento debe tener algunas unidades SSD.
 
-[NOTE]
-====
-Caché SSD no está disponible en los sistemas de almacenamiento EF600 o EF300.
-
-====
 .Acerca de esta tarea
-Para la creación de una caché SSD, es posible usar una unidad única o varias unidades. Debido a que la caché de lectura se encuentra en la cabina de almacenamiento, todas las aplicaciones que utilizan la cabina de almacenamiento comparten el almacenamiento en caché. Una vez seleccionados los volúmenes que se desean almacenar en caché, el almacenamiento en caché se realiza de forma automática y dinámica.
+Para la creación de una caché SSD nueva, es posible usar una unidad única o varias unidades. Debido a que la caché de lectura se encuentra en la cabina de almacenamiento, todas las aplicaciones que utilizan la cabina de almacenamiento comparten el almacenamiento en caché. Una vez seleccionados los volúmenes que se desean almacenar en caché, el almacenamiento en caché se realiza de forma automática y dinámica.
 
-Siga las siguientes directrices al crear una caché SSD.
+Siga estas directrices al crear una caché SSD.
 
 * Puede habilitar la función de seguridad en la caché SSD solo en el momento de la creación, no después.
 * Solo se admite una caché SSD por cabina de almacenamiento.
+* Si solo un volumen tiene la caché SSD habilitada, toda la caché SSD se asignará a la controladora que pertenece a ese volumen.
 * La capacidad máxima de la caché SSD utilizable de una cabina de almacenamiento depende de la capacidad de la caché primaria de la controladora.
 * Las imágenes Snapshot no admiten la función SSD Cache.
 * Si importa o exporta volúmenes que tienen habilitada o deshabilitada la función SSD Cache, los datos en caché no se importan ni se exportan.

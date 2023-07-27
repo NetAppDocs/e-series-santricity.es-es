@@ -14,11 +14,6 @@ summary: Para configurar el mirroring asíncrono, debe crear una pareja reflejad
 [role="lead"]
 Para configurar el mirroring asíncrono, debe crear una pareja reflejada que incluya un volumen primario en la cabina local y un volumen secundario en la cabina remota.
 
-[NOTE]
-====
-Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
-
-====
 .Antes de empezar
 Antes de crear una pareja reflejada, debe cumplir con los requisitos para Unified Manager:
 

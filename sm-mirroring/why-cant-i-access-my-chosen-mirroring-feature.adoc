@@ -15,7 +15,7 @@ La función de mirroring se configura en la interfaz de Unified Manager.
 
 [NOTE]
 ====
-La función de mirroring no está disponible en las cabinas de almacenamiento EF600 o EF300.
+El mirroring síncrono no está disponible en las cabinas de almacenamiento EF600 o EF300.
 
 ====
 Para habilitar y configurar el mirroring entre dos cabinas, compruebe lo siguiente:

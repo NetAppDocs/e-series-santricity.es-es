@@ -61,6 +61,13 @@ El control de acceso basado en funciones (RBAC) es un método para regular el ac
 
 
  a| 
+SAML
+ a| 
+El lenguaje de marcado de aserción de seguridad (SAML) es un estándar basado en XML para fines de autenticación y autorización entre dos entidades. SAML permite utilizar la autenticación multifactor, en la cual los usuarios deben introducir dos o más elementos para validar su identidad (por ejemplo, una contraseña y una huella digital). La función de SAML integrada de la cabina de almacenamiento es compatible con SAML2,0 para autenticación, autorización y confirmación de identidades.
+
+
+
+ a| 
 SSO
  a| 
 El inicio de sesión único (SSO) es un servicio de autenticación que permite el uso de un conjunto de credenciales de inicio de sesión para acceder a varias aplicaciones.

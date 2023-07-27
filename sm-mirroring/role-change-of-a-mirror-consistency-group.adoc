@@ -13,11 +13,6 @@ summary: Es posible cambiar el rol entre las parejas reflejadas de un grupo de c
 [role="lead"]
 Es posible cambiar el rol entre las parejas reflejadas de un grupo de coherencia de reflejos. Para ello, se puede degradar el grupo de coherencia de reflejos primario al rol secundario o promocionar el grupo de coherencia de reflejos secundario al rol primario.
 
-[NOTE]
-====
-Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
-
-====
 Revise la siguiente información sobre la operación de cambio de roles:
 
 * El cambio de rol afecta a todas las parejas reflejadas dentro del grupo de coherencia de reflejos seleccionado.

@@ -16,6 +16,9 @@ Es posible configurar tiempos de espera en System Manager para que las sesiones 
 .Acerca de esta tarea
 De manera predeterminada, el tiempo de espera de sesión para Unified Manager es de 30 minutos. Es posible ajustar el tiempo, o bien directamente pueden deshabilitarse los tiempos de espera de sesión.
 
+
+NOTE: Si se configura Access Management con las funcionalidades del lenguaje de marcado de aserción de seguridad (SAML) integradas en la cabina, es posible que se agote el tiempo de espera de sesión cuando la sesión SSO del usuario alcance su límite máximo. Esto puede ocurrir antes del tiempo de espera de sesión de System Manager.
+
 .Pasos
 . En la barra de menú, seleccione la flecha desplegable junto a su nombre de inicio de sesión.
 . Seleccione *Activar/Desactivar tiempo de espera de sesión*.

@@ -29,7 +29,7 @@ Si planea configurar el mirroring, tenga en cuenta los siguientes requisitos.
 
 [NOTE]
 ====
-La función de mirroring no está disponible en las cabinas de almacenamiento EF600 o EF300.
+El mirroring síncrono no está disponible en las cabinas de almacenamiento EF600 o EF300.
 
 ====
 * Debe tener dos cabinas de almacenamiento.
@@ -77,6 +77,10 @@ La comunicación entre las controladoras iSCSI debe utilizar un puerto con conex
 == Candidatos de volumen reflejado
 
 * El nivel de RAID, los parámetros de almacenamiento en caché y el tamaño de los segmentos pueden ser diferentes en los volúmenes primario y secundario de una pareja reflejada.
++
+
+NOTE: Para las controladoras EF600 y EF300, los volúmenes primario y secundario de una pareja reflejada asíncrona deben coincidir con el mismo protocolo, nivel de soporte, tamaño de segmento, tipo de seguridad y nivel de RAID. Las parejas reflejadas asíncronas no elegibles no aparecerán en la lista de volúmenes disponibles.
+
 * El volumen secundario deber tener al menos el tamaño del volumen primario.
 * Un volumen puede participar solo en una relación de reflejo.
 * Para una pareja reflejada síncrona, los volúmenes primario y secundario deben ser volúmenes estándar. No pueden ser volúmenes finos o Snapshot.

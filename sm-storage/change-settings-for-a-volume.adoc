@@ -17,6 +17,9 @@ Es posible cambiar la configuración de un volumen, como el nombre, la asignaci�
 .Antes de empezar
 El volumen que desea cambiar debe estar en estado óptimo.
 
+
+NOTE: Es posible que algunas operaciones no estén disponibles mientras haya cambios en la configuración del volumen en curso
+
 .Pasos
 . Seleccione MENU:Storage[Volumes].
 . Seleccione el volumen que desea cambiar y, a continuación, seleccione *Ver/editar configuración*.
@@ -163,9 +166,6 @@ Muestra la configuración de almacenamiento en caché, que se puede modificar pa
  a| 
 Caché SSD
  a| 
-
-NOTE: Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
-
 Muestra la configuración de caché SSD, que se puede habilitar en volúmenes compatibles a fin de mejorar el rendimiento de solo lectura. Los volúmenes son compatibles si comparten las mismas capacidades Drive Security y Garantía de datos.
 
 *La función SSD Cache utiliza uno o varios discos de estado sólido (SSD) para implementar una memoria caché de lectura*. Se mejora el rendimiento de la aplicación gracias a los tiempos de lectura más rápidos de SSD. Debido a que la caché de lectura se encuentra en la cabina de almacenamiento, todas las aplicaciones que utilizan la cabina de almacenamiento comparten el almacenamiento en caché. Simplemente, seleccione el volumen que desea almacenar en caché y se realizará de forma automática y dinámica.

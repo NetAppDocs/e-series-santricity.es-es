@@ -13,11 +13,6 @@ summary: El mirroring asíncrono se debe configurar mediante el siguiente flujo 
 [role="lead"]
 El mirroring asíncrono se debe configurar mediante el siguiente flujo de trabajo.
 
-[NOTE]
-====
-Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
-
-====
 . Realice la configuración inicial en Unified Manager:
 +
 .. Seleccione la cabina de almacenamiento local como el origen de la transferencia de datos.

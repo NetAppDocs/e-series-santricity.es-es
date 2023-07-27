@@ -13,11 +13,6 @@ summary: La función Asynchronous Mirroring ofrece un mecanismo basado en firmwa
 [role="lead"]
 La función Asynchronous Mirroring ofrece un mecanismo basado en firmware en el nivel de la controladora para la replicación de datos entre una cabina de almacenamiento local y una cabina de almacenamiento remota.
 
-[NOTE]
-====
-Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
-
-====
 
 
 == ¿Qué es el mirroring asíncrono?

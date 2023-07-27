@@ -13,11 +13,6 @@ summary: 'La función SSD Cache es una solución basada en la controladora que a
 [role="lead"]
 La función SSD Cache es una solución basada en la controladora que almacena en la caché los datos de acceso más frecuente (los datos "activos") en unidades de estado sólido (SSD) de latencia más baja para acelerar dinámicamente el rendimiento del sistema. La caché SSD se usa exclusivamente para las lecturas del host.
 
-[NOTE]
-====
-Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
-
-====
 
 
 == Caché SSD versus caché primaria
@@ -30,7 +25,7 @@ La caché SSD opera de manera diferente a la caché primaria:
 +
 En la caché primaria, los datos se almacenan en DRAM después de la lectura en el host.
 
-* La caché SSD se utiliza solo es conveniente para colocar los datos en la caché a fin de mejorar el rendimiento del sistema general.
+* La caché SSD se utiliza solo si es conveniente para colocar los datos en la caché a fin de mejorar el rendimiento del sistema general.
 +
 En la caché SSD, se copian datos de volúmenes y se almacenan en dos volúmenes de RAID internos (uno por controladora) que se crean automáticamente al crear una caché SSD.
 

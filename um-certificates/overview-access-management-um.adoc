@@ -21,6 +21,7 @@ Están disponibles los siguientes métodos de autenticación:
 
 * *Roles de usuario local* -- la autenticación se administra mediante funciones RBAC (control de acceso basado en roles). Los roles de usuario local incluyen perfiles de usuario predefinidos con permisos de acceso específicos.
 * *Servicios de directorio* -- la autenticación se administra a través de un servidor LDAP (protocolo ligero de acceso a directorios) y un servicio de directorio, como Active Directory de Microsoft.
+* *SAML* -- la autenticación se gestiona a través de un proveedor de identidades (IDP) que utiliza SAML 2.0.
 
 
 Obtenga más información:
@@ -28,6 +29,7 @@ Obtenga más información:
 * link:how-access-management-works-unified.html["Cómo funciona Access Management"]
 * link:access-management-terminology-unified.html["Terminología de Access Management"]
 * link:permissions-for-mapped-roles-unified.html["Permisos para roles asignados"]
+* link:access-management-with-saml.html["SAML"]
 
 
 
@@ -40,4 +42,5 @@ Obtenga más información:
 
 * link:access-management-with-local-user-roles-unified.html["Access Management con roles de usuario local"]
 * link:access-management-with-directory-services-unified.html["Access Management con servicios de directorio"]
+* link:configure-saml.html["Configure SAML"]
 

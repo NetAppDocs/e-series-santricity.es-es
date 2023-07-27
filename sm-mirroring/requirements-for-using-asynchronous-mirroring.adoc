@@ -29,11 +29,6 @@ Para habilitar y configurar el mirroring entre dos cabinas, debe usar la interfa
 
 == Cabinas de almacenamiento
 
-[NOTE]
-====
-La función de mirroring no está disponible en las cabinas de almacenamiento EF600 o EF300.
-
-====
 * Debe tener dos cabinas de almacenamiento.
 * Cada cabina de almacenamiento debe tener dos controladoras.
 * Las dos cabinas de almacenamiento se encuentran detectadas en Unified Manager.
@@ -95,6 +90,10 @@ En el mirroring asíncrono, se utilizan los puertos de I/o del host de la cabina
 == Candidatos de volumen reflejado
 
 * El nivel de RAID, los parámetros de almacenamiento en caché y el tamaño de los segmentos pueden ser diferentes en los volúmenes primario y secundario de una pareja reflejada asíncrona.
++
+
+NOTE: Para las controladoras EF600 y EF300, los volúmenes primario y secundario de una pareja reflejada asíncrona deben coincidir con el mismo protocolo, nivel de soporte, tamaño de segmento, tipo de seguridad y nivel de RAID. Las parejas reflejadas asíncronas no elegibles no aparecerán en la lista de volúmenes disponibles.
+
 * El volumen secundario deber tener al menos el tamaño del volumen primario.
 * Un volumen puede participar solo en una relación de reflejo.
 * Los candidatos de volúmenes deben compartir las mismas funcionalidades de seguridad de datos.

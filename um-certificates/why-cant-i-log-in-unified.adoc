@@ -18,4 +18,5 @@ Los errores de inicio de sesión pueden ocurrir por uno de estos motivos:
 * Introdujo un nombre de usuario o contraseña incorrectos.
 * No tiene privilegios suficientes.
 * Intentó iniciar sesión reiteradamente sin éxito y se activó el modo de bloqueo. Aguarde 10 minutos y vuelva a intentarlo.
+* La autenticación SAML está habilitada. Actualice el explorador para iniciar sesión.
 

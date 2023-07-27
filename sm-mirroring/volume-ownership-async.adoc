@@ -13,11 +13,6 @@ summary: Es posible cambiar el propietario preferido de la controladora de una p
 [role="lead"]
 Es posible cambiar el propietario preferido de la controladora de una pareja reflejada.
 
-[NOTE]
-====
-Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
-
-====
 Si el volumen primario de la pareja reflejada pertenece a la controladora A, el volumen secundario también pertenecerá a la controladora A en la cabina De almacenamiento remota. Al cambiar el propietario del volumen primario, se modificará automáticamente el propietario del volumen secundario para garantizar que los dos volúmenes pertenezcan a la misma controladora. Los cambios de propiedad actuales en el lado primario se propagan automáticamente a los cambios de propiedad correspondientes en el lado secundario.
 
 Por ejemplo, un volumen primario que pertenece a la controladora A y que luego se cambia a la controladora B. En este caso, la próxima escritura remota cambia la propiedad de la controladora del volumen secundario de la controladora A a la B. Debido a que los cambios en la propiedad de la controladora en el lado secundario son controlados por el lado primario, no requieren ninguna intervención especial del administrador de almacenamiento.

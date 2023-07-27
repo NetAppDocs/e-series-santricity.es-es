@@ -160,11 +160,6 @@ La capacidad reservada es la capacidad física asignada que se usa para cualquie
  a| 
 Caché SSD
  a| 
-[NOTE]
-====
-Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
-
-====
 La caché SSD es un conjunto de unidades de disco de estado sólido (SSD) que se agrupan lógicamente en la cabina de almacenamiento. La función SSD Cache almacena en caché los datos a los que se accede con más frecuencia (datos "activos") en las unidades SSD de menor latencia para acelerar dinámicamente las cargas de trabajo de la aplicación.
 
 

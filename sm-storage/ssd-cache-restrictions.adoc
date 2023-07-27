@@ -19,9 +19,8 @@ Obtenga información acerca de las restricciones en el uso de la caché SSD en u
 
 * Cualquier volumen asignado para utilizar una caché SSD de una controladora no es elegible para una transferencia de equilibrio de carga automática.
 * Actualmente, solo se admite una caché SSD por cabina de almacenamiento.
-* La capacidad máxima de la caché SSD utilizable en una cabina de almacenamiento es 5 TB.
+* La capacidad máxima que se puede utilizar de caché SSD en una cabina de almacenamiento es 8 TB.
 * Las imágenes Snapshot no admiten la función SSD Cache.
-* Caché SSD no está disponible en los sistemas de almacenamiento EF600 o EF300.
 * Si importa o exporta volúmenes que tienen habilitada o deshabilitada la función SSD Cache, los datos en caché no se importan ni se exportan.
 * No puede quitar la última unidad de una caché SSD sin antes eliminar la caché SSD.
 

@@ -1,0 +1,45 @@
+---
+permalink: um-certificates/export-saml-service-provider-files.html 
+sidebar: sidebar 
+keywords: SANtricity, Unified Manager, E-Series, export, saml, Service Provider, files, 
+summary: 'Si es necesario, se pueden exportar metadatos de proveedor de servicios para la cabina de almacenamiento y volver a importar el archivo en el sistema del proveedor de identidades (IdP).' 
+---
+= Exporte los archivos de proveedor de servicios SAML
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si es necesario, se pueden exportar metadatos de proveedor de servicios para la cabina de almacenamiento y volver a importar el archivo en el sistema del proveedor de identidades (IdP).
+
+.Antes de empezar
+* Debe iniciar sesión con un perfil de usuario que cuente con permisos de administración de seguridad. De lo contrario, no se mostrarán las funciones de Access Management.
+* SAML debe estar configurado y habilitado.
+
+
+.Acerca de esta tarea
+En esta tarea, se exportan metadatos de la controladora. IDP necesita estos metadatos para establecer una relación de confianza con la controladora y procesar solicitudes de autenticación. El archivo incluye información, como el nombre de dominio o la dirección IP de la controladora, que IDP puede usar para enviar solicitudes.
+
+.Pasos
+. Seleccione MENU:Settings[Access Management].
+. Seleccione la pestaña *SAML*.
+. Seleccione *Exportar*.
++
+Se abre el cuadro de diálogo Exportar archivos del proveedor de servicios.
+
+. Haga clic en *Exportar* para guardar el archivo de metadatos en su sistema local.
++
+[NOTE]
+====
+El campo de nombre de dominio es de sólo lectura.
+
+====
++
+Anote en qué lugar se almacena el archivo.
+
+. Desde el sistema local, busque el archivo de metadatos del proveedor de servicios con formato XML que exportó.
+. Desde el servidor IdP, importe el archivo de metadatos del proveedor de servicios. Es posible importar el archivo directamente o introducir manualmente la información de la controladora.
+. Haga clic en *Cerrar*.
+

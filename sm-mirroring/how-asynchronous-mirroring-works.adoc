@@ -13,11 +13,6 @@ summary: El mirroring asíncrono copia los volúmenes de datos bajo demanda o po
 [role="lead"]
 El mirroring asíncrono copia los volúmenes de datos bajo demanda o por programación, lo que minimiza o evita el tiempo de inactividad que se puede producir por pérdidas o daños en los datos.
 
-[NOTE]
-====
-La función de mirroring no está disponible en las cabinas de almacenamiento EF600 o EF300.
-
-====
 El mirroring asíncrono captura el estado de un volumen primario en un momento específico y copia solo los datos que han cambiado desde la última captura de imagen. El sitio primario se puede actualizar de inmediato y el sitio secundario se puede actualizar según lo permita el ancho de banda. La información se guarda en la caché y se envía más tarde, a medida que los recursos de red se vuelven disponibles.
 
 Este tipo de mirroring es ideal para satisfacer la demanda de operaciones ininterrumpidas y, en general, es mucho más eficiente para la red en procesos periódicos como backup y archivado. Algunos motivos para utilizar el mirroring asíncrono son los siguientes:

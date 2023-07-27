@@ -94,7 +94,7 @@ Nombre único para una conexión dentro de la sesión entre el iniciador y el de
 
 
  a| 
-Identificador de puerto Ethernet
+Identificador de puerto
  a| 
 El puerto de la controladora asociado a la conexión.
 

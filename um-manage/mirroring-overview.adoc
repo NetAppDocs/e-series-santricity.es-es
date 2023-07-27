@@ -15,7 +15,7 @@ Unified Manager incluye opciones de configuración para las funciones de mirrori
 
 [NOTE]
 ====
-Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
+El mirroring síncrono no está disponible en los sistemas de almacenamiento EF600 o EF300.
 
 ====
 

@@ -163,7 +163,7 @@ Especifique el nombre del volumen Snapshot.
  a| 
 Habilite la caché SSD
  a| 
-Seleccione esta opción para habilitar el almacenamiento en caché de solo lectura en SSD. NOTA: Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
+Seleccione esta opción para habilitar el almacenamiento en caché de solo lectura en SSD.
 
 
 

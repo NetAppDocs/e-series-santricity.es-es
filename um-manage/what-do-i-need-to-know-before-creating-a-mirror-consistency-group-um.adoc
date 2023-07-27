@@ -33,6 +33,6 @@ También debe cumplir con los siguientes requisitos para las cabinas de almacena
 
 [NOTE]
 ====
-Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
+El mirroring síncrono no está disponible en los sistemas de almacenamiento EF600 o EF300.
 
 ====

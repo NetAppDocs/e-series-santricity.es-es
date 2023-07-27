@@ -16,7 +16,7 @@ Siga estas directrices para poder crear un grupo de coherencia de reflejos.
 
 [NOTE]
 ====
-Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
+El mirroring síncrono no está disponible en los sistemas de almacenamiento EF600 o EF300.
 
 ====
 El grupo de coherencia se crea en Unified Manager en el asistente Crear pareja reflejada.
