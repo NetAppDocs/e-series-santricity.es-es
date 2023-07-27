@@ -12,7 +12,7 @@ summary: Nuevas funciones del sistema operativo SANtricity.
 
 
 [role="lead"]
-En la siguiente tabla, se describen las nuevas funciones de SANtricity System Manager 11,8x.
+En la siguiente tabla, se describen las nuevas funciones de SANtricity System Manager 11,8.
 
 
 

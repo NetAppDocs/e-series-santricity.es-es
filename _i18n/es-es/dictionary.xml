@@ -8681,7 +8681,6 @@
   <block id="25e21eea77a06faadbc2ce2007dfd8fa" category="paragraph">Tenga cuidado de no quitar los permisos mientras SAML está habilitado; de lo contrario, perderá el acceso a Unified Manager.</block>
   <block id="bdf60d91552728cd5d2f943df141631b" category="paragraph">Haga clic en el campo y seleccione uno de los roles de la cabina de almacenamiento que se asignará al atributo. Debe seleccionar individualmente cada rol que desee incluir en este grupo. Se necesita el rol de supervisión junto con los demás roles para iniciar sesión en Unified Manager. También se debe asignar el rol de administración de seguridad al menos a un grupo. Los roles asignados incluyen los siguientes permisos:</block>
   <block id="84f60aaee7374184081d849821cae03b" category="doc">Novedades en el sistema operativo SANtricity 11,80</block>
-  <block id="ee178cd31372157b6b4ef199f32f28e6" category="paragraph">En la siguiente tabla, se describen las nuevas funciones de SANtricity System Manager 11,8x.</block>
   <block id="b88fbe45e9e75bdd6c5127ce8a22abe1" category="section-title">Nuevas funciones en la versión 11,80</block>
   <block id="8f407366493ebfbb4a6dec746e7c89f5" category="paragraph">Exploración de paridad de volumen mejorada</block>
   <block id="07c3c6708618172f589685373ed71a5d" category="paragraph">El análisis de paridad de volúmenes ahora se puede iniciar como proceso en segundo plano mediante la API DE REST o la interfaz de línea de comandos. El análisis de paridad resultante se ejecutará en segundo plano siempre que sea necesario para completar la operación de análisis. Las operaciones de análisis sobrevivirán a los reinicios de la controladora y las operaciones de conmutación por error.</block>
@@ -8716,7 +8715,6 @@
   <block id="1c0cc3436484a2d69e30cbe7f637d3ed" category="paragraph">Identificador de puerto</block>
   <block id="f3623da9f6be936979297f1fa268895c" category="paragraph">El monitor de eventos envía alertas al servidor de syslog cada vez que ocurre un evento que genera alertas. Para seguir configurando los ajustes de syslog para los registros de auditoría, consulte<block ref="8ff4ea61d8cfa4d348011e356d65d49a" category="inline-link-rx"></block>.</block>
   <block id="30af9425adf237457aaff58f7cb21bc9" category="paragraph">Después de la configuración, se envían todos los registros de auditoría nuevos al servidor de syslog. Los registros anteriores no se transfieren. Para seguir configurando los ajustes de syslog de las alertas, consulte<block ref="7b44e3078f5548e67f8cbe8894b93e12" category="inline-link-rx"></block>.</block>
-  <block id="4bc4384815b2cb7cd1edee10550e5472" category="list-text">_TBD para notas de la versión 11,80_</block>
   <block id="c76b2a182c36f1230239bad4c28112a3" category="doc">Documentación de software de SANtricity 11,80</block>
   <block id="3260e793a72a8ad4c6f8b10665ca25ac" category="doc">Gestión de varias cabinas con Unified Manager 6</block>
   <block id="8067406a66fe34c09bf78be3e6ae6fc1" category="list-text">System Manager: Una interfaz basada en web que se utiliza para gestionar una cabina de almacenamiento individual en la red.</block>
@@ -8725,4 +8723,7 @@
   <block id="f3e5a6d7f7194a35f77d2084efb9ef4f" category="paragraph">Vistas de unidades, controladoras y componentes</block>
   <block id="3354319c9dafbfd43c07abbfb0de1326" category="paragraph">Para cambiar entre las vistas frontal y trasera de la bandeja, seleccione * Unidades * o * Controladores y componentes * en el extremo derecho (el enlace que aparece depende de la vista actual). La vista *Drives* muestra las unidades y las bahías de unidades vacías. La vista *Controladores y componentes* muestra los controladores y cualquier módulo IOM (ESM), contenedores de alimentación/ventilador o bahías de controlador vacías. En la parte inferior de la página, también puede seleccionar *Mostrar todas las unidades*.</block>
   <block id="a26b62aaf12a1354ed2f5726f1a44f96" category="sidebar">Documentos de SANtricity 11,8</block>
+  <block id="d10baea6d3a0d4c1b494ce57d94cdadb" category="paragraph">En la siguiente tabla, se describen las nuevas funciones de SANtricity System Manager 11,8.</block>
+  <block id="3effdbd16c4bb389ee66095c1d8d2ee9" category="inline-link">11,80 Notas de la versión</block>
+  <block id="b1aa5c2649b826498df008931f57355f" category="list-text"><block ref="b1aa5c2649b826498df008931f57355f" category="inline-link-rx"></block></block>
 </blocks>
