@@ -27,6 +27,9 @@ Puede optar por activarlos más tarde por los siguientes motivos:
 
 
 
+
+IMPORTANT: Los sistemas deben ejecutar SANtricity OS 11.70.5 para actualizar a la versión 11,80.x o posterior.
+
 .Acerca de esta tarea
 ++ ++
 
