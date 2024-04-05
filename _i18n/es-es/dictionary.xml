@@ -82,7 +82,6 @@
   <block id="bc864bcc140c5518082e93d37b396baf" category="sidebar">Usar certificados de host de gestión</block>
   <block id="0e695c0c9242624f235546e43dde2e16" category="sidebar">Usar certificados de cabina</block>
   <block id="951d3fc54a28f9f46798897467d96a5b" category="sidebar">Gestionar certificados</block>
-  <block id="c62c395ffcd8aa3e5d38fe7155d2f510" category="sidebar">Software SANtricity</block>
   <block id="7ffe5a0f935e1a72ee727289b1e5671f" category="summary">Es posible obtener del administrador de red la dirección de protocolo de Internet (IP), la máscara de subred y la información de puerta de enlace.</block>
   <block id="4b69ef1f951db45a2f4880145bc9960b" category="doc">¿En dónde se puede obtener la configuración de red?</block>
   <block id="31a747501aa8fe86a4b7f0f5b654bb85" category="paragraph">Esta información es necesaria para configurar los puertos de las controladoras.</block>
@@ -8459,7 +8458,6 @@
   <block id="6005f32a6b0b2eff40beaf1834123d4d" category="sidebar">Importar la configuración</block>
   <block id="cccfa6d40938251810b757bc66c5e95b" category="sidebar">Cambiar la configuración de contraseña</block>
   <block id="b5cd1001d92abd67712f605c8e770d14" category="sidebar">Cambie la configuración del servidor de directorio</block>
-  <block id="589c6e07e079f4086ec279a5e83c238d" category="sidebar">El software SANtricity le permite alcanzar el rendimiento y el aprovechamiento máximos de sus cabinas all-flash EF-Series y flash híbrido E-Series para aplicaciones de grandes cargas de trabajo, como los análisis de datos, la videovigilancia y el backup y recuperación de datos.</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Manos a la obra</block>
   <block id="0b008f21f9758b84909b95140b0a532d" category="sidebar">Interfaz de System Manager</block>
   <block id="29ac086a960081d77daa677c24463af3" category="sidebar">Interfaz de Unified Manager</block>
@@ -8741,4 +8739,5 @@
   <block id="32e0b12538b4abe36e648446dbb8723b" category="paragraph">Mejoras del pool de discos</block>
   <block id="82faf4161a36aa8a69bd4c363e6b57cc" category="paragraph">Los pools de discos creados con controladoras que ejecutan 11,80 o superior serán pools _Version 1_ en vez de pools _Version 0_. La operación de degradación está restringida cuando existe un pool de discos _Versión 1_.</block>
   <block id="45e56b98136f4292dd8c522edf38b3b2" category="paragraph">La versión de un pool de discos se puede identificar en el perfil de la cabina de almacenamiento.</block>
+  <block id="e7ad6d421850c5694f6bdc4321ac3507" category="sidebar">El software SANtricity 11,80 le permite conseguir el mejor rendimiento y sacar el máximo partido de las cabinas flash híbrido E-Series y de las cabinas all-flash EF-Series para aplicaciones con cargas de trabajo intensas, como los análisis de datos, la videovigilancia y el backup y recuperación de datos.</block>
 </blocks>

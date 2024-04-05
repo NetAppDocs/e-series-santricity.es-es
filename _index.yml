@@ -1,9 +1,13 @@
 ---
 indexpage:
-  lead: El software SANtricity le permite alcanzar el rendimiento y el aprovechamiento
-    máximos de sus cabinas all-flash EF-Series y flash híbrido E-Series para aplicaciones
-    de grandes cargas de trabajo, como los análisis de datos, la videovigilancia y
-    el backup y recuperación de datos.
+  title: Documentación de software de SANtricity 11,80
+  summary: System Manager y Unified Manager de SANtricity
+  keywords: santricity, all-flash arrays, heavy workload applications, video surveillance,
+    data analytics
+  lead: El software SANtricity 11,80 le permite conseguir el mejor rendimiento y sacar
+    el máximo partido de las cabinas flash híbrido E-Series y de las cabinas all-flash
+    EF-Series para aplicaciones con cargas de trabajo intensas, como los análisis
+    de datos, la videovigilancia y el backup y recuperación de datos.
   tiles:
   - title: Manos a la obra
     links:

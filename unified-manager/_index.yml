@@ -1,5 +1,11 @@
 ---
 indexpage:
+  title: Gestión de varias cabinas con Unified Manager 6
+  summary: La documentación del software SANtricity permite instalar, configurar y
+    mantener la cabina de almacenamiento.
+  keywords: santricity, install, setup, maintain, storage array
+  lead: La documentación del software SANtricity permite instalar, configurar y mantener
+    la cabina de almacenamiento.
   tiles:
   - title: Configuración
     links:
