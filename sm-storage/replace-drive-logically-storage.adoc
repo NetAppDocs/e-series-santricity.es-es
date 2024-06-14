@@ -34,7 +34,7 @@ La unidad de reemplazo debe tener las siguientes características:
 
 .Pasos
 . Seleccione *hardware*.
-. Si el gráfico muestra los controladores, haga clic en *Mostrar frente de la bandeja*.
+. Si el gráfico muestra los controladores, haga clic en la pestaña *Drives*.
 +
 El gráfico cambia y muestra las unidades en lugar de las controladoras.
 

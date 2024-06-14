@@ -20,7 +20,7 @@ Se pueden localizar unidades únicas o varias unidades que se muestran en la pá
 . Seleccione *hardware*.
 . Para localizar una o más unidades, se debe realizar una de las siguientes acciones:
 +
-** *Una sola unidad* -- desde el gráfico de estante, encuentre la unidad que desea localizar físicamente en la matriz. (Si el gráfico muestra los controladores, haga clic en *Mostrar frente de la bandeja*.) Haga clic en la unidad para mostrar el menú contextual y, a continuación, seleccione *encender luz de localización*.
+** *Una sola unidad* -- desde el gráfico de estante, encuentre la unidad que desea localizar físicamente en la matriz. (Si el gráfico muestra los controladores, haga clic en la pestaña *Drives*.) Haga clic en la unidad para mostrar su menú contextual y, a continuación, seleccione *Encender la luz localizadora*.
 +
 La luz localizadora de la unidad se enciende. Cuando haya localizado físicamente la unidad, vuelva al cuadro de diálogo y seleccione *Apagar*.
 

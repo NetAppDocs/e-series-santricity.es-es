@@ -18,11 +18,11 @@ La vista trasera muestra las controladoras/IOM y los contenedores de alimentaci�
 
 .Pasos
 . Seleccione *hardware*.
-. Si el gráfico muestra las unidades, haga clic en *Mostrar parte posterior de la bandeja*.
+. Si el gráfico muestra las unidades, haga clic en la pestaña * Controladores y componentes *.
 +
 El gráfico cambia y muestra las controladoras en lugar de las unidades.
 
-. Si el gráfico muestra los controladores, haga clic en *Mostrar frente de la bandeja*.
+. Si el gráfico muestra los controladores, haga clic en la pestaña *Drives*.
 +
 El gráfico cambia y muestra las unidades en lugar de las controladoras.
 

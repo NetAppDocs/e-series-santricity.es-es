@@ -41,7 +41,7 @@ Gestionar configuración de iSCSI
 Configure los puertos iSCSI
  a| 
 . Seleccione *hardware*.
-. Seleccione *Mostrar parte posterior de la bandeja*.
+. Seleccione la pestaña *Controladores y componentes*.
 . Seleccione una controladora.
 . Seleccione *Configurar puertos iSCSI*.
 

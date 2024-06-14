@@ -34,7 +34,7 @@ Obtenga más información:
 
 == ¿Cómo puedo ver los componentes de hardware?
 
-Vaya a la página hardware, que ofrece una descripción gráfica de los componentes físicos de la cabina de almacenamiento. Puede alternar entre las vistas frontal y trasera de las estanterías de arrays seleccionando *Mostrar parte posterior de la estantería* o *Mostrar frente de la estantería* en la parte superior derecha de la vista de la estantería.
+Vaya a la página hardware, que ofrece una descripción gráfica de los componentes físicos de la cabina de almacenamiento. Es posible alternar entre las vistas frontal y trasera de las bandejas de cabinas si se selecciona la pestaña *Unidades* o *Controladores* en la esquina superior derecha de la vista de bandeja.
 
 Obtenga más información:
 

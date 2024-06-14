@@ -20,7 +20,7 @@ Realice esta operación solo cuando el soporte técnico o Recovery Guru se lo in
 ====
 .Pasos
 . Seleccione *hardware*.
-. Si el gráfico muestra los controladores, haga clic en *Mostrar frente de la bandeja*.
+. Si el gráfico muestra los controladores, haga clic en la pestaña *Drives*.
 +
 El gráfico cambia y muestra las unidades en lugar de las controladoras.
 

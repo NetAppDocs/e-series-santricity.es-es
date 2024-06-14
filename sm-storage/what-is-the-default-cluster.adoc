@@ -15,7 +15,7 @@ El clúster predeterminado es una entidad definida por el sistema que permite qu
 
 [NOTE]
 ====
-Si desea que los hosts tengan acceso específico a ciertos volúmenes en la cabina de almacenamiento, se debe _no_ utilizar el clúster predeterminado. En cambio, se deben asociar los identificadores del puerto de host con sus hosts correspondientes. Esta tarea puede realizarse de forma manual durante la operación Create Host, o bien de forma automática mediante el agente de contexto de host (HCA) instalado en cada host. A continuación, se deben asignar los volúmenes a un host individual o a un clúster de hosts.
+Si desea que los hosts tengan acceso específico a ciertos volúmenes en la cabina de almacenamiento, se debe _no_ utilizar el clúster predeterminado. En cambio, se deben asociar los identificadores del puerto de host con sus hosts correspondientes. Esta tarea se puede realizar manualmente durante la operación Crear host. A continuación, se deben asignar los volúmenes a un host individual o a un clúster de hosts.
 
 ====
 Se debe _solo_ usar el clúster predeterminado en situaciones especiales en las que el entorno de almacenamiento externo sea propicio para permitir que todos los hosts y todos los identificadores de puerto de host con sesión iniciada conectados a la cabina de almacenamiento tengan acceso a todos los volúmenes (modo de acceso total) sin dar a conocer específicamente los hosts a la cabina de almacenamiento o a la interfaz de usuario.

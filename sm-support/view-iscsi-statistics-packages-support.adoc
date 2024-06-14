@@ -17,8 +17,12 @@ Es posible ver datos sobre las conexiones iSCSI con la cabina de almacenamiento.
 .Acerca de esta tarea
 En System Manager, se muestran los siguientes tipos de estadísticas de iSCSI. Todas las estadísticas son de solo lectura y no pueden configurarse.
 
+
+NOTE: Los tipos de estadísticas que se muestran en System Manager se basan en las estadísticas disponibles para la cabina de almacenamiento.
+
 * *Estadísticas de MAC Ethernet* -- proporciona estadísticas para el control de acceso a medios (MAC). MAC también proporciona un mecanismo de direccionamiento denominado dirección física o dirección MAC. La dirección MAC es una dirección única que se asigna a cada adaptador de red. La dirección MAC ayuda a entregar paquetes de datos a un destino dentro de la subred.
 * *Ethernet TCP/IP statistics* -- proporciona estadísticas para TCP/IP, que es el Protocolo de control de transmisión (TCP) y el Protocolo de Internet (IP) para el dispositivo iSCSI. Con TCP, las aplicaciones en hosts en red pueden crean conexiones entre sí, mediante las cuales pueden intercambiar datos en paquetes. El IP es un protocolo orientado a datos que comunica datos por una interred conmutada por paquetes. Las estadísticas de IPv4 e IPv6 se muestran por separado.
+* *Ethernet Kernel statistics* -- Proporciona estadísticas para los controladores del kernel de la plataforma del dispositivo iSCSI. Las estadísticas del núcleo muestran datos de red similares a la opción de estadísticas TCP/IP. Sin embargo, los datos estadísticos del núcleo se recopilan de los controladores del núcleo de la plataforma en lugar de directamente del hardware iSCSI.
 * *Estadísticas de destino local/iniciador (protocolo)*: Muestra estadísticas para el destino iSCSI, que proporciona acceso a nivel de bloque a sus medios de almacenamiento y muestra las estadísticas de iSCSI para la matriz de almacenamiento cuando se utiliza como iniciador en operaciones de mirroring asíncrono.
 * *Estadísticas de Estados operativos de DCBX* -- muestra los estados operativos de las diversas funciones de Data Center Bridging Exchange (DCBX).
 * *LLDP TLV statistics* -- muestra las estadísticas de tipo-longitud-valor (TLV) del protocolo de detección de nivel de vínculo (LLDP).

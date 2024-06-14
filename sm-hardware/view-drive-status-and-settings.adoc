@@ -15,7 +15,7 @@ Es posible ver el estado y la configuración de las unidades, como el tipo de me
 
 .Pasos
 . Seleccione *hardware*.
-. Si el gráfico muestra los controladores, haga clic en *Mostrar frente de la bandeja*.
+. Si el gráfico muestra los controladores, haga clic en la pestaña *Drives*.
 +
 El gráfico cambia y muestra las unidades en lugar de las controladoras.
 

@@ -17,8 +17,8 @@ Es posible mostrar descripciones de estado para las unidades, las controladoras,
 . Seleccione *hardware*.
 . Para ver los componentes frontales o posteriores:
 +
-** Si desea ver la controladora y los componentes del contenedor de alimentación/ventilador, aunque se muestren las unidades, haga clic en *Mostrar parte posterior de la bandeja*.
-** Si desea ver las unidades, aunque se muestren la controladora y los componentes del contenedor de alimentación/ventilador, haga clic en *Mostrar frente de la bandeja*.
+** Si desea ver el controlador y los componentes del contenedor de alimentación/ventilador, pero se muestran las unidades, haga clic en la pestaña * Controladores y componentes *.
+** Si desea ver las unidades, pero se muestran el controlador y los componentes del contenedor de alimentación/ventilador, haga clic en la pestaña * Unidades *.
 
 
 . Para ver u ocultar las descripciones de estado emergentes:

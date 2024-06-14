@@ -31,14 +31,13 @@ Obtenga más información:
 
 == ¿Cómo se configuran los hosts y los clústeres de hosts?
 
-Para definir las conexiones de hosts, es posible permitir que un agente de contexto de host (HCA) detecte automáticamente los hosts, o bien puede ir a menu:Storage[hosts] para configurar manualmente el host. Si desea que dos o más hosts compartan el acceso al mismo conjunto de volúmenes, puede definir un clúster y asignar los volúmenes a ese clúster.
+Para definir las conexiones de host, puede ir al menú:Almacenamiento[Hosts] para configurar manualmente el host. Si desea que dos o más hosts compartan el acceso al mismo conjunto de volúmenes, puede definir un clúster y asignar los volúmenes a ese clúster.
 
 Obtenga más información:
 
-* link:automatic-versus-manual-host-creation.html["Creación de hosts automática versus manual"]
+* link:manual-host-creation.html["Creación manual de hosts"]
 * link:how-volumes-are-assigned-to-hosts-and-host-clusters.html["Cómo se asignan volúmenes a hosts y clústeres de hosts"]
 * link:workflow-for-creating-hosts-and-assigning-volumes.html["Flujo de trabajo para la creación de hosts y la asignación de volúmenes"]
-* link:create-host-automatically.html["Crear un host automáticamente"]
 * link:create-host-manually.html["Crear hosts manualmente"]
 * link:create-host-cluster.html["Cree un clúster de hosts"]
 * link:assign-volumes.html["Asignar volúmenes a hosts"]

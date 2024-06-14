@@ -1,0 +1,22 @@
+---
+permalink: sm-storage/manual-host-creation.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, manual, host, 
+summary: La creación de un host es uno de los pasos necesarios para indicar a la cabina de almacenamiento qué hosts están conectados a ella y para permitir el acceso de I/o a los volúmenes. Solo puede crear un host manualmente. 
+---
+= Creación manual de hosts
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La creación de un host es uno de los pasos necesarios para indicar a la cabina de almacenamiento qué hosts están conectados a ella y para permitir el acceso de I/o a los volúmenes. Solo puede crear un host manualmente.
+
+
+
+== Creación manual
+
+La creación manual de hosts permite asegurarse de que los identificadores de puerto de host que detectaron las controladoras de la cabina de almacenamiento estén asociados correctamente con los hosts.
+
+Durante la creación manual de hosts, debe seleccionar manualmente los identificadores de puerto de host o introducirlos manualmente para asociarlos. Después de crear un host, puede asignar volúmenes a él o añadirlo a un clúster de hosts si el objetivo es compartir el acceso a los volúmenes.

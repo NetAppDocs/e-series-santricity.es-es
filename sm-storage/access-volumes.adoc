@@ -13,9 +13,8 @@ summary: 'Un volumen de acceso es un volumen configurado en fábrica de la cabin
 [role="lead"]
 Un volumen de acceso es un volumen configurado en fábrica de la cabina de almacenamiento que se utiliza para la comunicación con la cabina de almacenamiento y el host mediante la conexión de I/o del host. El volumen de acceso requiere un número de unidad lógica (LUN).
 
-El volumen de acceso se utiliza en dos instancias:
+El volumen de acceso se utiliza en la siguiente instancia:
 
-* *Creación automática de host* -- el volumen de acceso es utilizado por la utilidad Agente de contexto de host (HCA) para insertar la información del host (nombre, puertos, tipo de host) en System Manager para la creación automática de host.
 * *Administración en banda* -- el volumen de acceso se utiliza para una conexión en banda para administrar la matriz de almacenamiento. Esto solo puede llevarse a cabo si la cabina de almacenamiento se gestiona con la interfaz de línea de comandos (CLI).
 +
 [NOTE]

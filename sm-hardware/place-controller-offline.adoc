@@ -28,7 +28,7 @@ No coloque una controladora en estado sin conexión a menos que el soporte técn
 ====
 .Pasos
 . Seleccione *hardware*.
-. Si el gráfico muestra las unidades, haga clic en *Mostrar parte posterior de la bandeja*.
+. Si el gráfico muestra las unidades, haga clic en la pestaña * Controladores y componentes *.
 +
 El gráfico cambia y muestra las controladoras en lugar de las unidades.
 

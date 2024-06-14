@@ -49,3 +49,5 @@ Si la certificación ya no es válida en el futuro, el apretón de manos de TSL 
 
 .Resultados
 Después de la configuración, se envían todos los registros de auditoría nuevos al servidor de syslog. Los registros anteriores no se transfieren. Para seguir configurando los ajustes de syslog de las alertas, consulte https://docs.netapp.com/us-en/e-series-santricity/sm-settings/configure-syslog-server-for-alerts.html["Configurar el servidor de syslog para las alertas"].
+
+ NOTE: If multiple syslog servers are configured, all configured syslog servers will receive an audit log.

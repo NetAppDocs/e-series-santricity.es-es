@@ -28,7 +28,7 @@ La configuración de NVMe over roce solo está disponible si la controladora de 
 Configure los puertos NVMe over roce
  a| 
 . Seleccione *hardware*.
-. Seleccione *Mostrar parte posterior de la bandeja*.
+. Seleccione la pestaña *Controladores y componentes*.
 . Seleccione una controladora.
 . Seleccione *Configurar puertos NVMe over roce*.
 

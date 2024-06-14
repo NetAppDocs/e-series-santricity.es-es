@@ -43,3 +43,6 @@ Se abre el cuadro de diálogo Añadir servidor de syslog.
 
 .Resultados
 El monitor de eventos envía alertas al servidor de syslog cada vez que ocurre un evento que genera alertas. Para seguir configurando los ajustes de syslog para los registros de auditoría, consulte https://docs.netapp.com/us-en/e-series-santricity/sm-settings/configure-syslog-server-for-audit-logs.html["Configurar servidores de syslog para registros de auditoría"].
+
+
+NOTE: Si se configuran varios servidores de syslog, todos los servidores de syslog configurados recibirán un registro de auditoría.

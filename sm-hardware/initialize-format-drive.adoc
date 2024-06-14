@@ -25,7 +25,7 @@ Utilice la operación de inicialización de unidades cuando mueve una sola unida
 ====
 .Pasos
 . Seleccione *hardware*.
-. Si el gráfico muestra los controladores, haga clic en *Mostrar frente de la bandeja*.
+. Si el gráfico muestra los controladores, haga clic en la pestaña *Drives*.
 +
 El gráfico cambia y muestra las unidades en lugar de las controladoras.
 

@@ -21,7 +21,7 @@ No se puede anular la asignación de una pieza de repuesto que esté reemplazand
 
 .Pasos
 . Seleccione *hardware*.
-. Si el gráfico muestra los controladores, haga clic en *Mostrar frente de la bandeja*.
+. Si el gráfico muestra los controladores, haga clic en la pestaña *Drives*.
 +
 El gráfico cambia y muestra las unidades en lugar de las controladoras.
 

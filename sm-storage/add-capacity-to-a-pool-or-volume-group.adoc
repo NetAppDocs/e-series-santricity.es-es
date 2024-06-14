@@ -129,12 +129,17 @@ Indica si la unidad tiene la opción de error de bloque lógico no escrito o des
 Si desea añadir unidades a un pool o grupo de volúmenes, se muestra un cuadro de diálogo de confirmación al seleccionar una unidad por la que el pool o el grupo de volúmenes ya no tendrá uno o varios de los siguientes atributos:
 
 +
-** Protección contra pérdida de bandeja
-** Protección contra pérdida de cajón
+** Protección contra pérdida de bandeja ^*^
+** Protección contra pérdida de cajón ^*^
 ** Funcionalidad de cifrado de disco completo
 ** Funcionalidad de garantía de datos
 ** Funcionalidad DULBE
 
+
+
+
+
+NOTE: ^*^ En este momento, el cuadro de diálogo de confirmación no se muestra al añadir unidades a un pool con protección contra pérdida de bandeja o protección contra pérdida de cajón.
 
 . Para continuar, haga clic en *Sí*; de lo contrario, haga clic en *Cancelar*.
 
