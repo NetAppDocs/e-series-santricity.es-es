@@ -3244,12 +3244,7 @@
   <block id="1427f2191c22bac62d1791fa724629c0" category="list-text">Para los canales, el margen adicional es un porcentaje del rendimiento o MIB/s máximo El rendimiento de lectura, el rendimiento de escritura y el rendimiento bidireccional se incluyen en el cálculo.</block>
   <block id="499a0602905ccb67c6d649daa6d57413" category="summary">Es posible crear cargas de trabajo para cualquier tipo de aplicación.</block>
   <block id="98d64970496acbb5958004fbb96030bc" category="doc">Crear cargas de trabajo</block>
-  <block id="ef722b0d3f28d401f565985f472c4438" category="paragraph">System Manager recomienda una configuración de volumen optimizada solo para los siguientes tipos de aplicaciones:</block>
-  <block id="f2087899e2afadc125d10b2957ade872" category="list-text">Videovigilancia</block>
-  <block id="7cfedcca8ce6dbe00da8fe3e6fe966f8" category="list-text">VMware ESXi ™ (para volúmenes que se usarán con el sistema de archivos de máquinas virtuales)</block>
   <block id="53d52e9f5e84c6e320cab61e6c75088f" category="paragraph">Tenga en cuenta estas directrices:</block>
-  <block id="d5f2262b63d7e86589dbf70c4e5e35b2" category="list-text">_Cuando se usa una carga de trabajo específica para una aplicación, el sistema recomienda una configuración de volumen optimizada para minimizar la contención entre las operaciones de I/o de la carga de trabajo de la aplicación y otro tráfico de la instancia de la aplicación. Es posible revisar la configuración de volumen recomendada y luego editar, añadir o eliminar los volúmenes y las características recomendados por el sistema mediante el cuadro de diálogo Añadir/editar volúmenes.</block>
-  <block id="bf4bffd53bcd7e30e99315e12ac6f419" category="list-text">_Cuando utilice otros tipos de aplicación_, especifique manualmente la configuración de volumen con el cuadro de diálogo Añadir/editar volúmenes.</block>
   <block id="65d1a857de2802d1a9f3295655aaf36f" category="list-text">Seleccione MENU:Create[Workload].</block>
   <block id="d8b1db89e135bdbc13b725e8d595018b" category="paragraph">Se muestra el cuadro de diálogo Crear carga de trabajo de la aplicación.</block>
   <block id="c587f872ee4cedc5f46714cc4a3af851" category="list-text">Utilice la lista desplegable para seleccionar el tipo de aplicación para la que desea crear la carga de trabajo y luego escriba el nombre de la carga de trabajo.</block>
@@ -8737,4 +8732,7 @@
   <block id="71f3dfbf2b051795606c83f3a9eae5ae" category="list-text">Si desea ver las unidades, pero se muestran el controlador y los componentes del contenedor de alimentación/ventilador, haga clic en la pestaña * Unidades *.</block>
   <block id="581cfab734318e947b176853c8e56d50" category="paragraph">Vaya a la página hardware, que ofrece una descripción gráfica de los componentes físicos de la cabina de almacenamiento. Es posible alternar entre las vistas frontal y trasera de las bandejas de cabinas si se selecciona la pestaña *Unidades* o *Controladores* en la esquina superior derecha de la vista de bandeja.</block>
   <block id="c30b45aee772a1884388fa957f41c7d5" category="list-text">*Una sola unidad* -- desde el gráfico de estante, encuentre la unidad que desea localizar físicamente en la matriz. (Si el gráfico muestra los controladores, haga clic en la pestaña *Drives*.) Haga clic en la unidad para mostrar su menú contextual y, a continuación, seleccione *Encender la luz localizadora*.</block>
+  <block id="043a86bd47391543c74c9ed90a2dde13" category="admonition">Solo puede expandir la capacidad de un volumen de hasta 128 TiB a la vez.</block>
+  <block id="82d00f5ad15a08dba27d16e49e8748f1" category="paragraph">Una carga de trabajo es un objeto de almacenamiento que admite una aplicación. Se pueden definir una o más cargas de trabajo o instancias por aplicación.</block>
+  <block id="056bd960f994268c2245e42ab49c22b9" category="paragraph">Una aplicación es un software, como SQL Server o Exchange. Se definen una o más cargas de trabajo que sean compatibles con cada aplicación.</block>
 </blocks>

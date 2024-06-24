@@ -21,6 +21,9 @@ Es posible aumentar la capacidad notificada (a los hosts) de un volumen con la c
 * No existen unidades de repuesto en uso en el volumen. (Esto se aplica solo a volúmenes que pertenecen a grupos de volúmenes.)
 
 
+
+NOTE: Solo puede expandir la capacidad de un volumen de hasta 128 TiB a la vez.
+
 .Acerca de esta tarea
 Tenga en cuenta todos los requisitos de capacidad futuros que puede tener para otros volúmenes en este pool o grupo de volúmenes. Asegúrese de tener suficiente capacidad libre para crear imágenes Snapshot, volúmenes Snapshot o reflejos remotos.
 

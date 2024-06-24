@@ -13,4 +13,4 @@ summary: Las características de volumen de la carga de trabajo específica de l
 [role="lead"]
 Las características de volumen de la carga de trabajo específica de la aplicación determinan la manera en que la carga de trabajo interactúa con los componentes de la cabina de almacenamiento, y ayudan a determinar el rendimiento de su entorno en una determinada configuración.
 
-Una aplicación es un software, como SQL Server o Exchange. Se definen una o más cargas de trabajo que sean compatibles con cada aplicación. En algunas aplicaciones, el sistema recomienda automáticamente una configuración de volumen que optimice el almacenamiento. Las características como el tipo de I/o, el tamaño de segmento, la propiedad de controladora y la caché de lectura y escritura se incluyen en la configuración de volumen.
+Una aplicación es un software, como SQL Server o Exchange. Se definen una o más cargas de trabajo que sean compatibles con cada aplicación.
