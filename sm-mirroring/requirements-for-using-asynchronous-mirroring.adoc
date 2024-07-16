@@ -103,6 +103,7 @@ NOTE: Para las controladoras EF600 y EF300, los volúmenes primario y secundario
 ** Si el volumen primario no utiliza Drive Security, el volumen secundario no debe usar Drive Security.
 
 
+* Los volúmenes primario y secundario deben compartir el mismo tipo de unidad. No se admite la combinación de unidades NVMe y SAS entre volúmenes primarios y secundarios.
 
 
 
@@ -111,6 +112,12 @@ NOTE: Para las controladoras EF600 y EF300, los volúmenes primario y secundario
 
 * Se requiere un volumen de capacidad reservada en el volumen primario y en el volumen secundario de una pareja reflejada para registrar la información de escritura que se utiliza en la recuperación de los restablecimientos de la controladora y otras interrupciones temporales.
 * Debido a que tanto el volumen primario como el volumen secundario de una pareja reflejada requieren capacidad reservada adicional, debe asegurarse de contar con capacidad libre disponible en ambas cabinas de almacenamiento de la relación de reflejo.
+* El volumen de capacidad reservada debe compartir el mismo tipo de unidad que los volúmenes de reflejos asociados.
++
+** Si el volumen de capacidad reservada se crea en unidades NVMe, sus volúmenes de reflejo también deben crearse en unidades NVMe.
+** Si el volumen de capacidad reservada se crea en unidades SAS, sus volúmenes de reflejo también deben crearse en unidades SAS.
+
+
 
 
 
