@@ -8737,4 +8737,7 @@
   <block id="73e974e4615b6eb8c4db3e6a55137a8f" category="list-text">El volumen de capacidad reservada debe compartir el mismo tipo de unidad que los volúmenes de reflejos asociados.</block>
   <block id="bf9f60c11f9080af705719592217436d" category="list-text">Si el volumen de capacidad reservada se crea en unidades NVMe, sus volúmenes de reflejo también deben crearse en unidades NVMe.</block>
   <block id="402b0811b7e491a20af6474c5296c733" category="list-text">Si el volumen de capacidad reservada se crea en unidades SAS, sus volúmenes de reflejo también deben crearse en unidades SAS.</block>
+  <block id="28af2c239fc893bd1a2013f2e8b4b941" category="section-title">Nuevas características en la versión 11.80.1R1</block>
+  <block id="5769aac2d83733db3bf7507b56dd86e9" category="paragraph">Se aumentó el tamaño de clave de los nuevos certificados de gestión autofirmados y firmados por CA.</block>
+  <block id="8545f755b4f7a99afe330df57699f365" category="paragraph">La longitud del tamaño de clave de certificado de gestión para el certificado autofirmado de las aplicaciones SANtricity System Manager y Unified Manager se modificó de 2048 a 3072 bits. El cambio se aplica a los certificados autofirmados y firmados por CA recién generados desde las aplicaciones de SANtricity. La longitud de clave es fija y no se ve afectada por las definiciones de tamaño de clave predeterminadas en NVSRAM.</block>
 </blocks>
