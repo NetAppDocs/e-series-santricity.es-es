@@ -110,7 +110,7 @@ Volumen base Snapshot
  a| 
 Sí
  a| 
-No
+Sí
  a| 
 No
 
@@ -121,9 +121,9 @@ Volumen primario de reflejos remoto
  a| 
 Sí^3^
  a| 
-No
- a| 
 Sí
+ a| 
+No
 
 |===
 ^1^ El volumen objetivo debe tener una capacidad igual o superior a la Capacidad notificada de un volumen fino.
