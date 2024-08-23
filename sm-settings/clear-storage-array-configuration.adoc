@@ -33,6 +33,15 @@ La opción cabina de almacenamiento elimina algunas opciones de configuración a
 
 
  a| 
+Desactiva ARVM
+ a| 
+X
+ a| 
+X
+
+
+
+ a| 
 Elimina pools y grupos de volúmenes
  a| 
 X
