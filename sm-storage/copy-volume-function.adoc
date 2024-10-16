@@ -27,6 +27,14 @@ A medida que cambian los requisitos de almacenamiento de volúmenes, se puede us
 * Cambiar de un volumen fino a un volumen grueso
 
 
+Los volúmenes de origen y objetivo deben tener los mismos tamaños de bloque lógico/direccionable en el host (tamaño del sector) informados.
+
+Los tamaños de bloque de volúmenes informados son:
+
+* *Tamaño de bloque nativo* – El tamaño de bloque del volumen coincide con el tamaño del bloque de la unidad, ya sea 512 o 4K.
+* *Tamaño de bloque emulado de 512* - Las unidades son de 4K pero el tamaño de bloque reportado es de 512.
+
+
 
 
 == Cambiar de un volumen fino a un volumen grueso
