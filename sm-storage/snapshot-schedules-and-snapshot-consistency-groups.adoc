@@ -33,6 +33,6 @@ Si desea que se capturen imágenes Snapshot de varios volúmenes al mismo tiempo
 
 Los volúmenes incluidos en un grupo de coherencia Snapshot se denominan volúmenes miembro. Cuando se añade un volumen a un grupo de coherencia System Manager genera automáticamente capacidad reservada nueva equivalente a ese volumen miembro. Puede definir una programación para crear de forma automática una imagen Snapshot para cada volumen miembro.
 
-image::../media/sam1130-dwg-snapshots-consistency-groups-overview.gif[información general sobre los grupos de consistencia de las instantáneas dwg de sam1130]
+image::../media/sam1130-dwg-snapshots-consistency-groups-overview.gif[Información general del grupo de coherencia Snapshot]
 
 Esta 1 capacidad reservada; este 2 volumen miembro; e imágenes Snapshot de grupo de coherencia de aplicaciones 3

@@ -21,7 +21,7 @@ El hardware físico se aprovisiona en componentes lógicos para que los datos pu
 
 Los pools y los grupos de volúmenes son las unidades de almacenamiento de nivel superior en una cabina de almacenamiento: Separan la capacidad de las unidades en divisiones gestionables. Dentro de estas divisiones lógicas se encuentran los volúmenes individuales o LUN, donde se almacenan los datos. En la siguiente figura, se ilustra este concepto.
 
-image::../media/sam1130-dwg-volumes-drive-structure-pools-and-volume-groups.gif[grupos de estructura de unidades de volúmenes dwg y grupos de volúmenes de sampl30]
+image::../media/sam1130-dwg-volumes-drive-structure-pools-and-volume-groups.gif[Estructura de pools y grupos de volúmenes]
 
 Hacia esta 1 LUN de host; hacia estos 2 volúmenes; grupos o pools de volúmenes de 3; hacia estas 4 unidades de disco duro o SSD de software
 

@@ -27,8 +27,3 @@ Por ejemplo, si va a conectar ocho hosts diferentes a la cabina de almacenamient
 Por ejemplo, si va a conectar ocho hosts diferentes a la cabina de almacenamiento y dos de ellos tienen un sistema operativo Windows, tres ejecutan un sistema operativo VMware, Y otros tres ejecutan un sistema operativo Linux, debe seleccionar opción predeterminada de fábrica como el tipo de sistema operativo del host predeterminado.
 
 
-
-[]
-====
-
-====

@@ -25,7 +25,7 @@ Con la ampliación, se incluye capacidad libre adicional al pool o grupo de vol�
 +
 ** 2,048 volúmenes (series EF600 y E5700)
 ** 1,024 volúmenes (EF300)
-** 512 volúmenes (serie E2800)
+** 512 volúmenes (series E4000 y E2800)
 
 
 * Si todas las unidades del pool o grupo de volúmenes son compatibles con la función de seguridad, añada únicamente unidades compatibles con la función de seguridad para continuar usando las habilidades de cifrado de ese tipo de unidades.

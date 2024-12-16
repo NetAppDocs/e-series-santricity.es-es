@@ -26,12 +26,15 @@ La autenticación entre las controladoras y un servidor de gestión de claves es
 
 Primero, debe generar un archivo de solicitud de firma de certificación (CSR) y utilizar la CSR para solicitar un certificado de cliente firmado de una entidad de certificación (CA) que confía en el servidor de gestión de claves. También es posible crear y descargar un certificado de cliente desde el servidor de gestión de claves con el archivo CSR descargado. Un certificado de cliente valida las controladoras de la cabina de almacenamiento para que el servidor de gestión de claves pueda confiar en sus solicitudes de protocolo de interoperabilidad de gestión de claves (KMIP).
 
+
+NOTE: Los archivos CSR generados externamente mediante parejas de claves públicas y privadas pueden importarse mediante el cuadro de diálogo Crear clave de seguridad externa. Para obtener más información sobre la importación de un archivo CSR generado externamente, consulte https://docs.netapp.com/us-en/e-series-santricity/sm-settings/use-ca-signed-certificates-for-authentication-with-a-key-management-server.html#step-2-import-certificates-for-the-key-management-server["Paso 2: Importar certificados para el servidor de gestión de claves"].
+
 .Pasos
 . Seleccione MENU:Settings[Certificates].
 . En la ficha Gestión de claves, seleccione *completar CSR*.
 . Introduzca la siguiente información:
 +
-** *Nombre común* -- un nombre que identifica a esta CSR, como el nombre de la matriz de almacenamiento, que se mostrará en los archivos de certificado.
+** *Nombre común* -- Un nombre que identifica al cliente. Es una práctica común hacer coincidir lo que está en el nombre común con los requisitos del servidor KMS para las convenciones de nomenclatura de certificados de cliente. El nombre común normalmente ayuda al KMS a identificar el certificado del cliente cuando se presenta durante un apretón de manos.
 ** *Organización* -- el nombre completo y legal de su empresa u organización. Incluya sufijos, como Inc. O Corp
 ** *Unidad organizativa (opcional)* -- la división de su organización que maneja el certificado.
 ** *Ciudad/localidad* -- la ciudad o localidad donde está ubicada su organización.
@@ -43,7 +46,11 @@ Primero, debe generar un archivo de solicitud de firma de certificación (CSR) y
 +
 Se guardará un archivo CSR en el sistema local.
 
-. Solicite un certificado de cliente firmado de una CA a la que confíe el servidor de gestión de claves.
+. Solicite un certificado de cliente firmado de la CA que confía el servidor de gestión de claves.
++
+
+NOTE: Es común que el servidor de gestión de claves tenga una instalación que genere certificados firmados directamente, ya que funciona como su propia CA.
+
 . Cuando tenga un certificado de cliente, vaya a. <<Paso 2: Importar certificados para el servidor de gestión de claves>>.
 
 
@@ -71,6 +78,10 @@ Si desea obtener más información sobre el certificado de servidor, consulte la
 Se abre un cuadro de diálogo para importar los archivos de certificado.
 
 . Junto a *Seleccionar certificado de cliente*, haga clic en el botón *examinar* para seleccionar el archivo de certificado de cliente para los controladores de la matriz de almacenamiento.
++
+Se muestra el nombre del archivo en el cuadro de diálogo.
+
+. Si generó un archivo de certificado externamente mediante un par de claves público y privado, haga clic en el botón *Examinar* junto a *Seleccionar archivo de clave privada* para seleccionar el archivo de certificado para los controladores de la cabina de almacenamiento.
 +
 Se muestra el nombre del archivo en el cuadro de diálogo.
 

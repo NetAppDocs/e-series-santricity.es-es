@@ -17,10 +17,10 @@ En System Manager, se pueden crear imágenes y volúmenes Snapshot mediante los 
 
 == Flujo de trabajo para crear imágenes de snapshots
 
-image::../media/sam1130-flw-snapshots-create-ss-images.gif[las instantáneas de flw de sam1130 crean imágenes ss]
+image::../media/sam1130-flw-snapshots-create-ss-images.gif[Flujo de trabajo para crear imágenes Snapshot]
 
 
 
 == Flujo de trabajo para crear volúmenes de snapshots
 
-image::../media/sam1130-flw-snapshots-create-ss-volumes.gif[las instantáneas de software de sampl1130 crean volúmenes ss]
+image::../media/sam1130-flw-snapshots-create-ss-volumes.gif[Flujo de trabajo para crear volúmenes Snapshot]

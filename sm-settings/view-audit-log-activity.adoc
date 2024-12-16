@@ -81,7 +81,7 @@ Seleccione *Eliminar* para abrir un cuadro de diálogo que le permite eliminar e
  a| 
 Mostrar/ocultar columnas
  a| 
-Haga clic en el icono de la columna *Mostrar/Ocultar* image:../media/sam-1140-ss-access-columns.gif[""] para seleccionar columnas adicionales para mostrar en la tabla. Las columnas adicionales incluyen:
+Haga clic en el icono de columna *Mostrar/Ocultar* image:../media/sam-1140-ss-access-columns.gif["Mostrar/ocultar columna"]para seleccionar columnas adicionales para mostrar en la tabla. Las columnas adicionales incluyen:
 
 ** *Método* -- el método HTTP (POR ejemplo, POST, GET, DELETE, etc.).
 ** *Comando CLI ejecutado* -- el comando CLI (gramática) ejecutado para solicitudes Secure CLI.
@@ -99,14 +99,14 @@ Haga clic en el icono de la columna *Mostrar/Ocultar* image:../media/sam-1140-ss
  a| 
 Alternar filtros de columnas
  a| 
-Haga clic en el icono *alternar* image:../media/sam-1140-ss-access-toggle.gif[""] para abrir los campos de filtrado de cada columna. Introduzca los caracteres en un campo de columna para limitar los eventos que se muestran con esos caracteres. Vuelva a hacer clic en el icono para cerrar los campos de filtrado.
+Haga clic en el icono * Alternar * image:../media/sam-1140-ss-access-toggle.gif["Alternar"]para abrir los campos de filtrado de cada columna. Introduzca los caracteres en un campo de columna para limitar los eventos que se muestran con esos caracteres. Vuelva a hacer clic en el icono para cerrar los campos de filtrado.
 
 
 
  a| 
 Deshacer cambios
  a| 
-Haga clic en el icono *Deshacer* image:../media/sam-1140-ss-access-undo.gif[""] para devolver la tabla a la configuración predeterminada.
+Haga clic en el icono *Deshacer* image:../media/sam-1140-ss-access-undo.gif["Deshacer"]para devolver la tabla a la configuración predeterminada.
 
 
 

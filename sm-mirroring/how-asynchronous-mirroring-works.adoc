@@ -30,7 +30,7 @@ El mirroring asíncrono captura el estado de un volumen primario en un momento e
 
 Una sesión activa de mirroring asíncrono se compone de cuatro pasos primarios.
 
-image::../media/sam-1130-dwg-async-mirroring-session.gif[sesión de mirroring asíncrono sam 1130 dwg]
+image::../media/sam-1130-dwg-async-mirroring-session.gif[Sesión de mirroring asíncrono]
 
 . Una operación de escritura se produce primero en la cabina de almacenamiento del volumen primario.
 . El estado de la operación se devuelve al host.

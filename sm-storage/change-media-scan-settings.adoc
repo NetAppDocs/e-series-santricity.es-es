@@ -28,6 +28,9 @@ Si se encuentra una incoherencia entre los datos y la información de redundanci
 
 
 
+
+NOTE: El período de análisis de medios predeterminado se establece en 120 días.
+
 .Acerca de esta tarea
 En los análisis de medios, se detectan y reparan errores de medios en bloques de discos que las aplicaciones leen con poca frecuencia. Esto puede evitar la pérdida de datos en el caso de un fallo de unidad, ya que los datos para unidades con fallo se reconstruyen mediante el uso de la información de redundancia y datos de otras unidades del grupo de volúmenes o pool.
 

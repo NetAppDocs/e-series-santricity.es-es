@@ -29,7 +29,7 @@ Obtenga más información:
 
 == ¿Cómo se configuran los certificados firmados?
 
-Primero, se genera una solicitud de firma desde System Manager y, a continuación, se envía el archivo a una CA. Una vez que la CA devuelve los archivos de certificado, se deben importar mediante System Manager.
+Es posible generar una solicitud de firma desde System Manager o de forma externa mediante una pareja de claves pública y privada. La solicitud de firma se envía a una CA para generar los archivos de certificado. Una vez que la CA devuelve los archivos de certificado, se deben importar mediante System Manager.
 
 Obtenga más información:
 

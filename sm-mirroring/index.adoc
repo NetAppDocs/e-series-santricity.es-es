@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= System Manager 11,8 de SANtricity
+= System Manager 11,9 de SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
+[role="lead"]
+Es posible gestionar el mirroring asíncrono y el mirroring síncrono a través de SANtricity System Manager.

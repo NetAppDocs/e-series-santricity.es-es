@@ -14,4 +14,4 @@ summary: Para acceder a las tareas de configuración de los métodos de entrega 
 [role="lead"]
 Para acceder a las tareas de configuración de los métodos de entrega de AutoSupport, vaya al menú:Soporte[Centro de soporte] y, a continuación, haga clic en la ficha *AutoSupport*.
 
-Se admiten los siguientes protocolos: HTTPS, HTTP y SMTP.
+Se admiten los siguientes protocolos: HTTPS y SMTP.

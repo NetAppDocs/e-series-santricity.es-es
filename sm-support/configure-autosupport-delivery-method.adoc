@@ -2,7 +2,7 @@
 permalink: sm-support/configure-autosupport-delivery-method.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, configure, autosupport, ASUP, delivery, method 
-summary: La función AutoSupport admite los protocolos HTTPS, HTTP y SMTP para entregar informes al soporte técnico. 
+summary: La función AutoSupport admite los protocolos HTTPS y SMTP para entregar informes al soporte técnico. 
 ---
 = Configurar el método de entrega de AutoSupport
 :allow-uri-read: 
@@ -12,7 +12,7 @@ summary: La función AutoSupport admite los protocolos HTTPS, HTTP y SMTP para e
 
 
 [role="lead"]
-La función AutoSupport admite los protocolos HTTPS, HTTP y SMTP para entregar informes al soporte técnico.
+La función AutoSupport admite los protocolos HTTPS y SMTP para entregar informes al soporte técnico.
 
 .Antes de empezar
 * Se debe habilitar la función AutoSupport. Puede comprobar si está habilitada en la página AutoSupport.
@@ -23,13 +23,12 @@ La función AutoSupport admite los protocolos HTTPS, HTTP y SMTP para entregar i
 Revise los diferentes protocolos:
 
 * *HTTPS* -- le permite conectarse directamente al servidor de soporte técnico de destino mediante HTTPS. Si desea habilitar AutoSupport OnDemand o Remote Diagnostics, el método de entrega de AutoSupport debe configurarse en HTTPS.
-* *HTTP* -- le permite conectarse directamente al servidor de soporte técnico de destino mediante HTTP.
 * *Correo electrónico* -- le permite utilizar un servidor de correo electrónico como método de entrega para enviar mensajes AutoSupport.
 
 
 [NOTE]
 ====
-*Diferencias entre los métodos HTTPS/HTTP y Email*. El método de entrega por correo electrónico, que utiliza SMTP, tiene algunas diferencias importantes con los métodos de entrega mediante HTTPS y HTTP. Primero, el tamaño de los mensajes para el método de correo electrónico se limita a 5 MB, lo cual significa que algunas recogidas de datos ASUP no se enviarán. Segundo, la función AutoSupport OnDemand solo está disponible en los métodos de entrega mediante HTPP y HTTPS.
+*Diferencias entre los métodos HTTPS y Email*. El método de entrega por correo electrónico, que utiliza SMTP, tiene algunas diferencias importantes con el método de entrega mediante HTTPS. Primero, el tamaño de los mensajes para el método de correo electrónico se limita a 5 MB, lo cual significa que algunas recogidas de datos ASUP no se enviarán. Segundo, la función AutoSupport OnDemand solo está disponible en el método de entrega HTTPS.
 
 ====
 .Pasos
@@ -40,9 +39,9 @@ Se muestra un cuadro de diálogo con una lista de los métodos de entrega de men
 
 . Seleccione el método de entrega deseado y los parámetros para ese método. Debe realizar una de las siguientes acciones:
 +
-** Si eligió HTTPS o HTTP, seleccione uno de los siguientes parámetros de entrega:
+** Si eligió HTTPS, seleccione uno de los siguientes parámetros de entrega:
 +
-*** *Directamente* -- este parámetro de entrega es la selección predeterminada. Esta opción permite la conexión directa con el sistema de soporte técnico de destino mediante el protocolo HTTPS o HTTP.
+*** *Directamente* -- este parámetro de entrega es la selección predeterminada. Esta opción permite la conexión directa con el sistema de soporte técnico de destino mediante el protocolo HTTPS.
 *** *Via Proxy Server* -- elegir esta opción le permite especificar los detalles del servidor proxy HTTP necesarios para establecer la conexión con el sistema de soporte técnico de destino. Es necesario especificar la dirección y el número de puerto del host. No obstante, solo se deben introducir los detalles de autenticación del host (nombre de usuario y contraseña) si así se requiere.
 *** *Secuencia de comandos de configuración automática vía Proxy (PAC)*: Especifique la ubicación de un archivo de secuencia de comandos de configuración automática de proxy (PAC). Un archivo de PAC permite al sistema seleccionar automáticamente el servidor proxy adecuado para establecer una conexión con el sistema de soporte técnico de destino.
 

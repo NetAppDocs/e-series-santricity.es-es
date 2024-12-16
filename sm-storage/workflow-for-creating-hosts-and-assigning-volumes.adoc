@@ -13,4 +13,4 @@ summary: La figura que se presenta a continuación señala cómo configurar el a
 [role="lead"]
 La figura que se presenta a continuación señala cómo configurar el acceso al host.
 
-image::../media/sam1130-flw-hosts-create-host.gif[los hosts de sam1130 flw crean un host]
+image::../media/sam1130-flw-hosts-create-host.gif[Configurar el flujo de trabajo del host]

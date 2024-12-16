@@ -34,7 +34,7 @@ Una relación de mirroring síncrono consiste en un volumen primario y un volume
 
 El proceso de configuración de mirroring síncrono implica configurar volúmenes en parejas. Después de crear una pareja reflejada, que consiste en un volumen primario en una cabina de almacenamiento y un volumen secundario en otra, puede comenzar con el mirroring síncrono. Los pasos del mirroring síncrono se describen a continuación.
 
-image::../media/sam-1130-dwg-sync-mirroring-session.gif[sesión de duplicación de sincronización de sam 1130 dwg]
+image::../media/sam-1130-dwg-sync-mirroring-session.gif[Sesión de mirroring síncrono]
 
 . Llega una escritura del host.
 . La escritura se confirma en el volumen primario, se propaga al sistema remoto y luego se confirma en el volumen secundario.

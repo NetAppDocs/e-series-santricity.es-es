@@ -60,7 +60,8 @@ Se abre el cuadro de diálogo Crear clave de seguridad externa.
 NOTE: Solo se utiliza un servidor de claves individual a la vez. Si la cabina de almacenamiento no puede alcanzar el servidor de claves primario, la cabina se pondrá en contacto con el servidor de claves de backup. Tenga en cuenta que debe mantener la paridad en ambos servidores; de lo contrario, se pueden producir errores.
 
 ** *Seleccionar certificado de cliente* -- haga clic en el primer botón *examinar* para seleccionar el archivo de certificado para los controladores de la matriz de almacenamiento.
-** *Seleccione el certificado del servidor de administración de claves* -- haga clic en el segundo botón *examinar* para seleccionar el archivo de certificado del servidor de administración de claves. Es posible elegir un certificado raíz, intermedio o de servidor para el servidor de gestión de claves.
+** *Seleccione el archivo de clave privada* -- Si es necesario, haga clic en el segundo botón *Examinar* para seleccionar un archivo de clave privada para los controladores de la cabina de almacenamiento.
+** *Seleccione el certificado del servidor de administración de claves* -- Haga clic en el tercer botón *Browse* para seleccionar el archivo de certificado para el servidor de administración de claves. Es posible elegir un certificado raíz, intermedio o de servidor para el servidor de gestión de claves.
 
 
 . Haga clic en *Siguiente*.

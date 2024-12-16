@@ -17,6 +17,6 @@ Al crear un volumen Snapshot, es posible designarlo como __Read-onl__y o _Read-w
 
 Cuando se crean volúmenes Snapshot de solo lectura, no es necesario añadir capacidad reservada. Cuando se crean volúmenes Snapshot de lectura/escritura, es necesario añadir capacidad reservada para proporcionar acceso de escritura.
 
-image::../media/sam1130-dwg-snapshots-volumes-overview.gif[información general sobre los volúmenes de instantáneas dwg de sampl30]
+image::../media/sam1130-dwg-snapshots-volumes-overview.gif[Información general de los volúmenes Snapshot]
 
 Volumen base de esta aplicación; servidor de aplicaciones 2; volumen Snapshot de sólo lectura de 3; volumen Snapshot de lectura y escritura de 4; capacidad reservada de esta versión 5

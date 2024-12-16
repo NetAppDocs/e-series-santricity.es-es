@@ -23,7 +23,7 @@ Para realizar Snapshot del volumen base, es posible crear una imagen instantáne
 
 En la siguiente figura, se muestra la relación entre los objetos Snapshot y el volumen base.
 
-image::../media/sam1130-dwg-snapshots-images-overview.gif[información general sobre las imágenes de instantáneas dwg de sampl1130]
+image::../media/sam1130-dwg-snapshots-images-overview.gif[Objetos Snapshot y volumen base]
 
 Volumen base de esta aplicación 1; estos 2 objetos Snapshot en el grupo (imágenes y capacidad reservada); Microsoft 3 capacidad reservada para el grupo Snapshot.
 

@@ -1,12 +1,14 @@
 ---
 permalink: um-admin/index.html 
 sidebar: sidebar 
-keywords: santricity, unified, manager 6 
-summary: Unified Manager 6 de SANtricity 
+keywords: santricity, unified, manager 7 
+summary: Unified Manager 7 de SANtricity 
 ---
-= Unified Manager 6 de SANtricity
+= Unified Manager 7 de SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
+[role="lead"]
+Unified Manager es una interfaz basada en Web que permite gestionar varias cabinas de almacenamiento en una sola vista.

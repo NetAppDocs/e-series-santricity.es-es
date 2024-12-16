@@ -13,4 +13,4 @@ summary: En SANtricity System Manager, puede configurar la función AutoSupport 
 [role="lead"]
 En System Manager, puede configurar la función AutoSupport siguiendo estos pasos.
 
-image::../media/sam1130-flw-support-asup-setup.gif[configuración de soporte de flw sam1130]
+image::../media/sam1130-flw-support-asup-setup.gif[Flujo de trabajo de AutoSupport]

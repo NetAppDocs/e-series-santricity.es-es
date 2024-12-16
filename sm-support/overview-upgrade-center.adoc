@@ -33,7 +33,7 @@ Varios componentes de la cabina de almacenamiento contienen software o hardware 
 * *Software de supervisor* -- Software de supervisor es la máquina virtual en un controlador en el que se ejecuta el software.
 
 
-image::../media/sam1130-dwg-upgrade-firmware-locations.gif[ubicaciones de firmware de actualización de sam1130 dwg]
+image::../media/sam1130-dwg-upgrade-firmware-locations.gif[Actualizar las ubicaciones del firmware]
 
 Bandeja de controladoras esta 1; bandeja de unidades esta 2; software de esta versión 3, firmware de la controladora, NVSRAM de la controladora, Software de supervisor; firmware de la unidad de esta 4; firmware de esta 5 IOM; firmware de la unidad de esta versión 6
 

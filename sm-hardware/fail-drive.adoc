@@ -44,6 +44,6 @@ La opción de copia permite una recuperación más rápida de la unidad que la r
 
 . Confirme que desea que la unidad falle.
 +
-Después de que falle la unidad, espere al menos 30 segundos para quitarla.
+Después de que falle la unidad, espere al menos 60 segundos para quitarla.
 
 

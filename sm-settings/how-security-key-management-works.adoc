@@ -48,6 +48,7 @@ Las claves externas se mantienen en un servidor de gestión de claves individual
 .. En primer lugar, complete y descargue una solicitud de firma de certificación (CSR) de cliente. Vaya a menú:Configuración[certificados > Gestión de claves > completar CSR].
 .. A continuación, se solicita un certificado de cliente firmado de una CA de confianza para el servidor de gestión de claves. (También se puede crear y descargar un certificado de cliente desde el servidor de gestión de claves con el archivo CSR).
 .. Una vez que tenga un archivo de certificado de cliente, copie ese archivo en el host en el que accede a System Manager.
+.. Como alternativa, puede generar una solicitud de firma de certificación externamente mediante una pareja de claves pública y privada.
 
 
 . Recupere un archivo de certificado del servidor de gestión de claves y copie ese archivo en el host donde accede a System Manager. Un certificado de servidor de gestión de claves valida el servidor de gestión de claves para que la cabina de almacenamiento pueda confiar en su dirección IP. Es posible usar un certificado raíz, intermedio o de servidor para el servidor de gestión de claves.

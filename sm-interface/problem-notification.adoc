@@ -25,28 +25,28 @@ System Manager utiliza estos iconos para indicar el estado de la cabina de almac
 
 
  a| 
-image:../media/sam1130-ss-icon-status-success.gif[""]
+image:../media/sam1130-ss-icon-status-success.gif["Óptimo"]
  a| 
 Óptimo
 
 
 
  a| 
-image:../media/sam1130-ss-icon-status-failure.gif[""]
+image:../media/sam1130-ss-icon-status-failure.gif["No óptimo o con error"]
  a| 
 No óptimo o con error
 
 
 
  a| 
-image:../media/sam1130-ss-icon-status-service.gif[""]
+image:../media/sam1130-ss-icon-status-service.gif["Se requiere atención o corrección"]
  a| 
 Se requiere atención o corrección
 
 
 
  a| 
-image:../media/sam1130-ss-icon-status-caution.gif[""]
+image:../media/sam1130-ss-icon-status-caution.gif["Precaución"]
  a| 
 Precaución
 

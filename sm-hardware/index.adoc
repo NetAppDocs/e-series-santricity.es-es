@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= System Manager 11,8 de SANtricity
+= System Manager 11,9 de SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
+[role="lead"]
+Es posible comprobar el estado de los componentes en la página hardware y realizar algunas funciones relacionadas con ellos.

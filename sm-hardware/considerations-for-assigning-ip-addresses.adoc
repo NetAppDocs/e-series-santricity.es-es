@@ -41,7 +41,7 @@ Controller 2 (port 2): IP Address: 192.168.129.102
 Cuando se asignan direcciones IP:
 
 * Se debe reservar el puerto 2 de las controladoras para que pueda usarlo soporte al cliente. No se debe cambiar la configuración de red predeterminada (DHCP habilitado).
-* Para configurar direcciones IP estáticas para las controladoras E2800 y E5700, use SANtricity System Manager. Para configurar direcciones IP estáticas para las controladoras E2700 y E5600, use SANtricity Storage Manager. Una vez que se configura una dirección IP estática, queda configurada durante todos los eventos de enlaces inactivos/activos.
+* Para configurar direcciones IP estáticas para las controladoras E4000, E2800 y E5700, use SANtricity System Manager. Para configurar direcciones IP estáticas para las controladoras E2700 y E5600, use SANtricity Storage Manager. Una vez que se configura una dirección IP estática, queda configurada durante todos los eventos de enlaces inactivos/activos.
 * Para usar DHCP a fin de asignar la dirección IP de la controladora, conecte la controladora a una red que pueda procesar las solicitudes DHCP. Use un arrendamiento DHCP permanente.
 +
 [NOTE]

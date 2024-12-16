@@ -31,8 +31,8 @@ Los volúmenes de origen y objetivo deben tener los mismos tamaños de bloque l�
 
 Los tamaños de bloque de volúmenes informados son:
 
-* *Tamaño de bloque nativo* – El tamaño de bloque del volumen coincide con el tamaño del bloque de la unidad, ya sea 512 o 4K.
-* *Tamaño de bloque emulado de 512* - Las unidades son de 4K pero el tamaño de bloque reportado es de 512.
+* *Tamaño de bloque nativo* – el tamaño de bloque del volumen coincide con el tamaño del bloque de la unidad, ya sea 512 o 4K.
+* * Tamaño de bloque emulado de 512 * - las unidades son de 4K pero el tamaño de bloque reportado es de 512.
 
 
 

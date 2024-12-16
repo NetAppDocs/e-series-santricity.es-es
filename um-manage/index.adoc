@@ -4,9 +4,11 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= Unified Manager 6 de SANtricity
+= Unified Manager 7 de SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
+[role="lead"]
+Puede configurar los ajustes utilizados a través de Unified Manager de SANtricity.
