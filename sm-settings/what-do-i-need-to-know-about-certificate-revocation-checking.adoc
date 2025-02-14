@@ -11,7 +11,7 @@ summary: 'System Manager permite verificar certificados revocados mediante un se
 
 
 [role="lead"]
-System Manager permite verificar certificados revocados mediante un servidor de protocolo de estado de certificado en línea (OCSP), en lugar de cargar listas de revocación de certificados (CRL).
+SANtricity System Manager permite verificar certificados revocados mediante un servidor de protocolo de estado de certificado en línea (OCSP), en lugar de cargar listas de revocación de certificados (CRL).
 
 Los certificados revocados ya no deberán considerarse de confianza. Un certificado puede ser revocado por varios motivos; por ejemplo, si la entidad de certificación (CA) emitió el certificado incorrectamente, una clave privada quedó en riesgo o la entidad identificada no cumplió con los requisitos de la política.
 

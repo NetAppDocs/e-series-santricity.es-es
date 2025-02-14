@@ -11,7 +11,7 @@ summary: Para acceder a SANtricity Unified Manager pueden usarse varios tipos de
 
 
 [role="lead"]
-Para acceder a Unified Manager pueden usarse varios tipos de exploradores.
+Para acceder a SANtricity Unified Manager pueden usarse varios tipos de exploradores.
 
 Se admiten los siguientes exploradores en las versiones mencionadas.
 

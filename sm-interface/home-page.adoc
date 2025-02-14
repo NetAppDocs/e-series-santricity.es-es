@@ -11,7 +11,7 @@ summary: La página Inicio ofrece una vista de consola para la gestión cotidian
 
 
 [role="lead"]
-La página Inicio ofrece una vista de consola para la gestión cotidiana de la cabina de almacenamiento. Cuando se inicia sesión en System Manager, la página Inicio es la primera pantalla que aparece.
+La página Inicio ofrece una vista de consola para la gestión cotidiana de la cabina de almacenamiento. Cuando se inicia sesión en SANtricity System Manager, la página Inicio es la primera pantalla que aparece.
 
 La vista de consola incluye cuatro áreas de resumen que contienen información clave sobre el estado y la condición de la cabina de almacenamiento. Es posible encontrar más información en el área de resumen.
 

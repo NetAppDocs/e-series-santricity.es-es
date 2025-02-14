@@ -12,7 +12,7 @@ summary: En System Manager, es posible descargar el paquete de la CLI.
 
 
 [role="lead"]
-En System Manager, es posible descargar el paquete de la CLI.
+En SANtricity System Manager, es posible descargar el paquete de la CLI.
 
 La CLI proporciona un método a partir de texto para la configuración y supervisión de cabinas. Se comunica mediante https y utiliza la misma sintaxis que la CLI que está disponible en el paquete de software de gestión instalado de forma externa. Para descargar la CLI, no se requiere ninguna clave.
 

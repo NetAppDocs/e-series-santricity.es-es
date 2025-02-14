@@ -12,7 +12,7 @@ summary: Puede crear un banner de inicio de sesión que se presente a los usuari
 
 
 [role="lead"]
-Puede crear un banner de inicio de sesión que se presente a los usuarios antes de que puedan establecer sesiones en System Manager. El banner puede incluir un aviso de asesoría y un mensaje de consentimiento.
+Puede crear un banner de inicio de sesión que se presente a los usuarios antes de que puedan establecer sesiones en System Manager de SANtricity. El banner puede incluir un aviso de asesoría y un mensaje de consentimiento.
 
 .Acerca de esta tarea
 Al crear un banner, este aparece antes de la pantalla de inicio de sesión en un cuadro de diálogo.

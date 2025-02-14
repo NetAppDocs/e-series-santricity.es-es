@@ -12,7 +12,7 @@ summary: Es posible quitar una o varias cabinas de almacenamiento si ya no se va
 
 
 [role="lead"]
-Es posible quitar una o varias cabinas de almacenamiento si ya no se van a gestionar desde Unified Manager.
+Es posible quitar una o varias cabinas de almacenamiento si ya no se van a gestionar desde Unified Manager de SANtricity.
 
 .Acerca de esta tarea
 No es posible acceder a ninguna de las cabinas de almacenamiento que se quiten. Sin embargo, puede establecerse una conexión con cualquiera de las cabinas de almacenamiento eliminadas si se apunta un explorador directamente a su dirección IP o nombre de host.

@@ -11,6 +11,6 @@ summary: En SANtricity System Manager, se pueden crear volúmenes mediante los p
 
 
 [role="lead"]
-En System Manager, se pueden crear volúmenes mediante los pasos siguientes.
+En SANtricity System Manager, se pueden crear volúmenes mediante los pasos siguientes.
 
 image::../media/sam1130-flw-volumes-create.gif[Flujo de trabajo de crear volúmenes]

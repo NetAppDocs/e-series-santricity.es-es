@@ -11,7 +11,7 @@ summary: Si recibe un error al intentar iniciar sesión en System Manager, revis
 
 
 [role="lead"]
-Si recibe un error al intentar iniciar sesión en System Manager, revise estas causas posibles.
+Si recibe un error al intentar iniciar sesión en SANtricity System Manager, revise estas causas posibles.
 
 Los errores de inicio de sesión en System Manager pueden ocurrir por uno de estos motivos:
 

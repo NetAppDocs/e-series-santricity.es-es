@@ -12,7 +12,7 @@ summary: El soporte técnico puede utilizar archivos de soporte de recuperación
 
 
 [role="lead"]
-El soporte técnico puede utilizar archivos de soporte de recuperación para solucionar problemas. System Manager guarda automáticamente estos archivos.
+El soporte técnico puede utilizar archivos de soporte de recuperación para solucionar problemas. El administrador del sistema de SANtricity guarda automáticamente estos archivos.
 
 .Antes de empezar
 El soporte técnico solicitó el envío de archivos adicionales para la solución de problemas.

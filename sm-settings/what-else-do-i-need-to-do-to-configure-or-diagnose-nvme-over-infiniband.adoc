@@ -12,7 +12,7 @@ summary: En la tabla a continuación, se enumeran las funciones de System Manage
 
 
 [role="lead"]
-En la tabla a continuación, se enumeran las funciones de System Manager que se pueden utilizar para configurar y gestionar sesiones NVMe over InfiniBand.
+En la tabla a continuación, se enumeran las funciones de SANtricity System Manager que se pueden utilizar para configurar y gestionar sesiones NVMe over InfiniBand.
 
 [NOTE]
 ====

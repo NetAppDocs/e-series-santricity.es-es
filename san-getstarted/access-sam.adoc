@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access System Manager 
 summary: Para acceder a la interfaz de usuario de System Manager, debe dirigir un explorador a la dirección IP de la controladora. Un asistente de configuración le ayuda a comenzar con la configuración del sistema. 
 ---
-= Acceda a System Manager
+= Acceda a SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -12,7 +12,7 @@ summary: Para acceder a la interfaz de usuario de System Manager, debe dirigir u
 
 
 [role="lead"]
-Para acceder a la interfaz de usuario de System Manager, debe dirigir un explorador a la dirección IP de la controladora. Un asistente de configuración le ayuda a comenzar con la configuración del sistema.
+Para acceder a la interfaz de usuario de SANtricity System Manager, se debe apuntar un explorador a la dirección IP de la controladora. Un asistente de configuración le ayuda a comenzar con la configuración del sistema.
 
 .Antes de empezar
 * Instale y configure el hardware, tal y como se describe en una de las guías de configuración exprés:

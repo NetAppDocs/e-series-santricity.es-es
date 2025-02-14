@@ -12,7 +12,7 @@ summary: 'Si el protocolo de tiempo de redes (NTP) no está habilitado, los relo
 
 
 [role="lead"]
-Si el protocolo de tiempo de redes (NTP) no está habilitado, los relojes de las controladoras se pueden configurar manualmente, de manera que queden sincronizados con el cliente de gestión (el sistema que se utiliza para ejecutar el explorador que accede a System Manager).
+Si el protocolo de tiempo de redes (NTP) no está habilitado, los relojes de las controladoras se pueden configurar manualmente, de manera que queden sincronizados con el cliente de gestión (el sistema que se utiliza para ejecutar el explorador que accede a System Manager de SANtricity).
 
 .Acerca de esta tarea
 La sincronización garantiza que las marcas de tiempo del evento del registro de eventos coincidan con las marcas de tiempo escritas en los archivos de registro del host. Durante el proceso de sincronización, las controladoras siguen estando disponibles y siguen siendo operativas.

@@ -12,7 +12,7 @@ summary: Puede usar Unified Manager para actualizar a una nueva versión el soft
 
 
 [role="lead"]
-Puede usar Unified Manager para actualizar a una nueva versión el software de sistema operativo SANtricity en varias cabinas de almacenamiento del mismo tipo.
+Puede usar Unified Manager de SANtricity para actualizar a una nueva versión el software de sistema operativo SANtricity en varias cabinas de almacenamiento del mismo tipo.
 
 
 

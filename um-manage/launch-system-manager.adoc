@@ -11,7 +11,7 @@ summary: Si desea realizar operaciones de gestión, puede usar la opción Inicia
 
 
 [role="lead"]
-Si desea realizar operaciones de gestión, puede usar la opción Iniciar para abrir la instancia de System Manager basada en el explorador que corresponde a una o más cabinas de almacenamiento.
+Si desea realizar operaciones de gestión, puede usar la opción Iniciar para abrir la instancia de SANtricity System Manager basada en el explorador que corresponde a una o más cabinas de almacenamiento.
 
 .Pasos
 . En la página gestionar, seleccione una o más cabinas de almacenamiento que desee gestionar.

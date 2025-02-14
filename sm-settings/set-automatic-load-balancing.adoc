@@ -12,7 +12,7 @@ summary: La función Automatic Load Balancing garantiza que el tráfico de I/o e
 
 
 [role="lead"]
-La función Automatic Load Balancing garantiza que el tráfico de I/o entrante de los hosts se gestione dinámicamente y se equilibre entre ambas controladoras. Esta función está habilitada de forma predeterminada, pero se puede deshabilitar desde System Manager.
+La función Automatic Load Balancing garantiza que el tráfico de I/o entrante de los hosts se gestione dinámicamente y se equilibre entre ambas controladoras. Esta función está habilitada de forma predeterminada, pero se puede deshabilitar desde SANtricity System Manager.
 
 .Acerca de esta tarea
 Cuando la función Automatic Load Balancing está habilitada, ejecuta las siguientes funciones:

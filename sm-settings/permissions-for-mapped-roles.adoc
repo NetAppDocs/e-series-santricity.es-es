@@ -12,7 +12,7 @@ summary: 'Las capacidades de RBAC (control de acceso basado en roles) presentes 
 
 
 [role="lead"]
-Las capacidades de RBAC (control de acceso basado en roles) presentes en la cabina de almacenamiento incluyen perfiles de usuario predefinidos con uno o varios roles asignados. Cada rol incluye permisos para acceder a tareas en System Manager.
+Las capacidades de RBAC (control de acceso basado en roles) presentes en la cabina de almacenamiento incluyen perfiles de usuario predefinidos con uno o varios roles asignados. Cada rol incluye permisos para acceder a tareas en SANtricity System Manager.
 
 Puede accederse a los perfiles de usuario y a los roles asignados desde el menú:Configuración[Access Management > roles de usuario local] desde la interfaz de usuario de cualquier System Manager.
 

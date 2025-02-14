@@ -12,7 +12,7 @@ summary: System Manager permite enviar mensajes de AutoSupport al soporte técni
 
 
 [role="lead"]
-System Manager permite enviar mensajes de AutoSupport al soporte técnico sin esperar a un mensaje programado.
+SANtricity System Manager permite enviar mensajes de AutoSupport al soporte técnico, sin esperar un mensaje programado.
 
 .Antes de empezar
 Se debe habilitar la función AutoSupport. Puede comprobar si está habilitada en la página AutoSupport.

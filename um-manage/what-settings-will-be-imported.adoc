@@ -11,7 +11,7 @@ summary: La función Importar configuración es una operación en lote que carga
 
 
 [role="lead"]
-La función Importar configuración es una operación en lote que carga las configuraciones desde una cabina de almacenamiento a varias cabinas de almacenamiento. La configuración que se importe durante esta operación dependerá de cómo esté configurada la cabina de almacenamiento de origen en System Manager.
+La función Importar configuración es una operación en lote que carga las configuraciones desde una cabina de almacenamiento a varias cabinas de almacenamiento. La configuración que se importe durante esta operación dependerá de cómo esté configurada la cabina de almacenamiento de origen en SANtricity System Manager.
 
 Las siguientes configuraciones pueden importarse a varias cabinas:
 

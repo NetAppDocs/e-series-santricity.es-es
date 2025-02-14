@@ -11,7 +11,7 @@ summary: Un sistema de almacenamiento en modo no óptimo se debe a un estado no 
 
 
 [role="lead"]
-Un sistema de almacenamiento en modo no óptimo se debe a un estado no válido de configuración del sistema. A pesar de este estado, se admite por completo el acceso de I/o normal a los volúmenes existentes; sin embargo, System Manager prohibirá algunas operaciones.
+Un sistema de almacenamiento en modo no óptimo se debe a un estado no válido de configuración del sistema. A pesar de este estado, se admite totalmente el acceso de I/O normal a los volúmenes existentes; no obstante, System Manager de SANtricity prohibirá algunas operaciones.
 
 Un sistema de almacenamiento puede realizar una transición a la configuración del sistema no válida por uno de estos motivos:
 

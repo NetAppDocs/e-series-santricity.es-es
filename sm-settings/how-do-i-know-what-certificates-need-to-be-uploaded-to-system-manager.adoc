@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, certificates, external, key, management, 
 summary: Para la gestión de claves externas, debe importar dos tipos de certificados para la autenticación entre la cabina de almacenamiento y el servidor de gestión de claves, de forma tal que exista confianza mutua entre las dos entidades. 
 ---
-= ¿Cómo saber qué certificados deben cargarse en System Manager para la gestión de claves externas?
+= ¿Cómo saber qué certificados deben cargarse en SANtricity System Manager para la gestión de claves externas?
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

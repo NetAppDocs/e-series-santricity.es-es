@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, 
 summary: Se accede a la interfaz principal para acceder a las funciones y tareas de System Manager. 
 ---
-= Información general de la interfaz de System Manager
+= Información general de la interfaz de SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-System Manager es una interfaz basada en Web que permite gestionar una cabina de almacenamiento en una sola vista.
+System Manager de SANtricity es una interfaz basada en Web que permite gestionar una cabina de almacenamiento en una sola vista.
 
 
 

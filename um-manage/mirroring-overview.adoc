@@ -11,7 +11,7 @@ summary: Unified Manager incluye opciones de configuración para las funciones d
 
 
 [role="lead"]
-Unified Manager incluye opciones de configuración para las funciones de mirroring de SANtricity, con las cuales los administradores pueden replicar datos entre dos cabinas de almacenamiento para la protección de los datos.
+SANtricity Unified Manager incluye opciones de configuración para las funciones de mirroring de SANtricity, con las cuales los administradores pueden replicar datos entre dos cabinas de almacenamiento para la protección de los datos.
 
 [NOTE]
 ====

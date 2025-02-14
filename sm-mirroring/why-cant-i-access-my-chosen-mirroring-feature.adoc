@@ -11,7 +11,7 @@ summary: La función de mirroring se configura en la interfaz de Unified Manager
 
 
 [role="lead"]
-La función de mirroring se configura en la interfaz de Unified Manager.
+La función de mirroring se configura en la interfaz de SANtricity Unified Manager.
 
 [NOTE]
 ====

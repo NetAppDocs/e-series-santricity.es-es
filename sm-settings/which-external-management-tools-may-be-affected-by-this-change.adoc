@@ -11,7 +11,7 @@ summary: Cuando se realizan ciertos cambios en System Manager, como el cambio de
 
 
 [role="lead"]
-Cuando se realizan ciertos cambios en System Manager, como el cambio de la interfaz de gestión o el uso de SAML como método de autenticación, puede restringirse el uso de algunas herramientas y funciones externas.
+Cuando se realizan ciertos cambios en SANtricity System Manager, como el cambio de la interfaz de gestión o el uso de SAML como método de autenticación, puede restringirse el uso de algunas herramientas y funciones externas.
 
 
 

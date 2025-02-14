@@ -11,7 +11,7 @@ summary: En System Manager se admiten las siguientes versiones de exploradores.
 
 
 [role="lead"]
-En System Manager se admiten las siguientes versiones de exploradores.
+En el administrador del sistema de SANtricity se admiten las siguientes versiones de exploradores.
 
 [cols="1a,1a"]
 |===

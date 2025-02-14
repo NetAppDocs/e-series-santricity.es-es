@@ -12,7 +12,7 @@ summary: Si cambió la dirección IP de la cabina de almacenamiento, es posible 
 
 
 [role="lead"]
-Si cambió la dirección IP de la cabina de almacenamiento, es posible que desee actualizar la vista de cabina global en Unified Manager.
+Si cambió la dirección IP de la cabina de almacenamiento, es posible que desee actualizar la vista de cabina global en SANtricity Unified Manager.
 
 Para actualizar la vista de cabina global en Unified Manager, abra la interfaz y vaya al menú:gestionar[detectar].
 

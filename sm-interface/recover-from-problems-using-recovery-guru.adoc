@@ -11,7 +11,7 @@ summary: Recovery Guru es un componente de System Manager para diagnosticar prob
 
 
 [role="lead"]
-Recovery Guru es un componente de System Manager para diagnosticar problemas en la cabina de almacenamiento y recomendar procedimientos de recuperación para corregir los problemas.
+Recovery Guru es un componente de SANtricity System Manager para diagnosticar problemas en la cabina de almacenamiento y recomendar procedimientos de recuperación para corregir los problemas.
 
 .Pasos
 . Seleccione *Inicio*.

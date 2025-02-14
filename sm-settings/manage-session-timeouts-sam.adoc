@@ -12,7 +12,7 @@ summary: Es posible configurar los tiempos de espera en System Manager de SANtri
 
 
 [role="lead"]
-Es posible configurar los tiempos de espera en System Manager para que las sesiones inactivas de los usuarios se desconecten después de un periodo especificado.
+Es posible configurar los tiempos de espera en SANtricity System Manager para que las sesiones inactivas de los usuarios se desconecten después de un periodo especificado.
 
 .Acerca de esta tarea
 De manera predeterminada, el tiempo de espera de sesión para System Manager es de 30 minutos. Es posible ajustar el tiempo, o bien directamente pueden deshabilitarse los tiempos de espera de sesión.

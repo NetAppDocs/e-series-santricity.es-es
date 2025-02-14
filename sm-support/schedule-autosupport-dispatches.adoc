@@ -12,7 +12,7 @@ summary: System Manager crea automáticamente una programación predeterminada p
 
 
 [role="lead"]
-System Manager crea automáticamente una programación predeterminada para los mensajes de AutoSupport. Si lo prefiere, puede especificar su propia programación.
+SANtricity System Manager crea automáticamente una programación predeterminada para los mensajes de AutoSupport. Si lo prefiere, puede especificar su propia programación.
 
 .Antes de empezar
 Se debe habilitar la función AutoSupport. Puede comprobar si está habilitada en la página AutoSupport.

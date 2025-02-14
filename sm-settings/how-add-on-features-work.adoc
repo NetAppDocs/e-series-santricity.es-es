@@ -11,7 +11,7 @@ summary: Las funciones adicionales son las que no se incluyen en la configuraci�
 
 
 [role="lead"]
-Las funciones adicionales son las que no se incluyen en la configuración estándar de System Manager y pueden requerir una clave para su habilitación. Una función complementaria puede ser una sola función excepcional o un paquete de funciones agrupadas.
+Las funciones adicionales son las que no se incluyen en la configuración estándar de SANtricity System Manager y pueden requerir una clave para su habilitación. Una función complementaria puede ser una sola función excepcional o un paquete de funciones agrupadas.
 
 Los siguientes pasos proporcionan información general sobre cómo habilitar una función excepcional o un paquete de funciones:
 

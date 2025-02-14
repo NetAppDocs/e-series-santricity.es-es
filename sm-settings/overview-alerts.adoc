@@ -12,7 +12,7 @@ summary: Es posible configurar System Manager para que envíe alertas de cabina 
 
 
 [role="lead"]
-Es posible configurar System Manager para que envíe alertas de cabina de almacenamiento por correo electrónico, capturas SNMP y mensajes de syslog.
+Es posible configurar SANtricity System Manager para que envíe alertas de cabina de almacenamiento por correo electrónico, capturas SNMP y mensajes de syslog.
 
 
 

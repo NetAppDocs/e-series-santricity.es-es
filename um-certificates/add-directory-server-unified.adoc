@@ -11,7 +11,7 @@ summary: Para configurar la autenticación de Access Management, se debe estable
 
 
 [role="lead"]
-Para configurar la autenticación de Access Management, se debe establecer la comunicación entre un servidor LDAP y el host donde se ejecuta el proxy de servicios web para Unified Manager. A continuación, se deben asignar los grupos de usuarios LDAP a los roles de usuario local.
+Para configurar la autenticación de Access Management, se debe establecer la comunicación entre un servidor LDAP y el host donde se ejecuta el proxy de servicios web para Unified Manager de SANtricity. A continuación, se deben asignar los grupos de usuarios LDAP a los roles de usuario local.
 
 .Antes de empezar
 * Debe iniciar sesión con un perfil de usuario que cuente con permisos de administración de seguridad. De lo contrario, no se mostrarán las funciones de Access Management.

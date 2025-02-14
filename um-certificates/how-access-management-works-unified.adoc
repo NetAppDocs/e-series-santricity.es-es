@@ -11,7 +11,7 @@ summary: Utilice Access Management para establecer la autenticación de usuario 
 
 
 [role="lead"]
-Utilice Access Management para establecer la autenticación de usuario en Unified Manager.
+Utilice Access Management para establecer la autenticación de usuario en SANtricity Unified Manager.
 
 
 

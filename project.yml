@@ -31,9 +31,9 @@ sidebar:
       url: "/san-getstarted/santricity-overview.html"
     - title: Navegadores y sistemas operativos compatibles
       url: "/san-getstarted/supported-browsers-os.html"
-    - title: Configuración de System Manager
+    - title: Configuración del administrador del sistema de SANtricity
       entries:
-      - title: Acceda a System Manager
+      - title: Acceda a SANtricity System Manager
         url: "/san-getstarted/access-sam.html"
       - title: Información general del asistente de configuración
         url: "/sm-interface/setup-wizard-overview.html"
@@ -52,20 +52,20 @@ sidebar:
           url: "/sm-interface/how-do-i-configure-the-delivery-method-for-autosupport-new.html"
         - title: "¿Cómo saber si debe aceptarse la configuración de pool recomendada?"
           url: "/sm-interface/how-do-i-know-if-i-should-accept-the-recommended-pool-configuration.html"
-        - title: System Manager no detectó ningún host. ¿Qué debo hacer?
+        - title: System Manager de SANtricity no detectó ningún host. ¿Qué debo hacer?
           url: "/sm-interface/system-manager-has-not-detected-any-hosts-what-do-i-do.html"
-    - title: Configuración de Unified Manager
+    - title: Configuración de SANtricity Unified Manager
       entries:
-      - title: Instale Unified Manager
+      - title: Instale SANtricity Unified Manager
         url: "/san-getstarted/install-um.html"
-      - title: Acceda a Unified Manager
+      - title: Acceda a Unified Manager de SANtricity
         url: "/san-getstarted/login-um.html"
-  - title: System Manager
+  - title: System Manager de SANtricity
     url: "/system-manager/index.html"
     entries:
     - title: Interfaz principal
       entries:
-      - title: Información general de la interfaz de System Manager
+      - title: Información general de la interfaz de SANtricity System Manager
         url: "/sm-interface/overview-interface-sam.html"
       - title: Ver los datos de rendimiento
         entries:
@@ -1171,8 +1171,8 @@ sidebar:
         - title: "¿Por qué se muestra el cuadro de diálogo no se puede acceder a otra
             controladora?"
           url: "/sm-settings/why-does-the-cannot-access-other-controller-dialog-appear.html"
-        - title: "¿Cómo saber qué certificados deben cargarse en System Manager para
-            la gestión de claves externas?"
+        - title: "¿Cómo saber qué certificados deben cargarse en SANtricity System
+            Manager para la gestión de claves externas?"
           url: "/sm-settings/how-do-i-know-what-certificates-need-to-be-uploaded-to-system-manager.html"
         - title: "¿Qué debo saber acerca de la comprobación de revocación de certificados?"
           url: "/sm-settings/what-do-i-need-to-know-about-certificate-revocation-checking.html"
@@ -1277,12 +1277,12 @@ sidebar:
           url: "/sm-support/what-do-i-need-to-know-before-upgrading-drive-firmware.html"
         - title: "¿Cómo selecciono el tipo de actualización que debo realizar?"
           url: "/sm-support/how-do-i-choose-which-type-of-upgrade-to-perform.html"
-  - title: Unified Manager
+  - title: Unified Manager de SANtricity
     url: "/unified-manager/index.html"
     entries:
     - title: Interfaz principal
       entries:
-      - title: Información general de la interfaz de Unified Manager
+      - title: Información general de la interfaz de SANtricity Unified Manager
         url: "/um-admin/overview-interface-unified.html"
       - title: Exploradores compatibles
         url: "/um-admin/supported-browsers-unified.html"
@@ -1300,7 +1300,7 @@ sidebar:
         entries:
         - title: Consideraciones sobre la detección de cabinas
           url: "/um-manage/considerations-for-discovering-arrays.html"
-        - title: Consideraciones para acceder a System Manager
+        - title: Consideraciones para acceder a System Manager de SANtricity
           url: "/um-manage/launch-considerations.html"
       - title: Detectar cabinas de almacenamiento
         entries:
@@ -1312,7 +1312,7 @@ sidebar:
         entries:
         - title: Ver el estado de la cabina
           url: "/um-manage/storage-array-status.html"
-        - title: Inicie System Manager
+        - title: Gestione una cabina de almacenamiento individual
           url: "/um-manage/launch-system-manager.html"
         - title: Cambiar las contraseñas de las cabinas
           url: "/um-admin/change-storage-array-passwords.html"

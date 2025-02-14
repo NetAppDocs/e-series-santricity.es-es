@@ -64,7 +64,6 @@
   <block id="045d1e9a94278a8386d71e58e81fd7a1" category="sidebar">Gestionar las actualizaciones</block>
   <block id="8d94d37b5905d67ccf22b375e3bf5c6e" category="sidebar">Actualice software y firmware</block>
   <block id="f446e3c0eca28983e35e282214782584" category="sidebar">Ver el estado de la cabina</block>
-  <block id="835b7ac0eaf285552b7ec179de33d014" category="sidebar">Inicie System Manager</block>
   <block id="8ebeac47d02da19c4d1cd88ab9d7cca8" category="sidebar">Cambiar las contraseñas de las cabinas</block>
   <block id="a0a3f20685c328a00474bb00b7d35fd5" category="sidebar">Quite cabinas de la vista</block>
   <block id="15fc53829e4c837f62e15647e031089c" category="sidebar">Importación de la configuración</block>
@@ -608,7 +607,6 @@
   <block id="5f89d01999b1beb5d648cf2750e94931" category="paragraph">Según la unidad, es posible que la reconstrucción completa demore bastante. Si se modificó la propiedad de un volumen, es posible que se realice la reconstrucción completa en lugar de la rápida.</block>
   <block id="9a10dfa4820362278c75541e0d1eed8b" category="summary">Las piezas de repuesto actúan como unidades en espera en los grupos de volúmenes RAID 1, RAID 5 o RAID 6 de System Manager.</block>
   <block id="276a13903d824739180cb574a8b6063a" category="doc">Información general de la unidad de repuesto</block>
-  <block id="e4fa5d6edf084bd88f0cdd23e75bb932" category="paragraph">Las piezas de repuesto actúan como unidades en espera en los grupos de volúmenes RAID 1, RAID 5 o RAID 6 de System Manager.</block>
   <block id="bb3d0b1d00371907893169044379dc18" category="paragraph">Son unidades completamente funcionales que no contienen datos. Si falla una unidad en el grupo de volúmenes, la controladora reconstruye automáticamente los datos de la unidad con error en una unidad asignada como pieza de repuesto.</block>
   <block id="44fc683d36bd75431aa319eb657eee3d" category="paragraph">Las piezas de repuesto no son unidades dedicadas a grupos de volúmenes específicos. Pueden usarse para cualquier unidad con error en la cabina de almacenamiento siempre que la pieza de repuesto y la unidad compartan estos atributos:</block>
   <block id="4cb8bf730ded016e3d4d1c1557bceadb" category="list-text">Igual capacidad (o una pieza de repuesto con mayor capacidad)</block>
@@ -846,7 +844,6 @@
   <block id="b5cc1185494b87c4ab04ddca81942ca8" category="list-text">Complete la configuración y, a continuación, restablezca el puerto Iser over InfiniBand haciendo clic en *Sí*.</block>
   <block id="260143c2df7ae0ce4b9a6b4e5820e5bb" category="summary">Si cambió la dirección IP de la cabina de almacenamiento, es posible que desee actualizar la vista de cabina global en SANtricity Unified Manager.</block>
   <block id="cc9d5e6a39247b7ae502a7f1e633c4f7" category="doc">¿Qué debo hacer luego de configurar los puertos de gestión?</block>
-  <block id="33be6721ee47ba737121b0b61fc7ccb1" category="paragraph">Si cambió la dirección IP de la cabina de almacenamiento, es posible que desee actualizar la vista de cabina global en Unified Manager.</block>
   <block id="67b52d0dd0552f62756981b7d04e334a" category="paragraph">Para actualizar la vista de cabina global en Unified Manager, abra la interfaz y vaya al menú:gestionar[detectar].</block>
   <block id="3f79a5cd8daf0ba8a2623f690e8ad45d" category="paragraph">Si todavía utiliza Storage Manager de SANtricity, vaya a Enterprise Management Window (EMW), donde debe eliminar y volver a añadir la nueva dirección IP.</block>
   <block id="92df48228a5784be945b3cb8b079fab7" category="summary">La página hardware presenta funciones de ordenación y filtrado que facilitan la búsqueda de componentes.</block>
@@ -3515,7 +3512,6 @@
   <block id="8707cd376e4a4e2b7f02a71e6a1b1009" category="summary">Es posible supervisar el espacio de los volúmenes finos y generar las alertas apropiadas que permitan evitar condiciones de falta de capacidad.</block>
   <block id="ba2db905416fb6910e44524f99d5d8c1" category="doc">Supervise volúmenes finos</block>
   <block id="11922e324623e8ee6795b38fc97026aa" category="summary">En SANtricity System Manager, se pueden crear volúmenes mediante los pasos siguientes.</block>
-  <block id="26eaac99fa3741d6e7305e93cad51def" category="paragraph">En System Manager, se pueden crear volúmenes mediante los pasos siguientes.</block>
   <block id="be603c5caf55cd38ad9d7b7483df29eb" category="summary">Es posible eliminar un host o un clúster de hosts.</block>
   <block id="4b884c160efc626673664f833daf6573" category="doc">Elimine host o clúster de hosts</block>
   <block id="ab50cbcc13be346ea8484ef306a2f296" category="paragraph">Tenga en cuenta lo siguiente al eliminar un host o un clúster de hosts:</block>
@@ -4186,7 +4182,6 @@
   <block id="638e87c9a312fe766009341e23b4dbd4" category="doc">Flujo de trabajo de actualización de firmware y software de la controladora</block>
   <block id="53f6e38bfb8737cd78f3afe40356d59e" category="summary">En SANtricity System Manager, puede configurar la función AutoSupport siguiendo estos pasos.</block>
   <block id="abcd71b1bdd83d175115a06e7bd6993c" category="doc">Flujo de trabajo de la función AutoSupport</block>
-  <block id="fa1ad6ca18787ce10b28e8361e9f1ad1" category="paragraph">En System Manager, puede configurar la función AutoSupport siguiendo estos pasos.</block>
   <block id="73395a1692486db8dd22d48c16c91ded" category="summary">System Manager permite enviar mensajes de AutoSupport al soporte técnico sin esperar a un mensaje programado.</block>
   <block id="b7d6a20e88b0f7f6f3e466399ea36042" category="doc">Envíe mensajes de AutoSupport</block>
   <block id="951f23f38a775d7b989c10f181c6a5fb" category="paragraph">Se debe habilitar la función AutoSupport. Puede comprobar si está habilitada en la página AutoSupport.</block>
@@ -4895,12 +4890,9 @@
   <block id="82ab678a4f5cf6d791ac2b387c308298" category="paragraph">El archivo se guarda en la carpeta de descargas del explorador con el nombre<block ref="3c90bec7788567324b6973cff70624ab" prefix=" " category="inline-code"></block>.</block>
   <block id="a0d8ff3a23302401ce4263ad4c69a5ca" category="list-text">Para imprimir la información de Recovery Guru, haga clic en el icono *Imprimir*.</block>
   <block id="3d371728a27bfe9492e0557bfd5069d2" category="summary">Si no se observan los hosts conectados, hay un error en la detección automática, los hosts están conectados incorrectamente o no hay hosts conectados actualmente.</block>
-  <block id="e5455040d4a9ede58061022a5ec57985" category="doc">System Manager no detectó ningún host. ¿Qué debo hacer?</block>
   <block id="f7ff4c91fa7860bce0649b5e3d3793d8" category="list-text">Es posible crear hosts manualmente y asociarlos con los identificadores de puerto de host adecuados en menu:Storage[hosts]. Los hosts que se han creado manualmente también aparecen en el asistente *Configuración inicial*.</block>
   <block id="50f6912c5df4e3e02e724cdec96987cf" category="list-text">El objetivo y el host deben configurarse para el tipo de puerto de host (por ejemplo, iSCSI o NVMe over roce), y debe establecerse una sesión en el almacenamiento para que la detección automática funcione.</block>
   <block id="3412f4f9996db44d85e9a7ddb64f8fc2" category="summary">Se accede a la interfaz principal para acceder a las funciones y tareas de System Manager.</block>
-  <block id="42ff625aa5c914a15cc639fd05aa3bfb" category="doc">Información general de la interfaz de System Manager</block>
-  <block id="bb62a2f52038b073396f3df591dfc864" category="paragraph">System Manager es una interfaz basada en Web que permite gestionar una cabina de almacenamiento en una sola vista.</block>
   <block id="deec4ff19974f12ed781cb9a59064214" category="cell">Zona</block>
   <block id="a274f4d4670213a9045ce258c6c56b80" category="paragraph">Notificaciones</block>
   <block id="9446a98ad14416153cc4d45ab8b531bf" category="paragraph">Rendimiento</block>
@@ -4959,7 +4951,6 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">Los archivos de notificación proporcionan información sobre los derechos de autor y las licencias de terceros que se utilizan en software de NetApp.</block>
   <block id="cc1ba14f8dc9bd7ba20e2aa654cde10b" category="inline-link">Aviso sobre el sistema operativo SANtricity E-Series/EF-Series</block>
   <block id="a1f94f83462c2ceebb1aef9832402037" category="summary">Es posible configurar tiempos de espera en SANtricity System Manager para que las sesiones inactivas de los usuarios se desconecten después de un periodo especificado.</block>
-  <block id="8ad7e04aaecd791134a5e260a985aa04" category="paragraph">Es posible configurar tiempos de espera en System Manager para que las sesiones inactivas de los usuarios se desconecten después de un periodo especificado.</block>
   <block id="90bc078771cba1fa174144730e743ae1" category="paragraph">De manera predeterminada, el tiempo de espera de sesión para Unified Manager es de 30 minutos. Es posible ajustar el tiempo, o bien directamente pueden deshabilitarse los tiempos de espera de sesión.</block>
   <block id="5cdc5e794d92075b65fddab1a4df3b77" category="list-text">En la barra de menú, seleccione la flecha desplegable junto a su nombre de inicio de sesión.</block>
   <block id="dc5fab46b780f9174c45cb0a79e538b6" category="list-text">Seleccione *Activar/Desactivar tiempo de espera de sesión*.</block>
@@ -4969,12 +4960,10 @@
   <block id="e9e6b18af35988c38b404cb9db9dab71" category="paragraph">Para desactivar los tiempos de espera de sesiones, desactive la casilla de verificación *establecer el lapso...*.</block>
   <block id="2e427df5c1b5f1934e9cdd88bb2c3cb2" category="summary">Para acceder a SANtricity Unified Manager pueden usarse varios tipos de exploradores.</block>
   <block id="6d84e3718084e0db779da4ff8791a2f2" category="doc">Exploradores compatibles</block>
-  <block id="6d5a07028844be42740ba8ef0ebc030a" category="paragraph">Para acceder a Unified Manager pueden usarse varios tipos de exploradores.</block>
   <block id="726e62b65e8dfa097c99ac497e95cf5c" category="paragraph">Se admiten los siguientes exploradores en las versiones mencionadas.</block>
   <block id="24bfb1beabc66d9a6a219a39706480f0" category="paragraph">El proxy de servicios web debe estar instalado y disponible para el explorador.</block>
   <block id="8f2804311a0084d47f6c63f97e6d6ced" category="summary">Puede actualizar las contraseñas que se utilizan para ver y acceder a las cabinas de almacenamiento en SANtricity Unified Manager.</block>
   <block id="2aebbeed1009439a37c2d8cc2d3c3b8c" category="doc">Cambiar contraseñas de las cabinas de almacenamiento</block>
-  <block id="56384fe256eff96c1a56aee05a2e3fbb" category="paragraph">Puede actualizar las contraseñas que se utilizan para ver y acceder a las cabinas de almacenamiento en Unified Manager.</block>
   <block id="3e06700262909cb379674ee849478971" category="list-text">Debe iniciar sesión con un perfil de usuario que cuente con permisos de administración de almacenamiento.</block>
   <block id="6200b57bba4734c357cfd4a38fa16a12" category="list-text">Debe conocer la contraseña actual de la cabina de almacenamiento que se estableció en System Manager.</block>
   <block id="5d0efaa3695cc3970597a53c9f03654a" category="paragraph">En esta tarea, debe introducir la contraseña actual de una cabina de almacenamiento para poder acceder a esta en Unified Manager. Esto puede ser necesario si se modificó la contraseña de la cabina en System Manager y ahora se debe modificar también Unified Manager.</block>
@@ -4982,7 +4971,6 @@
   <block id="e5d29807b71c6680617647dafa4db722" category="list-text">Seleccione menú:tareas no comunes[proporcionar contraseñas de cabina de almacenamiento].</block>
   <block id="b6deb366a7ea029beae2c06ae5edbee7" category="list-text">Introduzca la contraseña o las contraseñas de cada cabina de almacenamiento y haga clic en *Guardar*.</block>
   <block id="1b89afe60c3c3728ebb581ee0aac3506" category="summary">Unified Manager es una interfaz basada en Web que permite gestionar varias cabinas de almacenamiento en una sola vista.</block>
-  <block id="4dce3cdc79e2e44c19e0286c8128e182" category="doc">Información general de la interfaz de Unified Manager</block>
   <block id="8f8d2783d036ec8dbe4b6b9c1d0fed0d" category="section-title">Página principal</block>
   <block id="edab0a6bffc866b3b3e060784eab4d6a" category="paragraph">Al iniciar sesión en Unified Manager, la página principal se abre en *gestionar - todo*. En esta página, puede desplazarse por una lista de cabinas de almacenamiento detectadas en la red, ver su estado y realizar operaciones en una sola cabina o en un grupo de cabinas.</block>
   <block id="bdb2999f28589aad2b040c21930c86dc" category="section-title">Barra lateral Navegación</block>
@@ -5006,7 +4994,6 @@
   <block id="e59a6d53500e53d3c955f051d0c626ff" category="inline-link-macro">Cambiar contraseñas de perfiles de usuario local</block>
   <block id="ce87237c880c7aaf2f1af2e7b845297d" category="list-text"><block ref="ce87237c880c7aaf2f1af2e7b845297d" category="inline-link-macro-rx"></block></block>
   <block id="c905ab540cd89c88f522731c7c764a87" category="summary">Es posible cambiar la contraseña de administrador que se utiliza para acceder a SANtricity Unified Manager.</block>
-  <block id="f33a46d17adbb22063054d82821f25b7" category="paragraph">Es posible cambiar la contraseña de administrador que se utiliza para acceder a Unified Manager.</block>
   <block id="cd6788558cc7e0923a1c2358b16319f3" category="list-text">Inició sesión como administrador local, lo que incluye permisos de administrador raíz.</block>
   <block id="bd6118611ef18d79d9e7eedceea12308" category="list-text">Debe conocer la contraseña de administrador actual.</block>
   <block id="52cf81d6fc3cf681001f06708a450dec" category="paragraph">Tenga en cuenta estas directrices al elegir una contraseña:</block>
@@ -5023,7 +5010,6 @@
   <block id="4fd26e85daa45f71c7c9a886f11f5797" category="list-text">Introduzca la nueva contraseña en los dos campos.</block>
   <block id="4210c9f98a5dc1ea45fd7d0d2dee8ef2" category="list-text">Introduzca su contraseña de administrador local para confirmar esta operación y, a continuación, haga clic en *Cambiar*.</block>
   <block id="c5140ae7574b7c90722120fd0af36a50" category="summary">Debe configurar Unified Manager de SANtricity con una contraseña de administrador para proteger la instancia del acceso no autorizado.</block>
-  <block id="eeba445787fc95d90b8233e19693857b" category="paragraph">Debe configurar Unified Manager con una contraseña de administrador para proteger la instancia del acceso no autorizado.</block>
   <block id="1115a6e562080201b09b1af0e9c4f13a" category="section-title">Contraseña de administrador y perfiles de usuario</block>
   <block id="95bd4ed85be27a910b2d6e09c064718e" category="paragraph">Cuando se inicia Unified Manager por primera vez, se le solicita que establezca una contraseña de administrador. Cualquier usuario que tenga la contraseña de administrador puede realizar cambios de configuración en las cabinas de almacenamiento.</block>
   <block id="2832434af291fd456a913710178e09e2" category="inline-link-macro">Cómo funciona Access Management</block>
@@ -5159,7 +5145,6 @@
   <block id="328718c90d988fb5ec16ef6a5c12f32a" category="paragraph">Si la prueba de comunicación presenta un error, se sigue ejecutando después de cerrar este cuadro de diálogo hasta que se restablezca la comunicación entre la pareja reflejada.</block>
   <block id="7f29556c75106b05f3d2b4179dcc2406" category="summary">Si creó un volumen primario en una cabina de almacenamiento heredada que SANtricity System Manager no puede gestionar, es posible crear el volumen secundario en esta cabina con System Manager.</block>
   <block id="87b4e06d5443a380cc83c83c3d590d35" category="doc">Completar pareja reflejada para volúmenes primarios creados en un sistema heredado</block>
-  <block id="abe482b981924f3c0e95f1bdc14f29dc" category="paragraph">Si creó un volumen primario en una cabina de almacenamiento heredada que System Manager no puede gestionar, es posible crear el volumen secundario en esta cabina con System Manager.</block>
   <block id="380f85f6054e74968d72b39236e80732" category="paragraph">Es posible realizar un mirroring asíncrono entre las cabinas heredadas que usan una interfaz diferente y las cabinas más recientes que pueden gestionarse mediante System Manager.</block>
   <block id="33560e79148fad52472bc34df24ac293" category="list-text">Si está por crear reflejos entre dos cabinas de almacenamiento que usan System Manager, puede omitir esta tarea porque ya finalizó la pareja reflejada en la secuencia de creación de parejas reflejadas.</block>
   <block id="d680891c022a8b76135d7b350bcfef66" category="list-text">Lleve a cabo esta tarea en la cabina de almacenamiento remota.</block>
@@ -5678,8 +5663,6 @@
   <block id="824a3a83a007a97494ec5981cebf67a5" category="cell">Nueva función</block>
   <block id="3b5b5feef66adc0768f35b724a334827" category="paragraph">Tokens de acceso</block>
   <block id="d424dbef08902607fe74ce66143ded85" category="summary">Acceda e inicie sesión en Unified Manager.</block>
-  <block id="935157885838ef2e13b906dc3cfa3504" category="doc">Acceda a Unified Manager</block>
-  <block id="0fe8e078d723310c7a025dbb49b053a2" category="paragraph">Después de instalar el proxy de servicios web, puede acceder a Unified Manager para gestionar varios sistemas de almacenamiento en una interfaz web.</block>
   <block id="d6ccab2da5107baf9a74bf70fd30ac64" category="inline-link-macro">Exploradores compatibles y sistemas operativos</block>
   <block id="0a638be7984a916271be0d85fa354c61" category="admonition">Para ver los exploradores compatibles, consulte <block ref="0d80156806b92a254389d706e3039498" category="inline-link-macro-rx"></block>.</block>
   <block id="75ac65baa63f90887df8eeedf86752f4" category="list-text">Abra un explorador e introduzca la siguiente URL:</block>
@@ -5716,8 +5699,6 @@
   <block id="d4d6f2044fbcdd351a413cab792d2d9c" category="paragraph">Cree solicitudes de firma de certificados (CSR), importe certificados y gestione certificados existentes para varias cabinas de almacenamiento.</block>
   <block id="121cd24338b48712373ab15539868779" category="paragraph">Configurar la autenticación de usuario que requiere que los usuarios inicien sesión en Unified Manager con credenciales asignadas.</block>
   <block id="cdee3f665be88669170bda11b2f06c93" category="summary">Información general de la instalación de Unified Manager</block>
-  <block id="65747c74d7b2e455833a7211d404378f" category="doc">Instale Unified Manager</block>
-  <block id="34d9a59f7d7e5ba2b6d37af87522f26b" category="paragraph">Unified Manager se incluye en el proxy de servicios web, que es un servidor API RESTful instalado por separado en un sistema host para gestionar los sistemas de almacenamiento E-Series de NetApp.</block>
   <block id="cbdedeba7d21b6ec4e131a86b76662c6" category="paragraph">Para instalar Web Services Proxy y Unified Manager, consulte las siguientes instrucciones en el centro de documentación de E-Series y SANtricity:</block>
   <block id="a18485577a4748889b9322afa1d6eadc" category="inline-link">Revise los requisitos de instalación y actualización</block>
   <block id="192c70ae7442b1e297e8288370c5d9a7" category="list-text"><block ref="192c70ae7442b1e297e8288370c5d9a7" category="inline-link-rx"></block></block>
@@ -5824,7 +5805,6 @@
   <block id="839a15232e75363abd83283c12dccb75" category="summary">Si existe más de un volumen en un pool o grupo de volúmenes que cumple con el porcentaje de capacidad seleccionado para el objeto de almacenamiento, se mostrarán varios candidatos.</block>
   <block id="bcd2040d9a3029641d27c34b32354648" category="summary">Es posible seleccionar una o varias cabinas de almacenamiento y usar la opción Iniciar para abrir SANtricity System Manager cuando se desean configurar y gestionar las cabinas de almacenamiento.</block>
   <block id="c95d46d93ad992222d3d7452ede68ef3" category="doc">Consideraciones para acceder a System Manager</block>
-  <block id="625735d117f75d6e7141cef378902859" category="paragraph">Es posible seleccionar una o varias cabinas de almacenamiento y usar la opción Iniciar para abrir System Manager cuando se desean configurar y gestionar las cabinas de almacenamiento.</block>
   <block id="e2de2b40f2bec701c57fd2fbde183531" category="paragraph">System Manager es una aplicación integrada en las controladoras, que está conectada a la red a través de un puerto de gestión Ethernet. Incluye todas las funciones basadas en cabina.</block>
   <block id="97c771fec542c151941358c9507e1818" category="paragraph">Para acceder a System Manager, debe tener:</block>
   <block id="d2bf6cf91aae10964c05d43904777ddb" category="inline-link-macro">Información general del hardware de E-Series</block>
@@ -5866,7 +5846,6 @@
   <block id="597fbec95d8471a7f75703abb91ab8df" category="list-text">En el menú desplegable, seleccione el grupo que contiene las cabinas de almacenamiento que desea quitar y luego haga clic en la casilla de comprobación junto a cada cabina de almacenamiento que desea quitar del grupo.</block>
   <block id="7671664858be05fdbfc7ebd9e330e072" category="summary">Para poder mostrar y gestionar los recursos de almacenamiento, Unified Manager debe detectar las cabinas de almacenamiento que se desean gestionar en la red de la organización. Es posible detectar varias cabinas de almacenamiento o una sola.</block>
   <block id="072bbf879ecafdb82ab2e4349cfd42b5" category="doc">Consideraciones sobre la detección de cabinas</block>
-  <block id="9b4ac681029804460c9ba68ebc344819" category="paragraph">Para poder mostrar y gestionar los recursos de almacenamiento, Unified Manager debe detectar las cabinas de almacenamiento que se desean gestionar en la red de la organización. Es posible detectar varias cabinas de almacenamiento o una sola.</block>
   <block id="d316240204769eb0f31faba6852de25e" category="section-title">Detección de varias cabinas de almacenamiento</block>
   <block id="c1180fcf0651dd21fc1fde9763788bc7" category="paragraph">Si decide detectar varias cabinas de almacenamiento, debe introducir un rango de direcciones IP de red. A continuación, Unified Manager intentar establecer conexiones individuales con cada dirección IP de ese rango. Cada cabina de almacenamiento a la que se accedió correctamente se muestra en la página detectar y se puede añadir al dominio de gestión.</block>
   <block id="429de7c9197491bab6d29f7b2cb5f688" category="section-title">Detección de una sola cabina de almacenamiento</block>
@@ -6131,7 +6110,6 @@
   <block id="ca2f159e418d0a1e16d1ec0f9c828b64" category="list-text">En el cuadro de diálogo Seleccionar configuración, seleccione *Configuración de almacenamiento* y, a continuación, haga clic en *Siguiente*.</block>
   <block id="61c1d3a8ff5699b9b5134174c943681a" category="paragraph">Las cabinas de almacenamiento objetivo ahora están configuradas con los mismos ajustes de almacenamiento que la cabina de origen.</block>
   <block id="bd5c1b4a761c6f196221f804787289cb" category="summary">Si desea realizar operaciones de gestión, puede usar la opción Iniciar para abrir la instancia de SANtricity System Manager basada en el explorador que corresponde a una o más cabinas de almacenamiento.</block>
-  <block id="8911f9d4a79da70f2e2f26cc33ada8aa" category="paragraph">Si desea realizar operaciones de gestión, puede usar la opción Iniciar para abrir la instancia de System Manager basada en el explorador que corresponde a una o más cabinas de almacenamiento.</block>
   <block id="dc81e35ba70439bdea73c9ca731dedc7" category="list-text">En la página gestionar, seleccione una o más cabinas de almacenamiento que desee gestionar.</block>
   <block id="3eab8ee0f45fd9624973c05ec4303d5a" category="list-text">Haga clic en *Iniciar*.</block>
   <block id="a269bd71b079afa7d2ec900d0f51428d" category="paragraph">El sistema abre una nueva ventana y muestra la página de inicio de sesión de System Manager.</block>
@@ -6234,7 +6212,6 @@
   <block id="217134dfe43b3ff80c54d9a4e907a075" category="paragraph">El archivo se guarda en la carpeta de descargas del explorador con el nombre<block ref="252974d16dafbab7fa24068bff3d8237" prefix=" " category="inline-code"></block>.</block>
   <block id="4fe5208fe8ba8110b56b8acc0c96d17e" category="summary">La función Importar configuración es una operación en lote que carga las configuraciones desde una cabina de almacenamiento a varias cabinas de almacenamiento. La configuración que se importe durante esta operación dependerá de cómo esté configurada la cabina de almacenamiento de origen en SANtricity System Manager.</block>
   <block id="d77d1605f41e6be3f550ae05cfaca17d" category="doc">¿Qué configuración se importará?</block>
-  <block id="c7f22d49f002f26198a719f2496c2e98" category="paragraph">La función Importar configuración es una operación en lote que carga las configuraciones desde una cabina de almacenamiento a varias cabinas de almacenamiento. La configuración que se importe durante esta operación dependerá de cómo esté configurada la cabina de almacenamiento de origen en System Manager.</block>
   <block id="eb66762bbeb3f99c598499dad7ab6419" category="paragraph">Las siguientes configuraciones pueden importarse a varias cabinas:</block>
   <block id="25e8a6fd63ed997760d824ab39cd4591" category="list-text">*Alertas por correo electrónico* -- la configuración incluye una dirección de servidor de correo y las direcciones de correo electrónico de los destinatarios de las alertas.</block>
   <block id="6dad188816c45ced8208980247910468" category="list-text">*Alertas Syslog* -- las configuraciones incluyen una dirección de servidor syslog y un puerto UDP.</block>
@@ -6264,7 +6241,6 @@
   <block id="178bcda3e7560e5a5b5e8fa2c4f3b069" category="paragraph">Las cabinas de almacenamiento objetivo ahora están configuradas con los mismos servicios de directorio que la cabina de origen.</block>
   <block id="d18c8b00e80b505406982d1c60493e63" category="summary">Es posible quitar una o varias cabinas de almacenamiento si ya no se van a gestionar desde Unified Manager de SANtricity.</block>
   <block id="bc54c8923d2e900bc8b88d98dcd843d0" category="doc">Quite las cabinas de almacenamiento de SANtricity Unified Manager</block>
-  <block id="0c9f801d60084ecd96df66d961171ed0" category="paragraph">Es posible quitar una o varias cabinas de almacenamiento si ya no se van a gestionar desde Unified Manager.</block>
   <block id="46da89f7644863b59a53669234ecf705" category="paragraph">No es posible acceder a ninguna de las cabinas de almacenamiento que se quiten. Sin embargo, puede establecerse una conexión con cualquiera de las cabinas de almacenamiento eliminadas si se apunta un explorador directamente a su dirección IP o nombre de host.</block>
   <block id="928414d532f3a0bd88fe01efa33e49cc" category="paragraph">Al quitar una cabina de almacenamiento, ni ella ni sus datos se ven afectados de forma alguna. Si una cabina de almacenamiento se quita por error, es posible volver a añadirla.</block>
   <block id="c0906399540cc4c4cd2789192cf8a8b0" category="list-text">Seleccione la página *Administrar*.</block>
@@ -6343,7 +6319,6 @@
   <block id="df88e1007319fd66fb452b699b950fb9" category="list-text">Seleccione el o los grupos de cabinas de almacenamiento que desee eliminar.</block>
   <block id="e1b68ee4aa4066c82dae8c2b6a7bd2c7" category="summary">Conozca la forma en que los términos de Access Management se aplican a SANtricity Unified Manager.</block>
   <block id="63629e9e373cc31e6b4e5e89b63a6c1c" category="doc">Terminología de Access Management</block>
-  <block id="64aa268315e67fd45e17bcf91ff30bab" category="paragraph">Conozca la forma en que los términos de Access Management se aplican a Unified Manager.</block>
   <block id="4fbbbcdfcdfad5270a20167c67509f0b" category="paragraph">Active Directory</block>
   <block id="f08c83999b8fa7001f3f850f4b7b86bf" category="paragraph">Active Directory (AD) es un servicio de directorio de Microsoft en el que se utiliza LDAP para redes de dominio de Windows.</block>
   <block id="a2ebfe0e8e16f2c81865ce3da74bc605" category="paragraph">Vinculación</block>
@@ -6384,7 +6359,6 @@
   <block id="d308d3a2d458b8934e1a336510dd05c0" category="inline-link-macro">Importar certificados para cabinas</block>
   <block id="78620fb7eda6cb105045681ab3541f53" category="list-text"><block ref="78620fb7eda6cb105045681ab3541f53" category="inline-link-macro-rx"></block></block>
   <block id="5d5b10ce79f5c0dc539334629d62d864" category="summary">Utilice Access Management para establecer la autenticación de usuario en SANtricity Unified Manager.</block>
-  <block id="44e7f9b14d94f37d603139d60643ff98" category="paragraph">Utilice Access Management para establecer la autenticación de usuario en Unified Manager.</block>
   <block id="f40760940eef8069f0bcacc614829c32" category="paragraph">La configuración de Access Management funciona de la siguiente manera:</block>
   <block id="80cebe0082fb9e9d2629ddbf03a45e94" category="list-text">Un administrador inicia sesión en Unified Manager con un perfil de usuario que incluye permisos de administrador de seguridad.</block>
   <block id="2ff565b6d3ae8906f3c4fac50daf31d4" category="paragraph">La primera vez que se inicia sesión, el nombre de usuario<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> se muestra automáticamente y no se puede cambiar. La<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> el usuario tiene acceso completo a todas las funciones del sistema. La contraseña se debe establecer en el primer inicio de sesión.</block>
@@ -6468,7 +6442,6 @@
   <block id="b0bb92fee06d1badcc06e51e91665db6" category="paragraph">Los archivos se cargan y validan. La información del certificado aparece en la página Gestión de certificados.</block>
   <block id="34919a9493354af06c60b6a7efe26f66" category="summary">Para configurar la autenticación de Access Management, se debe establecer la comunicación entre un servidor LDAP y el host donde se ejecuta el proxy de servicios web para Unified Manager de SANtricity. A continuación, se deben asignar los grupos de usuarios LDAP a los roles de usuario local.</block>
   <block id="b828924e6cb61c82f7d84db873261628" category="doc">Añadir servidor de directorio</block>
-  <block id="4414343c3416e84cd36e3cad4675e6cf" category="paragraph">Para configurar la autenticación de Access Management, se debe establecer la comunicación entre un servidor LDAP y el host donde se ejecuta el proxy de servicios web para Unified Manager. A continuación, se deben asignar los grupos de usuarios LDAP a los roles de usuario local.</block>
   <block id="03f30a8d5213dbe70682a38cf1e15436" category="list-text">Debe iniciar sesión con un perfil de usuario que cuente con permisos de administración de seguridad. De lo contrario, no se mostrarán las funciones de Access Management.</block>
   <block id="0278292737686e16c85eb64c7a72864c" category="list-text">Debe haber grupos de usuarios definidos en el servicio de directorio.</block>
   <block id="e29e36ab1efa826c0f0f99155fcf6856" category="list-text">Deben estar disponibles las credenciales del servidor LDAP, incluidos el nombre de dominio y la URL del servidor y, de manera opcional, el nombre de usuario y la contraseña de la cuenta de enlace.</block>
@@ -6516,7 +6489,6 @@
   <block id="c5e16eedf47d62a7873e2f398675e3c9" category="doc">¿Qué debo saber antes de añadir un servidor de directorio?</block>
   <block id="8a26f9c1af451d8775363a647445ae49" category="summary">Access Management es un método para configurar la autenticación de usuario en SANtricity Unified Manager.</block>
   <block id="8a85e54e2f698ad0de66d093245f2e66" category="doc">Información general de Access Management</block>
-  <block id="d1cc45589c0084f17d53b1764541acde" category="paragraph">Access Management es un método para configurar la autenticación de usuario en Unified Manager.</block>
   <block id="ed5fe7f66e9072ed2fe64e1c8ad6737d" category="section-title">¿Qué métodos de autenticación están disponibles?</block>
   <block id="41315c44be734de1ba40d7ac966572b8" category="paragraph">Están disponibles los siguientes métodos de autenticación:</block>
   <block id="d49c4941abd4cbf48ddd6db7bbbb59b9" category="list-text">*Roles de usuario local* -- la autenticación se administra mediante funciones RBAC (control de acceso basado en roles). Los roles de usuario local incluyen perfiles de usuario predefinidos con permisos de acceso específicos.</block>
@@ -6532,7 +6504,6 @@
   <block id="5e2b2b6f8333b56b53fc5e3216758819" category="list-text"><block ref="5e2b2b6f8333b56b53fc5e3216758819" category="inline-link-macro-rx"></block></block>
   <block id="6537b14ab86690459051b15913eed344" category="summary">Los certificados dejan de ser de confianza cuando una cabina de almacenamiento intenta establecer una conexión con SANtricity Unified Manager, pero no se confirma que la conexión sea segura.</block>
   <block id="57978b55e3a3b1f8e477379b56230f8e" category="doc">Resuelva los certificados que no son de confianza</block>
-  <block id="06ae56054017bbf48392ef1bea4dfe7b" category="paragraph">Los certificados dejan de ser de confianza cuando una cabina de almacenamiento intenta establecer una conexión con Unified Manager, pero no se confirma que la conexión sea segura.</block>
   <block id="235d7e3807db91d7961342f6d13f3e3b" category="paragraph">En la página Certificado, puede resolver certificados que no son de confianza al importar un certificado autofirmado de la cabina de almacenamiento o al importar un certificado de una entidad de certificación (CA) que emitió un tercero de confianza.</block>
   <block id="951e2883c6a23f655f16e49f82ab2244" category="list-text">Si tiene pensado importar un certificado firmado por una CA:</block>
   <block id="f1260c6add938f658d4fa1c233c69f76" category="list-text">Generó una solicitud de firma de certificación (archivo .CSR) para cada controladora en la cabina de almacenamiento y la envió a la CA.</block>
@@ -6626,7 +6597,6 @@
   <block id="828436964eaf23a46c9ae630ed2d1c4c" category="paragraph">Todas las contraseñas de usuario local nuevas deben alcanzar o superar la configuración actual.</block>
   <block id="b9cba881bdd58bf9df0da788dc1b2941" category="summary">Desde la pestaña roles de usuario local, es posible ver las asignaciones de los usuarios a los roles predeterminados. Estas asignaciones forman parte de los RBAC aplicados en el proxy de servicios web de Unified Manager de SANtricity.</block>
   <block id="4f9286157c4a39a4a44a216160d5b42b" category="doc">Ver los roles de usuario local</block>
-  <block id="a0363d5fd0c0b077d52f4784dbe2bec9" category="paragraph">Desde la pestaña roles de usuario local, es posible ver las asignaciones de los usuarios a los roles predeterminados. Estas asignaciones forman parte de los RBAC aplicados en el proxy de servicios web de Unified Manager.</block>
   <block id="73ac0b03481ca2066ed032fc9c2875c2" category="paragraph">Los usuarios y las asignaciones no pueden cambiarse. Solo las contraseñas pueden modificarse.</block>
   <block id="c5c570ddef1c2b01ec882c74deba2a55" category="paragraph">Los usuarios se muestran en la tabla:</block>
   <block id="2bf59aca4b70fb1e276f68737ab54888" category="list-text">*Admin* -- Super administrador que tiene acceso a todas las funciones del sistema. Este usuario incluye todos los roles.</block>
@@ -6643,7 +6613,6 @@
   <block id="e34e556691be4149625cfdf5fedb58d5" category="list-text">Tipo<block ref="0f6969d7052da9261e31ddb6e88c136e" prefix=" " category="inline-code"></block> En el campo y, a continuación, haga clic en *Quitar*.</block>
   <block id="f6de1d0bce3350f9520d85df5dd89a15" category="paragraph">Se eliminará la configuración del servidor de directorio, la configuración de privilegios y las asignaciones de roles. Los usuarios ya no podrán iniciar sesión con las credenciales de este servidor.</block>
   <block id="8e2a365bae244df40d20169523b4c250" category="summary">Si es necesario, puede importar certificados para las cabinas de almacenamiento de modo que estas se puedan autenticar con el sistema donde se aloja SANtricity Unified Manager. Los certificados pueden estar firmados por una entidad de certificación (CA) o ser autofirmados.</block>
-  <block id="e6170c93eb142fb01923e9f9b0ef39f7" category="paragraph">Si es necesario, puede importar certificados para las cabinas de almacenamiento de modo que estas se puedan autenticar con el sistema donde se aloja Unified Manager. Los certificados pueden estar firmados por una entidad de certificación (CA) o ser autofirmados.</block>
   <block id="35bc59ae8725a73f71e22d5b7e2eda45" category="list-text">Si desea importar certificados de confianza, es necesario importar los certificados para las controladoras de las cabinas de almacenamiento mediante System Manager.</block>
   <block id="2f3bb55cd5666e46843ed94b99f1cc9c" category="list-text">Seleccione menú:Importar[certificados] para importar un certificado de CA o menú:Importar[certificados de la cabina de almacenamiento autofirmados] para importar un certificado autofirmado.</block>
   <block id="3ebb85ccf545d068b56aa6242e5d9739" category="list-text">En el cuadro de diálogo, seleccione el certificado y, a continuación, haga clic en *Importar*.</block>
@@ -6655,7 +6624,6 @@
   <block id="60a610051a0ea44e4970777b77bdffb3" category="list-text">Introduzca la contraseña nueva para el usuario seleccionado en los dos campos.</block>
   <block id="8f67454616784ed58a0ed5a40e3b22e9" category="paragraph">Si el usuario está conectado, el cambio de contraseña provocará el cierre de la sesión activa del usuario.</block>
   <block id="061e64cad01b4cd81351026b626d0e7e" category="summary">Los administradores pueden utilizar las funcionalidades de control de acceso basado en roles (RBAC) que se aplican en Unified Manager de SANtricity. Estas capacidades se denominan roles de usuario local.</block>
-  <block id="ba501c87876b2abc6f333f2281c9b0d8" category="paragraph">Los administradores pueden utilizar las funcionalidades de control de acceso basado en roles (RBAC) que se aplican en Unified Manager. Estas capacidades se denominan "roles de usuario local".</block>
   <block id="8605565fad22723762c246b949a49067" category="paragraph">Los roles de usuario local están preconfigurados en el sistema. Para usar roles de usuario local con fines de autenticación, los administradores pueden hacer lo siguiente:</block>
   <block id="e813f41914ff0b8b0460bd1058e97e83" category="paragraph">La<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> el usuario tiene acceso completo a todas las funciones del sistema.</block>
   <block id="56fd628ff241b004eb707c3ad9cdca7b" category="list-text">Un administrador revisa los perfiles de usuario, que están predefinidos y no pueden modificarse.</block>
@@ -6689,7 +6657,6 @@
   <block id="b7d673ba355ac52ddebf512e81785f50" category="list-text">Confirme la eliminación y haga clic en *Eliminar*.</block>
   <block id="bb1f88810526aebb75a95b8b6e03e6cb" category="paragraph">El certificado se eliminará de la tabla.</block>
   <block id="7f5fc7f5a6cfd2d629daa43027091634" category="summary">Las funcionalidades de control de acceso basado en roles (RBAC) incluyen usuarios predefinidos con uno o varios roles asignados. Cada rol incluye permisos para acceder a tareas en SANtricity Unified Manager.</block>
-  <block id="b6d27003498a8efabd89c3632f305a38" category="paragraph">Las funcionalidades de control de acceso basado en roles (RBAC) incluyen usuarios predefinidos con uno o varios roles asignados. Cada rol incluye permisos para acceder a tareas en Unified Manager.</block>
   <block id="536f38e388f0e686eaac049b4bfaf373" category="paragraph">Los roles permiten que los usuarios accedan a tareas de la siguiente manera:</block>
   <block id="ff3d7efd683a99e8ca518db8c7f93585" category="paragraph">Si un usuario no tiene permisos para una función determinada, esa función no se encuentra disponible para selección o no se muestra en la interfaz de usuario.</block>
   <block id="d07cc924ea2d447f0cb70624e22edde6" category="summary">Para Access Management, los administradores pueden usar las funcionalidades de lenguaje de marcado de aserción de seguridad (SAML) 2.0 que están integradas en la cabina.</block>
@@ -6794,7 +6761,6 @@
   <block id="9086a2f3fd5f3d5c9a3475d695bf17de" category="list-text">*Credenciales de privacidad* -- Seleccione un protocolo de privacidad que se utiliza para cifrar el contenido de los mensajes. A continuación, introduzca una contraseña de privacidad, que es necesaria cuando se establece o cambia el protocolo de privacidad. La contraseña debe tener entre 8 y 128 caracteres.</block>
   <block id="b36030520bf6fb6f82f2952d906f0dd4" category="summary">Puede configurar System Manager para algunas opciones de cabina generales y funciones complementarias.</block>
   <block id="c7f8006a54ae70968da2a44d61c94f4c" category="doc">Información general de la configuración</block>
-  <block id="2161120ac2f277c69a937d29896bb757" category="paragraph">Puede configurar System Manager para algunas opciones de cabina generales y funciones complementarias.</block>
   <block id="f01afbc659c3b1d4c71bba9b1a9ce3ea" category="section-title">¿Qué ajustes puedo configurar?</block>
   <block id="92a98c57d8dff609da2fceddaeac27a4" category="paragraph">La configuración de cabina incluye:</block>
   <block id="329b059dca9192ebf68525b6d3e3be44" category="inline-link-macro">Rendimiento y configuración de la caché</block>
@@ -7285,7 +7251,6 @@
   <block id="f22e8a38e4c78e6f8d7017760698f6d1" category="list-text">La configuración actual se elimina y se destruyen todos los datos existentes de la cabina de almacenamiento.</block>
   <block id="34704759a87970401f03f73f3e57c8f6" category="list-text">Todas las unidades quedan sin asignar.</block>
   <block id="4bdba401227da38e05e805640bc07392" category="summary">Las capacidades de RBAC (control de acceso basado en roles) presentes en la cabina de almacenamiento incluyen perfiles de usuario predefinidos con uno o varios roles asignados. Cada rol incluye permisos para acceder a tareas en SANtricity System Manager.</block>
-  <block id="2f9b4deb9315aed582af1e2cad742214" category="paragraph">Las capacidades de RBAC (control de acceso basado en roles) presentes en la cabina de almacenamiento incluyen perfiles de usuario predefinidos con uno o varios roles asignados. Cada rol incluye permisos para acceder a tareas en System Manager.</block>
   <block id="4af88e993472ad0efbe148c3d71082f9" category="paragraph">Puede accederse a los perfiles de usuario y a los roles asignados desde el menú:Configuración[Access Management &gt; roles de usuario local] desde la interfaz de usuario de cualquier System Manager.</block>
   <block id="730a090cd84a0ce605e346fc4d569c15" category="paragraph">Si un usuario no tiene permisos para determinada tarea, la tarea aparece atenuada o directamente no aparece en la interfaz de usuario.</block>
   <block id="a8e2e2e6f94a627dfb39ec0a4930c961" category="summary">La ventana Configuración de la unidad incluye información acerca de los atributos de seguridad de la unidad. Read/Write Accessible es uno de los atributos que se muestran si se bloquearon los datos de una unidad.</block>
@@ -7331,7 +7296,6 @@
   <block id="0095a9fa74d1713e43e370a7d7846224" category="paragraph">Exportar</block>
   <block id="4f5e62673b0e203ba449b54b3ace5662" category="paragraph">Haga clic en *Exportar* para guardar los datos de la tabla en un archivo de valores separados por comas (CSV).</block>
   <block id="19380508f9149606321ac832a3c00e8a" category="summary">Access Management es un método para establecer la autenticación de usuario en SANtricity System Manager. Los métodos de autenticación incluyen el control de acceso basado en roles (RBAC), los servicios de directorio y el lenguaje de marcado de aserción de seguridad (SAML) 2.0.</block>
-  <block id="09802636c4ae135257f67339b6132e62" category="paragraph">Access Management es un método para establecer la autenticación de usuario en System Manager.</block>
   <block id="1f5e202c614a1661cfc9d511376773ed" category="paragraph">Los métodos de autenticación incluyen el control de acceso basado en roles (RBAC), los servicios de directorio y el lenguaje de marcado de aserción de seguridad (SAML):</block>
   <block id="4b8217cf8d756a89a1dc65298ed13a9a" category="list-text">*RBAC/roles de usuario local* -- la autenticación se gestiona a través de capacidades RBAC aplicadas en la cabina de almacenamiento. Los roles de usuario local incluyen perfiles de usuario predefinidos con permisos de acceso específicos.</block>
   <block id="b0029d6c0b0a5e53814d3fbde9bfae85" category="list-text">*Servicios de directorio* -- la autenticación se administra a través de un servidor LDAP (protocolo ligero de acceso a directorios) y servicios de directorio, como Active Directory de Microsoft.</block>
@@ -7679,7 +7643,6 @@
   <block id="f0adc5d000173927e6565b7796988e8b" category="doc">¿Cómo se interpretan las estadísticas de Iser over InfiniBand?</block>
   <block id="594b7f21d6afec5d61bcd2260307666a" category="list-text">*Estadísticas de la interfaz Iser over InfiniBand* -- proporciona estadísticas para todos los puertos Iser over InfiniBand en la interfaz InfiniBand, que incluye estadísticas de rendimiento e información de errores de enlace asociados con cada puerto del switch.</block>
   <block id="ae8f19f0991a75dbac99ee6e45ba300b" category="summary">Es posible configurar los tiempos de espera en System Manager de SANtricity para que las sesiones inactivas de los usuarios se desconecten después de un periodo especificado.</block>
-  <block id="0d08d54101084156343832dde6b77679" category="paragraph">Es posible configurar los tiempos de espera en System Manager para que las sesiones inactivas de los usuarios se desconecten después de un periodo especificado.</block>
   <block id="7e21334170926970f8d92b45e8391954" category="paragraph">De manera predeterminada, el tiempo de espera de sesión para System Manager es de 30 minutos. Es posible ajustar el tiempo, o bien directamente pueden deshabilitarse los tiempos de espera de sesión.</block>
   <block id="e535d8be0b5cae9eeaf63966afda7bde" category="paragraph">Si se configura Access Management con las funcionalidades del lenguaje de marcado de aserción de seguridad (SAML) integradas en la cabina, es posible que se agote el tiempo de espera de sesión cuando la sesión SSO del usuario alcance su límite máximo. Esto puede ocurrir antes del tiempo de espera de sesión de System Manager.</block>
   <block id="5303e6808de2e1eb2cd0b535241f849f" category="list-text">En la sección General, seleccione *Habilitar/deshabilitar tiempo de espera de la sesión*.</block>
@@ -7732,7 +7695,6 @@
   <block id="077b0d6e3fa51a5e8f1cf3f1a320fbea" category="list-text">Cuando se deshabilita, se impiden las sesiones de detección a menos que el iniciador proporcione el IQN objetivo. Al deshabilitar las sesiones de detección sin nombre, se obtiene seguridad adicional.</block>
   <block id="43512d2d92a553a05db3b96c10f417cf" category="paragraph">Se muestra una barra de progreso cuando System Manager intenta registrar la controladora en el servidor iSNS. Este proceso puede llevar hasta cinco minutos.</block>
   <block id="e78959343eccc5753e5a6f69aa17e104" category="summary">Para la gestión de claves externas, debe importar dos tipos de certificados para la autenticación entre la cabina de almacenamiento y el servidor de gestión de claves, de forma tal que exista confianza mutua entre las dos entidades.</block>
-  <block id="6bb1fc83f2153c8e3dfddfa5b556e792" category="doc">¿Cómo saber qué certificados deben cargarse en System Manager para la gestión de claves externas?</block>
   <block id="9a4b083823a7c4b7786c0328f4a16e2a" category="paragraph">Un certificado de servidor de gestión de claves valida el servidor de gestión de claves para que la cabina de almacenamiento pueda confiar en su dirección IP. Recupere el archivo de certificado de servidor del servidor de gestión de claves y copie ese archivo en el host donde va a acceder a System Manager.</block>
   <block id="f4de7944e18e71c441a4663a52f63037" category="summary">Las funciones adicionales son las que no se incluyen en la configuración estándar de System Manager y pueden requerir una clave para su habilitación. Una función complementaria puede ser una sola función excepcional o un paquete de funciones agrupadas.</block>
   <block id="53abf357e5554f400762df96fa3c7756" category="doc">Cómo trabajar con las funciones complementarias</block>
@@ -8000,7 +7962,6 @@
   <block id="8502f5a1d81803e175c8a3c572fc9b9c" category="paragraph">*Opcional:* puede incluir otro servidor de claves haciendo clic en *Agregar servidor de claves*.</block>
   <block id="981aaa3b1d8f5d256493b92b6b493e0a" category="summary">Puede crear un banner de inicio de sesión que se presente a los usuarios antes de que puedan establecer sesiones en System Manager de SANtricity. El banner puede incluir un aviso de asesoría y un mensaje de consentimiento.</block>
   <block id="8efb09501bad8ce68b1a1bc93afb135d" category="doc">Configure el banner de inicio de sesión</block>
-  <block id="69bfc5b49cdbb5ecfe1a3226439e05f5" category="paragraph">Puede crear un banner de inicio de sesión que se presente a los usuarios antes de que puedan establecer sesiones en System Manager. El banner puede incluir un aviso de asesoría y un mensaje de consentimiento.</block>
   <block id="7335dfb2a6a5b54076e56c28f64c1b27" category="paragraph">Al crear un banner, este aparece antes de la pantalla de inicio de sesión en un cuadro de diálogo.</block>
   <block id="715a220c50a620ae5a87b5d1e1719b4e" category="list-text">En la sección General, seleccione *Configurar banner de inicio de sesión*.</block>
   <block id="795b64a6f7aa721a8a5c6f7bcdb2da8b" category="paragraph">Se abre el cuadro de diálogo Configurar banner de inicio de sesión.</block>
@@ -8091,7 +8052,6 @@
   <block id="67df9e4d8fc6a2a01205045d14761593" category="list-text">En *Gestión de claves de seguridad*, seleccione *Desbloquear unidades seguras*.</block>
   <block id="c73b1b4d687800d408f419f0f0df3f39" category="summary">Si el protocolo de tiempo de redes (NTP) no está habilitado, los relojes de las controladoras se pueden configurar manualmente, de manera que queden sincronizados con el cliente de gestión (el sistema que se utiliza para ejecutar el explorador que accede a System Manager de SANtricity).</block>
   <block id="98ab351cb9c5d5c191ae7f2acc9960e7" category="doc">Sincronice los relojes de la cabina de almacenamiento</block>
-  <block id="3a7965dd150006ce04e7d23d6db0b1a0" category="paragraph">Si el protocolo de tiempo de redes (NTP) no está habilitado, los relojes de las controladoras se pueden configurar manualmente, de manera que queden sincronizados con el cliente de gestión (el sistema que se utiliza para ejecutar el explorador que accede a System Manager).</block>
   <block id="5686e4a1839427d3f101f1242524feeb" category="paragraph">La sincronización garantiza que las marcas de tiempo del evento del registro de eventos coincidan con las marcas de tiempo escritas en los archivos de registro del host. Durante el proceso de sincronización, las controladoras siguen estando disponibles y siguen siendo operativas.</block>
   <block id="fdcb6fda8360a631ef2730c06e89ae28" category="paragraph">Si la opción NTP se encuentra habilitada en System Manager, no se debe usar esta opción para sincronizar los relojes. En cambio, NTP sincroniza automáticamente los relojes con un host externo que utiliza el protocolo de tiempo de redes simple (SNTP).</block>
   <block id="187a2d7806202a5a575270922290f2a4" category="paragraph">Una vez que se realiza la sincronización, se puede observar que las estadísticas de rendimiento se pierden o se alteran, las programaciones se ven afectadas (ASUP, snapshots, etc.) y las marcas de tiempo de los datos de registro se alteran. Para evitar este problema, se puede usar NTP.</block>
@@ -8112,7 +8072,6 @@
   <block id="2b62074ebca17815890f2c51cb4ca774" category="list-text">Tipo<block ref="eb399bcaca686f8609137153307eecf1" prefix=" " category="inline-code"></block> en el campo.</block>
   <block id="a747acce4934f1e57667359ed428848d" category="paragraph">Comienza la migración del paquete de funciones y se reinician las controladoras. Se eliminan los datos no escritos en la caché, lo que garantiza que no exista actividad de I/O. Las dos controladoras se reinician automáticamente para que el nuevo paquete de funciones entre en vigencia. La cabina de almacenamiento vuelve a responder cuando se completa el reinicio.</block>
   <block id="3c625277723f7e35643a56ecccb51d80" category="summary">En System Manager, es posible descargar el paquete de la CLI.</block>
-  <block id="934757b9623717972adcc349e85d6283" category="paragraph">En System Manager, es posible descargar el paquete de la CLI.</block>
   <block id="f0edcadd28eaa53b81b22a31b44b45b9" category="paragraph">La CLI proporciona un método a partir de texto para la configuración y supervisión de cabinas. Se comunica mediante https y utiliza la misma sintaxis que la CLI que está disponible en el paquete de software de gestión instalado de forma externa. Para descargar la CLI, no se requiere ninguna clave.</block>
   <block id="75842716a65060950b20cba161cbac95" category="paragraph">Debe haber disponible un entorno Java Runtime Environment (JRE), versión 8 y superior en el sistema de administración en el que planea ejecutar los comandos de la CLI.</block>
   <block id="bd5b00551ee618ada817137a1272291f" category="list-text">En *Complementos*, seleccione *interfaz de línea de comandos*.</block>
@@ -8380,8 +8339,6 @@
   <block id="483a5da192f46e3cfe8391d3ef234fc4" category="sidebar">Preguntas frecuentes</block>
   <block id="3023481996e16c0dd27c1aeeab45a6c4" category="sidebar">¿Qué sucede si no veo todos mis componentes de hardware?</block>
   <block id="4f77fb4cfa40635f17d21979b6692c01" category="sidebar">¿Qué sucede si no puedo ver todos mis hosts?</block>
-  <block id="009fd64f93ff18102999ecfeee8b7573" category="sidebar">Configuración de Unified Manager</block>
-  <block id="26ed02718973e705cd69ee6e109400e0" category="sidebar">System Manager</block>
   <block id="93af28c8ab635f0e7d402547ab0c929d" category="sidebar">Interfaz principal</block>
   <block id="fc78fae55edd9650c6455e58681d3aae" category="sidebar">Ver los datos de rendimiento</block>
   <block id="76cf11d4db12b1a45f4d62797b620d5e" category="sidebar">Gestione la configuración de la interfaz</block>
@@ -8694,14 +8651,10 @@
   <block id="45dc1f6fb3b875c733e188121fcc647a" category="paragraph">El archivo de solicitud de firma de certificación (CSR) generado externamente mediante parejas de claves públicas y privadas ahora puede importarse mediante System Manager.</block>
   <block id="c0f4196deec20490ebf6989158642c34" category="paragraph">La función de bloqueo de inicio de sesión ahora está disponible para los servicios web</block>
   <block id="a30347233ec617731633ca56f8f1b923" category="paragraph">Se puede configurar solo mediante la API de REST, ahora hay una nueva opción de bloqueo de inicio de sesión disponible para los servicios web integrados y proxy.</block>
-  <block id="877f007e3f321618e24a9962b07e63fa" category="sidebar">Gestión de cabina única con System Manager 11,9</block>
-  <block id="9c2cbf0c1a7244ea333628422695d560" category="sidebar">Gestión de varias cabinas con Unified Manager 7</block>
   <block id="12256f91aad97dd547dda71e221d63ce" category="sidebar">Documentos de SANtricity 11,9</block>
   <block id="320344fc6d13f7639d2b2c90f55506fa" category="sidebar">El software SANtricity 11,90 le permite conseguir el mejor rendimiento y sacar el máximo partido de las cabinas flash híbrido E-Series y de las cabinas all-flash EF-Series para aplicaciones con cargas de trabajo intensas, como los análisis de datos, la videovigilancia y el backup y recuperación de datos.</block>
   <block id="b26c3f1c1c8d9eb65323b2750c4c349d" category="sidebar">Documentación de software de SANtricity 11,90</block>
   <block id="90e8ac6688c66ac3fc81de93ba27235a" category="sidebar">System Manager y Unified Manager de SANtricity</block>
-  <block id="0b008f21f9758b84909b95140b0a532d" category="sidebar">Interfaz de System Manager</block>
-  <block id="29ac086a960081d77daa677c24463af3" category="sidebar">Interfaz de Unified Manager</block>
   <block id="e95315401141b931451e32ea694b6d92" category="sidebar">Especificaciones técnicas del software SANtricity</block>
   <block id="421eeeca306bdf1873654f04f6d8e61e" category="sidebar">Documentos de E-Series</block>
   <block id="b00771a05354ff5b2df1b388cfb6c874" category="sidebar">Documentos de sistemas E-Series</block>
@@ -8722,4 +8675,71 @@
   <block id="974ad78dc53c253ebfe5b2b8b376f353" category="sidebar">Herramientas y soporte</block>
   <block id="2bae42f280067110dfd52cc69a468364" category="sidebar">Active IQ (se requiere inicio de sesión)</block>
   <block id="54708ac788109e3332a896f8d957e38f" category="sidebar">Descargas de E-Series/SANtricity (se requiere inicio de sesión)</block>
+  <block id="511bc26995332ccd1bc373f2533ac9e7" category="doc">Acceda a SANtricity System Manager</block>
+  <block id="d5eb7087909dec2e661624440883bfe3" category="paragraph">Para acceder a la interfaz de usuario de SANtricity System Manager, se debe apuntar un explorador a la dirección IP de la controladora. Un asistente de configuración le ayuda a comenzar con la configuración del sistema.</block>
+  <block id="df45899b1d870d205c92f531b2f9cbca" category="doc">Instale SANtricity Unified Manager</block>
+  <block id="c37a83a89674fde8ffeaf12ba00d2af5" category="paragraph">Unified Manager de SANtricity se incluye con el proxy de servicios web, que es un servidor API RESTful que se instaló por separado en un sistema host para gestionar los sistemas de almacenamiento E-Series de NetApp.</block>
+  <block id="0a9898b156851883b0c35a15776338c8" category="doc">Acceda a Unified Manager de SANtricity</block>
+  <block id="6def903cf56aa77e14dd50ebb8fe2719" category="paragraph">Tras instalar el proxy de servicios web, puede acceder a SANtricity Unified Manager para gestionar varios sistemas de almacenamiento en una interfaz basada en web.</block>
+  <block id="ef256c4d218c47a2c04a18d10165ac0f" category="paragraph">System Manager de SANtricity informa sobre distintos estados de las unidades.</block>
+  <block id="00cffad3ca607922a6c706858259b403" category="paragraph">Las piezas de repuesto actúan como unidades en espera en los grupos de volúmenes RAID 1, RAID 5 o RAID 6 de SANtricity System Manager.</block>
+  <block id="f1a4437045c85126e53d06d8e40fd021" category="paragraph">Un sistema de almacenamiento en modo no óptimo se debe a un estado no válido de configuración del sistema. A pesar de este estado, se admite totalmente el acceso de I/O normal a los volúmenes existentes; no obstante, System Manager de SANtricity prohibirá algunas operaciones.</block>
+  <block id="4c1548b517bea01f9959a884be8575f3" category="paragraph">La página Inicio ofrece una vista de consola para la gestión cotidiana de la cabina de almacenamiento. Cuando se inicia sesión en SANtricity System Manager, la página Inicio es la primera pantalla que aparece.</block>
+  <block id="23d5a32d5d5e34af0ae01167c84aee80" category="paragraph">Cuando se identifican aplicaciones, System Manager de SANtricity recomienda automáticamente una configuración de volumen que optimiza el almacenamiento según el tipo de aplicación.</block>
+  <block id="37ab8a55610b93d738f7d12e13b2cbe8" category="paragraph">System Manager de SANtricity es una interfaz basada en Web que permite gestionar una cabina de almacenamiento en una sola vista.</block>
+  <block id="533d0451d27fab44f457ddccee791402" category="doc">Información general de la interfaz de SANtricity System Manager</block>
+  <block id="1d4af631b6959ddfabcf268d07e5d112" category="paragraph">SANtricity System Manager utiliza iconos y otros métodos para notificar los problemas en la cabina de almacenamiento.</block>
+  <block id="eca296c53d8021e175c9233b22d536a5" category="paragraph">Recovery Guru es un componente de SANtricity System Manager para diagnosticar problemas en la cabina de almacenamiento y recomendar procedimientos de recuperación para corregir los problemas.</block>
+  <block id="1eccb12b6beaa3afa33d88e6dbe96f3e" category="paragraph">SANtricity System Manager puede mostrar los valores de capacidad en gibibytes (GiB) o tebibytes (TiB).</block>
+  <block id="a9eafd95e4debe4d6c9e953b2123621f" category="doc">System Manager de SANtricity no detectó ningún host. ¿Qué debo hacer?</block>
+  <block id="784bf5e8aec03bc0a910429232366bbb" category="paragraph">Es posible navegar por SANtricity System Manager usando solo el teclado.</block>
+  <block id="31c67a5a03f932bcfb7ec2e8acde1918" category="paragraph">En el administrador del sistema de SANtricity se admiten las siguientes versiones de exploradores.</block>
+  <block id="06c1a3efc270606698185f701855e68d" category="paragraph">Las parejas reflejadas se configuran en la interfaz de SANtricity Unified Manager y, posteriormente, se gestionan en SANtricity System Manager.</block>
+  <block id="74b085142e307db471b1f86d42eaa7f6" category="paragraph">Puede cambiar la configuración del volumen de una pareja reflejada a fin de ajustar el punto de porcentaje en el que SANtricity System Manager envía una notificación de alerta cuando la capacidad reservada para una pareja reflejada está casi completa.</block>
+  <block id="f16e62f612f383ccc4993fccf8164eb5" category="paragraph">Si creó un volumen primario en una cabina de almacenamiento heredada que SANtricity System Manager no puede gestionar, es posible crear el volumen secundario en esta cabina con SANtricity System Manager.</block>
+  <block id="e8335355b809680a7a07946df0f22a21" category="paragraph">La función de mirroring se configura en la interfaz de SANtricity Unified Manager.</block>
+  <block id="3e8940a07dc6e6fcfaeb8f76e0e95d98" category="paragraph">En SANtricity System Manager, es posible descargar el paquete de la CLI.</block>
+  <block id="e3c6215a209a5d287059d476946fe408" category="paragraph">Las funciones adicionales son las que no se incluyen en la configuración estándar de SANtricity System Manager y pueden requerir una clave para su habilitación. Una función complementaria puede ser una sola función excepcional o un paquete de funciones agrupadas.</block>
+  <block id="97d42caaa63b71f8c24b9a49d4dd3cad" category="doc">¿Cómo saber qué certificados deben cargarse en SANtricity System Manager para la gestión de claves externas?</block>
+  <block id="2808e7b4862302de005363e8d7a9298b" category="paragraph">Es posible configurar SANtricity System Manager para algunas opciones generales de la cabina y funciones complementarias.</block>
+  <block id="ed6a026f78a1a9d6f206a0aac76aae36" category="paragraph">Es posible configurar los tiempos de espera en SANtricity System Manager para que las sesiones inactivas de los usuarios se desconecten después de un periodo especificado.</block>
+  <block id="7b5a3ab486c3b4b2ccfc9a760315a3ea" category="paragraph">Es posible configurar SANtricity System Manager para que envíe alertas de cabina de almacenamiento por correo electrónico, capturas SNMP y mensajes de syslog.</block>
+  <block id="04dfac63eb6f5f22800fa898350089ee" category="paragraph">Es posible utilizar System Manager de SANtricity para crear solicitudes de firma de certificados (CSR), importar certificados y gestionar certificados existentes.</block>
+  <block id="37292b1d6269336dad0fc27c14cc50e6" category="paragraph">La función Automatic Load Balancing garantiza que el tráfico de I/o entrante de los hosts se gestione dinámicamente y se equilibre entre ambas controladoras. Esta función está habilitada de forma predeterminada, pero se puede deshabilitar desde SANtricity System Manager.</block>
+  <block id="d446eaf3c37a2d1b64761e41e0d4c396" category="paragraph">Es posible obtener certificados firmados por CA para establecer comunicaciones seguras entre las controladoras y el explorador que se utiliza para acceder a SANtricity System Manager.</block>
+  <block id="71922c71c5f29b0c629529ba400ef998" category="paragraph">SANtricity System Manager permite verificar certificados revocados mediante un servidor de protocolo de estado de certificado en línea (OCSP), en lugar de cargar listas de revocación de certificados (CRL).</block>
+  <block id="d901918c71190564252df1392b4512b5" category="paragraph">En la tabla a continuación, se enumeran las funciones de SANtricity System Manager que se pueden utilizar para configurar y gestionar sesiones iSER over InfiniBand.</block>
+  <block id="97eb7f10d621b518571460a8d1bccf8b" category="paragraph">En la tabla a continuación, se enumeran las funciones de SANtricity System Manager que se pueden utilizar para configurar y gestionar sesiones NVMe over InfiniBand.</block>
+  <block id="09cab99fec7e2be20fb90f16f896325b" category="paragraph">Se deben sincronizar manualmente los relojes de las controladoras en la cabina de almacenamiento si se observa que las marcas de tiempo que se muestran en SANtricity System Manager no están alineadas con las marcas de tiempo del cliente de gestión (el ordenador que accede a SANtricity System Manager por medio del explorador). Esta tarea es necesaria solo si no se habilitó el protocolo de tiempo de redes (NTP) en SANtricity System Manager.</block>
+  <block id="a96d9e965e10c639f6190acfe6a05114" category="paragraph">Cuando se realizan ciertos cambios en SANtricity System Manager, como el cambio de la interfaz de gestión o el uso de SAML como método de autenticación, puede restringirse el uso de algunas herramientas y funciones externas.</block>
+  <block id="e89611f534bae4fdefd815eda302ac53" category="paragraph">Si recibe un error al intentar iniciar sesión en SANtricity System Manager, revise estas causas posibles.</block>
+  <block id="e07e1a01ada9b7dffd6f47c6fec15822" category="paragraph">Es posible cambiar la configuración de un volumen miembro del grupo de coherencia para ajustar el punto de porcentaje en el que SANtricity System Manager envía una notificación de alerta cuando la capacidad reservada de un volumen miembro está casi completa y para cambiar la política que debe utilizarse cuando la capacidad reservada alcanza su porcentaje máximo definido.</block>
+  <block id="5565955fb75572cd15d1180cd1e84891" category="paragraph">Es posible modificar la configuración de un grupo Snapshot y cambiarle el nombre, la configuración de eliminación automática, la cantidad máxima de imágenes Snapshot permitidas, el punto de porcentaje en el que SANtricity System Manager envía una alerta de capacidad reservada, o bien la política que debe utilizarse cuando la capacidad reservada alcanza el porcentaje máximo definido.</block>
+  <block id="f387ebe48cc5271f2c7b7a6d62f5e151" category="paragraph">La creación de un pool se inicia automáticamente cuando SANtricity System Manager detecta unidades sin asignar en la cabina de almacenamiento. Es posible usar la creación automática de pools para configurar fácilmente todas las unidades sin asignar en la cabina de almacenamiento en un pool y añadir unidades a pools existentes.</block>
+  <block id="167c625a6715ae3c7e8f536806a65484" category="paragraph">SANtricity System Manager establece límites en cuanto a la cantidad de unidades que pueden eliminarse de un pool.</block>
+  <block id="c37cb57fbf471d09e0a0c473b1af4395" category="paragraph">Las alertas de capacidad indican cuándo añadir unidades a un pool. Un pool necesita capacidad libre suficiente para realizar correctamente las operaciones de la cabina de almacenamiento. Es posible evitar interrupciones en estas operaciones si se configura SANtricity System Manager para que envíe alertas cuando la capacidad libre de un pool alcanza o supera un porcentaje especificado.</block>
+  <block id="c3ef549f921f9931ee4e54e5a9176597" category="paragraph">En SANtricity System Manager, se pueden crear imágenes y volúmenes Snapshot mediante los pasos siguientes.</block>
+  <block id="e96cf8b7e66ac097facaf28c82d66aa1" category="paragraph">El soporte técnico puede utilizar archivos de soporte de recuperación para solucionar problemas. El administrador del sistema de SANtricity guarda automáticamente estos archivos.</block>
+  <block id="fcaba1806566990b101abb2ccb59a73f" category="paragraph">SANtricity System Manager crea automáticamente una programación predeterminada para los mensajes de AutoSupport. Si lo prefiere, puede especificar su propia programación.</block>
+  <block id="d8d7d1838ede45a15d34d278b1c7dc22" category="paragraph">SANtricity System Manager permite enviar mensajes de AutoSupport al soporte técnico, sin esperar un mensaje programado.</block>
+  <block id="da1743923a3a0458c608ee2a3312d293" category="paragraph">Se pueden realizar sesiones iSCSI con hosts o cabinas de almacenamiento remotas en una relación de reflejo asíncrono. En las tablas a continuación, se enumeran las funciones de SANtricity System Manager que se pueden utilizar para configurar y gestionar estas sesiones iSCSI.</block>
+  <block id="3ec40952f7ff71ab9d51f1f50e2e10a2" category="paragraph">Unified Manager de SANtricity es una interfaz basada en Web que permite gestionar varias cabinas de almacenamiento en una sola vista.</block>
+  <block id="5f7016e066403d9d218a874cedc63541" category="paragraph">Es posible configurar tiempos de espera en SANtricity System Manager para que las sesiones inactivas de los usuarios se desconecten después de un periodo especificado.</block>
+  <block id="82a77b13aa8d00eca6e71aa5af7098d6" category="doc">Información general de la interfaz de SANtricity Unified Manager</block>
+  <block id="553b07cb69b9906d0f4d1c0b2c97bdae" category="paragraph">Los administradores pueden utilizar las funcionalidades de control de acceso basado en roles (RBAC) que se aplican en Unified Manager de SANtricity. Estas capacidades se denominan "roles de usuario local".</block>
+  <block id="f0254fcd04a8e1df1dc8c778e6189b01" category="paragraph">Es posible obtener e importar certificados firmados por CA para establecer un acceso seguro al sistema de gestión donde se aloja SANtricity Unified Manager.</block>
+  <block id="c5f9375676cadbc97263ea339c65e0df" category="paragraph">Para poder mostrar y gestionar los recursos de almacenamiento, SANtricity Unified Manager debe detectar las cabinas de almacenamiento que se desean gestionar en la red de la organización. Es posible detectar varias cabinas de almacenamiento o una sola.</block>
+  <block id="8205965c706fda540f0df394d1fd7df5" category="paragraph">Es posible usar SANtricity Unified Manager para importar la configuración de una cabina de almacenamiento a varias cabinas de almacenamiento. La función Importar configuración es una operación en lote que permite ahorrar tiempo cuando se necesitan configurar varias cabinas en la red.</block>
+  <block id="2b8e903f9231328c5dd4ac194fe0ed99" category="paragraph">Puede usar Unified Manager de SANtricity para actualizar a una nueva versión el software de sistema operativo SANtricity en varias cabinas de almacenamiento del mismo tipo.</block>
+  <block id="c5cdef1d414ec599aa9b2d1f28c67d4b" category="doc">Consideraciones para acceder a System Manager de SANtricity</block>
+  <block id="cdaae564ece8b6f3561a5e657337c464" category="paragraph">El mirroring síncrono o asíncrono se debe configurar en SANtricity Unified Manager y, posteriormente, se debe utilizar SANtricity System Manager para gestionar las sincronizaciones.</block>
+  <block id="69ffe5f70c823700a785fa58e3fbca15" category="paragraph">SANtricity Unified Manager incluye opciones de configuración para las funciones de mirroring de SANtricity, con las cuales los administradores pueden replicar datos entre dos cabinas de almacenamiento para la protección de los datos.</block>
+  <block id="bf29ed0b212c99188f3c0d2b5992aeee" category="paragraph">SANtricity Unified Manager muestra el estado de cada cabina de almacenamiento que se detectó.</block>
+  <block id="99e207225cad4e6c8aa147bb693de2fe" category="paragraph">Antes de usar Unified Manager de SANtricity para actualizar varias cabinas de almacenamiento, revise las consideraciones fundamentales como parte de la planificación.</block>
+  <block id="48003406c3332bb90497a98f2d79b26a" category="sidebar">Interfaz de SANtricity System Manager</block>
+  <block id="b4baa7fdabc903993aebeaaa5980c455" category="sidebar">Interfaz de SANtricity Unified Manager</block>
+  <block id="447d926e847ba6e7316f7c54ac601bab" category="sidebar">Gestión de cabina única con SANtricity System Manager 11,9</block>
+  <block id="4895fd90ba99a1644bbfaaa77bf80a43" category="sidebar">Gestión de varias cabinas con SANtricity Unified Manager 7</block>
+  <block id="3089984c7abf64387bdc035943beae57" category="sidebar">Configuración del administrador del sistema de SANtricity</block>
+  <block id="61ed698df3699989d8d782fe430d2755" category="sidebar">Configuración de SANtricity Unified Manager</block>
 </blocks>

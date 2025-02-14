@@ -11,7 +11,7 @@ summary: System Manager utiliza iconos y otros métodos para notificar los probl
 
 
 [role="lead"]
-System Manager utiliza iconos y otros métodos para notificar los problemas en la cabina de almacenamiento.
+SANtricity System Manager utiliza iconos y otros métodos para notificar los problemas en la cabina de almacenamiento.
 
 
 

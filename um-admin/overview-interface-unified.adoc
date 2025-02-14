@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, interface, GUI 
 summary: Unified Manager es una interfaz basada en Web que permite gestionar varias cabinas de almacenamiento en una sola vista. 
 ---
-= Información general de la interfaz de Unified Manager
+= Información general de la interfaz de SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-Unified Manager es una interfaz basada en Web que permite gestionar varias cabinas de almacenamiento en una sola vista.
+Unified Manager de SANtricity es una interfaz basada en Web que permite gestionar varias cabinas de almacenamiento en una sola vista.
 
 
 

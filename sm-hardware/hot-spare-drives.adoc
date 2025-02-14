@@ -11,7 +11,7 @@ summary: Las piezas de repuesto actúan como unidades en espera en los grupos de
 
 
 [role="lead"]
-Las piezas de repuesto actúan como unidades en espera en los grupos de volúmenes RAID 1, RAID 5 o RAID 6 de System Manager.
+Las piezas de repuesto actúan como unidades en espera en los grupos de volúmenes RAID 1, RAID 5 o RAID 6 de SANtricity System Manager.
 
 Son unidades completamente funcionales que no contienen datos. Si falla una unidad en el grupo de volúmenes, la controladora reconstruye automáticamente los datos de la unidad con error en una unidad asignada como pieza de repuesto.
 

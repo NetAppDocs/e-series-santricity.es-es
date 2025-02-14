@@ -11,7 +11,7 @@ summary: Las parejas reflejadas se configuran en la interfaz de Unified Manager 
 
 
 [role="lead"]
-Las parejas reflejadas se configuran en la interfaz de Unified Manager y, posteriormente, se gestionan en System Manager.
+Las parejas reflejadas se configuran en la interfaz de SANtricity Unified Manager y, posteriormente, se gestionan en SANtricity System Manager.
 
 Antes de crear una pareja reflejada, siga estas directrices:
 

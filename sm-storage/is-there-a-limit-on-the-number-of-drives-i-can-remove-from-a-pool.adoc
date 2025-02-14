@@ -11,7 +11,7 @@ summary: System Manager establece límites en cuanto a la cantidad de unidades q
 
 
 [role="lead"]
-System Manager establece límites en cuanto a la cantidad de unidades que pueden eliminarse de un pool.
+SANtricity System Manager establece límites en cuanto a la cantidad de unidades que pueden eliminarse de un pool.
 
 * No se puede reducir la cantidad de unidades en un pool a menos de 11.
 * No se pueden eliminar unidades si no hay suficiente capacidad libre en el pool para contener los datos de las unidades eliminadas cuando esos datos se redistribuyen a las unidades restantes del pool.

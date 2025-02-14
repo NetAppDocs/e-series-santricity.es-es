@@ -12,7 +12,7 @@ summary: Las alertas de capacidad indican cuándo añadir unidades a un pool. Un
 
 
 [role="lead"]
-Las alertas de capacidad indican cuándo añadir unidades a un pool. Un pool necesita capacidad libre suficiente para realizar correctamente las operaciones de la cabina de almacenamiento. Es posible evitar interrupciones en estas operaciones si se configura System Manager para que envíe alertas cuando la capacidad libre de un pool alcanza o supera un porcentaje especificado.
+Las alertas de capacidad indican cuándo añadir unidades a un pool. Un pool necesita capacidad libre suficiente para realizar correctamente las operaciones de la cabina de almacenamiento. Es posible evitar interrupciones en estas operaciones si se configura SANtricity System Manager para que envíe alertas cuando la capacidad libre de un pool alcanza o supera un porcentaje especificado.
 
 Este porcentaje se establece cuando se crea un pool mediante la opción *Configuración automática del pool* o la opción *Crear pool*. Si elige la opción automática, la configuración predeterminada determina automáticamente cuándo recibirá notificaciones de alerta. Si elige la opción de creación manual del pool, puede determinar la configuración de notificaciones de alerta, o bien, si lo prefiere, puede aceptar los ajustes predeterminados. Puede modificar esta configuración posteriormente en MENU:Settings[Alerts].
 

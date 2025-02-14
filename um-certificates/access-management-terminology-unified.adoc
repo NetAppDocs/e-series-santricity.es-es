@@ -11,7 +11,7 @@ summary: Conozca la forma en que los términos de Access Management se aplican a
 
 
 [role="lead"]
-Conozca la forma en que los términos de Access Management se aplican a Unified Manager.
+Conozca la forma en que los términos de Access Management se aplican a SANtricity Unified Manager.
 
 [cols="25h,~"]
 |===

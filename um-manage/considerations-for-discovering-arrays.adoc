@@ -11,7 +11,7 @@ summary: Para poder mostrar y gestionar los recursos de almacenamiento, Unified 
 
 
 [role="lead"]
-Para poder mostrar y gestionar los recursos de almacenamiento, Unified Manager debe detectar las cabinas de almacenamiento que se desean gestionar en la red de la organización. Es posible detectar varias cabinas de almacenamiento o una sola.
+Para poder mostrar y gestionar los recursos de almacenamiento, SANtricity Unified Manager debe detectar las cabinas de almacenamiento que se desean gestionar en la red de la organización. Es posible detectar varias cabinas de almacenamiento o una sola.
 
 
 

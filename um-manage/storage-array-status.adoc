@@ -11,7 +11,7 @@ summary: Unified Manager muestra el estado de cada cabina de almacenamiento dete
 
 
 [role="lead"]
-Unified Manager muestra el estado de cada cabina de almacenamiento detectada.
+SANtricity Unified Manager muestra el estado de cada cabina de almacenamiento que se detectó.
 
 Vaya a la página *Administrar - todo*. En esta página, es posible ver el estado de la conexión entre el proxy de servicios web y la cabina de almacenamiento.
 

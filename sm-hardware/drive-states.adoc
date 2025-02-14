@@ -11,7 +11,7 @@ summary: System Manager informa sobre distintos estados de las unidades.
 
 
 [role="lead"]
-System Manager informa sobre distintos estados de las unidades.
+System Manager de SANtricity informa sobre distintos estados de las unidades.
 
 
 

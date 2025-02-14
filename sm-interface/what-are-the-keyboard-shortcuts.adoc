@@ -11,7 +11,7 @@ summary: Es posible navegar por System Manager usando solo el teclado.
 
 
 [role="lead"]
-Es posible navegar por System Manager usando solo el teclado.
+Es posible navegar por SANtricity System Manager usando solo el teclado.
 
 
 

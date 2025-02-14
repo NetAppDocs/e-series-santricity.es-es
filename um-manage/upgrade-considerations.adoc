@@ -11,7 +11,7 @@ summary: Antes de usar Unified Manager para actualizar varias cabinas de almacen
 
 
 [role="lead"]
-Antes de usar Unified Manager para actualizar varias cabinas de almacenamiento, revise las consideraciones fundamentales como parte de la planificación.
+Antes de usar Unified Manager de SANtricity para actualizar varias cabinas de almacenamiento, revise las consideraciones fundamentales como parte de la planificación.
 
 
 

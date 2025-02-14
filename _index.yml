@@ -11,9 +11,9 @@ indexpage:
   tiles:
   - title: Manos a la obra
     links:
-    - title: Interfaz de System Manager
+    - title: Interfaz de SANtricity System Manager
       url: /sm-interface/overview-interface-sam.html"
-    - title: Interfaz de Unified Manager
+    - title: Interfaz de SANtricity Unified Manager
       url: "/um-admin/overview-interface-unified.html"
     - title: Especificaciones técnicas del software SANtricity
       url: https://www.netapp.com/pdf.html?item=/media/7676-ds-3891.pdf

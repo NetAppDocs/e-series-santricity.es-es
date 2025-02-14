@@ -12,7 +12,7 @@ summary: Es posible obtener e importar certificados firmados por CA para estable
 
 
 [role="lead"]
-Es posible obtener e importar certificados firmados por CA para establecer un acceso seguro al sistema de gestión donde se aloja Unified Manager.
+Es posible obtener e importar certificados firmados por CA para establecer un acceso seguro al sistema de gestión donde se aloja SANtricity Unified Manager.
 
 .Antes de empezar
 Debe iniciar sesión con un perfil de usuario que cuente con permisos de administración de seguridad. De lo contrario, no se mostrarán las funciones de certificación.

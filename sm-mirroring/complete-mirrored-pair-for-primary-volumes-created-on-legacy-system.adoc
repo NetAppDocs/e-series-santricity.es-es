@@ -12,7 +12,7 @@ summary: Si creó un volumen primario en una cabina de almacenamiento heredada q
 
 
 [role="lead"]
-Si creó un volumen primario en una cabina de almacenamiento heredada que System Manager no puede gestionar, es posible crear el volumen secundario en esta cabina con System Manager.
+Si creó un volumen primario en una cabina de almacenamiento heredada que SANtricity System Manager no puede gestionar, es posible crear el volumen secundario en esta cabina con SANtricity System Manager.
 
 .Acerca de esta tarea
 Es posible realizar un mirroring asíncrono entre las cabinas heredadas que usan una interfaz diferente y las cabinas más recientes que pueden gestionarse mediante System Manager.

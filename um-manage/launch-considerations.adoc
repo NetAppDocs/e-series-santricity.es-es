@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, considerations, access system manager 
 summary: Es posible seleccionar una o varias cabinas de almacenamiento y usar la opción Iniciar para abrir SANtricity System Manager cuando se desean configurar y gestionar las cabinas de almacenamiento. 
 ---
-= Consideraciones para acceder a System Manager
+= Consideraciones para acceder a System Manager de SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-Es posible seleccionar una o varias cabinas de almacenamiento y usar la opción Iniciar para abrir System Manager cuando se desean configurar y gestionar las cabinas de almacenamiento.
+Es posible seleccionar una o varias cabinas de almacenamiento y usar la opción Iniciar para abrir SANtricity System Manager cuando se desean configurar y gestionar las cabinas de almacenamiento.
 
 System Manager es una aplicación integrada en las controladoras, que está conectada a la red a través de un puerto de gestión Ethernet. Incluye todas las funciones basadas en cabina.
 

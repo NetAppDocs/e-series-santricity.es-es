@@ -12,7 +12,7 @@ summary: La creación de un pool se inicia automáticamente cuando System Manage
 
 
 [role="lead"]
-La creación de un pool se inicia automáticamente cuando System Manager detecta unidades sin asignar en la cabina de almacenamiento. Es posible usar la creación automática de pools para configurar fácilmente todas las unidades sin asignar en la cabina de almacenamiento en un pool y añadir unidades a pools existentes.
+La creación de un pool se inicia automáticamente cuando SANtricity System Manager detecta unidades sin asignar en la cabina de almacenamiento. Es posible usar la creación automática de pools para configurar fácilmente todas las unidades sin asignar en la cabina de almacenamiento en un pool y añadir unidades a pools existentes.
 
 .Antes de empezar
 Para abrir el cuadro de diálogo Configuración automática del pool se debe presentar alguna de estas condiciones:

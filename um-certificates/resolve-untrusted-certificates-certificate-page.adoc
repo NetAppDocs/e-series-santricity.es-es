@@ -12,7 +12,7 @@ summary: Los certificados dejan de ser de confianza cuando una cabina de almacen
 
 
 [role="lead"]
-Los certificados dejan de ser de confianza cuando una cabina de almacenamiento intenta establecer una conexión con Unified Manager, pero no se confirma que la conexión sea segura.
+Los certificados dejan de ser de confianza cuando una cabina de almacenamiento intenta establecer una conexión con SANtricity Unified Manager, pero no se confirma que la conexión sea segura.
 
 En la página Certificado, puede resolver certificados que no son de confianza al importar un certificado autofirmado de la cabina de almacenamiento o al importar un certificado de una entidad de certificación (CA) que emitió un tercero de confianza.
 

@@ -11,7 +11,7 @@ summary: 'Es posible utilizar System Manager para crear solicitudes de firma de 
 
 
 [role="lead"]
-Es posible utilizar System Manager para crear solicitudes de firma de certificados (CSR), importar certificados y gestionar certificados existentes.
+Es posible utilizar System Manager de SANtricity para crear solicitudes de firma de certificados (CSR), importar certificados y gestionar certificados existentes.
 
 
 

@@ -12,7 +12,7 @@ summary: Puede configurar System Manager para algunas opciones de cabina general
 
 
 [role="lead"]
-Puede configurar System Manager para algunas opciones de cabina generales y funciones complementarias.
+Es posible configurar SANtricity System Manager para algunas opciones generales de la cabina y funciones complementarias.
 
 
 

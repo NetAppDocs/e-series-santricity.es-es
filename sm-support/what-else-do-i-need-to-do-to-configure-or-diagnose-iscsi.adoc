@@ -12,7 +12,7 @@ summary: Se pueden realizar sesiones iSCSI con hosts o cabinas de almacenamiento
 
 
 [role="lead"]
-Se pueden realizar sesiones iSCSI con hosts o cabinas de almacenamiento remotas en una relación de reflejo asíncrono. En las tablas a continuación, se enumeran las funciones de System Manager que se pueden utilizar para configurar y gestionar estas sesiones iSCSI.
+Se pueden realizar sesiones iSCSI con hosts o cabinas de almacenamiento remotas en una relación de reflejo asíncrono. En las tablas a continuación, se enumeran las funciones de SANtricity System Manager que se pueden utilizar para configurar y gestionar estas sesiones iSCSI.
 
 [NOTE]
 ====

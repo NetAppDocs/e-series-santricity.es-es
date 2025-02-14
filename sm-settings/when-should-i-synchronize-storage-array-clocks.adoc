@@ -11,7 +11,7 @@ summary: 'Se deben sincronizar manualmente los relojes de las controladoras en l
 
 
 [role="lead"]
-Se deben sincronizar manualmente los relojes de las controladoras en la cabina de almacenamiento si se observa que las marcas de tiempo que se muestran en System Manager no están alineadas con las marcas de tiempo del cliente de gestión (el ordenador que accede a System Manager por medio del explorador). Esta tarea es necesaria solo si no se habilitó el protocolo de tiempo de redes (NTP) en System Manager.
+Se deben sincronizar manualmente los relojes de las controladoras en la cabina de almacenamiento si se observa que las marcas de tiempo que se muestran en SANtricity System Manager no están alineadas con las marcas de tiempo del cliente de gestión (el ordenador que accede a SANtricity System Manager por medio del explorador). Esta tarea es necesaria solo si no se habilitó el protocolo de tiempo de redes (NTP) en SANtricity System Manager.
 
 [NOTE]
 ====

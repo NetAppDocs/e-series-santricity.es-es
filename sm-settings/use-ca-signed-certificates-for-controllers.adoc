@@ -12,7 +12,7 @@ summary: Es posible obtener certificados firmados por CA para establecer comunic
 
 
 [role="lead"]
-Es posible obtener certificados firmados por CA para establecer comunicaciones seguras entre las controladoras y el explorador que se utiliza para acceder a System Manager.
+Es posible obtener certificados firmados por CA para establecer comunicaciones seguras entre las controladoras y el explorador que se utiliza para acceder a SANtricity System Manager.
 
 .Antes de empezar
 * Debe iniciar sesión con un perfil de usuario que cuente con permisos de administración de seguridad. De lo contrario, no se mostrarán las funciones de certificación.

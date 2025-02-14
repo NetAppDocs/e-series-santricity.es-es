@@ -12,7 +12,7 @@ summary: Puede cambiar la configuración del volumen de una pareja reflejada a f
 
 
 [role="lead"]
-Puede cambiar la configuración del volumen de una pareja reflejada a fin de ajustar el punto de porcentaje en el que System Manager envía una notificación de alerta cuando la capacidad reservada para una pareja reflejada está casi completa.
+Puede cambiar la configuración del volumen de una pareja reflejada a fin de ajustar el punto de porcentaje en el que SANtricity System Manager envía una notificación de alerta cuando la capacidad reservada para una pareja reflejada está casi completa.
 
 .Pasos
 . Seleccione MENU:almacenamiento[Pools y grupos de volúmenes].

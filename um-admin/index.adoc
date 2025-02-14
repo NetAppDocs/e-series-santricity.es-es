@@ -11,4 +11,4 @@ summary: Unified Manager 7 de SANtricity
 
 
 [role="lead"]
-Unified Manager es una interfaz basada en Web que permite gestionar varias cabinas de almacenamiento en una sola vista.
+Unified Manager de SANtricity es una interfaz basada en Web que permite gestionar varias cabinas de almacenamiento en una sola vista.
