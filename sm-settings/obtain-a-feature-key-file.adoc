@@ -27,9 +27,6 @@ En esta tarea, se describe cómo obtener la información requerida para la funci
 . En System Manager, busque Identificador de habilitación de funciones. Vaya a MENU:Settings[System] y, a continuación, desplácese hacia abajo hasta *Add-ons*. Busque *Identificador de habilitación de funciones*. Registre el número de la opción Identificador de habilitación de funciones.
 . Busque y registre el código para la activación de la función. Para paquetes de funciones, este código se proporciona en las instrucciones correspondientes para realizar la conversión.
 +
-Es posible acceder a las instrucciones de NetApp en https://www.netapp.com/support-and-training/documentation/eseries-santricity/["Centro de documentación para sistemas E-Series y EF-Series de NetApp"^].
-
-+
 Para funciones excepcionales, es posible acceder al código de activación en el sitio de soporte de la siguiente manera:
 
 +

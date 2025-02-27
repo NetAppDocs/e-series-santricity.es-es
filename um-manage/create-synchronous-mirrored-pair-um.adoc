@@ -16,7 +16,7 @@ Para configurar el mirroring síncrono, debe crear una pareja reflejada que incl
 
 [NOTE]
 ====
-Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
+Esta función no está disponible en el sistema de almacenamiento EF600/EF600C o EF300/EF300C.
 
 ====
 .Antes de empezar

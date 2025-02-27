@@ -20,6 +20,10 @@ De forma predeterminada, el aprovisionamiento de recursos está habilitado en si
 
 .Antes de empezar
 * Debe tener una cabina de almacenamiento EF300 o EF600.
++
+
+NOTE: DULBE no es compatible con las cabinas de almacenamiento EF300C o EF600C por el momento.
+
 * Debe tener grupos de volúmenes SSD o pools, donde todas las unidades admiten la funcionalidad de recuperación de error de bloque lógico no escrito o desasignado (DULBE). De lo contrario, la opción de aprovisionamiento de recursos no está disponible.
 
 

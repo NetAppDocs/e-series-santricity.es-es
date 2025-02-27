@@ -29,7 +29,7 @@ Si planea configurar el mirroring, tenga en cuenta los siguientes requisitos.
 
 [NOTE]
 ====
-El mirroring síncrono no está disponible en las cabinas de almacenamiento EF600 o EF300.
+La función de mirroring síncrono no está disponible en las cabinas de almacenamiento EF600/EF600C o EF300/EF300C.
 
 ====
 * Debe tener dos cabinas de almacenamiento.

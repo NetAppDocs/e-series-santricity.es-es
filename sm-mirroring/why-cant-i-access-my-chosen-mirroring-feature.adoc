@@ -15,7 +15,7 @@ La función de mirroring se configura en la interfaz de SANtricity Unified Manag
 
 [NOTE]
 ====
-El mirroring síncrono no está disponible en las cabinas de almacenamiento EF600 o EF300.
+La función de mirroring síncrono no está disponible en las cabinas de almacenamiento EF600/EF600C o EF300/EF300C.
 
 ====
 Para habilitar y configurar el mirroring entre dos cabinas, compruebe lo siguiente:

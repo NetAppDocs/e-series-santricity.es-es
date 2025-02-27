@@ -16,6 +16,28 @@ En la siguiente tabla, se describen las nuevas funciones de SANtricity System Ma
 
 
 
+== Nuevas características en la versión 11.90R1
+
+[cols="35h,~"]
+|===
+| Nueva función | Descripción 
+
+
+ a| 
+Nuevos modelos del sistema de almacenamiento: EF300C y EF600C
+ a| 
+Esta versión presenta los sistemas de almacenamiento NVMe all-flash EF300C y EF600C. EF300C y EF600C son versiones flash de alta capacidad de los sistemas de almacenamiento EF300 y EF600 actuales. Las unidades SSD NVMe de alta capacidad de tamaños de 30TB TB o 60TB TB son compatibles con EF300C y EF600C. EF300C/EF600C es compatible para uso exclusivo de pools de discos dinámicos sin compatibilidad con RAID heredado.
+
+
+
+ a| 
+Soporte para interfaces de SAS de 12Gb Gb en EF4000
+ a| 
+La controladora E4000 ahora admite tarjetas de interfaz del host SAS de 12Gb Gb.
+
+|===
+
+
 == Nuevas funciones en la versión 11,90
 
 [cols="35h,~"]

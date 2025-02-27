@@ -224,7 +224,7 @@ System Manager no proporciona ninguna opción para crear volúmenes finos. Si se
 ====
 [NOTE]
 ====
-Los volúmenes finos no están disponibles en los sistemas de almacenamiento EF600 o EF300.
+Los volúmenes finos no están disponibles en el sistema de almacenamiento EF600/EF600C o EF300/EF300C.
 
 ====
 [cols="25h,~"]

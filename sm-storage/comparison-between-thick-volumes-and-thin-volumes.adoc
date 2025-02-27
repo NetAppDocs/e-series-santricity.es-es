@@ -40,7 +40,7 @@ Volúmenes finos
  a| 
 * Los volúmenes finos se crean únicamente desde un pool, no desde un grupo de volúmenes.
 * Los volúmenes finos deben ser RAID 6.
-* Los volúmenes finos no están disponibles en los sistemas de almacenamiento EF600 o EF300.
+* Los volúmenes finos no están disponibles en el sistema de almacenamiento EF600/EF600C o EF300/EF300C.
 * Debe usar la CLI para crear volúmenes finos.
 * A diferencia de los volúmenes gruesos, el espacio necesario para los volúmenes finos no se asigna durante la creación, pero se otorga, bajo demanda, en un momento posterior.
 * Un volumen fino permite sobreasignar su tamaño. Es decir, se puede asignar un tamaño de LUN que sea mayor que el tamaño del volumen. A continuación se puede expandir el volumen según sea conveniente (si es necesario, se pueden añadir unidades en el proceso) sin expandir el tamaño del LUN y, por lo tanto, sin desconectar a los usuarios.

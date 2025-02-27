@@ -18,7 +18,7 @@ También se puede modificar el porcentaje en el que se envía una alerta (umbral
 
 [NOTE]
 ====
-Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.
+Esta función no está disponible en el sistema de almacenamiento EF600/EF600C o EF300/EF300C.
 
 ====
 El sistema expande automáticamente la capacidad asignada de acuerdo con el límite de capacidad establecido. El límite de capacidad establecido permite limitar el crecimiento automático del volumen fino por debajo de la capacidad notificada. Cuando la cantidad de datos escritos se acerca a la capacidad asignada, es posible cambiar el límite de capacidad establecido.

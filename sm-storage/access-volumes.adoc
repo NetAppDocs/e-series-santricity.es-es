@@ -19,7 +19,7 @@ El volumen de acceso se utiliza en la siguiente instancia:
 +
 [NOTE]
 ====
-La gestión en banda no está disponible para los sistemas de almacenamiento EF600 o EF300.
+La gestión en banda con el volumen de acceso no está disponible para los sistemas de almacenamiento E4000, EF600/EF600C o EF300/EF300C.
 
 ====
 

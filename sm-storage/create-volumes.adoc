@@ -102,8 +102,8 @@ System Manager puede sugerir una configuración de volumen según la aplicación
 * La cantidad máxima de volúmenes permitidos en un grupo de volúmenes es de 256.
 * La cantidad máxima de volúmenes permitidos en un pool depende del modelo del sistema de almacenamiento:
 +
-** 2,048 volúmenes (series EF600 y E5700)
-** 1,024 volúmenes (EF300)
+** 2.048 volúmenes (serie EF600, EF600C y E5700)
+** 1.024 volúmenes (EF300 y EF300C TB)
 ** 512 volúmenes (series E4000 y E2800)
 
 
@@ -346,6 +346,6 @@ System Manager crea los volúmenes nuevos en los pools y grupos de volúmenes se
 * Realice cualquier modificación necesaria del sistema operativo en el host de la aplicación para que las aplicaciones puedan usar el volumen.
 * Ejecute la utilidad específica del sistema operativo (disponible de un proveedor de terceros) y, a continuación, ejecute el comando SMcli `-identifyDevices` para correlacionar los nombres de los volúmenes con los nombres de las cabinas de almacenamiento host.
 +
-SMcli está disponible directamente a través de SANtricity System Manager. Esta versión descargable de SMcli está disponible en las controladoras E4000, EF600, EF300, E5700, EF570, E2800 y EF280. Para descargar la SMcli dentro del Administrador del sistema SANtricity, seleccione *Configuración* > *sistema* y *Complementos* > *interfaz de línea de comandos* .
+SMcli está disponible directamente a través de SANtricity System Manager. Esta versión descargable de SMcli está disponible en las controladoras E4000, EF600, EF600C, EF300, EF300C, E5700, EF570, E2800 y EF280. Para descargar la SMcli dentro del Administrador del sistema SANtricity, seleccione *Configuración* > *sistema* y *Complementos* > *interfaz de línea de comandos* .
 
 

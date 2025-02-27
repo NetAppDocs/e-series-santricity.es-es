@@ -31,7 +31,7 @@ Para habilitar y configurar el mirroring entre dos cabinas, debe usar la interfa
 
 [NOTE]
 ====
-El mirroring síncrono no está disponible en las cabinas de almacenamiento EF300 o EF600.
+La función de mirroring síncrono no está disponible en las cabinas de almacenamiento EF300/EF300C o EF600/EF600C.
 
 ====
 * Debe tener dos cabinas de almacenamiento.

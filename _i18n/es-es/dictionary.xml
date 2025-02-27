@@ -990,7 +990,6 @@
   <block id="d660209c330f02bb38e8659bae6f7d87" category="list-text">Elimina toda la capacidad reservada para cada volumen miembro del grupo de coherencia Snapshot (si está seleccionado).</block>
   <block id="f5b7242871c7e38119218bf8bacfa990" category="summary">Es posible editar el nombre de la caché SSD y visualizar el estado, las capacidades máxima y actual, el estado de las funciones Drive Security y Garantía de datos, y los volúmenes y las unidades asociadas.</block>
   <block id="21006395f0494e955888b243b91b9fea" category="doc">Cambiar la configuración de la caché SSD</block>
-  <block id="04bbd2c132c1093db28e447b3653bb4f" category="paragraph">Esta función no está disponible en los sistemas de almacenamiento EF600 o EF300.</block>
   <block id="e7ba533ee273e4d365e80c9c55d661bf" category="list-text">Seleccione la caché SSD que desea editar y, a continuación, haga clic en *Ver/editar configuración*.</block>
   <block id="efcecb34c8abd12a5a1d6adb55a9a429" category="paragraph">Se muestra el cuadro de diálogo Configuración de caché SSD.</block>
   <block id="ac84fab32f52b7806064f3707fc5210f" category="list-text">Revise o edite la configuración de la caché SSD según corresponda.</block>
@@ -1151,7 +1150,6 @@
   <block id="824735b7ccd41f0f46e67057d1a5caa5" category="paragraph">Volúmenes finos</block>
   <block id="52334a81da7547dbe0a5723b5066a830" category="list-text">Los volúmenes finos se crean únicamente desde un pool, no desde un grupo de volúmenes.</block>
   <block id="ea7a3e597c665a39ba483dcd4c6f8800" category="list-text">Los volúmenes finos deben ser RAID 6.</block>
-  <block id="5b48e77fd7668c15e4d278280b54ae19" category="list-text">Los volúmenes finos no están disponibles en los sistemas de almacenamiento EF600 o EF300.</block>
   <block id="ab1005edb422f1f2812bee5e6a3ee9b1" category="list-text">Debe usar la CLI para crear volúmenes finos.</block>
   <block id="eca1fedfbba5199344e1611bffc12099" category="list-text">A diferencia de los volúmenes gruesos, el espacio necesario para los volúmenes finos no se asigna durante la creación, pero se otorga, bajo demanda, en un momento posterior.</block>
   <block id="e2ecdd5ccb060b8eb5cdc94fe0dbc8ca" category="list-text">Un volumen fino permite sobreasignar su tamaño. Es decir, se puede asignar un tamaño de LUN que sea mayor que el tamaño del volumen. A continuación se puede expandir el volumen según sea conveniente (si es necesario, se pueden añadir unidades en el proceso) sin expandir el tamaño del LUN y, por lo tanto, sin desconectar a los usuarios.</block>
@@ -2058,7 +2056,6 @@
   <block id="23509c39f2453599ca0877d32956ae09" category="list-text">La capacidad para un volumen grueso se asigna cuando se crea el volumen.</block>
   <block id="5310bc5e64d1f64e025eb1c642e2bba8" category="list-text">La capacidad para un volumen fino se asigna como datos cuando se escribe en el volumen.</block>
   <block id="059801af7cde1a87cf3c098887a187f9" category="paragraph">El thin provisioning ayuda a evitar que se desperdicie capacidad asignada y permite que las empresas ahorren en costos iniciales de almacenamiento. Sin embargo, el aprovisionamiento completo ofrece la ventaja de una menor latencia, porque todo el almacenamiento se asigna de una vez cuando se crean los volúmenes gruesos.</block>
-  <block id="e2b8fbf01b4ff47fbb96c92ac379ea78" category="paragraph">Los sistemas de almacenamiento EF600 y EF300 no admiten thin provisioning.</block>
   <block id="089e479d3dc64139ab1266d151b32d32" category="section-title">Características de volúmenes</block>
   <block id="796dfd432b6f644d61e91352515bb6d2" category="paragraph">Cada volumen de un pool o grupo de volúmenes puede tener sus propias características individuales según los tipos de datos se almacenarán en el volumen. Algunas de esas características son:</block>
   <block id="7c1d052253e33c65465a5eb406bb3dc2" category="list-text">*Tamaño de segmento* -- un segmento es la cantidad de datos en kilobytes (KiB) que se almacenan en una unidad antes de que la matriz de almacenamiento pase a la siguiente unidad de la franja (grupo RAID). El tamaño del segmento es igual o menor que la capacidad del grupo de volúmenes. El tamaño del segmento es fijo y no se puede cambiar para los pools.</block>
@@ -2481,7 +2478,6 @@
   <block id="638b5ec826787200f55db76541b5b778" category="paragraph">Un grupo de volúmenes puede contener unidades con o sin capacidad DA, pero todas las unidades deben poseer capacidad DA para que pueda usarse esta función.</block>
   <block id="67f499ebbd7fdad55cde14381c77d246" category="paragraph">Muestra si el aprovisionamiento de recursos está disponible para este grupo. El aprovisionamiento de recursos es una función disponible en las cabinas de almacenamiento EF300 y EF600, lo que permite poner en uso los volúmenes de inmediato sin proceso de inicialización en segundo plano.</block>
   <block id="583c0f2e390971cb9f4ba4ce9747868e" category="paragraph">Indica si la protección contra pérdida de bandeja está disponible. La protección contra pérdida de bandeja garantiza accesibilidad a los datos en los volúmenes de un grupo de volúmenes si se produce una pérdida total de comunicación con una bandeja.</block>
-  <block id="fd12b513859f856de91f86c6941047de" category="paragraph">Muestra si la protección contra pérdida de cajón está disponible, que solo se ofrece si se utiliza una bandeja de unidades que contiene cajones. La protección contra pérdida de cajón garantiza accesibilidad a los datos en los volúmenes de un grupo de volúmenes si se produce una pérdida total de comunicación con un solo cajón en una bandeja de unidades.</block>
   <block id="145bb60ec8160f7c202bcdea28c6a17a" category="paragraph">Muestra los tamaños de bloque que se pueden crear para los volúmenes del grupo:</block>
   <block id="f94466cc14329c7744e6e57db10ed742" category="example-title">Características de unidades del método Manual</block>
   <block id="5ca219b54399500b176823f866ee1383" category="paragraph">Tipo de medios</block>
@@ -3328,7 +3324,6 @@
   <block id="78cad8caffd843a6d8697519b35e65a7" category="paragraph">La cantidad de bytes asignados en la caché SSD que contienen datos de volúmenes base. Los bytes disponibles, los bytes asignados y los bytes de datos de usuario se usan para computar el porcentaje de asignación de caché y el porcentaje de utilización de caché.</block>
   <block id="8a815b2a47535f1623438fab12c61953" category="summary">Un volumen de acceso es un volumen configurado en fábrica de la cabina de almacenamiento que se utiliza para la comunicación con la cabina de almacenamiento y el host mediante la conexión de I/o del host. El volumen de acceso requiere un número de unidad lógica (LUN).</block>
   <block id="da5b269ce13f310ea60da5646f66f4df" category="list-text">*Administración en banda* -- el volumen de acceso se utiliza para una conexión en banda para administrar la matriz de almacenamiento. Esto solo puede llevarse a cabo si la cabina de almacenamiento se gestiona con la interfaz de línea de comandos (CLI).</block>
-  <block id="b07f190bd057ec5ae997cb6fe0661683" category="paragraph">La gestión en banda no está disponible para los sistemas de almacenamiento EF600 o EF300.</block>
   <block id="c77cfe09f0da7405a83c73fb323b653d" category="paragraph">Un volumen de acceso se crea automáticamente la primera vez que se asigna un volumen a un host. Por ejemplo, si asigna Volume_1 y Volume_2 a un host, cuando observe los resultados de esa asignación, notará la existencia de tres volúmenes (Volume_1, Volume_2 y Access).</block>
   <block id="1f7334c99cc83f3bab939dd30e1ec973" category="paragraph">Si no desea crear hosts automáticamente ni gestionar una cabina de almacenamiento en banda con la CLI, no necesita el volumen de acceso; por lo tanto, puede eliminarlo para liberar el LUN. Esta acción quita la asignación de volumen a LUN y todas las conexiones de gestión en banda al host.</block>
   <block id="29d7996b2976c1f055a281f550665aae" category="summary">Para iniciar la importación de almacenamiento desde un sistema remoto a un sistema de almacenamiento E-Series local, utilice el asistente Importar almacenamiento remoto.</block>
@@ -8115,8 +8110,6 @@
   <block id="2ab0aa4e6f963bdda6156f57930e7a34" category="list-text">En System Manager, busque y registre el número de serie del chasis. Para ver este número de serie, debe pasar el ratón por el icono Centro de soporte.</block>
   <block id="d8ab4f4f4bd758e305ce24ae089739e7" category="list-text">En System Manager, busque Identificador de habilitación de funciones. Vaya a MENU:Settings[System] y, a continuación, desplácese hacia abajo hasta *Add-ons*. Busque *Identificador de habilitación de funciones*. Registre el número de la opción Identificador de habilitación de funciones.</block>
   <block id="1e892535381bacc3eae14862eb515b1a" category="list-text">Busque y registre el código para la activación de la función. Para paquetes de funciones, este código se proporciona en las instrucciones correspondientes para realizar la conversión.</block>
-  <block id="b7c76db9b2472e615129452598c32a70" category="inline-link">Centro de documentación para sistemas E-Series y EF-Series de NetApp</block>
-  <block id="19c1dae7ed1abf9eb3b6c5146df9b1d5" category="paragraph">Es posible acceder a las instrucciones de NetApp en<block ref="da76044833cc021823434c8291982304" category="inline-link-rx"></block>.</block>
   <block id="ead7d7ce373cd886b6b7a1a60db53284" category="paragraph">Para funciones excepcionales, es posible acceder al código de activación en el sitio de soporte de la siguiente manera:</block>
   <block id="e7626dadbaccf1c6de0466c8e9271bce" category="list-text">Inicie sesión en<block ref="9a6f401ca1e7e89d8a0c29fb0cbe81b7" category="inline-link-rx"></block>.</block>
   <block id="78e85ed9fdf2fdf631f1825f112c9596" category="list-text">Vaya a *licencias de software* para su producto.</block>
@@ -8448,11 +8441,7 @@
   <block id="aab3238922bcc25a6f606eb525ffdc56" category="paragraph">14</block>
   <block id="8613985ec49eb8f757ae6439e879bb2a" category="paragraph">90</block>
   <block id="d1b1ed9561d588b34b9b60028f6966b9" category="admonition">Si se configura Access Management con las funcionalidades del lenguaje de marcado de aserción de seguridad (SAML) integradas en la cabina, es posible que se agote el tiempo de espera de sesión cuando la sesión SSO del usuario alcance su límite máximo. Esto puede ocurrir antes del tiempo de espera de sesión de System Manager.</block>
-  <block id="cd038504338f9921b8afe6d5ed6c6232" category="paragraph">El mirroring síncrono no está disponible en los sistemas de almacenamiento EF600 o EF300.</block>
-  <block id="b84bb83d3d8cd48ddc066fe0c6d41ead" category="paragraph">El mirroring síncrono no está disponible en las cabinas de almacenamiento EF600 o EF300.</block>
   <block id="56bdcfc544aad0bd6521d9f11a6f56dd" category="admonition">Para las controladoras EF600 y EF300, los volúmenes primario y secundario de una pareja reflejada asíncrona deben coincidir con el mismo protocolo, nivel de soporte, tamaño de segmento, tipo de seguridad y nivel de RAID. Las parejas reflejadas asíncronas no elegibles no aparecerán en la lista de volúmenes disponibles.</block>
-  <block id="2df1194323f38bb1b30fdb6a9b3d4da3" category="paragraph">Esta función no está disponible para el mirroring síncrono en el sistema de almacenamiento EF600 o EF300.</block>
-  <block id="ada2454c6d83cd46018f8d1e49aa4123" category="paragraph">El mirroring síncrono no está disponible en las cabinas de almacenamiento EF300 o EF600.</block>
   <block id="ecd6161dde3044403e9aa37dc3bc6ee3" category="paragraph">Sí^3^</block>
   <block id="770594fef329f8bc4364a508f0a7d73a" category="paragraph">^1^ El volumen objetivo debe tener una capacidad igual o superior a la Capacidad notificada de un volumen fino.</block>
   <block id="b7c484278db16efdf320efb752c9d501" category="paragraph">^2^ No se puede usar la copia del volumen Snapshot hasta que finalice la operación de copia en línea.</block>
@@ -8501,7 +8490,6 @@
   <block id="f3623da9f6be936979297f1fa268895c" category="paragraph">El monitor de eventos envía alertas al servidor de syslog cada vez que ocurre un evento que genera alertas. Para seguir configurando los ajustes de syslog para los registros de auditoría, consulte<block ref="8ff4ea61d8cfa4d348011e356d65d49a" category="inline-link-rx"></block>.</block>
   <block id="30af9425adf237457aaff58f7cb21bc9" category="paragraph">Después de la configuración, se envían todos los registros de auditoría nuevos al servidor de syslog. Los registros anteriores no se transfieren. Para seguir configurando los ajustes de syslog de las alertas, consulte<block ref="7b44e3078f5548e67f8cbe8894b93e12" category="inline-link-rx"></block>.</block>
   <block id="8067406a66fe34c09bf78be3e6ae6fc1" category="list-text">System Manager: Una interfaz basada en web que se utiliza para gestionar una cabina de almacenamiento individual en la red.</block>
-  <block id="9cd5d105b8b19ef4ba01cc21ecc14cdc" category="admonition">Las cabinas de almacenamiento EF600 y EF300 no admiten el mirroring síncrono o los volúmenes finos.</block>
   <block id="f3e5a6d7f7194a35f77d2084efb9ef4f" category="paragraph">Vistas de unidades, controladoras y componentes</block>
   <block id="3354319c9dafbfd43c07abbfb0de1326" category="paragraph">Para cambiar entre las vistas frontal y trasera de la bandeja, seleccione * Unidades * o * Controladores y componentes * en el extremo derecho (el enlace que aparece depende de la vista actual). La vista *Drives* muestra las unidades y las bahías de unidades vacías. La vista *Controladores y componentes* muestra los controladores y cualquier módulo IOM (ESM), contenedores de alimentación/ventilador o bahías de controlador vacías. En la parte inferior de la página, también puede seleccionar *Mostrar todas las unidades*.</block>
   <block id="3effdbd16c4bb389ee66095c1d8d2ee9" category="inline-link">11,80 Notas de la versión</block>
@@ -8570,7 +8558,6 @@
   <block id="e4709a73a287a5f033f5b1b5142cb74d" category="inline-image-macro">Configuración del sistema</block>
   <block id="de8011abde4e4344c82af51912b3ce19" category="paragraph"><block ref="2bce2265bb1e82bb0d0858adf2dafedf" category="inline-image-macro-rx" type="image"></block> *Configuración del sistema*</block>
   <block id="9dcfdd4141be874fb7eb13880a5fd525" category="paragraph"><block ref="1cb7eabea009b4b9cfe98093989eadbf" category="inline-image-macro-rx" type="image"></block> *Soporte*</block>
-  <block id="a06a26693ca66f654ff2c2dcecc3e13f" category="paragraph">Unified Manager es un software basado en web que se utiliza para gestionar todo el dominio. Desde una vista central puede ver el estado de las nuevas cabinas E-Series y EF-Series, como los sistemas E4000, E2800, EF280, EF300, E5700, EF570 y EF600. También puede realizar operaciones en lote en cabinas de almacenamiento seleccionadas.</block>
   <block id="bb426997d075117a34b0e82e716e9988" category="inline-image-macro">Detectar cabina de almacenamiento</block>
   <block id="49e4791fdcd34bdf6b59ed172268d67f" category="paragraph"><block ref="9ff56b9b0514866913bcdc835ac16829" category="inline-image-macro-rx" type="image"></block> * Descubra las cabinas de almacenamiento*</block>
   <block id="9506f0fd0f7f1b07960b15b4c9e68d1a" category="inline-image-macro">Iniciar</block>
@@ -8615,7 +8602,6 @@
   <block id="f1683bd5111055cff52f3434b437bc43" category="admonition">El período de análisis de medios predeterminado se establece en 120 días.</block>
   <block id="630fb851299f40643b158fbf236a2e8c" category="list-text">*Tamaño de bloque nativo* – el tamaño de bloque del volumen coincide con el tamaño del bloque de la unidad, ya sea 512 o 4K.</block>
   <block id="f6c667584c393a129ba0a1a453306311" category="list-text">* Tamaño de bloque emulado de 512 * - las unidades son de 4K pero el tamaño de bloque reportado es de 512.</block>
-  <block id="478ac1c2fc93cbde8a7f38011e1743e9" category="paragraph">SMcli está disponible directamente a través de SANtricity System Manager. Esta versión descargable de SMcli está disponible en las controladoras E4000, EF600, EF300, E5700, EF570, E2800 y EF280. Para descargar la SMcli dentro del Administrador del sistema SANtricity, seleccione *Configuración* &gt; *sistema* y *Complementos* &gt; *interfaz de línea de comandos* .</block>
   <block id="8372cda02b92707718d83873eed70eff" category="image-alt">Estructura de pools y grupos de volúmenes</block>
   <block id="861b7c78b853932749bb7fa53551562a" category="image-alt">Información general de Snapshot</block>
   <block id="454b39575eef78952a66832d854eb9a8" category="paragraph">Es posible gestionar el almacenamiento del sistema a través de SANtricity System Manager.</block>
@@ -8742,4 +8728,25 @@
   <block id="3ff0cf51d8c2e66a61c1a36c2258ffb7" category="sidebar">El software SANtricity 11,9 le permite conseguir el mejor rendimiento y sacar el máximo partido de las cabinas flash híbrido E-Series y de las cabinas all-flash EF-Series para aplicaciones con cargas de trabajo intensas, como los análisis de datos, la videovigilancia y el backup y recuperación de datos.</block>
   <block id="18ca0e475e67b79b5c1367dc3fece234" category="sidebar">Documentación de software SANtricity 11,9</block>
   <block id="1bde2299408b1369159daef73cb92e8b" category="sidebar">Documentos del software SANtricity 11,9</block>
+  <block id="bea9b4f39c26a537662fed44c4b4ab7e" category="admonition">Las cabinas de almacenamiento EF600/EF600C y EF300/EF300C no admiten mirroring síncrono o volúmenes finos.</block>
+  <block id="07ceb34078b6425ead2bdf25c28b4765" category="paragraph">Unified Manager es un software basado en web que se utiliza para gestionar todo el dominio. Desde una vista central puede ver el estado de las nuevas cabinas E-Series y EF-Series, como los sistemas E4000, E2800, EF280, EF300, E5700, EF570, EF600, EF300C y EF600C. También puede realizar operaciones en lote en cabinas de almacenamiento seleccionadas.</block>
+  <block id="a8d536a226bc5040b931337a7644185d" category="paragraph">La función de mirroring síncrono no está disponible en las cabinas de almacenamiento EF600/EF600C o EF300/EF300C.</block>
+  <block id="68d28abd2b869bd5795d298dfa9e846e" category="paragraph">Esta función no está disponible en el sistema de almacenamiento EF600/EF600C o EF300/EF300C.</block>
+  <block id="465143b73392c408d4e639ff6ed7cf18" category="paragraph">La función de mirroring síncrono no está disponible en las cabinas de almacenamiento EF300/EF300C o EF600/EF600C.</block>
+  <block id="c1ef781eafa3554e3ab8e8623b4e5a71" category="paragraph">El mirroring síncrono no está disponible en el sistema de almacenamiento EF600/EF600C o EF300/EF300C.</block>
+  <block id="5a7b6df104eae510976ebef6d294bbc2" category="paragraph">Esta función no está disponible para el mirroring síncrono en los sistemas de almacenamiento EF600/EF600C o EF300/EF300C.</block>
+  <block id="b9e88ad6836c4f5d794f382de8f1f2c9" category="admonition">DULBE no es compatible con las cabinas de almacenamiento EF300C o EF600C por el momento.</block>
+  <block id="4b8add2dc8ff6506b02ecbd9ce368929" category="summary">El aprovisionamiento de recursos es una función disponible en las cabinas de almacenamiento EF300, EF300C, EF600 y EF600C, lo que permite poner en uso los volúmenes de inmediato sin proceso de inicialización en segundo plano.</block>
+  <block id="90992e53bcf79cefee988e4147be01b6" category="paragraph">La gestión en banda con el volumen de acceso no está disponible para los sistemas de almacenamiento E4000, EF600/EF600C o EF300/EF300C.</block>
+  <block id="16ebf1283fdb23275c2211d15a82e2cd" category="list-text">Los volúmenes finos no están disponibles en el sistema de almacenamiento EF600/EF600C o EF300/EF300C.</block>
+  <block id="1ac9fe85275ed11ba0a95e5559f5af80" category="paragraph">Muestra si la protección contra pérdida de cajón está disponible, que solo se ofrece si se utiliza una bandeja de unidades que contiene cajones. La protección contra pérdida de cajón garantiza accesibilidad a los datos en los volúmenes de un grupo de volúmenes si se produce una pérdida total de comunicación con un solo cajón en una bandeja de unidades.</block>
+  <block id="d1395fc90f77b84babf353a6d9d715db" category="list-text">2.048 volúmenes (serie EF600, EF600C y E5700)</block>
+  <block id="896a61fe313f0f38c6a4575f53d2958d" category="list-text">1.024 volúmenes (EF300 y EF300C TB)</block>
+  <block id="61c9873f4f28e9fd9310c86bf6f0e33f" category="paragraph">SMcli está disponible directamente a través de SANtricity System Manager. Esta versión descargable de SMcli está disponible en las controladoras E4000, EF600, EF600C, EF300, EF300C, E5700, EF570, E2800 y EF280. Para descargar la SMcli dentro del Administrador del sistema SANtricity, seleccione *Configuración* &gt; *sistema* y *Complementos* &gt; *interfaz de línea de comandos* .</block>
+  <block id="4f0494c1ee4d34a0be2e413265889dcb" category="paragraph">Los sistemas de almacenamiento EF600/EF600C y EF300/EF300C no admiten thin provisioning.</block>
+  <block id="baee5b8c18b240b4edfcc1ae3fe154f0" category="section-title">Nuevas características en la versión 11.90R1</block>
+  <block id="efe2c9d7be92af10ac48d790dd8ccfed" category="paragraph">Nuevos modelos del sistema de almacenamiento: EF300C y EF600C</block>
+  <block id="0b2fb9383075b5994701c94b27e4b6ee" category="paragraph">Esta versión presenta los sistemas de almacenamiento NVMe all-flash EF300C y EF600C. EF300C y EF600C son versiones flash de alta capacidad de los sistemas de almacenamiento EF300 y EF600 actuales. Las unidades SSD NVMe de alta capacidad de tamaños de 30TB TB o 60TB TB son compatibles con EF300C y EF600C. EF300C/EF600C es compatible para uso exclusivo de pools de discos dinámicos sin compatibilidad con RAID heredado.</block>
+  <block id="c4c050a1cbe127eb24c705844a070872" category="paragraph">Soporte para interfaces de SAS de 12Gb Gb en EF4000</block>
+  <block id="e8b3561f4b15fa164cdd5717ae511188" category="paragraph">La controladora E4000 ahora admite tarjetas de interfaz del host SAS de 12Gb Gb.</block>
 </blocks>
