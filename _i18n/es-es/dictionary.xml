@@ -4173,8 +4173,6 @@
   <block id="91dbe600e65db881ab696db75fb0c577" category="summary">La función AutoSupport y la función manual Support Data Collection proporcionan medios para recoger datos en un bundle de soporte al cliente a fin de que el soporte técnico solucione y analice problemas de forma remota.</block>
   <block id="0c0abab82c0a4d319b8e472ca9976625" category="doc">¿Qué datos recojo?</block>
   <block id="8d1df5e3923cb2221d6d97c979f4a6a9" category="paragraph">El bundle de soporte al cliente reúne todos los tipos de información acerca de la cabina de almacenamiento en un archivo comprimido único. La información recogida incluye la configuración física, la configuración lógica, la información de versión, los eventos, los archivos de registro, datos de rendimiento y rendimiento. Solo el soporte técnico utiliza la información para resolver problemas con la cabina de almacenamiento.</block>
-  <block id="0053cb3da5cd9357da42c9285388e7c5" category="summary">En SANtricity System Manager, puede actualizar el software y el firmware de la controladora mediante estos pasos.</block>
-  <block id="638e87c9a312fe766009341e23b4dbd4" category="doc">Flujo de trabajo de actualización de firmware y software de la controladora</block>
   <block id="53f6e38bfb8737cd78f3afe40356d59e" category="summary">En SANtricity System Manager, puede configurar la función AutoSupport siguiendo estos pasos.</block>
   <block id="abcd71b1bdd83d175115a06e7bd6993c" category="doc">Flujo de trabajo de la función AutoSupport</block>
   <block id="73395a1692486db8dd22d48c16c91ded" category="summary">System Manager permite enviar mensajes de AutoSupport al soporte técnico sin esperar a un mensaje programado.</block>
@@ -5856,10 +5854,6 @@
   <block id="f20f6d487c692f545d0e34b3f99face7" category="list-text">*Certificados autofirmados*</block>
   <block id="f052a72434f6bc613c169fc96093903a" category="paragraph">Además, se pueden utilizar certificados autofirmados. Si el administrador intenta detectar las cabinas sin importar los certificados firmados, Unified Manager muestra un cuadro de diálogo de error en el que el administrador puede aceptar el certificado autofirmado. El certificado autofirmado de la cabina de almacenamiento se marcará como de confianza y la cabina de almacenamiento se añadirá a Unified Manager.</block>
   <block id="5e83f689355fdec866c155c6fe9b323e" category="paragraph">Si no confía en las conexiones a la cabina de almacenamiento, seleccione *Cancelar* y valide la estrategia de certificación de seguridad de la cabina de almacenamiento antes de añadir la cabina de almacenamiento a Unified Manager.</block>
-  <block id="7d63fa7b66beb048adb4cb5412f78f29" category="summary">Puede usar Unified Manager para actualizar a una nueva versión el software de sistema operativo SANtricity en varias cabinas de almacenamiento del mismo tipo.</block>
-  <block id="35a02fabedaff63c9eea49354c0479c7" category="doc">Cómo funcionan las actualizaciones</block>
-  <block id="37e1222cab25890a0cd0d01b19f4489d" category="paragraph">Los siguientes pasos constituyen un flujo de trabajo de alto nivel para ejecutar actualizaciones de software:</block>
-  <block id="bc2ada3b24f486f7b98ff3159828f426" category="list-text">Puede descargar el archivo de software del sistema operativo SANtricity más reciente en el sitio de soporte (hay un enlace disponible en Unified Manager en la página *Soporte*). Guarde el archivo en el sistema host de gestión (el host desde donde se accede a Unified Manager en un explorador) y descomprima el archivo.</block>
   <block id="e1cfa79dbec62347a6be30a50cfa9692" category="doc">¿Qué debo saber antes de crear una pareja reflejada?</block>
   <block id="afb89ed7edef0cc7dc3ef4d41d3887c2" category="list-text">El mirroring asíncrono se admite en controladoras con puertos de host Fibre Channel (FC) o iSCSI, mientras que el mirroring síncrono solo se admite en controladoras con puertos de host FC.</block>
   <block id="73dcca5b467c57c53c2567f1a1dccb56" category="summary">Unified Manager muestra el estado de cada cabina de almacenamiento detectada.</block>
@@ -8620,7 +8614,6 @@
   <block id="22ec79b8668bcaf4a33eed694079e8b1" category="summary">La función AutoSupport admite los protocolos HTTPS y SMTP para entregar mensajes de AutoSupport al soporte técnico.</block>
   <block id="dd0ab6e042458857b9d76ede295a637e" category="image-alt">Actualizar las ubicaciones del firmware</block>
   <block id="da31bdea5b9fdfa2bf077a70c49a1d66" category="image-alt">Flujo de trabajo de AutoSupport</block>
-  <block id="0ceabfdc68af97f8a0c7393faf135de8" category="image-alt">Flujo de trabajo de actualización de software y firmware de la controladora</block>
   <block id="ece14770330886bc2d41238acbfe48aa" category="summary">Unified Manager 7 de SANtricity</block>
   <block id="3cd6f83d0a9a8330c077dfc98649ab8a" category="paragraph">Puede configurar los ajustes utilizados a través de Unified Manager de SANtricity.</block>
   <block id="0be150145c60047c6667d2bfbc4085d9" category="image-alt">Conexión fuera de banda al cliente de gestión de red con un explorador web.</block>
@@ -8713,7 +8706,6 @@
   <block id="f0254fcd04a8e1df1dc8c778e6189b01" category="paragraph">Es posible obtener e importar certificados firmados por CA para establecer un acceso seguro al sistema de gestión donde se aloja SANtricity Unified Manager.</block>
   <block id="c5f9375676cadbc97263ea339c65e0df" category="paragraph">Para poder mostrar y gestionar los recursos de almacenamiento, SANtricity Unified Manager debe detectar las cabinas de almacenamiento que se desean gestionar en la red de la organización. Es posible detectar varias cabinas de almacenamiento o una sola.</block>
   <block id="8205965c706fda540f0df394d1fd7df5" category="paragraph">Es posible usar SANtricity Unified Manager para importar la configuración de una cabina de almacenamiento a varias cabinas de almacenamiento. La función Importar configuración es una operación en lote que permite ahorrar tiempo cuando se necesitan configurar varias cabinas en la red.</block>
-  <block id="2b8e903f9231328c5dd4ac194fe0ed99" category="paragraph">Puede usar Unified Manager de SANtricity para actualizar a una nueva versión el software de sistema operativo SANtricity en varias cabinas de almacenamiento del mismo tipo.</block>
   <block id="c5cdef1d414ec599aa9b2d1f28c67d4b" category="doc">Consideraciones para acceder a System Manager de SANtricity</block>
   <block id="cdaae564ece8b6f3561a5e657337c464" category="paragraph">El mirroring síncrono o asíncrono se debe configurar en SANtricity Unified Manager y, posteriormente, se debe utilizar SANtricity System Manager para gestionar las sincronizaciones.</block>
   <block id="69ffe5f70c823700a785fa58e3fbca15" category="paragraph">SANtricity Unified Manager incluye opciones de configuración para las funciones de mirroring de SANtricity, con las cuales los administradores pueden replicar datos entre dos cabinas de almacenamiento para la protección de los datos.</block>
@@ -8749,4 +8741,7 @@
   <block id="0b2fb9383075b5994701c94b27e4b6ee" category="paragraph">Esta versión presenta los sistemas de almacenamiento NVMe all-flash EF300C y EF600C. EF300C y EF600C son versiones flash de alta capacidad de los sistemas de almacenamiento EF300 y EF600 actuales. Las unidades SSD NVMe de alta capacidad de tamaños de 30TB TB o 60TB TB son compatibles con EF300C y EF600C. EF300C/EF600C es compatible para uso exclusivo de pools de discos dinámicos sin compatibilidad con RAID heredado.</block>
   <block id="c4c050a1cbe127eb24c705844a070872" category="paragraph">Soporte para interfaces de SAS de 12Gb Gb en EF4000</block>
   <block id="e8b3561f4b15fa164cdd5717ae511188" category="paragraph">La controladora E4000 ahora admite tarjetas de interfaz del host SAS de 12Gb Gb.</block>
+  <block id="bd720a6ead0034815d9206b7292e06e5" category="section-title">Nuevas características en la versión 11.90R2</block>
+  <block id="15829e6cc8b585193d8f6910a672107c" category="inline-link">Notas de la versión de E-Series 11,90</block>
+  <block id="a4c34f83987821dd1d99ef73febdd962" category="paragraph">Esta versión contiene solo cambios menores y no nuevas características. Para obtener más información sobre los cambios en esta versión, consulte la<block ref="1f7d7124974a1c2e3017c1729625e686" category="inline-link-rx"></block>.</block>
 </blocks>
