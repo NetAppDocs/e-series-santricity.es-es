@@ -66,9 +66,17 @@ Cuando se habilita SAML, los usuarios no pueden detectar ni gestionar el almacen
 Además, los siguientes clientes no pueden obtener acceso a los recursos y los servicios de la cabina de almacenamiento:
 
 * Enterprise Management Window (EMW)
-* Interfaz de línea de comandos (CLI)
 * Clientes de kits de desarrollo de software (SDK)
 * Clientes en banda
-* Clientes HTTP de la API de REST de autenticación básica
 * Inicio de sesión mediante extremo estándar de la API de REST
+
+
+
+
+=== Conectividad limitada con SAML habilitado
+
+Las siguientes funciones de la cabina de almacenamiento tienen conectividad limitada con la autenticación de tokens web JSON cuando SAML está habilitado.
+
+* Interfaz de línea de comandos (CLI)
+* Clientes HTTP de la API de REST de autenticación básica
 
