@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, re-create, snapshot, volume 
 summary: Es posible volver a crear un volumen Snapshot o un volumen Snapshot de grupo de coherencia Snapshot que se haya deshabilitado anteriormente. Cuando se vuelve a crear un volumen Snapshot, se requiere menos tiempo que crear uno nuevo. 
 ---
-= Vuelva a crear el volumen Snapshot
+= Vuelva a crear un volumen de instantánea en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, asynchronous, mirror, status, consistency, group, 
 summary: El estado de reflejo define el estado de los grupos de coherencia de reflejos y las parejas de volúmenes reflejadas. 
 ---
-= Estado de reflejo asíncrono
+= Ver el estado del espejo asincrónico en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

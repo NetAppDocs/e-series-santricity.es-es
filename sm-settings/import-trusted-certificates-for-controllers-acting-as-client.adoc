@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, import, certificates, 
 summary: 'Si la controladora rechaza una conexión debido a que no puede validar la cadena de confianza de un servidor de red, es posible importar un certificado de la pestaña de confianza con el que la controladora (actuando como cliente) pueda aceptar comunicaciones de ese servidor.' 
 ---
-= Importar certificados para las controladoras cuando funcionan como clientes
+= Importar certificados para controladores cuando actúan como clientes en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

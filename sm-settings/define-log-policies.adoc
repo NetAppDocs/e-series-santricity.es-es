@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, define, audit, log, policies, 
 summary: Es posible cambiar la política de sobrescritura y los tipos de eventos registrados en el registro de auditoría. 
 ---
-= Defina políticas de registro de auditoría
+= Definir políticas de registro de auditoría en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

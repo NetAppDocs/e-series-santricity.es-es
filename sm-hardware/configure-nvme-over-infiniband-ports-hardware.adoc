@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, infiniband, ports, nvme, 
 summary: Si la controladora incluye una conexión NVMe over InfiniBand, los ajustes del puerto NVMe se pueden configurar desde la página hardware. 
 ---
-= Configure los puertos NVMe over InfiniBand
+= Configurar puertos NVMe sobre InfiniBand en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

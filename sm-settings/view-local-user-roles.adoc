@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, local, user, roles, 
 summary: 'Desde la pestaña roles de usuario local, es posible ver las asignaciones de los perfiles de usuario a los roles predeterminados. Estas asignaciones forman parte de los controles de acceso basados en roles (RBAC) aplicados en la cabina de almacenamiento.' 
 ---
-= Ver los roles de usuario local
+= Ver roles de usuarios locales en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

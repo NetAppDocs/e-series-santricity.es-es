@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, mirror, consistency, group, 
 summary: Es posible eliminar grupos de coherencia de reflejos que ya no son necesarios en la cabina de almacenamiento local y en la cabina de almacenamiento remota. 
 ---
-= Elimine grupo de coherencia de reflejos
+= Eliminar un grupo de consistencia de espejo en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

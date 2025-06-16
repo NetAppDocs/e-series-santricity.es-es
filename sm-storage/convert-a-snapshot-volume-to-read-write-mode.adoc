@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, convert, snapshot, volume, read-write mode 
 summary: Se puede convertir un volumen Snapshot o un volumen Snapshot del grupo de coherencia Snapshot de solo lectura al modo de lectura/escritura si fuera necesario. 
 ---
-= Convierta un volumen Snapshot al modo de lectura/escritura
+= Convertir el volumen de instantánea al modo de lectura y escritura en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

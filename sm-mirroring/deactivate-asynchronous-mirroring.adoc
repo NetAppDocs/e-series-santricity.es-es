@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, deactivate, asynchronous, mirroring, remote, 
 summary: Es posible desactivar el mirroring asíncrono en las cabinas de almacenamiento local y remota para restablecer el uso normal de los puertos dedicados en las cabinas de almacenamiento. 
 ---
-= Desactivar las operaciones de mirroring asíncrono
+= Desactivar la duplicación asincrónica en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

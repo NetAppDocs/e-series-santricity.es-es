@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, maximum, luns 
 summary: 'La cabina de almacenamiento tiene un número máximo de números de unidad lógica (LUN) que pueden usarse para cada host.' 
 ---
-= Número máximo de LUN
+= Conozca la cantidad máxima de LUN en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

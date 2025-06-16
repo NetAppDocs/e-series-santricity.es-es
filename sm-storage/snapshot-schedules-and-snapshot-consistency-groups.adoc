@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, snapshot, schedules, snapshot, consistency groups 
 summary: Utilice programaciones para recoger imágenes Snapshot y utilice grupos de coherencia Snapshot para gestionar varios volúmenes base. 
 ---
-= Programaciones Snapshot y grupos de coherencia Snapshot
+= Obtenga información sobre las programaciones de instantáneas y los grupos de consistencia de instantáneas en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

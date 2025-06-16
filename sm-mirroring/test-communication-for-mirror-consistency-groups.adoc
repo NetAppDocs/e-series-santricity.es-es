@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, test, communication, mirror, consistency, groups, 
 summary: Se puede probar el enlace de comunicación para diagnosticar posibles problemas de comunicación entre la cabina de almacenamiento local y la cabina de almacenamiento remota asociada con un grupo de coherencia de reflejos. 
 ---
-= Prueba de comunicación para grupo de coherencia de reflejos
+= Probar la comunicación para grupos de consistencia de espejo en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, hardware, components, filtering, 
 summary: La página hardware presenta funciones de ordenación y filtrado que facilitan la búsqueda de componentes. 
 ---
-= Ver componentes de hardware
+= Ver componentes de hardware en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

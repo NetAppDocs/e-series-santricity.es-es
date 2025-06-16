@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add-on, feature, terms 
 summary: Conozca la forma en que los términos de las funciones complementarias se aplican a su cabina de almacenamiento. 
 ---
-= Terminología de la función complementaria
+= Conozca la terminología de las funciones complementarias en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, set, host, connectivity, reporting, 
 summary: Es posible habilitar la generación de informes de conectividad de host para que la cabina de almacenamiento supervise constantemente la conexión entre las controladoras y los hosts configurados, y emita alertas si se interrumpe la conexión. Esta función está habilitada de forma predeterminada. 
 ---
-= Establezca la generación de informes de conectividad de host
+= Configurar informes de conectividad del host en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

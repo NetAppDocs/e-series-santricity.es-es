@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, mail, server, recipients, alerts, 
 summary: Para configurar las alertas por correo electrónico, debe indicar una dirección de correo electrónico del servidor y las direcciones de correo electrónico de los destinatarios de las alertas. Está permitido introducir hasta 20 direcciones de correo electrónico. 
 ---
-= Configurar servidores de correo y destinatarios para las alertas
+= Configurar el servidor de correo y los destinatarios de alertas en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

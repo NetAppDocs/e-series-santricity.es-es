@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, complete, mirrored, pair, volumes, created, legacy, 
 summary: Si creó un volumen primario en una cabina de almacenamiento heredada que SANtricity System Manager no puede gestionar, es posible crear el volumen secundario en esta cabina con System Manager. 
 ---
-= Completar pareja reflejada para volúmenes primarios creados en un sistema heredado
+= Complete un par reflejado para volúmenes primarios creados en un sistema heredado en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

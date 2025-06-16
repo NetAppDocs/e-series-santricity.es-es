@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, terms 
 summary: Conozca la forma en que los términos de mirroring síncrono se aplican a su cabina de almacenamiento. 
 ---
-= Terminología de mirroring síncrono
+= Aprenda sobre la terminología de duplicación sincrónica en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

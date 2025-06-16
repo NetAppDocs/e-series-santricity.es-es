@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, unsynchronized, data, mirror, consistency, groups, 
 summary: Es posible ver la cantidad de datos no sincronizados entre grupos de coherencia de reflejos en la cabina de almacenamiento local y en la cabina de almacenamiento remota. Mientras el grupo de coherencia de reflejos se encuentra en el estado no sincronizado, no se produce ninguna actividad de mirroring. 
 ---
-= Ver cantidad de datos no sincronizados entre grupos de coherencia de reflejos
+= Ver la cantidad de datos no sincronizados entre grupos de consistencia de espejo en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

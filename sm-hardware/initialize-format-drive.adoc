@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, initialize, format, drive, 
 summary: 'Si se mueven unidades asignadas de una cabina de almacenamiento a otra, deben inicializarse (formatearse) las unidades para poder utilizarlas en la cabina de almacenamiento nueva.' 
 ---
-= Inicialice (formatear) una unidad
+= Inicializar (formatear) unidades en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add, trap, destinations, SNMP, alerts, 
 summary: Es posible añadir hasta 10 servidores para enviar capturas SNMP. 
 ---
-= Añadir destinos de capturas para alertas SNMP
+= Agregar destinos de trampa para alertas SNMP en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

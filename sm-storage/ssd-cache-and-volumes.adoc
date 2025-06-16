@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, ssd, cache, volumes 
 summary: 'Es posible añadir un volumen a la caché SSD como una manera de aumentar el rendimiento de solo lectura. La caché SSD se compone de un conjunto de unidades de disco de estado sólido (SSD) agrupadas de forma lógica en la cabina de almacenamiento.' 
 ---
-= Caché SSD y volúmenes
+= Obtenga información sobre la caché SSD y los volúmenes en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

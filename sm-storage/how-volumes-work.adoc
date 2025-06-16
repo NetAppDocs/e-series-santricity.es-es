@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, volume, copy, 
 summary: Los volúmenes son contenedores de datos que gestionan y organizan el espacio de almacenamiento en la cabina de almacenamiento. 
 ---
-= Cómo funcionan los volúmenes
+= Cómo funcionan los volúmenes en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

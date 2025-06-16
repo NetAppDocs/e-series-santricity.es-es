@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, export, key, management, server, certificates, 
 summary: Es posible guardar un certificado para un servidor de gestión de claves en una máquina local. 
 ---
-= Exportar certificados del servidor de gestión de claves
+= Exportar certificados de servidor de administración de claves en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

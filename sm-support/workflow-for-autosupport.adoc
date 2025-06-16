@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, workflow, autosupport, 
 summary: En SANtricity System Manager, puede configurar la función AutoSupport siguiendo estos pasos. 
 ---
-= Flujo de trabajo de la función AutoSupport
+= Configurar AutoSupport en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

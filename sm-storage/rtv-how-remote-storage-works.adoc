@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remote, storage 
 summary: La función almacenamiento remoto permite importar datos desde un sistema de almacenamiento remoto a un sistema de almacenamiento E-Series local. Esta función es útil cuando se desea optimizar la migración de datos con un tiempo de inactividad mínimo, como durante las actualizaciones de equipos. 
 ---
-= Cómo funciona el almacenamiento remoto
+= Cómo funciona el almacenamiento remoto en el software SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font

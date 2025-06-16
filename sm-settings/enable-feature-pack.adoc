@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, feature, pack, 
 summary: 'Un paquete de funciones es un paquete que cambia los atributos de la cabina de almacenamiento (por ejemplo, cambiar el protocolo Fibre Channel a iSCSI). Para habilitar paquetes de funciones, se requiere una clave especial.' 
 ---
-= Habilite el paquete de funciones
+= Habilitar el paquete de funciones en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

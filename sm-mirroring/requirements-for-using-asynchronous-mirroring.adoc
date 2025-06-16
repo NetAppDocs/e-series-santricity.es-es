@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, requirements, asynchronous, mirroring, 
 summary: Si planea utilizar la función de mirroring asíncrono, tenga en cuenta los siguientes requisitos. 
 ---
-= Requisitos para mirroring asíncrono
+= Requisitos para utilizar la duplicación asincrónica en el software SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font

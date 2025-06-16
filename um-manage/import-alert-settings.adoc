@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, import, alert, settings 
 summary: Es posible importar la configuración de alerta de una cabina de almacenamiento en otras cabinas de almacenamiento. Esta operación en lote permite ahorrar tiempo cuando se necesitan configurar varias matrices en la red. 
 ---
-= Importar la configuración de alerta
+= Importar configuraciones de alertas en SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

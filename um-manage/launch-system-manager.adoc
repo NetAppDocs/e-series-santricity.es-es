@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, individual, storage, array 
 summary: Si desea realizar operaciones de gestión, puede usar la opción Iniciar para abrir la instancia de SANtricity System Manager basada en el explorador que corresponde a una o más cabinas de almacenamiento. 
 ---
-= Gestione una cabina de almacenamiento individual
+= Administrar una matriz de almacenamiento individual en SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

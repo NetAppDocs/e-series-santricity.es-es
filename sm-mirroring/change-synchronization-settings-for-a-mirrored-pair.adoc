@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, synchronization, settings, mirrored, pair, 
 summary: Puede cambiar la prioridad de sincronización y la política de resincronización que la pareja reflejada usa para completar la operación de resincronización después de que se interrumpe una comunicación. 
 ---
-= Cambiar la configuración de sincronización para una pareja reflejada
+= Cambiar la configuración de sincronización de un par reflejado en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

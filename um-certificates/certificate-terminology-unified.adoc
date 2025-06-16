@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, certificate, terminology 
 summary: Los siguientes términos se utilizan en la gestión de certificados. 
 ---
-= Terminología de certificados
+= Conozca la terminología de los certificados en SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

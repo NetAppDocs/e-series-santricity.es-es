@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, remove, storage, arrays, group 
 summary: Es posible quitar una o varias cabinas de almacenamiento gestionadas de un grupo si ya no se van a gestionar desde un grupo de almacenamiento específico. 
 ---
-= Quite las cabinas de almacenamiento del grupo
+= Eliminar matrices de almacenamiento de un grupo en SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, import, storage, configuration, settings 
 summary: Es posible importar la configuración de almacenamiento de una cabina de almacenamiento en otras cabinas de almacenamiento. Esta operación en lote permite ahorrar tiempo cuando se necesitan configurar varias matrices en la red. 
 ---
-= Importe los ajustes de configuración de almacenamiento
+= Importar la configuración de almacenamiento en SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

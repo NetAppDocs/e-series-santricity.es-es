@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, delete, trusted, certificates 
 summary: Puede eliminar uno o varios certificados que ya no sean necesarios, por ejemplo, un certificado caducado. 
 ---
-= Elimine certificados de confianza
+= Eliminar certificados de confianza en SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, snapshot, consistency, group 
 summary: Es posible eliminar grupos de coherencia Snapshot cuando ya no son necesarios. 
 ---
-= Eliminar el grupo de coherencia Snapshot
+= Eliminar un grupo de consistencia de instantáneas en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

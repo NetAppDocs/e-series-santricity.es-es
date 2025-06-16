@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, access management, terminology 
 summary: Conozca la forma en que los términos de Access Management se aplican a SANtricity Unified Manager. 
 ---
-= Terminología de Access Management
+= Conozca la terminología de gestión de acceso de SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

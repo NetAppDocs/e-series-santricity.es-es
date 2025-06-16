@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, volume 
 summary: Por lo general, debe eliminar volúmenes si se crearon con los parámetros o la capacidad equivocados, ya no satisfacen las necesidades de configuración del almacenamiento o son imágenes Snapshot que ya no se necesitan para backup o prueba de aplicaciones. 
 ---
-= Elimine el volumen
+= Eliminar un volumen en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

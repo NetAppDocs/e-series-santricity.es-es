@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, create, asynchronous, mirrored, pair 
 summary: Para configurar el mirroring asíncrono, debe crear una pareja reflejada que incluya un volumen primario en la cabina local y un volumen secundario en la cabina remota. 
 ---
-= Cree una pareja reflejada asíncrona
+= Cree un par reflejado asincrónico en SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

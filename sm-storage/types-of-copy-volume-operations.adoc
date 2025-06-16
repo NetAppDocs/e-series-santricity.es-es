@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, copy, volume, 
 summary: Se puede realizar una operación de copia de volumen sin conexión o una operación de copia de volumen en línea. Las operaciones sin conexión leen datos de un volumen de origen y los copian en un volumen objetivo. Las operaciones en línea usan un volumen Snapshot como origen y copian sus datos en un volumen objetivo. 
 ---
-= Tipos de operaciones de copia de volumen
+= Conozca los tipos de operaciones de copia de volumen en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

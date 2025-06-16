@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, home page 
 summary: La página Inicio ofrece una vista de consola para la gestión cotidiana de la cabina de almacenamiento. Cuando se inicia sesión en System Manager, la página Inicio es la primera pantalla que aparece. 
 ---
-= Página de inicio
+= Obtenga más información sobre la página de inicio de SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

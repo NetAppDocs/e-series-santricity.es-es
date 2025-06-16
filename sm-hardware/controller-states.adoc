@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, controller, states, 
 summary: 'Una controladora se puede colocar en tres estados distintos: En línea, sin conexión y modo de servicio.' 
 ---
-= estados de la controladora
+= Obtenga información sobre los estados del controlador en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, syslog, server, audit, logs, 
 summary: Si desea archivar registros de auditoría en un servidor de syslog externo, puede configurar las comunicaciones entre ese servidor y la cabina de almacenamiento. Una vez que se establece la conexión, los registros de auditoría se guardan automáticamente en el servidor de syslog. 
 ---
-= Configurar servidores de syslog para registros de auditoría
+= Configurar el servidor syslog para los registros de auditoría en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

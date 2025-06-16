@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add, directory, server, 
 summary: Para configurar la autenticación de Access Management, se pueden establecer comunicaciones entre la matriz de almacenamiento y un servidor LDAP y, a continuación, asignar los grupos de usuarios LDAP a los roles predefinidos de la cabina. 
 ---
-= Añadir servidor de directorio LDAP
+= Agregar un servidor de directorio LDAP en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

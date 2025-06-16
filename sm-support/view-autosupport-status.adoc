@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, autosupport, status 
 summary: La página AutoSupport muestra si la función AutoSupport y las funciones individuales de AutoSupport se encuentran habilitadas. 
 ---
-= Ver el estado de AutoSupport
+= Ver el estado de AutoSupport en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

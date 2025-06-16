@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, iscsi, authentication, 
 summary: 'Para obtener seguridad adicional en una red iSCSI, se puede establecer la autenticación entre controladoras (objetivos) y hosts (iniciadores).' 
 ---
-= Configure la autenticación iSCSI
+= Configurar la autenticación iSCSI en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

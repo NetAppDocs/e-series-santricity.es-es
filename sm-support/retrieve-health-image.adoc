@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, retrieve, health, image 
 summary: Es posible revisar la imagen de estado de una controladora. Una imagen de estado es un volcado de datos sin formato de la memoria del procesador de la controladora que el soporte técnico puede utilizar para diagnosticar un problema con una controladora. 
 ---
-= Recuperar una imagen de estado
+= Recuperar imagen de salud en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

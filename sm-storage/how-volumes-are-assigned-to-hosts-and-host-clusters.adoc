@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, volumes, assigned, hosts, clusters 
 summary: Para que un host o un clúster de hosts envíe I/o a un volumen, se debe asignar el volumen al host o al clúster de hosts. 
 ---
-= Cómo se asignan volúmenes a hosts y clústeres de hosts
+= Cómo se asignan los volúmenes a los hosts y clústeres de hosts en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

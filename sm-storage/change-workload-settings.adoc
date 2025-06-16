@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, workload, settings 
 summary: Es posible cambiar el nombre de una carga de trabajo y ver el tipo de aplicación asociada a esta. Cambie el nombre de una carga de trabajo cuando el nombre actual ya no tiene sentido o no corresponde. 
 ---
-= Cambiar configuración de carga de trabajo
+= Cambiar la configuración de la carga de trabajo en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

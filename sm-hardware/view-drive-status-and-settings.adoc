@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, drive, status, settings, media, 
 summary: Es posible ver el estado y la configuración de las unidades, como el tipo de medios, el tipo de interfaz y la capacidad. 
 ---
-= Ver el estado y la configuración de las unidades
+= Ver el estado y la configuración de la unidad en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

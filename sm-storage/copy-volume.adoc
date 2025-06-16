@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, copy volume 
 summary: 'Se pueden copiar datos de un volumen a otro de la misma cabina de almacenamiento y crear un duplicado físico de un momento específico (clon) de un volumen de origen.' 
 ---
-= Copiar volumen
+= Copiar un volumen en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

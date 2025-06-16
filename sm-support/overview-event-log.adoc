@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, event, log 
 summary: Use el registro de eventos para ver un registro histórico de los cambios y los eventos producidos en la cabina de almacenamiento. 
 ---
-= Información general sobre el registro de eventos
+= Conozca el registro de eventos en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

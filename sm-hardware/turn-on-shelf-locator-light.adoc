@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, shelf, locator, light, LED 
 summary: Para encontrar la ubicación física de una bandeja que se muestra en la página hardware, es posible encender la luz del localizador de la bandeja. 
 ---
-= Encienda la luz del localizador de bandejas
+= Encienda una luz localizadora de estantes en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

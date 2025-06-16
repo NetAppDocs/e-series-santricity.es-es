@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, reconstruct, drive, manually, 
 summary: Normalmente, la reconstrucción de unidades se inicia de forma automática después de reemplazar una unidad. Si la reconstrucción de una unidad no se inicia de forma automática, es posible iniciarla manualmente. 
 ---
-= Reconstruir manualmente una unidad
+= Reconstruir una unidad manualmente en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, syslog, server, settings, audit, log, records, 
 summary: 'Es posible modificar la configuración del servidor de syslog utilizada para archivar registros de auditoría, y también cargar un nuevo certificado de una entidad de certificación (CA) para el servidor.' 
 ---
-= Editar la configuración del servidor de syslog para los registros de auditoría
+= Editar la configuración del servidor syslog para los registros de auditoría en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

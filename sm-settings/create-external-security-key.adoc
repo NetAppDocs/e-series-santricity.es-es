@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, external, security, key, 
 summary: Para usar la función Drive Security con un servidor de gestión de claves, se debe crear una clave externa que se compartirá con el servidor de gestión de claves y las unidades compatibles con la función de seguridad de la cabina de almacenamiento. 
 ---
-= Cree una clave de seguridad externa
+= Cree una clave de seguridad externa en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

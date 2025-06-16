@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, 
 summary: El mirroring síncrono replica los volúmenes de datos en tiempo real para garantizar la disponibilidad continua. 
 ---
-= Cómo funciona el mirroring síncrono
+= Cómo funciona la duplicación sincrónica en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

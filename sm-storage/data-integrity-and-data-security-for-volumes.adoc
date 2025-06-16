@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, data, integrity, security, volumes 
 summary: 'Es posible habilitar volúmenes para que usen las funciones Data Assurance (DA) y Drive Security. Estas funciones se presentan en los niveles de pool y grupo de volúmenes.' 
 ---
-= Integridad y seguridad de los datos para volúmenes
+= Obtenga información sobre la integridad y seguridad de los datos para volúmenes en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

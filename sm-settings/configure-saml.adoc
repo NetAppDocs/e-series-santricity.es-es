@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, saml, 
 summary: 'Para configurar la autenticación de Access Management, puede usar las funcionalidades de lenguaje de marcado de aserción de seguridad (SAML) que están integradas en la cabina de almacenamiento. Esta configuración establece una conexión entre un proveedor de identidades y el proveedor de almacenamiento.' 
 ---
-= Configure SAML
+= Configurar SAML en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

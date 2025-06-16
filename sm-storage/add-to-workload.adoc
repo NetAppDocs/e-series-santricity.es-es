@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add workload, volume 
 summary: Es posible añadir uno o más volúmenes a una carga de trabajo nueva o ya existente, en el caso de volúmenes que actualmente no estén asociados con una carga de trabajo. 
 ---
-= Añadir volúmenes a la carga de trabajo
+= Agregar volúmenes a una carga de trabajo en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

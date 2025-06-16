@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, application, workloads, volume, 
 summary: Al crear un volumen, se debe seleccionar una carga de trabajo para personalizar la configuración de la cabina de almacenamiento para una aplicación específica. 
 ---
-= Cómo funcionan las cargas de trabajo
+= Cómo funcionan las cargas de trabajo en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

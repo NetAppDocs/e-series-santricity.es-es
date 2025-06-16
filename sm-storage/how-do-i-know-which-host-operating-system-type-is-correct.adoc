@@ -84,13 +84,6 @@ Admite sistemas operativos Windows que usan un controlador ATTO Technology, Inc.
 
 
  a| 
-FlexArray (ALUA)
- a| 
-Admite un sistema FlexArray de NetApp mediante ALUA para accesos múltiples.
-
-
-
- a| 
 SVC DE IBM
  a| 
 Es compatible con la configuración de la controladora de volúmenes SAN de IBM.

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, syslog, servers, alerts, 
 summary: Es posible editar la dirección de servidor utilizada para recibir alertas de syslog. 
 ---
-= Edite los servidores de syslog para las alertas
+= Editar servidores syslog para alertas en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, hosts 
 summary: Es posible configurar hosts y clústeres de hosts, que definen las conexiones entre la cabina de almacenamiento y los servidores de datos. 
 ---
-= Información general sobre los hosts y los clústeres de hosts
+= Obtenga información sobre los hosts y los clústeres de hosts en el software SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font

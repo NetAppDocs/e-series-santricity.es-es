@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access volumes 
 summary: 'Un volumen de acceso es un volumen configurado en fábrica de la cabina de almacenamiento que se utiliza para la comunicación con la cabina de almacenamiento y el host mediante la conexión de I/o del host. El volumen de acceso requiere un número de unidad lógica (LUN).' 
 ---
-= Volúmenes de acceso
+= Volúmenes de acceso en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

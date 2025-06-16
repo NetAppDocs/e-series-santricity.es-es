@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, copy, snapshot, volume 
 summary: Se puede realizar un proceso Copy Volume en un volumen Snapshot o un volumen Snapshot de un grupo de coherencia Snapshot. 
 ---
-= Copiar un volumen Snapshot
+= Copiar un volumen de instantánea en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

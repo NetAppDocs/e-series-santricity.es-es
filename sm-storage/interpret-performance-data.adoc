@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, interpret, performance data 
 summary: Los datos de rendimiento pueden guiarlo para ajustar el rendimiento de la cabina de almacenamiento. 
 ---
-= Interpretar datos de rendimiento
+= Interpretar datos de rendimiento en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

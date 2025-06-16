@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, rename, storage, array, group 
 summary: Es posible cambiar el nombre de un grupo de cabinas de almacenamiento si el nombre actual ya no es significativo o no corresponde. 
 ---
-= Cambiar el nombre de un grupo de cabinas de almacenamiento
+= Cambiar el nombre de un grupo de matrices de almacenamiento en SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

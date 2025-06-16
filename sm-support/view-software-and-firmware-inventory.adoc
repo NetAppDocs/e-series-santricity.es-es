@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, software, firmware, inventory 
 summary: En el inventario de software y firmware, se enumeran las versiones de firmware para cada componente de la cabina de almacenamiento. 
 ---
-= Ver el inventario de software y firmware
+= Ver el inventario de software y firmware en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

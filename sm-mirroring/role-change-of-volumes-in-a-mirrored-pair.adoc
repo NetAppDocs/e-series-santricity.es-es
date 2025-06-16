@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, role, change, between, volume, mirrored, pair, 
 summary: Es posible cambiar el rol entre los volúmenes de una pareja reflejada. Para ello, se puede degradar el volumen primario al rol secundario o promocionar el volumen secundario al rol primario. 
 ---
-= Cambio de roles entre volúmenes de una pareja reflejada
+= Obtenga información sobre los cambios de roles de volumen en un par reflejado en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

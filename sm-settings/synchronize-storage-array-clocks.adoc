@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, synchronize, storage, array, clocks, 
 summary: 'Si el protocolo de tiempo de redes (NTP) no está habilitado, los relojes de las controladoras se pueden configurar manualmente, de manera que queden sincronizados con el cliente de gestión (el sistema que se utiliza para ejecutar el explorador que accede a System Manager de SANtricity).' 
 ---
-= Sincronice los relojes de la cabina de almacenamiento
+= Sincronizar los relojes de la matriz de almacenamiento en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

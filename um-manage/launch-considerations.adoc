@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, considerations, access system manager 
 summary: Es posible seleccionar una o varias cabinas de almacenamiento y usar la opción Iniciar para abrir SANtricity System Manager cuando se desean configurar y gestionar las cabinas de almacenamiento. 
 ---
-= Consideraciones para acceder a System Manager de SANtricity
+= Obtenga información sobre cómo acceder a SANtricity System Manager desde Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, comparison, thick volumes, thin volumes 
 summary: Un volumen grueso siempre se aprovisiona en su totalidad, lo cual significa que toda la capacidad se asigna cuando se crea el volumen. Un volumen fino siempre se aprovisiona en medida reducida, lo cual significa que la capacidad se asigna a medida que los datos se escriben en el volumen. 
 ---
-= Comparación entre volúmenes gruesos y volúmenes finos
+= Aprenda sobre los volúmenes gruesos y delgados en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

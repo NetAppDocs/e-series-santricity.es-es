@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, snapshot, terms 
 summary: Conozca la forma en que los términos Snapshot se aplican a su cabina de almacenamiento. 
 ---
-= Terminología Snapshot
+= Aprenda sobre la terminología de instantáneas en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

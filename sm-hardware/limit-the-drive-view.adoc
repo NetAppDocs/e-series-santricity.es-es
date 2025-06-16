@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, limit, drive, view, 
 summary: Si la cabina de almacenamiento incluye unidades con diferentes tipos de atributos físicos y lógicos, la página hardware ofrece campos de filtros para limitar la vista de unidades y localizar unidades específicas. 
 ---
-= Limite la vista de unidades
+= Filtrar la vista de la unidad en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

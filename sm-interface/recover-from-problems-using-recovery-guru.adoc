@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, Recovery Guru 
 summary: Recovery Guru es un componente de System Manager para diagnosticar problemas en la cabina de almacenamiento y recomendar procedimientos de recuperación para corregir los problemas. 
 ---
-= Recuperarse de problemas mediante Recovery Guru
+= Recupérese de los problemas utilizando SANtricity System Manager Recovery Guru
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

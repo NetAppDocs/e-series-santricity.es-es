@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, storage hierarchy 
 summary: La jerarquía de almacenamiento en la interfaz principal ofrece una vista organizada de los distintos componentes de hardware y objetos de almacenamiento gestionados por la cabina de almacenamiento. 
 ---
-= Ver la jerarquía de almacenamiento
+= Ver la jerarquía de almacenamiento en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

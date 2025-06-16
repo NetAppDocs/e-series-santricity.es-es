@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, change, saml, role, mappings, 
 summary: Si anteriormente configuró SAML para Access Management, puede cambiar las asignaciones de roles entre los grupos IDP y los roles predefinidos de la cabina de almacenamiento. 
 ---
-= Cambiar las asignaciones de roles SAML
+= Cambiar las asignaciones de roles SAML en SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

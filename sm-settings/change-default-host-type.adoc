@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, default, host, type, 
 summary: Use la opción de configuración Cambiar el sistema operativo del host predeterminado para cambiar el tipo de host predeterminado en el nivel de la cabina de almacenamiento. En general, se debe cambiar el tipo de host predeterminado antes de conectar hosts a la cabina de almacenamiento o al añadir hosts adicionales. 
 ---
-= Cambiar el tipo de host predeterminado
+= Cambiar el tipo de host predeterminado en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

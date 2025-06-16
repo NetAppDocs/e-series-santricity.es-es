@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, login, banner, 
 summary: Puede crear un banner de inicio de sesión que se presente a los usuarios antes de que puedan establecer sesiones en System Manager de SANtricity. El banner puede incluir un aviso de asesoría y un mensaje de consentimiento. 
 ---
-= Configure el banner de inicio de sesión
+= Configurar el banner de inicio de sesión en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

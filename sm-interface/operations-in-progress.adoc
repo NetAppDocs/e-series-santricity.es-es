@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, operations in progress 
 summary: La página Operaciones en curso permite ver una lista de las operaciones de ejecución prolongada que se encuentran en ejecución o en estado suspendido, detenido o con error. Puede realizar acciones sobre ciertos tipos de operaciones. 
 ---
-= Operaciones en curso
+= Conozca la página de operaciones en progreso del Administrador del Sistema SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

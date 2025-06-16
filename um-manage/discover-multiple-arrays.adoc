@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, discover, multiple, storage, arrays 
 summary: Detecte varias cabinas para descubrir todas las cabinas de almacenamiento de la subred donde reside el servidor de gestión y añadir automáticamente las cabinas detectadas al dominio de gestión. 
 ---
-= Detectar varias cabinas de almacenamiento
+= Descubra múltiples matrices de almacenamiento en SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

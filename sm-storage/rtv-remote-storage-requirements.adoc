@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remote, storage, requirements 
 summary: Antes de utilizar la función almacenamiento remoto, revise los siguientes requisitos y restricciones. 
 ---
-= Requisitos de funciones de almacenamiento remoto
+= Obtenga información sobre los requisitos de la función de almacenamiento remoto en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

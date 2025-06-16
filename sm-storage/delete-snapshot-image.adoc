@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, snapshot, image 
 summary: Se eliminan las imágenes Snapshot para borrar la imagen Snapshot más antigua de un grupo Snapshot o un grupo de coherencia Snapshot. 
 ---
-= Eliminar imagen Snapshot
+= Eliminar una imagen instantánea en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

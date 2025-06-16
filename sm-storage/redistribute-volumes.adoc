@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, redistribute, volumes 
 summary: Es posible redistribuir volúmenes para moverlos nuevamente a sus propietarios de controladoras preferidos. Por lo general, los controladores multivía mueven volúmenes de su propietario de controladora preferido cuando se produce un problema en la ruta de datos entre el host y la cabina de almacenamiento. 
 ---
-= Redistribuir volúmenes
+= Redistribuir volúmenes en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

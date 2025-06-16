@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, clear, storage, array, configuration, 
 summary: Use la operación Clear Configuration cuando desee eliminar todos los pools, los grupos de volúmenes, los volúmenes, las definiciones de hosts y las asignaciones de hosts de la cabina de almacenamiento. 
 ---
-= Borrar la configuración de la cabina de almacenamiento
+= Borrar la configuración de la matriz de almacenamiento en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -108,4 +108,8 @@ X
 .Resultados
 * La configuración actual se elimina y se destruyen todos los datos existentes de la cabina de almacenamiento.
 * Todas las unidades quedan sin asignar.
++
+
+NOTE: La matriz de almacenamiento se iniciará en modo de recuperación. Debe desactivar el modo de recuperación antes de usarla. Consulte https://docs.netapp.com/us-en/e-series-santricity/sm-support/clear-recovery-mode.html["Desactivar el modo de recuperación"^] para obtener más información.
+
 

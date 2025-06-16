@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, volume, group 
 summary: Es posible usar un grupo de volúmenes para crear uno o varios volúmenes a los que el host puede acceder. Un grupo de volúmenes es un contenedor para volúmenes con características compartidas, como nivel de RAID y capacidad. 
 ---
-= Cree un grupo de volúmenes
+= Crear un grupo de volúmenes en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

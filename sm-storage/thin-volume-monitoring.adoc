@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, thin, volume, monitoring 
 summary: El espacio de los volúmenes finos se puede supervisar, y se pueden generar alertas adecuadas para evitar condiciones de falta de capacidad. 
 ---
-= Supervisión de volúmenes finos
+= Obtenga más información sobre la monitorización de volúmenes delgados en el software SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font

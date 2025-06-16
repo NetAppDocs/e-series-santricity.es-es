@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, unlock, drives, external, key, management, 
 summary: Si se configuró la gestión de claves externas y luego se mueven unidades con la función de seguridad habilitada de una cabina de almacenamiento a otra, se debe volver a asignar la clave de seguridad a la nueva cabina de almacenamiento para acceder a los datos cifrados en las unidades. 
 ---
-= Desbloquear unidades al utilizar gestión de claves externas
+= Desbloquear unidades al utilizar la administración de claves externas en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

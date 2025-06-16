@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, security, key, management, 
 summary: 'Cuando se implementa la función Drive Security, las unidades con la función de seguridad habilitada (FIPS o FDE) requieren una clave de seguridad para acceder a los datos. Una clave de seguridad es una cadena de caracteres que se comparte entre estos tipos de unidades y las controladoras en una cabina de almacenamiento.' 
 ---
-= Cómo funciona la gestión de claves de seguridad
+= Cómo funciona la gestión de claves de seguridad en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

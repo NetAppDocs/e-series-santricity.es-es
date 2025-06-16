@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, time, graphs 
 summary: Es posible cambiar el plazo predeterminado que se muestra en los gráficos de rendimiento. 
 ---
-= Establecer el plazo predeterminado para los gráficos de rendimiento
+= Establezca el marco de tiempo predeterminado para los gráficos de rendimiento en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

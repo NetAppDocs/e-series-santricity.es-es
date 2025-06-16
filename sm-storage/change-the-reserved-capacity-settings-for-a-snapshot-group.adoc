@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, reserved capacity, settings, snapshot, group 
 summary: Es posible modificar la configuración de un grupo Snapshot y cambiarle el nombre, la configuración de eliminación automática, la cantidad máxima de imágenes Snapshot permitidas, el punto de porcentaje en el que System Manager envía una alerta de capacidad reservada, o bien la política que debe utilizarse cuando la capacidad reservada alcanza el porcentaje máximo definido. 
 ---
-= Cambiar la configuración de capacidad reservada para un grupo Snapshot
+= Cambiar la configuración de capacidad reservada para un grupo de instantáneas en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

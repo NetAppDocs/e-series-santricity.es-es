@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, save, storage array, configuration, 
 summary: Es posible guardar la información de configuración de una cabina de almacenamiento en un archivo de script para ahorrar tiempo al configurar cabinas de almacenamiento adicionales con las mismas opciones. 
 ---
-= Guarde la configuración de la cabina de almacenamiento
+= Guardar la configuración de la matriz de almacenamiento en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

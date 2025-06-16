@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, considerations, assigning, ip, addresses 
 summary: De manera predeterminada, las controladoras se envían con DHCP habilitado en ambos puertos de red. Se pueden asignar direcciones IP estáticas, utilizar direcciones IP estáticas predeterminadas o usar direcciones IP asignadas para DHCP. Además, se puede usar la configuración automática sin estado IPv6. 
 ---
-= Aspectos que se deben tener en cuenta al asignar direcciones IP
+= Obtenga información sobre la asignación de direcciones IP para los controladores de la serie E
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

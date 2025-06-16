@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, unlock, drives, internal, key, management, 
 summary: Si se configuró la gestión de claves internas y luego se mueven unidades con la función de seguridad habilitada de una cabina de almacenamiento a otra, se debe volver a asignar la clave de seguridad a la nueva cabina de almacenamiento para acceder a los datos cifrados en las unidades. 
 ---
-= Desbloquear unidades al utilizar la gestión de claves internas
+= Desbloquear unidades al utilizar la administración de claves interna en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

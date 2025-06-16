@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, host, cluster 
 summary: Se crea un clúster de hosts cuando dos o más hosts requieren acceso de I/o a los mismos volúmenes. 
 ---
-= Cree un clúster de hosts
+= Crear un clúster de host en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

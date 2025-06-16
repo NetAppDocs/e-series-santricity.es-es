@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, cancel, snapshot, image, rollback 
 summary: 'Es posible cancelar una reversión activa en curso (con copia activa de datos), una reversión pendiente (en una cola pendiente a la espera de que se inicien los recursos) o una reversión en pausa debido a un error.' 
 ---
-= Cancelar una reversión de imagen Snapshot
+= Cancelar la reversión de la imagen instantánea en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

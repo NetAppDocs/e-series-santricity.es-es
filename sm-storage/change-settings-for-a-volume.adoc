@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, settings, volume 
 summary: Es posible cambiar la configuración de un volumen, como el nombre, la asignación de host, el tamaño de segmento, la prioridad de modificación, el almacenamiento en caché y así sucesivamente. 
 ---
-= Cambiar la configuración de un volumen
+= Cambiar la configuración de un volumen en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

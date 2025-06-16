@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, asynchronous, mirroring, 
 summary: El mirroring asíncrono copia los volúmenes de datos bajo demanda o por programación, lo que minimiza o evita el tiempo de inactividad que se puede producir por pérdidas o daños en los datos. 
 ---
-= Cómo funciona el mirroring asíncrono
+= Cómo funciona la duplicación asincrónica en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

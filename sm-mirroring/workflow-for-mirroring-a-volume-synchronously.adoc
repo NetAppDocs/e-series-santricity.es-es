@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, workflow, mirroring, synchronously, 
 summary: El mirroring síncrono se debe configurar mediante el siguiente flujo de trabajo. 
 ---
-= Flujo de trabajo para reflejar un volumen de forma síncrona
+= Duplicar un volumen sincrónicamente en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

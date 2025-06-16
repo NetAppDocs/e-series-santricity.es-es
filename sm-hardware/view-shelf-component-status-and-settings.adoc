@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, shelf, component, status, settings, 
 summary: En la página hardware, se proporcionan el estado y la configuración para componentes de bandejas, que incluyen suministros de alimentación, ventiladores y baterías. 
 ---
-= Ver el estado y la configuración de componentes de bandejas
+= Ver el estado y la configuración de los componentes del estante en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, manage, session, timeouts 
 summary: Es posible configurar tiempos de espera en SANtricity System Manager para que las sesiones inactivas de los usuarios se desconecten después de un periodo especificado. 
 ---
-= Gestionar los tiempos de espera de sesión
+= Administrar los tiempos de espera de las sesiones en SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

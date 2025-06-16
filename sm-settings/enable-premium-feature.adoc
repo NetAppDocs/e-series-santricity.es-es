@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, premium, feature, 
 summary: Una función prémium es una opción adicional que requiere una clave para habilitarla. 
 ---
-= Habilite una función excepcional
+= Habilitar una función premium en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

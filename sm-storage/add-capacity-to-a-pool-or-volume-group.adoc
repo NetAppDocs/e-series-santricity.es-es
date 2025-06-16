@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add, capacity, pool, volume, group 
 summary: Es posible añadir unidades para expandir la capacidad de un pool o un grupo de volúmenes existente. 
 ---
-= Añadir capacidad a un pool o grupo de volúmenes
+= Agregar capacidad a un grupo o grupo de volúmenes en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

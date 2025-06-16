@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, storage, array, profile 
 summary: El perfil de la cabina de almacenamiento proporciona una descripción de todos los componentes y las propiedades de la cabina de almacenamiento. 
 ---
-= Ver el perfil de la cabina de almacenamiento
+= Ver el perfil de una matriz de almacenamiento en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

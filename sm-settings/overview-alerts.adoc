@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, Alerts, 
 summary: Es posible configurar System Manager para que envíe alertas de cabina de almacenamiento por correo electrónico, capturas SNMP y mensajes de syslog. 
 ---
-= Información general sobre las alertas
+= Obtenga información sobre las alertas en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

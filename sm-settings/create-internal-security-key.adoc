@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, internal, security, key, 
 summary: Para usar la función Drive Security, se puede crear una clave de seguridad interna que compartan las controladoras y las unidades compatibles con la función de seguridad de la cabina de almacenamiento. Las claves internas se conservan en la memoria persistente de la controladora. 
 ---
-= Cree una clave de seguridad interna
+= Cree una clave de seguridad interna en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

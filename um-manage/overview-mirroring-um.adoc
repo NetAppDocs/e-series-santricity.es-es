@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, mirroring 
 summary: Utilice las funciones de mirroring para replicar datos entre una cabina de almacenamiento local y una cabina de almacenamiento remota, ya sea de forma asíncrona o síncrona. 
 ---
-= Información general de mirroring
+= Obtenga información sobre la duplicación en SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

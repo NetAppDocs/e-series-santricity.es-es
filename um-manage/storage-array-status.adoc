@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, storage, array, status, communication, 
 summary: Unified Manager muestra el estado de cada cabina de almacenamiento detectada. 
 ---
-= Ver el estado de la cabina de almacenamiento
+= Ver el estado de la matriz de almacenamiento en SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

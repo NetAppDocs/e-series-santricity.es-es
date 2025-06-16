@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, volume, ownership, async, change, preferred, controller, owner, mirrored, pair, 
 summary: Es posible cambiar el propietario preferido de la controladora de una pareja reflejada. 
 ---
-= Propiedad del volumen
+= Obtenga información sobre la propiedad del volumen en la duplicación asincrónica en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, considerations, discovering, arrays 
 summary: Para poder mostrar y gestionar los recursos de almacenamiento, Unified Manager debe detectar las cabinas de almacenamiento que se desean gestionar en la red de la organización. Es posible detectar varias cabinas de almacenamiento o una sola. 
 ---
-= Consideraciones sobre la detección de cabinas
+= Obtenga información sobre cómo descubrir matrices de almacenamiento en SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, trap, destinations, 
 summary: Es posible eliminar una dirección de destino de captura para que el monitor de eventos de la cabina de almacenamiento ya no envíe capturas SNMP a esa dirección. 
 ---
-= Eliminar destinos de capturas
+= Eliminar destinos de trampa en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

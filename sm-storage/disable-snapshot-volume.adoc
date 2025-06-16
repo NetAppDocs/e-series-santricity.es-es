@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, disable, snapshot, volume 
 summary: Es posible deshabilitar un volumen Snapshot o un volumen Snapshot en un grupo de coherencia cuando ya no se lo necesita o se desea dejar de usarlo de manera temporal. 
 ---
-= Deshabilitar volumen Snapshot
+= Deshabilitar un volumen de instantánea en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

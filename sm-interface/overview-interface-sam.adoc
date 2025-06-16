@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, 
 summary: Se accede a la interfaz principal para acceder a las funciones y tareas de System Manager. 
 ---
-= Información general de la interfaz de SANtricity System Manager
+= Conozca la interfaz de SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

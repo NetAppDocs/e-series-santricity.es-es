@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, trusted, certificates, 
 summary: Es posible eliminar los certificados instalados por el usuario que se importaron anteriormente desde la pestaña de confianza. 
 ---
-= Elimine certificados de confianza
+= Eliminar certificados de confianza en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, setup wizard 
 summary: Utilice el asistente de configuración para configurar la cabina de almacenamiento, incluido el hardware, los hosts, las aplicaciones, las cargas de trabajo, Pools, alertas y AutoSupport. 
 ---
-= Información general del asistente de configuración
+= Obtenga información sobre el asistente de configuración de SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

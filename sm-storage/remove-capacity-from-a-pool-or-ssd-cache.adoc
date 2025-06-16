@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remove, capacity, pool, ssd cache 
 summary: Es posible quitar unidades para reducir la capacidad de un pool o una caché SSD existente. 
 ---
-= Quite capacidad de un pool o una caché SSD
+= Eliminar capacidad de un grupo o caché SSD en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

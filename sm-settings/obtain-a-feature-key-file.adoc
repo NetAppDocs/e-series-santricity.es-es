@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, obtain, feature, key, file, 
 summary: Para habilitar una función excepcional o un paquete de funciones en una cabina de almacenamiento, primero es necesario obtener un archivo de claves de función. Una clave se asociada con una sola cabina de almacenamiento. 
 ---
-= Obtener un archivo de claves de función
+= Obtenga un archivo de clave de función en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

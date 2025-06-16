@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, user, settings, snmpv3, traps, 
 summary: Puede editar definiciones de usuario para solapamientos SNMPv3. 
 ---
-= Edite la configuración de usuario de las capturas SNMPv3
+= Editar la configuración de usuario para las trampas SNMPv3 en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

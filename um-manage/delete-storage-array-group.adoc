@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, delete, storage, array, group 
 summary: Puede eliminar uno o varios grupos de cabinas de almacenamiento que ya no sean necesarios. 
 ---
-= Elimine grupo de cabinas de almacenamiento
+= Eliminar un grupo de matrices de almacenamiento en SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

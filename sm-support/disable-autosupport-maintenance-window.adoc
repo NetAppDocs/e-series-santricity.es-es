@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, disable, autosupport, ASUP, maintenance window 
 summary: Deshabilite la ventana de mantenimiento AutoSupport para permitir la creación automática de incidencias ante eventos de error. Cuando se deshabilita la ventana de mantenimiento AutoSupport, la cabina de almacenamiento utilizará AutoSupport para abrir un caso en soporte si existe un problema. 
 ---
-= Deshabilite la ventana de mantenimiento AutoSupport
+= Deshabilitar la ventana de mantenimiento de AutoSupport en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

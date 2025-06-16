@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, shelf, ids, 
 summary: El ID de bandeja es un número que identifica de forma exclusiva a una bandeja en una cabina de almacenamiento. Las bandejas se numeran consecutivamente, desde 00 o 01, en la parte superior izquierda de cada vista de bandeja. 
 ---
-= Cambie los ID de bandeja
+= Cambiar los ID de los estantes en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

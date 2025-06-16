@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, email, addresses, alerts, 
 summary: Es posible cambiar las direcciones de correo electrónico de los destinatarios que recibieron alertas por correo electrónico. 
 ---
-= Editar direcciones de correo electrónico para alertas
+= Editar direcciones de correo electrónico para alertas en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

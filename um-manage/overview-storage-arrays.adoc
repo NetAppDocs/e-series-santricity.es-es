@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, discover, storage, arrays 
 summary: Para gestionar los recursos de almacenamiento, primero se deben detectar las cabinas de almacenamiento en la red. 
 ---
-= Información general de detección
+= Obtenga más información sobre el descubrimiento en SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

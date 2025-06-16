@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add-on, features, 
 summary: Las funciones adicionales son las que no se incluyen en la configuración estándar de System Manager y pueden requerir una clave para su habilitación. Una función complementaria puede ser una sola función excepcional o un paquete de funciones agrupadas. 
 ---
-= Cómo trabajar con las funciones complementarias
+= Cómo funcionan las funciones complementarias en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

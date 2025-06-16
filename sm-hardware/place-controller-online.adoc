@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, place, controller, online 
 summary: Si una controladora se encuentra en estado sin conexión o en modo de servicio, es posible colocarla nuevamente en línea. 
 ---
-= Coloque una controladora en línea
+= Coloque un controlador en línea en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

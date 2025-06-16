@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, unassign, volumes 
 summary: Anule la asignación de volúmenes de los hosts o clústeres de hosts si ya no necesita acceso a I/o en ese volumen del host o clúster de hosts. 
 ---
-= Anule la asignación de volúmenes
+= Desasignar volúmenes en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

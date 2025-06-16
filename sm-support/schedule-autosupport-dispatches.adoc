@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, schedule, autosupport, dispatches 
 summary: System Manager crea automáticamente una programación predeterminada para los mensajes de AutoSupport. Si lo prefiere, puede especificar su propia programación. 
 ---
-= Programar mensajes de AutoSupport
+= Programe los despachos de AutoSupport en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

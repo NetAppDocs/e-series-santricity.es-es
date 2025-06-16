@@ -16,6 +16,21 @@ En la siguiente tabla, se describen las nuevas funciones de SANtricity System Ma
 
 
 
+== Nuevas características en la versión 11.90R3
+
+[cols="35h,~"]
+|===
+| Nueva función | Descripción 
+
+
+ a| 
+Compatibilidad del sistema operativo SANtricity con IOM12C y DCM3
+ a| 
+La compatibilidad con los módulos SAS-3 IOM12C y DCM3 ya está disponible para el firmware del controlador 11.90R3 o posterior. Los módulos IOM12C y DCM3 sustituyen a los módulos IOM12B y DCM2.
+
+|===
+
+
 == Nuevas características en la versión 11.90R2
 
 Esta versión contiene solo cambios menores y no nuevas características. Para obtener más información sobre los cambios en esta versión, consulte la https://library.netapp.com/ecm/ecm_download_file/ECMLP3334464["Notas de la versión de E-Series 11,90"^].

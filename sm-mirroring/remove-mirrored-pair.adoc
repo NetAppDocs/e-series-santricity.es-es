@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remove, asynchronous, mirror, relationship, 
 summary: Quite una pareja reflejada para eliminar la relación de reflejo del volumen primario en la cabina de almacenamiento local y el volumen secundario en la cabina de almacenamiento remota. 
 ---
-= Quite la relación de reflejo asíncrono
+= Eliminar relaciones de espejo asincrónicas en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

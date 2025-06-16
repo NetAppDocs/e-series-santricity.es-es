@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, upgrade, software, firmware 
 summary: 'Es posible actualizar el software de la cabina de almacenamiento y, de manera opcional, el firmware IOM y la memoria estática de acceso aleatorio no volátil (NVSRAM) para asegurarse de tener las funciones y las correcciones de errores más recientes.' 
 ---
-= Actualice el software y el firmware de las controladoras
+= Actualice el software y el firmware del controlador en SANtricity System Manager
 :allow-uri-read: 
 
 

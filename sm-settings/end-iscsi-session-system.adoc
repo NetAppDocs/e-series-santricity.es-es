@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, end, iSCSI, session, 
 summary: Es posible finalizar una sesión iSCSI que no se necesita. Se pueden realizar sesiones iSCSI con hosts o cabinas de almacenamiento remotas en una relación de reflejo asíncrono. 
 ---
-= Finalice la sesión iSCSI
+= Finalizar la sesión iSCSI en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

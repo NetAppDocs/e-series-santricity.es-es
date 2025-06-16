@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, collect, i/o path, statistics 
 summary: Puede guardar el archivo de estadísticas de la ruta de I/o y enviarlo al soporte técnico para su análisis. 
 ---
-= Recoja estadísticas de rutas de I/O.
+= Recopilar estadísticas de rutas de E/S en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

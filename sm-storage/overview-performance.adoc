@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, performance 
 summary: La página rendimiento ofrece maneras sencillas para supervisar el rendimiento de la cabina de almacenamiento. 
 ---
-= Información general sobre rendimiento
+= Obtenga información sobre la descripción general del rendimiento en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

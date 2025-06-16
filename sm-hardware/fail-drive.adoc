@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, fail, drive, 
 summary: Es posible hacer que una unidad falle de forma manual, si se reciben instrucciones para hacerlo. 
 ---
-= Hacer que una unidad falle
+= Fallar manualmente una unidad en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

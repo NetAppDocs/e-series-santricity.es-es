@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, retrieve, trace, buffers 
 summary: Es posible recuperar los búferes de seguimiento de las controladoras y enviar el archivo al soporte técnico para su análisis. 
 ---
-= Recuperar búferes de seguimiento
+= Recuperar buffers de seguimiento en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

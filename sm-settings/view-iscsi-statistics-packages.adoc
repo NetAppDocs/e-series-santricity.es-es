@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, iscsi, statistics, packages, 
 summary: Es posible ver datos sobre las conexiones iSCSI con la cabina de almacenamiento. 
 ---
-= Ver paquetes de estadísticas de iSCSI
+= Ver paquetes de estadísticas iSCSI en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

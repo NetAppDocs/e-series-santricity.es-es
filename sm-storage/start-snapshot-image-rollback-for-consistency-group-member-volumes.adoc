@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, start, snapshot, image, rollback, snapshot, consistency, group, member, volumes 
 summary: Es posible ejecutar una operación de reversión para cambiar el contenido de los volúmenes miembro de un grupo de coherencia Snapshot de modo que este coincida con el contenido guardado en una imagen Snapshot. 
 ---
-= Iniciar reversión de imagen Snapshot para volúmenes miembro de un grupo de coherencia Snapshot
+= Iniciar la reversión de imágenes de instantáneas para volúmenes de miembros del grupo de consistencia de instantáneas en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

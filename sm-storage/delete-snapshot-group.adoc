@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, snapshot, group 
 summary: El grupo Snapshot se elimina cuando desea eliminar de forma permanente los datos y quitarlos del sistema. Si se elimina un grupo Snapshot, se reclama la capacidad reservada para volver a utilizarla en el pool o el grupo de volúmenes. 
 ---
-= Eliminar grupo Snapshot
+= Eliminar un grupo de instantáneas en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, create, synchronous, mirrored, pair 
 summary: Para configurar el mirroring síncrono, debe crear una pareja reflejada que incluya un volumen primario en la cabina local y un volumen secundario en la cabina remota. 
 ---
-= Cree una pareja reflejada síncrona
+= Cree un par reflejado sincrónico en SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

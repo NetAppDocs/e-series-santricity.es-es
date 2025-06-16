@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, security, pool, volume group 
 summary: Es posible habilitar Drive Security para un pool o grupo de volúmenes con el fin de evitar el acceso no autorizado a los datos en las unidades contenidas en un pool o un grupo de volúmenes. El acceso de lectura y escritura para las unidades solo está disponible a través de una controladora que está configurada con una clave de seguridad. 
 ---
-= Habilite la seguridad para un pool o un grupo de volúmenes
+= Habilitar la seguridad para un grupo o grupo de volúmenes en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

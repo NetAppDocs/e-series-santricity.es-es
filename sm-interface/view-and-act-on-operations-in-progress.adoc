@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, act, operations, progress, 
 summary: Para ver y actuar durante operaciones de ejecución prolongada, use la página Operaciones en curso. 
 ---
-= Ver y actuar durante operaciones en curso
+= Ver y actuar sobre las operaciones en curso en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

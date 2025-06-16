@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, workflow, mirroring, asynchronously, 
 summary: El mirroring asíncrono se debe configurar mediante el siguiente flujo de trabajo. 
 ---
-= Flujo de trabajo para reflejar un volumen de manera asíncrona
+= Duplicar un volumen de forma asincrónica en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, host, manually 
 summary: Aquellos hosts que no se pueden detectar automáticamente, se pueden crear de forma manual. La creación de un host es uno de los pasos necesarios para indicar a la cabina de almacenamiento qué hosts están conectados a ella y para permitir el acceso de I/o a los volúmenes. 
 ---
-= Crear hosts manualmente
+= Cree un host manualmente en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

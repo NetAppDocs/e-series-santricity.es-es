@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, snapshots 
 summary: La función Snapshot permite crear imágenes de un momento específico de los volúmenes de una cabina de almacenamiento y utilizarlas para realizar backups o pruebas. 
 ---
-= Información general de Snapshot
+= Obtenga información sobre las instantáneas en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

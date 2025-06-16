@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, copy, volume, 
 summary: La función Copy Volume permite crear una copia de un momento específico de un volumen. Para ello, se crean dos volúmenes independientes, el volumen de origen y el volumen objetivo en la misma cabina de almacenamiento. 
 ---
-= Información general acerca de Copy Volume
+= Obtenga información sobre el volumen de copia en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

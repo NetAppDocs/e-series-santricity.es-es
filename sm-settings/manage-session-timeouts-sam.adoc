@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, manage, session, timeouts, 
 summary: Es posible configurar los tiempos de espera en System Manager de SANtricity para que las sesiones inactivas de los usuarios se desconecten después de un periodo especificado. 
 ---
-= Gestionar los tiempos de espera de sesión
+= Administrar los tiempos de espera de las sesiones en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

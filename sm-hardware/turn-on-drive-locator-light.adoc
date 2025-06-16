@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, turn, drive, locator, light, LEDs 
 summary: En la página hardware, se puede encender la luz localizadora para encontrar la ubicación física de una unidad en la cabina de almacenamiento. 
 ---
-= Encienda la luz localizadora de la unidad
+= Encienda una luz de localización de unidad en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

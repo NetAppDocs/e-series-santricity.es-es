@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, events, audit, log, 
 summary: 'Es posible borrar los eventos antiguos del registro de auditoría para que la búsqueda de eventos sea más sencilla. Tiene la opción de guardar los eventos antiguos en un archivo CSV (valores separados por comas) después de su eliminación.' 
 ---
-= Elimine eventos del registro de auditoría
+= Eliminar eventos del registro de auditoría en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access management, tokens 
 summary: Los tokens de acceso proporcionan acceso a la matriz sin exponer el nombre de usuario ni la contraseña. 
 ---
-= Tokens de acceso
+= Obtenga más información sobre los tokens de acceso y el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

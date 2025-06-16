@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, capacity, volumes, 
 summary: Las unidades de la cabina de almacenamiento proporcionan capacidad de almacenamiento físico para los datos. Antes de comenzar a almacenar datos, es necesario configurar la capacidad asignada a los componentes lógicos conocidos como pools o grupos de volúmenes. Estos objetos de almacenamiento se utilizan para configurar, almacenar, mantener y conservar los datos en la cabina de almacenamiento. 
 ---
-= La forma en que se asigna la capacidad a los volúmenes
+= Cómo se asigna la capacidad de los volúmenes en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, suspend, resume, synchronization, mirrored, pair, 
 summary: Las opciones Suspender y Reanudar se pueden usar para controlar cuándo se deben sincronizar los datos en el volumen primario y en el volumen secundario en una pareja reflejada. 
 ---
-= Suspenda y reanude la sincronización de una pareja reflejada
+= Suspender y reanudar la sincronización de pares reflejados en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

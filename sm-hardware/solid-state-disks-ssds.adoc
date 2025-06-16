@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, solid, state, disk, SSD 
 summary: 'Los discos de estado sólido (SSD) son dispositivos de almacenamiento de datos que usan memoria de estado sólido (flash) para almacenar datos en forma persistente. Los SSD emulan las unidades de discos duros convencionales y están disponibles con las mismas interfaces que usan las unidades de disco duro.' 
 ---
-= Discos de estado sólido (SSD)
+= Obtenga más información sobre los discos de estado sólido (SSD) en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

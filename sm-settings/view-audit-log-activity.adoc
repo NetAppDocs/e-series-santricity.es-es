@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, audit, log, activity, 
 summary: Al ver los registros de auditoría, los usuarios que tienen permisos de administrador de seguridad pueden supervisar acciones de usuarios, fallos de autenticación, intentos de inicio de sesión no válidos y la vida útil de la sesión de usuario. 
 ---
-= Ver actividad de registro de auditoría
+= Ver la actividad del registro de auditoría en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, copy, volume, 
 summary: Es posible ver una operación de copia de volumen en curso y detenerla, cambiar su prioridad, volver a copiarla o eliminarla. 
 ---
-= Actuar sobre una operación de copia de volumen
+= Realizar acciones en una operación de copia de volumen en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

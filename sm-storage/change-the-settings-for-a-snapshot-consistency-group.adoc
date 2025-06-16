@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, settings, snapshot, consistency group 
 summary: Es posible cambiar la configuración de un grupo de coherencia Snapshot cuando se desea cambiar el nombre de dicho grupo, la configuración de eliminación automática o la cantidad máxima de imágenes Snapshot permitidas. 
 ---
-= Cambiar la configuración de un grupo de coherencia Snapshot
+= Cambiar la configuración de un grupo de consistencia de instantáneas en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

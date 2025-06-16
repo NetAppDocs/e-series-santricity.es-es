@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, import, settings, 
 summary: Es posible usar Unified Manager para importar la configuración de una cabina de almacenamiento a varias cabinas de almacenamiento. La función Importar configuración es una operación en lote que permite ahorrar tiempo cuando se necesitan configurar varias cabinas en la red. 
 ---
-= Cómo funciona la importación de configuración
+= Obtenga información sobre cómo configurar varias matrices de almacenamiento en SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, deactivate, synchronous, mirroring, adapter, host, bus, 
 summary: 'Puede desactivar la función Synchronous Mirroring en una cabina de almacenamiento para restablecer el uso normal del puerto de host 4 del adaptador de bus de host (HBA), que estaba reservado para la transmisión de datos reflejados.' 
 ---
-= Desactivar la función de mirroring síncrono
+= Desactivar la duplicación sincrónica en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

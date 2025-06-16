@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, start, snapshot, image, rollback, base, volume 
 summary: Es posible ejecutar una operación de reversión para cambiar el contenido de un volumen base de modo que este coincida con el contenido guardado en una imagen Snapshot. La operación de reversión no cambia el contenido de las imágenes Snapshot asociadas con el volumen base. 
 ---
-= Iniciar reversión de imagen Snapshot para un volumen base
+= Iniciar la reversión de una imagen instantánea para un volumen base en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

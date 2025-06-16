@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, set, automatic, load, balancing, 
 summary: La función Automatic Load Balancing garantiza que el tráfico de I/o entrante de los hosts se gestione dinámicamente y se equilibre entre ambas controladoras. Esta función está habilitada de forma predeterminada, pero se puede deshabilitar desde System Manager. 
 ---
-= Establecer equilibrio de carga automático
+= Configurar el equilibrio de carga automático en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

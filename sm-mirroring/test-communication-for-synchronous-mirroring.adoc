@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, test, communication, synchronous, mirroring, 
 summary: Se puede probar la comunicación entre una cabina de almacenamiento local y una cabina de almacenamiento remota para diagnosticar posibles problemas de comunicación para una pareja reflejada que está participando en un mirroring síncrono. 
 ---
-= Prueba de comunicación para mirroring síncrono
+= Pruebe la comunicación para la duplicación sincrónica en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

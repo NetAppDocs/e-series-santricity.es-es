@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, activate, controller, software, firmware 
 summary: Puede optar por activar los archivo de actualización inmediatamente o esperar hasta un momento más conveniente. 
 ---
-= Activar el software y el firmware de la controladora
+= Activar el software y el firmware del controlador en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

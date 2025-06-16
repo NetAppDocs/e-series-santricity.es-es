@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, erase, drives, removal, 
 summary: La opción Borrar se puede usar para preparar una unidad sin asignar y eliminar el sistema. Este procedimiento elimina los datos de forma permanente, asegurándose de que los datos no se pueden leer de nuevo. 
 ---
-= Borrar unidades
+= Borrar unidades en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

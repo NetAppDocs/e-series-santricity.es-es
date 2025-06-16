@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, perform, pre-upgrade, health, check 
 summary: Una comprobación del estado se ejecuta como parte del proceso de actualización, pero también es posible ejecutarla por separado, antes de comenzar. La comprobación del estado evalúa los componentes de la cabina de almacenamiento para garantizar que se pueda proceder con la actualización. 
 ---
-= Realice la comprobación del estado previa a la actualización
+= Realice una comprobación del estado previo a la actualización en SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, synchronization, settings, mirror, consistency, group, 
 summary: Es posible cambiar la configuración de sincronización y los umbrales de advertencia que utiliza el grupo de coherencia de reflejos en la cabina de almacenamiento local cuando los datos se sincronizan inicialmente o cuando se vuelven a sincronizar durante las operaciones de mirroring asíncrono. 
 ---
-= Cambiar la configuración de sincronización de un grupo de coherencia de reflejos
+= Cambiar la configuración de sincronización de un grupo de consistencia de espejo en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

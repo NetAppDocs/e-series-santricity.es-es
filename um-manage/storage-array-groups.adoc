@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, storage, array, groups 
 summary: Es posible gestionar la infraestructura física y virtualizada si se agrupa un conjunto de cabinas de almacenamiento. Las cabinas de almacenamiento pueden agruparse de modo que sea más sencillo ejecutar las tareas de supervisión o generación de informes. 
 ---
-= Grupos de cabinas de almacenamiento
+= Obtenga información sobre los grupos de matrices de almacenamiento en SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

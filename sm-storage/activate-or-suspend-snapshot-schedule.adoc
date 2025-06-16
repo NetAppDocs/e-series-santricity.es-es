@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, snapshot schedule 
 summary: Se puede suspender temporalmente la recogida programada de imágenes Snapshot si se necesita conservar espacio de almacenamiento. Este método es más eficiente que eliminar y después volver a crear la programación Snapshot. 
 ---
-= Activar y suspender la programación Snapshot
+= Activar y suspender una programación de instantáneas en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

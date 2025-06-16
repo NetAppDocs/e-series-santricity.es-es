@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, re-enable, drive, ports 
 summary: Es posible indicar a la controladora que se ha tomado esa acción correctiva para recuperar el sistema de una condición de conexión incorrecta. 
 ---
-= Vuelva a habilitar puertos de unidad
+= Volver a habilitar los puertos de unidad en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, clear, staged, os, software 
 summary: Puede quitar el software de sistema operativo almacenado temporalmente para garantizar que no se active una versión pendiente de manera accidental más adelante. La eliminación del software de sistema operativo almacenado temporalmente no afecta la versión actual que está en ejecución en las cabinas de almacenamiento. 
 ---
-= Borre el software de sistema operativo almacenado temporalmente
+= Borrar el software del sistema operativo en etapas en SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

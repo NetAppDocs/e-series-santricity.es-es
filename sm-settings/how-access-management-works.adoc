@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, authentication, users, roles, access, Management, 
 summary: Access Management es un método para establecer la autenticación de usuario en SANtricity System Manager. 
 ---
-= Cómo funciona Access Management
+= Cómo funciona la gestión de acceso en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

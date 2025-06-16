@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, create, volumes 
 summary: Se crean volúmenes para añadir capacidad de almacenamiento a una carga de trabajo específica de la aplicación y para que los volúmenes creados sean visibles para un host o clúster de hosts específicos. Además, la secuencia de creación de volúmenes ofrece las opciones de asignar cantidades específicas de capacidad a cada volumen que desea crear. 
 ---
-= Cree volúmenes
+= Crear volúmenes en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

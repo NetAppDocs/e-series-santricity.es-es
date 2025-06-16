@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configuration settings, volume group 
 summary: Es posible editar la configuración de un grupo de volúmenes, incluido el nombre y el nivel de RAID. 
 ---
-= Cambiar la configuración de un grupo de volúmenes
+= Cambiar la configuración de un grupo de volúmenes en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

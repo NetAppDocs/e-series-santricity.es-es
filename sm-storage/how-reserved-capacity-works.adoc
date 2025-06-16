@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, reserved, capacity, 
 summary: La capacidad reservada se crea automáticamente cuando se proporcionan operaciones de servicio de copia, como operaciones Snapshot o mirroring asíncrono, para los volúmenes. 
 ---
-= Cómo funciona la capacidad reservada
+= Cómo funciona la capacidad reservada en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

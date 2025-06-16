@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, requirements, guidelines, snapshots 
 summary: Al crear y utilizar Snapshot, revise los siguientes requisitos y directrices. 
 ---
-= Requisitos y directrices para Snapshot
+= Requisitos y pautas para las instantáneas en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

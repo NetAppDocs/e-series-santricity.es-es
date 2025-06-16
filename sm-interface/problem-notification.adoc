@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, notifications 
 summary: System Manager utiliza iconos y otros métodos para notificar los problemas en la cabina de almacenamiento. 
 ---
-= Información general sobre notificaciones de problemas
+= Obtenga más información sobre las notificaciones de problemas de SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

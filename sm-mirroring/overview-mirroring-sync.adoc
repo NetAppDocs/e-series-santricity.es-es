@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, RVM, synchronous, mirroring, controllers, 
 summary: La función Synchronous Mirroring proporciona la replicación de datos en línea en tiempo real entre las cabinas de almacenamiento a una distancia remota. 
 ---
-= Información general de mirroring síncrono
+= Obtenga más información sobre la duplicación sincrónica en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, update, remote, ip, address, connection, 
 summary: Es posible actualizar la dirección IP de iSCSI para que se vuelva a establecer la conexión entre la cabina de almacenamiento remota y la cabina de almacenamiento local. 
 ---
-= Actualice la dirección IP remota
+= Actualizar las direcciones IP de la matriz de almacenamiento remota en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

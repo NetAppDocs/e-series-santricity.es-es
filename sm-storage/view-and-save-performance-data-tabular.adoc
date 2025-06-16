@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, save, tabular, performance, 
 summary: Es posible ver y guardar datos de gráficos de rendimiento en una tabla de resultados. Esto permite filtrar los datos que se desean ver. 
 ---
-= Ver y guardar los datos de rendimiento tabulares
+= Ver y guardar datos de rendimiento tabulares en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

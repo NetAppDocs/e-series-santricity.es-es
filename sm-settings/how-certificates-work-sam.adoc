@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, certificates, 
 summary: Los certificados son archivos digitales que identifican entidades en línea, como sitios web y servidores, para poder establecer comunicaciones seguras en Internet. 
 ---
-= Cómo funcionan los certificados
+= Cómo funcionan los certificados en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

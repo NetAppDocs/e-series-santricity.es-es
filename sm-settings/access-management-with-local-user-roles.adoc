@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access management, local, user, roles, 
 summary: 'Para Access Management, los administradores pueden usar las capacidades RBAC (control de acceso basado en roles) aplicadas en la cabina de almacenamiento. Estas capacidades se denominan roles de usuario local.' 
 ---
-= Access Management con roles de usuario local
+= Configurar la gestión de acceso con roles de usuarios locales en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

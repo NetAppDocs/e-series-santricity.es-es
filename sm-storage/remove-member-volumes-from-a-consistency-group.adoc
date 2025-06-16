@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remove, member volume, snapshot, consistency group 
 summary: Es posible quitar un volumen miembro de un grupo de coherencia Snapshot existente. 
 ---
-= Quite un volumen miembro de un grupo de coherencia Snapshot
+= Eliminar un volumen miembro de un grupo de consistencia de instantáneas en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

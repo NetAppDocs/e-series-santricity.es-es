@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, discover, single, array 
 summary: Utilice la opción Añadir/detectar una cabina de almacenamiento única para detectar y añadir manualmente una sola cabina de almacenamiento a la red de la organización. 
 ---
-= Detectar una sola cabina
+= Descubra una única matriz en SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

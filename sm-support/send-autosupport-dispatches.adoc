@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, send, autosupport, dispatches 
 summary: System Manager permite enviar mensajes de AutoSupport al soporte técnico sin esperar a un mensaje programado. 
 ---
-= Envíe mensajes de AutoSupport
+= Enviar despachos de AutoSupport en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

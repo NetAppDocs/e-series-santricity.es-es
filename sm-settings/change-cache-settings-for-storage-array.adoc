@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, cache, settings, 
 summary: Se puede ajustar la configuración de la memoria caché para el vaciado y el tamaño del bloque de todos los volúmenes de la cabina de almacenamiento. 
 ---
-= Modifique la configuración de caché para la cabina de almacenamiento
+= Cambiar la configuración de caché de la matriz de almacenamiento en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

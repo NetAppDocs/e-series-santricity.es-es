@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, requirements, synchronous, mirroring, 
 summary: Si planea utilizar la función de mirroring síncrono, tenga en cuenta los siguientes requisitos. 
 ---
-= Requisitos para mirroring síncrono
+= Requisitos para utilizar la duplicación sincrónica en el software SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font

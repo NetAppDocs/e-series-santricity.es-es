@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, default, host, operating, system, 
 summary: La cabina de almacenamiento utiliza el tipo de host predeterminado cuando se conectan inicialmente los hosts. Define la manera en que funcionan las controladoras en la cabina de almacenamiento con el sistema operativo del host cuando se accede a los volúmenes. 
 ---
-= Tipo de sistema operativo del host predeterminado
+= Obtenga información sobre el tipo de sistema operativo host predeterminado en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

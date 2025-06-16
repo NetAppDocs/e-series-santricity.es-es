@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, cancel, pending, snapshot, image 
 summary: Es posible cancelar una imagen Snapshot pendiente antes de que se complete. Las Snapshot se ejecutan de forma asíncrona y el estado de la Snapshot es pendiente hasta que se completa. La imagen Snapshot se completa tan pronto como se completa la operación de sincronización. 
 ---
-= Cancelar una imagen Snapshot pendiente
+= Cancelar una imagen instantánea pendiente en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

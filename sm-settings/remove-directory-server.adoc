@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remove, directory, server, 
 summary: Para interrumpir la conexión entre un servidor de directorio y la cabina de almacenamiento, es posible eliminar la información del servidor de la página Access Management. Se recomienda ejecutar esta tarea si se configuró un servidor nuevo y se desea eliminar el anterior. 
 ---
-= Quitar un servidor de directorio
+= Eliminar el servidor de directorio en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

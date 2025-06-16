@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, hot, spare, unassign, 
 summary: Es posible cambiar el estado de una pieza de repuesto a una unidad sin asignar. 
 ---
-= Anular asignación de piezas de repuesto
+= Desasignar repuestos activos en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

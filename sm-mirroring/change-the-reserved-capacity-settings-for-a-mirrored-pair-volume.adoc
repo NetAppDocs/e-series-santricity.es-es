@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, reserved, capacity, settings, mirrored, pair, volume, 
 summary: Puede cambiar la configuración del volumen de una pareja reflejada a fin de ajustar el punto de porcentaje en el que System Manager envía una notificación de alerta cuando la capacidad reservada para una pareja reflejada está casi completa. 
 ---
-= Cambie la configuración de capacidad reservada para un volumen de parejas reflejadas
+= Cambiar la configuración de capacidad reservada para un volumen de par reflejado en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

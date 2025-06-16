@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, permissions, mapped, roles, 
 summary: 'Las capacidades de RBAC (control de acceso basado en roles) presentes en la cabina de almacenamiento incluyen perfiles de usuario predefinidos con uno o varios roles asignados. Cada rol incluye permisos para acceder a tareas en SANtricity System Manager.' 
 ---
-= Permisos para roles asignados
+= Obtenga información sobre los permisos para roles asignados en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

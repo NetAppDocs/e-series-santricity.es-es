@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, view, order, shelves 
 summary: Puede cambiar el orden de las bandejas que se muestran en la página hardware para que coincidan con el orden físico de las bandejas de un armario. 
 ---
-= Cambiar el orden de vista de las bandejas
+= Cambiar el orden de visualización de los estantes en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

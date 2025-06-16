@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, ssd cache, 
 summary: 'La función SSD Cache es una solución basada en la controladora que almacena en la caché los datos de acceso más frecuente (los datos "activos") en unidades de estado sólido (SSD) de latencia más baja para acelerar dinámicamente el rendimiento del sistema. La caché SSD se usa exclusivamente para las lecturas del host.' 
 ---
-= Cómo funciona caché SSD
+= Cómo funciona la caché SSD en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

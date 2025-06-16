@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, import, certificates, arrays 
 summary: 'Si es necesario, puede importar certificados para las cabinas de almacenamiento de modo que estas se puedan autenticar con el sistema donde se aloja SANtricity Unified Manager. Los certificados pueden estar firmados por una entidad de certificación (CA) o ser autofirmados.' 
 ---
-= Importar certificados para cabinas
+= Importar certificados para matrices en SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

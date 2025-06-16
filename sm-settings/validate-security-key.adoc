@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity,System Manager, E-Series, validate, security, key, 
 summary: Es posible validar la clave de seguridad para asegurarse de que no se haya dañado y verificar que tenga una frase de contraseña correcta. 
 ---
-= Valide la clave de seguridad
+= Validar la clave de seguridad en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

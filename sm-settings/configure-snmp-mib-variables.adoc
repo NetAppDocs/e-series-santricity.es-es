@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, configure, snmp, mib, variables, 
 summary: 'En el caso de las alertas SNMP, tiene la opción de configurar las variables de la base de datos de información de gestión (MIB) que se muestran en las excepciones SNMP. Estas variables pueden mostrar el nombre de la cabina de almacenamiento, su ubicación y una persona de contacto.' 
 ---
-= Configure las variables MIB de SNMP
+= Configurar las variables MIB de SNMP en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

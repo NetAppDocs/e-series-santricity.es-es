@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, pools, volume groups 
 summary: Es posible crear capacidad de almacenamiento lógico a partir de un subconjunto de unidades sin asignar en la cabina de almacenamiento. Esta capacidad lógica puede adoptar la forma de un pool o un grupo de volúmenes, según las necesidades del entorno. 
 ---
-= Información general sobre pools y grupos de volúmenes
+= Obtenga información sobre grupos y grupos de volúmenes en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

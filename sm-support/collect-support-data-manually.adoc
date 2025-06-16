@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, collect, support, data, manually 
 summary: Es posible recopilar distintas clases de inventario, Estados y datos de rendimiento acerca de la cabina de almacenamiento en un único archivo. El soporte técnico puede utilizar el archivo para la solución de problemas y un análisis más profundo. 
 ---
-= Recopilar manualmente datos de soporte
+= Recopilar datos de soporte manualmente en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

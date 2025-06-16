@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, allocated capacity, thin volume 
 summary: En el caso de los volúmenes finos con capacidad para asignar espacio bajo demanda, se puede cambiar el límite que restringe la capacidad asignada a la que un volumen fino se puede expandir automáticamente. 
 ---
-= Cambiar el límite de capacidad asignada para un volumen fino
+= Cambiar el límite de capacidad asignada para un volumen delgado en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

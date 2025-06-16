@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, synchronous, mirroring, status, 
 summary: El estado de una pareja reflejada síncrona indica si los datos en el volumen primario y el volumen secundario están sincronizados. El estado de reflejo es independiente del estado de componente de los volúmenes en la pareja reflejada. 
 ---
-= Estado de mirroring síncrono
+= Obtenga información sobre el estado de la duplicación sincrónica en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

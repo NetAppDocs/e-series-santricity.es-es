@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, snapshot, storage 
 summary: La función Snapshot utiliza la tecnología copy-on-write para almacenar imágenes Snapshot y utilizar la capacidad reservada asignada. 
 ---
-= Cómo funciona el almacenamiento Snapshot
+= Cómo funciona el almacenamiento de instantáneas en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

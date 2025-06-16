@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, volume, settings, snapshot, volume 
 summary: 'Es posible cambiar la configuración de un volumen Snapshot o un volumen Snapshot de grupo de coherencia Snapshot para cambiar el nombre, habilitar o deshabilitar el almacenamiento en caché SSD, o cambiar la asignación de hosts, clúster de hosts o número de unidad lógica (LUN).' 
 ---
-= Cambiar la configuración de volumen para un volumen Snapshot
+= Cambiar la configuración de volumen para un volumen de instantánea en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, reset, management, certificates, 
 summary: Es posible revertir los certificados que se usan en las controladoras de los certificados firmados por CA a los certificados autofirmados de fábrica. 
 ---
-= Restablezca los certificados de gestión
+= Restablecer certificados de administración en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

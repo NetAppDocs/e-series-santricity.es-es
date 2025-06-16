@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, mail, server, alerts, 
 summary: Es posible cambiar la dirección del servidor de correo y la dirección del remitente de correo utilizada para las alertas por correo electrónico. 
 ---
-= Editar servidor de correo para alertas
+= Editar el servidor de correo para alertas en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

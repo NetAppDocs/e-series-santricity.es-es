@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, controller ownership, volume 
 summary: Es posible cambiar la propiedad de la controladora preferida de un volumen, para que las operaciones de I/o de las aplicaciones host se redirijan por la ruta nueva. 
 ---
-= Cambiar propiedad de la controladora de un volumen
+= Cambiar la propiedad del controlador de un volumen en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

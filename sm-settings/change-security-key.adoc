@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, change, security, key, 
 summary: Es posible reemplazar una clave de seguridad por una nueva en cualquier momento. Puede resultar necesario cambiar una clave de seguridad en aquellos casos en los que potencialmente se haya comprometido la seguridad en la empresa y en los que se desee garantizar que personal no autorizado no pueda acceder a los datos de las unidades. 
 ---
-= Cambiar clave de seguridad
+= Cambiar una clave de seguridad en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

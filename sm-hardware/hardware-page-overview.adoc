@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, hardware, page, components, 
 summary: La página hardware ofrece una descripción gráfica de los componentes físicos de la cabina de almacenamiento. Desde aquí, es posible comprobar el estado de los componentes y realizar algunas funciones relacionadas con ellos. 
 ---
-= Componentes y página hardware
+= Página de hardware y componentes de SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, delete, snapshot, volume 
 summary: Es posible eliminar un volumen Snapshot o un grupo de coherencia Snapshot que ya no se necesitan para fines de backup o prueba de aplicaciones de software. 
 ---
-= Eliminar volumen Snapshot
+= Eliminar un volumen de instantánea en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

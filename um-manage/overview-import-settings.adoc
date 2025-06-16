@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, import, settings 
 summary: Es posible importar la configuración desde una cabina de almacenamiento a otra, incluidas las alertas, la función AutoSupport y los servicios de directorio. 
 ---
-= Información general de importación de la configuración
+= Obtenga información sobre cómo importar configuraciones de matriz de almacenamiento en SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

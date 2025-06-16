@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, export, saml, Service Provider, files, 
 summary: 'Si es necesario, se pueden exportar metadatos de proveedor de servicios para la cabina de almacenamiento y volver a importar los archivos en el sistema del proveedor de identidades (IDP).' 
 ---
-= Exporte los archivos de proveedor de servicios SAML
+= Exportar archivos del proveedor de servicios SAML en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

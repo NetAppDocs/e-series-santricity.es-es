@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, update, battery, learn, cycles 
 summary: 'Un ciclo de aprendizaje es un ciclo automático para calibrar el indicador de batería inteligente. Los ciclos se programan para comenzar automáticamente, el mismo día y a la misma hora, en intervalos de 8 semanas (por controladora). Si desea configurar un programa distinto, puede ajustar los ciclos de aprendizaje.' 
 ---
-= Actualice los ciclos de aprendizaje de la batería
+= Actualizar los ciclos de aprendizaje de la batería en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, imported, certificate, information, 
 summary: Desde la página certificados, es posible ver el tipo de certificado, la entidad emisora y el rango válido de fechas de los certificados para la cabina de almacenamiento. 
 ---
-= Vea información de certificaciones importadas
+= Ver la información del certificado importado en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

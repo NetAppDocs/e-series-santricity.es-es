@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, disable, resource, provisioning, 
 summary: Si anteriormente deshabilitó la función predeterminada para el aprovisionamiento de recursos, puede ir a Configuración y volver a habilitarla para todos los grupos de volúmenes SSD o pools nuevos que cree. También puede desactivar de nuevo el ajuste. 
 ---
-= Habilitar o deshabilitar el aprovisionamiento de recursos para nuevos grupos de volúmenes o pools
+= Habilitar o deshabilitar el aprovisionamiento de recursos para nuevos grupos de volúmenes o pools en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

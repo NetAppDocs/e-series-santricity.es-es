@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, system settings 
 summary: Puede configurar System Manager para algunas opciones de cabina generales y funciones complementarias. 
 ---
-= Información general de la configuración
+= Obtenga información sobre la descripción general de la configuración en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

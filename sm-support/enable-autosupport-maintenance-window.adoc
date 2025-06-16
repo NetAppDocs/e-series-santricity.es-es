@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, enable, autosupport, ASUP, maintenance window 
 summary: Habilite la ventana de mantenimiento de AutoSupport para evitar la creación automática de incidencias durante eventos de error. En el modo de operación normal, la cabina de almacenamiento utiliza AutoSupport para abrir un caso en soporte si existe un problema. 
 ---
-= Habilite la ventana de mantenimiento de AutoSupport
+= Habilitar la ventana de mantenimiento de AutoSupport en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

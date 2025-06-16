@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, schedule, snapshot, images 
 summary: Es posible crear una programación Snapshot para habilitar la recuperación por un problema con el volumen base y para ejecutar backups programados. Se pueden crear Snapshot de volúmenes base o grupos de coherencia Snapshot a diario, semanal o mensualmente, a cualquier hora del día. 
 ---
-= Programar imágenes Snapshot
+= Programe imágenes instantáneas en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

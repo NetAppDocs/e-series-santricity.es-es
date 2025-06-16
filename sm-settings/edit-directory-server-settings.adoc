@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, directory, server, settings, role, mappings, 
 summary: Si anteriormente configuró un servidor de directorio en Access Management, es posible cambiar sus ajustes en cualquier momento. Entre estos ajustes se encuentran la información de conexión del servidor y las asignaciones de grupos a roles. 
 ---
-= Editar ajustes y asignaciones de roles del servidor de directorios
+= Editar la configuración del servidor de directorio y las asignaciones de roles en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

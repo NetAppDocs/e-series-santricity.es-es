@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, add, member, volume, snapshot consistency group 
 summary: Es posible añadir un volumen miembro nuevo a un grupo de coherencia Snapshot existente. Cuando se añade un volumen miembro nuevo, también se debe reservar capacidad para el volumen miembro. 
 ---
-= Añadir un volumen miembro a un grupo de coherencia Snapshot
+= Agregar un volumen miembro a un grupo de consistencia de instantáneas en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

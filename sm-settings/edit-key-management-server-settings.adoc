@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, edit, key, management, server, settings, 
 summary: Si configuró la gestión de claves externas, es posible ver y editar los ajustes del servidor de gestión de claves en cualquier momento. 
 ---
-= Editar configuración del servidor de gestión de claves
+= Editar la configuración del servidor de administración de claves en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

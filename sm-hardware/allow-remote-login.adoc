@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remote, login, 
 summary: El inicio de sesión remoto permite que los usuarios fuera de la red de área local inicien una sesión SSH y cambien la configuración en la controladora. 
 ---
-= Configuración del inicio de sesión remoto (SSH)
+= Configurar el inicio de sesión remoto (SSH) en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

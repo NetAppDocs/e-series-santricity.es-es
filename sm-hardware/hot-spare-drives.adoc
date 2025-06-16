@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, hot, spare, drives, raid1, raid6, raid5 
 summary: Las piezas de repuesto actúan como unidades en espera en los grupos de volúmenes RAID 1, RAID 5 o RAID 6 de System Manager. 
 ---
-= Información general de la unidad de repuesto
+= Obtenga información sobre las unidades de repuesto en caliente en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, check, volume, redundancy 
 summary: Con ayuda del soporte técnico o según indique Recovery Guru, puede comprobar la redundancia de un volumen en un pool o grupo de volúmenes para determinar si los datos de ese volumen son consistentes. Los datos de redundancia se utilizan para reconstruir información rápidamente en una unidad de reemplazo si falla una de las unidades de un pool o grupo de volúmenes. 
 ---
-= Compruebe la redundancia de un volumen
+= Comprobar la redundancia de volumen en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, volumes 
 summary: Es posible crear un volumen como contenedor en el cual las aplicaciones, las bases de datos y los sistemas de archivos almacenan datos. Al crear un volumen, también se debe seleccionar una carga de trabajo para personalizar la configuración de la cabina de almacenamiento para una aplicación específica. 
 ---
-= Información general de los volúmenes y las cargas de trabajo
+= Obtenga información sobre volúmenes y cargas de trabajo en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, media scan settings, volume 
 summary: Un análisis de medios es una operación que se ejecuta en segundo plano, que analiza todos los datos e información de redundancia del volumen. Use esta opción para habilitar o deshabilitar la configuración del análisis de medios para un volumen o varios, o bien para cambiar la duración del análisis. 
 ---
-= Cambiar la configuración de análisis de medios para un volumen
+= Cambiar la configuración de escaneo de medios para un volumen en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

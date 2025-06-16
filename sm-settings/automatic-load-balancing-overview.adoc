@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, automatic, load, balancing, 
 summary: La función Automatic Load Balancing ofrece una gestión de recursos de I/o mejorada, ya que reacciona dinámicamente a los cambios de carga con el tiempo y ajusta automáticamente la propiedad de la controladora de volumen para corregir cualquier problema de desequilibrio de carga cuando las cargas de trabajo son distintas de una controladora a otra. 
 ---
-= Información general sobre equilibrio de carga automático
+= Aprenda sobre el equilibrio de carga automático en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

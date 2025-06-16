@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, pool, volume group 
 summary: Es posible crear volúmenes a través de un pool o de un grupo de volúmenes. La mejor selección depende principalmente de los requisitos de almacenamiento clave, como la carga de trabajo de I/o esperada, los requisitos de rendimiento y los requisitos de protección de datos. 
 ---
-= Decidir si se utilizará un pool y un grupo de volúmenes
+= Obtenga información sobre grupos y grupos de volúmenes en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, create, storage, array, group 
 summary: Cree grupos de almacenamiento y, a continuación, añada cabinas de almacenamiento a los grupos. El grupo de almacenamiento define las unidades que proporcionan el almacenamiento con el que se compone el volumen. 
 ---
-= Configure el grupo de cabinas de almacenamiento
+= Configurar un grupo de matrices de almacenamiento en SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

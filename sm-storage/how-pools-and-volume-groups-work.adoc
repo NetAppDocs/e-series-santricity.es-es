@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, pools, volume group, 
 summary: 'Para aprovisionar almacenamiento, es posible crear un pool o un grupo de volúmenes que contendrá las unidades de disco duro (HDD) o los discos de estado sólido (SSD) que se desean usar en la cabina de almacenamiento.' 
 ---
-= Cómo funcionan los pools y los grupos de volúmenes
+= Cómo funcionan los pools y grupos de volúmenes en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

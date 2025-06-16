@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, alarm, alerts, 
 summary: Las alertas notifican a los administradores sobre eventos importantes que se producen en la cabina de almacenamiento. Las alertas se pueden enviar por correo electrónico, capturas SNMP y syslog. 
 ---
-= ¿Cómo funcionan las alertas
+= Cómo funcionan las alertas en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

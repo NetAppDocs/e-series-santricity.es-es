@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, iser, over, infiniband, statistics 
 summary: Si la controladora de la cabina de almacenamiento incluye un puerto Iser over InfiniBand, es posible ver datos sobre las conexiones del host. 
 ---
-= Ver estadísticas de Iser over InfiniBand
+= Ver estadísticas de iSER sobre InfiniBand en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

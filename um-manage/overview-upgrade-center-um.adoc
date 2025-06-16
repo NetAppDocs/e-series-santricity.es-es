@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, upgrade, center 
 summary: En el Centro de actualización, puede gestionar las actualizaciones de NVSRAM y de software de sistema operativo SANtricity para varias cabinas de almacenamiento. 
 ---
-= Información general del centro de actualización
+= Obtenga más información sobre el Centro de actualizaciones en SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font
