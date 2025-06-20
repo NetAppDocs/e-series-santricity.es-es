@@ -1,0 +1,129 @@
+---
+permalink: sm-settings/faq-nvme-protocol.html 
+sidebar: sidebar 
+keywords:  
+summary: Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respuesta rápida a una pregunta. 
+---
+= Preguntas frecuentes sobre el protocolo NVMe para SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respuesta rápida a una pregunta.
+
+
+
+== ¿Cómo se interpretan las estadísticas de NVMe over Fabrics?
+
+El cuadro de diálogo Ver estadísticas de NVMe over Fabrics muestra estadísticas para el subsistema NVMe y la interfaz RDMA. Todas las estadísticas son de solo lectura y no pueden configurarse.
+
+* *Estadísticas del subsistema NVMe* -- muestra estadísticas para la controladora NVMe y su cola. La controladora NVMe ofrece una ruta de acceso entre un host y los espacios de nombres en la cabina de almacenamiento. Es posible revisar las estadísticas del subsistema NVMe para consultar elementos, como errores de conexión, reinicios y apagados. Para obtener más información sobre estas estadísticas, haga clic en *Ver leyenda de encabezados de tabla*.
+* *Estadísticas de la interfaz RDMA* -- proporciona estadísticas para todos los puertos NVMe over Fabrics de la interfaz RDMA, que incluye estadísticas de rendimiento e información de errores de enlace asociados con cada puerto del switch. Esta pestaña solo se muestra cuando existen puertos NVMe over Fabrics disponibles. Para obtener más información sobre las estadísticas, haga clic en *Ver leyenda de encabezados de tabla*.
+
+
+Es posible ver cada una de las estadísticas como estadísticas sin configurar o estadísticas de base. Las estadísticas sin configurar son todas las estadísticas recogidas desde que se iniciaron las controladoras. Las estadísticas de base son las estadísticas de un momento específico que se recogen desde el establecimiento de la hora de la línea de base.
+
+
+
+== ¿Qué más debo hacer para configurar o diagnosticar NVMe over InfiniBand?
+
+En la tabla a continuación, se enumeran las funciones de SANtricity System Manager que se pueden utilizar para configurar y gestionar sesiones NVMe over InfiniBand.
+
+[NOTE]
+====
+La configuración de NVMe over InfiniBand solo está disponible si la controladora de la cabina de almacenamiento incluye un puerto NVMe over InfiniBand.
+
+====
+[cols="35h,~"]
+|===
+| Acción | Ubicación 
+
+
+ a| 
+Configure los puertos NVMe over InfiniBand
+ a| 
+. Seleccione *hardware*.
+. Seleccione la pestaña *Controladores y componentes*.
+. Seleccione una controladora.
+. Seleccione *Configurar puertos NVMe over InfiniBand*.
+
+
+o.
+
+. Seleccione MENU:Settings[System].
+. Desplácese hasta *Configuración de NVMe over InfiniBand* y seleccione *Configurar puertos NVMe over InfiniBand*.
+
+
+
+
+ a| 
+Ver estadísticas de NVMe over InfiniBand
+ a| 
+. Seleccione MENU:Settings[System].
+. Desplácese hasta *Configuración de NVMe over InfiniBand* y seleccione *Ver estadísticas de NVMe over Fabrics*.
+
+
+|===
+
+
+== ¿Qué más debo hacer para configurar o diagnosticar NVMe over roce?
+
+Es posible configurar y gestionar NVMe over roce desde las páginas hardware y Configuración.
+
+[NOTE]
+====
+La configuración de NVMe over roce solo está disponible si la controladora de la cabina de almacenamiento incluye un puerto NVMe over roce.
+
+====
+[cols="35h,~"]
+|===
+| Acción | Ubicación 
+
+
+ a| 
+Configure los puertos NVMe over roce
+ a| 
+. Seleccione *hardware*.
+. Seleccione la pestaña *Controladores y componentes*.
+. Seleccione una controladora.
+. Seleccione *Configurar puertos NVMe over roce*.
+
+
+o.
+
+. Seleccione MENU:Settings[System].
+. Desplácese hasta *Configuración de NVMe over roce* y seleccione *Configurar puertos NVMe over roce*.
+
+
+
+
+ a| 
+Ver estadísticas de NVMe over Fabrics
+ a| 
+. Seleccione MENU:Settings[System].
+. Desplácese hasta *Configuración de NVMe over roce* y seleccione *Ver estadísticas de NVMe over Fabrics*.
+
+
+|===
+
+
+== ¿Por qué existen dos direcciones IP para un puerto físico?
+
+La cabina de almacenamiento EF600 puede incluir dos HIC: Una externa y una interna.
+
+En esta configuración, la HIC externa se encuentra conectada a una HIC interna auxiliar. Cada puerto físico al que se puede obtener acceso desde la HIC externa tiene un puerto virtual asociado desde la HIC interna.
+
+Para alcanzar el rendimiento máximo de 200 GB, es necesario asignar una dirección IP exclusiva a los puertos físico y virtual para que el host pueda establecer conexiones a ambos. Si no se asigna una dirección IP al puerto virtual, la HIC se ejecutará a aproximadamente la mitad de su capacidad de velocidad.
+
+
+
+== ¿Por qué existen dos conjuntos de parámetros para un puerto físico?
+
+La cabina de almacenamiento EF600 puede incluir dos HIC: Una externa y una interna.
+
+En esta configuración, la HIC externa se encuentra conectada a una HIC interna auxiliar. Cada puerto físico al que se puede obtener acceso desde la HIC externa tiene un puerto virtual asociado desde la HIC interna.
+
+Para alcanzar el rendimiento máximo de 200 GB, es necesario asignar parámetros a los puertos físico y virtual para que el host pueda establecer conexiones a ambos. Si no se asignan parámetros al puerto virtual, la HIC se ejecutará a aproximadamente la mitad de su capacidad de velocidad.

@@ -1,0 +1,180 @@
+---
+permalink: sm-settings/faq-iscsi-protocol.html 
+sidebar: sidebar 
+keywords:  
+summary: Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respuesta rápida a una pregunta. 
+---
+= Preguntas frecuentes sobre el protocolo iSCSI para SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respuesta rápida a una pregunta.
+
+
+
+== ¿Qué sucede cuando utilizo un servidor iSNS para el registro?
+
+Cuando se utiliza información del servidor de servicio de nombres de almacenamiento de Internet (iSNS), los hosts (iniciadores) pueden configurarse para consultar el servidor iSNS a fin de recuperar información del objetivo (controladoras).
+
+Este registro proporciona al servidor iSNS la información del puerto y del nombre completo de iSCSI (IQN) de la controladora, y permite consultas entre los iniciadores (hosts iSCSI) y los objetivos (controladoras).
+
+
+
+== ¿Qué métodos de registro se admiten automáticamente para iSCSI?
+
+La implementación de iSCSI es compatible con el método de detección Servicio de nombres de almacenamiento de Internet (iSNS) o con el uso del comando Send Targets.
+
+El método iSNS permite la detección iSNS entre los iniciadores (hosts iSCSI) y los objetivos (controladoras). La controladora objetivo se registra para proporcionar al servidor iSNS la información sobre el puerto y el nombre completo de iSCSI (IQN) de la controladora.
+
+Si no se configura iSNS, el host iSCSI puede enviar el comando Send Targets durante una sesión de detección iSCSI. En respuesta, la controladora devuelve la información del puerto (por ejemplo, el IQN objetivo, la dirección IP del puerto, el puerto de escucha y el grupo de puertos de destino). Este método de detección no es necesario si utiliza iSNS, dado que el iniciador del host puede recuperar las IP objetivo del servidor iSNS.
+
+
+
+== ¿Cómo se interpretan las estadísticas de Iser over InfiniBand?
+
+El cuadro de diálogo Ver estadísticas de Iser over InfiniBand muestra las estadísticas de destino local (protocolo) y las estadísticas de la interfaz Iser over InfiniBand (IB). Todas las estadísticas son de solo lectura y no pueden configurarse.
+
+* *Estadísticas de destino local (protocolo)* -- proporciona estadísticas para el destino Iser over InfiniBand, que muestra el acceso de nivel de bloque a sus medios de almacenamiento.
+* *Estadísticas de la interfaz Iser over InfiniBand* -- proporciona estadísticas para todos los puertos Iser over InfiniBand en la interfaz InfiniBand, que incluye estadísticas de rendimiento e información de errores de enlace asociados con cada puerto del switch.
+
+
+Es posible ver cada una de las estadísticas como estadísticas sin configurar o estadísticas de base. Las estadísticas sin configurar son todas las estadísticas recogidas desde que se iniciaron las controladoras. Las estadísticas de base son las estadísticas de un momento específico que se recogen desde el establecimiento de la hora de la línea de base.
+
+
+
+== ¿Qué más debo hacer para configurar o diagnosticar Iser over InfiniBand?
+
+En la tabla a continuación, se enumeran las funciones de SANtricity System Manager que se pueden utilizar para configurar y gestionar sesiones iSER over InfiniBand.
+
+[NOTE]
+====
+La configuración de Iser over InfiniBand solo está disponible si la controladora de la cabina de almacenamiento incluye un puerto de gestión de hosts Iser over InfiniBand.
+
+====
+[cols="35h,~"]
+|===
+| Acción | Ubicación 
+
+
+ a| 
+Configure los puertos Iser over InfiniBand
+ a| 
+. Seleccione *hardware*.
+. Seleccione la pestaña *Controladores y componentes*.
+. Seleccione una controladora.
+. Seleccione *Configurar puertos Iser over InfiniBand*.
+
+
+o.
+
+. Seleccione MENU:Settings[System].
+. Desplácese hasta *Configuración de Iser over InfiniBand* y seleccione *Configurar puertos Iser over InfiniBand*.
+
+
+
+
+ a| 
+Ver estadísticas de Iser over InfiniBand
+ a| 
+. Seleccione MENU:Settings[System].
+. Desplácese hasta *Configuración de Iser over InfiniBand* y seleccione *Ver estadísticas de Iser over InfiniBand*.
+
+
+|===
+
+
+== ¿Qué más debo hacer para configurar o diagnosticar iSCSI?
+
+Se pueden realizar sesiones iSCSI con hosts o cabinas de almacenamiento remotas en una relación de reflejo asíncrono. En las tablas a continuación, se enumeran las funciones de SANtricity System Manager que se pueden utilizar para configurar y gestionar estas sesiones iSCSI.
+
+[NOTE]
+====
+La configuración de iSCSI solo se encuentra disponible si la cabina de almacenamiento es compatible con iSCSI.
+
+====
+
+
+=== Configure iSCSI
+
+[cols="1a,1a"]
+|===
+| Acción | Ubicación 
+
+
+ a| 
+Gestionar configuración de iSCSI
+ a| 
+. Seleccione MENU:Settings[System].
+. Desplácese hasta *Ajustes iSCSI* para ver todas las funciones de administración.
+
+
+
+
+ a| 
+Configure los puertos iSCSI
+ a| 
+. Seleccione *hardware*.
+. Seleccione la pestaña *Controladores y componentes*.
+. Seleccione una controladora.
+. Seleccione *Configurar puertos iSCSI*.
+
+
+
+
+ a| 
+Establezca el secreto CHAP del host
+ a| 
+. Seleccione MENU:Settings[System].
+. Desplácese hasta *Configuración de iSCSI* y seleccione *Configurar autenticación*.
+
+
+o.
+
+. Seleccione MENU:Storage[hosts].
+. Seleccione un miembro del host.
+. Haga clic en menú:ficha Ver/editar configuración[puertos de host].
+
+
+|===
+
+
+=== Diagnosticar iSCSI
+
+[cols="1a,1a"]
+|===
+| Acción | Ubicación 
+
+
+ a| 
+Ver o finalizar sesiones iSCSI
+ a| 
+. Seleccione MENU:Settings[System].
+. Desplácese hasta *Configuración iSCSI* y seleccione *Ver/finalizar sesiones iSCSI*.
+
+
+o.
+
+. Seleccione menú:ficha Soporte[Centro de soporte > Diagnóstico].
+. Seleccione *Ver/finalizar sesiones iSCSI*.
+
+
+
+
+ a| 
+Ver estadísticas de iSCSI
+ a| 
+. Seleccione MENU:Settings[System].
+. Desplácese hasta *Configuración de iSCSI* y seleccione *Ver paquetes de estadísticas de iSCSI*.
+
+
+o.
+
+. Seleccione menú:ficha Soporte[Centro de soporte > Diagnóstico].
+. Seleccione *Ver paquetes de estadísticas iSCSI*.
+
+
+|===

@@ -1,0 +1,379 @@
+---
+permalink: sm-interface/faq-management-interface.html 
+sidebar: sidebar 
+keywords:  
+summary: Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respuesta rápida a una pregunta. 
+---
+= Preguntas frecuentes sobre la interfaz de administración de SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respuesta rápida a una pregunta.
+
+
+
+== ¿Qué exploradores son compatibles?
+
+En el administrador del sistema de SANtricity se admiten las siguientes versiones de exploradores.
+
+[cols="1a,1a"]
+|===
+| Navegador | Versión mínima 
+
+
+ a| 
+Google Chrome
+ a| 
+89
+
+
+
+ a| 
+Mozilla Firefox
+ a| 
+80
+
+
+
+ a| 
+Safari
+ a| 
+14
+
+
+
+ a| 
+Microsoft Edge
+ a| 
+90
+
+|===
+
+
+== ¿Cuáles son los métodos abreviados de teclado?
+
+Es posible navegar por SANtricity System Manager usando solo el teclado.
+
+
+
+=== Navegación general
+
+[cols="1a,1a"]
+|===
+| Acción | Método abreviado de teclado 
+
+
+ a| 
+Moverse al elemento siguiente.
+ a| 
+Pestaña
+
+
+
+ a| 
+Moverse al elemento anterior.
+ a| 
+Mayús + lengüeta
+
+
+
+ a| 
+Seleccionar un elemento.
+ a| 
+Introduzca
+
+
+
+ a| 
+Lista desplegable: Moverse al elemento siguiente o anterior.
+ a| 
+Flecha arriba o abajo
+
+
+
+ a| 
+Casilla de verificación: Seleccione un elemento.
+ a| 
+Barra espaciadora
+
+
+
+ a| 
+Botones de opción: Cambiar entre elementos.
+ a| 
+Flecha arriba o abajo
+
+
+
+ a| 
+Texto expansible: Expandir o contraer un elemento.
+ a| 
+Introduzca
+
+|===
+
+
+=== Navegación por tablas
+
+[cols="1a,1a"]
+|===
+| Acción | Método abreviado de teclado 
+
+
+ a| 
+Seleccionar una fila.
+ a| 
+Tabulador para seleccionar una fila, luego presionar Intro
+
+
+
+ a| 
+Desplazarse hacia arriba o hacia abajo.
+ a| 
+Flecha abajo/arriba o Av Pág/Re Pág
+
+
+
+ a| 
+Cambiar el orden de selección de una columna.
+ a| 
+Tabulador para seleccionar el encabezado de una columna, luego presionar Intro
+
+|===
+
+
+=== Navegación por calendario
+
+[cols="1a,1a"]
+|===
+| Acción | Método abreviado de teclado 
+
+
+ a| 
+Moverse al mes anterior.
+ a| 
+Re Pág
+
+
+
+ a| 
+Moverse al mes siguiente.
+ a| 
+AV Pág
+
+
+
+ a| 
+Moverse al año anterior.
+ a| 
+Control + Re Pág
+
+
+
+ a| 
+Moverse al año siguiente.
+ a| 
+Control + Av Pág
+
+
+
+ a| 
+Abrir el seleccionador de fechas, si estuviera cerrado.
+ a| 
+Control + Inicio
+
+
+
+ a| 
+Moverse al mes actual.
+ a| 
+Control/comando + Inicio
+
+
+
+ a| 
+Moverse al día anterior.
+ a| 
+Control/comando + izquierda
+
+
+
+ a| 
+Moverse al día siguiente.
+ a| 
+Control/comando + derecha
+
+
+
+ a| 
+Moverse a la semana anterior.
+ a| 
+Control/comando + Arriba
+
+
+
+ a| 
+Moverse a la semana siguiente.
+ a| 
+Control/comando + abajo
+
+
+
+ a| 
+Seleccionar la fecha deseada.
+ a| 
+Introduzca
+
+
+
+ a| 
+Cerrar el seleccionador de fecha y borrar la fecha.
+ a| 
+Control/comando + fin
+
+
+
+ a| 
+Cerrar el seleccionador de fecha sin seleccionar nada.
+ a| 
+Escape
+
+|===
+
+
+== ¿Cómo se relacionan las estadísticas de rendimiento de volúmenes individuales con el total?
+
+Las estadísticas de pools y grupos de volúmenes se calculan sumando todos los volúmenes, incluidos los volúmenes de capacidad reservada.
+
+El sistema de almacenamiento utiliza la capacidad reservada internamente con el fin de admitir volúmenes finos, Snapshot y mirroring asíncrono; esta capacidad no es visible para hosts de I/O. En consecuencia, es posible que las estadísticas de pools, controladoras y cabinas de almacenamiento no sean iguales a la suma de los volúmenes visibles.
+
+Sin embargo, para las estadísticas de aplicaciones y cargas de trabajo, solo se suman los volúmenes visibles.
+
+
+
+== ¿Por qué los datos se muestran como cero en los gráficos y la tabla?
+
+Cuando se muestra un cero en un punto de datos en los gráficos y la tabla, significa que no hay actividad de I/o del objeto en ese momento específico. Esta situación podría ocurrir porque el host no inicia operaciones de I/o en ese objeto, o podría haber un problema con el objeto en sí.
+
+La visualización de los datos históricos del objeto sigue disponible. Los gráficos y la tabla mostrarán datos distintos a cero una vez que comience la actividad de I/o del objeto.
+
+En la tabla siguiente, se enumeran los motivos más comunes por los cuales un valor de punto de datos puede ser cero en cualquier objeto dado.
+
+[cols="25h,~"]
+|===
+| Tipo de objeto de nivel de cabina | Motivo por el que los datos se muestran como cero 
+
+
+ a| 
+Volumen
+ a| 
+* El volumen no tenía asignación de host.
+
+
+
+
+ a| 
+Grupo de volúmenes
+ a| 
+* El grupo de volúmenes se está importando.
+* El grupo de volúmenes no contiene un volumen asignado a un host, el grupo de volúmenes *_y_* no contiene ninguna capacidad reservada.
+
+
+
+
+ a| 
+Unidad
+ a| 
+* Falló la unidad.
+* Se quitó la unidad.
+* La unidad está en estado desconocido.
+
+
+
+
+ a| 
+Controladora
+ a| 
+* La controladora está sin conexión.
+* Falló la controladora.
+* Se quitó la controladora.
+* La controladora está en estado desconocido.
+
+
+
+
+ a| 
+Cabina de almacenamiento
+ a| 
+* La cabina de almacenamiento no contiene volúmenes.
+
+
+|===
+
+
+== ¿Qué se muestra en el gráfico de latencia?
+
+En el gráfico latencia, se proporcionan estadísticas de latencia, en milisegundos (ms), de volúmenes, grupos de volúmenes, pools, aplicaciones y cargas de trabajo. Este gráfico se muestra en las pestañas Logical View, Physical View y Vista de aplicaciones y cargas de trabajo.
+
+La latencia se refiere a cualquier demora que ocurre mientras se leen o se escriben datos. Pase el cursor por un punto del gráfico para ver los siguientes valores, en milisegundos (ms), de ese momento específico:
+
+* Tiempo de lectura.
+* Tiempo de escritura.
+* Tamaño de I/o promedio.
+
+
+
+
+== ¿Qué se muestra en el gráfico de IOPS?
+
+En el gráfico IOPS, se muestran estadísticas para operaciones de entrada/salida por segundo. En la página Inicio, este gráfico muestra estadísticas de la cabina de almacenamiento. En las pestañas Logical View, Physical View y Vista de aplicaciones y cargas de trabajo del icono rendimiento, este gráfico muestra estadísticas de la cabina de almacenamiento, los volúmenes, los grupos de volúmenes, los pools, las aplicaciones, y cargas de trabajo.
+
+IOPS es la abreviatura en inglés de operaciones _entrada/salida (I/o) por segundo_. Pase el cursor por un punto del gráfico para ver los siguientes valores de ese momento específico:
+
+* Cantidad de operaciones de lectura.
+* Cantidad de operaciones de escritura.
+* Total de operaciones de lectura y escritura combinadas.
+
+
+
+
+== ¿Qué se muestra en el gráfico de MIB/s?
+
+El gráfico MIB/s muestra las estadísticas de velocidad de transferencia en mebibytes por segundo. En la página Inicio, este gráfico muestra estadísticas de la cabina de almacenamiento. En las pestañas Logical View, Physical View y Vista de aplicaciones y cargas de trabajo del icono rendimiento, este gráfico muestra estadísticas de la cabina de almacenamiento, los volúmenes, los grupos de volúmenes, los pools, las aplicaciones, y cargas de trabajo.
+
+MIB/s es la abreviatura de _mebibytes por segundo_ o 1,048,576 bytes por segundo. Pase el cursor por un punto del gráfico para ver los siguientes valores de ese momento específico:
+
+* La cantidad de datos leídos.
+* La cantidad de datos escritos.
+* La cantidad total de datos de lectura y escritura combinados.
+
+
+
+
+== ¿Qué se muestra en el gráfico de CPU?
+
+En el gráfico de la CPU, se muestran las estadísticas de capacidad de procesamiento de cada controladora (controladora A y controladora B). CPU es la abreviatura en inglés de _central processing unit_. En la página Inicio, este gráfico muestra estadísticas de la cabina de almacenamiento. En la pestaña Vista física del icono rendimiento, este gráfico muestra estadísticas de la cabina de almacenamiento y las unidades.
+
+En el gráfico de la CPU, se muestra el porcentaje de la capacidad de procesamiento de la CPU que se usa para operaciones de la cabina. Aun cuando no se produzcan operaciones de I/o externas, es posible que el porcentaje de utilización de CPU no sea cero, debido a que el sistema operativo de almacenamiento podría estar realizando operaciones en segundo plano y supervisión. Pase el cursor por un punto del gráfico para ver un porcentaje de la funcionalidad de procesamiento que se está utilizando en ese momento específico.
+
+
+
+== ¿Qué se muestra en el gráfico de margen adicional?
+
+El gráfico margen adicional se relaciona con la funcionalidad de rendimiento restante de las controladoras de la cabina de almacenamiento. Este gráfico está visible en la página Inicio y en la pestaña Vista física del icono rendimiento.
+
+En el gráfico margen adicional, se muestra la funcionalidad de rendimiento restante de los objetos físicos del sistema de almacenamiento. Pase el cursor por un punto del gráfico para ver los porcentajes de funcionalidad de IOPS y MIB/s restante para la controladora A y la controladora B.
+
+
+
+== ¿Dónde puedo obtener más información sobre las preferencias de presentación?
+
+Para obtener información acerca de las opciones de visualización disponibles:
+
+* Para seguir leyendo acerca de las unidades predeterminadas para la visualización de valores de capacidad, consulte link:set-default-units-for-capacity-values.html["Establezca unidades predeterminadas para los valores de capacidad"].
+* Para seguir leyendo acerca del tiempo predeterminado para visualizar los gráficos de rendimiento, consulte link:set-default-time-frame-for-performance-graphs.html["Establecer el plazo predeterminado para los gráficos de rendimiento"].
+

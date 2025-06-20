@@ -1,0 +1,135 @@
+---
+permalink: sm-hardware/faq-storage-controller.html 
+sidebar: sidebar 
+keywords:  
+summary: Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respuesta rápida a una pregunta. 
+---
+= Preguntas frecuentes sobre el controlador de almacenamiento para SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respuesta rápida a una pregunta.
+
+
+
+== ¿Qué es la negociación automática?
+
+La negociación automática es la capacidad de una interfaz de red para coordinar sus propios parámetros de conexión (velocidad y dúplex) con otra interfaz de red.
+
+Por lo general, la negociación automática es el ajuste preferido para configurar los puertos de gestión; sin embargo, si la negociación falla, los ajustes de la interfaz de red que no coinciden pueden afectar significativamente el rendimiento de la red. En los casos en que esta condición sea inaceptable, debe configurar manualmente las opciones de la interfaz de red con los valores correctos. Los puertos de gestión Ethernet de la controladora son los encargados de realizar la negociación automática. Los adaptadores de bus de host iSCSI no son los encargados de realizar la negociación automática.
+
+[NOTE]
+====
+Si la negociación automática falla, la controladora intenta establecer una conexión con 10BASE-T, semidúplex, que es el denominador común más bajo.
+
+====
+
+
+== ¿Qué es la configuración automática de direcciones IPv6 sin estado?
+
+Gracias a la configuración automática sin estado, los hosts no obtienen direcciones ni otra información de configuración desde un servidor.
+
+La configuración automática sin estado en IPv6 cuenta con direcciones locales de enlace, multidifusión y protocolo de descubrimiento cercano (ND). La IPv6 puede generar un ID de interfaz de una dirección a partir de la dirección de capa de enlace de datos subyacente.
+
+La configuración automática sin estado y la configuración automática con estado se complementan. Por ejemplo, el host puede utilizar la configuración automática sin estado para configurar sus propias direcciones, pero la configuración automática con estado para obtener otra información. Gracias a la configuración automática con estado, los hosts obtienen direcciones y otra información de configuración desde un servidor. El protocolo de Internet versión 6 (IPv6) también define un método por el cual todas las direcciones IP de una red pueden volver a numerarse de una vez. La IPv6 define un método para que los dispositivos en la red configuren automáticamente su dirección IP y otros parámetros sin la necesidad de un servidor.
+
+Los dispositivos realizan estos pasos cuando utilizan la configuración automática sin estado:
+
+. *Generar una dirección local de enlace* -- el dispositivo genera una dirección local de enlace, que tiene 10 bits, seguida de 54 ceros, y seguido del ID de interfaz de 64 bits.
+. *Pruebe la singularidad de una dirección de enlace local* -- el nodo realiza pruebas para asegurarse de que la dirección de enlace local que genera no está ya en uso en la red local. El nodo envía un mensaje de solicitud de cercanía mediante el protocolo ND. En respuesta, la red local escucha un mensaje de anuncio de cercanía, que indica que otro dispositivo ya está usando la dirección de enlace local. Por lo tanto, debe crearse una dirección de enlace local nueva o fallará la configuración automática y deberá utilizarse otro método.
+. *Asignar una dirección de enlace local* -- Si el dispositivo supera la prueba de singularidad, el dispositivo asigna la dirección de enlace local a su interfaz IP. La dirección de enlace local se puede utilizar para la comunicación en la red local, pero no en Internet.
+. *Póngase en contacto con el router* -- el nodo intenta ponerse en contacto con un router local para obtener más información acerca de cómo continuar la configuración. Este contacto se realiza ya sea escuchando los mensajes de anuncio del enrutador que se envían periódicamente o enviando un mensaje de solicitud al enrutador específico para solicitarle información acerca de cómo continuar.
+. *Proporcionar dirección al nodo* -- el router proporciona dirección al nodo acerca de cómo proceder con la configuración automática. Como alternativa, el enrutador le comunica al host cómo determinar la dirección global de Internet.
+. *Configurar la dirección global* -- el host se configura con su dirección global única de Internet. Esta dirección por lo general se forma a partir de un prefijo de red que el enrutador proporciona al host.
+
+
+
+
+== ¿Qué elijo: DHCP o configuración manual?
+
+El método predeterminado de la configuración de red es el protocolo de configuración dinámica de hosts (DHCP). Utilice siempre esta opción, a menos que la red no posea un servidor DHCP.
+
+
+
+== ¿Qué es un servidor DHCP?
+
+El protocolo de configuración dinámica de hosts (DHCP) es un protocolo que automatiza la tarea de asignar una dirección de protocolo de Internet (IP).
+
+Cada dispositivo conectado a una red TCP/IP debe tener asignada una dirección IP única. Estos dispositivos incluyen las controladoras de la cabina de almacenamiento.
+
+Sin DHCP, el administrador de red introduce estas direcciones IP manualmente. Con DHCP, cuando un cliente necesita iniciar operaciones TCP/IP, el cliente transmite una solicitud de información de la dirección. El servidor DHCP recibe la solicitud, asigna una dirección nueva por una cantidad de tiempo específica, que se denomina periodo de concesión, y envía esa dirección al cliente. Con DHCP, un dispositivo puede tener una dirección IP diferente cada vez que se conecta a la red. En algunos sistemas, la dirección IP del dispositivo puede cambiar incluso mientras el dispositivo todavía está conectado.
+
+
+
+== ¿Cómo se configura el servidor DHCP?
+
+Debe configurar un servidor de protocolo de configuración dinámica de hosts (DHCP) para utilizar direcciones de protocolo de Internet (IP) estáticas para las controladoras en la cabina de almacenamiento.
+
+Las direcciones IP que asigna el servidor DHCP generalmente son dinámicas y pueden cambiar debido a que tienen un periodo de concesión que expira. Algunos dispositivos, como los servidores y los enrutadores, deben utilizar direcciones estáticas. Las controladoras en la cabina de almacenamiento también deben utilizar direcciones IP estáticas.
+
+Para obtener información sobre la forma de asignar direcciones estáticas, consulte la documentación del servidor DHCP.
+
+
+
+== ¿Por qué es necesario cambiar la configuración de red de la controladora?
+
+Es necesario configurar la configuración de red para cada controladora--su dirección de protocolo de Internet (IP), máscara de subred y puerta de enlace- cuando se utiliza gestión fuera de banda.
+
+Es posible ajustar la configuración de red a través del servidor de protocolo de configuración dinámica de hosts (DHCP). Si no utiliza un servidor DHCP, debe introducir la configuración de red de forma manual.
+
+
+
+== ¿En dónde se puede obtener la configuración de red?
+
+Es posible obtener del administrador de red la dirección de protocolo de Internet (IP), la máscara de subred y la información de puerta de enlace.
+
+Esta información es necesaria para configurar los puertos de las controladoras.
+
+
+
+== ¿Qué son las respuestas PING de ICMP?
+
+El protocolo de mensajes de control de Internet (ICMP) es uno de los protocolos de la suite TCP/IP.
+
+La `ICMP echo request` y la(`ICMP echo reply` los mensajes suelen denominarse `ping` mensajes. `Ping` es una herramienta para la solución de problemas que usan los administradores del sistema para probar manualmente la conectividad entre dispositivos de red, y también para probar la demora de la red y la pérdida de paquetes. La `ping` el comando envía un `ICMP echo request` a un dispositivo de la red y el dispositivo responde inmediatamente con un(`ICMP echo reply`. A veces, la política de seguridad de red de una empresa requiere `ping` (`ICMP echo reply`) se debe desactivar en todos los dispositivos para que sea más difícil de descubrir personas no autorizadas.
+
+
+
+== ¿Cuándo se debe actualizar la configuración de puertos?
+
+Actualice el servidor DHCP cada vez que se modifique o actualice el servidor y que haya cambiado la información DHCP relevante para la cabina de almacenamiento actual y la cabina de almacenamiento que desea utilizar.
+
+Específicamente, actualice la configuración de puertos o el servidor iSNS desde el servidor DHCP cuando sepa que el servidor DHCP asignará direcciones diferentes.
+
+[NOTE]
+====
+La actualización de la configuración de puertos destruye todas las conexiones iSCSI de ese puerto.
+
+====
+
+
+== ¿Qué debo hacer luego de configurar los puertos de gestión?
+
+Si cambió la dirección IP de la cabina de almacenamiento, es posible que desee actualizar la vista de cabina global en SANtricity Unified Manager.
+
+Para actualizar la vista de cabina global en Unified Manager, abra la interfaz y vaya al menú:gestionar[detectar].
+
+Si todavía utiliza Storage Manager de SANtricity, vaya a Enterprise Management Window (EMW), donde debe eliminar y volver a añadir la nueva dirección IP.
+
+
+
+== ¿Por qué el sistema de almacenamiento se encuentra en el modo no óptimo?
+
+Un sistema de almacenamiento en modo no óptimo se debe a un estado no válido de configuración del sistema. A pesar de este estado, se admite totalmente el acceso de I/O normal a los volúmenes existentes; no obstante, System Manager de SANtricity prohibirá algunas operaciones.
+
+Un sistema de almacenamiento puede realizar una transición a la configuración del sistema no válida por uno de estos motivos:
+
+* La controladora no cumple las normativas, posiblemente porque tiene un código de identificador de submodelo incorrecto (SMID) o superó el límite de funciones premium.
+* Hay una operación de servicio interno en curso, como una descarga del firmware de la unidad.
+* La controladora superó el umbral de error de paridad y entró en bloqueo.
+* Se produjo una condición general de bloqueo.
+

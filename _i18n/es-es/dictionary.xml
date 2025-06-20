@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
-  <block id="2f20f508a18f461954c8d3933827bcb7" category="sidebar">¿Por qué no se muestran todos los volúmenes en la cabina de destino?</block>
   <block id="34df2039718349f1b8c838bff98ae8fa" category="sidebar">Componentes de hardware</block>
   <block id="56fed02afa343607f2a7395908bc7b80" category="sidebar">Gestione los componentes de la bandeja</block>
   <block id="ce5355093ef60f32420434b5e225c42c" category="sidebar">Gestione controladoras</block>
@@ -9,13 +8,7 @@
   <block id="8bd00e89826dbd3fcf80ca108d7a008d" category="sidebar">Gestionar unidades</block>
   <block id="14d1c0c1fae5f4b4b38ac991e0042905" category="sidebar">Vista de límite de unidades</block>
   <block id="2e2a47fe25c4d9ffccde0d65c889b8ea" category="sidebar">Gestionar piezas de repuesto</block>
-  <block id="1e43379f3c402667b130d9a559cbe0a3" category="sidebar">Preguntas frecuentes sobre las bandejas</block>
-  <block id="94edff9f76656b0aa64f11d10564bbec" category="sidebar">Preguntas frecuentes de la controladora</block>
-  <block id="985daafeefad88644262898a6ba85dfd" category="sidebar">¿Qué se debe elegir: DHCP o configuración manual?</block>
   <block id="757b19acb02bcb72f8fbe9a7b9c92bb1" category="sidebar">¿Cuándo se debe actualizar la configuración de puertos?</block>
-  <block id="4a4afac381fa72747a54ec753304470e" category="sidebar">Preguntas frecuentes sobre iSCSI</block>
-  <block id="09ced3685690518398f597bd647eab6c" category="sidebar">Preguntas frecuentes de NVMe</block>
-  <block id="d1cc2aa09499f8deaf22b2dc39e8d219" category="sidebar">Preguntas frecuentes de unidades</block>
   <block id="388e3dfbbe5846b66146f413ab694755" category="sidebar">Gestionar alertas por correo electrónico</block>
   <block id="3990901575d796b02953233d3202f8bb" category="sidebar">Configurar el servidor de correo y los destinatarios</block>
   <block id="48d5d00e65f9a1cc7aff26da6a5c5c0a" category="sidebar">Editar direcciones de correo electrónico</block>
@@ -51,7 +44,6 @@
   <block id="dc4efa2585d1662804b20a74b4acc7a4" category="sidebar">Use SAML</block>
   <block id="74f708399a048352be94abc06102bfb9" category="sidebar">Utilice tokens de acceso</block>
   <block id="8377583907b5858273c3fcf855ae2800" category="sidebar">Gestionar syslog</block>
-  <block id="4db7a3bf8dbbf2993ed6610cb2fb4fe0" category="sidebar">¿Por qué no puedo iniciar sesión?</block>
   <block id="ab70a9bf5b25c1b7ecd7244eef9bf625" category="sidebar">Usar certificados</block>
   <block id="573efefcaa393f8bfd3572c46a082bf8" category="sidebar">Ver información de certificados importados</block>
   <block id="085f430b0f579d2ec7d45759dea27e67" category="sidebar">Use certificados firmados por CA para el servidor de autenticación</block>
@@ -68,7 +60,6 @@
   <block id="a0a3f20685c328a00474bb00b7d35fd5" category="sidebar">Quite cabinas de la vista</block>
   <block id="15fc53829e4c837f62e15647e031089c" category="sidebar">Importación de la configuración</block>
   <block id="360bd2c3afed58c551a15d240c5d8ae4" category="sidebar">Utilizar importaciones por lotes</block>
-  <block id="c662a0230db643f7b489f1a5fd4c7738" category="sidebar">¿Por qué no se muestran todas las cabinas de almacenamiento?</block>
   <block id="7fa2f2323087b4b331f294a3e571ac48" category="sidebar">Grupos de cabinas</block>
   <block id="5004fa93538efdf6507cbefc3275b79e" category="sidebar">Configurar grupos</block>
   <block id="07a90270ebf66da177e03281873bb626" category="sidebar">Quite las cabinas del grupo</block>
@@ -76,8 +67,6 @@
   <block id="70056e37f8376098bb31cd0e5570d51b" category="sidebar">Cambiar el nombre del grupo</block>
   <block id="240f9686efc9548a1d556d924c143924" category="sidebar">Actualizaciones</block>
   <block id="ecaa37294fe56af2542fb9595f4d7c00" category="sidebar">Configurar el mirroring</block>
-  <block id="a4228446d8c9251ebd134b25ea2f2a9d" category="sidebar">¿Por qué no se muestran todos los volúmenes?</block>
-  <block id="4a8aaebc73b69b1dce072d72f2645856" category="sidebar">¿Por qué no se muestran todos los volúmenes en la cabina de almacenamiento remota?</block>
   <block id="bc864bcc140c5518082e93d37b396baf" category="sidebar">Usar certificados de host de gestión</block>
   <block id="0e695c0c9242624f235546e43dde2e16" category="sidebar">Usar certificados de cabina</block>
   <block id="951d3fc54a28f9f46798897467d96a5b" category="sidebar">Gestionar certificados</block>
@@ -884,7 +873,6 @@
   <block id="1b0e171bb742d67244c8d138082f73a4" category="paragraph">La luz localizadora de la bandeja se enciende.</block>
   <block id="8f954b68cdd325787ba5ce5e18add7a0" category="list-text">Cuando haya localizado físicamente el estante, vuelva al cuadro de diálogo y seleccione *Apagar*.</block>
   <block id="bbe66c4be17769c6d4513643761ffdc8" category="summary">Actualice el servidor DHCP cada vez que se modifique o actualice el servidor y que haya cambiado la información DHCP relevante para la cabina de almacenamiento actual y la cabina de almacenamiento que desea utilizar.</block>
-  <block id="94788b711f7e65635e443787fd7a4d64" category="doc">¿Cuándo se debe actualizar la configuración de puertos o el servidor iSNS en el servidor DHCP?</block>
   <block id="9b0798ee6300bf2c7b2901a68b97fe16" category="paragraph">Específicamente, actualice la configuración de puertos o el servidor iSNS desde el servidor DHCP cuando sepa que el servidor DHCP asignará direcciones diferentes.</block>
   <block id="ed5f3843db7d9e3eef32391affc01b48" category="paragraph">La actualización de la configuración de puertos destruye todas las conexiones iSCSI de ese puerto.</block>
   <block id="4fac26619d8da7cb4312f015868e922c" category="summary">Un ciclo de aprendizaje es un ciclo automático para calibrar el indicador de batería inteligente. Los ciclos se programan para comenzar automáticamente, el mismo día y a la misma hora, en intervalos de 8 semanas (por controladora). Si desea configurar un programa distinto, puede ajustar los ciclos de aprendizaje.</block>
@@ -895,7 +883,6 @@
   <block id="88476c3326f52a7dbce18260ae91f718" category="list-text">Seleccione *Actualizar ciclos de aprendizaje de la batería*.</block>
   <block id="a8e036ba80f3a493e663d8cec109cc39" category="paragraph">Se abre el cuadro de diálogo Actualizar ciclos de aprendizaje de la batería.</block>
   <block id="e5ac88888d29192543b237acf10e2cf5" category="list-text">Desde las listas desplegables, seleccione un día y una hora nuevos.</block>
-  <block id="89e384381ed0570ab577beaf9c2e601b" category="summary">Un sistema de almacenamiento en modo no óptimo se debe a un estado no válido de configuración del sistema. A pesar de este estado, se admite por completo el acceso de I/o normal a los volúmenes existentes; sin embargo, System Manager prohibirá algunas operaciones.</block>
   <block id="574d0bc88edf7298a47d4aa1e588a886" category="doc">¿Por qué el sistema de almacenamiento se encuentra en el modo no óptimo?</block>
   <block id="4daa9d5961d8e3a7d375183df715a565" category="paragraph">Un sistema de almacenamiento puede realizar una transición a la configuración del sistema no válida por uno de estos motivos:</block>
   <block id="87db37c136e3231b71d5b7b9a2777a60" category="list-text">La controladora no cumple las normativas, posiblemente porque tiene un código de identificador de submodelo incorrecto (SMID) o superó el límite de funciones premium.</block>
@@ -912,7 +899,6 @@
   <block id="5b6c3636d161d9f4e42735ea573a9f13" category="list-text">Seleccione el puerto de HIC que desea configurar de la lista desplegable e introduzca la dirección IP.</block>
   <block id="5961aa9528f652b687b47fcb649c5893" category="paragraph">Si desea configurar una cabina de almacenamiento EF600 con una HIC de 200 GB, este cuadro de diálogo muestra dos campos de dirección IP: Uno para un puerto físico (externo) y uno para un puerto virtual (interno). Debe asignar una dirección IP exclusiva a cada puerto. Estos ajustes permiten que el host establezca una ruta entre cada puerto y que la HIC alcance el rendimiento máximo. Si no se asigna una dirección IP al puerto virtual, la HIC se ejecutará a aproximadamente la mitad de su capacidad de velocidad.</block>
   <block id="5cb4683ea0e9ed14778474afea835f48" category="list-text">Una vez terminada la configuración, haga clic en *Sí* para reiniciar el puerto NVMe over InfiniBand.</block>
-  <block id="71c3af242ccaa8ae2337b0f30267ab9c" category="summary">Es necesario configurar la configuración de red para cada controladora —su dirección de protocolo de Internet (IP), máscara de subred y puerta de enlace— cuando se utiliza gestión fuera de banda.</block>
   <block id="2f7ce553a41c640f56c7844a348637c6" category="doc">¿Por qué es necesario cambiar la configuración de red de la controladora?</block>
   <block id="5e835244a570835c8ccafca9cbc311c0" category="paragraph">Es necesario configurar la configuración de red para cada controladora--su dirección de protocolo de Internet (IP), máscara de subred y puerta de enlace- cuando se utiliza gestión fuera de banda.</block>
   <block id="c9c710b8643a9328d401dbe32e5382d0" category="paragraph">Es posible ajustar la configuración de red a través del servidor de protocolo de configuración dinámica de hosts (DHCP). Si no utiliza un servidor DHCP, debe introducir la configuración de red de forma manual.</block>
@@ -938,7 +924,6 @@
   <block id="e5d8b08ce2d2e30643711535e5d4d23e" category="paragraph">Los ciclos de aprendizaje se programan para comenzar automáticamente en intervalos regulares, a la misma hora y el mismo día de la semana. El intervalo entre los ciclos se describe en semanas.</block>
   <block id="5bb64cee9ae6a71861799ebc22a59e21" category="paragraph">Un ciclo de aprendizaje podría demorar varias horas para completarse.</block>
   <block id="6173d078b9110f3bc6b143913e3eb5c3" category="summary">El método predeterminado de la configuración de red es el protocolo de configuración dinámica de hosts (DHCP). Utilice siempre esta opción, a menos que la red no posea un servidor DHCP.</block>
-  <block id="8bc7a4f0cccf7a456c1c5e4160d10f9a" category="doc">¿Qué se debe elegir: DHCP o configuración manual?</block>
   <block id="4ecf9bafb78cfc25500e1238a0ff3f41" category="summary">Debe configurar un servidor de protocolo de configuración dinámica de hosts (DHCP) para utilizar direcciones de protocolo de Internet (IP) estáticas para las controladoras en la cabina de almacenamiento.</block>
   <block id="25ede821aa8fb7855acd09bf30184a3f" category="doc">¿Cómo se configura el servidor DHCP?</block>
   <block id="475db7cba39405460c832f0153c2ff41" category="paragraph">Las direcciones IP que asigna el servidor DHCP generalmente son dinámicas y pueden cambiar debido a que tienen un periodo de concesión que expira. Algunos dispositivos, como los servidores y los enrutadores, deben utilizar direcciones estáticas. Las controladoras en la cabina de almacenamiento también deben utilizar direcciones IP estáticas.</block>
@@ -1618,7 +1603,6 @@
   <block id="612f26578322c586474c073fa672ae80" category="summary">Si utiliza la función de almacenamiento remoto, tenga en cuenta que el volumen remoto es el origen desde el que se originan los datos.</block>
   <block id="bb2120ee118b29e62f82a6f61eafd12e" category="doc">¿Qué debo saber acerca del volumen remoto de una importación?</block>
   <block id="9b9e4ceb282b654a236633ed7253a439" category="paragraph">Cuando la importación está en curso, los datos se transfieren del volumen remoto al volumen de destino en el sistema de almacenamiento de destino. Estos dos volúmenes deben tener un tamaño de bloque coincidente.</block>
-  <block id="bbe3b633d8eb778210704db7ffbfa4f0" category="summary">Las alertas de capacidad indican cuándo añadir unidades a un pool. Un pool necesita capacidad libre suficiente para realizar correctamente las operaciones de la cabina de almacenamiento. Es posible evitar interrupciones en estas operaciones si se configura System Manager para que envíe alertas cuando la capacidad libre de un pool alcanza o supera un porcentaje especificado.</block>
   <block id="b66879679e0a456d131df0dfbdb9fb95" category="doc">¿Por qué son importantes las alertas de capacidad?</block>
   <block id="36b833228459c54e9caad4c4ebad3dad" category="paragraph">Este porcentaje se establece cuando se crea un pool mediante la opción *Configuración automática del pool* o la opción *Crear pool*. Si elige la opción automática, la configuración predeterminada determina automáticamente cuándo recibirá notificaciones de alerta. Si elige la opción de creación manual del pool, puede determinar la configuración de notificaciones de alerta, o bien, si lo prefiere, puede aceptar los ajustes predeterminados. Puede modificar esta configuración posteriormente en MENU:Settings[Alerts].</block>
   <block id="2e7fdb8bc40f6a8c60ac3763b5af0b1d" category="paragraph">Cuando la capacidad libre en el pool alcance el porcentaje especificado, se enviará una notificación de alerta con el método especificado en la configuración de alertas.</block>
@@ -1895,7 +1879,6 @@
   <block id="157d8626e7c0e956049c8fc68e4a427c" category="list-text">Tiempo de escritura.</block>
   <block id="68fa8b7b3ad4153e40edc17f213b5e90" category="list-text">Tamaño de I/o promedio.</block>
   <block id="3cedad73b5b33c8b0c2b8d5beeed5264" category="summary">Si se crearon volúmenes en toda la capacidad utilizable disponible, es posible que no se pueda aumentar la capacidad de conservación.</block>
-  <block id="87b59aa4fc1f0d0f5aac88efb29545be" category="doc">¿Por qué no puedo aumentar mi capacidad de conservación?</block>
   <block id="71396049ff539200dbba1007ca0cbc94" category="paragraph">La capacidad de conservación es la cantidad de capacidad (número de unidades) reservada en un pool para dar soporte a fallos de unidad potenciales. Cuando se crea un pool, el sistema reserva automáticamente una cantidad predeterminada de capacidad de conservación según el número de unidades del pool. Si creó volúmenes en toda la capacidad utilizable disponible, no puede aumentar la capacidad de conservación sin agregar capacidad al pool, ya sea sumando unidades o eliminando volúmenes.</block>
   <block id="dc5cedd32cc74ed1dd3f0b48fe2065c3" category="paragraph">Puede cambiar la capacidad de conservación de *Pools y grupos de volúmenes*. Seleccione el pool que desea editar. Haga clic en *Ver/editar configuración* y, a continuación, seleccione la ficha *Configuración*.</block>
   <block id="5f1d6366c7ffd99ff1b7c5f05e692914" category="paragraph">La capacidad de conservación se especifica como el número de unidades, a pesar de que la capacidad de conservación real se distribuya en las unidades del pool.</block>
@@ -2010,7 +1993,6 @@
   <block id="1bc09668b27b6867ae7fc05d1c02faa8" category="paragraph">Arrastre y suelte</block>
   <block id="30185cadcdaae5e719e742e91c7c2516" category="paragraph">En el gráfico, arrastre el cursor de un momento específico a otro para expandir un plazo.</block>
   <block id="821c127bf32c0d6d510d581384bfdc89" category="summary">Cuando se configura una importación para la función almacenamiento remoto, es posible que algunos volúmenes no aparezcan en la lista de candidatos de objetivo debido al tamaño de bloque, la capacidad o la disponibilidad de volumen.</block>
-  <block id="d4538d3e9457b3332037137becb531c2" category="doc">¿Por qué no se muestran todos los volúmenes en la cabina de destino?</block>
   <block id="d57fac41eaeaf7a84370871910e0f6d2" category="paragraph">Para que aparezca en la lista, los candidatos de volumen deben tener:</block>
   <block id="69cc506297892e5a506e7d183cf03227" category="list-text">Capacidad igual o mayor que el volumen remoto.</block>
   <block id="b9152e2a19a205f565f107c733485374" category="list-text">El tamaño de bloque que es igual que el volumen remoto.</block>
@@ -2271,7 +2253,6 @@
   <block id="58b8c08b331f5bd10c337f792b6e8319" category="list-text">Para los datos gráficos, el lapso de 5 minutos admite una actualización de 10 segundos promediada cada 5 minutos. El resto de los lapsos se actualizan cada 5 minutos, promediado por el lapso seleccionado.</block>
   <block id="923b0eb1836ca5dbf2e3c6f2860889dd" category="list-text">Los datos de rendimiento en las vistas gráficas se actualizan en tiempo real. Los datos de rendimiento en las vista de tabla se actualizan casi en tiempo real.</block>
   <block id="20c9b11aaab51fbe6b2ccbbd1eec5c39" category="list-text">Si un objeto supervisado se modifica durante el lapso en que se recogen datos, es posible que ese objeto no tenga un conjunto de puntos de datos completo que abarque el lapso seleccionado. Por ejemplo, los conjuntos de volúmenes pueden cambiar a medida que los volúmenes se crean, eliminan, asignan o se anula su asignación; o bien mientras se añaden, eliminan o fallan unidades.</block>
-  <block id="1bf2df1e11004707e4b12d626138d3e1" category="summary">System Manager establece límites en cuanto a la cantidad de unidades que pueden eliminarse de un pool.</block>
   <block id="dc0cac4fc3fe8b65f61e8ceff382e740" category="doc">¿Existe un límite para la cantidad de unidades que pueden eliminarse de un pool?</block>
   <block id="7dbebcef358c2bbdbe834522ce3e1c62" category="list-text">No se pueden eliminar unidades si no hay suficiente capacidad libre en el pool para contener los datos de las unidades eliminadas cuando esos datos se redistribuyen a las unidades restantes del pool.</block>
   <block id="913831c401c62c45e925dfafa5eb7b3c" category="list-text">Es posible eliminar un máximo de 60 unidades al mismo tiempo. Si selecciona más de 60, se deshabilitará la opción Quitar unidades. Si necesita eliminar más de 60 unidades, repita la operación Quitar unidades.</block>
@@ -2609,7 +2590,6 @@
   <block id="2d987f31c5c642d85017826d9f304507" category="paragraph">Volumen estándar en el sistema E-Series que permite el acceso a los datos a un dispositivo de almacenamiento remoto.</block>
   <block id="bd7a9717d29c5ddcab1bc175eda1e298" category="paragraph">Volumen</block>
   <block id="5529f79a50b85422a46f2851156e97bf" category="paragraph">Contenedor en el que se almacenan los datos. Es el componente lógico que se crea para que el host acceda a los datos.</block>
-  <block id="0c6710fd70e8f6dfb7dc7c5ef665fd39" category="summary">Durante la creación del volumen, se le solicita información sobre el uso de una carga de trabajo. El sistema utiliza esta información para crear una configuración de volumen óptima para el usuario, que se puede editar en caso de ser necesario. De manera opcional, es posible omitir este paso en la secuencia de creación de volúmenes.</block>
   <block id="b5a3b95a88ff3f89275ca18c4736d4b8" category="doc">¿Cómo afecta la creación de volúmenes la carga de trabajo seleccionada?</block>
   <block id="313e2c8f533507666d0259a50f56b9d4" category="paragraph">Durante la creación de un volumen, se solicita información sobre el uso de la carga de trabajo. El sistema utiliza esta información para crear una configuración de volumen óptima para el usuario, que se puede editar en caso de ser necesario. De manera opcional, es posible omitir este paso en la secuencia de creación de volúmenes.</block>
   <block id="ab699fec90fd6cda5e110bb5189e9178" category="paragraph">Una carga de trabajo es un objeto de almacenamiento que admite una aplicación. Se pueden definir una o más cargas de trabajo o instancias por aplicación. En algunas aplicaciones, el sistema configura la carga de trabajo para contener volúmenes con características subyacentes similares. Estas características de volumen se optimizan según el tipo de aplicación que es compatible con la carga de trabajo. Por ejemplo, si crea una carga de trabajo que es compatible con la aplicación Microsoft SQL Server y, a continuación, crea volúmenes para esa carga de trabajo, las características de volumen subyacentes se optimizan para ser compatibles con Microsoft SQL Server.</block>
@@ -2727,8 +2707,6 @@
   <block id="1abeab817542af70bc209c776cdd6e76" category="list-text">Elimina todas las imágenes Snapshot y los volúmenes Snapshot asociados con el volumen miembro.</block>
   <block id="11ab5aeee61e99fde03817edc885113f" category="list-text">Elimina el grupo Snapshot asociado con el volumen miembro.</block>
   <block id="7b42c8b3b521dcec6d5b87dd642ea258" category="list-text">El volumen miembro no se modificará ni eliminará de otra manera.</block>
-  <block id="13681cec74a14e3099d5f047f880fe52" category="summary">Los volúmenes Snapshot que incluyen un volumen base con la función DA habilitada no son aptos para asignarse a un host que no es compatible con la función Data Assurance (DA). Debe deshabilitar DA en el volumen base para poder asignar un volumen Snapshot a un host que no es compatible con DA'.</block>
-  <block id="1940b3e4d69d728f35065944d4986514" category="doc">¿Por qué no se muestran todos los volúmenes, los hosts o los clústeres de hosts?</block>
   <block id="f956e41235aa6de0ef7cf1901fa9a994" category="paragraph">Los volúmenes Snapshot que incluyen un volumen base con la función DA habilitada no son aptos para asignarse a un host que no es compatible con la función Data Assurance (DA). Debe deshabilitar DA en el volumen base para poder asignar un volumen Snapshot a un host que no es compatible con DA.</block>
   <block id="92fc66f9534d94b4859793638454d6ee" category="paragraph">Tenga en cuenta las siguientes directrices para el host al cual planea asignar el volumen Snapshot:</block>
   <block id="934321fee1dda599a0c218c9b94c7e4e" category="list-text">Un host no es compatible con DA si está conectado a la cabina de almacenamiento a través de una interfaz de I/o que no es compatible con DA.</block>
@@ -3050,7 +3028,6 @@
   <block id="da01e7e2a730ad7efb5964db19366480" category="paragraph">Se muestra un cuadro de diálogo que indica que las luces de las unidades que conforman la caché SSD, el pool o el grupo de volúmenes seleccionado están encendidas.</block>
   <block id="7ce5899000f51ae10c4246754e3e2d5f" category="list-text">Una vez que haya localizado correctamente las unidades, haga clic en *Apagar*.</block>
   <block id="7268cb410294effa0119ff2325fdb4e1" category="summary">No se muestra en la lista ningún pool o grupo de volúmenes al que no se pueda mover el volumen.</block>
-  <block id="947a640f864857e2aadd36576eb50dd7" category="doc">¿Por qué no se muestran todos los pools y/o los grupos de volúmenes?</block>
   <block id="7840c3770de62c2567d5278bd0c6c7f2" category="paragraph">Los pools o grupos de volúmenes no serán aptos por cualquiera de los motivos siguientes:</block>
   <block id="766dcd4dd0eb0d198d9b6bf6f1cd4d55" category="list-text">Las funcionalidades de Data Assurance (DA) de un pool o un pool de grupo de volúmenes no coinciden.</block>
   <block id="18747fc1783ea0c8be337cee42135fc8" category="list-text">Un pool o un grupo de volúmenes se encuentra en un estado distinto a Optimal.</block>
@@ -3392,7 +3369,6 @@
   <block id="f7465e26f6da9199ea364328d17635d9" category="list-text">System Manager cambia la propiedad de la controladora del volumen. Las operaciones de I/o del volumen ahora se redirigen por esta ruta de I/O.</block>
   <block id="f42e2811e3ac908eee60f66d1397b5c2" category="list-text">Es posible que el volumen no utilice la ruta de I/o nueva hasta que se vuelva a configurar el controlador multivía para que reconozca la ruta nueva. Por lo general, esta acción tarda menos de cinco minutos.</block>
   <block id="3bfd2179043341e09a4fc1cfd720d6ff" category="summary">Esta carga de trabajo consta de un grupo de volúmenes que se creó mediante la interfaz de línea de comandos (CLI) o se migró (se importó/exportó) de una cabina de almacenamiento diferente. Como resultado, los volúmenes de esta carga de trabajo no están asociados a una carga de trabajo específica de la aplicación, por lo que no es posible eliminar la carga de trabajo.</block>
-  <block id="91d388ab2a6ac649e3e39aa1f5535eef" category="doc">¿Por qué no puedo eliminar la carga de trabajo seleccionada?</block>
   <block id="3ffd5f0322b1320cb436208a96cd164d" category="summary">Es posible cambiar el nombre del clúster de hosts, o bien añadir o eliminar hosts de un clúster.</block>
   <block id="51d60eae66c9543a949b6c5741bec4c2" category="list-text">Seleccione el clúster de hosts que desea editar y, a continuación, haga clic en *Ver/editar configuración*.</block>
   <block id="6e1d2ef0ede0098f422178e7c2f227ef" category="paragraph">Se muestra un cuadro de diálogo que indica la configuración actual del clúster de hosts.</block>
@@ -3453,14 +3429,12 @@
   <block id="d1d713d8eef046638722afe5b2ef6f77" category="paragraph">En función de la configuración del explorador, el archivo se guarda o se le solicita que elija un nombre y una ubicación para el archivo.</block>
   <block id="49f4b48287800b971eb32d356cdbfbd4" category="paragraph">El formato predeterminado del nombre de archivo es<block ref="41013dfd4b813ade0ac983f18ee89b0e" prefix=" " category="inline-code"></block>, que incluye la fecha y la hora en que se exportó el archivo.</block>
   <block id="726550ac9f3a3c80815ec14c73720e62" category="summary">Es posible reducir la capacidad reservada solo en la cantidad que se utilizó para aumentarla. La capacidad reservada de los volúmenes miembro puede quitarse solo en el orden inverso al que se añadió.</block>
-  <block id="a30ad4433e63d5f3d62023d4c6a44eef" category="doc">¿Por qué no puedo elegir otra cantidad para disminuirla?</block>
   <block id="54880ee7dd93a5e304efe90ee14790cf" category="paragraph">No es posible reducir la capacidad reservada de un objeto de almacenamiento si se da alguna de las condiciones siguientes:</block>
   <block id="34210320456ed09a6b7ab3fd7cd515d2" category="list-text">Si el objeto de almacenamiento es un volumen de pareja reflejada.</block>
   <block id="df7cb77dac6de30904215f9c98b0ee50" category="list-text">Si el objeto de almacenamiento contiene solo un volumen para la capacidad reservada. El objeto de almacenamiento debe contener al menos dos volúmenes para la capacidad reservada.</block>
   <block id="4a6ce71c5d23e6339b3386e5911a04e2" category="list-text">Si el objeto de almacenamiento es un volumen Snapshot deshabilitado.</block>
   <block id="c9a9f655057c31cee78def41182ef8f6" category="list-text">Si el objeto de almacenamiento contiene una o más imágenes Snapshot asociadas.</block>
   <block id="9945a680db325b61ee52dcb6a86bb0b0" category="paragraph">Solo se pueden quitar volúmenes de capacidad reservada en el orden inverso al que se añadieron.</block>
-  <block id="d5099898b83b97d11acb716788257093" category="summary">Si se configuró la autenticación mediante protocolo de autenticación por desafío mutuo (CHAP) en cualquier host iSCSI conectado a la cabina de almacenamiento, debe volver a introducir el secreto CHAP de ese iniciador para cada host iSCSI.</block>
   <block id="ecc4042eed7652f76dd879b570b57e11" category="doc">¿Cómo se crean los secretos CHAP?</block>
   <block id="17e37321365996a91a4f11718b601987" category="paragraph">Si se configuró la autenticación mediante protocolo de autenticación por desafío mutuo (CHAP) en cualquier host iSCSI conectado a la cabina de almacenamiento, debe volver a introducir el secreto CHAP de ese iniciador para cada host iSCSI.</block>
   <block id="3e9a4afaef61b4b0b728e7809d2fe707" category="paragraph">Para hacerlo, es posible usar System Manager como parte de la operación Create Host o a través de la opción Ver/editar configuración.</block>
@@ -3686,7 +3660,6 @@
   <block id="f220b79cc4513584ba7d4bae43c90357" category="doc">¿Qué es la capacidad de optimización para pools?</block>
   <block id="672f98d79305b073b8d6566d14c8bc16" category="paragraph">Para las unidades asociadas con un pool, la capacidad sin asignar consta de la capacidad de conservación de un pool, la capacidad libre (capacidad que no utilizan los volúmenes) y una parte de la capacidad utilizable se diferencia como capacidad de optimización adicional. La capacidad de optimización adicional garantiza un nivel mínimo de capacidad de optimización mediante la reducción de la capacidad utilizable, y, como tal, no está disponible para la creación de volúmenes.</block>
   <block id="45c5490b8f9ad55e093507d717bd2f32" category="paragraph">Cuando se crea un pool, se genera una capacidad de optimización recomendada que ofrece un equilibrio del rendimiento, la vida útil de la unidad y la capacidad disponible. El control deslizante capacidad de optimización adicional ubicado en el cuadro de diálogo Configuración del pool permite ajustar la capacidad de optimización del pool. El ajuste del control deslizante proporciona un mejor rendimiento y una mayor vida útil de la unidad cuando se descuenta la capacidad disponible, o bien capacidad disponible adicional, costa del rendimiento y la vida útil de la unidad.</block>
-  <block id="7589dd9416261212740c49b4796da6dc" category="doc">¿Por qué estos volúmenes no están asociados con una carga de trabajo?</block>
   <block id="d2b9602798b032ae90db857a6de47b23" category="summary">Un volumen Snapshot permite que el host acceda a los datos de la imagen Snapshot. El volumen Snapshot tiene su propia capacidad reservada que almacena cualquier modificación del volumen base sin afectar a la imagen Snapshot original. Los hosts no tienen permisos de lectura ni escritura en las imágenes Snapshot. Si desea leer o escribir datos Snapshot, cree un volumen Snapshot y asigne este volumen a un host.</block>
   <block id="39ab211f0e107c6f6e82d9a195744008" category="doc">¿Qué es un volumen Snapshot y cuándo necesita capacidad reservada?</block>
   <block id="874142f9e56c7c46114363d028747c3c" category="paragraph">Es posible crear dos tipos de volúmenes Snapshot. El tipo de volumen Snapshot determina si utiliza capacidad reservada.</block>
@@ -3798,7 +3771,6 @@
   <block id="72ac4d3b5f851bd084b3de1f3e95a925" category="doc">¿Qué permite el aprovisionamiento de recursos?</block>
   <block id="84f89fc32eda5be9a17ee2bd540a8082" category="paragraph">Un volumen aprovisionado por recursos es un volumen grueso de un grupo de volúmenes SSD o pool, donde se asigna capacidad de la unidad (asignada al volumen) cuando se crea el volumen, pero los bloques de unidades no se asignan (anula la asignación). En comparación, en un volumen grueso tradicional, todos los bloques de unidades se asignan o se asignan durante una operación de inicialización de volúmenes en segundo plano para inicializar los campos de información de protección de Data Assurance y para hacer que la paridad de datos y RAID sea coherente en cada franja de RAID. Con un volumen aprovisionado, no existe una inicialización en segundo plano vinculada al tiempo. En su lugar, cada franja RAID se inicializa con la primera escritura en un bloque de volumen en la franja.</block>
   <block id="bfd30f24eb9ff30b408a2596e56c473c" category="paragraph">Los volúmenes aprovisionados mediante recursos solo se admiten en los grupos de volúmenes SSD y pools, donde todas las unidades del grupo o pool admiten la funcionalidad de recuperación de error de bloque lógico no escrito o desasignado (DULBE). Cuando se crea un volumen aprovisionado por recursos, todos los bloques de unidades asignados al volumen se desasignan (desasignan). Asimismo, los hosts pueden desasignar bloques lógicos del volumen mediante el comando Gestión de conjuntos de datos de NVMe o el comando SCSI Unmap. Si se desasignan bloques, es posible mejorar la vida útil de las unidades de estado sólido y aumentar el rendimiento de escritura máximo. La mejora varía en función del modelo y la capacidad de cada unidad.</block>
-  <block id="e3745a2a50cbf1b7fb00b47442215710" category="summary">Para los sistemas EF300 y EF600, se puede configurar un volumen para que admita un tamaño de bloque de 512 bytes o 4 KiB (también llamado "tamaño de actor"). Debe configurar el valor correcto durante la creación del volumen. Si es posible, el sistema sugiere el valor predeterminado adecuado.</block>
   <block id="fb5754cb7d8aec1ca725e7242d365730" category="doc">¿Qué debo saber acerca de los requisitos de tamaño de bloque del host?</block>
   <block id="e5e425d8ab1cbef0e34a067f0d88d470" category="paragraph">Para los sistemas EF300 y EF600, es posible configurar un volumen para que admita un tamaño de bloque de 512 bytes o 4 KiB (también llamado "tamaño de sector"). Debe configurar el valor correcto durante la creación del volumen. Si es posible, el sistema sugiere el valor predeterminado adecuado.</block>
   <block id="f4aa667b118a0a334c4fa467de995fc8" category="paragraph">Antes de configurar el tamaño de bloque de volumen, lea las siguientes limitaciones y directrices.</block>
@@ -3911,11 +3883,9 @@
   <block id="36614dc9e3aba569423e062a9a56e1df" category="paragraph">Debe emparejar las unidades del grupo de volúmenes según el tamaño y el rendimiento. Si existen unidades pequeñas y grandes en el grupo de volúmenes, se reconocen todas las unidades con el tamaño de capacidad menor. Si existen unidades lentas y rápidas en el grupo de volúmenes, se reconocen todas las unidades con la velocidad menor. Estos factores afectan al rendimiento y a la capacidad general del sistema de almacenamiento.</block>
   <block id="fa002b0af386f45f34ae2b96bcffcce3" category="paragraph">No puede combinar tecnologías de unidad distintas (unidades de disco duro y unidades SSD). RAID 3, 5 y 6 se limitan a un máximo de 30 unidades. RAID 1 y RAID 10 utilizan mirroring y, en consecuencia, estos grupos de volúmenes tienen una cantidad uniforme de discos.</block>
   <block id="3c2733e7ec6d8837ce8fe0f8a3ca792f" category="paragraph">Los grupos de volúmenes utilizan unidades de repuesto como reserva en caso de fallos en los volúmenes RAID 1/10, RAID 3, RAID 5 o RAID 6 incluidos en un grupo de volúmenes. Una unidad de repuesto no contiene datos y añade otro nivel de redundancia a una cabina de almacenamiento.</block>
-  <block id="ef7ae095d51a83215900fcb4d6a8da70" category="summary">En el gráfico de la CPU, se muestran las estadísticas de capacidad de procesamiento de cada controladora (controladora A y controladora B). CPU es la abreviatura en inglés de unidad central de procesamiento. En la página Inicio, este gráfico muestra estadísticas de la cabina de almacenamiento. En la pestaña Vista física del icono rendimiento, este gráfico muestra estadísticas de la cabina de almacenamiento y las unidades.</block>
   <block id="9af8e70c2152ca5e60b42c567ce33fa9" category="doc">¿Qué se muestra en el gráfico de CPU?</block>
   <block id="0df991de7620dc5a14fb4b20b2af6425" category="paragraph">En el gráfico de la CPU, se muestran las estadísticas de capacidad de procesamiento de cada controladora (controladora A y controladora B). CPU es la abreviatura en inglés de _central processing unit_. En la página Inicio, este gráfico muestra estadísticas de la cabina de almacenamiento. En la pestaña Vista física del icono rendimiento, este gráfico muestra estadísticas de la cabina de almacenamiento y las unidades.</block>
   <block id="9c34bb79f49d9e803ab6b7dbbd4dfc48" category="paragraph">En el gráfico de la CPU, se muestra el porcentaje de la capacidad de procesamiento de la CPU que se usa para operaciones de la cabina. Aun cuando no se produzcan operaciones de I/o externas, es posible que el porcentaje de utilización de CPU no sea cero, debido a que el sistema operativo de almacenamiento podría estar realizando operaciones en segundo plano y supervisión. Pase el cursor por un punto del gráfico para ver un porcentaje de la funcionalidad de procesamiento que se está utilizando en ese momento específico.</block>
-  <block id="068ea21c39695d9df18e79ea4abf66e1" category="summary">Se pueden realizar sesiones iSCSI con hosts o cabinas de almacenamiento remotas en una relación de reflejo asíncrono. En las tablas a continuación, se enumeran las funciones de System Manager que se pueden utilizar para configurar y gestionar estas sesiones iSCSI.</block>
   <block id="c31a63fbfe62247245f55d6b792ad9e1" category="doc">¿Qué más debo hacer para configurar o diagnosticar iSCSI?</block>
   <block id="0d97aebcf5431f90d47b2257e5c9ad96" category="paragraph">La configuración de iSCSI solo se encuentra disponible si la cabina de almacenamiento es compatible con iSCSI.</block>
   <block id="28f21ae88e9953ac3d80686cfb49832b" category="section-title">Configure iSCSI</block>
@@ -3954,7 +3924,6 @@
   <block id="d63443002da456e4456d4e5b081c6c0a" category="list-text">Si las unidades pueden hacer una actualización sin conexión, detenga la actividad de I/o de todos los volúmenes asociados con las unidades. Cuando se detiene la actividad de I/o, no pueden producirse operaciones de configuración asociadas a tales volúmenes.</block>
   <block id="5a022462174ad36014e4195e22424c8a" category="list-text">No quite ninguna unidad mientras se actualiza el firmware de la unidad.</block>
   <block id="a829bd0b0ad022ed29a011bba9299b96" category="list-text">No haga ningún cambio de configuración en la cabina de almacenamiento mientras se actualiza el firmware de la unidad.</block>
-  <block id="ba3213bbbf9e5128613954ca4db4e5ee" category="summary">Una imagen de estado es un volcado de datos sin formato de la memoria del procesador de la controladora que el soporte técnico puede utilizar para diagnosticar un problema con una controladora.</block>
   <block id="4e3f3d52a16affbf4b062a79c89574da" category="doc">¿Qué es una imagen de estado?</block>
   <block id="793d79923fdf757cef5c422780f3772b" category="paragraph">Una imagen de estado es un volcado de datos sin formato de la memoria del procesador de la controladora que el soporte técnico puede utilizar para diagnosticar un problema con una controladora.</block>
   <block id="ce263fa58d4fdb3ad71f24d93430faf6" category="paragraph">El firmware genera automáticamente una imagen de estado cuando detecta ciertos errores. En determinadas situaciones de solución de problemas, el soporte técnico puede solicitar la recuperación del archivo de imagen de estado y su envío.</block>
@@ -4016,7 +3985,6 @@
   <block id="806c643ad0cdbd082b95008ffce2bdef" category="paragraph">Los eventos críticos indican un problema con la cabina de almacenamiento. Si se resuelve el evento crítico de inmediato, es posible que se evite la pérdida de acceso a los datos.</block>
   <block id="7cc47351643da26b4f81ed7a00cd726d" category="paragraph">Cuando se produce un evento crítico, este se añade al registro de eventos. Todos los eventos críticos se envían a la consola de gestión SNMP o al destinatario de correo electrónico que se configuró para recibir notificaciones de alerta. Si no se conoce el ID de bandeja en el momento del evento, el ID de bandeja se muestra como "Shelf unknown".</block>
   <block id="3ff07b758a88cccfc8cbc5f35ed2d41b" category="paragraph">Cuando reciba un evento crítico, consulte el procedimiento de Recovery Guru para acceder a una descripción detallada de ese evento. Complete el procedimiento de Recovery Guru para corregir el evento crítico. Para corregir ciertos eventos críticos, es posible que deba comunicarse con el soporte técnico.</block>
-  <block id="4abeb578b363f44144000527bdaabd0d" category="summary">Antes de actualizar el software y el firmware de la controladora, tenga en cuenta estos puntos.</block>
   <block id="5c7e6b00e34ca5a9745761f8b63dd9f3" category="doc">¿Qué se debe saber para actualizar el software del SO SANtricity?</block>
   <block id="335d86aaca8c114cdd7c918669e77b31" category="paragraph">Antes de actualizar el software y firmware de la controladora, tenga en cuenta estos puntos.</block>
   <block id="00d0f215b8edbde21b482165efb63f25" category="list-text">Ha leído el documento y el<block ref="eb6b6c90251ab33cee784713c451e6d8" prefix=" " category="inline-code"></block> file y ha determinado que desea realizar la actualización.</block>
@@ -4640,7 +4608,6 @@
   <block id="bbf0c4d1bfa37b26d66dc6d68521abd1" category="paragraph">El área de capacidad muestra una vista de gráfico de la capacidad asignada, la capacidad de almacenamiento libre y la capacidad de almacenamiento sin asignar en la cabina de almacenamiento.</block>
   <block id="8b266c9fb3238ab21cdfb65ae66f6d31" category="list-text">*Jerarquía de almacenamiento*</block>
   <block id="c141888590eec4af951b9533399cbef4" category="paragraph">El área de jerarquía de almacenamiento ofrece una vista organizada de los distintos componentes de hardware y objetos de almacenamiento gestionados por la cabina de almacenamiento. Haga clic en la flecha desplegable para realizar una determinada acción en ese componente de hardware u objeto de almacenamiento.</block>
-  <block id="8dec1efe38001f4587b49af677d444ac" category="summary">Es posible navegar por System Manager usando solo el teclado.</block>
   <block id="f44c2e0b9af76e9f2722f52a08c25e93" category="doc">¿Cuáles son los métodos abreviados de teclado?</block>
   <block id="ae9a8db5f7710f133e0083741b19cfe0" category="section-title">Navegación general</block>
   <block id="89fd3695e7d8c39822cbec979aa00be3" category="cell">Método abreviado de teclado</block>
@@ -4729,7 +4696,6 @@
   <block id="e08bea33d06f32222715e3fdc7fa8842" category="summary">Para algunas aplicaciones de la red, como SQL Server o Exchange, es posible definir una carga de trabajo que optimice el almacenamiento para esa aplicación.</block>
   <block id="6404d6af6f191a945c98c6e22bb8a302" category="doc">¿Qué es una carga de trabajo?</block>
   <block id="0f00e158c95683733d5268cd23a15139" category="paragraph">Durante la creación de un volumen, el sistema indica que se deben responder preguntas acerca del uso de las cargas de trabajo. Por ejemplo, si se crean volúmenes para Microsoft Exchange, se consultará cuántos buzones se necesitan, cuáles son los requisitos de capacidad promedio del buzón y cuántas copias de la base de datos se desean. El sistema utiliza esta información para crear una configuración de volumen óptima para el usuario, que se puede editar en caso de ser necesario.</block>
-  <block id="38fdb2afc81bf942bd8dcf4208c5c967" category="summary">Para acceder a las tareas de configuración de los métodos de entrega de AutoSupport, vaya a Support &gt; Support Center y, luego, haga clic en la pestaña AutoSupport.</block>
   <block id="6d145ddbb4b39d9e20b73518a03bfc4f" category="doc">¿Cómo se configura el método de entrega para AutoSupport?</block>
   <block id="cf5b6a8826dfd986bff2c61c9d14df01" category="paragraph">Para acceder a las tareas de configuración de los métodos de entrega de AutoSupport, vaya al menú:Soporte[Centro de soporte] y, a continuación, haga clic en la ficha *AutoSupport*.</block>
   <block id="e8b6fd44336114a9d9ca684f602e6ca0" category="summary">Para ver y actuar durante operaciones de ejecución prolongada, use la página Operaciones en curso.</block>
@@ -4752,7 +4718,6 @@
   <block id="3680a461b7da6c652dacd37e78790a59" category="section-title">Componentes lógicos</block>
   <block id="3794ffc4b98a6277586b712604f4fb96" category="paragraph">Las unidades de la cabina de almacenamiento proporcionan capacidad de almacenamiento físico para los datos. System Manager se utiliza para configurar la capacidad física en los componentes lógicos, como pools, grupos de volúmenes y volúmenes. Estos componentes son las herramientas que se utilizan para configurar, almacenar, mantener y conservar datos en la cabina de almacenamiento. En esta tabla, se describen los componentes lógicos de una cabina de almacenamiento.</block>
   <block id="893d039747f9ffe53427eabe393d5043" category="paragraph">Número de unidad lógica (LUN)</block>
-  <block id="a4001dd61d7d9d8ea94055a6907f80f9" category="summary">En los temas de ayuda siguientes se incluye información acerca de las opciones de visualización disponibles.</block>
   <block id="d8a6ba9a5ef05e84deee23f14a28ab46" category="doc">¿Dónde puedo obtener más información sobre las preferencias de presentación?</block>
   <block id="dae44576c7b1e063ed5da830d3a4f9f9" category="paragraph">Para obtener información acerca de las opciones de visualización disponibles:</block>
   <block id="313d3ca857aa69d9e4d7383aa98504b6" category="inline-link-macro">Establezca unidades predeterminadas para los valores de capacidad</block>
@@ -4794,8 +4759,6 @@
   <block id="775aab758f7b681b16cb16890574d8c5" category="list-text">*Si quita unidades con protección por contraseña* -- la contraseña se almacena en un área reservada de cada unidad de la matriz de almacenamiento. Si se quitan todas las unidades de la cabina de almacenamiento, la contraseña ya no funciona. Para corregir esta situación, se debe volver a instalar una de las unidades originales en la cabina de almacenamiento.</block>
   <block id="3337fca1f09a5e507012992667f833f6" category="list-text">*Si desea eliminar la protección con contraseña* -- Si ya no desea que los comandos estén protegidos con contraseña, introduzca la contraseña de administrador actual y deje los cuadros de texto de la nueva contraseña en blanco.</block>
   <block id="e4dc49d2a53d5925837f317bdef933eb" category="paragraph">Si se ejecutan comandos de configuración en una cabina de almacenamiento, se pueden producir daños graves, incluso la pérdida de datos. Por este motivo, siempre debe configurar una contraseña de administrador para la cabina de almacenamiento. Use una contraseña de administrador de al menos 15 caracteres alfanuméricos para reforzar la seguridad.</block>
-  <block id="96830edba2b0d20286d9e38c88f41f0d" category="summary">Si no se ven todos los componentes de hardware en el cuadro de diálogo verificar hardware, es posible que una bandeja de unidades no esté conectada correctamente o que se haya instalado una bandeja incompatible en la cabina de almacenamiento.</block>
-  <block id="7a3b89af3b52c55d1f98c18d0f91e932" category="doc">¿Qué sucede si no veo todos mis componentes de hardware?</block>
   <block id="9446f92493638ff7ef1aefbdc315bdba" category="paragraph">Si no se ven todos los componentes de hardware en el cuadro de diálogo verificar hardware, es posible que una bandeja de unidades no esté conectada correctamente o que se haya instalado una bandeja incompatible en la cabina de almacenamiento.</block>
   <block id="b372dad273bfadf640e39fc6f3e8aff4" category="paragraph">Verifique que se hayan conectado correctamente todas las bandejas de unidades. Si no está seguro de cuáles bandejas de unidades son compatibles, póngase en contacto con el soporte técnico.</block>
   <block id="720fa4ee2f7b9beaa1e33c121c9216e8" category="summary">System Manager puede mostrar los valores de capacidad en gibibytes (GIB) o tebibytes (TIB).</block>
@@ -4808,7 +4771,6 @@
   <block id="211ea62875fd76f7fe9c99ae20c9c18e" category="paragraph">1,024 3 bytes</block>
   <block id="acfba856147d2a51cbb72344a612c283" category="paragraph">TIB</block>
   <block id="eb26b32eb811a0b5952b1efccf0a262f" category="paragraph">1,024 4 bytes</block>
-  <block id="646754995935d94c046a920e98aed63b" category="summary">En System Manager se admiten las siguientes versiones de exploradores.</block>
   <block id="a260cf8ad6a1291b0978385144000e3c" category="doc">¿Qué exploradores son compatibles?</block>
   <block id="ef15fd2f45e6bb5ce57587895ba64f93" category="cell">Navegador</block>
   <block id="d0a2e00895462c37efe5227c5b94faae" category="cell">Versión mínima</block>
@@ -4875,10 +4837,8 @@
   <block id="a90241e2ea3cc7e6b289f2663d89a71c" category="list-text">¿Prefiere grupos de volúmenes RAID en lugar de pools?</block>
   <block id="71b77d8d34e6ef7ccb170b2c2c21b079" category="list-text">¿Prefiere aprovisionar manualmente las unidades en lugar de que le recomienden una configuración?</block>
   <block id="0b7252deab11ddabf78395397af0a16e" category="paragraph">Si respondió afirmativamente a cualquiera de esas preguntas, considere rechazar la configuración de pool recomendada.</block>
-  <block id="4343a245fb510b33d199f2e5fae7a540" category="summary">Cuando se identifican aplicaciones, System Manager recomienda automáticamente una configuración de volumen que optimiza el almacenamiento según el tipo de aplicación.</block>
   <block id="c56a19e88f72c77c4ab3e3911e485975" category="doc">¿Cómo ayuda la identificación de aplicaciones a gestionar la cabina de almacenamiento?</block>
   <block id="e8d880726c1e775bd5008cff6e09ad34" category="paragraph">La optimización de volúmenes por aplicación puede aumentar la eficiencia de las operaciones de almacenamiento de datos. Las características como el tipo de I/o, el tamaño de segmento, la propiedad de controladora y la caché de lectura y escritura se incluyen en la configuración de volumen. Además, es posible visualizar datos de rendimiento por aplicación y por carga de trabajo para evaluar la latencia, las I/o por segundo y los MIB/seg de aplicaciones y de sus cargas de trabajo asociadas.</block>
-  <block id="0cf92f39ed774e6e03907495e7d22aae" category="doc">¿Qué sucede si no puedo ver todos mis hosts?</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">Los avisos legales proporcionan acceso a las declaraciones de copyright, marcas comerciales, patentes y mucho más.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Avisos legales</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">Derechos de autor</block>
@@ -4999,7 +4959,6 @@
   <block id="958b076f7e1539852bedf91e5fe7a516" category="paragraph">El sistema ejecuta las siguientes acciones:</block>
   <block id="3636b9fe2c9d12c05e8f6d081984ef71" category="list-text">Inicia la resincronización de los datos de todas las parejas reflejadas dentro del grupo de coherencia de reflejos que se seleccionó.</block>
   <block id="99e4c2d5cb84c6dc00d6f12bdfee23ca" category="list-text">Actualiza los datos modificados de la cabina de almacenamiento local a la cabina de almacenamiento remota.</block>
-  <block id="b47b71858322e411094e44ec1a37135c" category="summary">Las parejas reflejadas se configuran en la interfaz de Unified Manager y, posteriormente, se gestionan en System Manager.</block>
   <block id="f17d23d6e7e8eddf4836a9904b73236e" category="doc">Mirroring asíncrono: ¿Qué debo saber antes de crear una pareja reflejada?</block>
   <block id="03636572249dd9880006378f3c1755fe" category="paragraph">Antes de crear una pareja reflejada, siga estas directrices.</block>
   <block id="974faf4582be88d5166f32c03cc6e7c8" category="list-text">Debe tener dos cabinas de almacenamiento.</block>
@@ -5013,7 +4972,6 @@
   <block id="fe99edff93d55843d1bd3a7d39d7dbcd" category="list-text">Las dos cabinas de almacenamiento se encuentran detectadas en Unified Manager.</block>
   <block id="b6287b731648fdf0c4197b5b53ed2e5b" category="list-text">La cabina de almacenamiento debe contener al menos un grupo de coherencia de reflejos. El grupo de coherencia se crea en Unified Manager en el asistente Crear pareja reflejada.</block>
   <block id="7b35335a6eefe537ec49adb2a524da1e" category="summary">Cuando se selecciona un volumen secundario en la cabina de almacenamiento remota, se muestra una lista de todos los volúmenes elegibles para esa pareja reflejada.</block>
-  <block id="d58e89d803ae3ca8b3fded751d8dac3f" category="doc">Mirroring asíncrono: ¿Por qué no se muestran todos los volúmenes en la cabina de almacenamiento remota?</block>
   <block id="20f1ebedc229b82bc1ca089db22f742e" category="paragraph">Todos los volúmenes que no son elegibles no aparecen en esa lista. Es posible que los volúmenes no sean admisibles por uno de los siguientes motivos:</block>
   <block id="da6c861252922d5dba9aca194ca15178" category="list-text">El volumen no está en estado óptimo.</block>
   <block id="4e30fb2503bfbf3dbe8e11d9e48208d0" category="list-text">El volumen ya participa en una relación de mirroring.</block>
@@ -5151,7 +5109,6 @@
   <block id="925e87a825d11603a040572606e602cc" category="paragraph">Tiempo aproximadamente 2 veces superior a la tasa de prioridad más alta</block>
   <block id="e1bde07942eb1f02a009412f9460b4d6" category="paragraph">El tamaño del volumen y las cargas de la tasa de I/o del host afectan a las comparaciones de tiempo de sincronización.</block>
   <block id="50fd10ff08567255543d64e6fdfd287a" category="summary">Cuando se selecciona un volumen primario para una pareja reflejada, se muestra una lista con todos los volúmenes elegibles.</block>
-  <block id="76c6cdf244623c861eb1e9b45de9f68d" category="doc">Mirroring síncrono: ¿Por qué no se muestran todos los volúmenes?</block>
   <block id="996b3bbba1205dd996b175afc6573b9c" category="paragraph">Si algún volumen no es apto para el uso, no se muestra en esa lista. Es posible que los volúmenes no sean admisibles por uno de los siguientes motivos:</block>
   <block id="991e25bd7d0d856f1cbe33745a8858c0" category="list-text">El volumen no es estándar, por ejemplo, un volumen Snapshot o un volumen fino.</block>
   <block id="150be4afef0fcef82e08119abdf1edf1" category="summary">Es posible eliminar grupos de coherencia de reflejos que ya no son necesarios en la cabina de almacenamiento local y en la cabina de almacenamiento remota.</block>
@@ -5192,8 +5149,6 @@
   <block id="e6eee9d75412719ac4162bfeb0bae72e" category="paragraph">Si la cabina de almacenamiento local no puede comunicarse con la cabina de almacenamiento remota, se muestra el cuadro de diálogo no se puede establecer contacto con la cabina de almacenamiento en el sistema cuando se solicita un cambio de rol, pero la cabina de almacenamiento remota no puede contactarse. Haga clic en *Sí* para forzar el cambio de rol.</block>
   <block id="f13bfae77b9e3fa6ae100d6085b12771" category="paragraph">System Manager realiza la siguiente acción:</block>
   <block id="33dd1e24349af0b8ee7d623742e70d5a" category="list-text">Si el volumen asociado de la pareja reflejada puede contactarse, cambian los roles entre los volúmenes. En System Manager, se promociona el volumen secundario de la pareja reflejada al rol primario o se degrada el volumen primario de la pareja reflejada al rol secundario (según la selección).</block>
-  <block id="6dfc033921a7d8d6b90bc5145f989f1e" category="summary">La dirección IP de la cabina de almacenamiento remota se actualiza cuando cambia la dirección IP de un puerto iSCSI y la cabina de almacenamiento local no puede comunicarse con la cabina de almacenamiento remota.</block>
-  <block id="6f04c9a202bb634f610d093a0d5d0495" category="doc">¿Por qué debería actualizar la dirección IP de la cabina de almacenamiento remota?</block>
   <block id="4eb18d2e1000f44c1aa7bf303324ef52" category="paragraph">La dirección IP de la cabina de almacenamiento remota se actualiza cuando cambia la dirección IP de un puerto iSCSI y la cabina de almacenamiento local no puede comunicarse con la cabina de almacenamiento remota.</block>
   <block id="fd6fd032baf66907fa006af6877faa89" category="paragraph">Cuando se establece una relación de mirroring asíncrono con una conexión iSCSI, tanto la cabina de almacenamiento remota como la local guardan un registro de la dirección IP de la cabina de almacenamiento remota en la configuración de mirroring asíncrono. Si cambia la dirección IP de un puerto iSCSI, la cabina de almacenamiento remota que intenta utilizar ese puerto se encuentra con un error de comunicación.</block>
   <block id="d7e48014036e048990b33b96292bcc91" category="paragraph">La cabina de almacenamiento con la dirección IP modificada envía un mensaje a cada cabina de almacenamiento remota asociada con los grupos de coherencia de reflejos configurados para reflejar a través de una conexión iSCSI. Las cabinas de almacenamiento que reciben este mensaje actualizan automáticamente su dirección IP objetivo remota.</block>
@@ -5300,7 +5255,6 @@
   <block id="509ffc09fff4e17a95981281c2c55ffa" category="list-text">Si utiliza unidades compatibles con la función de seguridad, tanto el volumen primario como el secundario deberían usar el mismo tipo de unidad. Esta restricción no se aplica; por lo tanto, debe verificarlo por su cuenta.</block>
   <block id="fba4d97b8a1054509c9d11f65809eb81" category="list-text">Si el volumen primario utiliza unidades de cifrado de disco completo (FDE), el volumen secundario debe usar unidades FDE.</block>
   <block id="f2a2c0e134cb01173cf3c2a180d57846" category="list-text">Si el volumen primario utiliza unidades validadas con el estándar de procesamiento de información federal 140-2 (FIPS), el volumen secundario también debe utilizarlas 140-2.</block>
-  <block id="d651b1b5dea76bd9febe498feca9d0aa" category="doc">Mirroring asincrónico: ¿Por qué no se muestran todos los volúmenes?</block>
   <block id="6e6d3781c3d5e89dac9c7a5286567157" category="paragraph">Si algún volumen no es apto para el uso, no se muestra en esa lista. Es posible que haya volúmenes no elegibles por alguno de los siguientes motivos:</block>
   <block id="e162c795f41b2f54f4cc4318a9da4a18" category="list-text">Para los volúmenes finos, se debe habilitar la expansión automática.</block>
   <block id="2a401b674ab8fa1d7d56c5c6769233de" category="summary">Conozca la forma en que los términos de mirroring síncrono se aplican a su cabina de almacenamiento.</block>
@@ -5419,7 +5373,6 @@
   <block id="455c19a3e2e0ae204aaae455a94dc139" category="list-text">El puerto de host 4 de HBA de la controladora, que estaba dedicado a la comunicación de las operaciones de mirroring síncronas, ahora puede aceptar solicitudes de lectura y escritura del host.</block>
   <block id="c8795d54a85ef60634d6af6928100837" category="list-text">Se eliminan los volúmenes de capacidad reservada en la cabina de almacenamiento.</block>
   <block id="9a40e4909c217e4f4c325f3a320ac93a" category="summary">Cuando se crea un volumen secundario para la pareja reflejada asíncrona, el sistema muestra una lista de todos los pools y los grupos de volúmenes elegibles para esa pareja reflejada asíncrona. En esa lista, no se muestra ningún pool o grupo de volúmenes que no sea elegible para su uso.</block>
-  <block id="15f94db58250536332ae255a199d8cc3" category="doc">¿Por qué no se muestran todos los pools y grupos de volúmenes?</block>
   <block id="c55e0fc2f650b6c29bee97d6d925791c" category="paragraph">Los pools o grupos de volúmenes pueden no ser elegibles por cualquiera de los motivos siguientes.</block>
   <block id="38c3daa178b71dd0ef1047cd80837346" category="list-text">Las funcionalidades de seguridad de un pool o un grupo de volúmenes no coinciden.</block>
   <block id="82d169a1cf1561c3cb857672c5ab5869" category="summary">Es posible cambiar el propietario preferido de la controladora de una pareja reflejada.</block>
@@ -5433,7 +5386,6 @@
   <block id="930384e99f0ce6421c82e7bc4e515d60" category="doc">Terminología de mirroring asíncrono</block>
   <block id="cffa7e4fcd460690ec5261eba8312305" category="paragraph">En el mirroring asíncrono, una pareja reflejada siempre pertenece a un grupo de coherencia de reflejos. Primero, se realizan las operaciones de escritura en el volumen primario y, luego, se replican en el secundario. Cada pareja reflejada de un grupo de coherencia de reflejos comparte la misma configuración de sincronización.</block>
   <block id="1866ca64bf91acf982f0825105cd98a1" category="summary">Es posible aumentar la capacidad reservada únicamente en incrementos de 4 GIB.</block>
-  <block id="5e79bfcdaf2980a36b13dea84317bc33" category="doc">¿Por qué no puedo aumentar la capacidad reservada con la cantidad que he solicitado?</block>
   <block id="ce83ffa7dc75c0de0405ab5e24abcecf" category="paragraph">Para las operaciones de mirroring asíncrono, generalmente es el 20 % del volumen base. Use un porcentaje más alto si cree que el volumen base se someterá a muchos cambios, o si la expectativa de duración estimada de una operación de servicio de copia de un objeto de almacenamiento será muy larga.</block>
   <block id="656222b39902e67634b421342ad3fcb7" category="summary">Si planea utilizar la función de mirroring asíncrono, tenga en cuenta los siguientes requisitos.</block>
   <block id="e68902b499aec772c7e49ae7eb84c48e" category="doc">Requisitos para mirroring asíncrono</block>
@@ -5460,7 +5412,6 @@
   <block id="da35a5f250b122935e33c2b1a877eb4b" category="list-text">Si el volumen primario no utiliza Drive Security, el volumen secundario no debe usar Drive Security.</block>
   <block id="2e20e75562ac97a3d67095d576777144" category="list-text">Se requiere un volumen de capacidad reservada en el volumen primario y en el volumen secundario de una pareja reflejada para registrar la información de escritura que se utiliza en la recuperación de los restablecimientos de la controladora y otras interrupciones temporales.</block>
   <block id="7bcce6940c139ff63c67e58f5e7833c4" category="list-text">Debido a que tanto el volumen primario como el volumen secundario de una pareja reflejada requieren capacidad reservada adicional, debe asegurarse de contar con capacidad libre disponible en ambas cabinas de almacenamiento de la relación de reflejo.</block>
-  <block id="b3fd593fc883dfb95bb20995275cb9a2" category="summary">En general, la capacidad reservada constituye el 40 % del volumen base para operaciones Snapshot y el 20 % del volumen base para operaciones de mirroring asíncrono. Por lo general, esta capacidad es suficiente.</block>
   <block id="9e5663f73d80960408415d0ced12887a" category="doc">¿Por qué debería cambiar este porcentaje?</block>
   <block id="fe1327f33625d09259d474174d0735ed" category="paragraph">En general, la capacidad reservada constituye el 40 % del volumen base para operaciones Snapshot y el 20 % del volumen base para operaciones de mirroring asíncrono.</block>
   <block id="7ef46edfdc71263097118ce1f1a8a2c2" category="paragraph">Por lo general, esta capacidad es suficiente. La capacidad necesaria varía, según la frecuencia y el tamaño de las escrituras de I/o en el volumen base y el periodo durante el cual se pretenda utilizar la operación de servicios de copia del objeto de almacenamiento.</block>
@@ -5491,7 +5442,6 @@
   <block id="baba612c4896ebae31a1baa788fda3da" category="list-text"><block ref="baba612c4896ebae31a1baa788fda3da" category="inline-link-macro-rx"></block></block>
   <block id="2157e66b9e6c46fccd44e816b920a83e" category="inline-link-macro">La diferencia que el mirroring asíncrono es el mirroring síncrono</block>
   <block id="3daca167043ca93f9e451c47976f3077" category="list-text"><block ref="3daca167043ca93f9e451c47976f3077" category="inline-link-macro-rx"></block></block>
-  <block id="3495d24d327284018c764d189eb19ebe" category="doc">Mirroring síncrono: ¿Por qué no se muestran todos los volúmenes en la cabina de almacenamiento remota?</block>
   <block id="e05b2eeef6a876f6d888aa0b5e0b952a" category="summary">Es posible cambiar el rol entre las parejas reflejadas de un grupo de coherencia de reflejos. Para ello, se puede degradar el grupo de coherencia de reflejos primario al rol secundario o promocionar el grupo de coherencia de reflejos secundario al rol primario.</block>
   <block id="8a5f0c27aa88c123ffa9c62f661173ef" category="list-text">El cambio de rol afecta a todas las parejas reflejadas dentro del grupo de coherencia de reflejos seleccionado.</block>
   <block id="2ab8397a1e3720a3200b82f4e8abf397" category="list-text">Cuando se degrada un grupo de coherencia de reflejos al rol secundario, también se degradan todas las parejas reflejadas dentro de ese grupo de coherencia de reflejos al rol secundario y viceversa.</block>
@@ -5568,8 +5518,6 @@
   <block id="6408ac0dcd26fd709b771fa9a3927d3c" category="list-text">Registra los datos que se escribieron en el lado primario del grupo de consistencia en mirroring mientras el grupo de consistencia en mirroring está suspendido y escribe los datos automáticamente en el lado secundario del grupo de consistencia en mirroring cuando se reanuda el grupo de consistencia en mirroring. No es necesario realizar una sincronización completa.</block>
   <block id="c22ea256dba22058c9bc4feb29ac2362" category="list-text">En el caso de los grupos de consistencia en mirroring _suspended_, muestra *suspendido por el usuario* en la tabla grupos de consistencia en mirroring.</block>
   <block id="5fc919ffb8f2f21ac459db3e0af11f43" category="list-text">En el caso de un grupo de coherencia de reflejos _reanudado_, los datos que se escribieron en los volúmenes primarios mientras el grupo de coherencia reflejos estaba suspendido se escriben en los volúmenes secundarios inmediatamente. La sincronización periódica se reanuda si se estableció un intervalo de sincronización automática.</block>
-  <block id="09aa31a04bb22f0e3a974409e4760569" category="summary">La función de mirroring se configura en la interfaz de Unified Manager.</block>
-  <block id="1f886fa10f9979df037b0e533f029308" category="doc">¿Por qué no puedo acceder a la función de mirroring seleccionada?</block>
   <block id="bf28bf2251d42b0426dd4f0ec93a91cd" category="paragraph">Para habilitar y configurar el mirroring entre dos cabinas, compruebe lo siguiente:</block>
   <block id="f7fa64ef9537f8a03850d1c113c23923" category="list-text">El proxy de servicios web se encuentra en ejecución. (Unified Manager se encuentra instalado en un sistema host junto con el proxy de servicios web.)</block>
   <block id="1fe39625b8b89ac0cef70b7f416a43ed" category="list-text">Las dos cabinas de almacenamiento que se desean usar para el mirroring se detectaron en Unified Manager.</block>
@@ -5866,7 +5814,6 @@
   <block id="7ed26f03f01dbf68acbc90a7fbe840a0" category="paragraph">La configuración importada incluye las funciones por separado (Basic AutoSupport, AutoSupport OnDemand y Remote Diagnostics), la ventana de mantenimiento, el método de entrega, y programa de envío.</block>
   <block id="ec54983259d380642bdd30412d7af0ad" category="list-text">En el cuadro de diálogo Seleccionar configuración, seleccione *AutoSupport* y, a continuación, haga clic en *Siguiente*.</block>
   <block id="2864d31a37c1b1c3fa926287166df0d4" category="paragraph">Las cabinas de almacenamiento objetivo ahora están configuradas con los mismos ajustes de AutoSupport que la cabina de origen.</block>
-  <block id="7f82bc53f199e7918cc64b78504c2064" category="doc">¿Por qué no se muestran todos los volúmenes en la cabina de almacenamiento remota?</block>
   <block id="8802aac967f31435c584318c847b8f96" category="paragraph">Todos los volúmenes que no son elegibles no aparecen en esa lista. Es posible que haya volúmenes no elegibles por alguno de los siguientes motivos:</block>
   <block id="1e7a9162b9eda403f57543b169ec7c36" category="list-text">El volumen no es estándar, por ejemplo, un volumen Snapshot.</block>
   <block id="08a038d98290bf4f3a988b5b930953b6" category="list-text">Para el mirroring asíncrono, los atributos de volumen fino entre el volumen primario y el volumen secundario no coinciden.</block>
@@ -6040,7 +5987,6 @@
   <block id="6288150d7ef4839b9a49ad845bc05aaf" category="list-text">Una vez finalizada la comprobación del estado, puede hacer clic en los tres puntos (...) a la derecha de cada fila para ver más información y realizar otras tareas.</block>
   <block id="b7d5630f68b2ae105a1892c1784263e4" category="paragraph">Si ocurre un error en la comprobación del estado de alguna cabina, puede omitir esa cabina en particular y continuar la actualización de las otras cabinas. Otra opción es detener el proceso por completo y solucionar los problemas de las cabinas que presentaron errores.</block>
   <block id="44be7be255dacc165bc883399e8ce540" category="summary">Durante la operación Importar configuración, es posible que algunas cabinas de almacenamiento no estén disponibles en el cuadro de diálogo de selección de objetivos.</block>
-  <block id="2ec3d7bda9724dc0164af9b927fdbc28" category="doc">¿Por qué no se muestran todas las cabinas de almacenamiento?</block>
   <block id="509271c8c60b258f298994cb7ca8944c" category="paragraph">Que las cabinas de almacenamiento no aparezcan puede deberse a los siguientes motivos:</block>
   <block id="c91bcce3104eb156b3cd15ae07870a24" category="list-text">La versión de firmware es inferior a 8.50.</block>
   <block id="d42c8b73b3ccc12638f610f2623a0c09" category="list-text">La cabina de almacenamiento se encuentra sin conexión.</block>
@@ -6134,7 +6080,6 @@
   <block id="f187fb879696ae600d9ff9593d4b69d3" category="list-text">*Servicios de directorio* -- la configuración incluye el nombre de dominio y la URL de un servidor LDAP (protocolo ligero de acceso a directorios), junto con las asignaciones de los grupos de usuarios del servidor LDAP a los roles predefinidos de la cabina de almacenamiento.</block>
   <block id="18ed508fef7eeddf47212f03eac81125" category="list-text">*Configuración de almacenamiento* -- las configuraciones incluyen volúmenes (sólo volúmenes gruesos y que no pertenecen al repositorio), grupos de volúmenes, pools y asignaciones de unidades de repuesto activo.</block>
   <block id="1aa660524e4f7281ec5e49498a4718df" category="list-text">*Ajustes del sistema* -- las configuraciones incluyen la configuración de escaneo de medios para un volumen, caché SSD para controladores y equilibrio de carga automático (no incluye la generación de informes de conectividad de host).</block>
-  <block id="082027bfe4130225fed98f419dcfcbee" category="doc">¿Por qué no se muestran todos los volúmenes?</block>
   <block id="d6a2f3fb02a6b5a0805cb96861b2ad88" category="list-text">Para el mirroring síncrono, los volúmenes primario y secundario de una pareja reflejada deben ser volúmenes estándar. No pueden ser volúmenes finos o Snapshot.</block>
   <block id="d003fc64a90ec0d2d96a3a9a15d536f4" category="list-text">Para el mirroring asíncrono, los volúmenes finos deben tener la expansión automática habilitada.</block>
   <block id="25be04f8f564d75f005e7d91ec561532" category="summary">Utilice las funciones de mirroring para replicar datos entre una cabina de almacenamiento local y una cabina de almacenamiento remota, ya sea de forma asíncrona o síncrona.</block>
@@ -6290,7 +6235,6 @@
   <block id="7bec7c4242ffee795f7dd8710d457312" category="list-text">*Monitor* -- acceso de sólo lectura a todos los objetos de almacenamiento, pero sin acceso a la configuración de seguridad.</block>
   <block id="23f88077a4ef5e361cbda20d3702914d" category="paragraph">Una función no disponible se muestra atenuada o directamente no se muestra en la interfaz de usuario.</block>
   <block id="c681bfc0ac97186ca0275c915355aa03" category="summary">Si recibe un error al intentar iniciar sesión, revise estas causas posibles.</block>
-  <block id="b6026ee3aca4cc03c6a1bf51a326a2d1" category="doc">¿Por qué no puedo iniciar sesión?</block>
   <block id="99826f77d5097df8851cc5c8415b312e" category="paragraph">Los errores de inicio de sesión pueden ocurrir por uno de estos motivos:</block>
   <block id="3a28ad1c170234f0d60543085037ee65" category="list-text">Introdujo un nombre de usuario o contraseña incorrectos.</block>
   <block id="7c5ba619c861a80ef986b7207b06fe08" category="list-text">No tiene privilegios suficientes.</block>
@@ -6849,7 +6793,6 @@
   <block id="6313e276ccc5a180f57a8cc539d1e72e" category="paragraph">El lenguaje de marcado de aserción de seguridad (SAML) es un estándar basado en XML para fines de autenticación y autorización entre dos entidades. SAML permite utilizar la autenticación multifactor, en la cual los usuarios deben introducir dos o más elementos para validar su identidad (por ejemplo, una contraseña y una huella digital). La función de SAML integrada de la cabina de almacenamiento es compatible con SAML2.0 para autenticación, autorización y confirmación de identidades.</block>
   <block id="674769e3326f8cf937af4282f2815c02" category="paragraph">SP</block>
   <block id="e8e95dc12a551dcae02e37694680e28a" category="paragraph">Un proveedor de servicios (SP) es un sistema que controla la autenticación y el acceso de usuario. Cuando se configura Access Management con SAML, la cabina de almacenamiento actúa como proveedor de servicios, ya que solicita la autenticación del proveedor de identidades.</block>
-  <block id="02b62fe21218b105202354e3ea442287" category="summary">La cabina de almacenamiento EF600 puede incluir dos HIC: Una externa y una interna.</block>
   <block id="08c9dcbb1f09b47d3350de8dff6bfdc1" category="doc">¿Por qué existen dos direcciones IP para un puerto físico?</block>
   <block id="efae713b5876ddd9d5278ed17ac910d8" category="paragraph">La cabina de almacenamiento EF600 puede incluir dos HIC: Una externa y una interna.</block>
   <block id="8db062752d20414202ee8dcfe8b79167" category="paragraph">En esta configuración, la HIC externa se encuentra conectada a una HIC interna auxiliar. Cada puerto físico al que se puede obtener acceso desde la HIC externa tiene un puerto virtual asociado desde la HIC interna.</block>
@@ -6899,7 +6842,6 @@
   <block id="6d7b3db49c96c60298b8f7611ccc4246" category="paragraph">Un paquete de funciones es un paquete que cambia los atributos de la cabina de almacenamiento (por ejemplo, cambiar el protocolo Fibre Channel a iSCSI). Los paquetes de funciones requieren una clave especial para habilitarlos.</block>
   <block id="92c7a0b0dc7bd2705e86edc5d4b8e179" category="paragraph">Función excepcional</block>
   <block id="911fca3a0018d17235161560de04d3fc" category="paragraph">Una función prémium es una opción adicional que requiere una clave para habilitarla. No se incluye en la configuración estándar de System Manager.</block>
-  <block id="911b263427c2a3d45b55258250b4f85d" category="summary">System Manager permite verificar certificados revocados mediante un servidor de protocolo de estado de certificado en línea (OCSP), en lugar de cargar listas de revocación de certificados (CRL).</block>
   <block id="e1338191b3f39c31a394336c2fb52f36" category="doc">¿Qué debo saber acerca de la comprobación de revocación de certificados?</block>
   <block id="fb43529f07beddec07e39c4b3a09bd7c" category="paragraph">Los certificados revocados ya no deberán considerarse de confianza. Un certificado puede ser revocado por varios motivos; por ejemplo, si la entidad de certificación (CA) emitió el certificado incorrectamente, una clave privada quedó en riesgo o la entidad identificada no cumplió con los requisitos de la política.</block>
   <block id="0fb970899dcd3fadfd680340b731758b" category="paragraph">Después de establecer una conexión con un servidor OCSP en System Manager, la cabina de almacenamiento realiza la verificación de revocación cada vez que se conecta a un servidor de AutoSupport, un servidor de gestión de claves externo (EKMS), un servidor de protocolo ligero de acceso a directorios por SSL (LDAPS) o un servidor de syslog. La cabina de almacenamiento intenta validar los certificados de tales servidores para asegurarse de que no se hayan revocado. A continuación, el servidor obtiene los valores "good", "revoked" o "unknown" para ese certificado. Si el certificado se revoca o la cabina no puede conectarse al servidor de OCSP, la conexión se rechaza.</block>
@@ -6991,7 +6933,6 @@
   <block id="19a5094031b18c2dec6848666bb687a6" category="list-text">*Dirección del servidor* -- Introduzca un nombre de dominio completo, una dirección IPv4 o una dirección IPv6.</block>
   <block id="30f8e0c6ba6693951068d665bf2d3173" category="list-text">*Puerto UDP* -- por lo general, el puerto UDP para syslog es 514. En la tabla, se presentan los servidores de syslog configurados.</block>
   <block id="85d48bc46b15b6483d2233aa0f95dca0" category="list-text">Para enviar una alerta de prueba a las direcciones del servidor, seleccione *probar todos los servidores de syslog*.</block>
-  <block id="3356c7ecaf79b816577caeabeb922c52" category="summary">En la tabla a continuación, se enumeran las funciones de System Manager que se pueden utilizar para configurar y gestionar sesiones Iser over InfiniBand.</block>
   <block id="cbe7bc079476646f06b8968551839760" category="doc">¿Qué más debo hacer para configurar o diagnosticar Iser over InfiniBand?</block>
   <block id="34e1ef42c23e055b03535998dc9a10ea" category="paragraph">La configuración de Iser over InfiniBand solo está disponible si la controladora de la cabina de almacenamiento incluye un puerto de gestión de hosts Iser over InfiniBand.</block>
   <block id="c90221339a5b1309cf424327a6bbe8d2" category="list-text">Desplácese hasta *Configuración de Iser over InfiniBand* y seleccione *Configurar puertos Iser over InfiniBand*.</block>
@@ -7071,7 +7012,6 @@
   <block id="024a1c8f960fdfa134e584f4abb024a5" category="paragraph">Especifique el valor de atributo para el grupo que será asignado.</block>
   <block id="a657a724cf5b24dc2bbbfbb9849ba3b8" category="paragraph">Haga clic en el campo y seleccione uno de los roles de la cabina de almacenamiento que se asignará al atributo. Debe seleccionar individualmente cada rol que desee incluir en este grupo. Se necesita el rol de supervisión en combinación con los demás roles para iniciar sesión en System Manager. También se debe asignar el rol de administración de seguridad al menos a un grupo. Los roles asignados incluyen los siguientes permisos:</block>
   <block id="2b9c3abe769f606aca47635e6afff5d0" category="list-text">Opcionalmente, haga clic en *Agregar otra asignación* para introducir más asignaciones de grupo a rol.</block>
-  <block id="f2ebc677a5b447998da1a046adcc46f0" category="summary">La controladora de la cabina de almacenamiento organiza su caché en bloques, que son fragmentos de memoria que pueden tener un tamaño de 8, 16 o 32 KiB. Todos los volúmenes del sistema de almacenamiento comparten el mismo espacio de caché; por lo tanto, los volúmenes solo pueden tener un tamaño de bloque de caché.</block>
   <block id="16fa5803900906142586eefc2643c7e8" category="doc">¿Qué es el tamaño de bloque de caché?</block>
   <block id="e49b598ec0d819934f021980302ed36e" category="paragraph">La controladora de la cabina de almacenamiento organiza su caché en "bloques", que son fragmentos de memoria que pueden tener un tamaño de 8, 16 o 32 KiB. Todos los volúmenes del sistema de almacenamiento comparten el mismo espacio de caché; por lo tanto, los volúmenes solo pueden tener un tamaño de bloque de caché.</block>
   <block id="3a60a217f8b5d35351731337da2590da" category="paragraph">Las aplicaciones utilizan diferentes tamaños de bloque, lo que puede afectar el rendimiento del almacenamiento. De manera predeterminada, el tamaño de bloque en System Manager es de 32 KiB, pero se puede modificar el valor a 8, 16 o 32 KiB. Un tamaño menor es una buena opción para los sistemas de archivos o las aplicaciones de bases de datos. Un tamaño mayor es una buena opción para aplicaciones que requieren grandes transferencias de datos, operaciones de I/o secuenciales o alto ancho de banda, como las aplicaciones multimedia.</block>
@@ -7125,7 +7065,6 @@
   <block id="5b65c7f3e78be7ecbb752287c80522ff" category="paragraph">Se muestran los nombres de los archivos en el cuadro de diálogo.</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">Resultado</block>
   <block id="8b37291827ebe2e6f281d76aa03af478" category="paragraph">La sesión finaliza automáticamente. Debe volver a iniciar sesión para que los certificados entren en vigencia. Cuando inicia sesión nuevamente, se utilizan los nuevos certificados firmados por la CA en la sesión.</block>
-  <block id="e6f9c55029196b7648834c36ed0e3472" category="summary">Se deben sincronizar manualmente los relojes de las controladoras en la cabina de almacenamiento si se observa que las marcas de tiempo que se muestran en System Manager no están alineadas con las marcas de tiempo del cliente de gestión (el ordenador que accede a System Manager por medio del explorador). Esta tarea es necesaria solo si no se habilitó el protocolo de tiempo de redes (NTP) en System Manager.</block>
   <block id="d0e1c48d259a397068da011bc9e48355" category="doc">¿Cuándo se deben sincronizar los relojes de la cabina de almacenamiento?</block>
   <block id="f9a315def8f285bce635c80c1bf7c96d" category="paragraph">Se recomienda enfáticamente utilizar un servidor NTP en lugar de sincronizar manualmente los relojes. NTP sincroniza automáticamente los relojes con un servidor externo que utiliza el protocolo de tiempo de redes simple (SNTP).</block>
   <block id="f7c2a6279f30ed31e705988dae3b0a7a" category="paragraph">Se puede comprobar el estado de sincronización desde el cuadro de diálogo Sincronizar relojes de cabinas de almacenamiento, que se encuentra disponible en la página sistema. Si las horas que aparecen en el cuadro de diálogo no coinciden, ejecute una sincronización. Puede ver este cuadro de diálogo periódicamente y verificar si las horas que muestran los relojes de las controladoras se distanciaron y ya no están sincronizadas.</block>
@@ -7153,7 +7092,6 @@
   <block id="4bdba401227da38e05e805640bc07392" category="summary">Las capacidades de RBAC (control de acceso basado en roles) presentes en la cabina de almacenamiento incluyen perfiles de usuario predefinidos con uno o varios roles asignados. Cada rol incluye permisos para acceder a tareas en SANtricity System Manager.</block>
   <block id="4af88e993472ad0efbe148c3d71082f9" category="paragraph">Puede accederse a los perfiles de usuario y a los roles asignados desde el menú:Configuración[Access Management &gt; roles de usuario local] desde la interfaz de usuario de cualquier System Manager.</block>
   <block id="730a090cd84a0ce605e346fc4d569c15" category="paragraph">Si un usuario no tiene permisos para determinada tarea, la tarea aparece atenuada o directamente no aparece en la interfaz de usuario.</block>
-  <block id="a8e2e2e6f94a627dfb39ec0a4930c961" category="summary">La ventana Configuración de la unidad incluye información acerca de los atributos de seguridad de la unidad. Read/Write Accessible es uno de los atributos que se muestran si se bloquearon los datos de una unidad.</block>
   <block id="acd4d22fedd48d49e5eaf65df648efcf" category="doc">¿Qué es la accesibilidad de lectura/escritura?</block>
   <block id="08e4cde4dec18bcf34720085b135053b" category="paragraph">La ventana Configuración de la unidad incluye información acerca de los atributos de seguridad de la unidad. "Read/Write Accessible" es uno de los atributos que se muestran si se bloquearon los datos de una unidad.</block>
   <block id="5d0ace8d3a4aed739aa36c5cfff181ca" category="paragraph">Para ver los atributos de Drive Security, vaya a la página hardware. Seleccione una unidad, haga clic en *Ver configuración* y, a continuación, haga clic en *Mostrar más valores*. En la parte inferior de la página, el valor del atributo Accesibilidad de lectura/escritura será *Sí* cuando la unidad esté desbloqueada. El valor del atributo Accesibilidad de lectura/escritura es *no, clave de seguridad no válida* cuando la unidad está bloqueada. Si desea desbloquear una unidad segura, importe una clave de seguridad (vaya a menú:Configuración[sistema &gt; Desbloquear unidades seguras]).</block>
@@ -7546,7 +7484,6 @@
   <block id="5303e6808de2e1eb2cd0b535241f849f" category="list-text">En la sección General, seleccione *Habilitar/deshabilitar tiempo de espera de la sesión*.</block>
   <block id="04a2f9a0837768f729e3e4a4d5586c8f" category="paragraph">El tiempo de espera mínimo que puede configurarse para System Manager es de 15 minutos.</block>
   <block id="3a93c2465cd10009a4392024e9c63524" category="paragraph">Para desactivar los tiempos de espera de sesiones, anule la selección de la casilla de verificación *establecer el lapso...*.</block>
-  <block id="a6f7affe4dc5be0cadf5dc1e51b4de98" category="summary">En la tabla a continuación, se enumeran las funciones de System Manager que se pueden utilizar para configurar y gestionar sesiones NVMe over InfiniBand.</block>
   <block id="f579a5c2bbaa968b2ae0227f6d61ee8b" category="doc">¿Qué más debo hacer para configurar o diagnosticar NVMe over InfiniBand?</block>
   <block id="f354dc8aa2d80d21ecf46a214b9dc749" category="paragraph">La configuración de NVMe over InfiniBand solo está disponible si la controladora de la cabina de almacenamiento incluye un puerto NVMe over InfiniBand.</block>
   <block id="eb364fdd3a5fbd25e3af66197bd501b4" category="list-text">Desplácese hasta *Configuración de NVMe over InfiniBand* y seleccione *Configurar puertos NVMe over InfiniBand*.</block>
@@ -7692,7 +7629,6 @@
   <block id="dc07a87e061171e521e35e7bfb973752" category="list-text">Si el identificador de claves de seguridad no coincide con el identificador de la controladora, busque el archivo de claves de seguridad correcto y vuelva a intentar hacer la validación.</block>
   <block id="0bbe577878c9713994a01b83ebf4922a" category="list-text">Si la controladora no puede descifrar la clave de seguridad para la validación, es posible que haya introducido incorrectamente la frase de contraseña. Haga doble clic en la frase de contraseña, vuelva a introducirla si fuera necesario y vuelva a intentar hacer la validación. Si vuelve a aparecer el mensaje de error, seleccione un backup del archivo de claves (si estuviera disponible) y vuelva a intentar hacer la validación.</block>
   <block id="8bca22899d68e3e88a277a87b49ddb92" category="list-text">Si aún no puede validar la clave de seguridad, es posible que el archivo original esté dañado. Cree un backup nuevo de la clave y valide esa copia.</block>
-  <block id="6f0a8cf9a1855b3b4a97c825f0dc2353" category="summary">Cuando se realizan ciertos cambios en System Manager, como el cambio de la interfaz de gestión o el uso de SAML como método de autenticación, puede restringirse el uso de algunas herramientas y funciones externas.</block>
   <block id="6c447bc20946705a74ecd7374bbfb3d9" category="doc">¿A cuáles herramientas de gestión externas puede afectar este cambio?</block>
   <block id="f54dbfa752935857fdfec4346eb4879a" category="section-title">Interfaz de gestión</block>
   <block id="d4b335926e3028e39907d1a8db8d868b" category="paragraph">Las herramientas que se comunican directamente con la interfaz de gestión heredada (Symbol), como SANtricity SMI-S Provider u OnCommand Insight (OCI), no funcionan a menos que la configuración interfaz de gestión heredada esté habilitada. Además, no es posible utilizar comandos de la CLI heredados ni realizar operaciones de mirroring si dicha configuración está deshabilitada.</block>
@@ -7706,7 +7642,6 @@
   <block id="11e77d000508d5f96454b886e37ca7e4" category="list-text">Para las unidades que se van a migrar, se deben conocer el identificador de la clave de seguridad y la frase de contraseña que corresponden al archivo de claves de seguridad.</block>
   <block id="c04cf84d52a4e75dd91e3c335b94e32c" category="list-text">El archivo de claves de seguridad debe estar disponible en el cliente de gestión (el sistema con un explorador que se utilizó para acceder a System Manager).</block>
   <block id="5dcad6cc0c656f580a085c998fb762f4" category="list-text">Si va a restablecer una unidad NVMe bloqueada, debe introducir el identificador de seguridad de la unidad. Para ubicarlo, retire físicamente la unidad y busque la cadena de PSID (máximo de 32 caracteres) en la etiqueta de la unidad. Asegúrese de reinstalar la unidad antes de iniciar la operación.</block>
-  <block id="621f5a5f95be39f6dfd96721467576f1" category="summary">Cuando la cantidad de datos no guardados que se encuentra en la caché llega a cierto nivel, la controladora guarda periódicamente en una unidad los datos en caché. Este proceso de guardado se denomina vaciado.</block>
   <block id="2913e0bdf47a84de45d1801f60bd03ec" category="doc">¿Qué es el vaciado de la caché?</block>
   <block id="995e13919b56bf032eea1b80b032776e" category="paragraph">Cuando la cantidad de datos no guardados que se encuentra en la caché llega a cierto nivel, la controladora guarda periódicamente en una unidad los datos en caché. Este proceso de guardado se denomina "vaciado".</block>
   <block id="b722587f8397c4f92f14a10a2d19a73d" category="paragraph">La controladora utiliza dos algoritmos para vaciar la caché: En función de la demanda y en función de la antigüedad. La controladora utiliza un algoritmo en función de la demanda hasta que la cantidad de datos en caché desciende por debajo del umbral de vaciado de caché. De manera predeterminada, un vaciado comienza cuando está en uso el 80 % de la caché.</block>
@@ -8064,7 +7999,6 @@
   <block id="129a52cf3cb687f6be3ef6e493e5e53c" category="list-text">Cargar una configuración de la cabina de almacenamiento</block>
   <block id="795b04ff3be69a87df8d41f091699fa0" category="list-text">Ejecutar un script</block>
   <block id="3b0cd60768d53731a69dbdb31ac39a43" category="list-text">Intentar realizar una operación activa cuando se agotó el tiempo de espera de una sesión no utilizada</block>
-  <block id="ad7b6f0b788abb4027a97020a34740d3" category="summary">Si recibe un error al intentar iniciar sesión en System Manager, revise estas causas posibles.</block>
   <block id="b9197487d195b0270141242d84cef938" category="paragraph">Los errores de inicio de sesión en System Manager pueden ocurrir por uno de estos motivos:</block>
   <block id="d1ac1dfa34b7d51990947002ee6adb2d" category="list-text">Introdujo un nombre de usuario o contraseña incorrectos.</block>
   <block id="f02909f3dc29d839fb40b346b586bb33" category="list-text">El servidor de directorio (si está configurado) puede no estar disponible. Si este es el caso, intente iniciar sesión con un rol de usuario local.</block>
@@ -8221,9 +8155,6 @@
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Novedades</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">Descripción general</block>
   <block id="be4486cc26282ba3c22a297f83977dbe" category="sidebar">Navegadores y sistemas operativos compatibles</block>
-  <block id="483a5da192f46e3cfe8391d3ef234fc4" category="sidebar">Preguntas frecuentes</block>
-  <block id="3023481996e16c0dd27c1aeeab45a6c4" category="sidebar">¿Qué sucede si no veo todos mis componentes de hardware?</block>
-  <block id="4f77fb4cfa40635f17d21979b6692c01" category="sidebar">¿Qué sucede si no puedo ver todos mis hosts?</block>
   <block id="93af28c8ab635f0e7d402547ab0c929d" category="sidebar">Interfaz principal</block>
   <block id="fc78fae55edd9650c6455e58681d3aae" category="sidebar">Ver los datos de rendimiento</block>
   <block id="76cf11d4db12b1a45f4d62797b620d5e" category="sidebar">Gestione la configuración de la interfaz</block>
@@ -8250,8 +8181,6 @@
   <block id="775b7856e9d6f75f853357d7ff4ad166" category="sidebar">Cambiar la capacidad de un volumen Snapshot</block>
   <block id="167bf1069d8793030ffca242b297158f" category="sidebar">Cambiar el volumen miembro del grupo de coherencia de capacidad</block>
   <block id="ab0c882e76928fd51f394b7b8f148e5f" category="sidebar">Cambie la configuración de capacidad para el volumen de parejas reflejadas</block>
-  <block id="d863817ffe646208af65e3a3e7270ce6" category="sidebar">¿Por qué no puedo aumentar mi capacidad de conservación?</block>
-  <block id="4c3ca9b61e82061eb67e30fc2e8f47f4" category="sidebar">¿Por qué no puedo elegir otra cantidad para disminuirla?</block>
   <block id="d9e19492064b37fdbc6a3d0c3537588a" category="sidebar">Volúmenes y cargas de trabajo</block>
   <block id="8c49ce915d4f8928c912addef222bcf5" category="sidebar">Integridad y seguridad de los datos</block>
   <block id="464608dc32f11d61980f0e0673d96128" category="sidebar">Capacidad para volúmenes</block>
@@ -8266,9 +8195,6 @@
   <block id="88f1d0e5fdeb268f6b87119dfcc27f8a" category="sidebar">Tipos de operaciones</block>
   <block id="31ef3dfd1e101bf5cf328ec387a10820" category="sidebar">Copie volúmenes</block>
   <block id="41b4e5d916e26c9e0d32ceff6fd589ed" category="sidebar">Gestionar operaciones</block>
-  <block id="0c54aa2356b1ba19bf4386215c1829f9" category="sidebar">¿Por qué estos volúmenes no están asociados con una carga de trabajo?</block>
-  <block id="c2573d03e7d109e27aea5c826f85d422" category="sidebar">¿Por qué no puedo eliminar la carga de trabajo seleccionada?</block>
-  <block id="b9f14f06f609b90bb993424923055760" category="sidebar">¿Por qué no se muestran todos los pools y/o los grupos de volúmenes?</block>
   <block id="c6707458876d290c703ac763778d44a0" category="sidebar">Hosts y clústeres de hosts</block>
   <block id="cf9a49f1bff1d19decdde49cdbdae169" category="sidebar">Cómo se asignan volúmenes</block>
   <block id="b58847c8b7694663db21c4d392c57994" category="sidebar">Configurar el acceso de hosts</block>
@@ -8289,7 +8215,6 @@
   <block id="d96ab2599a9195c08b8737eafd4a8124" category="sidebar">Quite el volumen miembro</block>
   <block id="170fad9f4be46ada31f8a718075ed709" category="sidebar">Permite gestionar volúmenes Snapshot</block>
   <block id="2895ed1d66f9333c01622c7a7d6718eb" category="sidebar">Cambiar la configuración de volumen para un volumen Snapshot</block>
-  <block id="fe82cef3fafe389abaff7e7b8c1c8945" category="sidebar">¿Por qué no se muestran todos los volúmenes, los hosts o los clústeres de hosts?</block>
   <block id="3b63cdc3399c713b7de8016c91a99548" category="sidebar">Mirroring</block>
   <block id="de3ae7d3b7cb2b60fdd43283060e9bf8" category="sidebar">Conceptos de la asincrónica</block>
   <block id="24f47cdbe9ddba774a7cc53e51d9032e" category="sidebar">Flujo de trabajo</block>
@@ -8311,17 +8236,6 @@
   <block id="54d6c04f64489f12de29a89b83cec315" category="sidebar">Desactivar las operaciones de mirroring</block>
   <block id="190233503c975b7bb1f4c8a3f12aba9d" category="sidebar">Desactivar las operaciones de mirroring asíncrono</block>
   <block id="fa7433b43d36d2536077feb9de6b7d42" category="sidebar">Desactivar la función de mirroring síncrono</block>
-  <block id="193ce2ae6dab7d8dddd7670ffaffe748" category="sidebar">Preguntas frecuentes sobre Async</block>
-  <block id="2b2aa633a1528095db126f6bb4133c10" category="sidebar">¿Por qué no puedo acceder a la función de mirroring seleccionada?</block>
-  <block id="cb0fd874d43f58b1962d457f8982a032" category="sidebar">¿Por qué no puedo aumentar la capacidad reservada con la cantidad que he solicitado?</block>
-  <block id="126f364ce23072dbb9d2813556631beb" category="sidebar">¿Por qué no se muestran todos los pools y grupos de volúmenes?</block>
-  <block id="cad9ea95efebc08a02e3d69cfba88444" category="sidebar">Mirroring asincrónico: ¿Por qué no se muestran todos los volúmenes?</block>
-  <block id="67a0bff1354ca5f23241168ff1af4cd1" category="sidebar">Mirroring asíncrono: ¿Por qué no se muestran todos los volúmenes en la cabina de almacenamiento remota?</block>
-  <block id="a0a778322fcd1480ce0a97557c0bc92c" category="sidebar">¿Por qué debería actualizar la dirección IP de la cabina de almacenamiento remota?</block>
-  <block id="009b56b468834c1fb339ca6fd6e64425" category="sidebar">Preguntas frecuentes de sincronización</block>
-  <block id="1ee329323d69a8ee4fb262351ae2bb47" category="sidebar">¿En qué se diferencia el mirroring síncrono del mirroring asíncrono?</block>
-  <block id="7948b47687c25969b744a950d4151812" category="sidebar">Mirroring síncrono: ¿Por qué no se muestran todos los volúmenes?</block>
-  <block id="389d3a8b3a5730bc57f7f4d0b4d48716" category="sidebar">Mirroring síncrono: ¿Por qué no se muestran todos los volúmenes en la cabina de almacenamiento remota?</block>
   <block id="c7c7a6a5641f33e348244f9c43010e16" category="sidebar">Requisitos de funciones</block>
   <block id="551705bacc367306569170afabb0a315" category="sidebar">Requisitos del volumen</block>
   <block id="85ecd630da2e3481551a9ee213eb40fe" category="sidebar">Gestione el almacenamiento remoto</block>
@@ -8626,7 +8540,6 @@
   <block id="c1ef781eafa3554e3ab8e8623b4e5a71" category="paragraph">El mirroring síncrono no está disponible en el sistema de almacenamiento EF600/EF600C o EF300/EF300C.</block>
   <block id="5a7b6df104eae510976ebef6d294bbc2" category="paragraph">Esta función no está disponible para el mirroring síncrono en los sistemas de almacenamiento EF600/EF600C o EF300/EF300C.</block>
   <block id="b9e88ad6836c4f5d794f382de8f1f2c9" category="admonition">DULBE no es compatible con las cabinas de almacenamiento EF300C o EF600C por el momento.</block>
-  <block id="4b8add2dc8ff6506b02ecbd9ce368929" category="summary">El aprovisionamiento de recursos es una función disponible en las cabinas de almacenamiento EF300, EF300C, EF600 y EF600C, lo que permite poner en uso los volúmenes de inmediato sin proceso de inicialización en segundo plano.</block>
   <block id="90992e53bcf79cefee988e4147be01b6" category="paragraph">La gestión en banda con el volumen de acceso no está disponible para los sistemas de almacenamiento E4000, EF600/EF600C o EF300/EF300C.</block>
   <block id="16ebf1283fdb23275c2211d15a82e2cd" category="list-text">Los volúmenes finos no están disponibles en el sistema de almacenamiento EF600/EF600C o EF300/EF300C.</block>
   <block id="1ac9fe85275ed11ba0a95e5559f5af80" category="paragraph">Muestra si la protección contra pérdida de cajón está disponible, que solo se ofrece si se utiliza una bandeja de unidades que contiene cajones. La protección contra pérdida de cajón garantiza accesibilidad a los datos en los volúmenes de un grupo de volúmenes si se produce una pérdida total de comunicación con un solo cajón en una bandeja de unidades.</block>
@@ -9050,4 +8963,75 @@
   <block id="a10a0fef1a8b50d16443976fedae1e16" category="section-title">Nuevas características en la versión 11.90R3</block>
   <block id="c78544d43a065eb825edb9e16bf0e9ad" category="paragraph">Compatibilidad del sistema operativo SANtricity con IOM12C y DCM3</block>
   <block id="94d90ce4793f949687897ec062d97b9c" category="paragraph">La compatibilidad con los módulos SAS-3 IOM12C y DCM3 ya está disponible para el firmware del controlador 11.90R3 o posterior. Los módulos IOM12C y DCM3 sustituyen a los módulos IOM12B y DCM2.</block>
+  <block id="b1151aae9531d2f5e85d085e8878cea6" category="summary">Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respuesta rápida a una pregunta.</block>
+  <block id="5453a26dc9b68778117a8311e75f8fbe" category="doc">Preguntas frecuentes sobre el controlador de almacenamiento para SANtricity System Manager</block>
+  <block id="d51277c947b0f0f0862c6f10192a1cc0" category="section-title">¿Qué elijo: DHCP o configuración manual?</block>
+  <block id="ad76bfb46a270b4305ffd6738882677c" category="doc">Preguntas frecuentes sobre estantes de almacenamiento para SANtricity System Manager</block>
+  <block id="19b5339279f2639b668d0bbe4f8b70a0" category="doc">Preguntas frecuentes sobre la interfaz de administración de SANtricity System Manager</block>
+  <block id="8587ba2a3667d610eb60afc44dad1723" category="doc">Preguntas frecuentes sobre la configuración del sistema de almacenamiento para SANtricity System Manager</block>
+  <block id="a8d4770377b5b26815bf4624787b5cd2" category="section-title">¿Qué pasa si no veo todos mis componentes de hardware?</block>
+  <block id="93553c3f530e96d0430861eab073fd9f" category="section-title">¿Qué pasa si no veo todos mis hosts?</block>
+  <block id="ec650621f1b4e4a52be9f5b5b3aa032e" category="doc">Preguntas frecuentes sobre duplicación asincrónica para SANtricity System Manager</block>
+  <block id="9f823e5a9e8f9ed671d7256745222141" category="section-title">¿Por qué no puedo acceder a la función de duplicación que elegí?</block>
+  <block id="056a12680d6f0ea9fbc5b9cd0dcbbbc5" category="section-title">¿Por qué no puedo aumentar la capacidad reservada con la cantidad solicitada?</block>
+  <block id="627802c3caee37379a9c399ab704765d" category="section-title">¿Por qué no veo todos mis pools y grupos de volúmenes?</block>
+  <block id="c61a1154889025d1e7a947414ac8a162" category="section-title">Duplicación asincrónica: ¿por qué no veo todos mis volúmenes?</block>
+  <block id="a7d50b4837966a5a224cf9d31b8f4a86" category="section-title">Duplicación asincrónica: ¿por qué no veo todos los volúmenes en la matriz de almacenamiento remota?</block>
+  <block id="2aea594a4c81b0946e1265a4de81a100" category="section-title">¿Por qué debería actualizar la dirección IP de mi matriz de almacenamiento remota?</block>
+  <block id="e49efc0cfc4c7b160fd4cdfba13d0678" category="doc">Preguntas frecuentes sobre la duplicación de sincronización para SANtricity System Manager</block>
+  <block id="3cf88cf8f3807ba93b6284bc7f35241d" category="section-title">Duplicación sincrónica: ¿Por qué no veo todos mis volúmenes?</block>
+  <block id="127409013236f2ee4d2fedecdfdf9696" category="section-title">Duplicación sincrónica: ¿por qué no veo todos los volúmenes en la matriz de almacenamiento remota?</block>
+  <block id="474e6194420a15da8f116ca1d03c1089" category="doc">Obtenga información sobre la configuración de caché y el rendimiento del software SANtricity</block>
+  <block id="07a19ca9ce814c05660c931367a1daec" category="doc">Preguntas frecuentes sobre certificados firmados por CA y autofirmados para SANtricity System Manager</block>
+  <block id="07898edb5d614ff7156be4ecdb0b0a5f" category="doc">Preguntas frecuentes sobre el protocolo iSCSI para SANtricity System Manager</block>
+  <block id="3da657434c2b0361e0108af6bf025792" category="doc">Preguntas frecuentes sobre el protocolo NVMe para SANtricity System Manager</block>
+  <block id="8a75fb951da264587a6600ccf7d93fea" category="doc">Preguntas frecuentes sobre seguridad de unidades de almacenamiento para SANtricity System Manager</block>
+  <block id="7e2b30503c6c69f7a65b4e868fd7b1d7" category="doc">Preguntas frecuentes sobre alertas del sistema de almacenamiento para SANtricity System Manager</block>
+  <block id="fe7c1bb53377d143fbbd6019354e2c03" category="doc">Preguntas frecuentes sobre la gestión de acceso de usuarios para SANtricity System Manager</block>
+  <block id="0307aefebec2be18a5e72767abfab6ea" category="section-title">¿Por qué no puedo iniciar sesión?</block>
+  <block id="8eb7d61e639ed5ef84ecef34c3ef9a90" category="doc">Obtenga información sobre los volúmenes base, la capacidad reservada y los grupos de instantáneas en SANtricity System Manager</block>
+  <block id="93ff2ee6ca3ebff76b39eee6c837a05c" category="doc">Preguntas frecuentes sobre grupos de volúmenes y pools para SANtricity System Manager</block>
+  <block id="95480a662f5c9e477922a7a2b403bb11" category="section-title">¿Por qué no se puede aumentar la capacidad de conservación?</block>
+  <block id="e162d80660b94f1ba0e8a0ed9b5db00c" category="section-title">¿Por qué no puedo elegir otra cantidad para disminuir?</block>
+  <block id="e28db378e03cfeaba6b656dc0456b190" category="doc">Preguntas frecuentes sobre almacenamiento remoto para SANtricity System Manager</block>
+  <block id="24ad5296fefcace9e0149956fd904cf2" category="section-title">¿Por qué no veo todos mis volúmenes en mi matriz de destino?</block>
+  <block id="5fcdf917efa28e8116867e315322b0e1" category="doc">Preguntas frecuentes sobre instantáneas para SANtricity System Manager</block>
+  <block id="2ba6fbda3398bad4861f032c2009b0d3" category="section-title">¿Por qué no veo todos mis volúmenes, hosts o clústeres de host?</block>
+  <block id="9421c472440f982cec67bc525c3c00a6" category="doc">Preguntas frecuentes sobre la configuración de la matriz de almacenamiento para SANtricity System Manager</block>
+  <block id="28f98bb6051d213c5956bab8fa693f88" category="doc">Preguntas frecuentes sobre unidades de almacenamiento para SANtricity System Manager</block>
+  <block id="570b09742a6d84e577f1d00cdf68e38b" category="doc">Preguntas frecuentes sobre sistemas host y clústeres de host para SANtricity System Manager</block>
+  <block id="4538489334cc71ec5bc63f18418b8b5f" category="doc">Preguntas frecuentes sobre volúmenes y cargas de trabajo para SANtricity System Manager</block>
+  <block id="38457c0d7698b046b04ff29966984237" category="section-title">¿Por qué estos volúmenes no están asociados a una carga de trabajo?</block>
+  <block id="38134686fcc012c564ba793d762895ce" category="section-title">¿Por qué no puedo eliminar la carga de trabajo seleccionada?</block>
+  <block id="73158d5edc74cd6d3fceaaadb9c001b6" category="section-title">¿Por qué no veo todos mis pools y/o grupos de volúmenes?</block>
+  <block id="9e5fa4fee4e2e323cc46591b9c569f80" category="doc">Preguntas frecuentes sobre AutoSupport para SANtricity System Manager</block>
+  <block id="17b506511a9d92bc797c9a616e848618" category="doc">Preguntas frecuentes sobre la gestión de acceso de usuarios para SANtricity Unified Manager</block>
+  <block id="46bbf70058c38d16be148ec731c4e2ff" category="doc">Preguntas frecuentes sobre la configuración de importación para SANtricity Unified Manager</block>
+  <block id="9265078167e4a547bcd07baa0fcd2c28" category="section-title">¿Por qué no se muestran todas las cabinas de almacenamiento?</block>
+  <block id="e4dd224c723eab5d0e1fc1ba66660335" category="doc">Preguntas frecuentes sobre duplicación de almacenamiento para SANtricity Unified Manager</block>
+  <block id="a09f907840e3debc354b7bf16928d0a9" category="section-title">¿Por qué no veo todos mis volúmenes?</block>
+  <block id="59811ac2b31c7c14c4f6c5a0fe557df0" category="section-title">¿Por qué no veo todos los volúmenes en la matriz de almacenamiento remota?</block>
+  <block id="6aa27cc5d4cf944c8ace1bc2cb4b986d" category="doc">Importar la configuración de los servicios de directorio en SANtricity Unified Manager</block>
+  <block id="af12fbdbeeb22bd98af40e694f9dbeed" category="sidebar">Preguntas frecuentes sobre la configuración del sistema de almacenamiento</block>
+  <block id="e880fbedb2e8a12c7abef7ffeecb5c8a" category="sidebar">Preguntas frecuentes sobre la interfaz de administración</block>
+  <block id="85f37ae864bd5c5fb734f986c131ea41" category="sidebar">Preguntas frecuentes sobre grupos de volúmenes y pools</block>
+  <block id="c12ad1150304879fdf3619ff461b010f" category="sidebar">Preguntas frecuentes sobre volúmenes y cargas de trabajo</block>
+  <block id="e3f88e92f689c60cd6dd33d9bdf1781f" category="sidebar">Preguntas frecuentes sobre sistemas host y clústeres de host</block>
+  <block id="7b79c68474c127986d80027dea958b67" category="sidebar">Preguntas frecuentes sobre instantáneas</block>
+  <block id="f3c1090e458eacb45d91144e5e8843dc" category="sidebar">Preguntas frecuentes sobre la duplicación asincrónica</block>
+  <block id="e812bdafa8421a172fa5f89167c98d11" category="sidebar">Preguntas frecuentes sobre la duplicación sincronizada</block>
+  <block id="764c366408531519068ab72822b9d70b" category="sidebar">Preguntas frecuentes sobre almacenamiento remoto</block>
+  <block id="f5500aa15342ea488f2a3948a19f8a86" category="sidebar">Preguntas frecuentes sobre estantes de almacenamiento</block>
+  <block id="efaedbc5c0388f05f894ade9a9b051be" category="sidebar">FAQ de la controladora de almacenamiento</block>
+  <block id="423cac0d8ecb8cbe666a15aa9d177028" category="sidebar">Preguntas frecuentes sobre el protocolo iSCSI</block>
+  <block id="57a622d8a0a7d13e86e3514bb3b4e9ea" category="sidebar">Preguntas frecuentes sobre el protocolo NVMe</block>
+  <block id="7848d82d7d98c22e1395a7e63f5fab9b" category="sidebar">Preguntas frecuentes sobre unidades de almacenamiento</block>
+  <block id="dab141492d4f7a76f831015c28747d7e" category="sidebar">Preguntas frecuentes sobre las alertas del sistema de almacenamiento</block>
+  <block id="4da5cbb04d7ab418ddaf55ae50d07680" category="sidebar">Preguntas frecuentes sobre la configuración de la matriz de almacenamiento</block>
+  <block id="f39e9ea930d05db1a69c96b879497b38" category="sidebar">Preguntas frecuentes sobre seguridad de unidades de almacenamiento</block>
+  <block id="fe28cf5dc2afdedb53feb43fe61499e7" category="sidebar">Preguntas frecuentes sobre la gestión del acceso de usuarios</block>
+  <block id="2a2d5026981871719d2bae7c3420cf9e" category="sidebar">Preguntas frecuentes sobre certificados</block>
+  <block id="f9e9bc191db345171d0de707013016a3" category="sidebar">Preguntas frecuentes sobre AutoSupport</block>
+  <block id="3af089d2853adca01b3ba738ac9987ff" category="sidebar">Preguntas frecuentes sobre la configuración de importación</block>
+  <block id="e35e805c872d89cfd87942f59e41eb2d" category="sidebar">Preguntas frecuentes sobre la duplicación de almacenamiento</block>
 </blocks>

@@ -1,0 +1,183 @@
+---
+permalink: sm-storage/faq-volumes-workloads.html 
+sidebar: sidebar 
+keywords:  
+summary: Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respuesta rápida a una pregunta. 
+---
+= Preguntas frecuentes sobre volúmenes y cargas de trabajo para SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respuesta rápida a una pregunta.
+
+
+
+== ¿Qué es un volumen?
+
+Un volumen es un contenedor en el cual las aplicaciones, las bases de datos y los sistemas de archivos almacenan datos. Es el componente lógico que se crea para que el host acceda al almacenamiento de la cabina de almacenamiento.
+
+Un volumen se crea a partir de la capacidad disponible de un pool o un grupo de volúmenes. Un volumen tiene una capacidad definida. Aunque es posible que un volumen conste de más de una unidad, un volumen aparece como un componente lógico para el host.
+
+
+
+== ¿Por qué veo un error de sobreasignación de capacidad si tengo capacidad libre suficiente en un grupo de volúmenes para crear volúmenes?
+
+Es posible que el grupo de volúmenes seleccionado tenga una o más áreas de capacidad libre. Un área de capacidad libre es la capacidad libre que puede surgir después de eliminar un volumen o por no utilizar toda la capacidad libre disponible durante la creación de un volumen.
+
+Cuando se crea un volumen en un grupo de volúmenes que tiene una o más áreas de capacidad libre, la capacidad del volumen se limita al área de capacidad libre más grande de ese grupo de volúmenes. Por ejemplo, si un grupo de volúmenes tiene una capacidad libre total de 15 GIB y el área de capacidad libre más grande es 10 GIB, el volumen más grande que se puede crear es de 10 GIB.
+
+Si un grupo de volúmenes tiene áreas de capacidad libre, el gráfico de grupo de volúmenes contiene un enlace que indica la cantidad de áreas de capacidad libre existentes. Seleccione el enlace para ver un cuadro emergente que indica la capacidad de cada área.
+
+Al consolidar la capacidad libre, se pueden crear volúmenes adicionales de la cantidad máxima de capacidad libre de un grupo de volúmenes. Se puede consolidar la capacidad libre existente en un grupo de volúmenes seleccionado mediante uno de los siguientes métodos:
+
+* Si se detecta al menos un área de capacidad libre para un grupo de volúmenes, se muestra la recomendación de que se debe consolidar la capacidad libre en la página Inicio del área notificación. Haga clic en el enlace *consolidar capacidad libre* para abrir el cuadro de diálogo.
+* También se puede seleccionar menu:Pools y grupos de volúmenes[tareas no comunes > consolidar la capacidad libre del grupo de volúmenes] para abrir el cuadro de diálogo.
+
+
+Si desea utilizar un área de capacidad libre específica en lugar del área de mayor capacidad, utilice la interfaz de línea de comandos (CLI) o Script Editor.
+
+
+
+== ¿Cómo afecta la creación de volúmenes la carga de trabajo seleccionada?
+
+Durante la creación de un volumen, se solicita información sobre el uso de la carga de trabajo. El sistema utiliza esta información para crear una configuración de volumen óptima para el usuario, que se puede editar en caso de ser necesario. De manera opcional, es posible omitir este paso en la secuencia de creación de volúmenes.
+
+Una carga de trabajo es un objeto de almacenamiento que admite una aplicación. Se pueden definir una o más cargas de trabajo o instancias por aplicación. En algunas aplicaciones, el sistema configura la carga de trabajo para contener volúmenes con características subyacentes similares. Estas características de volumen se optimizan según el tipo de aplicación que es compatible con la carga de trabajo. Por ejemplo, si crea una carga de trabajo que es compatible con la aplicación Microsoft SQL Server y, a continuación, crea volúmenes para esa carga de trabajo, las características de volumen subyacentes se optimizan para ser compatibles con Microsoft SQL Server.
+
+* *Específico de la aplicación* -- cuando se crean volúmenes con una carga de trabajo específica de la aplicación, el sistema puede recomendar una configuración de volumen optimizada para minimizar la contención entre las E/S de la carga de trabajo de la aplicación y otro tráfico de la instancia de la aplicación. Las características del volumen, como tipo de I/o, tamaño de segmentos, propiedad de la controladora, y caché de lectura y escritura, se recomiendan y se optimizan automáticamente para las cargas de trabajo que se crean para los siguientes tipos de aplicaciones.
++
+** Microsoft® SQL Server™
+** Microsoft® Exchange Server™
+** Aplicaciones de videovigilancia
+** VMware ESXi™ (para volúmenes que se usarán con Virtual Machine File System)
++
+Se puede revisar la configuración de volumen recomendada y editar, añadir o eliminar volúmenes y características recomendados por el sistema mediante el cuadro de diálogo Añadir/editar volúmenes.
+
+
+
+* *Otros* (o aplicaciones sin compatibilidad con la creación de volúmenes específicos) -- Otras cargas de trabajo utilizan una configuración de volumen que debe especificar manualmente cuando desea crear una carga de trabajo no asociada con una aplicación específica, o si no hay optimización integrada para la aplicación que piensa utilizar en la cabina de almacenamiento. Debe especificar manualmente la configuración del volumen en el cuadro de diálogo Añadir/editar volúmenes.
+
+
+
+
+== ¿Por qué estos volúmenes no están asociados a una carga de trabajo?
+
+Los volúmenes no se asocian a una carga de trabajo si se los creó mediante la interfaz de línea de comandos (CLI) o si se migraron (importaron/exportaron) desde una cabina de almacenamiento diferente.
+
+
+
+== ¿Por qué no puedo eliminar la carga de trabajo seleccionada?
+
+Esta carga de trabajo consta de un grupo de volúmenes que se creó mediante la interfaz de línea de comandos (CLI) o se migró (se importó/exportó) de una cabina de almacenamiento diferente. Como resultado, los volúmenes de esta carga de trabajo no están asociados a una carga de trabajo específica de la aplicación, por lo que no es posible eliminar la carga de trabajo.
+
+
+
+== ¿Cómo ayudan las cargas de trabajo específicas de la aplicación a gestionar la cabina de almacenamiento?
+
+Las características de volumen de la carga de trabajo específica de la aplicación determinan la manera en que la carga de trabajo interactúa con los componentes de la cabina de almacenamiento, y ayudan a determinar el rendimiento de su entorno en una determinada configuración.
+
+Una aplicación es un software, como SQL Server o Exchange. Se definen una o más cargas de trabajo que sean compatibles con cada aplicación.
+
+
+
+== ¿Cómo ayuda esta información a crear almacenamiento?
+
+La información de carga de trabajo se utiliza para optimizar características del volumen como tipo de E/S, tamaño de segmento y caché de lectura/escritura para la carga de trabajo seleccionada. Estas características optimizadas dictan la forma en que la carga de trabajo interactúa con los componentes de la cabina de almacenamiento.
+
+Según la información de carga de trabajo que se proporcione, System Manager crea los volúmenes apropiados y los coloca en los pools o los grupos de volúmenes disponibles actualmente en el sistema. El sistema crea los volúmenes y optimiza sus características según las prácticas recomendadas vigentes para la carga de trabajo seleccionada.
+
+Antes de terminar de crear volúmenes para una carga de trabajo determinada, puede revisar la configuración de volumen recomendada y editar, añadir o eliminar los volúmenes y las características que recomienda el sistema mediante el cuadro de diálogo Añadir/editar volúmenes.
+
+Para obtener información sobre las prácticas recomendadas, consulte la documentación específica de la aplicación.
+
+
+
+== ¿Qué debo hacer para reconocer la capacidad expandida?
+
+Si se aumenta la capacidad de un volumen, es posible que el host no reconozca de inmediato el aumento de la capacidad del volumen.
+
+La mayoría de los sistemas operativos reconocen la capacidad expandida del volumen y se expanden automáticamente después de que se inicia la expansión de volumen. Sin embargo, es posible que algunos no lo hagan. Si el sistema operativo no reconoce automáticamente la capacidad de volumen expandida, es posible que se deba volver a analizar el disco o reiniciar.
+
+Después de haber expandido la capacidad del volumen, se debe aumentar manualmente el tamaño del sistema de archivos para que coincida. La forma de hacerlo depende del sistema de archivos utilizado.
+
+Consulte la documentación del sistema operativo host para obtener más detalles.
+
+
+
+== ¿Por qué no veo todos mis pools y/o grupos de volúmenes?
+
+No se muestra en la lista ningún pool o grupo de volúmenes al que no se pueda mover el volumen.
+
+Los pools o grupos de volúmenes no serán aptos por cualquiera de los motivos siguientes:
+
+* Las funcionalidades de Data Assurance (DA) de un pool o un pool de grupo de volúmenes no coinciden.
+* Un pool o un grupo de volúmenes se encuentra en un estado distinto a Optimal.
+* La capacidad de un pool o grupo de volúmenes es muy reducida.
+
+
+
+
+== ¿Qué es el tamaño de segmento?
+
+Un segmento es la cantidad de datos en kilobytes (KiB) que se almacenan en una unidad antes de que la cabina de almacenamiento pase a la unidad siguiente en la franja (grupo RAID). El tamaño de segmento aplica solo a grupos de volúmenes, no a pools.
+
+El tamaño de los segmentos está definido por la cantidad de bloques de datos que contiene. Para determinar el tamaño de segmento, se debe conocer el tipo de datos que se almacenará en un volumen. Si una aplicación utiliza habitualmente escrituras y lecturas aleatorias pequeñas (IOPS), por lo general, funcionará mejor un tamaño de segmento más pequeño. Por el contrario, si la aplicación realiza escrituras y lecturas secuenciales grandes (rendimiento), por lo general, funcionará mejor un tamaño de segmento grande.
+
+Independientemente de si una aplicación utiliza escrituras y lecturas aleatorias pequeñas o escrituras y lecturas secuenciales grandes, la cabina de almacenamiento rendirá mejor si el tamaño del segmento es mayor al tamaño típico del fragmento de bloque de datos. Habitualmente, esto facilita y agiliza el acceso de las unidades a los datos, lo cual resulta importante para un mejor rendimiento de la cabina de almacenamiento.
+
+
+
+=== Entornos en los que el rendimiento de IOPS es importante
+
+En un entorno de operaciones de I/o por segundo (IOPS), la cabina de almacenamiento tiene un mejor rendimiento si se utiliza un tamaño de segmento mayor al tamaño típico del bloque de datos ("fragmento"") que se lee/escribe en una unidad. Esto garantiza que cada fragmento se escriba en una unidad única.
+
+
+
+=== Entornos en los que el rendimiento es importante
+
+En un entorno de rendimiento, el tamaño del segmento debe ser una fracción entera de las unidades totales para los datos y del tamaño de fragmento de datos típico (tamaño de I/o). Esto permite la distribución de los datos como una franja única en las unidades del grupo de volúmenes, lo que lleva a lecturas y escrituras más rápidas.
+
+
+
+== ¿Qué es la propiedad de controladora preferida?
+
+La propiedad de controladora preferida define la controladora designada como la controladora propietaria, o primaria, del volumen.
+
+La propiedad de la controladora es sumamente importante y debe planificarse con cuidado. Las controladoras deben equilibrarse lo más posible en cuanto a las operaciones de I/o totales.
+
+Por ejemplo, si una controladora lee principalmente bloques de datos secuenciales grandes y la otra posee bloques de datos pequeños con lecturas y escrituras frecuentes, las cargas son muy diferentes. Conocer cuáles volúmenes contienen qué tipo de datos permite equilibrar las transferencias de I/o de forma equitativa en ambas controladoras.
+
+
+
+== ¿Cuándo quieres usar la selección asignar el host más adelante?
+
+Si desea acelerar el proceso para crear volúmenes, puede omitir el paso de asignación de host para que los volúmenes recién creados se inicialicen sin conexión.
+
+Los volúmenes recién creados deben inicializarse. El sistema puede inicializarlos utilizando uno de los dos modos: Un proceso de inicialización en segundo plano de formato disponible inmediato (IAF) o un proceso fuera de línea.
+
+Cuando se asigna un volumen a un host, se fuerza la inicialización de todos los volúmenes en ese grupo a realizar la transición a la inicialización en segundo plano. Este proceso de inicialización en segundo plano permite realizar operaciones de I/o del host simultáneas, que a veces pueden requerir mucho tiempo.
+
+Cuando ninguno de los volúmenes de un grupo de volúmenes se asigna, se realiza una inicialización sin conexión. El proceso fuera de línea es mucho más rápido que el proceso en segundo plano.
+
+
+
+== ¿Qué debo saber acerca de los requisitos de tamaño de bloque del host?
+
+Para los sistemas EF300 y EF600, es posible configurar un volumen para que admita un tamaño de bloque de 512 bytes o 4 KiB (también llamado "tamaño de sector"). Debe configurar el valor correcto durante la creación del volumen. Si es posible, el sistema sugiere el valor predeterminado adecuado.
+
+Antes de configurar el tamaño de bloque de volumen, lea las siguientes limitaciones y directrices.
+
+* Algunos sistemas operativos y máquinas virtuales (principalmente VMware, por el momento) requieren un tamaño de bloque de 512 bytes y no admiten 4 KiB, por lo tanto, asegúrese de conocer los requisitos del host antes de crear un volumen. Normalmente, puede lograr el mejor rendimiento configurando un volumen para que presente un tamaño de bloque de 4 KiB; sin embargo, asegúrese de que su host permita bloques de 4 KiB (o "'4Kn'").
+* El tipo de unidades que se selecciona para el pool o el grupo de volúmenes también determina qué tamaños de bloque de volumen se admiten, como se indica a continuación:
++
+** Si se crea un grupo de volúmenes con unidades que escriben en bloques de 512 bytes, solo se pueden crear volúmenes con bloques de 512 bytes.
+** Si crea un grupo de volúmenes con unidades que escriben en bloques de 4 KiB, puede crear volúmenes con bloques de 512 bytes o 4 KiB.
+
+
+* Si la cabina tiene una tarjeta de interfaz del host iSCSI, todos los volúmenes se limitan a bloques de 512 bytes (independientemente del tamaño de bloque del grupo de volúmenes). Esto se debe a una implementación específica del hardware.
+* No se puede cambiar el tamaño de un bloque una vez configurado. Si necesita cambiar el tamaño de bloque, debe eliminar el volumen y volver a crearlo.
+

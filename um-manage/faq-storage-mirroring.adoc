@@ -1,0 +1,193 @@
+---
+permalink: um-manage/faq-storage-mirroring.html 
+sidebar: sidebar 
+keywords:  
+summary: Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respuesta rápida a una pregunta. 
+---
+= Preguntas frecuentes sobre duplicación de almacenamiento para SANtricity Unified Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respuesta rápida a una pregunta.
+
+
+
+== ¿Qué debo saber antes de crear un grupo de coherencia de reflejos?
+
+Siga estas directrices para poder crear un grupo de coherencia de reflejos.
+
+Cumpla con los siguientes requisitos para Unified Manager:
+
+* El proxy de servicios web se encuentra en ejecución.
+* Unified Manager se ejecuta en el host local a través de una conexión HTTPS.
+* SANtricity Unified Manager debe mostrar los certificados SSL válidos para la cabina de almacenamiento. Es posible aceptar un certificado autofirmado o instalar una certificación de seguridad propia con Unified Manager. Para hacerlo, debe navegar hasta MENU:Certificate[Gestión de certificados].
+
+
+También debe cumplir con los siguientes requisitos para las cabinas de almacenamiento:
+
+* Las dos cabinas de almacenamiento se encuentran detectadas en Unified Manager.
+* Cada cabina de almacenamiento debe tener dos controladoras.
+* Cada controladora en la cabina primaria y la cabina secundaria debe tener un puerto Ethernet de gestión configurado y debe estar conectada a la red.
+* Las cabinas de almacenamiento deben tener la versión de firmware 7.84 como mínimo. (Cada una puede ejecutar versiones de sistema operativo diferentes).
+* Debe conocer la contraseña de las cabinas de almacenamiento remota y local.
+* Las cabinas de almacenamiento local y remota se encuentran conectadas a través de una estructura Fibre Channel o una interfaz iSCSI.
+
+
+[NOTE]
+====
+El mirroring síncrono no está disponible en el sistema de almacenamiento EF600/EF600C o EF300/EF300C.
+
+====
+
+
+== ¿Qué debo saber antes de crear una pareja reflejada?
+
+Antes de crear una pareja reflejada, siga estas directrices.
+
+* Debe tener dos cabinas de almacenamiento.
+* Cada cabina de almacenamiento debe tener dos controladoras.
+* Las dos cabinas de almacenamiento se encuentran detectadas en Unified Manager.
+* Cada controladora en la cabina primaria y la cabina secundaria debe tener un puerto Ethernet de gestión configurado y debe estar conectada a la red.
+* Las cabinas de almacenamiento deben tener la versión de firmware 7.84 como mínimo. (Cada una puede ejecutar versiones de sistema operativo diferentes).
+* Debe conocer la contraseña de las cabinas de almacenamiento remota y local.
+* Debe tener suficiente capacidad libre en la cabina de almacenamiento remota para crear un volumen secundario mayor o igual que el volumen primario que desea reflejar.
+* El mirroring asíncrono se admite en controladoras con puertos de host Fibre Channel (FC) o iSCSI, mientras que el mirroring síncrono solo se admite en controladoras con puertos de host FC.
+
+
+[NOTE]
+====
+El mirroring síncrono no está disponible en el sistema de almacenamiento EF600/EF600C o EF300/EF300C.
+
+====
+
+
+== ¿Por qué debería cambiar este porcentaje?
+
+En general, la capacidad reservada constituye el 20 % del volumen base para operaciones de mirroring asíncrono. Por lo general, esta capacidad es suficiente.
+
+La capacidad necesaria varía, según la frecuencia y el tamaño de las escrituras de I/o en el volumen base y el periodo durante el cual se pretenda utilizar la operación de servicios de copia del objeto de almacenamiento. Por lo general, se debe seleccionar un porcentaje alto de capacidad reservada si existe una de estas condiciones, o ambas:
+
+* Si la vida útil de la operación de servicios de copia de un objeto de almacenamiento en particular será muy prolongada.
+* Si un gran porcentaje de bloques de datos cambiará en el volumen base debido a una gran actividad de I/O. Utilice los datos históricos de rendimiento u otras utilidades del sistema operativo como ayuda para determinar la actividad de I/o típica en el volumen base.
+
+
+
+
+== ¿Por qué se muestra más de un candidato de capacidad reservada?
+
+Si existe más de un volumen en un pool o grupo de volúmenes que cumple con el porcentaje de capacidad seleccionado para el objeto de almacenamiento, se mostrarán varios candidatos.
+
+Para actualizar la lista de candidatos recomendados, es posible modificar el porcentaje de espacio de la unidad física que desea reservar en el volumen base para las operaciones de servicios de copia. Se mostrarán los mejores candidatos en función de su selección.
+
+
+
+== ¿Por qué no veo todos mis volúmenes?
+
+Cuando se selecciona un volumen primario para una pareja reflejada, se muestra una lista con todos los volúmenes elegibles.
+
+Si algún volumen no es apto para el uso, no se muestra en esa lista. Es posible que los volúmenes no sean admisibles por uno de los siguientes motivos:
+
+* El volumen no está en estado óptimo.
+* El volumen ya participa en una relación de mirroring.
+* Para el mirroring síncrono, los volúmenes primario y secundario de una pareja reflejada deben ser volúmenes estándar. No pueden ser volúmenes finos o Snapshot.
+* Para el mirroring asíncrono, los volúmenes finos deben tener la expansión automática habilitada.
+
+
+
+NOTE: Para las controladoras EF600 y EF300, los volúmenes primario y secundario de una pareja reflejada asíncrona deben coincidir con el mismo protocolo, nivel de soporte, tamaño de segmento, tipo de seguridad y nivel de RAID. Las parejas reflejadas asíncronas no elegibles no aparecerán en la lista de volúmenes disponibles.
+
+
+
+== ¿Por qué no veo todos los volúmenes en la matriz de almacenamiento remota?
+
+Cuando se selecciona un volumen secundario en la cabina de almacenamiento remota, se muestra una lista de todos los volúmenes elegibles para esa pareja reflejada.
+
+Todos los volúmenes que no son elegibles no aparecen en esa lista. Es posible que haya volúmenes no elegibles por alguno de los siguientes motivos:
+
+* El volumen no es estándar, por ejemplo, un volumen Snapshot.
+* El volumen no está en estado óptimo.
+* El volumen ya participa en una relación de mirroring.
+* Para el mirroring asíncrono, los atributos de volumen fino entre el volumen primario y el volumen secundario no coinciden.
+* Si utiliza Data Assurance (DA), el volumen primario y el secundario deben tener la misma configuración DE DA.
++
+** Si el volumen primario tiene la función DA habilitada, el volumen secundario también debe tenerla.
+** Si el volumen primario no tiene la función DA habilitada, el volumen secundario tampoco debe tenerla.
+
+
+* Para el mirroring asíncrono, el volumen primario y el volumen secundario deben tener las mismas capacidades Drive Security.
++
+** Si el volumen primario es compatible con FIPS, el volumen secundario debe ser compatible con FIPS.
+** Si el volumen primario es compatible con FDE, el volumen secundario debe ser compatible con FDE.
+** Si el volumen primario no utiliza Drive Security, el volumen secundario no debe usar Drive Security.
+
+
+
+
+
+
+== ¿Qué impacto tiene la prioridad de sincronización en las tasas de sincronización?
+
+La prioridad de sincronización define la cantidad de tiempo de procesamiento que se asigna a las actividades de sincronización en relación con el rendimiento del sistema.
+
+El propietario de la controladora del volumen primario realiza esta operación en segundo plano. Al mismo tiempo, el propietario de la controladora procesa las escrituras de I/o en el volumen primario y las escrituras remotas asociadas en el volumen secundario. Dado que la resincronización desvía los recursos de procesamiento de la controladora de la actividad de I/o, es posible que tenga un impacto en el rendimiento de la aplicación host.
+
+Tenga en cuentas estas directrices para determinar cuánto puede demorar una prioridad de sincronización y cómo las prioridades de sincronización pueden afectar al rendimiento del sistema.
+
+Las siguientes tasas de prioridad se encuentran disponibles:
+
+* El más bajo
+* Bajo
+* Mediano
+* Alto
+* Máxima
+
+
+La tasa de prioridad más baja es compatible con el rendimiento del sistema, pero la resincronización demora más tiempo. La tasa de prioridad más alta es compatible con la resincronización, pero el rendimiento del sistema puede verse afectado.
+
+Estas directrices aproximan aproximadamente las diferencias entre las prioridades.
+
+[cols="45h,~"]
+|===
+| Tasa de prioridad para la sincronización completa | Tiempo transcurrido en comparación con la tasa de sincronización más alta 
+
+
+ a| 
+El más bajo
+ a| 
+Tiempo aproximadamente 8 veces superior a la tasa de prioridad más alta
+
+
+
+ a| 
+Bajo
+ a| 
+Tiempo aproximadamente 6 veces superior a la tasa de prioridad más alta
+
+
+
+ a| 
+Mediano
+ a| 
+Tiempo aproximadamente 3,5 veces superior a la tasa de prioridad más alta
+
+
+
+ a| 
+Alto
+ a| 
+Tiempo aproximadamente 2 veces superior a la tasa de prioridad más alta
+
+|===
+El tamaño del volumen y las cargas de la tasa de I/o del host afectan a las comparaciones de tiempo de sincronización.
+
+
+
+== ¿Por qué se recomienda usar la política de sincronización manual?
+
+Se recomienda la resincronización manual debido a que esta permite gestionar el proceso de resincronización de un modo que garantiza la mejor oportunidad para recuperar los datos.
+
+Si utiliza una política de resincronización automática y surgen problemas de comunicación ocasionales durante la resincronización, podrían dañarse temporalmente los datos del volumen secundario. Una vez finalizada la resincronización, los datos se corrigen.

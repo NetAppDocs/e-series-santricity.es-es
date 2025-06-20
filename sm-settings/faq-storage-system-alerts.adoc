@@ -1,0 +1,39 @@
+---
+permalink: sm-settings/faq-storage-system-alerts.html 
+sidebar: sidebar 
+keywords:  
+summary: Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respuesta rápida a una pregunta. 
+---
+= Preguntas frecuentes sobre alertas del sistema de almacenamiento para SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respuesta rápida a una pregunta.
+
+
+
+== ¿Qué sucede si se deshabilitan las alertas?
+
+Si desea que los administradores reciban notificaciones sobre eventos importantes que suceden en la cabina de almacenamiento, se debe configurar un método de alerta.
+
+Para las cabinas de almacenamiento gestionadas con SANtricity System Manager, es posible configurar alertas desde la página Alertas. Las notificaciones de alerta se pueden enviar por correo electrónico, capturas SNMP o mensajes de syslog. Además, las alertas por correo electrónico pueden configurarse desde el asistente de configuración inicial.
+
+
+
+== ¿Cómo se configuran las alertas de SNMP o syslog?
+
+Además de las alertas por correo electrónico, es posible configurar el envío de alertas mediante capturas de protocolo simple de gestión de redes (SNMP) o mensajes de syslog.
+
+Para configurar las alertas de SNMP o syslog, vaya a MENU:Configuración[Alertas].
+
+
+
+== ¿Por qué las marcas de tiempo no son consistentes entre la cabina y las alertas?
+
+Cuando la cabina de almacenamiento envía alertas, no corrige la zona horaria según el host o servidor de destino que recibe las alertas. En cambio, la cabina de almacenamiento utiliza la hora local (GMT) para crear la Marca de tiempo que se utiliza para el registro de alertas. Como resultado, es posible que se observen inconsistencias entre las marcas de tiempo de la cabina de almacenamiento y el servidor o host que recibe una alerta.
+
+Debido a que la cabina de almacenamiento no corrige la zona horaria cuando envía alertas, la Marca de tiempo de las alertas está en horario GMT, que tiene un valor cero de desfase de zona horaria. Para calcular una Marca de tiempo adecuada para su zona horaria local, debe determinar el desfase de su zona horaria respecto a GMT y sumar o restar ese valor a las marcas de tiempo.

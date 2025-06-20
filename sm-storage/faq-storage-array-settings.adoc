@@ -1,0 +1,99 @@
+---
+permalink: sm-storage/faq-storage-array-settings.html 
+sidebar: sidebar 
+keywords:  
+summary: Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respuesta rápida a una pregunta. 
+---
+= Preguntas frecuentes sobre la configuración de la matriz de almacenamiento para SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respuesta rápida a una pregunta.
+
+
+
+== ¿Qué es el equilibrio de carga automático?
+
+La función Automatic Load Balancing proporciona equilibrio de I/o automatizado y garantiza que el tráfico de I/o entrante de los hosts se gestione dinámicamente y se equilibre en ambas controladoras.
+
+La función Automatic Load Balancing ofrece una gestión de recursos de I/o mejorada, ya que reacciona dinámicamente a los cambios de carga con el tiempo y ajusta automáticamente la propiedad de la controladora de volumen para corregir cualquier problema de desequilibrio de carga cuando las cargas de trabajo son distintas de una controladora a otra.
+
+La carga de trabajo de cada controladora se supervisa continuamente y, con la colaboración de los controladores multivía instalados en los hosts, es posible establecer automáticamente el equilibrio cada vez que sea necesario. Una vez que la carga de trabajo se vuelve a equilibrar de forma automática en todas las controladoras, el administrador de almacenamiento queda liberado de la carga que supone ajustar manualmente la propiedad de la controladora de volumen para admitir cambios de carga en la cabina de almacenamiento.
+
+Cuando la función Automatic Load Balancing está habilitada, ejecuta las siguientes funciones:
+
+* Supervisa y equilibra automáticamente la utilización de recursos de la controladora.
+* Ajusta automáticamente la propiedad de la controladora de volumen cuando es necesario y así, optimiza el ancho de banda de I/o entre los hosts y la cabina de almacenamiento.
+
+
+[NOTE]
+====
+Cualquier volumen asignado para utilizar una caché SSD de una controladora no es elegible para una transferencia de equilibrio de carga automática.
+
+====
+
+
+== ¿Qué es la caché de la controladora?
+
+La caché de la controladora es un espacio de memoria física que optimiza dos tipos de operaciones de I/o (entrada/salida): Entre las controladoras y los hosts, y entre las controladoras y los discos.
+
+En el caso de las transferencias de datos de lectura y escritura, los hosts y las controladoras se comunican a través de conexiones de alta velocidad. Sin embargo, la comunicación del back-end de la controladora a los discos es más lenta debido a que los discos son dispositivos relativamente lentos.
+
+Cuando la caché de la controladora recibe los datos, la controladora reconoce qué aplicaciones host son las que ahora tienen los datos. De este modo, las aplicaciones host no necesitan esperar a que se escriban las operaciones de I/o en el disco. En cambio, las aplicaciones pueden continuar con sus operaciones. Los datos en caché también están a disposición de las aplicaciones de servidor, lo que elimina la necesidad de lecturas adicionales del disco para acceder a los datos.
+
+La caché de la controladora afecta al rendimiento general de la cabina de almacenamiento de diversas maneras:
+
+* La caché actúa como un búfer, de modo que las transferencias de datos entre disco y host no necesitan sincronizarse.
+* Los datos de una operación de escritura o lectura del host pueden estar en caché desde una operación anterior, lo que elimina la necesidad de acceder al disco.
+* Si se utiliza el almacenamiento en caché de escritura, el host puede enviar comandos de escritura posteriores antes de que los datos de una operación de escritura anterior se escriban en el disco.
+* Si la captura previa de caché está habilitada, el acceso de lectura secuencial se optimiza. La captura previa de caché hace que una operación de lectura tenga más probabilidades de encontrar los datos en la caché, en lugar de leer los datos del disco.
+
+
+[CAUTION]
+====
+*Posible pérdida de datos* -- Si activa la opción *almacenamiento en caché de escritura sin baterías* y no dispone de una fuente de alimentación universal de protección, podría perder datos. Además, puede perder datos si no tiene baterías de controlador y activa la opción *almacenamiento en caché de escritura sin baterías*.
+
+====
+
+
+== ¿Qué es el vaciado de la caché?
+
+Cuando la cantidad de datos no guardados que se encuentra en la caché llega a cierto nivel, la controladora guarda periódicamente en una unidad los datos en caché. Este proceso de guardado se denomina "vaciado".
+
+La controladora utiliza dos algoritmos para vaciar la caché: En función de la demanda y en función de la antigüedad. La controladora utiliza un algoritmo en función de la demanda hasta que la cantidad de datos en caché desciende por debajo del umbral de vaciado de caché. De manera predeterminada, un vaciado comienza cuando está en uso el 80 % de la caché.
+
+En System Manager, puede configurar el umbral «Iniciar purga de caché a demanda» para que admita mejor el tipo de I/o utilizado en su entorno. En un entorno principalmente compuesto por operaciones de escritura, debe establecer un porcentaje alto de «Iniciar purga de caché de demanda» para aumentar la probabilidad de que cualquier solicitud de escritura nueva se pueda procesar mediante la caché sin tener que ir al disco. La configuración de un porcentaje alto limita la cantidad de vaciados de caché a fin de que más datos permanezcan en la caché, lo que aumenta la posibilidad de más aciertos en caché.
+
+En un entorno en el que las operaciones de I/o son erráticas (con picos de datos), es posible utilizar un vaciado de caché bajo para que el sistema vacíe la caché con frecuencia entre los picos de datos. En un entorno diverso de operaciones de I/o que procesa diferentes cargas, o cuando se desconoce el tipo de cargas, se puede configurar un umbral del 50 % como un buen punto de partida intermedio. Tenga en cuenta que, si selecciona un porcentaje de inicio inferior al 80 %, es posible que disminuya el rendimiento, ya que los datos necesarios para la lectura del host pueden no estar disponibles. Además, un porcentaje más bajo también aumenta la cantidad de escrituras de disco necesarias para mantener el nivel de caché, lo que aumenta la sobrecarga del sistema.
+
+El algoritmo en función de la antigüedad especifica el periodo durante el cual los datos de escritura pueden permanecer en la caché antes de calificar para el vaciamiento a los discos. Las controladoras utilizan el algoritmo en función de la antigüedad hasta que se alcanza el umbral de vaciado de caché. El valor predeterminado es de 10 segundos, pero este lapso se considera solo en periodos de inactividad. No puede modificar el tiempo de vaciado en System Manager; en su lugar, debe utilizar el comando *Set Storage Array* en la interfaz de línea de comandos (CLI).
+
+[CAUTION]
+====
+*Posible pérdida de datos* -- Si activa la opción *almacenamiento en caché de escritura sin baterías* y no dispone de una fuente de alimentación universal de protección, podría perder datos. Además, puede perder datos si no tiene baterías de controlador y activa la opción *almacenamiento en caché de escritura sin baterías*.
+
+====
+
+
+== ¿Qué es el tamaño de bloque de caché?
+
+La controladora de la cabina de almacenamiento organiza su caché en "bloques", que son fragmentos de memoria que pueden tener un tamaño de 8, 16 o 32 KiB. Todos los volúmenes del sistema de almacenamiento comparten el mismo espacio de caché; por lo tanto, los volúmenes solo pueden tener un tamaño de bloque de caché.
+
+Las aplicaciones utilizan diferentes tamaños de bloque, lo que puede afectar el rendimiento del almacenamiento. De manera predeterminada, el tamaño de bloque en System Manager es de 32 KiB, pero se puede modificar el valor a 8, 16 o 32 KiB. Un tamaño menor es una buena opción para los sistemas de archivos o las aplicaciones de bases de datos. Un tamaño mayor es una buena opción para aplicaciones que requieren grandes transferencias de datos, operaciones de I/o secuenciales o alto ancho de banda, como las aplicaciones multimedia.
+
+
+
+== ¿Cuándo se deben sincronizar los relojes de la cabina de almacenamiento?
+
+Se deben sincronizar manualmente los relojes de las controladoras en la cabina de almacenamiento si se observa que las marcas de tiempo que se muestran en SANtricity System Manager no están alineadas con las marcas de tiempo del cliente de gestión (el ordenador que accede a SANtricity System Manager por medio del explorador). Esta tarea es necesaria solo si no se habilitó el protocolo de tiempo de redes (NTP) en SANtricity System Manager.
+
+[NOTE]
+====
+Se recomienda enfáticamente utilizar un servidor NTP en lugar de sincronizar manualmente los relojes. NTP sincroniza automáticamente los relojes con un servidor externo que utiliza el protocolo de tiempo de redes simple (SNTP).
+
+====
+Se puede comprobar el estado de sincronización desde el cuadro de diálogo Sincronizar relojes de cabinas de almacenamiento, que se encuentra disponible en la página sistema. Si las horas que aparecen en el cuadro de diálogo no coinciden, ejecute una sincronización. Puede ver este cuadro de diálogo periódicamente y verificar si las horas que muestran los relojes de las controladoras se distanciaron y ya no están sincronizadas.

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, cache, settings, performance, 
 summary: La memoria caché es un área de almacenamiento volátil temporal en la controladora que tiene un tiempo de acceso menor que los medios con unidades. 
 ---
-= Rendimiento y configuración de la caché
+= Obtenga información sobre la configuración de caché y el rendimiento del software SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font

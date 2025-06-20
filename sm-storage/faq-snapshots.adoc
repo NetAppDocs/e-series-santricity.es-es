@@ -1,0 +1,132 @@
+---
+permalink: sm-storage/faq-snapshots.html 
+sidebar: sidebar 
+keywords:  
+summary: Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respuesta rápida a una pregunta. 
+---
+= Preguntas frecuentes sobre instantáneas para SANtricity System Manager
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respuesta rápida a una pregunta.
+
+
+
+== ¿Por qué no veo todos mis volúmenes, hosts o clústeres de host?
+
+Los volúmenes Snapshot que incluyen un volumen base con la función DA habilitada no son aptos para asignarse a un host que no es compatible con la función Data Assurance (DA). Debe deshabilitar DA en el volumen base para poder asignar un volumen Snapshot a un host que no es compatible con DA.
+
+Tenga en cuenta las siguientes directrices para el host al cual planea asignar el volumen Snapshot:
+
+* Un host no es compatible con DA si está conectado a la cabina de almacenamiento a través de una interfaz de I/o que no es compatible con DA.
+* Un clúster de hosts no es compatible con DA si tiene al menos un miembro de host que no es compatible con DA.
+
+
+[NOTE]
+====
+No se puede deshabilitar LA DA en un volumen asociado con Snapshot (grupos de coherencia, grupos Snapshot, imágenes Snapshot y volúmenes Snapshot), copias de volumen, y espejos. Toda la capacidad reservada y los objetos Snapshot asociados deben eliminarse para poder deshabilitar DA en el volumen base.
+
+====
+
+
+== ¿Qué es una imagen Snapshot?
+
+Una imagen Snapshot es una copia lógica de contenido del volumen, capturado en un momento específico. Las imágenes Snapshot utilizan un espacio de almacenamiento mínimo.
+
+Los datos de imagen Snapshot se almacenan de la siguiente manera:
+
+* Cuando se crea una imagen Snapshot, la imagen coincide exactamente con el volumen base. Una vez realizada la Snapshot, cuando se produce la primera solicitud de escritura de cualquier bloque o conjunto de bloques de un volumen base, los datos originales se copian en la capacidad reservada Snapshot.
+* Las Snapshot posteriores incluyen solo los bloques de datos que se modificaron desde la creación de la primera imagen Snapshot. Cada operación de copia en escritura posterior guarda los datos originales que están por sobrescribirse en el volumen base de la capacidad reservada Snapshot antes de que se escriban los datos nuevos en el volumen base.
+
+
+
+
+== ¿Por qué se deben utilizar imágenes Snapshot?
+
+Se pueden utilizar snapshots como medida de protección contra el daño o la pérdida de datos, accidental o intencional, y para permitir la recuperación.
+
+Seleccione un volumen base o un grupo de volúmenes base, denominado grupo de coherencia Snapshot, y luego capture las imágenes Snapshot en una o varias de las siguientes maneras:
+
+* Puede crear una imagen Snapshot de un volumen base único o un grupo de coherencia Snapshot compuesto por varios volúmenes base.
+* Puede tomar las Snapshot de forma manual o crear una programación para que un volumen base o grupo de coherencia Snapshot capture automáticamente imágenes Snapshot de forma periódica.
+* Puede crear un volumen Snapshot de una imagen Snapshot que sea accesible desde el host.
+* Puede realizar una operación de reversión para restaurar una imagen Snapshot.
+
+
+El sistema retiene varias imágenes Snapshot como puntos de restauración que se pueden utilizar para la reversión a conjuntos de datos en buen estado en momentos específicos. La capacidad de reversión brinda protección contra la eliminación accidental de datos y los daños en los datos.
+
+
+
+== ¿Qué tipos de volúmenes pueden utilizarse para las Snapshot?
+
+Los volúmenes estándares y finos son los únicos tipos de volúmenes que se pueden utilizar para almacenar las imágenes Snapshot. No se pueden utilizar volúmenes no estándares. El volumen base puede residir en un pool o en un grupo de volúmenes.
+
+
+
+== ¿Por qué debería crear un grupo de coherencia Snapshot?
+
+Si desea que se capturen imágenes Snapshot de varios volúmenes al mismo tiempo, puede crear un grupo de coherencia Snapshot.
+
+Por ejemplo, una base de datos compuesta por varios volúmenes que necesitan mantener la consistencia a los fines de la recuperación requeriría un grupo de coherencia Snapshot para recoger snapshots coordinadas de todos los volúmenes y utilizarlas para restaurar la base de datos completa.
+
+Los volúmenes incluidos en un grupo de coherencia Snapshot se denominan _volúmenes miembro_.
+
+Se pueden realizar las siguientes operaciones Snapshot en un grupo de coherencia Snapshot:
+
+* Crear una imagen Snapshot de un grupo de coherencia Snapshot para obtener imágenes en simultáneo de los volúmenes miembro.
+* Crear una programación para que el grupo de coherencia Snapshot capture automáticamente imágenes en simultáneo de forma periódica de los volúmenes miembro.
+* Crear un volumen Snapshot de una imagen de grupo de coherencia Snapshot que sea accesible desde el host.
+* Realizar una operación de reversión para un grupo de coherencia Snapshot.
+
+
+
+
+== ¿Qué es un volumen Snapshot y cuándo necesita capacidad reservada?
+
+Un volumen Snapshot permite que el host acceda a los datos de la imagen Snapshot. El volumen Snapshot tiene su propia capacidad reservada que almacena cualquier modificación del volumen base sin afectar a la imagen Snapshot original. Los hosts no tienen permisos de lectura ni escritura en las imágenes Snapshot. Si desea leer o escribir datos Snapshot, cree un volumen Snapshot y asigne este volumen a un host.
+
+Es posible crear dos tipos de volúmenes Snapshot. El tipo de volumen Snapshot determina si utiliza capacidad reservada.
+
+* *Sólo lectura* -- Un volumen de instantáneas creado como de sólo lectura proporciona una aplicación host con acceso de lectura a una copia de los datos contenidos en la imagen instantánea. Un volumen Snapshot de solo lectura no utiliza capacidad reservada.
+* *Read-write* -- un volumen de instantáneas que se crea como de lectura y escritura le permite realizar cambios en el volumen de instantáneas sin afectar a la imagen de instantánea de referencia. Un volumen Snapshot de lectura y escritura utiliza capacidad reservada para almacenar los cambios. Es posible convertir un volumen Snapshot de solo lectura a lectura y escritura en cualquier momento.
+
+
+
+
+== ¿Qué es un grupo Snapshot?
+
+Un grupo Snapshot es una recogida de imágenes Snapshot de momentos específicos de un único volumen base asociado.
+
+System Manager organiza las imágenes Snapshot en _grupos Snapshot_. Los grupos Snapshot no requieren ninguna acción del usuario, pero se puede ajustar la capacidad de un grupo Snapshot en cualquier momento. Además, es posible que se muestre un mensaje para crear capacidad reservada cuando se cumplan las siguientes condiciones:
+
+* Siempre que se realiza una Snapshot de un volumen base que no tiene grupo Snapshot, System Manager crea automáticamente un grupo Snapshot. Esto genera capacidad reservada para el volumen base que se utiliza para almacenar imágenes Snapshot posteriores.
+* Siempre que se crea una programación Snapshot para un volumen base, System Manager crea automáticamente un grupo Snapshot.
+
+
+
+
+== ¿Por qué debería deshabilitar un volumen Snapshot?
+
+El volumen Snapshot se deshabilita cuando se desea asignar un volumen Snapshot diferente a la imagen Snapshot. Se puede reservar el volumen Snapshot deshabilitado para usarlo más adelante.
+
+Si ya no necesita el volumen Snapshot o el volumen Snapshot del grupo de coherencia y no tiene intenciones de volver a crear ese volumen más adelante, debe eliminar el volumen en lugar de deshabilitarlo.
+
+
+
+== ¿Qué es el estado deshabilitado?
+
+Un volumen Snapshot en estado deshabilitado no se encuentra asignado actualmente a una imagen Snapshot. Para habilitar el volumen Snapshot, se debe utilizar la operación recrear para asignar una imagen Snapshot nueva al volumen Snapshot deshabilitado.
+
+Las características del volumen Snapshot quedan definidas por la imagen Snapshot asignada. La actividad de lectura y escritura en un volumen Snapshot en estado deshabilitado se encuentra suspendida.
+
+
+
+== ¿Por qué debería suspender una programación Snapshot?
+
+Cuando se suspende una programación, no se ejecutan las creaciones de imágenes Snapshot programadas. Es posible poner en pausa una programación Snapshot para conservar el espacio de almacenamiento, y reanudar las Snapshot programadas más adelante.
+
+Si no necesita la programación Snapshot, debe eliminarla en lugar de suspenderla.

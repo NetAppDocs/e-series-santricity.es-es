@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, import, directory, services, settings 
 summary: Es posible importar la configuración de los servicios de directorio desde una cabina de almacenamiento a otras cabinas de almacenamiento. Esta operación en lote permite ahorrar tiempo cuando se necesitan configurar varias matrices en la red. 
 ---
-= Importe la configuración de servicios de directorio
+= Importar la configuración de los servicios de directorio en SANtricity Unified Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

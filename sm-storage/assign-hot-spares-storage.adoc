@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, assign hot spares 
 summary: Es posible asignar una pieza de repuesto como unidad en espera para protección de datos adicional en grupos de volúmenes RAID 1, RAID 5 o RAID 6. Si falla una unidad en estos grupos de volúmenes, la controladora reconstruye los datos de la unidad con error en la pieza de repuesto. 
 ---
-= Asigne piezas de repuesto
+= Asignar repuestos activos en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
