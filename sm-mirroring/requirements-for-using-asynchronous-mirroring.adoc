@@ -85,6 +85,11 @@ En el mirroring asíncrono, se utilizan los puertos de I/o del host de la cabina
 
 
 
+[NOTE]
+====
+E4000 no admite la duplicación asincrónica mientras se utiliza el protocolo iSCSI.
+
+====
 
 
 == Candidatos de volumen reflejado
