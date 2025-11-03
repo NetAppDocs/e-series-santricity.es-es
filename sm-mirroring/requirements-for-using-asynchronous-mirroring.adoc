@@ -109,6 +109,7 @@ NOTE: Para las controladoras EF600 y EF300, los volúmenes primario y secundario
 
 
 * Los volúmenes primario y secundario deben compartir el mismo tipo de unidad. No se admite la combinación de unidades NVMe y SAS entre volúmenes primarios y secundarios.
+* Los volúmenes primarios y secundarios no deben tener habilitada la partición de recursos.
 
 
 

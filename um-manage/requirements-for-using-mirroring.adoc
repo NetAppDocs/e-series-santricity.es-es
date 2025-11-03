@@ -57,6 +57,10 @@ El mirroring (solo asíncrono) a través de una interfaz iSCSI requiere lo sigui
 
 * A diferencia de FC, iSCSI no requiere un puerto dedicado. Cuando se utiliza el mirroring asíncrono en entornos iSCSI, no es necesario dedicar ninguno de los puertos iSCSI front-end de la cabina de almacenamiento para usarlos con mirroring asíncrono; esos puertos se comparten tanto para las conexiones de tráfico de reflejos asíncronos como de I/o de host a cabina.
 * La controladora conserva una lista de los sistemas de almacenamiento remoto con los cuales el iniciador de iSCSI intenta establecer una sesión. El primer puerto que logra establecer una conexión iSCSI se utiliza para todas las comunicaciones subsiguientes con esa cabina de almacenamiento remota. Si no se produce la comunicación, se intenta una nueva sesión con todos los puertos disponibles.
++
+
+NOTE: Los controladores E4000 no admiten la duplicación iSCSI.
+
 * Los puertos iSCSI se configuran en el nivel de la cabina, puerto por puerto. La comunicación entre controladoras para la mensajería de configuración y la transferencia de datos utiliza la configuración global, lo que incluye:
 +
 ** VLAN: Tanto los sistemas locales como los remotos deben tener el mismo valor de VLAN para comunicarse
@@ -92,6 +96,7 @@ NOTE: Para las controladoras EF600 y EF300, los volúmenes primario y secundario
 ** Si el volumen primario no utiliza Drive Security, el volumen secundario no debe usar Drive Security.
 
 
+* Los volúmenes primarios y secundarios no deben tener habilitada la partición de recursos.
 
 
 
