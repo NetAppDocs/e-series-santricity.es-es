@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: whats new, new features, SANtricity 12.0 
+keywords: whats new, new features, SANtricity 12.00 
 summary: Nuevas funciones del sistema operativo SANtricity. 
 ---
-= Novedades en SANtricity OS 12.0
+= Novedades en SANtricity OS 12.00
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -12,14 +12,14 @@ summary: Nuevas funciones del sistema operativo SANtricity.
 
 
 [role="lead"]
-La siguiente tabla describe las nuevas funciones en SANtricity System Manager 12.0.
+La siguiente tabla describe las nuevas funciones en SANtricity System Manager 12.00.
 
 
 
-== Novedades en la versión 12.0
+== Novedades en la versión 12.00
 
 
-NOTE: La versión 12.0 de SANtricity OS solo es compatible con los nuevos sistemas de almacenamiento all-flash EF80 y EF50. Si estás usando SANtricity OS 11.9 o anterior, consulta link:known-issues.html["Problemas conocidos"] para ver una lista de las nuevas funciones en versiones anteriores.
+NOTE: La versión 12.00 de SANtricity OS solo es compatible con los nuevos sistemas de almacenamiento all-flash EF80 y EF50. Si estás usando SANtricity OS 11.9 o anterior, consulta link:known-issues.html["Problemas conocidos"] para ver una lista de las nuevas funciones en versiones anteriores.
 
 [cols="35h,~"]
 |===
@@ -41,7 +41,7 @@ Nueva interfaz de usuario para SANtricity System Manager
 Para los nuevos controladores EF80 y EF50, la interfaz de usuario de SANtricity System Manager se ha rediseñado para ofrecer un aspecto y una experiencia más modernos. La nueva interfaz incluye una navegación por el panel izquierdo y una mayor facilidad de uso para agilizar las tareas de administración.
 
 
-NOTE: La nueva interfaz de usuario está disponible actualmente solo para los sistemas de almacenamiento EF80 y EF50 con la versión SANtricity 12.0. Si estás usando SANtricity 11.9 o una versión anterior, consulta link:https://docs.netapp.com/us-en/e-series-santricity-119/system-manager/index.html["System Manager 11,9 de SANtricity"] para instrucciones sobre cómo usar la interfaz de usuario heredada.
+NOTE: La nueva interfaz de usuario está disponible actualmente solo para los sistemas de almacenamiento EF80 y EF50 con la versión SANtricity 12.00. Si estás usando SANtricity 11.9 o una versión anterior, consulta link:https://docs.netapp.com/us-en/e-series-santricity-119/system-manager/index.html["System Manager 11,9 de SANtricity"] para instrucciones sobre cómo usar la interfaz de usuario heredada.
 
 
 
