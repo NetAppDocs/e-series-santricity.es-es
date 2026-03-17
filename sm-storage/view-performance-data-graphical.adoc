@@ -26,14 +26,14 @@ Los gráficos disponibles de la vista detallada de rendimiento se distribuyen en
 
 * *Vista lógica* -- muestra los datos de rendimiento de objetos lógicos agrupados por grupos de volúmenes y agrupaciones. Los objetos lógicos incluyen grupos de volúmenes, pools y volúmenes.
 * *Vista física* -- muestra datos de rendimiento para el controlador, los canales de host, los canales de unidad y las unidades.
-* *Aplicaciones y cargas de trabajo Ver* -- muestra una lista de objetos lógicos (volúmenes) agrupados por los tipos de aplicación y cargas de trabajo que haya definido.
+* *Vista de aplicaciones y cargas de trabajo* -- Muestra una lista de objetos lógicos (volúmenes) agrupados por los tipos de aplicaciones y cargas de trabajo que tú has definido.
 
 
 .Pasos
 . Seleccione *Inicio*.
 . Para seleccionar una vista de la cabina de almacenamiento, haga clic en los botones IOPS, MIB/s o CPU.
 . Para ver más detalles, haga clic en *Ver detalles de rendimiento*.
-. Seleccione la ficha *Vista lógica*, *Vista física* o *Vista de aplicaciones y cargas de trabajo*.
+. Selecciona la pestaña *Logical View*, *Physical View* o *Applications and workloads View*.
 +
 Según el tipo de objeto, aparecen diferentes gráficos en cada pestaña.
 

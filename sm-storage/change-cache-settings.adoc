@@ -25,16 +25,13 @@ Esta acción puede ser tomada cuando se carga una nueva batería, se elimina una
 
 
 .Pasos
-. Seleccione MENU:Storage[Volumes].
-. Seleccione cualquier volumen y luego seleccione MENU:más[Cambiar configuración de caché].
+. En el panel izquierdo, selecciona menú:Storage[Volumes].
+. Haz clic en el icono de menú:ellipsis[Change volume cache settings].
 +
-Se muestra el cuadro de diálogo Cambiar configuración de caché. Todos los volúmenes en la cabina de almacenamiento aparecen en este cuadro de diálogo.
+Aparece la ventana Change volume cache Settings. Todos los volúmenes de la storage array aparecen en este cuadro de diálogo.
 
-. Seleccione la ficha *básico* para cambiar la configuración del almacenamiento en caché de lectura y de escritura.
+. Marca la casilla junto a cada volumen para el que quieras cambiar la configuración de caché o marca la casilla en el encabezado de la tabla para seleccionar todos los volúmenes.
 +
-.Detalles del campo
-[%collapsible]
-====
 [cols="25h,~"]
 |===
 | Configuración de caché | Descripción 
@@ -55,16 +52,6 @@ La caché de escritura es un búfer que almacena datos del host que todavía no 
 
 NOTE: La caché se vacía automáticamente después de que se deshabilita *almacenamiento en caché de escritura* para un volumen.
 
-|===
-====
-. Seleccione la ficha *Avanzado* para cambiar la configuración avanzada de los volúmenes gruesos. La configuración avanzada de caché solo está disponible para volúmenes gruesos.
-+
-.Detalles del campo
-[%collapsible]
-====
-[cols="25h,~"]
-|===
-| Configuración de caché | Descripción 
 
 
  a| 
@@ -77,7 +64,7 @@ En el caso de volumen fino, la captura previa de la lectura de caché dinámica 
 
 
  a| 
-Almacenamiento en caché de escritura sin baterías
+Caché de escritura sin baterías
  a| 
 La configuración de almacenamiento en caché de escritura sin baterías permite que el almacenamiento en caché de escritura continúe incluso si las baterías faltan, fallan, están completamente descargadas o no están totalmente cargadas. Por lo general, no se recomienda elegir el almacenamiento en caché de escritura sin baterías porque se pueden perder los datos en caso de interrupción del suministro eléctrico. Comúnmente, la controladora desactiva en forma temporal el almacenamiento en caché de escritura hasta que se cargan las baterías o se reemplaza una batería con errores.
 
@@ -96,6 +83,5 @@ El almacenamiento en caché de escritura con mirroring se produce cuando los dat
 Esta configuración solo está disponible si se habilita el almacenamiento en caché de escritura. Esta configuración no está disponible para volúmenes finos.
 
 |===
-====
-. Haga clic en *Guardar* para cambiar la configuración de la caché.
+. Haz clic en *Guardar* para cambiar la configuración de la caché
 

@@ -25,7 +25,7 @@ La función recoger datos de configuración guarda la misma información que el 
 Solo debe realizar esta tarea cuando se lo indique una operación de Recovery Guru o el soporte técnico.
 
 .Pasos
-. Seleccione menú:ficha Soporte[Centro de soporte > Diagnóstico].
+. En el panel izquierdo, selecciona menú:Support[Support Center > Diagnostics] tab.
 . Seleccione *recopilar datos de configuración*.
 . En el cuadro de diálogo, haga clic en *recopilar*.
 +

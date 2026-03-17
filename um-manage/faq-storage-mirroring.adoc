@@ -39,7 +39,7 @@ También debe cumplir con los siguientes requisitos para las cabinas de almacena
 
 [NOTE]
 ====
-El mirroring síncrono no está disponible en el sistema de almacenamiento EF600/EF600C o EF300/EF300C.
+La duplicación síncrona no está disponible en el sistema de almacenamiento EF80, EF50, EF600/EF600C o EF300/EF300C.
 
 ====
 
@@ -60,7 +60,7 @@ Antes de crear una pareja reflejada, siga estas directrices.
 
 [NOTE]
 ====
-El mirroring síncrono no está disponible en el sistema de almacenamiento EF600/EF600C o EF300/EF300C.
+La duplicación síncrona no está disponible en el sistema de almacenamiento EF80, EF50, EF600/EF600C o EF300/EF300C.
 
 ====
 

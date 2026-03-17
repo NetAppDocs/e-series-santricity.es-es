@@ -21,10 +21,10 @@ Si no se utiliza un controlador multivía, se deben cerrar todas las aplicacione
 Es posible cambiar la propiedad de la controladora de uno o más volúmenes en un pool o grupo de volúmenes.
 
 .Pasos
-. Seleccione MENU:Storage[Volumes].
-. Seleccione cualquier volumen y, a continuación, seleccione MENU:more[Cambiar propiedad].
+. En el panel izquierdo, selecciona menú:Storage[Volumes].
+. Haz clic en el icono de menú:ellipsis[Change volume ownership].
 +
-Se muestra el cuadro de diálogo Cambiar propiedad del volumen. Todos los volúmenes en la cabina de almacenamiento aparecen en este cuadro de diálogo.
+Aparece la ventana Change Volume Ownership. Todos los volúmenes en la storage array aparecen en este cuadro de diálogo.
 
 . Utilice la lista desplegable *propietario preferido* para cambiar el controlador preferido para cada volumen que desee cambiar y confirme que desea realizar la operación.
 

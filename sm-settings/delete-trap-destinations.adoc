@@ -15,7 +15,7 @@ summary: Es posible eliminar una dirección de destino de captura para que el mo
 Es posible eliminar una dirección de destino de captura para que el monitor de eventos de la cabina de almacenamiento ya no envíe capturas SNMP a esa dirección.
 
 .Pasos
-. Seleccione MENU:Settings[Alerts].
+. En el panel izquierdo, selecciona menú:Settings[Alerts].
 . Seleccione la ficha *SNMP*.
 +
 Las direcciones de los destinos de captura se muestran en la tabla.

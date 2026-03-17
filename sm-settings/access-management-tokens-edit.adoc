@@ -15,7 +15,7 @@ summary: Puede editar la configuración de los tokens de acceso, lo que incluye 
 Puede editar la configuración de los tokens de acceso, lo que incluye los tiempos de caducidad y la capacidad de crear nuevos tokens.
 
 .Pasos
-. Seleccione MENU:Settings[Access Management].
+. En el panel izquierdo, selecciona menú:Settings[Access Management].
 . Seleccione la ficha *tokens de acceso*.
 . Seleccione *Ver/editar configuración de token de acceso*.
 . En el cuadro de diálogo, puede realizar una o ambas tareas:

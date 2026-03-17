@@ -18,7 +18,7 @@ Después de crear o de cambiar una clave de seguridad, es posible crear una copi
 En esta tarea, se describe cómo realizar un backup de la clave de seguridad creada previamente. Durante este procedimiento, es posible crear una nueva frase de contraseña para el backup. No es necesario que esta frase de contraseña coincida con la utilizada cuando se creó o se modificó por última vez la clave original. La frase de contraseña se aplica solo al backup que se va a crear.
 
 .Pasos
-. Seleccione MENU:Settings[System].
+. En el panel izquierdo, selecciona menú:Settings[System].
 . En *Gestión de claves de seguridad*, seleccione *clave de copia de seguridad*.
 +
 Se abre el cuadro de diálogo realizar backup de la clave de seguridad.

@@ -23,7 +23,7 @@ Es posible desactivar el mirroring asíncrono en las cabinas de almacenamiento l
 Cuando se desactiva el mirroring asíncrono, no se puede realizar ningún tipo de actividad de reflejo en las cabinas de almacenamiento local y remota.
 
 .Pasos
-. Seleccione menu:Storage[Asynchronous Mirroring].
+. En el panel izquierdo, selecciona menú:Storage[Asynchronous Mirroring].
 . Seleccione menú:tareas no comunes[Desactivar].
 +
 El sistema muestra una confirmación.

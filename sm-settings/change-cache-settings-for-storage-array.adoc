@@ -36,7 +36,7 @@ El tamaño de bloque de la caché determina el tamaño máximo de cada bloque de
 
 |===
 .Pasos
-. Seleccione MENU:Settings[System].
+. En el panel izquierdo, selecciona menú:Settings[System].
 . Desplácese hacia abajo hasta *Configuración adicional* y, a continuación, haga clic en *Cambiar configuración de caché*.
 +
 Se abre el cuadro de diálogo Cambiar configuración de caché.

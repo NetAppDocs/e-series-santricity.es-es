@@ -43,8 +43,8 @@ Todos los volúmenes sin asignar se muestran durante esta tarea, pero las funcio
 
 
 .Pasos
-. Seleccione MENU:Storage[hosts].
-. Seleccione el host o clúster de hosts al que desea asignar volúmenes y, a continuación, haga clic en *asignar volúmenes*.
+. En el panel izquierdo, selecciona el menú:Storage[Hosts].
+. Selecciona el host o el clúster de hosts al que quieres asignar volúmenes y luego haz clic en el icono menu:ellipsis[Assign Volumes].
 +
 Se muestra un cuadro de diálogo que enumera todos los volúmenes que pueden asignarse. Puede ordenar cualquiera de las columnas o escribir algo en el cuadro *filtro* para facilitar la búsqueda de volúmenes concretos.
 

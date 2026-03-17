@@ -15,7 +15,7 @@ summary: Si configuró la gestión de claves externas, es posible ver y editar l
 Si configuró la gestión de claves externas, es posible ver y editar los ajustes del servidor de gestión de claves en cualquier momento.
 
 .Pasos
-. Seleccione MENU:Settings[System].
+. En el panel izquierdo, selecciona menú:Settings[System].
 . En *Gestión de claves de seguridad*, seleccione *Ver/editar configuración del servidor de administración de claves*.
 . Edite la información en los siguientes campos:
 +

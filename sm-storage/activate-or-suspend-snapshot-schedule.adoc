@@ -18,8 +18,8 @@ Se puede suspender temporalmente la recogida programada de imágenes Snapshot si
 El estado de la programación de instantáneas permanece suspendido hasta que se utiliza la opción *Activar* para reanudar la actividad de instantánea programada.
 
 .Pasos
-. Seleccione MENU:Storage[Snapshots].
-. Si aún no aparece, haga clic en la ficha *programaciones*.
+. En el panel izquierdo, selecciona menú:Storage[Snapshots].
+. Si aún no aparece, haz clic en la pestaña *Snapshot Schedules*.
 +
 Se muestra una lista de las programaciones en la página.
 

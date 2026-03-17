@@ -27,7 +27,7 @@ Se pueden ejecutar cuatro pruebas distintas:
 
 
 .Pasos
-. Seleccione menu:Storage[Asynchronous Mirroring].
+. En el panel izquierdo, selecciona menú:Storage[Asynchronous Mirroring].
 . Seleccione la ficha *grupos de consistencia en mirroring* y, a continuación, seleccione el grupo de consistencia en mirroring que desea probar.
 . Seleccione *probar comunicación*.
 +

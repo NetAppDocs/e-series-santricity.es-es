@@ -26,8 +26,8 @@ Si se desea redistribuir volúmenes sin un controlador multivía en los hosts, e
 La mayoría de los controladores multivía intentan acceder a cada volumen en una ruta a su propietario de controladora preferido. Sin embargo, si esta ruta preferida no está disponible, el controlador multivía en el host conmuta al nodo de respaldo a una ruta alternativa. Esta conmutación al nodo de respaldo puede provocar que la propiedad del volumen cambie a la controladora alternativa. Después de resolver la condición que provocó la conmutación al nodo de respaldo, es posible que algunos hosts muevan automáticamente la propiedad del volumen nuevamente al propietario de la controladora preferido; sin embargo, en algunos casos es posible que deba redistribuir manualmente los volúmenes.
 
 .Pasos
-. Seleccione MENU:Storage[Volumes].
-. Seleccione MENU:More[redistribuir volúmenes].
+. En el panel izquierdo, selecciona menú:Storage[Volumes].
+. Haz clic en el icono del menú:ellipsis[Redistribuir volúmenes].
 +
 Se muestra el cuadro de diálogo redistribuir volúmenes. Todos los volúmenes de la cabina de almacenamiento con un propietario de controladora preferido que no coincida con el propietario actual se mostrarán en este cuadro de diálogo.
 

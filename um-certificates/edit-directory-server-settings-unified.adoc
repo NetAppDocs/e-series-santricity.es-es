@@ -19,7 +19,7 @@ Si anteriormente configuró un servidor de directorio en Access Management, es p
 
 
 .Pasos
-. Seleccione *Access Management*.
+. En el panel izquierdo, selecciona menú:Settings[Access Management].
 . Seleccione la ficha *Servicios de directorio*.
 . Si se define más de un servidor, seleccione el servidor que desea editar en la tabla.
 . Seleccione *Ver/editar configuración*.

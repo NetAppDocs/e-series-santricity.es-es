@@ -18,10 +18,10 @@ Es posible crear cargas de trabajo para cualquier tipo de aplicación.
 Una carga de trabajo es un objeto de almacenamiento que admite una aplicación. Se pueden definir una o más cargas de trabajo o instancias por aplicación.
 
 .Pasos
-. Seleccione MENU:Storage[Volumes].
+. En el panel izquierdo, selecciona menú:Storage[Volumes].
 . Seleccione MENU:Create[Workload].
 +
-Se muestra el cuadro de diálogo Crear carga de trabajo de la aplicación.
+Aparece la página Create Application Workload.
 
 . Utilice la lista desplegable para seleccionar el tipo de aplicación para la que desea crear la carga de trabajo y luego escriba el nombre de la carga de trabajo.
 . Haga clic en *Crear*.

@@ -15,7 +15,7 @@ summary: Es posible cambiar el nombre de la cabina de almacenamiento que aparece
 Es posible cambiar el nombre de la cabina de almacenamiento que aparece en la barra de título de SANtricity System Manager.
 
 .Pasos
-. Seleccione MENU:Settings[System].
+. En el panel izquierdo, selecciona menú:Settings[System].
 . En *General*, busque el campo *Nombre:*.
 +
 Si no se definió un nombre de cabina de almacenamiento, este campo muestra el texto "Unknown".

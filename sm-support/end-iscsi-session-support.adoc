@@ -22,7 +22,7 @@ Es posible que desee finalizar una sesión iSCSI por los siguientes motivos:
 
 
 .Pasos
-. Seleccione menú:ficha Soporte[Centro de soporte > Diagnóstico].
+. En el panel izquierdo, selecciona menú:Support[Support Center > Diagnostics] tab.
 . Seleccione *Ver/finalizar sesiones iSCSI*.
 +
 Se muestra una lista de las sesiones iSCSI actuales.

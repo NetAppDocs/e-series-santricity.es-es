@@ -22,7 +22,7 @@ También se puede quitar una pareja reflejada para corregir un estado de pareja 
 
 
 .Pasos
-. Seleccione MENU:Storage[Synchronous Mirroring].
+. En el panel izquierdo, selecciona menú:Storage[Synchronous Mirroring].
 . Seleccione la pareja reflejada que desea quitar y haga clic en el menú:tareas no comunes[Quitar].
 +
 Se muestra el cuadro de diálogo Eliminar relación de reflejo.

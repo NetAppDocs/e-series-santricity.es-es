@@ -18,7 +18,7 @@ Puede editar definiciones de usuario para solapamientos SNMPv3.
 Se debe crear un usuario para la captura SNMPv3.
 
 .Pasos
-. Seleccione MENU:Settings[Alerts].
+. En el panel izquierdo, selecciona menú:Settings[Alerts].
 . Seleccione la ficha *SNMP*.
 +
 Los destinos de capturas y los nombres de usuario aparecen en la tabla.

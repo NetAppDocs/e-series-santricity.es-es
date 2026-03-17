@@ -15,7 +15,7 @@ El mirroring síncrono se debe configurar mediante el siguiente flujo de trabajo
 
 [NOTE]
 ====
-Esta función no está disponible en el sistema de almacenamiento EF600/EF600C o EF300/EF300C.
+Esta función no está disponible en el sistema de almacenamiento EF80, EF50, EF600/EF600C o EF300/EF300C.
 
 ====
 . Realice la configuración inicial en Unified Manager:

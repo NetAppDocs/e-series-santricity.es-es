@@ -19,8 +19,8 @@ Las estadísticas nominales, que son un subconjunto de estadísticas detalladas,
 Al revisar e interpretar las estadísticas, tenga en cuenta que algunas interpretaciones provienen del análisis de una combinación de estadísticas.
 
 .Pasos
-. Seleccione MENU:almacenamiento[Pools y grupos de volúmenes].
-. Seleccione la caché SSD para la cual desea ver estadísticas y haga clic en menú:más[Ver estadísticas de la caché SSD].
+. En el panel izquierdo, selecciona menú:Storage[Pools y grupos de volúmenes].
+. Selecciona la caché SSD para la que quieres ver las estadísticas y luego haz clic en el menú:ellipsis icon[View statistics].
 +
 Se muestra el cuadro de diálogo Ver estadísticas de la caché SSD, donde se proporcionan las estadísticas nominales de la caché SSD seleccionada.
 

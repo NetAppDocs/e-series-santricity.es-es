@@ -30,7 +30,7 @@ El proceso para crear un volumen Snapshot tiene varios pasos.
 Seleccione una imagen Snapshot de un volumen base o un grupo de coherencia Snapshot. Si selecciona una imagen de grupo de coherencia Snapshot, aparecen los volúmenes miembro del grupo de coherencia Snapshot para su revisión.
 
 .Pasos
-. Seleccione MENU:Storage[Snapshots].
+. En el panel izquierdo, selecciona menú:Storage[Snapshots].
 . Seleccione la ficha *volúmenes Snapshot*.
 . Seleccione *Crear*.
 +

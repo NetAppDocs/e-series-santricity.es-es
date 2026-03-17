@@ -25,7 +25,7 @@ Realice esta operación solo cuando el soporte técnico se lo indique.
 
 ====
 .Pasos
-. Seleccione menú:ficha Soporte[Centro de soporte > Diagnóstico].
+. En el panel izquierdo, selecciona menú:Support[Support Center > Diagnostics] tab.
 . Seleccione *recoger estadísticas de ruta de E/S*.
 . Para confirmar que desea llevar a cabo la operación, escriba `collect`Y, a continuación, haga clic en *recopilar*.
 +

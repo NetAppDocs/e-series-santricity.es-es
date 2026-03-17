@@ -18,7 +18,7 @@ Puede cambiar la prioridad de sincronización y la política de resincronizació
 Es posible editar la configuración de sincronización para una pareja reflejada solo en la cabina de almacenamiento que contiene el volumen primario.
 
 .Pasos
-. Seleccione MENU:Storage[Synchronous Mirroring].
+. En el panel izquierdo, selecciona menú:Storage[Synchronous Mirroring].
 . Seleccione la pareja reflejada que desee editar y, a continuación, seleccione MENU:más[Editar configuración].
 +
 El sistema muestra el cuadro de diálogo Ver/editar configuración.

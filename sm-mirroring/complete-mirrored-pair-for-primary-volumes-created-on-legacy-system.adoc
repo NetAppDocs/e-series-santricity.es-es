@@ -22,7 +22,7 @@ Es posible realizar un mirroring asíncrono entre las cabinas heredadas que usan
 
 
 .Pasos
-. Seleccione menu:Storage[Asynchronous Mirroring].
+. En el panel izquierdo, selecciona menú:Storage[Asynchronous Mirroring].
 . Seleccione la ficha *par reflejado*.
 +
 Se muestra la tabla Mirrored Pairs con todas las parejas reflejadas asociadas con la cabina de almacenamiento.

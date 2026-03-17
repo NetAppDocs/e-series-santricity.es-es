@@ -25,12 +25,12 @@ Es posible eliminar un pool o un grupo de volúmenes para crear más capacidad s
 
 
 .Pasos
-. Seleccione MENU:almacenamiento[Pools y grupos de volúmenes].
+. En el panel izquierdo, selecciona menú:Storage[Pools y grupos de volúmenes].
 . Seleccione un pool o un grupo de volúmenes de la lista.
 +
 Solo puede seleccionar un pool o un grupo de volúmenes a la vez. Desplácese hacia abajo por la lista para ver pools o grupos de volúmenes adicionales.
 
-. Seleccione menú:tareas no comunes[Eliminar] y confirme.
+. Selecciona menú:icono de elipsis[Delete] y confirma.
 
 
 .Resultados

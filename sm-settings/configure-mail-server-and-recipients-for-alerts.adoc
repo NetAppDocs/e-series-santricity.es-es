@@ -35,7 +35,7 @@ Las alertas por correo electrónico también pueden configurarse en el asistente
 
 ====
 .Pasos
-. Seleccione MENU:Settings[Alerts].
+. En el panel izquierdo, selecciona menú:Settings[Alerts].
 . Seleccione la ficha *correo electrónico*.
 +
 Si aún no se configuró ningún servidor de correo, la pestaña correo electrónico muestra "Configure Mail Server".

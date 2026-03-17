@@ -18,7 +18,7 @@ Se puede realizar un proceso Copy Volume en un volumen Snapshot o un volumen Sna
 Se puede copiar un volumen Snapshot en el volumen objetivo como se realiza en una operación Copy Volume normal. No obstante, los volúmenes Snapshot no pueden permanecer en línea durante el proceso de copia de volumen.
 
 .Pasos
-. Seleccione MENU:Storage[Snapshots].
+. En el panel izquierdo, selecciona menú:Storage[Snapshots].
 . Seleccione la ficha *volúmenes Snapshot*.
 +
 Se muestra la tabla volúmenes Snapshot con todos los volúmenes Snapshot asociados con la cabina de almacenamiento.

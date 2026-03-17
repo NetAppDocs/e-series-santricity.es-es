@@ -37,7 +37,7 @@ También puede generar un archivo CSR con una herramienta como OpenSSL y puede s
 
 ====
 .Pasos
-. Seleccione MENU:Settings[Certificates].
+. En el panel izquierdo, selecciona menú:Settings[Certificates].
 . En la ficha Administración de matrices, seleccione *completar CSR*.
 +
 [NOTE]
@@ -114,7 +114,7 @@ Después de recibir los certificados firmados de la entidad de certificación (C
 
 
 .Pasos
-. Seleccionar menú:Configuración[certificados]
+. En el panel izquierdo, selecciona menú:Settings[Certificates]
 . En la ficha Administración de matrices, seleccione *Importar*.
 +
 Se abre un cuadro de diálogo para importar los archivos de certificado.

@@ -22,8 +22,8 @@ Recuerde estas directrices cuando anule la asignación de un volumen:
 
 
 .Pasos
-. Seleccione MENU:Storage[hosts].
-. Seleccione el host o clúster de hosts que desea editar y, a continuación, haga clic en *Anular asignación de volúmenes*.
+. En el panel izquierdo, selecciona el menú:Storage[Hosts].
+. Selecciona el host o el clúster de hosts que quieres editar y luego haz clic en el menú:icono de elipsis[Desasignar Volumes].
 +
 Se muestra un cuadro de diálogo que muestra todos los volúmenes asignados actualmente.
 

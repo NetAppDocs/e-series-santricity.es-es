@@ -35,7 +35,7 @@ Una vez que se inicia, no es posible cancelar la operación Clear Recovery Mode.
 
 ====
 .Pasos
-. Seleccione menú:ficha Soporte[Centro de soporte > Diagnóstico].
+. En el panel izquierdo, selecciona menú:Support[Support Center > Diagnostics] tab.
 . Seleccione *Desactivar modo de recuperación* y confirme que desea realizar esta operación.
 +
 La opción aparece solamente si la cabina de almacenamiento se encuentra en modo de recuperación.

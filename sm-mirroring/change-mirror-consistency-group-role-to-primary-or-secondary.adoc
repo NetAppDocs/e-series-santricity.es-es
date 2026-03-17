@@ -18,7 +18,7 @@ Es posible cambiar el rol entre grupos de coherencia de reflejos para fines admi
 Los grupos de coherencia de reflejos creados en la cabina de almacenamiento local conservan el rol primario. Los grupos de coherencia de reflejos creados en la cabina de almacenamiento remota conservan el rol secundario. Es posible degradar el grupo de coherencia de reflejos local a un rol secundario o promocionar el grupo de coherencia de reflejos remoto a un rol primario.
 
 .Pasos
-. Seleccione menu:Storage[Asynchronous Mirroring].
+. En el panel izquierdo, selecciona menú:Storage[Asynchronous Mirroring].
 . Seleccione la ficha *grupos de consistencia de mirroring*.
 +
 Se muestra la tabla Grupo de coherencia de reflejos donde se detallan los grupos de coherencia de reflejos asociados con la cabina de almacenamiento.

@@ -24,7 +24,7 @@ Para configurar la autenticación de Access Management, se debe establecer la co
 La adición de un servidor de directorio es un proceso que consta de dos pasos. Primero, se debe introducir la URL y el nombre de dominio. Si el servidor utiliza un protocolo seguro, se debe cargar también un certificado de CA para autenticación si no se encuentra firmado por una entidad de firma estándar. Si se poseen credenciales de una cuenta de enlace, es posible introducir también el nombre de cuenta de usuario y la contraseña. Luego, se deben asignar los grupos de usuarios del servidor LDAP a los roles de usuario local.
 
 .Pasos
-. Seleccione *Access Management*.
+. En el panel izquierdo, selecciona menú:Settings[Access Management].
 . En la ficha *Servicios de directorio*, seleccione *Agregar servidor de directorio*.
 +
 Se abre el cuadro de diálogo Añadir servidor de directorio.

@@ -18,7 +18,7 @@ Es posible eliminar grupos de coherencia de reflejos que ya no son necesarios en
 Deben eliminarse todas las parejas reflejadas del grupo de coherencia de reflejos.
 
 .Pasos
-. Seleccione menu:Storage[Asynchronous Mirroring].
+. En el panel izquierdo, selecciona menú:Storage[Asynchronous Mirroring].
 . Seleccione la ficha *grupos de consistencia de mirroring*.
 +
 Se muestra la tabla Grupo de coherencia de reflejos donde se detallan los grupos de coherencia de reflejos asociados con la cabina de almacenamiento.

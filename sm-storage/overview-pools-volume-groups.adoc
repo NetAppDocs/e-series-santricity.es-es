@@ -31,7 +31,7 @@ Obtenga más información:
 
 == ¿Cómo se crean pools?
 
-Es posible permitir que System Manager cree pools automáticamente cuando detecta capacidad sin asignar en una cabina de almacenamiento. Como alternativa, cuando la creación automática no puede determinar la mejor configuración, puede crear pools manualmente desde el menú:almacenamiento[Pools y grupos de volúmenes].
+Puedes permitir que System Manager cree pools automáticamente cuando detecta capacidad no asignada en una matriz de almacenamiento. O bien, cuando la creación automática no puede determinar la mejor configuración, puedes crear pools manualmente desde menu:Storage[Pools and volume groups].
 
 Obtenga más información:
 
@@ -45,7 +45,7 @@ Obtenga más información:
 
 == ¿Cómo se crean los grupos de volúmenes?
 
-Es posible crear grupos de volúmenes desde el menú:almacenamiento[Pools y grupos de volúmenes].
+Puedes crear grupos de volúmenes desde el menú:Storage[Pools and volume groups].
 
 Obtenga más información:
 

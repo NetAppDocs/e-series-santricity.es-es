@@ -53,8 +53,7 @@ Precaución
 |===
 System Manager muestra estos iconos en diversas ubicaciones.
 
-* En el área Notifications de la página Inicio, se muestra el icono de error y un mensaje.
-* En el área de navegación, se muestra el icono de error con el icono de la página Home.
+* Área de notificaciones (icono de campana en la parte superior de la ventana)
 * En la página componentes, se muestra el icono de error en el gráfico de unidades y controladoras.
 
 

@@ -28,7 +28,7 @@ Si elimina un certificado que se utiliza para autenticar las controladoras y otr
 En esta tarea, se describe la manera de eliminar certificados instalados por el usuario. No se pueden eliminar los certificados autofirmados preinstalados.
 
 .Pasos
-. Seleccione MENU:Settings[Certificates].
+. En el panel izquierdo, selecciona menú:Settings[Certificates].
 . Seleccione la ficha *Trusted*.
 +
 En la tabla, se muestran los certificados de confianza de la cabina de almacenamiento.

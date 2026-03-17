@@ -98,8 +98,8 @@ X
 
 ====
 .Pasos
-. Seleccione MENU:Settings[System].
-. Seleccione *Borrar configuración de la matriz de almacenamiento*.
+. En el panel izquierdo, selecciona menú:Settings[System].
+. En *General*, selecciona *Borrar configuración de la matriz de almacenamiento*.
 . En la lista desplegable, seleccione *volumen* o *matriz de almacenamiento*.
 . *Opcional:* Si desea guardar la configuración (no los datos), utilice los vínculos del cuadro de diálogo.
 . Confirme que desea llevar a cabo la operación.

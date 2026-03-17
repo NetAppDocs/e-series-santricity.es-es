@@ -22,11 +22,11 @@ Es posible expandir la capacidad de un volumen de dos maneras:
 
 * Usar la capacidad libre que está disponible en el pool o el grupo de volúmenes.
 +
-Si desea añadir capacidad al volumen, seleccione MENU:almacenamiento[Pools y grupos de volúmenes > Añadir capacidad].
+Agregas capacidad a un volumen seleccionando menu:Storage[Volumes] desde el panel izquierdo y luego seleccionando el menú:ellipsis icon[Increase capacity] para el volumen.
 
 * Añadir capacidad sin asignar (en la forma de unidades sin utilizar) en el pool o el grupo de volúmenes del volumen. Use esta opción cuando no existe capacidad libre en el pool o el grupo de volúmenes.
 +
-Si desea añadir capacidad sin asignar al pool o grupo de volúmenes, seleccione menú:almacenamiento[Pools y grupos de volúmenes > Añadir capacidad].
+Añades capacidad no asignada al pool o grupo de volúmenes seleccionando menú:Storage[Pools and Volume Groups > Add capacity].
 
 +
 Si no hay capacidad libre disponible en el pool o el grupo de volúmenes, no es posible aumentar la capacidad del volumen. Debe aumentar el tamaño del pool o grupo de volúmenes en primer lugar o eliminar volúmenes sin usar.
@@ -47,7 +47,7 @@ Al eliminar volúmenes, se pierden todos los datos que contienen. Al eliminar un
 
 == Copiar
 
-Cuando se copian volúmenes, se crea una copia de un momento específico de dos volúmenes distintos, el volumen de origen y el volumen objetivo, en la misma cabina de almacenamiento. Si desea copiar volúmenes, seleccione MENU:almacenamiento[volúmenes > Servicios de copia > Copiar volumen].
+Al copiar volúmenes, creas una copia de un momento específico de dos volúmenes separados, el volumen de origen y el volumen de destino, en la misma matriz de almacenamiento. Puedes copiar volúmenes seleccionando menu:Storage[Volumes] y luego seleccionando el icono menu:ellipsis[Copy volume].
 
 
 
@@ -55,7 +55,7 @@ Cuando se copian volúmenes, se crea una copia de un momento específico de dos 
 
 Al inicializar un volumen, se borran todos los datos del volumen. Un volumen se inicializa automáticamente cuando se crea por primera vez. Sin embargo, es posible que Recovery Guru recomiende inicializar manualmente un volumen para la recuperación de ciertas condiciones de fallo. Cuando se inicializa un volumen, este conserva su configuración de WWN, asignaciones de hosts, capacidad asignada y capacidad reservada. También conserva la misma configuración de Data Assurance (DA) y de seguridad.
 
-Si desea inicializar volúmenes, seleccione MENU:Storage[Volumes > más > Initialize Volumes].
+Puedes inicializar los volúmenes seleccionando menú:Storage[Volumes > ellipsis icon > Initialize volumes].
 
 
 
@@ -65,15 +65,15 @@ Es posible redistribuir volúmenes para moverlos nuevamente a sus propietarios d
 
 La mayoría de los controladores multivía intentan acceder a cada volumen en una ruta a su propietario de controladora preferido. Sin embargo, si esta ruta preferida no está disponible, el controlador multivía en el host conmuta al nodo de respaldo a una ruta alternativa. Esta conmutación al nodo de respaldo puede provocar que la propiedad del volumen cambie a la controladora alternativa. Después de resolver la condición que provocó la conmutación al nodo de respaldo, es posible que algunos hosts muevan automáticamente la propiedad del volumen nuevamente al propietario de la controladora preferido; sin embargo, en algunos casos es posible que deba redistribuir manualmente los volúmenes.
 
-Si desea redistribuir volúmenes, seleccione menú:almacenamiento[volúmenes > más > redistribuir volúmenes].
+Puedes redistribuir volúmenes seleccionando menu:Storage[Volumes > ellipsis icon > Redistribute volumes].
 
 
 
 == Cambiar la propiedad de un volumen
 
-Al cambiar la propiedad de un volumen, se cambia la propiedad de la controladora preferida del volumen. El propietario de la controladora preferida de un volumen se muestra en una lista en el menú:almacenamiento[volúmenes > Ver/editar configuración > pestaña avanzada].
+Cambiar la propiedad de un volumen cambia la propiedad preferida del controlador del volumen. El propietario preferido del controlador de un volumen aparece en menu:Storage[Volumes > ellipsis icon > Edit settings].
 
-Si desea cambiar la propiedad de un volumen, seleccione menú:almacenamiento[volúmenes > más > Cambiar propiedad].
+Puedes cambiar la propiedad de un volumen seleccionando menu:Storage[Volumes > ellipsis icon > Change volume ownership].
 
 
 
@@ -101,7 +101,7 @@ La memoria caché es un área de almacenamiento volátil temporal (RAM) en la co
 * Los datos de escritura se escriben primero en la caché. Esto permite que la aplicación avance sin esperar que los datos se escriban en la unidad.
 
 
-Seleccione menu:Storage[Volumes > more > Change cache settings] para cambiar las siguientes opciones de configuración de caché:
+Selecciona el menú:Storage[Volumes > ellipsis icon > Change cache settings] para cambiar la siguiente configuración de caché:
 
 * *Caché de lectura y escritura* -- la caché de lectura es un búfer que almacena datos que se han leído desde las unidades. Es posible que los datos de una operación de lectura ya deban estar en la caché debido a una operación anterior, por lo tanto, no es necesario acceder a las unidades. Los datos se conservan en la caché de lectura hasta que esta se vacía.
 +

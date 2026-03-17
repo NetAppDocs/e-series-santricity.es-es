@@ -30,7 +30,7 @@ Si el volumen Snapshot o el volumen Snapshot de un grupo de coherencia Snapshot 
 
 ====
 .Pasos
-. Seleccione MENU:Storage[Snapshots].
+. En el panel izquierdo, selecciona menú:Storage[Snapshots].
 . Seleccione la ficha *volúmenes Snapshot*.
 +
 System Manager muestra todos los volúmenes Snapshot asociados con la cabina de almacenamiento.

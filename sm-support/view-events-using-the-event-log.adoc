@@ -15,7 +15,7 @@ summary: Es posible ver el registro de eventos, que proporciona un registro hist
 Es posible ver el registro de eventos, que proporciona un registro histórico de los eventos que ocurrieron en la cabina de almacenamiento.
 
 .Pasos
-. Seleccione MENU:Soporte[Registro de eventos].
+. En el panel izquierdo, selecciona menú:Support[Event Log].
 +
 Aparece la página Registro de eventos.
 

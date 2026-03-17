@@ -16,7 +16,7 @@ Utilice la opción Añadir/detectar una cabina de almacenamiento única para det
 
 .Antes de empezar
 * La cabina de almacenamiento debe estar instalada y configurada correctamente.
-* Las contraseñas de las cabinas de almacenamiento deben configurarse mediante el icono Access Management de System Manager.
+* Las contraseñas de las matrices de almacenamiento deben configurarse usando la página de Access Management de System Manager.
 
 
 .Pasos

@@ -28,13 +28,13 @@ También se puede crear una programación Snapshot en el mismo momento que se cr
 .Pasos
 . Realice una de las siguientes acciones para crear una programación Snapshot:
 +
-** Seleccione MENU:Storage[Volumes].
+** En el panel izquierdo, selecciona menú:Storage[Volumes].
 +
 Seleccione el objeto (volumen o grupo de coherencia Snapshot) para esta programación Snapshot y haga clic en menu:Servicios de copia[Crear programación Snapshot].
 
-** Seleccione MENU:Storage[Snapshots].
+** En el panel izquierdo, selecciona menú:Storage[Snapshots].
 +
-Seleccione la ficha *programas* y haga clic en *Crear*.
+Selecciona la pestaña *Snapsshot schedules* y luego haz clic en *Create*.
 
 
 

@@ -18,7 +18,7 @@ Se puede modificar el método de gestión de Drive Security de un servidor de cl
 En esta tarea, se deshabilita la gestión de claves externas y se descarga una nueva copia de backup en el host local. La clave existente se sigue usando para Drive Security, pero se gestionará internamente en la cabina de almacenamiento.
 
 .Pasos
-. Seleccione MENU:Settings[System].
+. En el panel izquierdo, selecciona menú:Settings[System].
 . En *Gestión de claves de seguridad*, seleccione *Desactivar administración de claves externa*.
 +
 Se abre el cuadro de diálogo Deshabilitar gestión de claves externa.

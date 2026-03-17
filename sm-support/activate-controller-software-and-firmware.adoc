@@ -29,7 +29,7 @@ No se puede detener el proceso de activación una vez iniciado.
 
 ====
 .Pasos
-. Seleccione MENU:Support[Upgrade Center].
+. En el panel izquierdo, selecciona menú:Support[Upgrade Center].
 . En el área etiquetada como actualización de software de controlador de sistema operativo SANtricity, haga clic en *Activar* y confirme que desea realizar la operación.
 +
 Es posible cancelar la operación durante la comprobación del estado previa a la actualización, pero no durante la activación.

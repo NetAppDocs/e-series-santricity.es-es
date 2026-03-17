@@ -15,7 +15,7 @@ summary: 'Es posible cambiar la configuración de un volumen Snapshot o un volum
 Es posible cambiar la configuración de un volumen Snapshot o un volumen Snapshot de grupo de coherencia Snapshot para cambiar el nombre, habilitar o deshabilitar el almacenamiento en caché SSD, o cambiar la asignación de hosts, clúster de hosts o número de unidad lógica (LUN).
 
 .Pasos
-. Seleccione MENU:Storage[Snapshots].
+. En el panel izquierdo, selecciona menú:Storage[Snapshots].
 . Haga clic en la ficha *volúmenes Snapshot*.
 . Seleccione el volumen de instantánea que desea cambiar y, a continuación, haga clic en *Ver/editar configuración*.
 +

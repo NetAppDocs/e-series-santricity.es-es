@@ -18,11 +18,11 @@ Es posible cambiar la configuración de un volumen miembro del grupo de coherenc
 Al cambiar la configuración de la capacidad reservada de un volumen miembro individual, también se cambia la configuración de capacidad reservada de todos los volúmenes miembro asociados con un grupo de coherencia.
 
 .Pasos
-. Seleccione MENU:almacenamiento[Pools y grupos de volúmenes].
+. En el panel izquierdo, selecciona menú:Storage[Pools y grupos de volúmenes].
 . Haga clic en la pestaña *capacidad reservada*.
-. Seleccione el volumen miembro del grupo de coherencia que desea editar y, a continuación, haga clic en *Ver/editar configuración*.
+. Selecciona el volumen miembro del grupo de consistencia que quieres editar y luego haz clic en el icono menu:ellipsis[Edit Settings].
 +
-Se muestra el cuadro de diálogo Configuración de capacidad reservada de volumen miembro.
+Aparece la ventana Edit consistency group member volume.
 
 . Cambie la configuración de la capacidad reservada del volumen miembro, según corresponda.
 +
@@ -35,9 +35,9 @@ Se muestra el cuadro de diálogo Configuración de capacidad reservada de volume
 
 
  a| 
-Enviarme una alerta cuando...
+Umbral de alerta de capacidad reservada llena
  a| 
-Use el cuadro de desplazamiento para ajustar el punto de porcentaje en el que System Manager envía una notificación de alerta cuando la capacidad reservada de un volumen miembro está casi completa.
+Usa la barra para ajustar el punto porcentual en el que System Manager envía una notificación de alerta cuando la capacidad reservada para un volumen miembro está a punto de llenarse.
 
 Cuando la capacidad reservada del volumen miembro supera el umbral especificado, System Manager envía una alerta que otorga tiempo para aumentar la capacidad reservada o eliminar los objetos innecesarios.
 

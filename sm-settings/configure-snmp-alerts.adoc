@@ -36,7 +36,7 @@ Si no tiene el archivo MIB, puede obtenerlo en el sitio de soporte de NetApp:
 En esta tarea, se describe cómo identificar el servidor SNMP para el destino de capturas y, a continuación, poner a prueba la configuración.
 
 .Pasos
-. Seleccione MENU:Settings[Alerts].
+. En el panel izquierdo, selecciona menú:Settings[Alerts].
 . Seleccione la ficha *SNMP*.
 +
 En la primera configuración, la pestaña SNMP muestra "Configure Communities/Users".

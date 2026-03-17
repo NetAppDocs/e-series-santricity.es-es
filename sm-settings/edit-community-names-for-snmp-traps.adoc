@@ -18,7 +18,7 @@ Puede editar nombres de comunidad para capturas SNMPv2c.
 Se debe crear un nombre de comunidad.
 
 .Pasos
-. Seleccione MENU:Setting[Alerts].
+. En el panel izquierdo, selecciona menú:Setting[Alerts].
 . Seleccione la ficha *SNMP*.
 +
 Los destinos de capturas y los nombres de comunidad aparecen en la tabla.

@@ -14,7 +14,7 @@ summary: La página hardware presenta funciones de ordenación y filtrado que fa
 La página hardware presenta funciones de ordenación y filtrado que facilitan la búsqueda de componentes.
 
 .Pasos
-. Seleccione *hardware*.
+. En el panel izquierdo, selecciona *Hardware*.
 . Use las funciones descritas en la siguiente tabla para ver los componentes de hardware.
 
 

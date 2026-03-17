@@ -18,7 +18,7 @@ Puede desactivar la función Synchronous Mirroring en una cabina de almacenamien
 Previamente deben haberse borrado todas las relaciones del reflejo síncrono. Verifique que todas las parejas reflejadas se hayan eliminado de la cabina de almacenamiento.
 
 .Pasos
-. Seleccione MENU:Storage[Synchronous Mirroring].
+. En el panel izquierdo, selecciona menú:Storage[Synchronous Mirroring].
 . Seleccione menú:tareas no comunes[Desactivar].
 +
 El sistema muestra una confirmación.

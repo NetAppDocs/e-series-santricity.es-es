@@ -21,7 +21,7 @@ Debe iniciar sesión con un perfil de usuario que cuente con permisos de adminis
 En esta tarea, se describe la forma de cambiar la configuración del registro de auditoría, lo que incluye la política para sobrescribir eventos anteriores y la política para registrar tipos de eventos.
 
 .Pasos
-. Seleccione MENU:Settings[Access Management].
+. En el panel izquierdo, selecciona menú:Settings[Access Management].
 . Seleccione la ficha *Registro de auditoría*.
 . Seleccione *Ver/editar configuración*.
 +

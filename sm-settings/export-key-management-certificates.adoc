@@ -20,7 +20,7 @@ Es posible guardar un certificado para un servidor de gestión de claves en una 
 
 
 .Pasos
-. Seleccione MENU:Settings[Certificates].
+. En el panel izquierdo, selecciona menú:Settings[Certificates].
 . Seleccione la ficha *Gestión de claves*.
 . En la tabla, seleccione el certificado que desea exportar y, a continuación, haga clic en *Exportar*.
 +

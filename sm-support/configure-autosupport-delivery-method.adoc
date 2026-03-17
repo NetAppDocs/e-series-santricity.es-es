@@ -32,7 +32,7 @@ Revise los diferentes protocolos:
 
 ====
 .Pasos
-. Seleccione menú:ficha Soporte[Centro de soporte > AutoSupport].
+. En el panel izquierdo, selecciona menú:Support[Support Center > AutoSupport] tab.
 . Seleccione *Configurar método de entrega de AutoSupport*.
 +
 Se muestra un cuadro de diálogo con una lista de los métodos de entrega de mensajes.

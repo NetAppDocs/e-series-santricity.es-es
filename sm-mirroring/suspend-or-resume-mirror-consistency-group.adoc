@@ -20,7 +20,7 @@ La suspensión y la reanudación de la sincronización en los grupos ayuda a red
 El estado del grupo de coherencia de reflejos y sus parejas reflejadas sigue suspendido hasta que se utiliza la opción Reanudar para reanudar la actividad de sincronización.
 
 .Pasos
-. Seleccione menu:Storage[Asynchronous Mirroring].
+. En el panel izquierdo, selecciona menú:Storage[Asynchronous Mirroring].
 . Seleccione la ficha *grupos de consistencia de mirroring*.
 +
 Aparece la tabla de grupo de coherencia de reflejos y se muestran todos los grupos de coherencia de reflejos asociados con la cabina de almacenamiento.

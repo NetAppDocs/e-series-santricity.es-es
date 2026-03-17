@@ -24,7 +24,7 @@ Se debe habilitar la función AutoSupport. Puede comprobar si está habilitada e
 
 
 .Pasos
-. Seleccione menú:ficha Soporte[Centro de soporte > AutoSupport].
+. En el panel izquierdo, selecciona menú:Support[Support Center > AutoSupport] tab.
 . Seleccione *programar mensajes de AutoSupport*.
 +
 Se mostrará el asistente programar mensajes de AutoSupport.

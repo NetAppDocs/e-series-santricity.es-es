@@ -33,7 +33,7 @@ La frase de contraseña de Drive Security es independiente de la contraseña de 
 
 ====
 .Pasos
-. Seleccione MENU:Settings[System].
+. En el panel izquierdo, selecciona menú:Settings[System].
 . En *Gestión de claves de seguridad*, seleccione *Crear clave interna*.
 +
 Si todavía no generó una clave de seguridad, se abre el cuadro de diálogo Crear clave de seguridad.

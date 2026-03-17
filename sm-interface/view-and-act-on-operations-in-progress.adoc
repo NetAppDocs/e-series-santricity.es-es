@@ -17,7 +17,7 @@ Para ver y actuar durante operaciones de ejecución prolongada, use la página O
 Para cada operación enumerada en la página Operations, se muestran un porcentaje de finalización y el tiempo restante estimado para completar la operación. En algunos casos, es posible detener una operación o colocarla en una prioridad superior o inferior. También es posible borrar una operación de copia de volumen de la lista.
 
 .Pasos
-. En la página Inicio, seleccione *Mostrar operaciones en curso*.
+. En el panel izquierdo, selecciona menú:Storage[Operations in Progress].
 +
 Aparece la página Operaciones en curso.
 

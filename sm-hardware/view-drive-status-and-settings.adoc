@@ -14,7 +14,7 @@ summary: Es posible ver el estado y la configuración de las unidades, como el t
 Es posible ver el estado y la configuración de las unidades, como el tipo de medios, el tipo de interfaz y la capacidad.
 
 .Pasos
-. Seleccione *hardware*.
+. En el panel izquierdo, selecciona *Hardware*.
 . Si el gráfico muestra los controladores, haga clic en la pestaña *Drives*.
 +
 El gráfico cambia y muestra las unidades en lugar de las controladoras.
@@ -215,7 +215,7 @@ Muestra si la función de garantía de datos (DA) está habilitada (Sí) o no (n
  a| 
 Compatible con DULBE
  a| 
-Indica si la opción error de bloque lógico no escrito o desasignado (DULBE) está habilitada (Sí) o no (no). DULBE es una opción en las unidades NVMe con la que la cabina de almacenamiento EF300 o EF600 puede admitir volúmenes con aprovisionamiento de recursos.
+Indica si la opción de Deallocated or Unwritten Logical Block Error (DULBE) está activada (Sí) o no (No). DULBE es una opción en las unidades NVMe que permite que la matriz de almacenamiento EF80, EF50, EF300 o EF600 admita volúmenes aprovisionados con recursos.
 
 |===
 ====

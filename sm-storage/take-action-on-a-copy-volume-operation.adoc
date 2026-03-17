@@ -15,7 +15,7 @@ summary: Es posible ver una operación de copia de volumen en curso y detenerla,
 Es posible ver una operación de copia de volumen en curso y detenerla, cambiar su prioridad, volver a copiarla o eliminarla.
 
 .Pasos
-. Seleccione MENU:Inicio[Ver operaciones en curso].
+. En el panel izquierdo, selecciona menú:Storage[Operations in Progress].
 +
 Se muestra el cuadro de diálogo Operaciones en curso.
 

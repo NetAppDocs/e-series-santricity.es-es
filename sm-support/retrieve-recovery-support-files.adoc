@@ -29,7 +29,7 @@ Los archivos de soporte de recuperación incluyen los siguientes tipos de archiv
 
 
 .Pasos
-. Seleccione menú:ficha Soporte[Centro de soporte > Diagnóstico].
+. En el panel izquierdo, selecciona menú:Support[Support Center > Diagnostics] tab.
 . Seleccione *recuperar archivos de soporte de recuperación*.
 +
 Se muestra un cuadro de diálogo con todos los archivos de soporte de recuperación recogidos por la cabina de almacenamiento. Para buscar archivos específicos, puede ordenar cualquiera de las columnas o escribir caracteres en el cuadro *filtro*.

@@ -17,8 +17,8 @@ SANtricity System Manager puede mostrar los valores de capacidad en gibibytes (G
 Las preferencias se almacenan en un almacenamiento local del explorador para que todos los usuarios puedan tener su propia configuración.
 
 .Pasos
-. Seleccione MENU:Preferencias[establecer preferencias].
-. Haga clic en el botón de opción gibibytes* o tebibytes* y confirme que desea ejecutar la operación.
+. Haz clic en el icono *User Settings* en la esquina superior derecha de la ventana.
+. En la lista desplegable Mostrar valores de capacidad en, selecciona *Gibibytes* o *Tebibytes*.
 +
 Consulte la siguiente tabla para ver las abreviaturas y los valores.
 

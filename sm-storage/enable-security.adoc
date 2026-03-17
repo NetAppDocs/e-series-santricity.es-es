@@ -27,8 +27,8 @@ Si desea usar Drive Security, seleccione un pool o un grupo de volúmenes compat
 Después de habilitar la seguridad, solo es posible deshabilitarla si se elimina el pool o el grupo de volúmenes y, a continuación, se borran las unidades.
 
 .Pasos
-. Seleccione MENU:almacenamiento[Pools y grupos de volúmenes].
-. Seleccione el pool o el grupo de volúmenes en donde desea habilitar la seguridad y, a continuación, haga clic en menu:more[Habilitar seguridad].
+. En el panel izquierdo, selecciona menú:Storage[Pools y grupos de volúmenes].
+. Selecciona el pool o grupo de volúmenes en el que quieres activar la seguridad y luego haz clic en menu:ellipsis icon[Enable security].
 +
 Se muestra el cuadro de diálogo Confirmar Habilitar seguridad.
 

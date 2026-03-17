@@ -93,11 +93,11 @@ Los ejemplos siguientes describen por qué se configuraría un pool de forma man
 Puede asignar solo uno o dos volúmenes en lugar de asignar la carga de trabajo a un pool más grande que tiene varios volúmenes en los cuales se pueden distribuir los datos. La creación manual de un pool individual dedicado a la carga de trabajo de una aplicación específica puede permitir que las operaciones de cabina de almacenamiento sean más rápidas y con menos contención.
 
 +
-Para crear manualmente un pool: Seleccione *almacenamiento* y, a continuación, seleccione *Pools y grupos de volúmenes*. En la pestaña toda la capacidad, haga clic en menu:Create[Pool].
+Para crear manualmente un pool: selecciona *Almacenamiento* y luego selecciona *Pools y grupos de volúmenes*. Desde la pestaña Toda la capacidad, haz clic en menú:Crear[Pool].
 
 * Si hay varios pools del mismo tipo de unidad, se muestra un mensaje que indica que System Manager no puede recomendar automáticamente las unidades para un pool. Sin embargo, es posible añadir manualmente las unidades a un pool existente.
 +
-Para añadir unidades manualmente a un pool existente: En la página Pools y grupos de volúmenes, seleccione el pool y haga clic en *Añadir capacidad*.
+Para agregar manualmente unidades a un pool existente: en la página Pools y grupos de volúmenes, selecciona el pool y luego haz clic en *Añadir capacidad*.
 
 
 
@@ -122,7 +122,7 @@ Si se crearon volúmenes en toda la capacidad utilizable disponible, es posible 
 
 La capacidad de conservación es la cantidad de capacidad (número de unidades) reservada en un pool para dar soporte a fallos de unidad potenciales. Cuando se crea un pool, el sistema reserva automáticamente una cantidad predeterminada de capacidad de conservación según el número de unidades del pool. Si creó volúmenes en toda la capacidad utilizable disponible, no puede aumentar la capacidad de conservación sin agregar capacidad al pool, ya sea sumando unidades o eliminando volúmenes.
 
-Puede cambiar la capacidad de conservación de *Pools y grupos de volúmenes*. Seleccione el pool que desea editar. Haga clic en *Ver/editar configuración* y, a continuación, seleccione la ficha *Configuración*.
+Puedes cambiar la capacidad de conservación desde *Pools y grupos de volúmenes*. Selecciona el pool que quieres editar. Haz clic en el menú:icono de elipsis[Editar configuración] y luego selecciona la pestaña *Configuración*.
 
 [NOTE]
 ====
@@ -150,7 +150,7 @@ Los siguientes tipos de medios son compatibles: Unidad de disco duro (HDD) y dis
 
 == ¿Por qué no se muestran algunas unidades?
 
-En el cuadro de diálogo Añadir capacidad, no todas las unidades se encuentran disponibles para añadir capacidad a un pool o grupo de volúmenes existente.
+En el cuadro de diálogo Add capacity, no todas las unidades están disponibles para añadir capacidad a un pool o grupo de volúmenes existente.
 
 Las unidades no serán elegibles por cualquiera de los motivos siguientes:
 
@@ -315,7 +315,7 @@ Seleccione un nivel de RAID según la información siguiente.
 +
 ** Se requiere un mínimo de dos unidades para RAID 1: Una unidad para los datos de usuario y una unidad para los datos reflejados.
 ** Si se seleccionan cuatro o más unidades, RAID 10 se configura automáticamente en el grupo de volúmenes: Dos unidades para los datos de usuario y dos unidades para los datos reflejados.
-** El grupo de volúmenes debe tener un número par de unidades. Si no se cuenta con un número par de unidades y quedan algunas sin asignar, vaya a *Pools y grupos de volúmenes* para añadir unidades adicionales al grupo de volúmenes y vuelva a intentar la operación.
+** Debes tener un número par de unidades en el grupo de volúmenes. Si no tienes un número par de unidades y te quedan algunas unidades sin asignar, ve a *Pools and volume groups* para añadir unidades adicionales al grupo de volúmenes y vuelve a intentar la operación.
 ** Los grupos de volúmenes de RAID 1 y RAID 10 pueden tener más de 30 unidades. Se puede crear un grupo de volúmenes que incluya todas las unidades de la cabina de almacenamiento.
 
 
@@ -463,7 +463,7 @@ Las estadísticas detalladas se pueden visualizar solo cuando se exportan todas 
 
 === Estadísticas nominales
 
-Para ver las estadísticas de caché SSD, seleccione MENU:almacenamiento[Pools y grupos de volúmenes]. Seleccione la caché SSD sobre la cual desea ver estadísticas y, a continuación, seleccione MENU:más[Ver estadísticas]. Las estadísticas nominales se muestran en el cuadro de diálogo Ver estadísticas de la caché SSD.
+Para ver las estadísticas de la caché SSD, selecciona menú:Storage[Pools and volume groups] desde el panel izquierdo. Selecciona la caché SSD para la que quieres ver las estadísticas y luego haz clic en el menú:ellipsis icon[View statistics]. Las estadísticas nominales se muestran en la página View Statistics.
 
 En la siguiente lista, se incluyen estadísticas nominales, que son un subconjunto de las estadísticas detalladas.
 
@@ -669,26 +669,20 @@ El control deslizante de capacidad de optimización adicional solo está disponi
 
 == ¿Qué permite el aprovisionamiento de recursos?
 
-El aprovisionamiento de recursos es una función disponible en las cabinas de almacenamiento EF300 y EF600, lo que permite poner en uso los volúmenes de inmediato sin proceso de inicialización en segundo plano.
+El aprovisionamiento de recursos es una función disponible en las matrices de almacenamiento EF80, EF50, EF300 y EF600, que permite poner en uso volúmenes de forma inmediata sin proceso de inicialización en segundo plano.
 
 Un volumen aprovisionado por recursos es un volumen grueso de un grupo de volúmenes SSD o pool, donde se asigna capacidad de la unidad (asignada al volumen) cuando se crea el volumen, pero los bloques de unidades no se asignan (anula la asignación). En comparación, en un volumen grueso tradicional, todos los bloques de unidades se asignan o se asignan durante una operación de inicialización de volúmenes en segundo plano para inicializar los campos de información de protección de Data Assurance y para hacer que la paridad de datos y RAID sea coherente en cada franja de RAID. Con un volumen aprovisionado, no existe una inicialización en segundo plano vinculada al tiempo. En su lugar, cada franja RAID se inicializa con la primera escritura en un bloque de volumen en la franja.
 
 Los volúmenes aprovisionados mediante recursos solo se admiten en los grupos de volúmenes SSD y pools, donde todas las unidades del grupo o pool admiten la funcionalidad de recuperación de error de bloque lógico no escrito o desasignado (DULBE). Cuando se crea un volumen aprovisionado por recursos, todos los bloques de unidades asignados al volumen se desasignan (desasignan). Asimismo, los hosts pueden desasignar bloques lógicos del volumen mediante el comando Gestión de conjuntos de datos de NVMe o el comando SCSI Unmap. Si se desasignan bloques, es posible mejorar la vida útil de las unidades de estado sólido y aumentar el rendimiento de escritura máximo. La mejora varía en función del modelo y la capacidad de cada unidad.
-
-
-NOTE: DULBE no es compatible con las cabinas de almacenamiento EF300C o EF600C por el momento.
 
 
 
 == ¿Qué debo saber acerca de la función de volúmenes aprovisionados mediante recursos?
 
-El aprovisionamiento de recursos es una función disponible en las cabinas de almacenamiento EF300 y EF600, lo que permite poner en uso los volúmenes de inmediato sin proceso de inicialización en segundo plano.
+El aprovisionamiento de recursos es una función disponible en las matrices de almacenamiento EF80, EF50, EF300 y EF600, que permite poner en uso volúmenes de forma inmediata sin proceso de inicialización en segundo plano.
 
 Un volumen aprovisionado por recursos es un volumen grueso de un grupo de volúmenes SSD o pool, donde se asigna capacidad de la unidad (asignada al volumen) cuando se crea el volumen, pero los bloques de unidades no se asignan (anula la asignación). En comparación, en un volumen grueso tradicional, todos los bloques de unidades se asignan o se asignan durante una operación de inicialización de volúmenes en segundo plano para inicializar los campos de información de protección de Data Assurance y para hacer que la paridad de datos y RAID sea coherente en cada franja de RAID. Con un volumen aprovisionado, no existe una inicialización en segundo plano vinculada al tiempo. En su lugar, cada franja RAID se inicializa con la primera escritura en un bloque de volumen en la franja.
 
 Los volúmenes aprovisionados mediante recursos solo se admiten en los grupos de volúmenes SSD y pools, donde todas las unidades del grupo o pool admiten la funcionalidad de recuperación de error de bloque lógico no escrito o desasignado (DULBE). Cuando se crea un volumen aprovisionado por recursos, todos los bloques de unidades asignados al volumen se desasignan (desasignan). Asimismo, los hosts pueden desasignar bloques lógicos del volumen mediante el comando Gestión de conjuntos de datos de NVMe o el comando SCSI Unmap. Si se desasignan bloques, es posible mejorar la vida útil de las unidades de estado sólido y aumentar el rendimiento de escritura máximo. La mejora varía en función del modelo y la capacidad de cada unidad.
 
-El aprovisionamiento de recursos está habilitado de forma predeterminada en sistemas donde las unidades admiten DULBE. Puede desactivar esa configuración predeterminada en *Pools y grupos de volúmenes*.
-
-
-NOTE: DULBE no es compatible con las cabinas de almacenamiento EF300C o EF600C por el momento.
+El aprovisionamiento de recursos está activado por defecto en los sistemas en los que las unidades admiten DULBE. Puedes desactivar esa configuración por defecto desde *Pools y grupos de volúmenes*.

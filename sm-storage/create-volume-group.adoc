@@ -33,7 +33,7 @@ Revise estas directrices para poder crear un grupo de volúmenes:
 
 
 .Pasos
-. Seleccione MENU:almacenamiento[Pools y grupos de volúmenes].
+. En el panel izquierdo, selecciona menú:Storage[Pools y grupos de volúmenes].
 . Haga clic en MENU:Create[Grupo de volúmenes].
 +
 Se muestra el cuadro de diálogo Crear un grupo de volúmenes.
@@ -132,9 +132,9 @@ Un grupo de volúmenes puede contener unidades con o sin capacidad DA, pero toda
 
 
  a| 
-Capacidad de aprovisionamiento de recursos (solo EF300 y EF600)
+Aprovisionamiento de recursos disponible (solo EF80, EF50, EF300 y EF600)
  a| 
-Muestra si el aprovisionamiento de recursos está disponible para este grupo. El aprovisionamiento de recursos es una función disponible en las cabinas de almacenamiento EF300 y EF600, lo que permite poner en uso los volúmenes de inmediato sin proceso de inicialización en segundo plano.
+Muestra si Resource Provisioning está disponible para este grupo. Resource Provisioning es una función disponible en las matrices de almacenamiento EF80, EF50, EF300 y EF600, que permite que los volúmenes se pongan en uso inmediatamente sin ningún proceso de inicialización en segundo plano.
 
 
 
@@ -273,9 +273,9 @@ Muestra los tamaños de bloque que se pueden crear para los volúmenes del grupo
 
 
  a| 
-Capacidad de aprovisionamiento de recursos (solo EF300 y EF600)
+Aprovisionamiento de recursos disponible (solo EF80, EF50, EF300 y EF600)
  a| 
-Muestra si el aprovisionamiento de recursos está disponible para este grupo. El aprovisionamiento de recursos es una función disponible en las cabinas de almacenamiento EF300 y EF600, lo que permite poner en uso los volúmenes de inmediato sin proceso de inicialización en segundo plano.
+Muestra si Resource Provisioning está disponible para este grupo. Resource Provisioning es una función disponible en las matrices de almacenamiento EF80, EF50, EF300 y EF600, que permite que los volúmenes se pongan en uso inmediatamente sin ningún proceso de inicialización en segundo plano.
 
 |===
 ====

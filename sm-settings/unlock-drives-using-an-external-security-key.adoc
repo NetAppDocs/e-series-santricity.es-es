@@ -47,7 +47,7 @@ Una vez que se vuelven a instalar las unidades con la función de seguridad habi
 Si se instalan otras unidades con la función de seguridad habilitada en la nueva cabina de almacenamiento, estas podrían usar una clave de seguridad distinta de la que se está importando. Durante el proceso de importación, la clave de seguridad antigua se usa únicamente para desbloquear los datos de las unidades que se instalan. Cuando el proceso de desbloqueo se realiza correctamente, se vuelve a asignar una clave de seguridad de cabina de almacenamiento de destino a las unidades recién instaladas.
 
 .Pasos
-. Seleccione MENU:Settings[System].
+. En el panel izquierdo, selecciona menú:Settings[System].
 . En *Gestión de claves de seguridad*, seleccione *Crear clave externa*.
 . Complete el asistente con la información de conexión de requisitos previos y los certificados.
 . Haga clic en *probar comunicación* para garantizar el acceso al servidor de administración de claves externo.

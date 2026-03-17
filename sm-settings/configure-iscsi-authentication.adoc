@@ -32,7 +32,7 @@ La configuración y las funciones de iSCSI solo aparecen en la página Configura
 
 ====
 .Pasos
-. Seleccione MENU:Settings[System].
+. En el panel izquierdo, selecciona menú:Settings[System].
 . En Configuración de iSCSI, haga clic en *Configurar autenticación*.
 +
 Se muestra el cuadro de diálogo Configurar autenticación, donde se indica el método actualmente seleccionado. También muestra si alguno de los hosts tiene secretos CHAP configurados.

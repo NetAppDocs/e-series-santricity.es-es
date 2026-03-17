@@ -22,7 +22,7 @@ Los componentes disponibles dependen del tipo de bandeja:
 
 
 .Pasos
-. Seleccione *hardware*.
+. En el panel izquierdo, selecciona *Hardware*.
 . Seleccione la lista desplegable para la bandeja de controladoras o bandeja de unidades y luego seleccione *Ver configuración*.
 +
 Se abre el cuadro de diálogo Configuración de componentes de bandeja, con pestañas en las que se muestran el estado y la configuración relacionados con los componentes de la bandeja. Según el tipo de bandeja seleccionada, es posible que algunas de las pestañas descritas en la tabla no aparezcan.

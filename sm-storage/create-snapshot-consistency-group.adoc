@@ -31,7 +31,7 @@ Seleccione miembros para especificar una recogida de los volúmenes que componen
 El estado de los volúmenes miembro debe ser óptima.
 
 .Pasos
-. Seleccione MENU:Storage[Snapshots].
+. En el panel izquierdo, selecciona menú:Storage[Snapshots].
 . Haga clic en la ficha *grupos de coherencia de instantánea*.
 . Seleccione menu:Crear[Grupo de coherencia Snapshot].
 +

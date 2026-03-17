@@ -26,7 +26,7 @@ El proceso para crear un volumen es un procedimiento de varios pasos.
 Se crean volúmenes para añadir capacidad de almacenamiento a una carga de trabajo específica de la aplicación y para que los volúmenes creados sean visibles para un host o clúster de hosts específicos. Además, la secuencia de creación de volúmenes ofrece las opciones de asignar cantidades específicas de capacidad a cada volumen que desea crear.
 
 .Antes de empezar
-* Existen hosts o clústeres de hosts válidos en el icono hosts.
+* Los hosts o clústeres de hosts válidos existen en la página hosts.
 * Se definieron identificadores de puertos de host para el host.
 * Para poder crear un volumen con la función DA habilitada, la conexión de host que se planea usar debe admitir DA. Si alguna de las conexiones de host de las controladoras de la cabina de almacenamiento no admite DA, los hosts asociados no podrán acceder a los datos de los volúmenes con la función DA habilitada.
 
@@ -47,10 +47,10 @@ Se producirá un error al asignar un volumen a un host si se intenta asignar un 
 
 ====
 .Pasos
-. Seleccione MENU:Storage[Volumes].
+. En el panel izquierdo, selecciona menú:Storage[Volumes].
 . Seleccione MENU:Create[Volume].
 +
-Se muestra el cuadro de diálogo Crear volúmenes.
+Aparece la página Create Volumes.
 
 . De la lista desplegable, seleccione el host o el clúster de hosts específicos a los que desea asignar volúmenes o elija asignar el host o el clúster de hosts más adelante.
 . Para continuar con la secuencia de creación de volúmenes para el host o clúster de hosts seleccionados, haga clic en *Siguiente*, y vaya a. <<Paso 2: Seleccionar una carga de trabajo para un volumen>>.
@@ -88,12 +88,12 @@ Seleccione una de las entradas que figuran como "Other", si la aplicación que p
 
 
 . Haga clic en *Siguiente*.
-. Si la carga de trabajo está asociada con un tipo de aplicación admitida, introduzca la información solicitada, de lo contrario, vaya a. <<Paso 3: Añadir o editar volúmenes>>.
+. Si tu carga de trabajo está asociada con un tipo de aplicación compatible, ingresa la información solicitada; de lo contrario, ve a <<Paso 3: agrega volúmenes>>.
 
 
 
 
-== Paso 3: Añadir o editar volúmenes
+== Paso 3: agrega volúmenes
 
 System Manager puede sugerir una configuración de volumen según la aplicación o la carga de trabajo seleccionadas. Esta configuración de volumen se optimiza según el tipo de aplicación que admite la carga de trabajo. Se puede aceptar la configuración de volumen recomendada o se puede editar, según sea necesario. Si seleccionó la opción "Other" para aplicaciones, debe especificar manualmente los volúmenes y las características que desea crear.
 
@@ -102,8 +102,8 @@ System Manager puede sugerir una configuración de volumen según la aplicación
 * La cantidad máxima de volúmenes permitidos en un grupo de volúmenes es de 256.
 * La cantidad máxima de volúmenes permitidos en un pool depende del modelo del sistema de almacenamiento:
 +
-** 2.048 volúmenes (serie EF600, EF600C y E5700)
-** 1.024 volúmenes (EF300 y EF300C TB)
+** 2,048 volúmenes (EF80, EF600, EF600C y serie E5700)
+** 1,024 volúmenes (EF50, EF300 y EF300C)
 ** 512 volúmenes (series E4000 y E2800)
 
 
@@ -224,13 +224,13 @@ DA mejora la integridad de los datos en todo el sistema de almacenamiento. DA pe
 
 
  a| 
-Recurso aprovisionado (solo EF300 y EF600)
+Recurso aprovisionado (EF80, EF50, EF300 y EF600 solamente)
  a| 
-*Sí* aparece junto a "recurso aprovisionado" sólo si las unidades admiten esta opción. El aprovisionamiento de recursos es una función disponible en las cabinas de almacenamiento EF300 y EF600, lo que permite poner en uso los volúmenes de inmediato sin proceso de inicialización en segundo plano.
+*Sí* aparece junto a "Resource provisioned" solo si las unidades admiten esta opción. Resource Provisioning es una función disponible en las matrices de almacenamiento EF80, EF50, EF300 y EF600, que permite poner en uso volúmenes inmediatamente sin proceso de inicialización en segundo plano.
 
 |===
 ====
-** *Carga de trabajo específica de la aplicación* -- haga clic en *Siguiente* para aceptar los volúmenes y las características recomendados por el sistema para la carga de trabajo seleccionada, o haga clic en *Editar volúmenes* para cambiar, añadir o eliminar los volúmenes y las características recomendados por el sistema para la carga de trabajo seleccionada.
+** *Carga de trabajo específica de la aplicación* -- Haz clic en *Edit Volumes* para cambiar, agregar o eliminar los volúmenes y características recomendados por el sistema para la carga de trabajo seleccionada.
 +
 .Detalles del campo
 [%collapsible]
@@ -266,7 +266,7 @@ Tipo de volumen indica el tipo de volumen que se creó para una carga de trabajo
 
 
  a| 
-Tamaño de bloque de volumen (solo EF300 y EF600)
+Tamaño del bloque de volumen (EF80, EF50, EF300 y EF600 solamente)
  a| 
 Muestra los tamaños de bloque que se pueden crear para el volumen:
 
@@ -317,9 +317,9 @@ DA mejora la integridad de los datos en todo el sistema de almacenamiento. DA pe
 
 
  a| 
-Recurso aprovisionado (solo EF300 y EF600)
+Recurso aprovisionado (EF80, EF50, EF300 y EF600 solamente)
  a| 
-*Sí* aparece junto a "recurso aprovisionado" sólo si las unidades admiten esta opción. El aprovisionamiento de recursos es una función disponible en las cabinas de almacenamiento EF300 y EF600, lo que permite poner en uso los volúmenes de inmediato sin proceso de inicialización en segundo plano.
+*Sí* aparece junto a "Resource Provisioned" solo si las unidades admiten esta opción. Resource Provisioning es una función disponible en las matrices de almacenamiento EF80, EF50, EF300 y EF600, que permite poner en uso volúmenes inmediatamente sin proceso de inicialización en segundo plano.
 
 |===
 ====
@@ -346,6 +346,6 @@ System Manager crea los volúmenes nuevos en los pools y grupos de volúmenes se
 * Realice cualquier modificación necesaria del sistema operativo en el host de la aplicación para que las aplicaciones puedan usar el volumen.
 * Ejecute la utilidad específica del sistema operativo (disponible de un proveedor de terceros) y, a continuación, ejecute el comando SMcli `-identifyDevices` para correlacionar los nombres de los volúmenes con los nombres de las cabinas de almacenamiento host.
 +
-SMcli está disponible directamente a través de SANtricity System Manager. Esta versión descargable de SMcli está disponible en las controladoras E4000, EF600, EF600C, EF300, EF300C, E5700, EF570, E2800 y EF280. Para descargar la SMcli dentro del Administrador del sistema SANtricity, seleccione *Configuración* > *sistema* y *Complementos* > *interfaz de línea de comandos* .
+El SMcli está disponible directamente a través de SANtricity System Manager. Esta versión descargable del SMcli está disponible en EF80, EF50, E4000, EF600, EF600C, EF300, EF300C, E5700, EF570, E2800 y EF280. Para descargar el SMcli dentro de SANtricity System Manager, selecciona *Settings* > *System* y *Add-ons* > *Command Line Interface*.
 
 

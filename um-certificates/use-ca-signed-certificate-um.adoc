@@ -32,7 +32,7 @@ También puede generar un archivo CSR con una herramienta como OpenSSL y saltar 
 
 ====
 .Pasos
-. Seleccione *Gestión de certificados*.
+. En el panel izquierdo, selecciona menú:Settings[Certificates].
 . En la ficha Administración, seleccione *completar CSR*.
 . Introduzca la siguiente información y, a continuación, haga clic en *Siguiente*:
 +
@@ -92,7 +92,7 @@ Después de recibir certificados firmados de la CA, importe los certificados al 
 
 
 .Pasos
-. Seleccione *Gestión de certificados*.
+. En el panel izquierdo, selecciona menú:Settings[Certificates].
 . En la ficha Administración, seleccione *Importar*.
 +
 Se abre un cuadro de diálogo para importar los archivos de certificado.

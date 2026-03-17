@@ -18,7 +18,7 @@ Es posible actualizar la dirección IP de iSCSI para que se vuelva a establecer 
 Tanto la cabina de almacenamiento local como la remota deben configurarse para operaciones de mirroring asíncrono mediante una conexión iSCSI.
 
 .Pasos
-. Seleccione menu:Storage[Asynchronous Mirroring].
+. En el panel izquierdo, selecciona menú:Storage[Asynchronous Mirroring].
 . Seleccione la ficha *grupos de consistencia de mirroring*.
 +
 La tabla de grupo de coherencia de reflejos muestra todos los grupos de coherencia de reflejos asociados con la cabina de almacenamiento.

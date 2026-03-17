@@ -15,8 +15,8 @@ summary: Se pueden localizar las unidades para identificar físicamente todas la
 Se pueden localizar las unidades para identificar físicamente todas las unidades que conforman una caché SSD, un pool o un grupo de volúmenes seleccionado. En cada unidad, se enciende un indicador LED en la caché SSD, el pool o el grupo de volúmenes seleccionado.
 
 .Pasos
-. Seleccione MENU:almacenamiento[Pools y grupos de volúmenes].
-. Seleccione el pool, el grupo de volúmenes o la caché SSD que desea localizar y, a continuación, haga clic en menu:more[encender las luces de localización].
+. En el panel izquierdo, selecciona menú:Storage[Pools y grupos de volúmenes].
+. Selecciona el pool, grupo de volúmenes o caché SSD que quieres localizar y luego haz clic en el icono del menú:ellipsis[Turn on locator lights].
 +
 Se muestra un cuadro de diálogo que indica que las luces de las unidades que conforman la caché SSD, el pool o el grupo de volúmenes seleccionado están encendidas.
 

@@ -18,7 +18,7 @@ Desde la página certificados, es posible ver el tipo de certificado, la entidad
 Debe iniciar sesión con un perfil de usuario que cuente con permisos de administración de seguridad. De lo contrario, no se mostrarán las funciones de certificación.
 
 .Pasos
-. Seleccione MENU:Settings[Certificates].
+. En el panel izquierdo, selecciona menú:Settings[Certificates].
 . Seleccione una de las pestañas para ver información sobre los certificados.
 +
 [cols="25h,~"]

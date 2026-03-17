@@ -15,7 +15,7 @@ summary: Es posible eliminar el servidor de correo definido previamente para que
 Es posible eliminar el servidor de correo definido previamente para que no se envíen alertas a las direcciones de correo electrónico, o eliminar direcciones de correo electrónico individuales.
 
 .Pasos
-. Seleccione MENU:Settings[Alerts].
+. En el panel izquierdo, selecciona menú:Settings[Alerts].
 . Seleccione la ficha *correo electrónico*.
 . Desde la tabla, realice una de las siguientes acciones:
 +

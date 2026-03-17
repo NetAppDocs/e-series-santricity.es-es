@@ -29,7 +29,7 @@ Si alguna de las conexiones de host de las controladoras de la cabina de almacen
 
 
 .Pasos
-. Seleccione MENU:Storage[hosts].
+. En el panel izquierdo, selecciona el menú:Storage[Hosts].
 . Seleccione MENU:Create[Host Cluster].
 +
 Se muestra el cuadro de diálogo Crear clúster de hosts.

@@ -23,17 +23,13 @@ Cuando se cambian identificadores de puerto de host, se deben tener en cuenta la
 
 
 .Pasos
-. Seleccione MENU:Storage[hosts].
-. Seleccione el host al que se asociarán los puertos y, a continuación, haga clic en *Ver/editar configuración*.
+. En el panel izquierdo, selecciona el menú:Storage[Hosts].
+. Selecciona el host al que se asociarán los puertos y luego haz clic en el icono del menú:ellipsis icon[Edit Settings].
 +
-Si desea añadir puertos a un host en un clúster de hosts, expanda el clúster de hosts y seleccione el host deseado. No se pueden añadir puertos en el nivel del clúster de hosts.
+Si quieres añadir puertos a un host en un clúster de hosts, selecciona el host que quieras. No puedes añadir puertos a nivel de clúster de hosts.
 
 +
-Se muestra un cuadro de diálogo en el que se proporciona la configuración actual de los hosts.
-
-. Haga clic en la ficha *puertos de host*.
-+
-En el cuadro de diálogo, se muestran los identificadores de puerto de host actuales.
+Aparece una pantalla Edit host settings que muestra la configuración actual del host.
 
 . Cambie la configuración del identificador de puerto de host, según corresponda.
 +
@@ -47,8 +43,8 @@ Puerto de host
  a| 
 Es posible elegir una de las siguientes opciones:
 
-** *Agregar* -- Utilice Agregar para asociar un nuevo identificador de puerto de host al host. La longitud del nombre del identificador de puerto de host se determina mediante la tecnología de interfaz del host. Los nombres de identificador de puerto de host de Fibre Channel e Infiniband deben tener 16 caracteres. Los nombres de identificador de puerto de host iSCSI tienen un máximo de 223 caracteres. El puerto debe ser único. No se permite un número de puerto que ya se haya configurado.
-** *Eliminar* -- Utilice Eliminar para eliminar (desasociar) un identificador de puerto de host. La opción Eliminar no quita físicamente el puerto de host. Esta opción elimina la asociación entre el puerto de host y el host. Salvo que se eliminen el adaptador de bus de host o el iniciador de iSCSI, la controladora seguirá reconociendo el puerto de host.
+** *Add host port* -- Haz clic en *Add host port* para asociar un nuevo identificador de puerto de host al host. La longitud del nombre del identificador de puerto de host está determinada por la tecnología de interfaz del host. Los nombres de identificador de puerto de host Fibre Channel e Infiniband deben tener 16 caracteres. Los nombres de identificador de puerto de host iSCSI tienen un máximo de 223 caracteres. El puerto debe ser único. No se permite un número de puerto que ya haya sido configurado.
+** *Eliminar (icono X)* -- Haz clic en el icono *X* para eliminar (desasociar) un identificador de puerto de host. La opción eliminar no elimina físicamente el puerto de host. Esta opción elimina la asociación entre el puerto de host y el host. A menos que elimines el adaptador de bus de host o el iniciador iSCSI, el puerto de host sigue siendo reconocido por el controlador.
 +
 [NOTE]
 ====
@@ -60,9 +56,9 @@ Si se elimina el identificador de puerto de host, el identificador ya no sigue a
 
 
  a| 
-Etiqueta
+Nombre
  a| 
-Para cambiar el nombre de la etiqueta del puerto, haga clic en el icono *Editar* (lápiz). El nombre de etiqueta del puerto debe ser único. No se permite un nombre de etiqueta que ya se haya configurado.
+Si es necesario, puedes cambiar el nombre de la etiqueta del puerto. El nombre de la etiqueta del puerto debe ser único. No se permite un nombre de etiqueta que ya se haya configurado.
 
 
 

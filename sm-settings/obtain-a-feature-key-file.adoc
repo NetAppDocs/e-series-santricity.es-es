@@ -23,8 +23,8 @@ En esta tarea, se describe cómo obtener la información requerida para la funci
 
 
 .Pasos
-. En System Manager, busque y registre el número de serie del chasis. Para ver este número de serie, debe pasar el ratón por el icono Centro de soporte.
-. En System Manager, busque Identificador de habilitación de funciones. Vaya a MENU:Settings[System] y, a continuación, desplácese hacia abajo hasta *Add-ons*. Busque *Identificador de habilitación de funciones*. Registre el número de la opción Identificador de habilitación de funciones.
+. En System Manager, localiza y anota el número de serie del chasis. Desde el panel izquierdo, ve al menú:Support[Suport Center] y desplázate hacia abajo hasta *View top storage array properties* para ver el número de serie del chasis.
+. En System Manager, localiza el Feature Enable Identifier. Desde el panel izquierdo, ve a menu:Settings[System] y luego desplázate hacia abajo hasta *Add-ons*. Busca el *Feature Enable Identifier*. Anota el número del Feature Enable Identifier.
 . Busque y registre el código para la activación de la función. Para paquetes de funciones, este código se proporciona en las instrucciones correspondientes para realizar la conversión.
 +
 Para funciones excepcionales, es posible acceder al código de activación en el sitio de soporte de la siguiente manera:

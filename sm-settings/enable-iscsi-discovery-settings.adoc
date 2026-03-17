@@ -32,7 +32,7 @@ La configuración y las funciones de iSCSI solo aparecen en la página Configura
 
 ====
 .Pasos
-. Seleccione MENU:Settings[System].
+. En el panel izquierdo, selecciona menú:Settings[System].
 . En *Configuración de iSCSI*, haga clic en *Ver/editar configuración de detección de objetivos*.
 +
 Se muestra el cuadro de diálogo Configuración de detección de objetivos. Debajo del *Activar servidor iSNS*... campo, el cuadro de diálogo indica si la controladora ya está registrada.

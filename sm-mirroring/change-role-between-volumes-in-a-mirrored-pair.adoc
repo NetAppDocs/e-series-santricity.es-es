@@ -18,7 +18,7 @@ Es posible realizar una reversión de roles entre los dos volúmenes de una pare
 Es posible degradar el volumen principal al rol secundario o promocionar el volumen secundario al rol primario. Cualquier host que acceda al volumen primario tiene acceso de lectura/escritura al volumen. Cuando el volumen primario se convierte en un volumen secundario, solo se escriben en el volumen las escrituras remotas iniciadas por la controladora primaria.
 
 .Pasos
-. Seleccione MENU:Storage[Synchronous Mirroring].
+. En el panel izquierdo, selecciona menú:Storage[Synchronous Mirroring].
 . Seleccione la pareja reflejada que contiene los volúmenes con los roles que desea cambiar y luego seleccione menu:más[Cambiar rol].
 +
 El sistema muestra una confirmación.

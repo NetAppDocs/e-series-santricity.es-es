@@ -37,7 +37,7 @@ En esta tarea, se describe cómo definir variables MIB para excepciones SNMP. Es
 
 
 .Pasos
-. Seleccione MENU:Settings[Alerts].
+. En el panel izquierdo, selecciona menú:Settings[Alerts].
 . Seleccione la ficha *SNMP*.
 . Seleccione *Configurar variables MIB de SNMP*.
 +

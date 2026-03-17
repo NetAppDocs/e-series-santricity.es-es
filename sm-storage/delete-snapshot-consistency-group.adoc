@@ -21,7 +21,7 @@ Confirme que las imágenes de todos los volúmenes miembro ya no son necesarias 
 Esta operación elimina todas las imágenes Snapshot asociadas con el grupo de coherencia Snapshot.
 
 .Pasos
-. Seleccione MENU:Storage[Snapshots].
+. En el panel izquierdo, selecciona menú:Storage[Snapshots].
 . Seleccione la ficha *grupos de coherencia de instantánea*.
 . Seleccione el grupo de coherencia Snapshot que desea eliminar y, a continuación, seleccione menú:tareas no comunes[Eliminar].
 +

@@ -25,7 +25,7 @@ Realice esta operación solo cuando el soporte técnico se lo indique.
 
 ====
 .Pasos
-. Seleccione menú:ficha Soporte[Centro de soporte > Diagnóstico].
+. En el panel izquierdo, selecciona menú:Support[Support Center > Diagnostics] tab.
 . Seleccione *recuperar imagen médica*.
 +
 Puede revisar la sección de detalles para ver el tamaño de la imagen de estado antes de descargar el archivo.

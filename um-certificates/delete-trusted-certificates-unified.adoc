@@ -22,7 +22,7 @@ Tenga en cuenta que la eliminación de un certificado intermedio o de raíz pued
 
 ====
 .Pasos
-. Seleccione *Gestión de certificados*.
+. En el panel izquierdo, selecciona menú:Settings[Certificates].
 . Seleccione la ficha *Trusted*.
 . Seleccione uno o varios certificados de la tabla y, a continuación, haga clic en *Eliminar*.
 +

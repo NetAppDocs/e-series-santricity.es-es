@@ -17,11 +17,11 @@ Es posible modificar la configuración de un grupo Snapshot y cambiarle el nombr
 Durante la creación de un grupo Snapshot, se crea capacidad reservada para almacenar los datos de todas las imágenes Snapshot que contiene el grupo.
 
 .Pasos
-. Seleccione MENU:almacenamiento[Pools y grupos de volúmenes].
+. En el panel izquierdo, selecciona menú:Storage[Pools y grupos de volúmenes].
 . Haga clic en la pestaña *capacidad reservada*.
-. Seleccione el grupo de instantáneas que desea editar y, a continuación, haga clic en *Ver/editar configuración*.
+. Selecciona el grupo de instantáneas que quieres editar y luego haz clic en el icono menu:ellipsis[Edit Settings].
 +
-Se muestra el cuadro de diálogo Configuración del grupo Snapshot.
+Aparece la ventana Edit snapshot group settings.
 
 . Cambie la configuración del grupo Snapshot según sea necesario.
 +
@@ -46,7 +46,7 @@ El nombre del grupo Snapshot. Es necesario indicar un nombre para el grupo Snaps
 
 
  a| 
-Eliminación automática
+Eliminación automática de imágenes snapshot
  a| 
 Un ajuste para mantener la cantidad total de imágenes Snapshot del grupo en un valor igual o inferior al máximo establecido por el usuario. Cuando esta opción está habilitada, System Manager elimina automáticamente la imagen Snapshot más antigua del grupo cada vez que se crea una imagen Snapshot nueva, a fin de poder cumplir con la cantidad máxima de imágenes Snapshot permitidas en el grupo.
 
@@ -56,13 +56,6 @@ Un ajuste para mantener la cantidad total de imágenes Snapshot del grupo en un 
 Límite de la imagen Snapshot
  a| 
 Un valor configurable para especificar la cantidad máxima de imágenes Snapshot permitidas en un grupo.
-
-
-
- a| 
-Programación Snapshot
- a| 
-En caso afirmativo, se establece una programación para crear Snapshot automáticamente.
 
 
 
@@ -88,25 +81,6 @@ Se puede seleccionar una de las siguientes políticas:
 ** *Purgar la imagen Snapshot más antigua* -- System Manager purga automáticamente la imagen Snapshot más antigua del grupo Snapshot, lo que libera la capacidad reservada de la imagen Snapshot para su reutilización dentro del grupo.
 ** *Rechazar escrituras en volumen base*: Cuando la capacidad reservada alcanza el porcentaje máximo definido, System Manager rechaza toda solicitud de escritura de I/o en el volumen base que activó el acceso a la capacidad reservada.
 
-
-
-
- a| 
-*Objetos asociados*
-
-
-
- a| 
-Volumen base
- a| 
-El nombre del volumen base utilizado para el grupo. Un volumen base es el origen desde el cual se crea una imagen Snapshot. Puede ser un volumen grueso o fino y, por lo general, se asigna a un host. El volumen base puede residir en un grupo de volúmenes o un pool de discos.
-
-
-
- a| 
-Imágenes Snapshot
- a| 
-La cantidad de imágenes creadas a partir de este grupo. Una imagen Snapshot es una copia lógica de datos de volúmenes capturados en un momento específico. Al igual que un punto de restauración, las imágenes Snapshot permiten revertir a un conjunto de datos bien conocidos. Si bien el host puede acceder a la imagen Snapshot, no puede leer ni escribir allí directamente.
 
 |===
 ====

@@ -33,25 +33,25 @@ Solo ciertos sistemas operativos permiten aumentar la capacidad de un volumen. S
 
 ====
 .Pasos
-. Seleccione MENU:Storage[Volumes].
-. Seleccione el volumen para el que desea aumentar la capacidad y, a continuación, seleccione *aumentar capacidad*.
+. En el panel izquierdo, selecciona menú:Storage[Volumes].
+. Selecciona el volumen para el que quieres aumentar la capacidad y luego haz clic en el icono del menú:ellipsis[Aumentar capacidad].
 +
-Se muestra el cuadro de diálogo Confirmar aumento de capacidad.
+Aparece la página Confirm Increase Capacity.
 
 . Seleccione *Sí* para continuar.
 +
-Se muestra el cuadro de diálogo aumentar capacidad notificada.
+Aparece la página Increase Reported Capacity.
 
 +
-En este cuadro de diálogo, se muestran la capacidad notificada actual y la capacidad libre disponibles en el pool o el grupo de volúmenes asociado.
+Esta página muestra la capacidad actual informada del volumen y la capacidad libre disponible en el pool o grupo de volúmenes asociado al volumen.
 
-. Utilice el cuadro *aumentar capacidad notificada agregando...* para añadir capacidad a la capacidad informada disponible actual. Es posible cambiar el valor de capacidad para que se muestre en mebibytes (MIB), gibibytes (GIB) o tebibytes (TIB).
+. Usa la casilla *Aumentar la capacidad notificada añadiendo...* para añadir capacidad a la capacidad notificada disponible actual. Puedes cambiar el valor de la capacidad para que se muestre en mebibytes (MiB), gibibytes (GiB) o tebibytes (TiB).
 . Haga clic en *aumentar*.
 
 
 .Resultados
 * System Manager aumenta la capacidad del volumen según lo seleccionado.
-* Seleccione MENU:Inicio[Ver operaciones en curso] para ver el progreso de la operación de aumento de capacidad que está en ejecución actualmente para el volumen seleccionado. Es posible que esta operación demore y que afecte el rendimiento del sistema.
+* Selecciona menú:Storage[Operations in Progress] para ver el progreso de la operación de aumento de capacidad que se está ejecutando actualmente para el volumen seleccionado. Esta operación puede ser larga y podría afectar el rendimiento del sistema.
 
 
 .Después de terminar

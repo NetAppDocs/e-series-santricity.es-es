@@ -20,7 +20,7 @@ También es posible especificar si se desea eliminar el volumen de capacidad res
 Si se elimina un volumen base, automáticamente se eliminan todos los volúmenes Snapshot o grupos de coherencia Snapshot asociados. No se puede eliminar un volumen Snapshot que está en una copia de volumen con el estado *en curso*.
 
 .Pasos
-. Seleccione MENU:Storage[Snapshots].
+. En el panel izquierdo, selecciona menú:Storage[Snapshots].
 . Seleccione la ficha *volúmenes Snapshot*.
 +
 System Manager muestra todos los volúmenes Snapshot asociados con la cabina de almacenamiento.

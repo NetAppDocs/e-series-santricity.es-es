@@ -22,7 +22,7 @@ Si todas las unidades comparten los mismos atributos físicos, el campo de filtr
 
 ====
 .Pasos
-. Seleccione *hardware*.
+. En el panel izquierdo, selecciona *Hardware*.
 . En el primer campo de filtro (en *Mostrar unidades...*), haga clic en la flecha desplegable para mostrar los tipos de unidades y atributos de seguridad disponibles.
 +
 Los tipos de unidades pueden ser los siguientes:

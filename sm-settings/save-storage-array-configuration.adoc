@@ -40,7 +40,7 @@ Esta operación _not_ guarda estos valores:
 
 ====
 .Pasos
-. Seleccione MENU:Settings[System].
+. En el panel izquierdo, selecciona menú:Settings[System].
 . Seleccione *Guardar configuración de la matriz de almacenamiento*.
 . Seleccione los elementos de la configuración que desea guardar:
 +

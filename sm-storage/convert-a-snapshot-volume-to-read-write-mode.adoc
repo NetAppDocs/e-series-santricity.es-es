@@ -17,7 +17,7 @@ Se puede convertir un volumen Snapshot o un volumen Snapshot del grupo de cohere
 Un volumen Snapshot que se convierte para permitir la lectura/escritura tiene su propia capacidad reservada. Esta capacidad se usa para guardar cualquier modificación subsiguiente que realice la aplicación host al volumen base sin afectar a la imagen Snapshot de referencia.
 
 .Pasos
-. Seleccione MENU:Storage[Snapshots].
+. En el panel izquierdo, selecciona menú:Storage[Snapshots].
 . Seleccione la ficha *volúmenes Snapshot*.
 +
 Se muestra la tabla volúmenes Snapshot con todos los volúmenes Snapshot asociados con la cabina de almacenamiento.

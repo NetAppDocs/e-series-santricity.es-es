@@ -15,7 +15,7 @@ summary: Si se produce un error durante una reversión de imagen Snapshot, la op
 Si se produce un error durante una reversión de imagen Snapshot, la operación se coloca automáticamente en pausa. Es posible reanudar una operación de reversión que se encuentra en estado de pausa.
 
 .Pasos
-. Seleccione MENU:Storage[Snapshots].
+. En el panel izquierdo, selecciona menú:Storage[Snapshots].
 . Haga clic en la ficha *Imágenes Snapshot*.
 . Resalte la reversión en pausa y, a continuación, seleccione MENU:Rollback[Reanudar].
 +

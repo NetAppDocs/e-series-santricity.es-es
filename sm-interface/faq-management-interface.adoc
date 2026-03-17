@@ -28,28 +28,28 @@ En el administrador del sistema de SANtricity se admiten las siguientes versione
  a| 
 Google Chrome
  a| 
-89
+120
 
 
 
  a| 
 Mozilla Firefox
  a| 
-80
+120
 
 
 
  a| 
 Safari
  a| 
-14
+16
 
 
 
  a| 
 Microsoft Edge
  a| 
-90
+120
 
 |===
 
@@ -317,7 +317,7 @@ Cabina de almacenamiento
 
 == ¿Qué se muestra en el gráfico de latencia?
 
-En el gráfico latencia, se proporcionan estadísticas de latencia, en milisegundos (ms), de volúmenes, grupos de volúmenes, pools, aplicaciones y cargas de trabajo. Este gráfico se muestra en las pestañas Logical View, Physical View y Vista de aplicaciones y cargas de trabajo.
+El gráfico de latencia proporciona estadísticas de latencia, en milisegundos (ms), para volúmenes, grupos de volúmenes, pools, aplicaciones y cargas de trabajo. Este gráfico aparece en las pestañas vista lógica, vista física y aplicaciones y cargas de trabajo vista.
 
 La latencia se refiere a cualquier demora que ocurre mientras se leen o se escriben datos. Pase el cursor por un punto del gráfico para ver los siguientes valores, en milisegundos (ms), de ese momento específico:
 
@@ -330,7 +330,7 @@ La latencia se refiere a cualquier demora que ocurre mientras se leen o se escri
 
 == ¿Qué se muestra en el gráfico de IOPS?
 
-En el gráfico IOPS, se muestran estadísticas para operaciones de entrada/salida por segundo. En la página Inicio, este gráfico muestra estadísticas de la cabina de almacenamiento. En las pestañas Logical View, Physical View y Vista de aplicaciones y cargas de trabajo del icono rendimiento, este gráfico muestra estadísticas de la cabina de almacenamiento, los volúmenes, los grupos de volúmenes, los pools, las aplicaciones, y cargas de trabajo.
+El gráfico IOPS muestra estadísticas de operaciones de entrada/salida por segundo. En la página de inicio, este gráfico muestra estadísticas para el array de almacenamiento. En las pestañas Logical View, Physical View y Applications and workloads View de la página Performance, este gráfico muestra estadísticas para el array de almacenamiento, volúmenes, grupos de volúmenes, pools, aplicaciones y cargas de trabajo.
 
 IOPS es la abreviatura en inglés de operaciones _entrada/salida (I/o) por segundo_. Pase el cursor por un punto del gráfico para ver los siguientes valores de ese momento específico:
 
@@ -343,7 +343,7 @@ IOPS es la abreviatura en inglés de operaciones _entrada/salida (I/o) por segun
 
 == ¿Qué se muestra en el gráfico de MIB/s?
 
-El gráfico MIB/s muestra las estadísticas de velocidad de transferencia en mebibytes por segundo. En la página Inicio, este gráfico muestra estadísticas de la cabina de almacenamiento. En las pestañas Logical View, Physical View y Vista de aplicaciones y cargas de trabajo del icono rendimiento, este gráfico muestra estadísticas de la cabina de almacenamiento, los volúmenes, los grupos de volúmenes, los pools, las aplicaciones, y cargas de trabajo.
+El gráfico MiB/s muestra estadísticas de velocidad de transferencia en mebibytes por segundo. En la página Home, este gráfico muestra estadísticas para la storage array. En las pestañas Logical View, Physical View y Applications and workloads View de la página Performance, este gráfico muestra estadísticas para la storage array, los volumes, volume groups, pools, applications y workloads.
 
 MIB/s es la abreviatura de _mebibytes por segundo_ o 1,048,576 bytes por segundo. Pase el cursor por un punto del gráfico para ver los siguientes valores de ese momento específico:
 
@@ -356,7 +356,7 @@ MIB/s es la abreviatura de _mebibytes por segundo_ o 1,048,576 bytes por segundo
 
 == ¿Qué se muestra en el gráfico de CPU?
 
-En el gráfico de la CPU, se muestran las estadísticas de capacidad de procesamiento de cada controladora (controladora A y controladora B). CPU es la abreviatura en inglés de _central processing unit_. En la página Inicio, este gráfico muestra estadísticas de la cabina de almacenamiento. En la pestaña Vista física del icono rendimiento, este gráfico muestra estadísticas de la cabina de almacenamiento y las unidades.
+El gráfico CPU muestra estadísticas de capacidad de procesamiento para cada controlador (controlador A y controlador B). CPU es una abreviatura de _central processing unit_. En la página de inicio, este gráfico muestra estadísticas para la matriz de almacenamiento. En la pestaña Vista física de la página Rendimiento, este gráfico muestra estadísticas para la matriz de almacenamiento y las unidades.
 
 En el gráfico de la CPU, se muestra el porcentaje de la capacidad de procesamiento de la CPU que se usa para operaciones de la cabina. Aun cuando no se produzcan operaciones de I/o externas, es posible que el porcentaje de utilización de CPU no sea cero, debido a que el sistema operativo de almacenamiento podría estar realizando operaciones en segundo plano y supervisión. Pase el cursor por un punto del gráfico para ver un porcentaje de la funcionalidad de procesamiento que se está utilizando en ese momento específico.
 
@@ -364,7 +364,7 @@ En el gráfico de la CPU, se muestra el porcentaje de la capacidad de procesamie
 
 == ¿Qué se muestra en el gráfico de margen adicional?
 
-El gráfico margen adicional se relaciona con la funcionalidad de rendimiento restante de las controladoras de la cabina de almacenamiento. Este gráfico está visible en la página Inicio y en la pestaña Vista física del icono rendimiento.
+El gráfico Headroom está relacionado con la capacidad de rendimiento restante de los controladores de la matriz de almacenamiento. Este gráfico es visible en la página de inicio y en la pestaña Physical View de la página Performance.
 
 En el gráfico margen adicional, se muestra la funcionalidad de rendimiento restante de los objetos físicos del sistema de almacenamiento. Pase el cursor por un punto del gráfico para ver los porcentajes de funcionalidad de IOPS y MIB/s restante para la controladora A y la controladora B.
 

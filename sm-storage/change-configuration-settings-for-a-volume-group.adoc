@@ -22,12 +22,12 @@ Si va a cambiar el nivel de RAID para acomodar las necesidades de rendimiento de
 
 
 .Pasos
-. Seleccione MENU:almacenamiento[Pools y grupos de volúmenes].
-. Seleccione el grupo de volúmenes que desea editar y haga clic en *Ver/editar configuración*.
+. En el panel izquierdo, selecciona menú:Storage[Pools y grupos de volúmenes].
+. Selecciona el grupo de volúmenes que quieres editar y luego haz clic en el menú:ellipsis icon[Edit Settings].
 +
-Se muestra el cuadro de diálogo Configuración del grupo de volúmenes.
+Aparece la ventana Edit Volume Group Settings.
 
-. Seleccione la ficha *Configuración* y, a continuación, edite la configuración del grupo de volúmenes según corresponda.
+. Edita la configuración del grupo de volúmenes según corresponda.
 +
 .Detalles del campo
 [%collapsible]

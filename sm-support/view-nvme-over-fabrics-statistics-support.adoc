@@ -24,7 +24,7 @@ En System Manager, se muestran los siguientes tipos de estadísticas de NVMe ove
 Es posible ver cada una de las estadísticas como estadísticas sin configurar o estadísticas de base. Las estadísticas sin configurar son todas las estadísticas recogidas desde que se iniciaron las controladoras. Las estadísticas de base son las estadísticas de un momento específico que se recogen desde el establecimiento de la hora de la línea de base.
 
 .Pasos
-. Seleccione menú:ficha Soporte[Centro de soporte > Diagnóstico].
+. En el panel izquierdo, selecciona menú:Support[Support Center > Diagnostics] tab.
 . Seleccione *Ver estadísticas de NVMe over Fabrics*.
 . Para establecer la línea de base, haga clic en *establecer nueva línea de base*.
 +

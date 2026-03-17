@@ -29,7 +29,7 @@ Por ejemplo, si va a conectar ocho hosts diferentes a la cabina de almacenamient
 
 
 .Pasos
-. Seleccione MENU:Settings[System].
+. En el panel izquierdo, selecciona menú:Settings[System].
 . Desplácese hasta *Configuración adicional* y, a continuación, haga clic en *Cambiar el tipo de sistema operativo del host* predeterminado.
 . Seleccione el tipo de sistema operativo de host que desea usar como predeterminado.
 . Haga clic en *Cambiar*.

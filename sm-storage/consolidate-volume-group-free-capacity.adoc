@@ -26,7 +26,7 @@ No se puede cancelar la operación una vez iniciada. Se puede acceder a los dato
 Para abrir el cuadro de diálogo consolidar capacidad libre, se puede utilizar cualquiera de los siguientes métodos:
 
 * Si se detecta al menos un área de capacidad libre para un grupo de volúmenes, se muestra la recomendación de que se debe consolidar la capacidad libre en la página Inicio del área notificación. Haga clic en el enlace *consolidar capacidad libre* para abrir el cuadro de diálogo.
-* También se puede abrir el cuadro de diálogo consolidar capacidad libre en la página Pools y grupos de volúmenes, como se describe en la siguiente tarea.
+* También puedes iniciar el cuadro de diálogo Consolidar capacidad libre desde la página Pools y grupo de volúmenes como se describe en la siguiente tarea.
 
 
 .Más información acerca de las áreas de capacidad libre
@@ -40,8 +40,8 @@ Cuando se consolida la capacidad libre de un grupo de volúmenes seleccionado, s
 
 ====
 .Pasos
-. Seleccione MENU:almacenamiento[Pools y grupos de volúmenes].
-. Seleccione el grupo de volúmenes que tenga la capacidad libre que se desea consolidar y, luego, seleccione menú:tareas no comunes[consolidar la capacidad libre del grupo de volúmenes].
+. En el panel izquierdo, selecciona menú:Storage[Pools y grupos de volúmenes].
+. Haz clic en el icono del menú:elipsis[Consolidate volume group free capacity].
 +
 Se muestra el cuadro de diálogo consolidar capacidad libre.
 
@@ -53,4 +53,4 @@ System Manager comienza a consolidar (desfragmentar) las áreas de capacidad lib
 
 
 .Después de terminar
-Seleccione MENU:Inicio[Ver operaciones en curso] para ver el progreso de la operación Consolidate Free Capacity. Es posible que esta operación demore y que afecte el rendimiento del sistema.
+Selecciona menú:Storage[Operations in Progress] para ver el progreso de la operación Consolidate Free Capacity. Esta operación puede ser larga y podría afectar el rendimiento del sistema.

@@ -15,11 +15,11 @@ summary: Puede cambiar la configuración del volumen de una pareja reflejada a f
 Puede cambiar la configuración del volumen de una pareja reflejada a fin de ajustar el punto de porcentaje en el que SANtricity System Manager envía una notificación de alerta cuando la capacidad reservada para una pareja reflejada está casi completa.
 
 .Pasos
-. Seleccione MENU:almacenamiento[Pools y grupos de volúmenes].
+. En el panel izquierdo, selecciona menú:Storage[Pools y grupos de volúmenes].
 . Seleccione la pestaña *capacidad reservada*.
-. Seleccione el volumen de la pareja reflejada que desea editar y, a continuación, haga clic en *Ver/editar configuración*.
+. Selecciona el volumen de par reflejado que quieres editar y luego haz clic en el icono de menú:ellipsis[Edit Settings].
 +
-Se muestra el cuadro de diálogo Configuración de capacidad reservada de volumen de pareja reflejada.
+Aparece la ventana Edit Mirrored Pair Volume Reserved Capacity Settings.
 
 . Cambie la configuración de la capacidad reservada para el volumen de la pareja reflejada, según sea necesario.
 +
@@ -32,9 +32,9 @@ Se muestra el cuadro de diálogo Configuración de capacidad reservada de volume
 
 
  a| 
-Enviarme una alerta cuando...
+Umbral de alerta de capacidad reservada llena
  a| 
-Use el cuadro de desplazamiento para ajustar el punto de porcentaje en el que System Manager envía una notificación de alerta cuando la capacidad reservada de una pareja reflejada está casi completa.
+Usa la barra para ajustar el punto porcentual en el que System Manager envía una notificación de alerta cuando la capacidad reservada para un par reflejado está a punto de llenarse.
 
 Cuando la capacidad reservada de la pareja reflejada supera el umbral especificado, System Manager envía una alerta que otorga tiempo para aumentar la capacidad reservada.
 

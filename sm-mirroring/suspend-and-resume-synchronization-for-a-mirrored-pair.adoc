@@ -18,7 +18,7 @@ Las opciones Suspender y Reanudar se pueden usar para controlar cuándo se deben
 Si una pareja reflejada se suspende de manera manual, la pareja reflejada no se sincroniza hasta que se la reanuda manualmente.
 
 .Pasos
-. Seleccione MENU:Storage[Synchronous Mirroring].
+. En el panel izquierdo, selecciona menú:Storage[Synchronous Mirroring].
 . Debe seleccionar la pareja reflejada que desea suspender o reanudar y, a continuación, seleccionar MENU:más[Suspender] o MENU:más[Reanudar].
 +
 El sistema muestra una confirmación.

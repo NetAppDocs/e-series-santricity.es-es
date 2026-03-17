@@ -14,7 +14,7 @@ summary: Es posible ver información sobre una controladora, como el estado de l
 Es posible ver información sobre una controladora, como el estado de las interfaces del host, de las interfaces de la unidad y de los puertos de gestión.
 
 .Pasos
-. Seleccione *hardware*.
+. En el panel izquierdo, selecciona *Hardware*.
 . Si el gráfico muestra las unidades, haga clic en la pestaña * Controladores y componentes *.
 +
 El gráfico cambia y muestra las controladoras en lugar de las unidades.

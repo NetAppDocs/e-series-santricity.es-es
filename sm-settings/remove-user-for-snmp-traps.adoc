@@ -15,7 +15,7 @@ summary: Puede eliminar un usuario para capturas SNMPv3.
 Puede eliminar un usuario para capturas SNMPv3.
 
 .Pasos
-. Seleccione MENU:Settings[Alerts].
+. En el panel izquierdo, selecciona menú:Settings[Alerts].
 . Seleccione la ficha *SNMP*.
 +
 Los nombres de usuario y los destinos de captura se muestran en la página Alertas.

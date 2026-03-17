@@ -22,7 +22,7 @@ Se ejecutan dos pruebas diferentes:
 
 
 .Pasos
-. Seleccione MENU:Storage[Synchronous Mirroring].
+. En el panel izquierdo, selecciona menú:Storage[Synchronous Mirroring].
 . Seleccione la pareja reflejada que desea probar y, a continuación, seleccione *probar comunicación*.
 . Revise la información que se muestra en la ventana resultados y, si fuera necesario, siga la acción correctiva indicada.
 +

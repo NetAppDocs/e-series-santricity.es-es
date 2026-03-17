@@ -15,7 +15,7 @@ summary: Puede eliminar un nombre de comunidad de las trampas SNMPv2c.
 Puede eliminar un nombre de comunidad de las trampas SNMPv2c.
 
 .Pasos
-. Seleccione MENU:Settings[Alerts].
+. En el panel izquierdo, selecciona menú:Settings[Alerts].
 . Seleccione la ficha *SNMP*.
 +
 Los destinos de captura y los nombres de comunidad aparecen en la página *Alertas*.

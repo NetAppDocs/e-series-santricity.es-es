@@ -53,6 +53,6 @@ Los datos de la unidad original se copian o reconstruyen en la unidad de reempla
 
 Se puede ver el estado de reconstrucción de la unidad desde la consola Operaciones en curso.
 
-En la página Inicio, haga clic en el enlace *Ver operaciones en curso* de la parte superior derecha.
+En el menú Almacenamiento del panel izquierdo, haz clic en el enlace *Operaciones en curso* en la parte superior derecha.
 
 Según la unidad, es posible que la reconstrucción completa demore bastante. Si se modificó la propiedad de un volumen, es posible que se realice la reconstrucción completa en lugar de la rápida.

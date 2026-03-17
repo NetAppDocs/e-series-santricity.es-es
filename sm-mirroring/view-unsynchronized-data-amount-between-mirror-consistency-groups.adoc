@@ -18,7 +18,7 @@ Es posible ver la cantidad de datos no sincronizados entre grupos de coherencia 
 Es posible realizar esta tarea cuando el grupo de coherencia de reflejos seleccionado contiene parejas reflejadas y cuando la sincronización no se encuentra en curso.
 
 .Pasos
-. Seleccione menu:Storage[Asynchronous Mirroring].
+. En el panel izquierdo, selecciona menú:Storage[Asynchronous Mirroring].
 . Seleccione la ficha *grupos de consistencia de mirroring*.
 +
 Se muestra la tabla Grupo de coherencia de reflejos donde se detallan los grupos de coherencia de reflejos asociados con la cabina de almacenamiento.

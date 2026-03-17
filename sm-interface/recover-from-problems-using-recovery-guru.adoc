@@ -14,8 +14,8 @@ summary: Recovery Guru es un componente de System Manager para diagnosticar prob
 Recovery Guru es un componente de SANtricity System Manager para diagnosticar problemas en la cabina de almacenamiento y recomendar procedimientos de recuperación para corregir los problemas.
 
 .Pasos
-. Seleccione *Inicio*.
-. Haga clic en el enlace con la etiqueta *recuperar de _n_ problemas* en la parte superior central de la ventana.
+. En el panel izquierdo, selecciona *Home*.
+. Haz clic en el icono *Bell* y luego haz clic en el enlace que dice *Recover from _n_ problems* en el centro superior de la ventana.
 +
 Se muestra el cuadro de diálogo Recovery Guru.
 
@@ -35,7 +35,6 @@ Una vez corregidos todos los problemas, el icono de la cabina de almacenamiento 
 
 . *Opcional:* para guardar la información de Recovery Guru en un archivo, haga clic en el icono *Guardar*.
 +
-El archivo se guarda en la carpeta de descargas del explorador con el nombre `recovery-guru-failure-yyyy-mm-dd-hh-mm-ss-mmm.html`.
+El archivo se guarda en la carpeta Descargas de tu navegador con el nombre `recoveryGuru-failureName-arrayName-yyyy-mm-dd-hh-mm-ss.html`.
 
-. Para imprimir la información de Recovery Guru, haga clic en el icono *Imprimir*.
 

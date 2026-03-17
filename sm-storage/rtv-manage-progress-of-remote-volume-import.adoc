@@ -17,7 +17,7 @@ Una vez que comienza el proceso de importación, puede ver y actuar sobre su pro
 .Acerca de esta tarea
 Para cada operación de importación, el cuadro de diálogo Operaciones en curso muestra un porcentaje de finalización y el tiempo restante estimado. Las acciones incluyen cambiar la prioridad de importación, detener y reanudar operaciones, y desconectarse de la operación.
 
-También es posible ver operaciones en curso en la página Inicio (MENU:Inicio[Mostrar operaciones en curso]).
+También puedes ver las operaciones en curso a través del menú:Storage[Operations in Progress].
 
 .Pasos
 . En la página almacenamiento remoto, seleccione *Ver operaciones*.

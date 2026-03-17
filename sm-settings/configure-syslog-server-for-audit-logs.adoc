@@ -21,7 +21,7 @@ Si desea archivar registros de auditoría en un servidor de syslog externo, pued
 
 
 .Pasos
-. Seleccione MENU:Settings[Access Management].
+. En el panel izquierdo, selecciona menú:Settings[Access Management].
 . En la ficha Registro de auditoría, seleccione *Configurar servidores de syslog*.
 +
 Se abre el cuadro de diálogo Configurar servidores de syslog.

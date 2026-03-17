@@ -23,7 +23,7 @@ Si el grupo Snapshot en el que se encuentra la imagen Snapshot contiene una o va
 
 ====
 .Pasos
-. Seleccione MENU:Storage[Snapshots].
+. En el panel izquierdo, selecciona menú:Storage[Snapshots].
 . Haga clic en la ficha *Imágenes Snapshot*.
 . Seleccione la reversión activa o en pausa y, a continuación, seleccione MENU:Rollback[Cancel].
 +

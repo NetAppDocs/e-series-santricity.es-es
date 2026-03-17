@@ -21,7 +21,7 @@ Es posible modificar la configuración del servidor de syslog utilizada para arc
 
 
 .Pasos
-. Seleccione MENU:Settings[Access Management].
+. En el panel izquierdo, selecciona menú:Settings[Access Management].
 . En la ficha Registro de auditoría, seleccione *Configurar servidores de syslog*.
 +
 Los servidores de syslog configurados se muestran en la página.

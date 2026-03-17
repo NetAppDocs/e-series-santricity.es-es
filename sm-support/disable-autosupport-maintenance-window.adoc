@@ -15,7 +15,7 @@ summary: Deshabilite la ventana de mantenimiento AutoSupport para permitir la cr
 Deshabilite la ventana de mantenimiento AutoSupport para permitir la creación automática de incidencias ante eventos de error. Cuando se deshabilita la ventana de mantenimiento AutoSupport, la cabina de almacenamiento utilizará AutoSupport para abrir un caso en soporte si existe un problema.
 
 .Pasos
-. Seleccione menú:ficha Soporte[Centro de soporte > AutoSupport].
+. En el panel izquierdo, selecciona menú:Support[Support Center > AutoSupport] tab.
 . Seleccione *Deshabilitar la ventana de mantenimiento de AutoSupport*.
 . Introduzca la dirección de correo electrónico para recibir una confirmación de que se procesó la solicitud de deshabilitar la ventana de mantenimiento.
 +

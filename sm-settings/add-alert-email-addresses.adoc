@@ -15,7 +15,7 @@ summary: Es posible añadir hasta 20 destinatarios para alertas por correo elect
 Es posible añadir hasta 20 destinatarios para alertas por correo electrónico.
 
 .Pasos
-. Seleccione MENU:Settings[Alerts].
+. En el panel izquierdo, selecciona menú:Settings[Alerts].
 . Seleccione la ficha *correo electrónico*.
 . Seleccione *Añadir correos electrónicos*.
 +

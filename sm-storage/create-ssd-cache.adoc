@@ -33,7 +33,7 @@ Siga estas directrices al crear una caché SSD.
 
 
 .Pasos
-. Seleccione MENU:almacenamiento[Pools y grupos de volúmenes].
+. En el panel izquierdo, selecciona menú:Storage[Pools y grupos de volúmenes].
 . Haga clic en menú:Crear[caché SSD].
 +
 Se muestra el cuadro de diálogo Crear caché SSD.

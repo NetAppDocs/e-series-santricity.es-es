@@ -28,8 +28,8 @@ En System Manager, se muestran los siguientes tipos de estadísticas de iSCSI. T
 Es posible ver cada una de las estadísticas como estadísticas sin configurar o estadísticas de base. Las estadísticas sin configurar son todas las estadísticas recogidas desde que se iniciaron las controladoras. Las estadísticas de base son las estadísticas de un momento específico que se recogen desde el establecimiento de la hora de la línea de base.
 
 .Pasos
-. Seleccione MENU:Settings[System].
-. Seleccione *Ver paquetes de estadísticas iSCSI*.
+. En el panel izquierdo, selecciona menú:Settings[System].
+. Selecciona *Ver estadísticas iSCSI*.
 . Haga clic en una pestaña para ver los diferentes conjuntos de estadísticas.
 . *Opcional:* para establecer la línea de base, haga clic en *establecer nueva línea de base*.
 +

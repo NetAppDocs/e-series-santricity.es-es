@@ -18,7 +18,7 @@ Es posible borrar los eventos antiguos del registro de auditoría para que la b�
 Debe iniciar sesión con un perfil de usuario que cuente con permisos de administración de seguridad. De lo contrario, no se mostrarán las funciones de Access Management.
 
 .Pasos
-. Seleccione MENU:Settings[Access Management].
+. En el panel izquierdo, selecciona menú:Settings[Access Management].
 . Seleccione la ficha *Registro de auditoría*.
 . Seleccione *Eliminar*.
 +

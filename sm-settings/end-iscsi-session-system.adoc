@@ -22,8 +22,8 @@ Es posible que desee finalizar una sesión iSCSI por los siguientes motivos:
 
 
 .Pasos
-. Seleccione MENU:Settings[System].
-. Seleccione *Ver/finalizar sesiones iSCSI*.
+. En el panel izquierdo, selecciona menú:Settings[System].
+. En *iSCSI settings*, selecciona *Ver/Finalizar sesiones iSCSI*.
 +
 Se muestra una lista de las sesiones iSCSI actuales.
 

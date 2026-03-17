@@ -30,7 +30,7 @@ Durante el procedimiento para añadir un servidor LDAP, se deshabilitará la int
 
 ====
 .Pasos
-. Seleccione MENU:Settings[Access Management].
+. En el panel izquierdo, selecciona menú:Settings[Access Management].
 . En la ficha Servicios de directorio, seleccione *Agregar servidor de directorio*.
 +
 Se abre el cuadro de diálogo Añadir servidor de directorio.

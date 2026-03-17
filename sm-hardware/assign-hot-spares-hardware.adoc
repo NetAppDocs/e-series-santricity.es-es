@@ -34,7 +34,7 @@ Las piezas de repuesto también pueden asignarse desde el asistente de configura
 
 ====
 .Pasos
-. Seleccione *hardware*.
+. En el panel izquierdo, selecciona *Hardware*.
 . Si el gráfico muestra los controladores, haga clic en la pestaña *Drives*.
 +
 El gráfico cambia y muestra las unidades en lugar de las controladoras.

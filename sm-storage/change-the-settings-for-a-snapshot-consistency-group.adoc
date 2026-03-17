@@ -15,7 +15,7 @@ summary: Es posible cambiar la configuración de un grupo de coherencia Snapshot
 Es posible cambiar la configuración de un grupo de coherencia Snapshot cuando se desea cambiar el nombre de dicho grupo, la configuración de eliminación automática o la cantidad máxima de imágenes Snapshot permitidas.
 
 .Pasos
-. Seleccione MENU:Storage[Snapshots].
+. En el panel izquierdo, selecciona menú:Storage[Snapshots].
 . Haga clic en la ficha *grupos de coherencia de instantánea*.
 . Seleccione el grupo de coherencia Snapshot que desea editar y haga clic en *Ver/editar configuración*.
 +

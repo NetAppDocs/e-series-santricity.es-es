@@ -332,7 +332,7 @@ Sí
 
 
  a| 
-Ampliación de capacidad (añadir capacidad)
+Ampliación de la capacidad (Add capacity)
  a| 
 Sí
  a| 

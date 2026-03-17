@@ -20,7 +20,7 @@ La pieza de repuesto debe estar en estado óptimo, en espera.
 No se puede anular la asignación de una pieza de repuesto que esté reemplazando a una unidad con error. Si la pieza de repuesto no está en estado óptimo, siga los procedimientos de Recovery Guru para corregir cualquier problema antes de intentar anular la asignación de la unidad.
 
 .Pasos
-. Seleccione *hardware*.
+. En el panel izquierdo, selecciona *Hardware*.
 . Si el gráfico muestra los controladores, haga clic en la pestaña *Drives*.
 +
 El gráfico cambia y muestra las unidades en lugar de las controladoras.

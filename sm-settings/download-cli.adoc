@@ -20,7 +20,7 @@ La CLI proporciona un método a partir de texto para la configuración y supervi
 Debe haber disponible un entorno Java Runtime Environment (JRE), versión 8 y superior en el sistema de administración en el que planea ejecutar los comandos de la CLI.
 
 .Pasos
-. Seleccione MENU:Settings[System].
+. En el panel izquierdo, selecciona menú:Settings[System].
 . En *Complementos*, seleccione *interfaz de línea de comandos*.
 +
 El paquete ZIP se descargará en el explorador.

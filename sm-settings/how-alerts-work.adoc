@@ -31,13 +31,7 @@ El proceso de las alertas funciona de la siguiente manera:
 
 == Configuración de alertas
 
-Es posible configurar alertas en el asistente de configuración inicial (solo para alertas de correo electrónico) o en la página Alertas. Para comprobar la configuración actual, vaya a MENU:Settings[Alerts].
-
-El icono Alertas muestra la configuración de las alertas, que puede ser una de las siguientes:
-
-* No configurado.
-* Configurado; se ha configurado al menos un método de alerta. Para determinar qué métodos de alertas están configurados, apunte el cursor al icono.
-
+Puedes configurar las alertas desde el asistente de configuración inicial (solo para alertas por correo electrónico) o desde la página de Alertas. Para acceder a la página de Alertas, ve a menú:Configuración[Alertas] desde el panel izquierdo.
 
 
 

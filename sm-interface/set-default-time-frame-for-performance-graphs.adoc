@@ -18,6 +18,6 @@ Es posible cambiar el plazo predeterminado que se muestra en los gráficos de re
 Los gráficos de rendimiento que se muestran en la página Inicio y la página rendimiento indican inicialmente el plazo de 1 hora. Las preferencias se almacenan en un almacenamiento local del explorador para que todos los usuarios puedan tener su propia configuración.
 
 .Pasos
-. Seleccione MENU:Preferencias[establecer preferencias].
-. En la lista desplegable, seleccione *5 minutos*, *1 hora*, *8 horas*, *1 día* o *7 días*, y confirme que desea llevar a cabo la operación.
+. Haz clic en el icono *User Settings* en la esquina superior derecha de la ventana.
+. En la lista desplegable Default performance graphs time range to show, selecciona *5 minutos*, *1 hora*, *8 horas*, *1 día* o *7 días*, y confirma que quieres realizar la operación.
 

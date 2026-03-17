@@ -22,7 +22,7 @@ Pueden existir varios archivos de registro. Cuando el archivo de registro actual
 
 
 .Pasos
-. Seleccione menú:ficha Soporte[Centro de soporte > AutoSupport].
+. En el panel izquierdo, selecciona menú:Support[Support Center > AutoSupport] tab.
 . Seleccione *Ver registro de AutoSupport*.
 +
 Se muestra el cuadro de diálogo donde se enumera el registro de AutoSupport actual.

@@ -33,12 +33,12 @@ Si no tiene el archivo MIB, puede obtenerlo en el sitio de soporte de NetApp:
 
 
 .Pasos
-. Seleccione MENU:Settings[Alerts].
+. En el panel izquierdo, selecciona menú:Settings[Alerts].
 . Seleccione la ficha *SNMP*.
 +
 Los destinos de capturas definidos actualmente se muestran en la tabla.
 
-. Seleccione *Agregar destinos de captura*.
+. Selecciona *Add Trap Destinations*.
 +
 Se abre el cuadro de diálogo Añadir destinos de captura.
 

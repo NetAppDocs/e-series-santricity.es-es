@@ -14,7 +14,11 @@ summary: Para encontrar la ubicación física de una bandeja que se muestra en l
 Para encontrar la ubicación física de una bandeja que se muestra en la página hardware, es posible encender la luz del localizador de la bandeja.
 
 .Pasos
-. Seleccione *hardware*.
+. En el panel izquierdo, selecciona *Hardware*.
+. Si el gráfico muestra las unidades, haga clic en la pestaña * Controladores y componentes *.
++
+El gráfico cambia y muestra las controladoras en lugar de las unidades.
+
 . Seleccione la lista desplegable de Bandeja de controladoras o Bandeja de unidades y, a continuación, seleccione *encender luz localizadora*.
 +
 La luz localizadora de la bandeja se enciende.

@@ -18,7 +18,7 @@ También se puede modificar el porcentaje en el que se envía una alerta (umbral
 
 [NOTE]
 ====
-Esta función no está disponible en el sistema de almacenamiento EF600/EF600C o EF300/EF300C.
+Esta función no está disponible en el sistema de almacenamiento EF80, EF50, EF600/EF600C o EF300/EF300C.
 
 ====
 El sistema expande automáticamente la capacidad asignada de acuerdo con el límite de capacidad establecido. El límite de capacidad establecido permite limitar el crecimiento automático del volumen fino por debajo de la capacidad notificada. Cuando la cantidad de datos escritos se acerca a la capacidad asignada, es posible cambiar el límite de capacidad establecido.
@@ -26,7 +26,7 @@ El sistema expande automáticamente la capacidad asignada de acuerdo con el lím
 Cuando se modifican el límite de capacidad asignada y el umbral de advertencia de un volumen fino, se debe tener en cuenta el espacio que consumirán los datos de usuario del volumen y los datos de los servicios de copia.
 
 .Pasos
-. Seleccione MENU:Storage[Volumes].
+. En el panel izquierdo, selecciona menú:Storage[Volumes].
 . Seleccione la ficha *Supervisión de volumen fino*.
 +
 Se muestra la vista Supervisión de volumen fino.

@@ -17,7 +17,7 @@ La página hardware puede mostrar la vista frontal o la vista trasera de las ban
 La vista trasera muestra las controladoras/IOM y los contenedores de alimentación/ventilador. La vista frontal muestra las unidades.
 
 .Pasos
-. Seleccione *hardware*.
+. En el panel izquierdo, selecciona *Hardware*.
 . Si el gráfico muestra las unidades, haga clic en la pestaña * Controladores y componentes *.
 +
 El gráfico cambia y muestra las controladoras en lugar de las unidades.

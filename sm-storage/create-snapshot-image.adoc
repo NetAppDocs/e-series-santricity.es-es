@@ -24,8 +24,8 @@ Es posible crear manualmente una imagen Snapshot desde un volumen base o un grup
 .Pasos
 . Debe realizar una de las siguientes acciones para crear una imagen Snapshot:
 +
-** Seleccione MENU:Storage[Volumes]. Seleccione el objeto (volumen base o grupo de coherencia Snapshot) y, luego, seleccione menú:Servicios de copia[Crear snapshot instantánea].
-** Seleccione MENU:Storage[Snapshots]. Seleccione la ficha *Imágenes Snapshot* y, a continuación, elija menú:Crear[instantánea].
+** En el panel izquierdo, selecciona menu:Storage[Volumes]. Selecciona el objeto (volumen base o snapshot consistency group) y luego haz clic en el icono menu:ellipsis[Create instant snapshot].
+** En el panel izquierdo, selecciona menu:Storage[Snapshots]. Selecciona la pestaña *Snapshot Images* y luego selecciona menu:Create[Instant snapshot Image].
 +
 Se muestra el cuadro de diálogo Crear imagen Snapshot. Seleccione el objeto (volumen base o grupo de coherencia Snapshot) y haga clic en *Siguiente*. Si se creó una imagen Snapshot anterior para el volumen o grupo de coherencia Snapshot, el sistema crea una Snapshot instantánea de inmediato. De lo contrario, si es la primera vez que se crea una imagen Snapshot para el volumen o el grupo de coherencia Snapshot, se muestra el cuadro de diálogo Confirmar creación de imagen Snapshot.
 

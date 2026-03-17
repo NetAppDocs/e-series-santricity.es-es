@@ -23,8 +23,8 @@ Con la ampliación, se incluye capacidad libre adicional al pool o grupo de vol�
 * La cantidad máxima de volúmenes permitidos en un grupo de volúmenes es de 256.
 * La cantidad máxima de volúmenes permitidos en un pool depende del modelo del sistema de almacenamiento:
 +
-** 2,048 volúmenes (series EF600 y E5700)
-** 1,024 volúmenes (EF300)
+** 2,048 volúmenes (EF80, EF600 y E5700 series)
+** 1,024 volúmenes (EF50 y EF300)
 ** 512 volúmenes (series E4000 y E2800)
 
 
@@ -44,16 +44,16 @@ Al añadir unidades, es posible que sea necesario aumentar la capacidad de conse
 ====
 [NOTE]
 ====
-Evite el uso de unidades compatibles con la función Data Assurance (DA) para añadir capacidad a un pool o un grupo de volúmenes no compatibles con DA. El pool o el grupo de volúmenes no podrán aprovechar las funcionalidades de las unidades compatibles con DA. Contemple la posibilidad de usar unidades no compatibles con DA en esta situación.
+Evita usar unidades que sean compatibles con Data Assurance (DA) para agregar capacidad a un pool o grupo de volúmenes que no sea compatible con DA. El pool o grupo de volúmenes no puede aprovechar las capacidades de la unidad compatible con DA. Considera usar unidades que no sean compatibles con DA en esta situación.
 
 ====
 .Pasos
-. Seleccione MENU:almacenamiento[Pools y grupos de volúmenes].
-. Seleccione el pool o el grupo de volúmenes a los que desea añadir unidades y haga clic en *Añadir capacidad*.
+. En el panel izquierdo, selecciona menú:Storage[Pools y grupos de volúmenes].
+. Selecciona el pool o grupo de volúmenes al que quieres añadir unidades y luego haz clic en el menú:ellipsis icon[Añadir capacidad].
 +
-Se muestra el cuadro de diálogo Añadir capacidad. Solo se muestran las unidades sin asignar que son compatibles con el pool o el grupo de volúmenes.
+Aparece el cuadro de diálogo Add capacity. Solo aparecen las unidades no asignadas que son compatibles con el pool o volume group.
 
-. En *Seleccione las unidades para añadir capacidad...*, seleccione una o varias unidades que desea añadir al pool o grupo de volúmenes existente.
+. En *Select drives to Add capacity...*, selecciona una o varias unidades que quieras añadir al pool o grupo de volúmenes existente.
 +
 El firmware de la controladora ordena las unidades sin asignar de modo que las mejores opciones se enumeren primero. La capacidad libre total añadida al pool o grupo de volúmenes se muestra debajo de la lista en *capacidad total seleccionada*.
 
@@ -111,8 +111,8 @@ Compatible con DA
  a| 
 Indica si la unidad es compatible con la función Data Assurance (DA).
 
-** No se recomienda el uso de unidades compatibles con la función Data Assurance (DA) para añadir capacidad a un pool o un grupo de volúmenes compatibles con DA. El pool o el grupo de volúmenes ya no tendrán funcionalidades DE DA y no será posible habilitar DA en los volúmenes recién creados dentro del pool o grupo de volúmenes.
-** No se recomienda el uso de unidades compatibles con la función Data Assurance (DA) para añadir capacidad a un pool o un grupo de volúmenes no compatibles con DA, ya que el pool o el grupo de volúmenes no podrán aprovechar las funcionalidades de las unidades compatible con DA (los atributos de las unidades no coincidirán). Contemple la posibilidad de usar unidades que no sean compatibles con DA en esta situación.
+** No se recomienda usar unidades que no sean compatibles con Data Assurance (DA) para Add capacity to a DA-capable pool or volume group. El pool o grupo de volúmenes ya no tiene capacidades DA y ya no tienes la opción de habilitar DA en los volúmenes recién creados dentro del pool o grupo de volúmenes.
+** No se recomienda usar unidades que sean aptas para Data Assurance (DA) para agregar capacidad a un pool o grupo de volúmenes que no sea apto para DA, porque ese pool o grupo de volúmenes no puede aprovechar las capacidades de la unidad apta para DA (los atributos de la unidad no coinciden). Considera usar unidades que no sean aptas para DA en esta situación.
 
 
 
@@ -120,7 +120,7 @@ Indica si la unidad es compatible con la función Data Assurance (DA).
  a| 
 Compatible con DULBE
  a| 
-Indica si la unidad tiene la opción de error de bloque lógico no escrito o desasignado (DULBE). DULBE es una opción en las unidades NVMe con la que la cabina de almacenamiento EF300 o EF600 puede admitir volúmenes con aprovisionamiento de recursos.
+Indica si la unidad tiene la opción de Deallocated or Unwritten Logical Block Error (DULBE). DULBE es una opción en las unidades NVMe que permite que la matriz de almacenamiento EF80, EF50, EF300 o EF600 admita volúmenes aprovisionados de recursos.
 
 |===
 ====

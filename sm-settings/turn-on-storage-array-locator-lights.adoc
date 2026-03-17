@@ -15,7 +15,7 @@ summary: 'Para encontrar la ubicación física de una cabina de almacenamiento e
 Para encontrar la ubicación física de una cabina de almacenamiento en un armario, se pueden encender las luces (LED) localizadoras.
 
 .Pasos
-. Seleccione MENU:Settings[System].
+. En el panel izquierdo, selecciona menú:Settings[System].
 . En *General*, haga clic en *encender las luces localizadoras de la matriz de almacenamiento*.
 +
 Se abre el cuadro de diálogo encender las luces localizadoras de la cabina de almacenamiento y se encienden las luces localizadoras de la cabina de almacenamiento correspondiente.

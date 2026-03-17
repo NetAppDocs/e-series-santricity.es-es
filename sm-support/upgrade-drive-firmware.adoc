@@ -23,7 +23,7 @@ Es posible actualizar el firmware de las unidades para asegurarse de tener todas
 
 
 .Pasos
-. Seleccione MENU:Support[Upgrade Center].
+. En el panel izquierdo, selecciona menú:Support[Upgrade Center].
 . Descargue los archivos nuevos del sitio de soporte en el cliente de gestión.
 . En actualización del firmware de la unidad, haga clic en *comenzar actualización*.
 +

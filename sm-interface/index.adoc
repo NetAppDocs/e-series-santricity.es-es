@@ -2,9 +2,9 @@
 permalink: sm-interface/index.html 
 sidebar: sidebar 
 keywords: santricity, system, manager, 
-summary: System Manager 11,9 de SANtricity 
+summary: SANtricity System Manager 12.0 
 ---
-= System Manager 11,9 de SANtricity
+= SANtricity System Manager 12.0
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

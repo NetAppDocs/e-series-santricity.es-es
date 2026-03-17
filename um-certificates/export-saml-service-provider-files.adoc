@@ -23,7 +23,7 @@ Si es necesario, se pueden exportar metadatos de proveedor de servicios para la 
 En esta tarea, se exportan metadatos de la controladora. IDP necesita estos metadatos para establecer una relación de confianza con la controladora y procesar solicitudes de autenticación. El archivo incluye información, como el nombre de dominio o la dirección IP de la controladora, que IDP puede usar para enviar solicitudes.
 
 .Pasos
-. Seleccione MENU:Settings[Access Management].
+. En el panel izquierdo, selecciona menú:Settings[Access Management].
 . Seleccione la pestaña *SAML*.
 . Seleccione *Exportar*.
 +

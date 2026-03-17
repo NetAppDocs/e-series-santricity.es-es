@@ -23,7 +23,7 @@ Si se configura Access Management con las funcionalidades del lenguaje de marcad
 
 ====
 .Pasos
-. Seleccione MENU:Settings[System].
+. En el panel izquierdo, selecciona menú:Settings[System].
 . En la sección General, seleccione *Habilitar/deshabilitar tiempo de espera de la sesión*.
 +
 Se abre el cuadro de diálogo Habilitar/deshabilitar tiempo de espera de la sesión.

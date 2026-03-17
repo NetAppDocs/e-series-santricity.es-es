@@ -19,7 +19,7 @@ Si la controladora tiene un puerto Iser over InfiniBand, se puede configurar la 
 
 
 .Pasos
-. Seleccione *hardware*.
+. En el panel izquierdo, selecciona *Hardware*.
 . Si el gráfico muestra las unidades, haga clic en la pestaña * Controladores y componentes *.
 +
 El gráfico cambia y muestra las controladoras en lugar de las unidades.

@@ -22,8 +22,8 @@ Una imagen Snapshot muestra el estado pendiente debido a las siguientes condicio
 
 
 .Pasos
-. Seleccione MENU:almacenamiento[Pools y grupos de volúmenes].
+. En el panel izquierdo, selecciona menú:Storage[Pools y grupos de volúmenes].
 . Haga clic en la pestaña *capacidad reservada*.
-. Seleccione el grupo Snapshot en el que desea cancelar una imagen Snapshot pendiente y haga clic en menú:tareas no comunes[Cancelar imagen Snapshot pendiente].
+. Selecciona el grupo de instantáneas para el que quieres cancelar una imagen de instantánea pendiente y luego haz clic en el icono de menú:ellipsis[Cancel pending snapshot image].
 . Haga clic en *Sí* para confirmar que desea cancelar la imagen Snapshot pendiente.
 

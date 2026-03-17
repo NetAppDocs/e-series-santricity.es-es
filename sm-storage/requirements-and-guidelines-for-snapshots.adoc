@@ -20,7 +20,7 @@ Al crear y utilizar Snapshot, revise los siguientes requisitos y directrices.
 * Cada imagen Snapshot se asocia con exactamente un grupo Snapshot.
 * Se crea un grupo Snapshot la primera vez que se crea una imagen Snapshot instantánea o programada para un objeto asociado. Esto genera capacidad reservada.
 +
-Es posible ver los grupos Snapshot en la página Pools y grupos de volúmenes.
+Puedes ver los grupos de instantáneas desde la página de Pools y grupo de volúmenes.
 
 * No se producen imágenes Snapshot programadas cuando la cabina de almacenamiento se encuentra apagada o sin conexión.
 * Si se elimina un grupo Snapshot que contiene una programación Snapshot, también se elimina esa programación.

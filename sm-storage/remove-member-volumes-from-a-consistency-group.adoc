@@ -18,7 +18,7 @@ Es posible quitar un volumen miembro de un grupo de coherencia Snapshot existent
 Cuando se quita un volumen miembro de un grupo de coherencia Snapshot, System Manager elimina automáticamente los objetos Snapshot asociados con el volumen miembro.
 
 .Pasos
-. Seleccione MENU:Storage[Snapshots].
+. En el panel izquierdo, selecciona menú:Storage[Snapshots].
 . Haga clic en la ficha *grupos de coherencia de instantánea*.
 . Expanda el grupo de coherencia Snapshot que desea modificar mediante el signo más (+) junto al grupo.
 . Seleccione el volumen miembro que desea eliminar y, a continuación, haga clic en *Quitar*.

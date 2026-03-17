@@ -26,7 +26,7 @@ La función Borrar no admite algunos modelos de unidad anteriores. Si intenta bo
 
 ====
 .Pasos
-. Seleccione *hardware*.
+. En el panel izquierdo, selecciona *Hardware*.
 . Si el gráfico muestra los controladores, haga clic en la pestaña *Drives*.
 +
 El gráfico cambia y muestra las unidades en lugar de las controladoras.
@@ -42,12 +42,12 @@ La vista de bandeja muestra solo las unidades no asignadas; el resto aparecen at
 *Posible pérdida de datos* -- la operación de borrado no se puede deshacer. Asegúrese de seleccionar las unidades correctas durante el procedimiento.
 
 ====
-. En el menú contextual, seleccione *Borrar*.
+. En el menú contextual, selecciona *Borrar unidades*.
 +
 Se abre el cuadro de diálogo Borrar unidades, donde se muestran todas las unidades elegibles para una operación de borrado.
 
 . Si lo desea, seleccione unidades adicionales de la tabla. No puede seleccionar _All_ unidades; asegúrese de que una unidad permanece sin seleccionar.
-. Confirme la operación escribiendo `erase`Y, a continuación, haga clic en *Borrar*.
+. Confirma la operación escribiendo `erase`, y luego haz clic en *Borrar unidades*.
 +
 [CAUTION]
 ====
@@ -58,7 +58,7 @@ Asegúrese de que desea continuar con esta operación. Una vez que haga clic en 
 
 
 .Resultados
-La operación de borrado puede llevar varios minutos o varias horas. Puede ver el estado en MENU:Inicio[Ver operaciones en curso]. Cuando se completa la operación Borrar, las unidades están disponibles para usar en otro grupo de volúmenes o pool de discos, o en otra cabina de almacenamiento.
+La operación de borrado puede tardar varios minutos o varias horas. Puedes ver el estado en menú:Almacenamiento[Operaciones en curso]. Cuando finaliza la operación de borrado, las unidades están disponibles para usarse en otro grupo de volúmenes o grupo de discos, o en otra matriz de almacenamiento.
 
 .Después de terminar
 Si desea volver a usar la unidad, primero debe inicializarla. Para ello, seleccione *inicializar* en el menú contextual de la unidad.

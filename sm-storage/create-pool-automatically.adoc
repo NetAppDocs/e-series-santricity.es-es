@@ -31,13 +31,13 @@ Se debe recordar lo siguiente:
 
 Se puede abrir el cuadro de diálogo Configuración automática del pool mediante cualquiera de los siguientes métodos:
 
-* Si se detecta capacidad sin asignar, se muestra la recomendación Configuración automática del pool en el área notificación de la página Inicio. Haga clic en *Ver configuración automática del pool* para abrir el cuadro de diálogo.
+* Cuando se detecta capacidad no asignada, aparece la recomendación de Pool Auto-Configuration en el área de notificaciones (icono de campana en la parte superior de la ventana). Haz clic en *View Pool Auto-Configuration* para abrir el cuadro de diálogo.
 * También se puede abrir el cuadro de diálogo Configuración automática del pool en la página Pools y grupos de volúmenes, como se describe en la siguiente tarea.
 
 
 .Pasos
-. Seleccione MENU:almacenamiento[Pools y grupos de volúmenes].
-. Seleccione MENU:More[Iniciar configuración automática del pool].
+. En el panel izquierdo, selecciona menú:Storage[Pools y grupos de volúmenes].
+. Haz clic en el icono del menú:ellipsis[Launch pool auto-configuration].
 +
 En la tabla de resultados, se muestra una lista de los pools nuevos, los pools existentes con unidades añadidas o ambos. El nombre de un pool nuevo es, de forma predeterminada, un número secuencial.
 
@@ -51,8 +51,7 @@ System Manager realiza las siguientes tareas:
 ** Añade las unidades del mismo tipo al pool existente y usa los otros tipos de unidades para crear distintos pools si las unidades nuevas son de distinto tipo.
 
 
-. Para cambiar el nombre de una nueva agrupación, haga clic en el icono *Editar* (el lápiz).
-. Para ver las características adicionales del pool, sitúe el cursor sobre el icono *Detalles* (la página) o toque el icono.
+. Para ver características adicionales de la agrupación, haz clic en el nombre de la agrupación que aparece.
 +
 Se muestra información acerca del tipo de unidad, la función de seguridad, la funcionalidad Data Assurance (DA), la protección contra pérdida de bandeja y la protección contra pérdida de cajón.
 

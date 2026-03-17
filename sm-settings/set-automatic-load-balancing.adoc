@@ -28,7 +28,7 @@ Puede ser conveniente deshabilitar Automatic Load Balancing en la cabina de alma
 
 
 .Pasos
-. Seleccione MENU:Settings[System].
+. En el panel izquierdo, selecciona menú:Settings[System].
 . Desplácese hasta *Configuración adicional* y, a continuación, haga clic en *Habilitar/deshabilitar equilibrio de carga automático*.
 +
 El texto debajo de esta opción indica si la función se encuentra habilitada o deshabilitada.

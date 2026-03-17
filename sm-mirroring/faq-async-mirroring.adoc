@@ -118,7 +118,7 @@ La función de mirroring se configura en la interfaz de SANtricity Unified Manag
 
 [NOTE]
 ====
-La función de mirroring síncrono no está disponible en las cabinas de almacenamiento EF600/EF600C o EF300/EF300C.
+La duplicación síncrona no está disponible en la matriz de almacenamiento EF80, EF50, EF600/EF600C o EF300/EF300C.
 
 ====
 Para habilitar y configurar el mirroring entre dos cabinas, compruebe lo siguiente:
@@ -143,7 +143,7 @@ Siga estas directrices para poder crear un grupo de coherencia de reflejos.
 
 [NOTE]
 ====
-El mirroring síncrono no está disponible en el sistema de almacenamiento EF600/EF600C o EF300/EF300C.
+La duplicación síncrona no está disponible en el sistema de almacenamiento EF80, EF50, EF600/EF600C o EF300/EF300C.
 
 ====
 El grupo de coherencia se crea en Unified Manager en el asistente Crear pareja reflejada.

@@ -33,7 +33,7 @@ Debe programar una ventana de mantenimiento de tiempo de inactividad y detener t
 En esta tarea, se describe cómo usar System Manager para habilitar un paquete de funciones. Al finalizar, debe reiniciar la cabina de almacenamiento.
 
 .Pasos
-. Seleccione MENU:Settings[System].
+. En el panel izquierdo, selecciona menú:Settings[System].
 . En *Complementos*, seleccione *Cambiar paquete de funciones*.
 . Haga clic en *examinar* y, a continuación, seleccione el archivo de claves.
 +

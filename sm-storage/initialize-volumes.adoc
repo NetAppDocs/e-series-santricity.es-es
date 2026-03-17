@@ -41,8 +41,8 @@ Los siguientes tipos de volúmenes _no se pueden inicializar:
 Este tema se aplica solo a volúmenes estándar creados a partir de pools o grupos de volúmenes.
 
 .Pasos
-. Seleccione MENU:Storage[Volumes].
-. Seleccione cualquier volumen y, a continuación, seleccione MENU:más[inicializar volúmenes].
+. En el panel izquierdo, selecciona menú:Storage[Volumes].
+. Haz clic en el icono del menú:ellipsis[Initialize volumes].
 +
 Se muestra el cuadro de diálogo inicializar volúmenes. Todos los volúmenes en la cabina de almacenamiento aparecen en este cuadro de diálogo.
 
@@ -56,4 +56,4 @@ System Manager realiza lo siguiente:
 * Borra los índices de bloque, lo que provoca que los bloques no escritos se lean como si estuvieran llenos de ceros (el volumen aparecerá como completamente vacío).
 
 
-Seleccione MENU:Inicio[Ver operaciones en curso] para ver el progreso de la operación de inicialización que está en ejecución actualmente para el volumen seleccionado. Es posible que esta operación demore y que afecte el rendimiento del sistema.
+Selecciona menú:Storage[Operations in Progress] para ver el progreso de la operación de inicialización que se está ejecutando actualmente para el volumen seleccionado. Esta operación puede ser larga y podría afectar el rendimiento del sistema.

@@ -18,7 +18,7 @@ El perfil de la cabina de almacenamiento proporciona una descripción de todos l
 Es posible usar el perfil de la cabina de almacenamiento a modo de ayuda durante la recuperación o como información general de la configuración actual de la cabina de almacenamiento. Puede ser conveniente guardar una copia del perfil de la cabina de almacenamiento en el cliente de gestión y conservar una copia impresa del perfil de la cabina de almacenamiento con la cabina de almacenamiento. Cree una nueva copia del perfil de la cabina de almacenamiento si cambia la configuración.
 
 .Pasos
-. Seleccione menú:ficha Soporte[Centro de soporte > Recursos de soporte].
+. En el panel izquierdo, selecciona el menú:Support[Support Center > Support Resources] tab.
 . Desplácese hasta *Iniciar información detallada de la matriz de almacenamiento* y, a continuación, seleccione *Perfil de la matriz de almacenamiento*.
 +
 Se muestra el informe en la pantalla.

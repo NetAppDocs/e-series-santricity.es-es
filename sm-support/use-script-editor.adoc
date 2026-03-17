@@ -1,0 +1,213 @@
+---
+permalink: sm-support/use-script-editor.html 
+sidebar: sidebar 
+keywords: SANtricity, System Manager, E-Series, script editor, script file, execute script 
+summary: Usa el editor de secuencias de comandos para crear o editar un archivo de secuencia de comandos, guardar un archivo de secuencia de comandos en el disco local de la estación de gestión del almacenamiento o cargar un archivo de secuencia de comandos desde el disco. 
+---
+= Usar el editor de scripts
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Usa el editor de secuencias de comandos para crear o editar un archivo de secuencia de comandos, guardar un archivo de secuencia de comandos en el disco local de la estación de gestión del almacenamiento o cargar un archivo de secuencia de comandos desde el disco.
+
+.Antes de empezar
+El editor de Script se comunica con la matriz de almacenamiento para permitir la comprobación de la sintaxis del script y la ejecución de comandos. Los comandos de script que escribes en el editor de Script generalmente se ejecutan en la matriz de almacenamiento.
+
+El editor de Script ofrece dos vistas en la ventana:
+
+* Panel del editor – Proporciona un área para introducir o editar comandos de script.
+* Panel de salida: muestra los resultados de la verificación o ejecución. Una barra divisora divide la ventana entre el panel del editor y el panel de salida.
+* El editor de Script no es compatible con comandos que requieren archivos de entrada, como firmware del controlador, NVSRAM o actualizaciones de firmware de la unidad.
+* El editor de Script admite comandos que generan archivos de salida.
+* Hay algunos comandos que requieren que la ejecución se realice en el cliente (comandos del lado del cliente).
++
+** Los únicos comandos del lado del cliente compatibles con esta versión son `on error stop` y `on error continue`.
+** El editor de scripts genera un error si intentas ejecutar cualquier otro comando del lado del cliente.
+
+
+
+
+
+
+== Abre el editor de Script
+
+.Pasos
+. En el panel izquierdo, selecciona menú:Support[Script editor].
++
+La siguiente tabla enumera las opciones de archivo disponibles en el editor de Script:
+
++
+.Detalles del campo
+[%collapsible]
+====
+[cols="25h,~"]
+|===
+| Tarea | Acción 
+
+
+ a| 
+Abre un nuevo script
+ a| 
+.. Haz clic en *Cargar archivo de script* para subir un archivo de script existente al editor de scripts.
++
+El editor de scripts abre el archivo de script seleccionado en el panel del editor.
+
+
+
+
+
+ a| 
+Verifica la sintaxis del comando script
+ a| 
+.. Haz clic en *Comprobar sintaxis* para verificar la sintaxis del script actual en el panel del editor.
++
+El editor de Script analiza las sentencias del archivo de script, una línea a la vez, y verifica que tengan la sintaxis correcta. Cualquier error de sintaxis aparece en el panel de salida, que informa el número de línea del error y una descripción del error.
+
++
+Si el Script editor encuentra un error de sintaxis, no se realiza ninguna otra verificación de sintaxis en el script.
+
++
+Corrige cualquier error de sintaxis y vuelve a ejecutar *Syntax Check* para validar la corrección del error y para revisar el resto de las sentencias en el script.
+
+
+
+
+
+ a| 
+Ejecutar script
+ a| 
+.. Haz clic en *Ejecutar script* para ejecutar el script actual en el panel del editor.
++
+El editor de scripts inicia una operación de comprobación de sintaxis, luego para cada comando de script del archivo de entrada, se ejecuta un comando en el controlador de la matriz de almacenamiento.
+
++
+Si el Script editor encuentra un error de sintaxis, detiene la ejecución y muestra un mensaje de error.
+
++
+Corrige el error y vuelve a ejecutar *Syntax check* para validar la corrección del error.
+
++
+
+NOTE: Si se produce un error de ejecución, es posible que el script no continúe ejecutándose según la sentencia de script incluida `On Error`. La `On Error Stop` sentencia detiene el script si se produce un error de ejecución. La `On Error
+Continue` sentencia permite que el script continúe incluso después de que ocurra un error de ejecución. Esta sentencia es la configuración predeterminada.
+
+
+
+
+
+ a| 
+Editar un script existente
+ a| 
+.. Haz clic en *Cargar archivo de script* para subir un archivo de script existente al editor de scripts.
+.. En el panel del editor, haz los cambios necesarios en el script.
+
+
+
+
+ a| 
+Guarda el script en un archivo local
+ a| 
+.. Haz clic en *Guardar archivo de script* para descargar los cambios en el panel de script como un nuevo archivo de script.
+
+
+
+
+ a| 
+Borra el texto en el panel del editor de Script
+ a| 
+.. Haz clic en *Borrar editor* para borrar el texto en el panel del editor.
+
+
+
+
+ a| 
+Guarda los resultados de salida en un archivo local
+ a| 
+.. Haz clic en *Guardar resultados* para descargar el contenido del panel de salida como un archivo nuevo.
+
+
+|===
+====
+
+
+
+
+=== Escribe scripts en el editor de scripts
+
+.Antes de empezar
+Cuando uses el editor de Script para escribir comandos de script, asegúrate de seguir estas directrices: * Termina todas las sentencias con un punto y coma (;). * Separa cada comando base y sus parámetros primarios y secundarios asociados con un espacio. * Los parámetros no distinguen mayúsculas de minúsculas cuando se introducen en el editor de Script. * Coloca cada sentencia en una línea separada. * Añade comentarios a tus scripts para que te sea más fácil a ti y a futuros usuarios entender el propósito de las sentencias de comandos.
+
+.Pasos
+. Rodea los comentarios multilínea con los caracteres `/*` y `*/`.
++
+Si el motor de script no encuentra tanto una anotación de comentario inicial como una anotación de comentario final, aparece un mensaje de error y se interrumpe la ejecución del script.
+
+. Los comentarios de una sola línea empiezan con dos barras inclinadas (`//`) y terminan con un carácter de fin de línea, que puedes insertar presionando *Enter*.
++
+Si el motor de script no encuentra un carácter de fin de línea en el script después de procesar un comentario, aparece un mensaje de error y se termina la ejecución del script.
+
++
+Este error suele ocurrir cuando pones un comentario al final de un script y se te olvida pulsar *Enter*.
+
+. Usa la sentencia `show` para incrustar comentarios en un script que aparecerán en el panel del editor durante la ejecución del script.
++
+La `show` sentencia es útil para depurar scripts.
+
++
+Incluir una sentencia `show setting controller mode` en tu script hace que la siguiente línea aparezca en el panel de salida cuando se procese esta línea durante la ejecución del script:
+
++
+[listing]
+----
+setting controller mode
+----
+
+
+
+
+=== Interpretar los resultados de la ejecución del script
+
+Durante la ejecución del script, aparecen mensajes en el panel de salida que empiezan con:
+
+[listing]
+----
+Executing script...
+----
+Si se produce un error durante la fase de análisis, el error aparece en el panel de salida, que proporciona el número de línea, el número de columna y una descripción del error de sintaxis. El siguiente es un ejemplo de un mensaje de error de sintaxis.
+
+Si escribes la siguiente sentencia en un script:
+
+`set controller[a] mod = passive;`
+
+El panel de salida muestra el error de sintaxis resultante de la siguiente manera:
+
+[listing]
+----
+Encountered "mod" at line 2, column 19
+Was expecting one of...
+"mode"...
+"availability"...
+"NVSRAMbyte"...
+----
+Si se produce un error durante la ejecución de un script, aparece un mensaje en el panel de salida, indica que el comando falló y muestra una descripción del error.
+
+Por ejemplo, si escribes la siguiente sentencia en un script:
+
+`set volume [three] userLabel="OneOne";`
+
+El error resultante aparece en el siguiente panel de salida. No se pudo enviar el comando a la matriz de almacenamiento porque estaba en un estado No responde.
+
+[listing]
+----
+Unable to change the volume user label using the Set Volume command at line 1
+Error - 1 - Could not communicate with the storage array to complete this request.
+----
+
+NOTE: Ciertos errores de ejecución, incluida la imposibilidad de comunicarse con la matriz de almacenamiento, siempre provocan la detención de la ejecución del script. En estos casos, la ejecución se detiene incluso si usas la sentencia `On Error Continue`.
+
+.Resultados
+Después de ejecutar un script, revisa el panel de salida para comprobar si tuvo éxito o si hubo errores.

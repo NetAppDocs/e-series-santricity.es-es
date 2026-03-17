@@ -17,7 +17,7 @@ Detecte varias cabinas para descubrir todas las cabinas de almacenamiento de la 
 .Antes de empezar
 * Inició sesión con un perfil de usuario que cuenta con permisos de administración de seguridad.
 * La cabina de almacenamiento debe estar instalada y configurada correctamente.
-* Las contraseñas de las cabinas de almacenamiento deben configurarse mediante el icono Access Management de System Manager.
+* Las contraseñas de las matrices de almacenamiento deben configurarse usando la página de Access Management de System Manager.
 * Para resolver certificados que no son de confianza, debe tener archivos de certificado de confianza de una entidad de certificación (CA) y los archivos de certificado están disponibles en el sistema local.
 
 

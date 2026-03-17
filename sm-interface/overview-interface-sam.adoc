@@ -19,18 +19,11 @@ System Manager de SANtricity es una interfaz basada en Web que permite gestionar
 
 La página Inicio ofrece una vista de consola para la gestión cotidiana de la cabina de almacenamiento. Cuando se inicia sesión en System Manager, la página Inicio es la primera pantalla que aparece.
 
-La vista de consola incluye cuatro áreas de resumen que contienen información clave sobre el estado y la condición de la cabina de almacenamiento. Es posible encontrar más información en el área de resumen.
+La vista de consola comprende tres áreas de resumen que contienen información clave sobre el estado y la salud de tu matriz de almacenamiento. Puedes encontrar más información en el área de resumen.
 
 [cols="25h,~"]
 |===
 | Zona | Descripción 
-
-
- a| 
-Notificaciones
- a| 
-El área de notificaciones muestra notificaciones de problemas que indican el estado de la cabina de almacenamiento y sus componentes. Además, este portlet muestra alertas automatizadas que pueden ayudarle a resolver problemas antes de que afecten a otras áreas de su entorno de almacenamiento.
-
 
 
  a| 
@@ -55,40 +48,21 @@ El área de jerarquía de almacenamiento ofrece una vista organizada de los dist
 |===
 
 
+== Área de notificaciones
+
+El área de Notificaciones está disponible a través del icono de campana en la esquina superior de la ventana. El área de Notificaciones muestra notificaciones de problemas que indican el estado de la matriz de almacenamiento y sus componentes. Además, esta sección muestra alertas automatizadas que pueden ayudarte a solucionar problemas antes de que afecten a otras áreas de tu entorno de almacenamiento.
+
+
+
 == Configuración de la interfaz
 
 Puede cambiar las preferencias de presentación y otras configuraciones desde la interfaz principal.
 
-[cols="25h,~"]
-|===
-| Ajuste | Descripción 
-
-
- a| 
-Preferencias de presentación
- a| 
-Cambie los valores de capacidad y el margen de tiempo del menú desplegable Preferencias de la esquina superior derecha de la interfaz.
-
-
-
- a| 
-Tiempos de espera de sesión
- a| 
-Configurar los tiempos de espera para que las sesiones inactivas de los usuarios se desconecten después de un periodo especificado.
-
-
-
- a| 
-Ayuda
- a| 
-Acceda a la documentación de la Ayuda y a otros recursos desde el menú desplegable de la esquina superior derecha de la interfaz.
-
-|===
 
 
 == Inicios de sesión y contraseñas de usuario
 
-El usuario actual que ha iniciado sesión en el sistema se muestra en la esquina superior derecha de la interfaz.
+El usuario actual que ha iniciado sesión en el sistema se muestra en la configuración de usuario.
 
 Para obtener más información sobre usuarios y contraseñas, consulte:
 

@@ -23,7 +23,7 @@ Si la controladora rechaza una conexión debido a que no puede validar la cadena
 Es posible que sea necesario importar certificados de la pestaña de confianza para permitir que otro servidor se comunique con las controladoras (por ejemplo, un servidor de syslog o un servidor LDAP que utiliza TLS).
 
 .Pasos
-. Seleccione MENU:Settings[Certificates].
+. En el panel izquierdo, selecciona menú:Settings[Certificates].
 . En la ficha Trusted, seleccione *Importar*.
 +
 Se abre un cuadro de diálogo para importar los archivos de certificado de confianza.

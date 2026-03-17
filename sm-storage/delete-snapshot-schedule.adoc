@@ -18,9 +18,9 @@ Si ya no desea recoger imágenes Snapshot, es posible eliminar una programación
 Cuando se elimina una programación Snapshot, no se eliminan las imágenes Snapshot junto con ella. Si considera que la recogida de imágenes Snapshot puede reanudarse en algún momento, debe suspender la programación Snapshot en lugar de eliminarla.
 
 .Pasos
-. Seleccione MENU:Storage[Snapshots].
-. Haga clic en la ficha *programaciones*.
-. Seleccione la programación Snapshot que desea eliminar y confirme la operación.
+. En el panel izquierdo, selecciona menú:Storage[Snapshots].
+. Haz clic en la pestaña *Snapshots Schedules*.
+. Selecciona la planificación de instantáneas que quieres eliminar, haz clic en *Eliminar* y confirma la operación.
 
 
 .Resultados

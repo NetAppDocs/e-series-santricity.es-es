@@ -23,7 +23,7 @@ Para usar un nombre de dominio completo, debe configurar un servidor DNS en amba
 
 ====
 .Pasos
-. Seleccione MENU:Settings[Alerts].
+. En el panel izquierdo, selecciona menú:Settings[Alerts].
 . Seleccione la ficha *correo electrónico*.
 . Seleccione *Configurar el servidor de correo*.
 +

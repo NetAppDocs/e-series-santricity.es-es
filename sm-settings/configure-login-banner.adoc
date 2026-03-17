@@ -18,7 +18,7 @@ Puede crear un banner de inicio de sesión que se presente a los usuarios antes 
 Al crear un banner, este aparece antes de la pantalla de inicio de sesión en un cuadro de diálogo.
 
 .Pasos
-. Seleccione MENU:Settings[System].
+. En el panel izquierdo, selecciona menú:Settings[System].
 . En la sección General, seleccione *Configurar banner de inicio de sesión*.
 +
 Se abre el cuadro de diálogo Configurar banner de inicio de sesión.

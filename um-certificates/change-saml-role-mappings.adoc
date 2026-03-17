@@ -21,7 +21,7 @@ Si anteriormente configuró SAML para Access Management, puede cambiar las asign
 
 
 .Pasos
-. Seleccione MENU:Settings[Access Management].
+. En el panel izquierdo, selecciona menú:Settings[Access Management].
 . Seleccione la pestaña *SAML*.
 . Seleccione *asignación de roles*.
 +

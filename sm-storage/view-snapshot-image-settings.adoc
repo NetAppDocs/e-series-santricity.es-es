@@ -18,7 +18,7 @@ Es posible ver las propiedades, el estado, la capacidad reservada y los objetos 
 Los objetos asociados a una imagen Snapshot incluyen el volumen base o grupo de coherencia Snapshot para el cual esta imagen Snapshot es un punto de restauración, el grupo Snapshot asociado y cualquier volumen Snapshot creado a partir de la imagen Snapshot. Use la configuración Snapshot para determinar si desea copiar o convertir la imagen Snapshot.
 
 .Pasos
-. Seleccione MENU:Storage[Snapshots].
+. En el panel izquierdo, selecciona menú:Storage[Snapshots].
 . Haga clic en la ficha *Imágenes Snapshot*.
 . Seleccione la imagen de instantánea que desea ver y haga clic en *Ver configuración*.
 +

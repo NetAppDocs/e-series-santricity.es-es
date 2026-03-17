@@ -43,12 +43,12 @@ Es posible realizar las siguientes acciones:
 
 
 .Pasos
-. Seleccione MENU:Storage[Volumes].
-. Seleccione cualquier volumen y luego seleccione MENU:más[Cambiar configuración de análisis de medios].
+. En el panel izquierdo, selecciona menú:Storage[Volumes].
+. Haz clic en el icono de menú:ellipsis[Cambiar configuración de escaneo de medios de volumen].
 +
-Se muestra el cuadro de diálogo Cambiar configuración de escaneo de medios de unidad. Todos los volúmenes en la cabina de almacenamiento aparecen en este cuadro de diálogo.
+Aparece la ventana Change Drive Media Scan Settings. Todos los volúmenes de la matriz de almacenamiento aparecen en este cuadro de diálogo.
 
-. Para activar el escaneo de medios, seleccione la casilla de verificación *Escanear medios durante...*.
+. Para activar el escaneado de soportes, selecciona la casilla de comprobación *Escaneado de soportes*.
 +
 La desactivación de la casilla de comprobación del análisis de medios suspende toda la configuración del análisis de medios.
 

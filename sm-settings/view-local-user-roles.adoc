@@ -21,7 +21,7 @@ Debe iniciar sesión con un perfil de usuario que cuente con permisos de adminis
 Los perfiles de usuario y las asignaciones no pueden cambiarse. Solo las contraseñas pueden modificarse.
 
 .Pasos
-. Seleccione MENU:Settings[Access Management].
+. En el panel izquierdo, selecciona menú:Settings[Access Management].
 . Seleccione la ficha *roles de usuario local*.
 +
 Los perfiles de usuario se muestran en la tabla:

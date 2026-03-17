@@ -18,7 +18,7 @@ Puede crear un token de acceso para la autenticación con la API DE REST o la in
 NOTE: Los tokens no tienen contraseñas, por lo que debe administrarlas con cuidado.
 
 .Pasos
-. Seleccione MENU:Settings[Access Management].
+. En el panel izquierdo, selecciona menú:Settings[Access Management].
 . Seleccione la ficha *tokens de acceso*.
 . Seleccione *Ver/editar configuración de token de acceso*. En el cuadro de diálogo, asegúrese de que la casilla de verificación *Habilitar tokens de acceso* está activada. Haga clic en *Guardar* para cerrar el cuadro de diálogo.
 . Seleccione *Crear símbolo de acceso*.

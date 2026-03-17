@@ -45,7 +45,7 @@ Realice esta operación solo cuando el soporte técnico se lo indique.
 ====
 .Pasos
 . Si la cabina de almacenamiento contiene una sola controladora o no existe un controlador multivía instalado, detenga la actividad de I/o de la cabina de almacenamiento para evitar errores en la aplicación. Si la cabina de almacenamiento tiene dos controladoras y existe un controlador multivía instalado, no necesita detener la actividad de I/O.
-. Seleccione MENU:Support[Upgrade Center].
+. En el panel izquierdo, selecciona menú:Support[Upgrade Center].
 . Descargue el archivo nuevo del sitio de soporte en el cliente de gestión.
 +
 .. Haga clic en *Soporte de NetApp* para iniciar la página web de soporte.

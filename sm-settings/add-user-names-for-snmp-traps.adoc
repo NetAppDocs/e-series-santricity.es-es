@@ -15,7 +15,7 @@ summary: Puede agregar hasta 256 usuarios para capturas SNMPv3.
 Puede agregar hasta 256 usuarios para capturas SNMPv3.
 
 .Pasos
-. Seleccione MENU:Settings[Alerts].
+. En el panel izquierdo, selecciona menú:Settings[Alerts].
 . Seleccione la ficha *SNMP*.
 +
 Los destinos de capturas y los nombres de usuario aparecen en la tabla.

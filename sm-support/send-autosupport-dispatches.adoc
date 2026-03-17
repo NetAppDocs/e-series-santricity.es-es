@@ -21,7 +21,7 @@ Se debe habilitar la función AutoSupport. Puede comprobar si está habilitada e
 Esta operación recoge datos de soporte y los envía automáticamente al soporte técnico para que puedan solucionar problemas.
 
 .Pasos
-. Seleccione menú:ficha Soporte[Centro de soporte > AutoSupport].
+. En el panel izquierdo, selecciona menú:Support[Support Center > AutoSupport] tab.
 . Seleccione *Enviar envío AutoSupport*.
 +
 Aparece el cuadro de diálogo Enviar envío AutoSupport.

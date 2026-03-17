@@ -17,7 +17,11 @@ Un ciclo de aprendizaje es un ciclo automático para calibrar el indicador de ba
 La actualización de los ciclos de aprendizaje afecta a ambas baterías de la controladora.
 
 .Pasos
-. Seleccione *hardware*.
+. En el panel izquierdo, selecciona *Hardware*.
+. Si el gráfico muestra las unidades, haga clic en la pestaña * Controladores y componentes *.
++
+El gráfico cambia y muestra las controladoras en lugar de las unidades.
+
 . Seleccione la lista desplegable para la Bandeja del controlador y, a continuación, seleccione *Ver configuración*.
 . Seleccione la ficha *baterías*.
 . Seleccione *Actualizar ciclos de aprendizaje de la batería*.

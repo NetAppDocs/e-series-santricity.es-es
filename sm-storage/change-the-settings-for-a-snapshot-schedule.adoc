@@ -20,8 +20,8 @@ Es posible importar la configuración de una programación Snapshot existente, o
 Dado que la programación Snapshot está asociada a un grupo Snapshot o de coherencia Snapshot, la capacidad reservada puede verse afectada por los cambios realizados en la configuración de la programación.
 
 .Pasos
-. Seleccione MENU:Storage[Snapshots].
-. Haga clic en la ficha *programaciones*.
+. En el panel izquierdo, selecciona menú:Storage[Snapshots].
+. Haz clic en la pestaña *Snapshot Schedules*.
 . Seleccione la programación de instantáneas que desea cambiar y, a continuación, haga clic en *Editar*.
 +
 Se muestra el cuadro de diálogo Editar programación Snapshot.

@@ -24,7 +24,7 @@ Es posible añadir un volumen miembro nuevo a un grupo de coherencia Snapshot ex
 Es posible añadir volúmenes estándar o finos al grupo de coherencia Snapshot. El volumen base puede estar en un pool o un grupo de volúmenes.
 
 .Pasos
-. Seleccione MENU:Storage[Snapshots].
+. En el panel izquierdo, selecciona menú:Storage[Snapshots].
 . Seleccione la ficha *grupos de coherencia de instantánea*.
 +
 Se muestra la tabla y se indican todos los grupos de coherencia Snapshot asociados con la cabina de almacenamiento.

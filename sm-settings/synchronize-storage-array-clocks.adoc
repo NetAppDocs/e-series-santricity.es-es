@@ -28,7 +28,7 @@ Una vez que se realiza la sincronización, se puede observar que las estadístic
 
 ====
 .Pasos
-. Seleccione MENU:Settings[System].
+. En el panel izquierdo, selecciona menú:Settings[System].
 . En *General*, haga clic en *Sincronizar relojes de cabinas de almacenamiento*.
 +
 Se abre el cuadro de diálogo Sincronizar relojes de cabinas de almacenamiento. Muestra la fecha y hora actuales de la controladora y el equipo que se usa como cliente de gestión.

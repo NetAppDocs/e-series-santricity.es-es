@@ -31,7 +31,7 @@ El host no puede obtener acceso de lectura/escritura al volumen base existente d
 
 ====
 .Pasos
-. Seleccione MENU:Storage[Snapshots].
+. En el panel izquierdo, selecciona menú:Storage[Snapshots].
 . Seleccione la ficha *Imágenes Snapshot*.
 . Seleccione la imagen Snapshot y, a continuación, seleccione MENU:Rollback[Start].
 +
@@ -44,7 +44,7 @@ Se muestra el cuadro de diálogo aumentar la capacidad reservada.
 +
 .. Utilice el cuadro de desplazamiento para ajustar el porcentaje de capacidad.
 +
-Si el pool o el grupo de volúmenes en el que se encuentra el objeto de almacenamiento seleccionado no tiene capacidad libre y la cabina de almacenamiento tiene capacidad sin asignar, puede añadir capacidad. Puede crear un nuevo pool o grupo de volúmenes y volver a intentar esta operación con la nueva capacidad libre de ese pool o grupo de volúmenes.
+Si no existe capacidad libre en el pool o grupo de volúmenes que contiene el objeto de almacenamiento que seleccionaste y el storage array tiene Unassigned Capacity, puedes Add capacity. Puedes crear un nuevo pool o grupo de volúmenes y luego volver a intentar esta operación usando la nueva capacidad libre en ese pool o grupo de volúmenes.
 
 .. Haga clic en *aumentar*.
 
@@ -60,6 +60,6 @@ System Manager realiza lo siguiente:
 
 
 .Después de terminar
-Seleccione MENU:Inicio[Ver operaciones en curso] para ver el progreso de la operación de reversión.
+Selecciona menu:Storage[Operations in Progress] para ver el progreso de la operación de reversión.
 
 Si la operación de reversión no se realiza correctamente, se coloca en pausa. Puede reanudar la operación en pausa y, si no se realiza correctamente, puede seguir el procedimiento de Recovery Guru para corregir el problema o ponerse en contacto con el soporte técnico.

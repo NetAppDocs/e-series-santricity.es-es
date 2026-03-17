@@ -33,7 +33,7 @@ Puede acceder a las funciones y funciones de Unified Manager desde la barra late
  a| 
 Gestione
  a| 
-Detecte las cabinas de almacenamiento en la red, inicie la instancia de SANtricity System Manager de una cabina, importe la configuración de una cabina a varias, y gestione grupos de cabinas. Marque las casillas de comprobación junto a los nombres de las cabinas para realizar distintas operaciones, como importar configuraciones y crear grupos de cabinas. Los tres puntos al final de cada fila permiten acceder al menú en línea con las operaciones para cada cabina, por ejemplo, las operaciones de cambio de nombre.
+Descubre matrices de almacenamiento en tu red, inicia SANtricity System Manager para una matriz, importa configuraciones de una matriz a varias matrices y gestiona grupos de matrices. Selecciona las casillas junto a los nombres de las matrices para realizar operaciones en ellas, como importar configuraciones y crear grupos de matrices. La elipsis al final de cada fila proporciona un menú inline para operaciones en una sola matriz, como cambiarle el nombre.
 
 
 
@@ -79,7 +79,7 @@ En la parte superior derecha de la interfaz, puede acceder a la Ayuda y a otra d
 
 == Inicios de sesión y contraseñas de usuario
 
-El usuario actual que ha iniciado sesión en el sistema se muestra en la esquina superior derecha de la interfaz.
+El usuario actual que ha iniciado sesión en el sistema se muestra en la configuración de usuario.
 
 Para obtener más información sobre usuarios y contraseñas, consulte:
 

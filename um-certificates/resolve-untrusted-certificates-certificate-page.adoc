@@ -37,7 +37,7 @@ Es posible que necesite instalar otros certificados de CA de confianza si se da 
 
 
 .Pasos
-. Seleccione *Gestión de certificados*.
+. En el panel izquierdo, selecciona menú:Settings[Certificates].
 . Seleccione la ficha *Trusted*.
 +
 Esta página muestra todos los certificados notificados para las cabinas de almacenamiento.
