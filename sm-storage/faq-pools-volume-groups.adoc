@@ -647,7 +647,7 @@ Cuando se crea un pool, se genera una capacidad de optimización recomendada que
 
 [NOTE]
 ====
-El control deslizante de capacidad de optimización adicional solo está disponible para los sistemas de almacenamiento EF600 y EF300.
+El control deslizante Additional Optimization Capacity solo está disponible para los sistemas de almacenamiento EF80, EF50, EF600 y EF300.
 
 ====
 
@@ -662,7 +662,7 @@ Cuando se crea un grupo de volúmenes, se genera una capacidad de optimización 
 
 [NOTE]
 ====
-El control deslizante de capacidad de optimización adicional solo está disponible para los sistemas de almacenamiento EF600 y EF300.
+El control deslizante Additional Optimization Capacity solo está disponible para los sistemas de almacenamiento EF80, EF50, EF600 y EF300.
 
 ====
 
