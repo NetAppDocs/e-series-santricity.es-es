@@ -21,7 +21,7 @@ Es posible configurar SANtricity System Manager para algunas opciones generales 
 La configuración de cabina incluye:
 
 * link:cache-settings-and-performance.html["Rendimiento y configuración de la caché"]
-* link:automatic-load-balancing-overview.html"["Equilibrio de carga automático"]
+* link:automatic-load-balancing-overview.html["Equilibrio de carga automático"]
 * link:how-add-on-features-work.html["Funciones complementarias"]
 * link:overview-drive-security.html["Impulse la seguridad"]
 
