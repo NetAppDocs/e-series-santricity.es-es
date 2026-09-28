@@ -16,6 +16,7 @@ Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respue
 
 
 
+[[what-if-i-dont-see-all-of-my-hardware-components]]
 == ¿Qué pasa si no veo todos mis componentes de hardware?
 
 Si no se ven todos los componentes de hardware en el cuadro de diálogo verificar hardware, es posible que una bandeja de unidades no esté conectada correctamente o que se haya instalado una bandeja incompatible en la cabina de almacenamiento.
@@ -24,6 +25,7 @@ Verifique que se hayan conectado correctamente todas las bandejas de unidades. S
 
 
 
+[[what-if-i-dont-see-all-of-my-hosts]]
 == ¿Qué pasa si no veo todos mis hosts?
 
 Si no se observan los hosts conectados, hay un error en la detección automática, los hosts están conectados incorrectamente o no hay hosts conectados actualmente.
@@ -36,12 +38,14 @@ Es posible configurar los hosts más adelante, después de completar la configur
 
 
 
+[[how-does-identifying-applications-help-me-manage-my-storage-array]]
 == ¿Cómo ayuda la identificación de aplicaciones a gestionar la cabina de almacenamiento?
 
 Puedes ver los datos de rendimiento por aplicación y por carga de trabajo para evaluar la latencia, las IOPS y los MiB/s de las aplicaciones y sus cargas de trabajo asociadas para optimizar el rendimiento. Las características como el tipo de I/O, el tamaño del segmento, la propiedad del controlador y la caché de lectura y escritura están incluidas en la configuración del volumen.
 
 
 
+[[what-is-a-workload]]
 == ¿Qué es una carga de trabajo?
 
 Para algunas aplicaciones de la red, como SQL Server o Exchange, es posible definir una carga de trabajo que optimice el almacenamiento para esa aplicación.
@@ -52,14 +56,16 @@ Durante la creación de un volumen, el sistema indica que se deben responder pre
 
 
 
+[[how-do-i-configure-the-delivery-method-for-autosupport]]
 == ¿Cómo se configura el método de entrega para AutoSupport?
 
-Para acceder a las tareas de configuración de los métodos de entrega de AutoSupport, vaya al menú:Soporte[Centro de soporte] y, a continuación, haga clic en la ficha *AutoSupport*.
+Para acceder a las tareas de configuración de los métodos de entrega de AutoSupport, ve al menú:Support[AutoSupport].
 
 Se admiten los siguientes protocolos: HTTPS y SMTP.
 
 
 
+[[how-do-i-know-if-i-should-accept-the-recommended-pool-configuration]]
 == ¿Cómo saber si debe aceptarse la configuración de pool recomendada?
 
 Si se acepta la configuración de pool recomendada depende de unos pocos factores.
@@ -75,6 +81,7 @@ Si respondió afirmativamente a cualquiera de esas preguntas, considere rechazar
 
 
 
+[[santricity-system-manager-has-not-detected-any-hosts-what-do-i-do]]
 == System Manager de SANtricity no detectó ningún host. ¿Qué debo hacer?
 
 Si no se observan los hosts conectados, hay un error en la detección automática, los hosts están conectados incorrectamente o no hay hosts conectados actualmente.

@@ -15,6 +15,7 @@ SANtricity System Manager utiliza iconos y otros métodos para notificar los pro
 
 
 
+[[icons]]
 == Iconos
 
 System Manager utiliza estos iconos para indicar el estado de la cabina de almacenamiento y sus componentes.
@@ -59,6 +60,7 @@ System Manager muestra estos iconos en diversas ubicaciones.
 
 
 
+[[alerts-and-leds]]
 == Alertas y LED
 
 Además, System Manager notifica los problemas de otras maneras.

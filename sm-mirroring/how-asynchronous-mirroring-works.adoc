@@ -24,6 +24,7 @@ Este tipo de mirroring es ideal para satisfacer la demanda de operaciones ininte
 
 
 
+[[asynchronous-mirroring-session]]
 == Sesión de mirroring asíncrono
 
 El mirroring asíncrono captura el estado de un volumen primario en un momento específico y copia solo los datos que han cambiado desde la última captura de imagen. El mirroring asíncrono permite actualizar el sitio primario inmediatamente y el sitio secundario a medida que el ancho de banda lo permita. La información se guarda en la caché y se envía más tarde, a medida que los recursos de red se vuelven disponibles.
@@ -46,6 +47,7 @@ Las cabinas de almacenamiento deben tener la versión de firmware 7.84 como mín
 
 
 
+[[mirror-consistency-groups-and-mirrored-pairs]]
 == Grupos de coherencia de reflejos y parejas reflejadas
 
 Es posible crear un grupo de coherencia de reflejos para establecer la relación de mirroring entre la cabina de almacenamiento remota y local. La relación de mirroring asíncrono consiste en una pareja reflejada: Un volumen primario en una cabina de almacenamiento y un volumen secundario en otra.
@@ -54,6 +56,7 @@ La cabina de almacenamiento que contiene el volumen primario está ubicada gener
 
 
 
+[[synchronization-settings]]
 == Configuración de sincronización
 
 Cuando se crea una pareja reflejada, también se define la prioridad de sincronización y la política de resincronización que utiliza la pareja reflejada para completar la operación de resincronización después de una interrupción de comunicación.
@@ -72,6 +75,7 @@ Puede sincronizar datos en la cabina de almacenamiento remota de forma manual o 
 
 
 
+[[reserved-capacity-and-asynchronous-mirroring]]
 == Capacidad reservada y mirroring asíncrono
 
 La capacidad reservada se utiliza para realizar un seguimiento de las diferencias entre el volumen primario y secundario cuando no se produce una sincronización. También realiza un seguimiento de las estadísticas de sincronización para cada pareja reflejada.
@@ -80,6 +84,7 @@ Cada volumen de una pareja reflejada requiere su propia capacidad reservada.
 
 
 
+[[configuration-and-management]]
 == Configuración y gestión
 
 Para habilitar y configurar el mirroring entre dos cabinas, debe usar la interfaz de Unified Manager. Una vez habilitado el mirroring, puede gestionar las parejas reflejadas y las configuraciones de sincronización en System Manager.

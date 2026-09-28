@@ -15,6 +15,7 @@ Para Access Management, los administradores pueden usar las funcionalidades de l
 
 
 
+[[configuration-workflow]]
 == Flujo de trabajo de configuración
 
 La configuración de SAML funciona de la siguiente manera:
@@ -49,6 +50,7 @@ Una vez que se habilita SAML, _no se puede deshabilitar desde la interfaz de usu
 
 
 
+[[management]]
 == Gestión
 
 Cuando se usa SAML con fines de autenticación, los administradores pueden realizar las siguientes tareas de administración:
@@ -59,6 +61,7 @@ Cuando se usa SAML con fines de autenticación, los administradores pueden reali
 
 
 
+[[access-restrictions]]
 == Restricciones de acceso
 
 Cuando se habilita SAML, los usuarios no pueden detectar ni gestionar el almacenamiento de esa cabina desde la interfaz de Storage Manager heredada.

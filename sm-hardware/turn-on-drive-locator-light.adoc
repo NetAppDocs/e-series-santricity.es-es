@@ -17,14 +17,14 @@ En la página hardware, se puede encender la luz localizadora para encontrar la 
 Se pueden localizar unidades únicas o varias unidades que se muestran en la página hardware.
 
 .Pasos
-. En el panel izquierdo, selecciona *Hardware*.
+. En el panel de la izquierda, selecciona el menú: Hardware [Drives].
 . Para localizar una o más unidades, se debe realizar una de las siguientes acciones:
 +
-** *Una sola unidad* -- desde el gráfico de estante, encuentre la unidad que desea localizar físicamente en la matriz. (Si el gráfico muestra los controladores, haga clic en la pestaña *Drives*.) Haga clic en la unidad para mostrar su menú contextual y, a continuación, seleccione *Encender la luz localizadora*.
+** *Unidad única* -- En el gráfico de la estantería, encuentra la unidad que quieres localizar físicamente en la matriz. Haz clic en la unidad para mostrar su menú contextual y luego selecciona *Encender luz localizadora*.
 +
 La luz localizadora de la unidad se enciende. Cuando haya localizado físicamente la unidad, vuelva al cuadro de diálogo y seleccione *Apagar*.
 
-** *Múltiples unidades* -- en los campos de filtro, seleccione un tipo de unidad física de la lista desplegable izquierda y un tipo de unidad lógica de la lista desplegable derecha. En el extremo derecho de los campos, se muestra la cantidad de unidades que coincide con sus criterios. A continuación, puede hacer clic en *encender luces de localización* o seleccionar *ubicar todas las unidades filtradas* en el menú contextual. Cuando haya localizado físicamente las unidades, vuelva al cuadro de diálogo y seleccione *Apagar*.
+** *Varias unidades* -- en el campo de filtro, selecciona un tipo de unidad física y un tipo de unidad lógica. El número de unidades que cumplen tus criterios se muestra en el extremo derecho del campo. Luego, haz clic en *activar luces de localización*. Cuando hayas localizado físicamente las unidades, vuelve al cuadro de diálogo y selecciona *Desactivar*.
 
 
 

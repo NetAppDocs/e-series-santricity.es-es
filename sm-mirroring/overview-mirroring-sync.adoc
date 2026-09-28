@@ -20,6 +20,7 @@ Esta función no está disponible en el sistema de almacenamiento EF80, EF50, EF
 ====
 
 
+[[what-is-synchronous-mirroring]]
 == ¿Qué es el mirroring síncrono?
 
 _Synchronous Mirroring_ replica los volúmenes de datos en tiempo real para garantizar la disponibilidad continua. Las controladoras de la cabina de almacenamiento gestionan la operación de mirroring, que es transparente para el equipo host y las aplicaciones de software.
@@ -37,6 +38,7 @@ Obtenga más información:
 
 
 
+[[how-do-i-configure-synchronous-mirroring]]
 == ¿Cómo se configura el mirroring síncrono?
 
 Es necesario usar la interfaz de Unified Manager para realizar la configuración de mirroring inicial entre las cabinas. Una vez que se configura, puede gestionar las parejas reflejadas en System Manager.
@@ -50,6 +52,7 @@ Obtenga más información:
 
 
 
+[[related-information]]
 == Información relacionada
 
 Más información acerca de conceptos relacionados con el mirroring síncrono:

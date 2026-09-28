@@ -15,6 +15,7 @@ Es posible habilitar volúmenes para que usen las funciones Data Assurance (DA) 
 
 
 
+[[data-assurance]]
 == Garantía de datos
 
 La garantía de datos (DA) implementa el estándar de información de protección (PI) T10, con el cual se comprueban y corrigen los errores que se pueden producir durante la transferencia de datos a través de la ruta de I/o con el fin de aumentar la integridad de los datos. El uso típico de la función Garantía de datos es revisar la porción de la ruta de I/o entre las controladoras y las unidades. Las funcionalidades DE DA se presentan a nivel del pool y grupo de volúmenes.
@@ -23,24 +24,28 @@ Si esta función está habilitada, la cabina de almacenamiento añade códigos d
 
 
 
+[[drive-security]]
 == Drive Security
 
 Drive Security es una función que evita el acceso no autorizado a datos almacenados en unidades con la función de seguridad habilitada cuando la unidad se quita de la cabina de almacenamiento. Estas unidades pueden ser unidades de cifrado de disco completo (FDE) o unidades certificadas para cumplir con el estándar de procesamiento de información federal 140-2 de nivel 2 (unidades FIPS).
 
 
 
+[[how-drive-security-works-at-the-drive-level]]
 === Cómo funciona Drive Security en el nivel de unidad
 
 Una unidad compatible con la función de seguridad, FDE o FIPS, cifra los datos durante la escritura y descifra los datos durante la lectura. Estas operaciones de cifrado y descifrado no afectan al rendimiento ni al flujo de trabajo del usuario. Cada unidad tiene su propia clave de cifrado, que jamás puede transferirse de la unidad.
 
 
 
+[[how-drive-security-works-at-the-volume-level]]
 === Cómo funciona Drive Security en el nivel de volumen
 
 Al crear un pool o un grupo de volúmenes desde unidades compatibles con la función de seguridad, también es posible habilitar Drive Security para estos pools o grupos de volúmenes. La opción Drive Security permite que las unidades y los pools y los grupos de volúmenes asociados tengan la función de seguridad-_enabled_. Un pool o un grupo de volúmenes pueden contener tanto una unidad compatible con la función de seguridad como una que no lo sea, pero todas las unidades deben ser compatibles con la función de seguridad para usar la funcionalidad de cifrado.
 
 
 
+[[how-to-implement-drive-security]]
 === Cómo implementar Drive Security
 
 Para implementar Drive Security, siga estos pasos.

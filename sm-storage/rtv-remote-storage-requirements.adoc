@@ -15,6 +15,7 @@ Antes de utilizar la función almacenamiento remoto, revise los siguientes requi
 
 
 
+[[supported-protocols]]
 == Protocolos compatibles
 
 Se admiten los siguientes protocolos:
@@ -27,6 +28,7 @@ Para obtener información actualizada sobre soporte y configuración de E-Series
 
 
 
+[[hardware-requirements]]
 == Requisitos de hardware
 
 El sistema de almacenamiento E-Series debe incluir:
@@ -44,6 +46,7 @@ El sistema remoto puede ser un sistema de almacenamiento E-Series o un sistema d
 
 
 
+[[restrictions]]
 == Restricciones
 
 La función de almacenamiento remoto tiene las siguientes restricciones:

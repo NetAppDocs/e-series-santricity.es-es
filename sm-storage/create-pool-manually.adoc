@@ -17,7 +17,7 @@ Se puede crear un pool manualmente (desde un conjunto de candidatos) si la funci
 Un pool proporciona la capacidad de almacenamiento lógico necesaria desde la cual se pueden crear volúmenes individuales que se pueden utilizar para alojar las aplicaciones.
 
 .Antes de empezar
-* Se deben tener al menos 11 unidades con el mismo tipo de unidad (HDD o SSD).
+* Debes tener un número mínimo de unidades del mismo tipo. Para los sistemas EF80 y EF50, el mínimo es 6 unidades para los grupos de rendimiento o 12 unidades para los grupos de capacidad; en matrices mixtas de rendimiento y capacidad, la capacidad requiere un mínimo de 12 unidades y el rendimiento requiere un mínimo de 2 unidades. Para todos los demás sistemas, el mínimo es 11 unidades.
 * La protección contra pérdida de bandeja requiere que las unidades que componen el pool se coloquen al menos en seis bandejas de unidades distintas y que no haya más de dos unidades en una única bandeja de unidades.
 * La protección contra pérdida de cajón requiere que las unidades que componen el pool se coloquen al menos en cinco cajones diferentes y que el pool tenga la misma cantidad de bandejas de unidades en cada cajón.
 * Al configurar una cabina de almacenamiento EF600 o EF300, asegúrese de que cada controladora tenga acceso a un número igual de unidades en las primeras 12 ranuras y un número igual de unidades en las últimas 12 ranuras. Esta configuración ayuda a las controladoras a usar ambos autobuses PCIe de la unidad de forma más eficaz. Actualmente, System Manager permite seleccionar unidades en la función Avanzada al crear un grupo de volúmenes. Para la creación de un pool, se recomienda usar todas las unidades de la cabina de almacenamiento.
@@ -34,7 +34,7 @@ Se muestra el cuadro de diálogo Crear un pool.
 +
 En la tabla de resultados, se muestra una lista de todos los pools posibles que se pueden crear.
 
-. Seleccione el candidato de pool que desea utilizar en función de las siguientes características y, a continuación, haga clic en *Crear*.
+. Busca el candidato del pool que quieras utilizar según las siguientes características y, a continuación, haz clic en *Crear*.
 +
 [cols="25h,~"]
 |===
@@ -81,6 +81,9 @@ Indica si este candidato de pool se compone íntegramente de unidades compatible
 ** Si desea crear un pool solo para FDE, busque *Sí - FDE* en la columna compatible con la función de seguridad. Si desea crear un pool sólo para FIPS, busque *Sí - FIPS* o *Sí - FIPS (mixta)*. "Mixto" indica una combinación de unidades de 140-2 y 140-3 niveles. Si usa una mezcla de estos niveles, tenga en cuenta que la piscina entonces operará al nivel más bajo de seguridad (140-2).
 ** Se puede crear un pool compuesto por unidades compatibles o no con la función de seguridad, o que tengan una combinación de niveles de seguridad. Si alguna de las unidades del pool no es compatible con la función de seguridad, no se podrá establecer la seguridad del pool.
 
+
+
+NOTE: No se admite la combinación de unidades FDE y FIPS dentro de la misma matriz de almacenamiento. Todas las unidades con capacidad de seguridad en el sistema deben ser del mismo tipo.
 
 
 

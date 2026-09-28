@@ -16,6 +16,7 @@ Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respue
 
 
 
+[[what-is-auto-negotiation]]
 == ¿Qué es la negociación automática?
 
 La negociación automática es la capacidad de una interfaz de red para coordinar sus propios parámetros de conexión (velocidad y dúplex) con otra interfaz de red.
@@ -29,6 +30,7 @@ Si la negociación automática falla, la controladora intenta establecer una con
 ====
 
 
+[[what-is-ipv6-stateless-address-auto-configuration]]
 == ¿Qué es la configuración automática de direcciones IPv6 sin estado?
 
 Gracias a la configuración automática sin estado, los hosts no obtienen direcciones ni otra información de configuración desde un servidor.
@@ -49,12 +51,14 @@ Los dispositivos realizan estos pasos cuando utilizan la configuración automát
 
 
 
+[[which-do-i-choose-dhcp-or-manual-configuration]]
 == ¿Qué elijo: DHCP o configuración manual?
 
 El método predeterminado de la configuración de red es el protocolo de configuración dinámica de hosts (DHCP). Utilice siempre esta opción, a menos que la red no posea un servidor DHCP.
 
 
 
+[[what-is-a-dhcp-server]]
 == ¿Qué es un servidor DHCP?
 
 El protocolo de configuración dinámica de hosts (DHCP) es un protocolo que automatiza la tarea de asignar una dirección de protocolo de Internet (IP).
@@ -65,6 +69,7 @@ Sin DHCP, el administrador de red introduce estas direcciones IP manualmente. Co
 
 
 
+[[how-do-i-configure-my-dhcp-server]]
 == ¿Cómo se configura el servidor DHCP?
 
 Debe configurar un servidor de protocolo de configuración dinámica de hosts (DHCP) para utilizar direcciones de protocolo de Internet (IP) estáticas para las controladoras en la cabina de almacenamiento.
@@ -75,6 +80,7 @@ Para obtener información sobre la forma de asignar direcciones estáticas, cons
 
 
 
+[[why-do-i-need-to-change-the-controller-network-configuration]]
 == ¿Por qué es necesario cambiar la configuración de red de la controladora?
 
 Es necesario configurar la configuración de red para cada controladora--su dirección de protocolo de Internet (IP), máscara de subred y puerta de enlace- cuando se utiliza gestión fuera de banda.
@@ -83,6 +89,7 @@ Es posible ajustar la configuración de red a través del servidor de protocolo 
 
 
 
+[[where-do-i-get-the-network-configuration]]
 == ¿En dónde se puede obtener la configuración de red?
 
 Es posible obtener del administrador de red la dirección de protocolo de Internet (IP), la máscara de subred y la información de puerta de enlace.
@@ -91,6 +98,7 @@ Esta información es necesaria para configurar los puertos de las controladoras.
 
 
 
+[[what-are-icmp-ping-responses]]
 == ¿Qué son las respuestas PING de ICMP?
 
 El protocolo de mensajes de control de Internet (ICMP) es uno de los protocolos de la suite TCP/IP.
@@ -99,6 +107,7 @@ La `ICMP echo request` y la(`ICMP echo reply` los mensajes suelen denominarse `p
 
 
 
+[[when-should-i-refresh-the-port-configuration]]
 == ¿Cuándo se debe actualizar la configuración de puertos?
 
 Actualice el servidor DHCP cada vez que se modifique o actualice el servidor y que haya cambiado la información DHCP relevante para la cabina de almacenamiento actual y la cabina de almacenamiento que desea utilizar.
@@ -112,6 +121,7 @@ La actualización de la configuración de puertos destruye todas las conexiones 
 ====
 
 
+[[what-should-i-do-after-configuring-the-management-ports]]
 == ¿Qué debo hacer luego de configurar los puertos de gestión?
 
 Si cambió la dirección IP de la cabina de almacenamiento, es posible que desee actualizar la vista de cabina global en SANtricity Unified Manager.
@@ -122,6 +132,7 @@ Si todavía utiliza Storage Manager de SANtricity, vaya a Enterprise Management 
 
 
 
+[[why-is-the-storage-system-in-non-optimal-mode]]
 == ¿Por qué el sistema de almacenamiento se encuentra en el modo no óptimo?
 
 Un sistema de almacenamiento en modo no óptimo se debe a un estado no válido de configuración del sistema. A pesar de este estado, se admite totalmente el acceso de I/O normal a los volúmenes existentes; no obstante, System Manager de SANtricity prohibirá algunas operaciones.

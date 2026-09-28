@@ -23,6 +23,7 @@ El proceso para crear un grupo de coherencia Snapshot es un procedimiento de var
 
 
 
+[[step-1-add-members-to-snapshot-consistency-group]]
 == Paso 1: Añadir miembros a un grupo de coherencia Snapshot
 
 Seleccione miembros para especificar una recogida de los volúmenes que componen el grupo de coherencia Snapshot. Cualquier acción que se realice en el grupo de coherencia Snapshot se extiende de manera uniforme a los volúmenes miembro seleccionados.
@@ -31,18 +32,18 @@ Seleccione miembros para especificar una recogida de los volúmenes que componen
 El estado de los volúmenes miembro debe ser óptima.
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Storage[Snapshots].
-. Haga clic en la ficha *grupos de coherencia de instantánea*.
+. En el panel de la izquierda, selecciona el menú: Instantáneas[Grupos de consistencia de instantáneas].
 . Seleccione menu:Crear[Grupo de coherencia Snapshot].
 +
 Se muestra el cuadro de diálogo Crear grupo de coherencia Snapshot.
 
-. Seleccione los volúmenes que se añadirán como volúmenes miembro al grupo de coherencia Snapshot.
+. Localiza el volumen o volúmenes que se van a añadir como volúmenes miembros al grupo de consistencia de instantáneas.
 . Haga clic en *Siguiente* y vaya a. <<Paso 2: Reservar capacidad para un grupo de coherencia Snapshot>>.
 
 
 
 
+[[step-2-reserve-capacity-for-snapshot-consistency-group]]
 == Paso 2: Reservar capacidad para un grupo de coherencia Snapshot
 
 Asocie la capacidad reservada al grupo de coherencia Snapshot. System Manager sugiere los volúmenes y la capacidad según las propiedades del grupo de coherencia Snapshot. Se puede aceptar la configuración recomendada para la capacidad reservada o personalizar el almacenamiento asignado.
@@ -74,6 +75,7 @@ Utilice las siguientes directrices para asignar la capacidad reservada:
 
 
 
+[[step-3-edit-settings-for-snapshot-consistency-group]]
 == Paso 3: Editar la configuración para un grupo de coherencia Snapshot
 
 Acepte o seleccione la configuración de eliminación automática y los umbrales de alerta de capacidad reservada para el grupo de coherencia Snapshot.

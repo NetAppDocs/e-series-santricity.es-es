@@ -15,9 +15,8 @@ summary: Puede cambiar la configuración de un volumen Snapshot a fin de ajustar
 Puede cambiar la configuración de un volumen Snapshot a fin de ajustar el punto de porcentaje en el que el sistema envía una notificación de alerta cuando la capacidad reservada de un volumen Snapshot está casi completa.
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Storage[Pools y grupos de volúmenes].
-. Haga clic en la pestaña *capacidad reservada*.
-. Selecciona el volumen de instantánea que quieres editar y luego haz clic en el icono de menú:ellipsis icon[Edit Settings].
+. En el panel de la izquierda, selecciona el menú: almacenamiento [Capacidad reservada].
+. Selecciona el volumen de instantánea que quieras editar y, a continuación, haz clic en el icono de menú:ellipsis [Editar configuración].
 +
 Aparece la ventana Edit Snapshot Volume Reserved Capacity Settings.
 

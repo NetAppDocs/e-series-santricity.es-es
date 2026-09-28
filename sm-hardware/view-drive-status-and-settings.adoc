@@ -14,20 +14,16 @@ summary: Es posible ver el estado y la configuración de las unidades, como el t
 Es posible ver el estado y la configuración de las unidades, como el tipo de medios, el tipo de interfaz y la capacidad.
 
 .Pasos
-. En el panel izquierdo, selecciona *Hardware*.
-. Si el gráfico muestra los controladores, haga clic en la pestaña *Drives*.
-+
-El gráfico cambia y muestra las unidades en lugar de las controladoras.
-
+. En el panel de la izquierda, selecciona el menú: Hardware [Drives].
 . Seleccione la unidad para la cual desea ver el estado y la configuración.
 +
 Se abre el menú contextual de la unidad.
 
 . Seleccione *Ver configuración*.
 +
-Se abrirá el cuadro de diálogo Configuración de la unidad.
+Se abre el panel de configuración de Drive.
 
-. Para ver todos los ajustes, haga clic en *Mostrar más valores* en la parte superior derecha del cuadro de diálogo.
+. Para ver todas las opciones, desplázate por el panel de configuración de Drive.
 +
 .Detalles del campo
 [%collapsible]

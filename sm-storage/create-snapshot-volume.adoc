@@ -25,13 +25,13 @@ El proceso para crear un volumen Snapshot tiene varios pasos.
 
 
 
+[[step-1-review-members-for-a-snapshot-volume]]
 == Paso 1: Revise los miembros de un volumen Snapshot
 
 Seleccione una imagen Snapshot de un volumen base o un grupo de coherencia Snapshot. Si selecciona una imagen de grupo de coherencia Snapshot, aparecen los volúmenes miembro del grupo de coherencia Snapshot para su revisión.
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Storage[Snapshots].
-. Seleccione la ficha *volúmenes Snapshot*.
+. En el panel de la izquierda, selecciona el menú: instantáneas [Snapshot volumes].
 . Seleccione *Crear*.
 +
 Se muestra el cuadro de diálogo Crear volumen Snapshot.
@@ -48,6 +48,7 @@ En el cuadro de diálogo revisar miembros, revise la lista de volúmenes selecci
 
 
 
+[[step-2-assign-snapshot-volume-to-host]]
 == Paso 2: Asignar volumen Snapshot a un host
 
 Seleccione un host o un clúster de hosts específico para asignarlo al volumen Snapshot. La asignación otorga acceso al volumen Snapshot para un host o un clúster de hosts. Puede elegir asignar un host más adelante, si fuera necesario.
@@ -90,6 +91,7 @@ La asignación de un volumen a un host no se realiza correctamente si se intenta
 
 
 
+[[step-3-reserve-capacity-for-a-snapshot-volume]]
 == Paso 3: Reservar capacidad para un volumen Snapshot
 
 Asocie la capacidad reservada a un volumen Snapshot de lectura/escritura. System Manager sugiere los volúmenes y la capacidad según las propiedades del volumen base o del grupo de coherencia Snapshot. Se puede aceptar la configuración recomendada para la capacidad reservada o personalizar el almacenamiento asignado.
@@ -130,6 +132,7 @@ Utilice las siguientes directrices para asignar la capacidad reservada:
 
 
 
+[[step-4-edit-settings-for-a-snapshot-volume]]
 == Paso 4: Editar la configuración de un volumen Snapshot
 
 Cambie la configuración de un volumen Snapshot, por ejemplo, nombre, almacenamiento en caché, umbrales de alerta de capacidad reservada, etc.
@@ -156,7 +159,7 @@ El volumen se puede añadir a una caché de unidad de estado sólido (SSD) como 
  a| 
 Nombre
  a| 
-Especifique el nombre del volumen Snapshot.
+Especifica el nombre del volumen de instantánea. Los nombres de los volúmenes pueden tener una longitud máxima de 30 caracteres. El nombre debe ser único.
 
 
 

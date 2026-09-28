@@ -15,6 +15,7 @@ En la página gestionar grupos, puede crear un conjunto de grupos de cabinas de 
 
 
 
+[[what-are-array-groups]]
 == ¿Qué son los grupos de cabinas?
 
 Es posible gestionar la infraestructura física y virtualizada si se agrupa un conjunto de cabinas de almacenamiento. Las cabinas de almacenamiento pueden agruparse de modo que sea más sencillo ejecutar las tareas de supervisión o generación de informes.
@@ -27,6 +28,7 @@ Existen dos tipos de grupos:
 
 
 
+[[how-do-i-configure-groups]]
 == ¿Cómo se configuran los grupos?
 
 En la página gestionar grupos, puede crear un grupo y, a continuación, añadir cabinas a dicho grupo.

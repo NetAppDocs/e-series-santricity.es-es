@@ -19,11 +19,7 @@ Si la controladora tiene un puerto Iser over InfiniBand, se puede configurar la 
 
 
 .Pasos
-. En el panel izquierdo, selecciona *Hardware*.
-. Si el gráfico muestra las unidades, haga clic en la pestaña * Controladores y componentes *.
-+
-El gráfico cambia y muestra las controladoras en lugar de las unidades.
-
+. En el panel izquierdo, selecciona menú:Hardware[Controllers and components].
 . Haga clic en la controladora que tenga el puerto Iser over InfiniBand que desea configurar.
 +
 Aparece el menú contextual de la controladora.
@@ -33,6 +29,6 @@ Aparece el menú contextual de la controladora.
 Se muestra el cuadro de diálogo Configurar puertos Iser over InfiniBand.
 
 . En el menú desplegable, seleccione el puerto HIC que desea configurar y después introduzca la dirección IP del host.
-. Haga clic en *Configurar*.
+. Haga clic en *Guardar*.
 . Complete la configuración y, a continuación, restablezca el puerto Iser over InfiniBand haciendo clic en *Sí*.
 

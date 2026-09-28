@@ -16,6 +16,7 @@ Es posible configurar SANtricity System Manager para que envíe alertas de cabin
 
 
 
+[[what-are-alerts]]
 == ¿Qué son las alertas?
 
 _Alerts_ notifica a los administradores sobre eventos importantes que se producen en la cabina de almacenamiento. Los eventos pueden incluir problemas como un fallo de batería, un componente que pasa de estado óptimo a sin conexión o errores de redundancia en la controladora. Se considera que todos los eventos críticos generan alertas, junto con algunos eventos informativos y de advertencia.
@@ -28,9 +29,10 @@ Obtenga más información:
 
 
 
+[[how-do-i-configure-alerts]]
 == ¿Cómo se configuran las alertas?
 
-Es posible configurar las alertas que se enviarán como mensaje a una o varias direcciones de correo electrónico, como una captura SNMP a un servidor SNMP, o como un mensaje a un servidor de syslog. La configuración de alertas está disponible en MENU:Settings[Alerts].
+Puedes configurar las alertas para que se envíen como un mensaje a una o varias direcciones de correo electrónico, como una trampa SNMP a un servidor SNMP o como un mensaje a un servidor syslog. La configuración de las alertas está disponible en el menú: alertas[].
 
 Obtenga más información:
 
@@ -41,6 +43,7 @@ Obtenga más información:
 
 
 
+[[related-information]]
 == Información relacionada
 
 Más información sobre conceptos relacionados con las alertas:

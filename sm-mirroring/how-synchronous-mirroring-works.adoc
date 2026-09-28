@@ -24,12 +24,14 @@ Este tipo de mirroring es ideal para fines de continuidad del negocio como la re
 
 
 
+[[synchronous-mirroring-relationship]]
 == Relación de mirroring síncrono
 
 Una relación de mirroring síncrono consiste en un volumen primario y un volumen secundario en cabinas de almacenamiento individuales. La cabina de almacenamiento que contiene el volumen primario está ubicada generalmente en el sitio primario y presta servicios para los hosts activos. La cabina de almacenamiento que contiene el volumen secundario está ubicada generalmente en un sitio secundario y contiene una réplica de los datos. El volumen secundario se usa si la cabina de almacenamiento del volumen primario no está disponible debido a, por ejemplo, una interrupción del servicio total, un incendio o un error de hardware en el sitio primario.
 
 
 
+[[synchronous-mirroring-session]]
 == Sesión de mirroring síncrono
 
 El proceso de configuración de mirroring síncrono implica configurar volúmenes en parejas. Después de crear una pareja reflejada, que consiste en un volumen primario en una cabina de almacenamiento y un volumen secundario en otra, puede comenzar con el mirroring síncrono. Los pasos del mirroring síncrono se describen a continuación.
@@ -49,6 +51,7 @@ Debido a que la aplicación host debe esperar que se produzca la escritura en la
 
 
 
+[[disaster-recovery]]
 == Recuperación tras siniestros
 
 El mirroring síncrono mantiene una copia de los datos que están físicamente distantes del sitio donde residen. Si se produce un desastre en el sitio primario, como un apagón de energía o una inundación, puede accederse rápidamente a los datos desde el sitio secundario.
@@ -57,6 +60,7 @@ El volumen secundario no está disponible para aplicaciones host donde hay opera
 
 
 
+[[synchronization-settings]]
 == Configuración de sincronización
 
 Cuando se crea una pareja reflejada, también se define la prioridad de sincronización y la política de resincronización que utiliza la pareja reflejada para completar la operación de resincronización después de una interrupción de comunicación.
@@ -69,6 +73,7 @@ Es posible editar la configuración de sincronización para una pareja reflejada
 
 
 
+[[unsynchronized-data]]
 == Datos no sincronizados
 
 Los volúmenes primario y secundario dejan de estar sincronizados cuando la cabina de almacenamiento del volumen primario no puede escribir datos en el volumen secundario. Esto puede deberse a los siguientes problemas:
@@ -80,6 +85,7 @@ Los volúmenes primario y secundario dejan de estar sincronizados cuando la cabi
 
 
 
+[[orphaned-mirrored-pair]]
 == Una pareja reflejada huérfana
 
 Se crea un volumen de pareja reflejada huérfano cuando se elimina un volumen miembro de un lado (ya sea el lado primario o el lado secundario), pero no del otro lado.
@@ -90,6 +96,7 @@ Puede eliminar una pareja reflejada para corregir un estado de pareja reflejada 
 
 
 
+[[configuration-and-management]]
 == Configuración y gestión
 
 Para habilitar y configurar el mirroring entre dos cabinas, debe usar la interfaz de Unified Manager. Una vez habilitado el mirroring, puede gestionar las parejas reflejadas y las configuraciones de sincronización en System Manager.

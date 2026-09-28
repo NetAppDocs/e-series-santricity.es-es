@@ -2,22 +2,18 @@
 permalink: sm-interface/home-page.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, home page 
-summary: La página Inicio ofrece una vista de consola para la gestión cotidiana de la cabina de almacenamiento. Cuando se inicia sesión en System Manager, la página Inicio es la primera pantalla que aparece. 
+summary: El panel de control ofrece una vista de resumen para la administración diaria de tu matriz de almacenamiento. Al iniciar sesión en System Manager, el panel de control es la primera pantalla que aparece. 
 ---
-= Obtenga más información sobre la página de inicio de SANtricity System Manager
+= Conoce el panel de control de SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-La página Inicio ofrece una vista de consola para la gestión cotidiana de la cabina de almacenamiento. Cuando se inicia sesión en SANtricity System Manager, la página Inicio es la primera pantalla que aparece.
+El panel de control ofrece una vista de resumen para la administración diaria de tu matriz de almacenamiento. Al iniciar sesión en SANtricity System Manager, el panel de control es la primera pantalla que se muestra.
 
-La vista de consola incluye cuatro áreas de resumen que contienen información clave sobre el estado y la condición de la cabina de almacenamiento. Es posible encontrar más información en el área de resumen.
-
-* *Notificaciones*
-+
-El área de notificaciones muestra notificaciones de problemas que indican el estado de la cabina de almacenamiento y sus componentes. Además, este portlet muestra alertas automatizadas que pueden ayudarle a resolver problemas antes de que afecten a otras áreas de su entorno de almacenamiento.
+La vista de consola comprende tres áreas de resumen que contienen información clave sobre el estado y la salud de tu matriz de almacenamiento. Puedes encontrar más información en el área de resumen.
 
 * *Rendimiento*
 +

@@ -16,6 +16,7 @@ Es posible configurar SANtricity System Manager para algunas opciones generales 
 
 
 
+[[what-settings-can-i-configure]]
 == ¿Qué ajustes puedo configurar?
 
 La configuración de cabina incluye:
@@ -28,6 +29,7 @@ La configuración de cabina incluye:
 
 
 
+[[related-tasks]]
 == Tareas relacionadas
 
 Obtenga más información acerca de las tareas relacionadas con la configuración del sistema:

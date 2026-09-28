@@ -2,7 +2,7 @@
 permalink: sm-settings/enable-or-disable-resource-provisioning-for-new-volumes.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, enable, disable, resource, provisioning, 
-summary: Si anteriormente deshabilitó la función predeterminada para el aprovisionamiento de recursos, puede ir a Configuración y volver a habilitarla para todos los grupos de volúmenes SSD o pools nuevos que cree. También puede desactivar de nuevo el ajuste. 
+summary: Si anteriormente desactivaste la función predeterminada de aprovisionamiento de recursos, puedes ir a System y volver a activarla para cualquier nuevo grupo de volúmenes o pool de SSD que crees. También puedes volver a desactivar la configuración. 
 ---
 = Habilitar o deshabilitar el aprovisionamiento de recursos para nuevos grupos de volúmenes o pools en SANtricity System Manager
 :allow-uri-read: 
@@ -28,7 +28,7 @@ NOTE: De forma predeterminada, el aprovisionamiento de recursos está habilitado
 Cuando se vuelve a habilitar el aprovisionamiento de recursos para nuevos grupos de volúmenes o pools, solo se ven afectados los grupos de volúmenes y pools recién creados. Todos los grupos de volúmenes y pools existentes con el aprovisionamiento de recursos habilitado permanecerán sin cambios.
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Settings[System].
+. En el panel de la izquierda, selecciona *System*.
 . Desplácese hasta *Configuración adicional* y, a continuación, haga clic en *Habilitar/deshabilitar volúmenes aprovisionados mediante recursos*.
 +
 La descripción de la configuración indica si el aprovisionamiento de recursos está activado o desactivado.

@@ -21,8 +21,7 @@ Para las versiones 11.74 y posteriores de SANtricity, también puede configurar 
 
 ====
 .Pasos
-. En el panel izquierdo, selecciona *Hardware*.
-. Si el gráfico muestra las unidades, haga clic en la pestaña * Controladores y componentes *.
+. En el panel izquierdo, selecciona menú:Hardware[Controllers and components].
 +
 El gráfico cambia y muestra las controladoras en lugar de las unidades.
 
@@ -32,7 +31,7 @@ Aparece el menú contextual de la controladora.
 
 . Seleccione *Configurar inicio de sesión remoto (SSH)*. (Para las versiones 11.73 y anteriores de SANtricity, este elemento de menú es *Cambiar inicio de sesión remoto*.)
 +
-Se abre el cuadro de diálogo para habilitar el inicio de sesión remoto.
+Se abre la página Configurar el inicio de sesión remoto (SSH).
 
 . Seleccione la casilla de verificación *Activar inicio de sesión remoto*.
 +
@@ -44,12 +43,12 @@ Esta configuración proporciona el inicio de sesión remoto con tres opciones de
 ** *Tanto la contraseña como la clave SSH*. Para esta opción, seleccione la casilla de verificación *requerir clave pública autorizada y contraseña para el inicio de sesión remoto* y continúe con el siguiente paso.
 
 
-. Rellene el campo *clave pública autorizada*. Este campo contiene una lista de claves públicas autorizadas, en el formato del archivo OpenSSH *authorized_keys*.
+. Rellena el campo *Claves públicas autorizadas*. Este campo contiene una lista de claves públicas autorizadas, con el formato del archivo *authorized_keys* de OpenSSH.
 +
-Al rellenar el campo *clave pública autorizada*, tenga en cuenta las siguientes directrices:
+Al rellenar el campo *Authorized public keys*, ten en cuenta las siguientes directrices:
 
 +
-** El campo *clave pública autorizada* se aplica a ambos controladores y sólo debe configurarse en el primer controlador.
+** El campo *Claves públicas autorizadas* se aplica a ambos controladores y solo necesitas configurarlo en el primer controlador.
 ** El archivo *Authorized_Keys* debe contener sólo una clave por línea. Las líneas que comienzan con # y las líneas vacías se omiten. Para obtener más información acerca del formato de archivo, consulte link:https://www.ssh.com/academy/ssh/authorized-keys-openssh["Configuración de claves autorizadas para OpenSSH"^].
 ** Un archivo *Authorized_keys* debería tener un aspecto similar al siguiente ejemplo:
 +
@@ -62,7 +61,7 @@ AAAAB3NzaC1yc2EAAAADAQABAAABAQDJlG20rYTk4ok+xFjkPHYp/R0LfJqEYDLXA5AJ49w3DvAWLrUg
 
 . Cuando haya terminado, haga clic en *Guardar*.
 . En el caso de los sistemas dobles, puede habilitar el inicio de sesión remoto en la segunda controladora siguiendo los pasos anteriores. Si está configurando la opción tanto para una contraseña como para una clave SSH, asegúrese de volver a seleccionar la casilla de verificación *requerir clave pública autorizada y contraseña para el inicio de sesión remoto*.
-. Después de que el soporte técnico termine de solucionar problemas, puede desactivar el inicio de sesión remoto volviendo al cuadro de diálogo Configurar inicio de sesión remoto y deseleccionando la casilla de verificación *Activar inicio de sesión remoto*. Si se habilitó el inicio de sesión remoto en una segunda controladora, se abre un cuadro de diálogo de confirmación y se permite deshabilitar el inicio de sesión remoto también en la segunda.
+. Después de que el soporte técnico termine de solucionar el problema, puedes desactivar el inicio de sesión remoto volviendo a la página Configurar inicio de sesión remoto (SSH) y desmarcando la casilla *Habilitar inicio de sesión remoto*. Si el inicio de sesión remoto está habilitado en un segundo controlador, se abre un cuadro de diálogo de confirmación que te permite desactivar el inicio de sesión remoto también en el segundo controlador.
 +
 Al deshabilitar el inicio de sesión remoto, se cierran todas las sesiones SSH vigentes y se rechazan todas las solicitudes de inicio de sesión nuevas.
 

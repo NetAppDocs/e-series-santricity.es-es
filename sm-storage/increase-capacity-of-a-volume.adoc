@@ -34,7 +34,7 @@ Solo ciertos sistemas operativos permiten aumentar la capacidad de un volumen. S
 ====
 .Pasos
 . En el panel izquierdo, selecciona menú:Storage[Volumes].
-. Selecciona el volumen para el que quieres aumentar la capacidad y luego haz clic en el icono del menú:ellipsis[Aumentar capacidad].
+. Busca el volumen cuya capacidad quieras aumentar y, a continuación, haz clic en el icono del menú:ellipsis [Aumentar capacidad].
 +
 Aparece la página Confirm Increase Capacity.
 
@@ -51,7 +51,7 @@ Esta página muestra la capacidad actual informada del volumen y la capacidad li
 
 .Resultados
 * System Manager aumenta la capacidad del volumen según lo seleccionado.
-* Selecciona menú:Storage[Operations in Progress] para ver el progreso de la operación de aumento de capacidad que se está ejecutando actualmente para el volumen seleccionado. Esta operación puede ser larga y podría afectar el rendimiento del sistema.
+* Selecciona el menú: Monitoring [Operations in progress] para ver el progreso de la operación de aumento de capacidad que se está ejecutando actualmente para el volumen seleccionado. Es posible que esta operación demore y que afecte el rendimiento del sistema.
 
 
 .Después de terminar

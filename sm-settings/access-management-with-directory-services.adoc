@@ -15,6 +15,7 @@ Para Access Management, los administradores puede usar un servidor LDAP (protoco
 
 
 
+[[configuration-workflow]]
 == Flujo de trabajo de configuración
 
 Si se utilizan un servidor LDAP y un servicio de directorio en la red, la configuración opera de la siguiente manera:
@@ -35,6 +36,7 @@ La `admin` el usuario tiene acceso completo a todas las funciones del sistema.
 
 
 
+[[management]]
 == Gestión
 
 Al utilizar los servicios de directorio para la autenticación, los administradores pueden realizar las siguientes tareas de gestión:

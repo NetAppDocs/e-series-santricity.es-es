@@ -19,18 +19,14 @@ Si la controladora incluye una conexión para NVMe over roce (RDMA over Converge
 
 
 .Pasos
-. En el panel izquierdo, selecciona *Hardware*.
-. Si el gráfico muestra las unidades, haga clic en la pestaña * Controladores y componentes *.
-+
-El gráfico cambia y muestra las controladoras en lugar de las unidades.
-
+. En el panel izquierdo, selecciona menú:Hardware[Controllers and components].
 . Haga clic en la controladora que tenga el puerto NVMe over roce que desea configurar.
 +
 Aparece el menú contextual de la controladora.
 
 . Seleccione *Configurar puertos NVMe over roce*.
 +
-Se abre el cuadro de diálogo Configurar puertos NVMe over roce.
+Se abre el cuadro de diálogo «Configurar puertos NVMe sobre RoCE».
 
 . En la lista desplegable, seleccione el puerto HIC que desea configurar.
 . Haga clic en *Siguiente*.

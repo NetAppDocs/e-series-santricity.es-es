@@ -16,6 +16,7 @@ Access Management es un método para establecer la autenticación de usuario en 
 
 
 
+[[what-authentication-methods-are-available]]
 == ¿Qué métodos de autenticación están disponibles?
 
 Los métodos de autenticación incluyen el control de acceso basado en roles (RBAC), los servicios de directorio y el lenguaje de marcado de aserción de seguridad (SAML):
@@ -37,9 +38,10 @@ Obtenga más información:
 
 
 
+[[how-do-i-configure-authentication]]
 == ¿Cómo se configura la autenticación?
 
-La cabina de almacenamiento está preconfigurada para utilizar roles de usuario local, que son una implementación de capacidades RBAC. Si desea configurar un método diferente, vaya al menú:Configuración[Access Management].
+La matriz de almacenamiento está preconfigurada para utilizar roles de usuario locales, que constituyen una implementación de las capacidades RBAC. Si deseas configurar un método diferente, ve al menú:Authentication[].
 
 Obtenga más información:
 
@@ -49,6 +51,7 @@ Obtenga más información:
 
 
 
+[[related-information]]
 == Información relacionada
 
 Obtenga más información sobre tareas relacionadas con la gestión del acceso:

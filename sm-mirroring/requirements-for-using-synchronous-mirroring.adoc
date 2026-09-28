@@ -16,6 +16,7 @@ Si planea utilizar la función de mirroring síncrono, tenga en cuenta los sigui
 
 
 
+[[unified-manager]]
 == Unified Manager
 
 Para habilitar y configurar el mirroring entre dos cabinas, debe usar la interfaz de Unified Manager. Unified Manager debe estar instalado en un sistema host junto con el proxy de servicios web.
@@ -27,6 +28,7 @@ Para habilitar y configurar el mirroring entre dos cabinas, debe usar la interfa
 
 
 
+[[storage-arrays]]
 == Cabinas de almacenamiento
 
 [NOTE]
@@ -46,6 +48,7 @@ La duplicación síncrona no está disponible en la matriz de almacenamiento EF8
 
 
 
+[[supported-connections]]
 == Conexiones admitidas
 
 La comunicación para la función Synchronous Mirroring solo se admite en las controladoras con puertos de host Fibre Channel (FC).
@@ -54,6 +57,7 @@ La función utiliza el puerto de host con el número más alto de cada controlad
 
 
 
+[[mirrored-volume-candidates]]
 == Candidatos de volumen reflejado
 
 * El nivel de RAID, los parámetros de almacenamiento en caché y el tamaño de los segmentos pueden ser diferentes en los volúmenes primario y secundario de una pareja reflejada síncrona.
@@ -66,6 +70,7 @@ La función utiliza el puerto de host con el número más alto de cada controlad
 
 
 
+[[reserved-capacity]]
 == Capacidad reservada
 
 * Se requiere capacidad reservada en el volumen primario y en el volumen secundario para registrar la información de escritura que se utiliza en la recuperación de los restablecimientos de la controladora y otras interrupciones temporales.
@@ -74,6 +79,7 @@ La función utiliza el puerto de host con el número más alto de cada controlad
 
 
 
+[[drive-security-feature]]
 == Función Drive Security
 
 * Si utiliza unidades compatibles con la función de seguridad, tanto el volumen primario como el secundario deben tener una configuración de seguridad compatible. Esta restricción no se aplica; por lo tanto, debe verificarlo por su cuenta.

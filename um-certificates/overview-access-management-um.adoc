@@ -15,6 +15,7 @@ Access Management es un método para configurar la autenticación de usuario en 
 
 
 
+[[what-authentication-methods-are-available]]
 == ¿Qué métodos de autenticación están disponibles?
 
 Están disponibles los siguientes métodos de autenticación:
@@ -34,6 +35,7 @@ Obtenga más información:
 
 
 
+[[how-do-i-configure-access-management]]
 == ¿Cómo se configura Access Management?
 
 El software SANtricity está preconfigurado para usar roles de usuario local. Si desea utilizar LDAP, puede configurarlo en la página Access Management.

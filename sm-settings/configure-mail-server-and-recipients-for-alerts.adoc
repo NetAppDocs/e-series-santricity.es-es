@@ -27,7 +27,7 @@ Para usar un nombre de dominio completo, debe configurar un servidor DNS en amba
 
 
 .Acerca de esta tarea
-En esta tarea, se describe cómo configurar el servidor de correo, introducir las direcciones de correo electrónico del remitente y de los destinatarios, y analizar todas las direcciones de correo electrónico introducidas desde la página Alertas.
+Esta tarea describe cómo configurar el servidor de correo electrónico, ingresar las direcciones de correo electrónico del remitente y de los destinatarios, y probar todas las direcciones de correo electrónico ingresadas desde la página de alertas por correo electrónico.
 
 [NOTE]
 ====
@@ -35,10 +35,9 @@ Las alertas por correo electrónico también pueden configurarse en el asistente
 
 ====
 .Pasos
-. En el panel izquierdo, selecciona menú:Settings[Alerts].
-. Seleccione la ficha *correo electrónico*.
+. En el panel de la izquierda, selecciona el menú: alertas [Alertas por correo electrónico].
 +
-Si aún no se configuró ningún servidor de correo, la pestaña correo electrónico muestra "Configure Mail Server".
+Si aún no se ha configurado un servidor de correo electrónico, la página muestra "Configurar servidor de correo".
 
 . Seleccione *Configurar el servidor de correo*.
 +
@@ -58,7 +57,7 @@ Para usar un nombre de dominio completo, debe configurar un servidor DNS en amba
 ** *Nombre de usuario y contraseña* -- Si es necesario, introduzca un nombre de usuario y una contraseña para la autenticación con el remitente saliente y el servidor de correo.
 ** *Incluir información de contacto en el correo electrónico* -- para incluir la información de contacto del remitente con el mensaje de alerta, seleccione esta opción e introduzca un nombre y un número de teléfono.
 +
-Después de hacer clic en *Guardar*, las direcciones de correo electrónico aparecerán en la ficha correo electrónico de la página Alertas.
+Después de que hagas clic en *Guardar*, las direcciones de correo electrónico aparecen en la página de alertas por correo electrónico.
 
 
 
@@ -68,7 +67,7 @@ Se abre el cuadro de diálogo Añadir correos electrónicos.
 
 . Introduzca una o más direcciones de correo electrónico para los destinatarios de alertas y, a continuación, haga clic en *Agregar*.
 +
-Las direcciones de correo electrónico aparecerán en la página Alertas.
+Las direcciones de correo electrónico aparecen en la página de alertas por correo electrónico.
 
 . Si desea asegurarse de que las direcciones de correo electrónico son válidas, haga clic en *probar todos los correos electrónicos* para enviar mensajes de prueba a los destinatarios.
 

@@ -27,18 +27,13 @@ Si ya configuró los puertos de gestión de la cabina de almacenamiento con el p
 
 ====
 .Pasos
-. En el panel izquierdo, selecciona *Hardware*.
-. Si el gráfico muestra las unidades, haga clic en la pestaña * Controladores y componentes *.
-+
-El gráfico cambia y muestra las controladoras en lugar de las unidades.
-
-. Seleccione la controladora para configurar.
+. En el panel izquierdo, selecciona menú:Hardware[Controllers and components].
 +
 Aparece el menú contextual de la controladora.
 
 . Seleccione *Configurar servidor DNS*.
 +
-Se abre el cuadro de diálogo Configurar servidor del sistema de nombres de dominio (DNS).
+Se abre la página «Configurar el servidor DNS».
 
 . Seleccione una de las siguientes opciones:
 +
@@ -57,4 +52,4 @@ Si la cabina de almacenamiento está configurada para usar una dirección DNS es
 
 
 .Resultados
-La configuración de DNS se muestra en la ficha *DNS / NTP* de la configuración del controlador.
+La configuración del DNS se muestra en los ajustes del controlador, en la sección *nombre de dominio del sistema (DNS) ajustes del servidor*.

@@ -15,6 +15,7 @@ La función Snapshot utiliza volúmenes base, capacidad reservada y grupos Snaps
 
 
 
+[[base-volumes]]
 == Volúmenes base
 
 Un _volumen base_ es el volumen utilizado como origen de una imagen Snapshot. Un volumen base puede ser un volumen grueso o un volumen fino, y puede residir en un pool o un grupo de volúmenes.
@@ -29,6 +30,7 @@ Volumen base de esta aplicación 1; estos 2 objetos Snapshot en el grupo (imáge
 
 
 
+[[reserved-capacity-and-snapshot-groups]]
 == Capacidad reservada y grupos Snapshot
 
 System Manager organiza las imágenes Snapshot en _grupos Snapshot_. Cuando System Manager establece el grupo Snapshot, crea automáticamente una capacidad _reservada_ asociada para contener las imágenes Snapshot del grupo y realizar un seguimiento de los futuros cambios en las Snapshot adicionales.
@@ -43,6 +45,7 @@ Los grupos Snapshot no requieren ninguna acción del usuario, pero se puede ajus
 
 
 
+[[auto-deletion]]
 == Eliminación automática
 
 Al trabajar con Snapshot, utilice la opción predeterminada para activar la eliminación automática. La eliminación automática elimina automáticamente la imagen Snapshot más antigua cuando el grupo Snapshot llega al límite de 32 imágenes. Si se desactiva la eliminación automática, los límites del grupo Snapshot se superarán en algún momento, y deberá realizar acciones manuales para configurar las opciones del grupo Snapshot y gestionar la capacidad reservada.

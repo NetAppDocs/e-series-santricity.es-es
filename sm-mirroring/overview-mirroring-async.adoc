@@ -15,6 +15,7 @@ La función Asynchronous Mirroring ofrece un mecanismo basado en firmware en el 
 
 
 
+[[what-is-asynchronous-mirroring]]
 == ¿Qué es el mirroring asíncrono?
 
 _Asynchronous Mirroring_ captura el estado de un volumen primario en un momento específico y copia solo los datos que han cambiado desde la última captura de imagen. El sitio primario se puede actualizar de inmediato y el sitio secundario se puede actualizar según lo permita el ancho de banda. La información se guarda en la caché y se envía más tarde, a medida que los recursos de red se vuelven disponibles.
@@ -32,6 +33,7 @@ Obtenga más información:
 
 
 
+[[how-do-i-configure-asynchronous-mirroring]]
 == ¿Cómo se configura el mirroring asíncrono?
 
 Es necesario usar la interfaz de Unified Manager para realizar la configuración de mirroring inicial entre las cabinas. Una vez que se configura, puede gestionar las parejas reflejadas y los grupos de consistencia en System Manager.
@@ -45,6 +47,7 @@ Obtenga más información:
 
 
 
+[[related-information]]
 == Información relacionada
 
 Obtenga más información acerca de conceptos relacionados con el mirroring asíncrono:

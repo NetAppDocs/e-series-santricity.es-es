@@ -15,12 +15,14 @@ Antes de usar Unified Manager de SANtricity para actualizar varias cabinas de al
 
 
 
+[[current-versions]]
 == Versiones actuales
 
 Puede ver las versiones actuales del software de sistema operativo SANtricity desde la página gestionar de Unified Manager en cada cabina de almacenamiento detectada. La versión se muestra en la columna Software de sistema operativo SANtricity. Si hace clic en la versión de sistema operativo SANtricity en cada fila, puede encontrar información de NVSRAM y del firmware de la controladora en un cuadro de diálogo emergente.
 
 
 
+[[other-components-requiring-upgrade]]
 == Otros componentes que requieren actualización
 
 Como parte del proceso de actualización, es posible que también necesite actualizar el controlador de conmutación al nodo de respaldo/multivía del host o el controlador de HBA de modo que el host pueda interactuar con las controladoras correctamente.
@@ -29,6 +31,7 @@ Para obtener información sobre compatibilidad, consulte https://imt.netapp.com/
 
 
 
+[[dual-controllers]]
 == Controladoras dobles
 
 Si una cabina de almacenamiento contiene dos controladoras y existe un controlador multivía instalado, la cabina de almacenamiento puede seguir procesando las operaciones de I/o mientras se realiza la actualización. Durante la actualización, ocurre el siguiente proceso:

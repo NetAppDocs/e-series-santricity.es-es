@@ -2,7 +2,7 @@
 permalink: sm-hardware/controller-states.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, controller, states, 
-summary: 'Una controladora se puede colocar en tres estados distintos: En línea, sin conexión y modo de servicio.' 
+summary: Puedes poner un controlador en tres estados diferentes. En línea, fuera de línea y en modo de servicio. 
 ---
 = Obtenga información sobre los estados del controlador en SANtricity System Manager
 :allow-uri-read: 
@@ -15,6 +15,7 @@ Una controladora se puede colocar en tres estados distintos: En línea, sin cone
 
 
 
+[[online-state]]
 == Estado en línea
 
 El estado en línea es el estado de funcionamiento normal de la controladora. Significa que la controladora funciona con normalidad y está disponible para operaciones de I/O.
@@ -23,6 +24,7 @@ Cuando se coloca una controladora en el estado en línea, su estado se configura
 
 
 
+[[offline-state]]
 == Estado sin conexión
 
 Por lo general, el estado sin conexión se usa para preparar una controladora para reemplazarla cuando hay dos controladoras en la cabina de almacenamiento. La controladora puede pasar al estado sin conexión por los siguientes dos motivos: El usuario puede introducir un comando explícito o se puede producir un error en la controladora. Una controladora puede salir del estado sin conexión solo si se emite otro comando explícito o si se reemplaza la controladora que produjo un error. Solo se puede colocar una controladora sin conexión si hay dos controladoras en la cabina de almacenamiento.
@@ -37,6 +39,7 @@ Si una controladora se encuentra en un estado sin conexión, es porque se presen
 
 
 
+[[service-mode]]
 == Modo de servicio
 
 El modo de servicio, por lo general, es una condición que solo utiliza el soporte técnico para transferir todos los volúmenes de la cabina de almacenamiento a una controladora a fin de poder efectuar un diagnóstico en la otra controladora. Una controladora se debe colocar manualmente en el modo de servicio y volver a colocarse en línea manualmente una vez que finaliza la operación de mantenimiento.

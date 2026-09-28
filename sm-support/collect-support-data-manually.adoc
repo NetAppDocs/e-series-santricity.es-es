@@ -19,7 +19,7 @@ Es posible recopilar distintas clases de inventario, Estados y datos de rendimie
 
 [NOTE]
 ====
-Si la función AutoSupport está activada, también puede recopilar estos datos en la ficha *AutoSupport* y seleccionando *Enviar envío AutoSupport*.
+Si la función AutoSupport está activada, también puedes recopilar estos datos yendo al menú:Support[AutoSupport] y seleccionando *Send AutoSupport Dispatch*.
 
 ====
 Solo se puede ejecutar una operación de recogida a la vez. Si intenta iniciar otra operación, recibirá un mensaje de error.
@@ -30,7 +30,7 @@ Realice esta operación solo cuando el soporte técnico se lo indique.
 
 ====
 .Pasos
-. En el panel izquierdo, selecciona menú:Support[Support Center > Diagnostics] tab.
+. En el panel de la izquierda, selecciona menú:Support[Diagnostics].
 . Seleccione *recopilar datos de soporte*.
 . Haga clic en *recoger*.
 +

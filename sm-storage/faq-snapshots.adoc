@@ -16,6 +16,7 @@ Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respue
 
 
 
+[[why-dont-i-see-all-my-volumes-hosts-or-host-clusters]]
 == ¿Por qué no veo todos mis volúmenes, hosts o clústeres de host?
 
 Los volúmenes Snapshot que incluyen un volumen base con la función DA habilitada no son aptos para asignarse a un host que no es compatible con la función Data Assurance (DA). Debe deshabilitar DA en el volumen base para poder asignar un volumen Snapshot a un host que no es compatible con DA.
@@ -33,6 +34,7 @@ No se puede deshabilitar LA DA en un volumen asociado con Snapshot (grupos de co
 ====
 
 
+[[what-is-a-snapshot-image]]
 == ¿Qué es una imagen Snapshot?
 
 Una imagen Snapshot es una copia lógica de contenido del volumen, capturado en un momento específico. Las imágenes Snapshot utilizan un espacio de almacenamiento mínimo.
@@ -45,6 +47,7 @@ Los datos de imagen Snapshot se almacenan de la siguiente manera:
 
 
 
+[[why-use-snapshot-images]]
 == ¿Por qué se deben utilizar imágenes Snapshot?
 
 Se pueden utilizar snapshots como medida de protección contra el daño o la pérdida de datos, accidental o intencional, y para permitir la recuperación.
@@ -61,12 +64,14 @@ El sistema retiene varias imágenes Snapshot como puntos de restauración que se
 
 
 
+[[what-kinds-of-volumes-can-be-used-for-snapshots]]
 == ¿Qué tipos de volúmenes pueden utilizarse para las Snapshot?
 
 Los volúmenes estándares y finos son los únicos tipos de volúmenes que se pueden utilizar para almacenar las imágenes Snapshot. No se pueden utilizar volúmenes no estándares. El volumen base puede residir en un pool o en un grupo de volúmenes.
 
 
 
+[[why-would-i-create-a-snapshot-consistency-group]]
 == ¿Por qué debería crear un grupo de coherencia Snapshot?
 
 Si desea que se capturen imágenes Snapshot de varios volúmenes al mismo tiempo, puede crear un grupo de coherencia Snapshot.
@@ -85,6 +90,7 @@ Se pueden realizar las siguientes operaciones Snapshot en un grupo de coherencia
 
 
 
+[[what-is-a-snapshot-volume-and-when-does-it-need-reserved-capacity]]
 == ¿Qué es un volumen Snapshot y cuándo necesita capacidad reservada?
 
 Un volumen Snapshot permite que el host acceda a los datos de la imagen Snapshot. El volumen Snapshot tiene su propia capacidad reservada que almacena cualquier modificación del volumen base sin afectar a la imagen Snapshot original. Los hosts no tienen permisos de lectura ni escritura en las imágenes Snapshot. Si desea leer o escribir datos Snapshot, cree un volumen Snapshot y asigne este volumen a un host.
@@ -97,6 +103,7 @@ Es posible crear dos tipos de volúmenes Snapshot. El tipo de volumen Snapshot d
 
 
 
+[[what-is-a-snapshot-group]]
 == ¿Qué es un grupo Snapshot?
 
 Un grupo Snapshot es una recogida de imágenes Snapshot de momentos específicos de un único volumen base asociado.
@@ -109,6 +116,7 @@ System Manager organiza las imágenes Snapshot en _grupos Snapshot_. Los grupos 
 
 
 
+[[why-would-i-disable-a-snapshot-volume]]
 == ¿Por qué debería deshabilitar un volumen Snapshot?
 
 El volumen Snapshot se deshabilita cuando se desea asignar un volumen Snapshot diferente a la imagen Snapshot. Se puede reservar el volumen Snapshot deshabilitado para usarlo más adelante.
@@ -117,6 +125,7 @@ Si ya no necesita el volumen Snapshot o el volumen Snapshot del grupo de coheren
 
 
 
+[[what-is-the-disabled-state]]
 == ¿Qué es el estado deshabilitado?
 
 Un volumen Snapshot en estado deshabilitado no se encuentra asignado actualmente a una imagen Snapshot. Para habilitar el volumen Snapshot, se debe utilizar la operación recrear para asignar una imagen Snapshot nueva al volumen Snapshot deshabilitado.
@@ -125,6 +134,7 @@ Las características del volumen Snapshot quedan definidas por la imagen Snapsho
 
 
 
+[[why-would-i-suspend-a-snapshot-schedule]]
 == ¿Por qué debería suspender una programación Snapshot?
 
 Cuando se suspende una programación, no se ejecutan las creaciones de imágenes Snapshot programadas. Es posible poner en pausa una programación Snapshot para conservar el espacio de almacenamiento, y reanudar las Snapshot programadas más adelante.

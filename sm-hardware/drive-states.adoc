@@ -15,6 +15,7 @@ System Manager de SANtricity informa sobre distintos estados de las unidades.
 
 
 
+[[accessibility-states]]
 == estados de accesibilidad
 
 [cols="25h,~"]
@@ -63,6 +64,7 @@ La unidad no responde a los comandos.
 |===
 
 
+[[role-states]]
 == estados de roles
 
 [cols="25h,~"]
@@ -78,14 +80,14 @@ La unidad es miembro de un pool o un grupo de volúmenes.
 
 
  a| 
-Pieza de repuesto en uso
+Repuesto activo en uso
  a| 
 La unidad se está usando como reemplazo de otra que tuvo errores. Las piezas de repuesto solo se usan en grupos de volúmenes, no en pools.
 
 
 
  a| 
-Pieza de repuesto en espera
+Hot spare en espera
  a| 
 La unidad está lista para usarse como reemplazo de otra que tuvo errores. Las piezas de repuesto solo se usan en grupos de volúmenes, no en pools.
 
@@ -99,6 +101,7 @@ La unidad no es miembro de un pool ni de un grupo de volúmenes.
 |===
 
 
+[[availability-states]]
 == estados de disponibilidad
 
 [cols="25h,~"]

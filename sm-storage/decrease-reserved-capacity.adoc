@@ -2,7 +2,7 @@
 permalink: sm-storage/decrease-reserved-capacity.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, decrease, reserved, capacity 
-summary: Puede utilizar la opción disminuir capacidad para reducir la capacidad reservada de los siguientes objetos de almacenamiento; grupo Snapshot, volumen Snapshot y volumen miembro de grupo de coherencia. Puede reducir la capacidad reservada solo en las cantidades que utilizó para aumentarla. 
+summary: Usa la opción Decrease Capacity para reducir la capacidad reservada de los siguientes objetos de almacenamiento. Grupo de instantáneas, volumen de instantáneas y volumen miembro de un grupo de consistencia. Solo puedes reducir la capacidad reservada en la misma cantidad que usaste para aumentarla. 
 ---
 = Disminuir la capacidad reservada en SANtricity System Manager
 :allow-uri-read: 
@@ -29,8 +29,7 @@ Revise las siguientes directrices:
 
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Storage[Pools y grupos de volúmenes].
-. Haga clic en la pestaña *capacidad reservada*.
+. En el panel de la izquierda, selecciona el menú: almacenamiento [Capacidad reservada].
 . Selecciona el objeto de almacenamiento para el que quieres disminuir la capacidad reservada y luego haz clic en el icono menu:ellipsis[Decrease Capacity].
 +
 Aparece la página Decrease Reserved Capacity.

@@ -16,12 +16,13 @@ Utilice el asistente de configuración para configurar la cabina de almacenamien
 
 
 
+[[first-time-setup]]
 == Configuración por primera vez
 
 Cuando se abre por primera vez System Manager, aparece el asistente de configuración. El asistente de configuración le solicita que realice tareas de configuración básicas, como asignar un nombre a la cabina de almacenamiento, configurar los hosts, seleccionar aplicaciones y crear pools de almacenamiento.
 
 
-NOTE: Antes de continuar con la configuración inicial, vaya al centro de actualización (menú:Soporte[Centro de actualización]) y asegúrese de que el software de sistema operativo SANtricity está actualizado. Si es necesario, actualice a la versión más reciente y actualice el explorador para continuar con la configuración. Para obtener más información, consulte link:../sm-support/overview-upgrade-center.html["Información general del centro de actualización"].
+NOTE: Antes de continuar con la configuración inicial, ve al Upgrade center (menú:Support[Upgrade center]) y asegúrate de que tu software SANtricity OS esté actualizado. Si es necesario, actualiza a la última versión y actualiza tu navegador para continuar con la configuración. Para obtener más información, consulta link:../sm-support/overview-upgrade-center.html["Información general del centro de actualización"].
 
 Si cancela el asistente, no podrá volver a ejecutarlo manualmente. El asistente se vuelve a ejecutar automáticamente cuando abre System Manager o actualiza el explorador y se cumple _al menos una_ de las siguientes condiciones:
 
@@ -32,6 +33,7 @@ Si cancela el asistente, no podrá volver a ejecutarlo manualmente. El asistente
 
 
 
+[[terminology]]
 == Terminología
 
 El asistente de configuración usa los siguientes términos.

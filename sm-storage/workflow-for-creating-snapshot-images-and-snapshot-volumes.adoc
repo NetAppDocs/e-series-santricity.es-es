@@ -15,12 +15,14 @@ En SANtricity System Manager, se pueden crear imágenes y volúmenes Snapshot me
 
 
 
+[[workflow-for-creating-snapshot-images]]
 == Flujo de trabajo para crear imágenes de snapshots
 
 image::../media/sam1130-flw-snapshots-create-ss-images.gif[Flujo de trabajo para crear imágenes Snapshot]
 
 
 
+[[workflow-for-creating-snapshot-volumes]]
 == Flujo de trabajo para crear volúmenes de snapshots
 
 image::../media/sam1130-flw-snapshots-create-ss-volumes.gif[Flujo de trabajo para crear volúmenes Snapshot]

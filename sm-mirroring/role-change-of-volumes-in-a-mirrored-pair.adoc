@@ -28,6 +28,7 @@ Revise la siguiente información sobre la operación de cambio de roles:
 
 
 
+[[force-role-change]]
 == Forzar cambio de rol
 
 Es posible forzar un cambio de rol entre los volúmenes de una pareja reflejada cuando un problema de comunicación entre la cabina de almacenamiento local y la cabina de almacenamiento remota impide la promoción del volumen secundario o la degradación del volumen primario.
@@ -41,6 +42,7 @@ Cuando se recupera la cabina de almacenamiento remota y se resuelven todos los p
 ====
 
 
+[[when-is-a-forced-promotion-allowed-and-not-allowed]]
 == ¿Cuándo se permite y no se permite una promoción forzada?
 
 La promoción forzada de un volumen de una pareja reflejada no se permite en las siguientes condiciones:
@@ -51,6 +53,7 @@ La promoción forzada de un volumen de una pareja reflejada no se permite en las
 
 
 
+[[role-change-in-progress-state]]
 == Estado de cambio de rol en curso
 
 Si se desconectan dos cabinas de almacenamiento en una configuración de mirroring, y se fuerza la degradación del volumen primario de una pareja reflejada al rol secundario y la promoción del volumen secundario de una pareja reflejada al rol primario, A continuación, cuando se restaura la comunicación, los volúmenes en ambas cabinas de almacenamiento se colocan en el estado de cambio de rol en curso.

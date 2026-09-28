@@ -15,6 +15,7 @@ El mirroring síncrono o asíncrono se debe configurar en SANtricity Unified Man
 
 
 
+[[asynchronous-mirroring-workflow]]
 == Flujo de trabajo de mirroring asíncrono
 
 El mirroring asíncrono conlleva el siguiente flujo de trabajo:
@@ -45,6 +46,7 @@ Como la replicación asíncrona es periódica, el sistema puede consolidar los b
 
 
 
+[[synchronous-mirroring-workflow]]
 == Flujo de trabajo de mirroring síncrono
 
 El mirroring síncrono conlleva el siguiente flujo de trabajo:

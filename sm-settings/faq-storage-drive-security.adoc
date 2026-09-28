@@ -16,6 +16,7 @@ Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respue
 
 
 
+[[what-do-i-need-to-know-before-creating-a-security-key]]
 == ¿Qué debo saber antes de crear una clave de seguridad?
 
 Las controladoras y unidades con seguridad habilitada comparten una clave de seguridad dentro de una cabina de almacenamiento. Si se quita una unidad con la función de seguridad habilitada de la cabina de almacenamiento, la clave de seguridad protege los datos de un acceso no autorizado.
@@ -28,6 +29,7 @@ Puede crear y gestionar claves de seguridad mediante uno de los siguientes méto
 
 
 
+[[internal-key-management]]
 === Gestión de claves internas
 
 Se mantienen las claves internas y se «"ocultan"» en una ubicación sin acceso en la memoria persistente de la controladora. Antes de crear una clave de seguridad interna, debe hacer lo siguiente:
@@ -40,6 +42,7 @@ Luego, podrá crear una clave de seguridad interna, lo que implica definir un id
 
 
 
+[[external-key-management]]
 === Gestión de claves externas
 
 Las claves externas se mantienen en un servidor de gestión de claves individual mediante un protocolo de interoperabilidad de gestión de claves (KMIP). Antes de crear una clave de seguridad externa, debe hacer lo siguiente:
@@ -48,7 +51,7 @@ Las claves externas se mantienen en un servidor de gestión de claves individual
 . Asegúrese de que la función Drive Security esté habilitada. Si fuera necesario, comuníquese con el proveedor de almacenamiento para pedir indicaciones sobre cómo habilitar la función Drive Security.
 . Obtener un archivo de certificado de cliente firmado. Un certificado de cliente valida las controladoras de la cabina de almacenamiento para que el servidor de gestión de claves pueda confiar en sus solicitudes KMIP.
 +
-.. En primer lugar, complete y descargue una solicitud de firma de certificación (CSR) de cliente. Vaya a menú:Configuración[certificados > Gestión de claves > completar CSR].
+.. En primer lugar, debes completar y descargar una solicitud de firma de certificado (CSR) de cliente. Ve al menú:Certificates[Key management certificates], y luego selecciona *Complete CSR*.
 .. A continuación, se solicita un certificado de cliente firmado de una CA de confianza para el servidor de gestión de claves. (También se puede crear y descargar un certificado de cliente desde el servidor de gestión de claves con el archivo CSR descargado).
 .. Una vez que tenga un archivo de certificado de cliente, copie ese archivo en el host en el que accede a System Manager.
 
@@ -60,12 +63,14 @@ Luego, podrá crear una clave externa, lo que implica definir la dirección IP d
 
 
 
+[[why-do-i-need-to-define-a-pass-phrase]]
 == ¿Por qué debo definir una frase de contraseña?
 
 La frase de contraseña se utiliza para cifrar y descifrar el archivo de claves de seguridad almacenado en el cliente de gestión local. Sin la frase de contraseña, la clave de seguridad no se puede descifrar y utilizar para desbloquear datos de una unidad con la función de seguridad habilitada, si se la reinstala en otra cabina de almacenamiento.
 
 
 
+[[why-is-it-important-to-record-security-key-information]]
 == ¿Por qué es importante registrar la información de claves de seguridad?
 
 Si pierde la información de la clave de seguridad y no cuenta con un backup, podría perder los datos al reubicar las unidades con la función de seguridad habilitada o actualizar una controladora. La clave de seguridad es necesaria para desbloquear los datos en las unidades.
@@ -74,6 +79,7 @@ Asegúrese de registrar el identificador de la clave de seguridad, la frase de c
 
 
 
+[[what-do-i-need-to-know-before-backing-up-a-security-key]]
 == ¿Qué debo saber antes de realizar un backup de una clave de seguridad?
 
 Si la clave de seguridad original se daña y no existe un backup, se perderá el acceso a los datos de las unidades al migrarlas de una cabina de almacenamiento a otra.
@@ -99,6 +105,7 @@ La frase de contraseña para Drive Security no debería confundirse con la contr
 
 
 
+[[what-do-i-need-to-know-before-unlocking-secure-drives]]
 == ¿Qué debo saber antes de desbloquear unidades seguras?
 
 Para desbloquear los datos de una unidad con la función de seguridad habilitada, se debe importar la clave de seguridad.
@@ -113,14 +120,16 @@ Antes de desbloquear unidades con la función de seguridad habilitada, recuerde 
 
 
 
+[[what-is-readwrite-accessibility]]
 == ¿Qué es la accesibilidad de lectura/escritura?
 
 La ventana Configuración de la unidad incluye información acerca de los atributos de seguridad de la unidad. "Read/Write Accessible" es uno de los atributos que se muestran si se bloquearon los datos de una unidad.
 
-Para ver los atributos de Drive Security, vaya a la página hardware. Seleccione una unidad, haga clic en *Ver configuración* y, a continuación, haga clic en *Mostrar más valores*. En la parte inferior de la página, el valor del atributo Accesibilidad de lectura/escritura será *Sí* cuando la unidad esté desbloqueada. El valor del atributo Accesibilidad de lectura/escritura es *no, clave de seguridad no válida* cuando la unidad está bloqueada. Si desea desbloquear una unidad segura, importe una clave de seguridad (vaya a menú:Configuración[sistema > Desbloquear unidades seguras]).
+Para ver los atributos de seguridad de la unidad, ve a la página Hardware. Selecciona una unidad, haz clic en *Ver configuración* y luego haz clic en *Mostrar más opciones*. En la parte inferior de la página, el valor del atributo Accesible en lectura/escritura es *Sí* cuando la unidad está desbloqueada. El valor del atributo Accesible en lectura/escritura es *No, clave de seguridad no válida* cuando la unidad está bloqueada. Puedes desbloquear una unidad segura importando una clave de seguridad (ve a menú:System[Unlock secure drives]).
 
 
 
+[[what-do-i-need-to-know-about-validating-the-security-key]]
 == ¿Qué debo saber acerca de la validación de la clave de seguridad?
 
 Después de crear una clave de seguridad, se debe validar el archivo de claves para garantizar que no esté dañado.
@@ -134,6 +143,7 @@ Si la validación falla, haga lo siguiente:
 
 
 
+[[what-is-the-difference-between-internal-security-key-and-external-security-key-management]]
 == ¿Cuál es la diferencia entre la gestión de claves de seguridad interna y de claves de seguridad externa?
 
 Cuando se implementa la función Drive Security, es posible utilizar una clave de seguridad interna o una clave de seguridad externa para bloquear los datos cuando se quita una unidad con la función de seguridad habilitada de la cabina de almacenamiento.

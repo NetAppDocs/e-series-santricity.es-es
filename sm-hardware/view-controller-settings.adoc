@@ -14,79 +14,100 @@ summary: Es posible ver información sobre una controladora, como el estado de l
 Es posible ver información sobre una controladora, como el estado de las interfaces del host, de las interfaces de la unidad y de los puertos de gestión.
 
 .Pasos
-. En el panel izquierdo, selecciona *Hardware*.
-. Si el gráfico muestra las unidades, haga clic en la pestaña * Controladores y componentes *.
-+
-El gráfico cambia y muestra las controladoras en lugar de las unidades.
-
+. En el panel izquierdo, selecciona menú:Hardware[Controllers and components].
 . Realice alguna de las siguientes acciones para ver la configuración de la controladora:
 +
 ** Haga clic en el controlador para mostrar el menú contextual y, a continuación, seleccione *Ver configuración*.
 ** Seleccione el icono del controlador (junto a la lista desplegable *Bandeja*). Para configuraciones dúplex, seleccione *controladora A* o *controladora B* en el cuadro de diálogo y, a continuación, haga clic en *Siguiente*.
 +
-Se abrirá el cuadro de diálogo Configuración de la controladora.
+Se abre el menú deslizante de configuración del controlador.
 
 
 
-. Seleccione las pestañas para cambiar de una opción de configuración de propiedad a otra.
-+
-Algunas fichas tienen un enlace para *Mostrar más ajustes* en la parte superior derecha.
-
+. Revisa las secciones para desplazarte entre los ajustes de las propiedades del controlador.
 +
 .Detalles del campo
 [%collapsible]
 ====
 [cols="25h,~"]
 |===
-| Pestaña | Descripción 
+| Sección | Descripción 
 
 
  a| 
-Base
+Detalles
  a| 
-Muestra el estado de la controladora, el nombre del modelo, el número de pieza de repuesto, la versión de firmware actual y la versión de la memoria estática de acceso aleatorio no volátil (NVSRAM).
+Muestra el estado del controlador, la fecha y hora, el nombre del modelo y el número de pieza de repuesto.
 
 
 
  a| 
-Almacenamiento en caché
+Configuración actual
  a| 
-Muestra la configuración de caché de la controladora, que incluye la caché de datos, la caché de procesador y el dispositivo de backup de caché. El dispositivo de backup de caché se usa para crear backups de datos en la caché si la controladora se queda sin energía. Los Estados pueden ser Optimal, Failed, Removed, Unknown, Write Protected, O incompatible.
+Muestra la versión actual del firmware y la versión de NVRAM.
+
+
+
+ a| 
+Caché de datos
+ a| 
+Muestra los totales de la caché de datos.
+
+
+
+ a| 
+Módulos de caché de datos
+ a| 
+Muestra la ubicación, el estado y la capacidad del módulo de caché.
+
+
+
+ a| 
+Caché del procesador
+ a| 
+Muestra los totales de la caché del procesador.
+
+
+
+ a| 
+Dispositivos de copia de seguridad de caché
+ a| 
+Muestra la ubicación, el estado y la capacidad del dispositivo de copia de seguridad de la caché.
 
 
 
  a| 
 Interfaces del host
  a| 
-Muestra información de la interfaz del host y el estado del enlace de cada puerto. La interfaz del host es la conexión entre la controladora y el host, como Fibre Channel o iSCSI.
-
-
-NOTE: La ubicación de la tarjeta de interfaz del host (HIC) puede ser en la placa base o en una ranura (bahía). Si el sistema muestra "Baseboard", significa que los puertos de la HIC están integrados en la controladora. Si el sistema muestra "Slot", significa que los puertos están en la HIC opcional.
+Muestra la información de la interfaz del host y el estado de enlace de cada puerto.
 
 
 
  a| 
 Interfaces de unidad
  a| 
-Muestra la información de la interfaz de la unidad y el estado de enlace de cada puerto. La interfaz de la unidad es la conexión entre la controladora y las unidades, como SAS.
+Muestra la información de la interfaz de la unidad y el estado de enlace de cada puerto.
 
 
 
  a| 
-Puertos de gestión
+Configuración de los puertos de gestión
  a| 
-Muestra detalles de los puertos de gestión, como el nombre de host que se usa para acceder a la controladora y si se habilitó un inicio de sesión remoto. El puerto de gestión conecta la controladora con el cliente de gestión, que es donde se instala un explorador para acceder a System Manager.
+Muestra los detalles del puerto de gestión, incluyendo el nombre de host del controlador, el inicio de sesión remoto y la configuración de red IP.
 
 
 
  a| 
-DNS/NTP
+Configuración del sistema de nombres de dominio (servidor DNS)
  a| 
-Muestra el método de direccionamiento y las direcciones IP del servidor DNS y servidor NTP, si estos servidores se configuraron en System Manager.
+Muestra la configuración de DNS, el servidor DNS principal y el servidor DNS de respaldo.
 
-El sistema de nombres de dominio (DNS) es un sistema de nomenclatura para los dispositivos conectados a Internet o a una red privada. El servidor DNS conserva un directorio de nombres de dominio y los convierte en direcciones de protocolos de Internet (IP).
 
-El protocolo de tiempo de redes (NTP) es un protocolo de redes para la sincronización del reloj entre los sistemas informáticos en las redes de datos.
+
+ a| 
+Configuración del servidor NTP (network time protocol)
+ a| 
+Muestra los detalles de configuración del servicio NTP y del servidor NTP.
 
 |===
 ====

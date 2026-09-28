@@ -14,7 +14,7 @@ summary: En el caso de los volúmenes finos con capacidad para asignar espacio b
 [role="lead"]
 En el caso de los volúmenes finos con capacidad para asignar espacio bajo demanda, se puede cambiar el límite que restringe la capacidad asignada a la que un volumen fino se puede expandir automáticamente.
 
-También se puede modificar el porcentaje en el que se envía una alerta (umbral de advertencia superado) al área Notificaciones de la página Inicio cuando un volumen fino está cerca del límite de capacidad asignado. Se puede habilitar o deshabilitar esta notificación de alerta.
+También puedes modificar el punto porcentual a partir del cual se envía una alerta (umbral de advertencia superado) al área de notificaciones, accesible a través del icono de la campana situado en la esquina superior de la ventana, cuando un volumen thin se acerca al límite de capacidad asignado. Puedes elegir activar o desactivar esta notificación de alerta.
 
 [NOTE]
 ====
@@ -26,10 +26,9 @@ El sistema expande automáticamente la capacidad asignada de acuerdo con el lím
 Cuando se modifican el límite de capacidad asignada y el umbral de advertencia de un volumen fino, se debe tener en cuenta el espacio que consumirán los datos de usuario del volumen y los datos de los servicios de copia.
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Storage[Volumes].
-. Seleccione la ficha *Supervisión de volumen fino*.
+. En el panel de la izquierda, selecciona el menú: almacenamiento [Supervisión de volúmenes Thin].
 +
-Se muestra la vista Supervisión de volumen fino.
+Aparece la vista de supervisión de volumen Thin.
 
 . Seleccione el volumen fino que desea cambiar y, a continuación, seleccione *Cambiar límite*.
 +
@@ -55,7 +54,7 @@ El umbral en el que no es posible completar la operación de escritura y no se p
  a| 
 Enviarme una alerta cuando... (umbral de advertencia)
  a| 
-Marque la casilla de comprobación si desea que el sistema genere una alerta cuando haya un volumen fino cerca del límite de capacidad asignada. La alerta se envía al área Notificaciones de la página Inicio. Este umbral es un porcentaje de la capacidad notificada del volumen.
+Marca la casilla de comprobación si quieres que el sistema genere una alerta cuando un volumen thin esté cerca del límite de capacidad asignada. La alerta se envía al área de notificaciones, disponible a través del icono de la campana en la esquina superior de la ventana. Este umbral es un porcentaje del tamaño de capacidad informado del volumen.
 
 Si desea deshabilitar la notificación de alerta de umbral de advertencia, desmarque la casilla de comprobación.
 

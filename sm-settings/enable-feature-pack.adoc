@@ -33,13 +33,13 @@ Debe programar una ventana de mantenimiento de tiempo de inactividad y detener t
 En esta tarea, se describe cómo usar System Manager para habilitar un paquete de funciones. Al finalizar, debe reiniciar la cabina de almacenamiento.
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Settings[System].
-. En *Complementos*, seleccione *Cambiar paquete de funciones*.
+. En el panel de la izquierda, selecciona *System*.
+. En *Complementos*, selecciona *Cambiar paquete de funciones*.
 . Haga clic en *examinar* y, a continuación, seleccione el archivo de claves.
 +
 El nombre del archivo aparece en el cuadro de diálogo.
 
-. Tipo `change` en el campo.
+. Escribe `CHANGE` en el campo.
 . Haga clic en *Cambiar*.
 +
 Comienza la migración del paquete de funciones y se reinician las controladoras. Se eliminan los datos no escritos en la caché, lo que garantiza que no exista actividad de I/O. Las dos controladoras se reinician automáticamente para que el nuevo paquete de funciones entre en vigencia. La cabina de almacenamiento vuelve a responder cuando se completa el reinicio.

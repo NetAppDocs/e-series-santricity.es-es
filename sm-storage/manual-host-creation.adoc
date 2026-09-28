@@ -15,6 +15,7 @@ La creación de un host es uno de los pasos necesarios para indicar a la cabina 
 
 
 
+[[manual-creation]]
 == Creación manual
 
 La creación manual de hosts permite asegurarse de que los identificadores de puerto de host que detectaron las controladoras de la cabina de almacenamiento estén asociados correctamente con los hosts.

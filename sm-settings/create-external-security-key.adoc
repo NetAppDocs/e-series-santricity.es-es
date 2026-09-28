@@ -37,7 +37,7 @@ Si desea obtener más información sobre el certificado de servidor, consulte la
 En esta tarea, se deben definir la dirección IP del servidor de gestión de claves y el número de puerto que utiliza y, luego, cargar los certificados para la gestión de claves externas.
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Settings[System].
+. En el panel de la izquierda, selecciona *System*.
 . En *Gestión de claves de seguridad*, seleccione *Crear clave externa*.
 +
 [NOTE]

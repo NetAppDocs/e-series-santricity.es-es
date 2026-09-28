@@ -20,8 +20,7 @@ Se puede eliminar una sola imagen Snapshot, o bien es posible eliminar grupos de
 No es posible eliminar una imagen Snapshot si no es la imagen Snapshot del volumen base o del grupo de coherencia Snapshot asociado.
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Storage[Snapshots].
-. Haga clic en la ficha *Imágenes Snapshot*.
+. En el panel de la izquierda, selecciona el menú: instantáneas [Snapshot images].
 . Seleccione la imagen Snapshot que desea eliminar y confirme que desea realizar la operación.
 +
 Si selecciona la imagen Snapshot de un grupo de coherencia Snapshot, seleccione cada volumen miembro que desea eliminar y confirme que desea realizar la operación.

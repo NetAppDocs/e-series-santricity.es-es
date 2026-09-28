@@ -15,8 +15,7 @@ summary: Es posible cambiar el nombre de una carga de trabajo y ver el tipo de a
 Es posible cambiar el nombre de una carga de trabajo y ver el tipo de aplicación asociada a esta. Cambie el nombre de una carga de trabajo cuando el nombre actual ya no tiene sentido o no corresponde.
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Storage[Volumes].
-. Selecciona la pestaña *Aplicaciones y cargas de trabajo*.
+. En el panel de la izquierda, selecciona el menú: almacenamiento [Aplicaciones y cargas de trabajo].
 +
 Aparece la vista Applications and workloads.
 

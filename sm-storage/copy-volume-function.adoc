@@ -17,6 +17,7 @@ Por medio de esta función se realiza una copia byte por byte del volumen de ori
 
 
 
+[[data-copying-for-greater-access]]
 == Copiado de datos para aumentar el acceso
 
 A medida que cambian los requisitos de almacenamiento de volúmenes, se puede usar la función Copy Volume para copiar datos de pools o grupos de volúmenes que utilizan unidades de menor capacidad a pools o grupos de volúmenes que utilizan unidades de mayor capacidad. Por ejemplo, se puede usar la función Copy Volume para lo siguiente:
@@ -37,6 +38,7 @@ Los tamaños de bloque de volúmenes informados son:
 
 
 
+[[change-a-thin-volume-to-a-thick-volume]]
 == Cambiar de un volumen fino a un volumen grueso
 
 Si se desea cambiar un volumen fino a un volumen grueso, se debe usar la operación Copy Volume para crear una copia del volumen fino. El objetivo de una operación Copy Volume siempre es obtener un volumen grueso.
@@ -48,18 +50,21 @@ System Manager no proporciona ninguna opción para crear volúmenes finos. Si se
 ====
 
 
+[[backup-data]]
 == Datos de respaldo
 
 La función Copy Volume permite crear un backup de un volumen, ya que copia datos de un volumen a otro en la misma cabina de almacenamiento. Se puede usar el volumen objetivo como backup para el volumen de origen, para la prueba del sistema o para realizar un backup a otro dispositivo, como una unidad de cinta.
 
 
 
+[[restore-snapshot-volume-data-to-the-base-volume]]
 == Restaurar los datos de un volumen Snapshot al volumen base
 
 Si se necesitan restaurar datos en el volumen base desde su volumen Snapshot asociado, se puede usar la función Copy Volume para copiar datos del volumen Snapshot al volumen base. Se puede crear una copia del volumen de los datos del volumen Snapshot y, luego, copiar los datos al volumen base.
 
 
 
+[[source-and-target-volumes]]
 == Volúmenes de origen y objetivo
 
 En la siguiente tabla, se especifican los tipos de volúmenes que se pueden usar como volúmenes de origen y objetivo con la función Copy Volume.

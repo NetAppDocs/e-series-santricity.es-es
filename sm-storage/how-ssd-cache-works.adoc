@@ -15,6 +15,7 @@ La función SSD Cache es una solución basada en la controladora que almacena en
 
 
 
+[[ssd-cache-versus-primary-cache]]
 == Caché SSD versus caché primaria
 
 La caché SSD es una caché secundaria para usar con la caché primaria en la memoria dinámica de acceso aleatorio (DRAM) de la controladora.
@@ -35,6 +36,7 @@ Los volúmenes RAID internos se usan para fines de procesamiento de la caché in
 
 
 
+[[how-ssd-cache-is-used]]
 == Cómo se utiliza la caché SSD
 
 El almacenamiento en caché inteligente coloca los datos en una unidad de latencia baja para agilizar las respuestas a solicitudes futuras de esos datos. Si un programa solicita datos que están en la caché (lo que se denomina «acierto en caché»), la unidad de menor latencia puede satisfacer esta transacción. De lo contrario, se produce una «'omisión de caché'» y deberá accederse a los datos desde la unidad original, más lenta. Cuantos más aciertos en caché se produzcan, mejor será el rendimiento general.
@@ -52,6 +54,7 @@ Cuando la CPU necesita procesar datos de lectura, sigue estos pasos:
 
 
 
+[[improved-performance]]
 == Mejor rendimiento
 
 Copiar los datos a los que accede con más frecuencia (puntos críticos) en la caché SSD permite un funcionamiento más eficaz del disco duro, menor latencia y velocidades aceleradas de lectura y escritura. El uso de unidades SSD de alto rendimiento para almacenar en la caché datos de unidades de disco duro mejora el rendimiento de I/o y los tiempos de respuesta.
@@ -60,12 +63,14 @@ Se utilizan mecanismos de I/o de volúmenes simples para transferir datos desde 
 
 
 
+[[ssd-cache-and-the-drive-security-feature]]
 == Caché SSD y la función Drive Security
 
 Para usar la caché SSD en un volumen que también utiliza Drive Security (es decir, con la función de seguridad habilitada), las funcionalidades de Drive Security del volumen y de la caché SSD deben coincidir. Si no coinciden, el volumen no tendrá la función de seguridad habilitada.
 
 
 
+[[implement-ssd-cache]]
 == Implemente caché SSD
 
 Para implementar la caché SSD, haga lo siguiente:

@@ -16,6 +16,7 @@ Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respue
 
 
 
+[[why-cant-i-log-in]]
 == ¿Por qué no puedo iniciar sesión?
 
 Si recibe un error al intentar iniciar sesión en SANtricity System Manager, revise estas causas posibles.
@@ -26,7 +27,7 @@ Los errores de inicio de sesión en System Manager pueden ocurrir por uno de est
 * No tiene privilegios suficientes.
 * El servidor de directorio (si está configurado) puede no estar disponible. Si este es el caso, intente iniciar sesión con un rol de usuario local.
 * Intentó iniciar sesión reiteradamente sin éxito y se activó el modo de bloqueo. Aguarde 10 minutos y vuelva a intentarlo.
-* Se activó la condición de bloqueo y es posible que el registro de auditoría esté completo. Vaya a Access Management y elimine los eventos anteriores del registro de auditoría.
+* Se ha activado una condición de bloqueo y es posible que el registro de auditoría esté lleno. Ve a Supervisión > Registro de auditoría y elimina los eventos antiguos del registro de auditoría.
 * La autenticación SAML está habilitada. Actualice el explorador para iniciar sesión.
 
 
@@ -39,6 +40,7 @@ Los errores de inicio de sesión en una cabina de almacenamiento remota para tar
 
 
 
+[[what-do-i-need-to-know-before-adding-a-directory-server]]
 == ¿Qué debo saber antes de añadir un servidor de directorio?
 
 Antes de añadir un servidor de directorio en Access Management, asegúrese de cumplir con los siguientes requisitos.
@@ -50,6 +52,7 @@ Antes de añadir un servidor de directorio en Access Management, asegúrese de c
 
 
 
+[[what-do-i-need-to-know-about-mapping-to-storage-array-roles]]
 == ¿Qué debo saber acerca de la asignación de roles de la cabina de almacenamiento?
 
 Antes de asignar grupos a roles, revise las siguientes directrices.
@@ -64,6 +67,7 @@ Las funcionalidades de control de acceso basado en roles (RBAC) incorporadas en 
 
 
 
+[[directory-services]]
 === Servicios de directorio
 
 Si usa un servidor de protocolo ligero de acceso a directorios (LDAP) y servicios de directorio, asegúrese de que:
@@ -80,6 +84,7 @@ Si usa un servidor de protocolo ligero de acceso a directorios (LDAP) y servicio
 
 
 
+[[saml]]
 === SAML
 
 Si usa las funcionalidades de lenguaje de marcado de aserción de seguridad (SAML) incorporadas en la cabina de almacenamiento, asegúrese de que:
@@ -97,12 +102,14 @@ Si usa las funcionalidades de lenguaje de marcado de aserción de seguridad (SAM
 
 
 
+[[which-external-management-tools-may-be-affected-by-this-change]]
 == ¿A cuáles herramientas de gestión externas puede afectar este cambio?
 
 Cuando se realizan ciertos cambios en SANtricity System Manager, como el cambio de la interfaz de gestión o el uso de SAML como método de autenticación, puede restringirse el uso de algunas herramientas y funciones externas.
 
 
 
+[[management-interface]]
 === Interfaz de gestión
 
 Las herramientas que se comunican directamente con la interfaz de gestión heredada (Symbol), como SANtricity SMI-S Provider u OnCommand Insight (OCI), no funcionan a menos que la configuración interfaz de gestión heredada esté habilitada. Además, no es posible utilizar comandos de la CLI heredados ni realizar operaciones de mirroring si dicha configuración está deshabilitada.
@@ -111,6 +118,7 @@ Póngase en contacto con el soporte técnico para obtener más información.
 
 
 
+[[saml-authentication]]
 === Autenticación SAML
 
 Cuando se habilita SAML, los siguientes clientes no pueden acceder a los recursos y los servicios de la cabina de almacenamiento:
@@ -127,12 +135,14 @@ Póngase en contacto con el soporte técnico para obtener más información.
 
 
 
+[[what-do-i-need-to-know-before-configuring-and-enabling-saml]]
 == ¿Qué debo saber antes de configurar y habilitar SAML?
 
 Antes de configurar y habilitar las funcionalidades de lenguaje de marcado de aserción de seguridad (SAML) para la autenticación, asegúrese de cumplir con los siguientes requisitos y comprender las restricciones de SAML.
 
 
 
+[[requirements]]
 === Requisitos
 
 Antes de comenzar, compruebe lo siguiente:
@@ -147,6 +157,7 @@ Antes de comenzar, compruebe lo siguiente:
 
 
 
+[[restrictions]]
 === Restricciones
 
 Además de los requisitos mencionados más arriba, asegúrese de comprender las siguientes restricciones:
@@ -168,6 +179,7 @@ Además de los requisitos mencionados más arriba, asegúrese de comprender las 
 
 
 
+[[what-types-of-events-are-recorded-in-the-audit-log]]
 == ¿Qué tipo de eventos se registran en el registro de auditoría?
 
 El registro de auditoría puede incluir eventos de modificación, o bien tanto eventos de modificación como de solo lectura.
@@ -180,6 +192,7 @@ Según la configuración de la política, se muestran los siguientes tipos de ev
 
 
 
+[[what-do-i-need-to-know-before-configuring-a-syslog-server]]
 == ¿Qué debo saber antes de configurar un servidor de syslog?
 
 Es posible archivar registros de auditoría en un servidor de syslog externo.
@@ -195,8 +208,9 @@ Antes de configurar un servidor de syslog, tenga en cuenta las siguientes direct
 
 
 
+[[the-syslog-server-is-no-longer-receiving-audit-logs-what-do-i-do]]
 == El servidor de syslog ya no recibe registros de auditoría. ¿Qué debo hacer?
 
 Si configuró un servidor de syslog con un protocolo TLS, el servidor no puede recibir mensajes si la certificación no es válida por algún motivo. Se envía un mensaje de error sobre el certificado no válido al registro de auditoría.
 
-Para resolver este problema, debe corregir la certificación para el servidor de syslog. Una vez que haya una cadena de certificados válida vigente, vaya a menú:Configuración[Registro de auditoría > Configurar servidores de syslog > probar todo].
+Para resolver este problema, primero debes corregir el certificado del servidor syslog. Una vez que dispongas de una cadena de certificados válida, ve al menú: Monitoring[Audit log > Configure Syslog Servers > Test All].

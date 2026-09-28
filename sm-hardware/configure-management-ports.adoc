@@ -23,18 +23,14 @@ No use el puerto 2 en ninguna de las controladoras. El puerto 2 está reservado 
 
 ====
 .Pasos
-. En el panel izquierdo, selecciona *Hardware*.
-. Si el gráfico muestra las unidades, haga clic en la pestaña * Controladores y componentes *.
-+
-El gráfico cambia y muestra las controladoras en lugar de las unidades.
-
+. En el panel izquierdo, selecciona menú:Hardware[Controllers and components].
 . Haga clic en la controladora con el puerto de gestión que desea configurar.
 +
 Aparece el menú contextual de la controladora.
 
 . Seleccione *Configurar puertos de administración*.
 +
-Se abre el cuadro de diálogo Configurar puertos de gestión.
+Se abre la página Configurar puertos de gestión.
 
 . Asegúrese de que aparece el puerto 1 y, a continuación, haga clic en *Siguiente*.
 . Seleccione los valores del puerto de configuración y, a continuación, haga clic en *Siguiente*.
@@ -62,7 +58,7 @@ Seleccione una o ambas opciones para habilitar la compatibilidad con las redes I
 |===
 ====
 +
-Si selecciona *Activar IPv4*, se abre un cuadro de diálogo para seleccionar la configuración IPv4 después de hacer clic en *Siguiente*. Si selecciona *Activar IPv6*, se abre un cuadro de diálogo para seleccionar la configuración de IPv6 después de hacer clic en *Siguiente*. Si selecciona ambas opciones, primero se abre el cuadro de diálogo para la configuración de IPv4 y después de hacer clic en *Siguiente*, se abre el cuadro de diálogo para la configuración de IPv6.
+Si seleccionas *Habilitar IPv4*, el paso *Configurar IPv4* aparece después de hacer clic en *Siguiente*. Si seleccionas *Habilitar IPv6*, el paso *Configurar IPv6* aparece después de hacer clic en *Siguiente*. Si seleccionas ambas opciones, primero aparece el paso *Configurar IPv4* y luego, después de hacer clic en *Siguiente*, aparece el paso *Configurar IPv6*.
 
 . Configure los valores para IPv4 o IPv6 de forma automática o manual.
 +
@@ -95,4 +91,4 @@ NOTE: Si cambia la configuración de la dirección IP, se pierde la ruta de gest
 
 
 .Resultados
-La configuración del puerto de gestión se muestra en la configuración de la controladora, en la pestaña puertos de gestión.
+La configuración del puerto de gestión se muestra en los ajustes del controlador, sección *Ajustes del puerto de gestión*.

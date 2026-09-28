@@ -24,11 +24,7 @@ La configuración y las funciones iSCSI solamente aparecen si la cabina de almac
 
 ====
 .Pasos
-. En el panel izquierdo, selecciona *Hardware*.
-. Si el gráfico muestra las unidades, haga clic en la pestaña * Controladores y componentes *.
-+
-El gráfico cambia y muestra las controladoras en lugar de las unidades.
-
+. En el panel izquierdo, selecciona menú:Hardware[Controllers and components].
 . Haga clic en la controladora con los puertos iSCSI que desea configurar.
 +
 Aparece el menú contextual de la controladora.
@@ -58,7 +54,7 @@ Para ver todas las configuraciones de puerto, haga clic en el enlace *Mostrar m�
 
 
  a| 
-Velocidad del puerto ethernet configurada (aparece solamente en ciertos tipos de tarjetas de interfaz del host)
+Velocidad del puerto Ethernet configurada (solo aparece en determinados tipos de tarjetas de interfaz del host)
  a| 
 Seleccione la velocidad que coincida que la capacidad de velocidad del SFP en el puerto.
 
@@ -144,7 +140,7 @@ Seleccione esta opción para habilitar una VLAN e introducir su ID. Una red de �
 
 
  a| 
-Activar prioridad ethernet (disponible haciendo clic en *Mostrar más valores*).
+Activar la prioridad de Ethernet (disponible al hacer clic en *Mostrar más opciones*).
  a| 
 Seleccione esta opción para habilitar el parámetro que determina la prioridad de acceso a la red. Use la barra deslizante para seleccionar una prioridad entre 1 (más baja) y 7 (más alta).
 

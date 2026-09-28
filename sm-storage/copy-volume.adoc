@@ -44,7 +44,7 @@ Una operación Copy Volume sobrescribe los datos en el volumen objetivo y omite 
 ====
 .Pasos
 . En el panel izquierdo, selecciona menú:Storage[Volumes].
-. Selecciona el volumen que quieres usar como fuente para la operación Copy Volume y luego haz clic en el icono menu:ellipsis[Copy volume].
+. Busca el volumen que quieras utilizar como origen para la operación Copy Volume y, a continuación, haz clic en el icono de los tres puntos del menú [Copy volume].
 +
 Aparece la ventana Copy Volume.
 
@@ -94,7 +94,7 @@ Utilice las siguientes directrices para asignar la capacidad reservada:
 
 
 .Resultados
-System Manager copia todos los datos del volumen de origen al volumen objetivo. Una vez que finaliza la operación Copy Volume, el volumen objetivo pasa automáticamente a ser solo de lectura para los hosts.
+System Manager copia todos los datos del volumen de origen al volumen de destino.
 
 .Después de terminar
-Selecciona el menú:Storage[Operations in Progress] para ver el progreso de la operación Copy Volume. Esta operación puede ser larga y podría afectar el rendimiento del sistema.
+Selecciona el menú: Supervisión [Operaciones en curso] para ver el progreso de la operación Copiar volumen. Es posible que esta operación demore y que afecte el rendimiento del sistema.

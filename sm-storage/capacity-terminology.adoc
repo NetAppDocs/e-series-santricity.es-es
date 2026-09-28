@@ -15,6 +15,7 @@ Conozca la forma en que los términos de capacidad se aplican a su cabina de alm
 
 
 
+[[storage-objects]]
 == Objetos de almacenamiento
 
 La siguiente terminología describe los diferentes tipos de objetos de almacenamiento que pueden interactuar con la cabina de almacenamiento.
@@ -97,6 +98,7 @@ Un grupo de volúmenes es un contenedor para volúmenes con características com
 |===
 
 
+[[storage-capacity]]
 == Capacidad de almacenamiento
 
 La siguiente terminología describe los diferentes tipos de capacidad que se utilizan en la cabina de almacenamiento.

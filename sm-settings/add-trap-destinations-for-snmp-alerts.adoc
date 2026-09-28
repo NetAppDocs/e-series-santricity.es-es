@@ -33,8 +33,7 @@ Si no tiene el archivo MIB, puede obtenerlo en el sitio de soporte de NetApp:
 
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Settings[Alerts].
-. Seleccione la ficha *SNMP*.
+. En el panel de la izquierda, selecciona el menú:Alertas[Alertas SNMP].
 +
 Los destinos de capturas definidos actualmente se muestran en la tabla.
 

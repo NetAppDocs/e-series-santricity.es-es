@@ -19,6 +19,7 @@ Por ejemplo, un volumen primario que pertenece a la controladora A y que luego s
 
 
 
+[[controller-resets]]
 == Se restablece la controladora
 
 El restablecimiento de una controladora produce un cambio de propiedad de los volúmenes en el lado primario del propietario preferido de la controladora a la controladora alternativa de la cabina de almacenamiento.

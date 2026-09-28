@@ -47,7 +47,7 @@ Cuando un volumen supera un tamaño determinado (actualmente 128 TB), la elimina
 ====
 .Pasos
 . En el panel izquierdo, selecciona menú:Storage[Volumes].
-. Selecciona el volumen que quieres eliminar y luego haz clic en el icono del menú:ellipsis[Delete].
+. Busca el volumen que quieras eliminar y, a continuación, haz clic en el icono de menú:ellipsis [Eliminar].
 +
 Se muestra el cuadro de diálogo Eliminar volúmenes.
 

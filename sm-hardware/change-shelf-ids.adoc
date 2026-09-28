@@ -17,13 +17,9 @@ El ID de bandeja es un número que identifica de forma exclusiva a una bandeja e
 El firmware de la controladora asigna automáticamente el ID de bandeja, pero es posible modificar ese número si desea crear un esquema de ordenamiento diferente.
 
 .Pasos
-. En el panel izquierdo, selecciona *Hardware*.
-. Si el gráfico muestra las unidades, haga clic en la pestaña * Controladores y componentes *.
-+
-El gráfico cambia y muestra las controladoras en lugar de las unidades.
-
+. En el panel izquierdo, selecciona menú:Hardware[Controllers and components].
 . Seleccione la lista desplegable de Bandeja de controladoras o Bandeja de unidades y, a continuación, seleccione *Cambiar ID*.
-. En el cuadro de diálogo Cambiar ID de bandeja, seleccione la lista desplegable para mostrar los números disponibles.
+. En el cuadro de diálogo «Cambiar ID de estante», selecciona la lista desplegable para ver los números disponibles.
 +
 En este cuadro de diálogo no se muestran los ID actualmente asignados a las bandejas activas.
 

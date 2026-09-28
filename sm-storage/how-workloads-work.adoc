@@ -17,12 +17,14 @@ Una carga de trabajo es un objeto de almacenamiento que admite una aplicación. 
 
 
 
+[[creating-a-workload]]
 == Crear una carga de trabajo
 
 Debes especificar manualmente cuándo quieres crear una carga de trabajo que no esté asociada con una aplicación específica. También debes especificar manualmente la configuración del volumen usando la página Add Volumes.
 
 
 
+[[application-and-workload-views]]
 == Vistas de aplicaciones y cargas de trabajo
 
 Para ver aplicaciones y cargas de trabajo, ejecute System Manager de SANtricity. Desde esa interfaz, es posible ver la información asociada a una carga de trabajo específica de la aplicación de dos maneras diferentes:

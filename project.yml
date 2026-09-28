@@ -8,7 +8,7 @@ settings:
     harmony_enabled: false
   rss_page: whats-new.html
   versions:
-  - version-number: 12.0x
+  - version-number: 12.1x
     url: "/e-series-santricity"
   - version-number: 11.9x
     url: "/e-series-santricity-119"
@@ -17,7 +17,7 @@ settings:
   langs: es-es,us-en,de-de,fr-fr,it-it,pt-br,ja-jp,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: Documentación de SANtricity software 12.00
+  - title: Documentación de SANtricity software 12.10
     url: "/index.html"
   - title: Notas de la versión
     entries:
@@ -510,8 +510,6 @@ sidebar:
           url: "/sm-hardware/view-hardware-components.html"
         - title: Muestra u oculta el estado de los componentes
           url: "/sm-hardware/show-or-hide-component-status.html"
-        - title: Alternar entre las vistas frontal y trasera
-          url: "/sm-hardware/switch-between-front-and-back-views.html"
         - title: Cambiar el orden de vista de las bandejas
           url: "/sm-hardware/change-view-order-of-shelves.html"
         - title: Encienda la luz del localizador de bandejas

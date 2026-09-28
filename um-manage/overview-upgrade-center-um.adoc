@@ -16,12 +16,14 @@ En el Centro de actualización, puede gestionar las actualizaciones de NVSRAM y 
 
 
 
+[[how-do-upgrades-work]]
 == ¿Cómo funcionan las actualizaciones?
 
 Descargue el software de sistema operativo más reciente y después actualice una o varias cabinas.
 
 
 
+[[upgrade-workflow]]
 === Actualizar el flujo de trabajo
 
 Los siguientes pasos constituyen un flujo de trabajo de alto nivel para ejecutar actualizaciones de software.
@@ -46,6 +48,7 @@ También es posible especificar que el software se active en otro momento.
 
 
 
+[[immediate-or-staged-upgrade]]
 === Actualización inmediata o almacenamiento temporal
 
 Puede activar la actualización de inmediato o almacenarla temporalmente para otro momento. Puede optar por activarlos más tarde por los siguientes motivos:
@@ -54,10 +57,11 @@ Puede activar la actualización de inmediato o almacenarla temporalmente para ot
 * *Tipo de paquete*: Es posible que desee probar el nuevo software y firmware en una matriz de almacenamiento antes de actualizar los archivos en otras matrices de almacenamiento.
 
 
-Para activar el software almacenado temporalmente, vaya al menú:Soporte[Centro de actualización] y haga clic en *Activar* en el área etiquetada como actualización de software del controlador de sistema operativo SANtricity.
+Para activar el software por etapas, ve al menú:soporte[Upgrade center] y haz clic en *Activar* en el área denominada actualización del software del controlador SANtricity OS.
 
 
 
+[[health-check]]
 === Comprobación del estado
 
 Una comprobación del estado se ejecuta como parte del proceso de actualización, pero es posible ejecutarla por separado, antes de comenzar (vaya a menú:Centro de actualización[Comprobación del estado previa a la actualización]).
@@ -77,18 +81,21 @@ La comprobación del estado evalúa todos los componentes de la cabina de almace
 
 
 
+[[what-do-i-need-to-know-before-upgrading]]
 == ¿Qué debo saber antes de actualizar?
 
 Antes de actualizar varias cabinas de almacenamiento, revise las consideraciones fundamentales como parte de la planificación.
 
 
 
+[[current-versions]]
 === Versiones actuales
 
 Puede ver las versiones actuales del software de sistema operativo SANtricity desde la página gestionar de Unified Manager en cada cabina de almacenamiento detectada. La versión se muestra en la columna Software de sistema operativo SANtricity. Si hace clic en la versión de sistema operativo SANtricity en cada fila, puede encontrar información de NVSRAM y del firmware de la controladora en un cuadro de diálogo emergente.
 
 
 
+[[other-components-requiring-upgrade]]
 === Otros componentes que requieren actualización
 
 Como parte del proceso de actualización, es posible que también necesite actualizar el controlador de conmutación al nodo de respaldo/multivía del host o el controlador de HBA de modo que el host pueda interactuar con las controladoras correctamente.
@@ -97,6 +104,7 @@ Para obtener información sobre compatibilidad, consulte https://imt.netapp.com/
 
 
 
+[[dual-controllers]]
 === Controladoras dobles
 
 Si una cabina de almacenamiento contiene dos controladoras y existe un controlador multivía instalado, la cabina de almacenamiento puede seguir procesando las operaciones de I/o mientras se realiza la actualización. Durante la actualización, ocurre el siguiente proceso:

@@ -19,6 +19,7 @@ Los volúmenes son la única capa de datos visible para los hosts. En un entorno
 
 
 
+[[volume-types-you-can-create-from-pools-and-volume-groups]]
 == Tipos de volúmenes que se pueden crear a partir de pools y grupos de volúmenes
 
 Los volúmenes extraen su capacidad de pools o grupos de volúmenes. Es posible crear los siguientes tipos de volúmenes a partir de los pools o los grupos de volúmenes existentes en la cabina de almacenamiento.
@@ -48,6 +49,7 @@ Los sistemas de almacenamiento EF80, EF50, EF600/EF600C y EF300/EF300C no admite
 ====
 
 
+[[characteristics-of-volumes]]
 == Características de volúmenes
 
 Cada volumen de un pool o grupo de volúmenes puede tener sus propias características individuales según los tipos de datos se almacenarán en el volumen. Algunas de esas características son:

@@ -27,11 +27,7 @@ No coloque una controladora en estado sin conexión a menos que el soporte técn
 
 ====
 .Pasos
-. En el panel izquierdo, selecciona *Hardware*.
-. Si el gráfico muestra las unidades, haga clic en la pestaña * Controladores y componentes *.
-+
-El gráfico cambia y muestra las controladoras en lugar de las unidades.
-
+. En el panel izquierdo, selecciona menú:Hardware[Controllers and components].
 . Haga clic en la controladora que desea colocar en estado sin conexión.
 +
 Aparece el menú contextual de la controladora.

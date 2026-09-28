@@ -40,6 +40,7 @@ La configuración de la autenticación SAML es un procedimiento de varios pasos.
 
 
 
+[[step-1-upload-the-idp-metadata-file]]
 == Paso 1: Cargue el archivo de metadatos de IDP
 
 Para brindar información de conexión de IdP a la cabina de almacenamiento, se deben importar los metadatos de IdP en Unified Manager. El sistema IDP necesita los metadatos para redirigir las solicitudes de autenticación a la URL correcta y validar las respuestas recibidas.
@@ -63,6 +64,7 @@ Una vez seleccionado el archivo, se muestra el ID de entidad IDP.
 
 
 
+[[step-2-export-service-provider-files]]
 == Paso 2: Exporte los archivos del proveedor de servicios
 
 Para establecer una relación de confianza entre IDP y la cabina de almacenamiento, se deben importar los metadatos del proveedor de servicios en IDP. IDP necesita estos metadatos para establecer una relación de confianza con la controladora y procesar las solicitudes de autorización. El archivo incluye información, como el nombre de dominio de la controladora o la dirección IP, por lo que IDP se puede comunicar con los proveedores de servicios.
@@ -82,6 +84,7 @@ Después de hacer clic en *Exportar*, los metadatos del proveedor de servicios s
 
 
 
+[[step-3-map-roles]]
 == Paso 3: Asignar roles
 
 Para proporcionar autorización y acceso a Unified Manager a los usuarios, se deben asignar los atributos de usuario IdP y las membresías de grupo a los roles predefinidos de la cabina de almacenamiento.
@@ -159,6 +162,7 @@ Es posible modificar las asignaciones de roles después de haber habilitado SAML
 
 
 
+[[step-4-test-sso-login]]
 == Paso 4: Probar el inicio de sesión SSO
 
 Para garantizar la comunicación entre el sistema IDP y la cabina de almacenamiento, de manera opcional, se puede probar un inicio de sesión SSO. Esa prueba también se puede llevar a cabo durante el paso final para habilitar SAML.
@@ -191,6 +195,7 @@ Si el análisis no se realiza correctamente, se muestra un mensaje de error con 
 
 
 
+[[step-5-enable-saml]]
 == Paso 5: Habilite SAML
 
 El paso final es completar la configuración de SAML para la autenticación de usuarios. Durante este proceso, el sistema también le indica que pruebe un inicio de sesión SSO. El proceso de prueba de inicio de sesión con SSO se describe en el paso anterior.

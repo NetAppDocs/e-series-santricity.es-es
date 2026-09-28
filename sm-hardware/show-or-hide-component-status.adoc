@@ -14,13 +14,7 @@ summary: Es posible mostrar descripciones de estado para las unidades, las contr
 Es posible mostrar descripciones de estado para las unidades, las controladoras, los ventiladores y los suministros de alimentación.
 
 .Pasos
-. En el panel izquierdo, selecciona *Hardware*.
-. Para ver los componentes frontales o posteriores:
-+
-** Si desea ver el controlador y los componentes del contenedor de alimentación/ventilador, pero se muestran las unidades, haga clic en la pestaña * Controladores y componentes *.
-** Si desea ver las unidades, pero se muestran el controlador y los componentes del contenedor de alimentación/ventilador, haga clic en la pestaña * Unidades *.
-
-
+. En el panel de la izquierda, selecciona el menú:Hardware[Unidades] o el menú:Hardware[Controladores y componentes], dependiendo de los componentes que quieras ver.
 . Para ver u ocultar las descripciones de estado emergentes:
 +
 ** Si desea ver una descripción emergente de los iconos de estado, haga clic en *Mostrar detalles del icono de estado* en la esquina superior derecha de la vista de bandeja (seleccione la casilla de comprobación).
@@ -28,5 +22,4 @@ Es posible mostrar descripciones de estado para las unidades, las controladoras,
 
 
 . Si desea ver todos los detalles de estado, seleccione el componente en la vista de bandeja y, a continuación, seleccione *Ver configuración*.
-. Si desea ver las descripciones de los componentes coloreados, seleccione *Leyenda*.
 

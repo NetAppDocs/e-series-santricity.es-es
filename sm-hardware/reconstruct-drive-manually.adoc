@@ -19,11 +19,7 @@ Realice esta operación solo cuando el soporte técnico o Recovery Guru se lo in
 
 ====
 .Pasos
-. En el panel izquierdo, selecciona *Hardware*.
-. Si el gráfico muestra los controladores, haga clic en la pestaña *Drives*.
-+
-El gráfico cambia y muestra las unidades en lugar de las controladoras.
-
+. En el panel de la izquierda, selecciona el menú: Hardware [Drives].
 . Haga clic en la unidad que desea reconstruir manualmente.
 +
 Aparece el menú contextual de la unidad.

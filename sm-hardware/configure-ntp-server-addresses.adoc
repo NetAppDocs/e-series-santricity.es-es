@@ -32,22 +32,18 @@ No es necesario configurar NTP en ambas controladoras, pero, si lo hace, se mejo
 
 ====
 .Pasos
-. En el panel izquierdo, selecciona *Hardware*.
-. Si el gráfico muestra las unidades, haga clic en la pestaña * Controladores y componentes *.
-+
-El gráfico cambia y muestra las controladoras en lugar de las unidades.
-
+. En el panel izquierdo, selecciona menú:Hardware[Controllers and components].
 . Haga clic en la controladora que desea configurar.
 +
 Aparece el menú contextual de la controladora.
 
 . Seleccione *Configurar servidor NTP*.
 +
-Se abre el cuadro de diálogo Configurar servidor de protocolo de tiempo de redes (NTP).
+Se abre la página Configurar el servidor NTP.
 
-. Seleccione *deseo activar NTP en el controlador* (*A* o *B*).
+. Marca la casilla *Habilitar NTP*.
 +
-En el cuadro de diálogo, aparecerán selecciones adicionales.
+En la página aparecen más opciones.
 
 . Seleccione una de las siguientes opciones:
 +
@@ -66,4 +62,4 @@ Si la cabina de almacenamiento está configurada para usar una dirección NTP es
 
 
 .Resultados
-La configuración del servidor NTP se muestra en la ficha *DNS / NTP* de la configuración de la controladora.
+La configuración del servidor NTP se muestra en los ajustes del controlador, sección *Ajustes del servidor de protocolo de tiempo de red (NTP)*.

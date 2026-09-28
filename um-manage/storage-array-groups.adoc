@@ -15,6 +15,7 @@ Es posible gestionar la infraestructura física y virtualizada si se agrupa un c
 
 
 
+[[types-of-storage-array-groups]]
 == Tipos de grupos de cabinas de almacenamiento
 
 * *Todo el grupo*

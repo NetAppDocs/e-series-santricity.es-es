@@ -19,6 +19,7 @@ A continuación, se describen las operaciones de copia de volumen sin conexión 
 
 
 
+[[offline-copy-volume-operation]]
 == Operación de copia de volumen sin conexión
 
 La relación de copia de volumen sin conexión se da entre un volumen de origen y un volumen objetivo. Una copia sin conexión lee datos del volumen de origen y los copia en un volumen objetivo, mientras suspende todas las actualizaciones al volumen de origen con la copia en curso. Todas las actualizaciones al volumen de origen se suspenden para evitar que se generen incoherencias cronológicas en el volumen objetivo.
@@ -49,6 +50,7 @@ Sistema de archivos de registro en diario
 |===
 
 
+[[online-copy-volume-operation]]
 == Operación de copia de volumen en línea
 
 La relación de copia de volumen en línea se establece entre un volumen Snapshot y un volumen objetivo. Se puede iniciar una operación de copia de volumen mientras el volumen de origen está en línea y disponible para la escritura de datos. Para obtener esta función, se crea una copia de Snapshot del volumen y se usa la copia de Snapshot como volumen de origen real.

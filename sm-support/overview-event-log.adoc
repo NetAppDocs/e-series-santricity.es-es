@@ -17,6 +17,7 @@ Es posible utilizar el registro de eventos como herramienta de diagnóstico comp
 
 
 
+[[event-categories]]
 == Categorías de eventos
 
 Los eventos del registro de eventos se categorizan con diferentes Estados. Los eventos para los que debe realizar acciones tienen los siguientes Estados:
@@ -32,6 +33,7 @@ Los eventos que son informativos y no requieren acción inmediata son los siguie
 
 
 
+[[critical-events]]
 == Eventos críticos
 
 Los eventos críticos indican un problema con la cabina de almacenamiento. Si se resuelve el evento crítico de inmediato, es posible que se evite la pérdida de acceso a los datos.

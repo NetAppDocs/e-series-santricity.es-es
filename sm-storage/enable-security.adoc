@@ -28,7 +28,7 @@ Después de habilitar la seguridad, solo es posible deshabilitarla si se elimina
 
 .Pasos
 . En el panel izquierdo, selecciona menú:Storage[Pools y grupos de volúmenes].
-. Selecciona el pool o grupo de volúmenes en el que quieres activar la seguridad y luego haz clic en menu:ellipsis icon[Enable security].
+. Busca el pool o grupo de volúmenes en el que quieras habilitar la seguridad y, a continuación, haz clic en menu:ellipsis icon[Enable security].
 +
 Se muestra el cuadro de diálogo Confirmar Habilitar seguridad.
 

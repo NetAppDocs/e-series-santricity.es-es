@@ -16,112 +16,27 @@ Es posible ver datos gráficos de rendimiento para objetos lógicos, objetos fí
 .Acerca de esta tarea
 Los gráficos de rendimiento muestran datos históricos, así como datos en directo que se capturan en el momento. Una línea vertical sobre el gráfico, con la etiqueta actualización en vivo, distingue entre datos históricos y datos en directo.
 
-*Vista de página de inicio*
+*Vista de panel*
 
-La página Inicio contiene un gráfico donde se muestra el rendimiento en la cabina de almacenamiento. Puede seleccionar métricas limitadas desde esta vista o puede hacer clic en *Ver detalles de rendimiento* para seleccionar todas las métricas disponibles.
+El panel de control contiene un gráfico que muestra el rendimiento a nivel de la matriz de almacenamiento. Puedes seleccionar una serie limitada de métricas desde esta vista o hacer clic en *Ver detalles de rendimiento* para ir al menú:Monitoring[Performance] y seleccionar todas las métricas disponibles.
 
 *Vista detallada*
 
-Los gráficos disponibles de la vista detallada de rendimiento se distribuyen en tres pestañas:
+Los gráficos disponibles en la página Rendimiento se basan en tus selecciones:
 
-* *Vista lógica* -- muestra los datos de rendimiento de objetos lógicos agrupados por grupos de volúmenes y agrupaciones. Los objetos lógicos incluyen grupos de volúmenes, pools y volúmenes.
-* *Vista física* -- muestra datos de rendimiento para el controlador, los canales de host, los canales de unidad y las unidades.
-* *Vista de aplicaciones y cargas de trabajo* -- Muestra una lista de objetos lógicos (volúmenes) agrupados por los tipos de aplicaciones y cargas de trabajo que tú has definido.
+* *Tipos de objetos* -- selecciona las categorías de objetos que se van a incluir (por ejemplo, matrices de almacenamiento, controladores, pools y grupos de volúmenes, aplicaciones, cargas de trabajo, volúmenes, canales y unidades).
+* *Objetos* -- permite seleccionar hasta cinco objetos concretos de entre los tipos de objetos seleccionados.
 
 
 .Pasos
-. Seleccione *Inicio*.
-. Para seleccionar una vista de la cabina de almacenamiento, haga clic en los botones IOPS, MIB/s o CPU.
-. Para ver más detalles, haga clic en *Ver detalles de rendimiento*.
-. Selecciona la pestaña *Logical View*, *Physical View* o *Applications and workloads View*.
+. Selecciona el menú: Supervisión [Rendimiento].
+. Utiliza *Tipos de objeto* y *Objetos* para seleccionar los datos que deseas mostrar. Puedes seleccionar hasta cinco objetos; utiliza el campo de búsqueda en la lista *Objetos* para buscar nombres de objetos o partes de nombres.
 +
-Según el tipo de objeto, aparecen diferentes gráficos en cada pestaña.
+No todas las métricas están disponibles para todos los tipos de objetos. Las matrices de almacenamiento y los controladores no informan sobre la latencia, solo los controladores informan sobre la utilización de CPU, y solo los controladores y los canales informan sobre el headroom.
 
-+
-[cols="25h,~"]
-|===
-| Pestañas de vista | Datos de rendimiento que se muestran para cada tipo de objeto 
-
-
- a| 
-Vista lógica
- a| 
-** *Matriz de almacenamiento*: IOPS, MIB/s
-** * Pools*: Latencia, IOPS, MIB/s
-** *Grupos de volúmenes*: Latencia, IOPS, MIB/s
-** *Volúmenes*: Latencia, IOPS, MIB/s
-
-
-
-
- a| 
-Vista física
- a| 
-** *Controladoras*: IOPS, MIB/s, CPU, margen adicional
-** *Canales de host*: Latencia, IOPS, MIB/s, margen adicional
-** *Canales de unidad*: Latencia, IOPS, MIB/s
-** *Unidades*: Latencia, IOPS, MIB/s
-
-
-
-
- a| 
-Vista de aplicaciones y cargas de trabajo
- a| 
-** *Matriz de almacenamiento*: IOPS, MIB/s
-** *Aplicaciones*: Latencia, IOPS, MIB/s
-** *Cargas de trabajo*: Latencia, IOPS, MIB/s
-** *Volúmenes*: Latencia, IOPS, MIB/s
-
-
-|===
-. Utilice las opciones para ver los objetos y la información que necesita.
-+
-.Opciones
-[%collapsible]
-====
-[cols="25h,~"]
-|===
-| Opciones para ver objetos | Descripción 
-
-
- a| 
-Expanda un cajón para ver la lista de objetos.
- a| 
-_Cajones de navegación_ contiene objetos de almacenamiento, tales como pools, grupos de volúmenes y unidades.
-
-Haga clic en el cajón para ver la lista de objetos del cajón.
-
-
-
- a| 
-Seleccione los objetos que desea ver.
- a| 
-Seleccione la casilla de comprobación a la izquierda de cada objeto para elegir los datos de rendimiento que desea ver.
-
-
-
- a| 
-Use filtros para buscar nombres de objeto o nombres parciales.
- a| 
-En la casilla de filtros, introduzca el nombre o un nombre parcial de los objetos para enumerar solo los objetos del cajón.
-
-
-
- a| 
-Haga clic en *Actualizar gráficos* después de seleccionar objetos.
- a| 
-Después de seleccionar objetos de los cajones, seleccione *Actualizar gráficos* para ver datos gráficos de los elementos seleccionados.
-
-
-
- a| 
-Ocultar o mostrar gráfico
- a| 
-Seleccione el título del gráfico para ocular o mostrar el gráfico.
-
-|===
-====
+. Utiliza *Intervalo de tiempo* para seleccionar el periodo que quieres mostrar.
+. Haz clic en *Actualizar*.
+. *Opcional:* En un gráfico individual, usa *Comparar* para superponer otro tipo de métrica para los mismos objetos.
 . Según sea necesario, use las opciones adicionales para ver datos de rendimiento.
 +
 .Opciones adicionales
@@ -133,12 +48,12 @@ Seleccione el título del gráfico para ocular o mostrar el gráfico.
 
 
  a| 
-Plazo
+Intervalo de tiempo
  a| 
 Seleccione la cantidad de tiempo que desea ver (5 minutos, 1 hora, 8 horas, 1 día, 7 días, o 30 días). El valor predeterminado es 1 hora.
 
 
-NOTE: Cargar datos de rendimiento para un lapso de 30 días puede llevar varios minutos. No salga de la página web, no actualice la página web ni cierre el explorador mientras se cargan los datos.
+NOTE: La carga de los datos de rendimiento correspondientes a un periodo de 30 días puede tardar varios minutos. No salgas de la página web, no la actualices ni cierres el navegador mientras se cargan los datos.
 
 
 

@@ -14,10 +14,6 @@ summary: Puede cambiar el orden de las bandejas que se muestran en la página ha
 Puede cambiar el orden de las bandejas que se muestran en la página hardware para que coincidan con el orden físico de las bandejas de un armario.
 
 .Pasos
-. En el panel izquierdo, selecciona *Hardware*.
-. Si el gráfico muestra las unidades, haga clic en la pestaña * Controladores y componentes *.
-+
-El gráfico cambia y muestra las controladoras en lugar de las unidades.
-
-. En la parte superior derecha de la vista de una bandeja, seleccione las flechas hacia arriba o hacia abajo para reorganizar el orden de las bandejas que se muestran en la página hardware.
+. En el panel izquierdo, selecciona menú:Hardware[Controllers and components].
+. Selecciona la lista desplegable de un estante y luego selecciona *Cambiar orden* para reorganizar el orden de los estantes que se muestran en la página Hardware.
 

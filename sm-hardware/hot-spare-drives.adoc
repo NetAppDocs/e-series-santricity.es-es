@@ -24,12 +24,14 @@ Las piezas de repuesto no son unidades dedicadas a grupos de volúmenes específ
 
 
 
+[[how-to-identify-hot-spares]]
 == Cómo identificar las piezas de repuesto
 
 Es posible asignar piezas de repuesto con el asistente de configuración inicial o en la página hardware. Para determinar si hay piezas de repuesto asignadas, vaya a la página hardware y busque todas las bahías de unidad que aparecen en color rosa.
 
 
 
+[[how-hot-spare-coverage-works]]
 == Cómo funciona la cobertura de piezas de repuesto
 
 La cobertura de piezas de repuesto funciona de la siguiente manera:
@@ -49,6 +51,7 @@ No pueden usarse piezas de repuesto para pools, ya que estos utilizan un método
 
 
 
+[[considerations-for-hot-spare-drive-capacity]]
 == Consideraciones sobre la capacidad de la unidad de repuesto
 
 Seleccione una unidad con una capacidad mayor o igual que la capacidad total de la unidad que desea proteger. Por ejemplo, si tiene una unidad de 18 GIB con una capacidad configurada de 8 GIB, puede usar una unidad de 9 GIB o más como pieza de repuesto. Por regla general, no asigne una unidad como pieza de repuesto a menos que su capacidad sea mayor o igual que la capacidad de la unidad más grande en la cabina de almacenamiento.
@@ -60,12 +63,14 @@ Si no hay piezas de repuesto disponibles con la misma capacidad física, puede u
 ====
 
 
+[[considerations-for-media-and-interface-types]]
 == Consideraciones sobre tipos de medios e interfaces
 
 La unidad utilizada como pieza de repuesto debe compartir el mismo tipo de medio y tipo de interfaz que las unidades que protegerá. Por ejemplo, una unidad de disco duro no puede actuar como pieza de repuesto de unidades SSD.
 
 
 
+[[considerations-for-secure-capable-drives]]
 == Consideraciones sobre unidades compatibles con la función de seguridad
 
 Una unidad compatible con la función de seguridad, como FDE o FIPS, puede actuar como pieza de repuesto para unidades con o sin funcionalidades de seguridad. Sin embargo, una unidad no compatible con la función de seguridad no puede actuar como pieza de repuesto para unidades con funcionalidades de seguridad.
@@ -79,6 +84,7 @@ Cuando se habilita la función Drive Security y se crea un pool o un grupo de vo
 ====
 
 
+[[recommended-number-of-hot-spare-drives]]
 == Cantidad recomendada de unidades de repuesto
 
 Si utilizó el asistente de configuración inicial para crear automáticamente piezas de repuesto, System Manager crea una pieza de repuesto cada 30 unidades de un tipo de medio y un tipo de interfaz en particular. De lo contrario, puede crear manualmente unidades de repuesto entre los grupos de volúmenes en la cabina de almacenamiento.

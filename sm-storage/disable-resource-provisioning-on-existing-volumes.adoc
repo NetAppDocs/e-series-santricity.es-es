@@ -29,7 +29,7 @@ Cuando se habilita el aprovisionamiento de recursos para los grupos de volúmene
 Cuando se deshabilita el aprovisionamiento de recursos para los grupos de volúmenes o pools existentes, una operación en segundo plano reescribe todos los bloques lógicos en cada volumen. Los datos existentes no se modifican. Las escrituras asignarán o aprovisionarán los bloques en las unidades asociadas con el grupo de volúmenes o pool.
 
 
-NOTE: Para los nuevos grupos de volúmenes y pools, puede habilitar o deshabilitar el aprovisionamiento de recursos en el menú:Configuración[sistema > Configuración adicional > Habilitar/deshabilitar volúmenes aprovisionados con recursos].
+NOTE: Para los nuevos grupos de volúmenes y pools, puedes activar o desactivar el aprovisionamiento de recursos desde el menú: system [Configuración adicional > Configurar volúmenes con aprovisionamiento de recursos].
 
 .Pasos
 . En el panel izquierdo, selecciona menú:Storage[Pools y grupos de volúmenes].

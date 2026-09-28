@@ -30,6 +30,7 @@ Los datos de rendimiento se pueden ver en tres formatos:
 
 
 
+[[characteristics-of-performance-data-formats]]
 == Características de los formatos de datos de rendimiento
 
 [cols="1a,1a,1a,1a,1a"]
@@ -93,6 +94,7 @@ Sí
 |===
 
 
+[[guidelines-for-viewing-performance-data]]
 == Directrices para visualizar datos de rendimiento
 
 * La recogida de datos de rendimiento siempre está activada. No existe una opción para desactivarla.

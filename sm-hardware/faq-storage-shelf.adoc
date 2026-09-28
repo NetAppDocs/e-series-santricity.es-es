@@ -16,12 +16,14 @@ Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respue
 
 
 
+[[what-is-shelf-loss-protection-and-drawer-loss-protection]]
 == ¿Qué son la protección contra pérdida de bandeja y la protección contra pérdida de cajón?
 
 La protección contra pérdida de bandeja y de cajón son atributos de los pools y los grupos de volúmenes para mantener el acceso a los datos en caso de fallo de una bandeja o un cajón individuales.
 
 
 
+[[shelf-loss-protection]]
 === Protección contra pérdida de bandeja
 
 Una bandeja es el compartimento que contiene las unidades o las unidades y la controladora. La protección contra pérdida de bandeja garantiza la accesibilidad a los datos en los volúmenes de un pool o un grupo de volúmenes en caso de pérdida total de comunicación con una bandeja de unidades única. Un ejemplo de pérdida total de comunicación podría ser la pérdida de energía en la bandeja de unidades o el fallo de ambos módulos de I/o (IOM).
@@ -84,6 +86,7 @@ No aplicable
 |===
 
 
+[[drawer-loss-protection]]
 === Protección contra pérdida de cajón
 
 Un cajón es uno de los compartimentos de una bandeja que se extrae para acceder a las unidades. Solo las bandejas de gran capacidad poseen cajones. La protección contra pérdida de cajón garantiza la accesibilidad a los datos en los volúmenes de un pool o un grupo de volúmenes en caso de pérdida total de comunicación con un cajón único. Un ejemplo de pérdida total de comunicación podría ser la pérdida de energía en el cajón o el fallo de un componente interno dentro del cajón.
@@ -150,6 +153,7 @@ No aplicable
 |===
 
 
+[[what-are-battery-learn-cycles]]
 == ¿Qué son los ciclos de aprendizaje de la batería?
 
 Un ciclo de aprendizaje es un ciclo automático para calibrar el indicador de batería inteligente.

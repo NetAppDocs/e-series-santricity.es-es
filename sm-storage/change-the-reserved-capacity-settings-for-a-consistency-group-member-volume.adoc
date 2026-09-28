@@ -18,9 +18,8 @@ Es posible cambiar la configuración de un volumen miembro del grupo de coherenc
 Al cambiar la configuración de la capacidad reservada de un volumen miembro individual, también se cambia la configuración de capacidad reservada de todos los volúmenes miembro asociados con un grupo de coherencia.
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Storage[Pools y grupos de volúmenes].
-. Haga clic en la pestaña *capacidad reservada*.
-. Selecciona el volumen miembro del grupo de consistencia que quieres editar y luego haz clic en el icono menu:ellipsis[Edit Settings].
+. En el panel de la izquierda, selecciona el menú: almacenamiento [Capacidad reservada].
+. Selecciona el volumen miembro del grupo de consistencia que quieras editar y luego haz clic en el icono de los tres puntos del menú [Edit settings].
 +
 Aparece la ventana Edit consistency group member volume.
 

@@ -23,7 +23,7 @@ Al deshabilitar la generación de informes de conectividad de host, también se 
 
 ====
 .Pasos
-. En el panel izquierdo, selecciona menú:Settings[System].
+. En el panel de la izquierda, selecciona *System*.
 . Desplácese hasta *Configuración adicional* y, a continuación, haga clic en *Activar/Desactivar generación de informes de conectividad de host*.
 +
 El texto debajo de esta opción indica si se encuentra habilitada o deshabilitada.

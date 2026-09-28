@@ -15,26 +15,16 @@ summary: Es posible cambiar el nombre de la cabina de almacenamiento que aparece
 Es posible cambiar el nombre de la cabina de almacenamiento que aparece en la barra de título de SANtricity System Manager.
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Settings[System].
-. En *General*, busque el campo *Nombre:*.
+. En el panel de la izquierda, selecciona *System*.
+. En la sección *General*, haz clic en *Editar nombre de la matriz de almacenamiento*.
 +
-Si no se definió un nombre de cabina de almacenamiento, este campo muestra el texto "Unknown".
+Aparece el cuadro de diálogo «Editar nombre de la matriz de almacenamiento».
 
-. Haga clic en el icono *Editar* (lápiz) ubicado junto al nombre de la cabina de almacenamiento.
-+
-Ahora el campo puede editarse.
-
-. Introduzca un nombre nuevo.
+. Introduce un nuevo nombre en el campo *Nombre*.
 +
 Un nombre puede contener letras, números y los caracteres especiales subrayado (_), guión (-) y signo numeral (#). Un nombre no puede contener espacios. Un nombre puede contener un máximo de 30 caracteres. El nombre debe ser único.
 
-. Haga clic en el icono *Guardar* (Marca de verificación).
-+
-[NOTE]
-====
-Si desea cerrar el campo editable sin realizar cambios, haga clic en el icono *Cancelar* (X).
-
-====
+. Haga clic en *Guardar*.
 
 
 .Resultados

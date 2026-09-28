@@ -15,6 +15,7 @@ Conozca la forma en que los términos de volúmenes se aplican a su cabina de al
 
 
 
+[[all-volume-types]]
 == Todos los tipos de volúmenes
 
 [cols="25h,~"]
@@ -175,7 +176,10 @@ La asignación de volumen es cómo se asignan los LUN de host a un volumen.
  a| 
 Nombre del volumen
  a| 
-Un nombre de volumen es una cadena de caracteres que se asignan al volumen cuando se crea. Se puede aceptar el nombre predeterminado o se puede proporcionar un nombre más descriptivo que indique el tipo de datos almacenados en el volumen.
+El nombre de un volumen es una cadena de caracteres que se le asigna al volumen cuando se crea. Puedes aceptar el nombre predeterminado o poner uno más descriptivo que indique el tipo de datos almacenados en el volumen. Los nombres de los volúmenes estándar y thin pueden tener una longitud máxima de 60 caracteres. El nombre debe ser único. Solo los volúmenes estándar y thin pueden tener nombres de más de 30 caracteres.
+
+
+NOTE: No se admite la actualización a una versión anterior a la 11.90 del software SANtricity OS si existen volúmenes estándar o thin cuyos nombres superen los 30 caracteres. Si planeas actualizar a una versión anterior a la 11.90 del software SANtricity OS, cambia los nombres de cualquier volumen estándar o thin que tenga un nombre de más de 30 caracteres antes de actualizar.
 
 
 
@@ -215,6 +219,7 @@ La configuración de almacenamiento en caché de escritura sin baterías permite
 |===
 
 
+[[specific-to-thin-volumes]]
 == Específico de volúmenes finos
 
 [NOTE]

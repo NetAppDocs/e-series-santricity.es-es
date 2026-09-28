@@ -15,6 +15,7 @@ Antes de importar una configuración de almacenamiento desde una cabina de almac
 
 
 
+[[shelves]]
 == Bandejas
 
 * Las bandejas donde residen las controladoras deben ser idénticas en las cabinas de origen y objetivo.
@@ -24,9 +25,10 @@ Antes de importar una configuración de almacenamiento desde una cabina de almac
 
 
 
+[[controllers]]
 == Controladoras
 
-* El tipo de controladora puede ser diferente para las cabinas de origen y objetivo (por ejemplo, se puede importar de E2800 a E5700), pero el tipo de compartimento RBOD debe ser idéntico.
+* El tipo de controlador puede ser diferente entre las matrices de origen y destino (por ejemplo, importar de un EF300 a un EF80), pero el tipo de caja RBOD debe ser idéntico.
 * Las HIC, incluidas las capacidades DE GARANTÍA de DATOS del host, deben ser idénticas para las cabinas de origen y objetivo.
 * No se admite la importación de una configuración doble a una simple; sí se admite la configuración simple a doble.
 * La configuración de unidades FDE no está incluida en el proceso de importación.
@@ -34,6 +36,7 @@ Antes de importar una configuración de almacenamiento desde una cabina de almac
 
 
 
+[[status]]
 == Estado
 
 * Las cabinas objetivo deben tener el estado óptimo.
@@ -42,6 +45,7 @@ Antes de importar una configuración de almacenamiento desde una cabina de almac
 
 
 
+[[storage]]
 == Reducida
 
 * La capacidad de una unidad puede variar entre las cabinas de origen y las objetivo, siempre y cuando la capacidad de volumen en la cabina objetivo sea mayor que en la de origen. (Una cabina objetivo puede tener unidades más nuevas y con mayor capacidad que la operación de replicación quizás no configure por completo en volúmenes).

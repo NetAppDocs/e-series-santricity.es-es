@@ -36,10 +36,9 @@ Si no tiene el archivo MIB, puede obtenerlo en el sitio de soporte de NetApp:
 En esta tarea, se describe cómo identificar el servidor SNMP para el destino de capturas y, a continuación, poner a prueba la configuración.
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Settings[Alerts].
-. Seleccione la ficha *SNMP*.
+. En el panel de la izquierda, selecciona el menú:Alertas[Alertas SNMP].
 +
-En la primera configuración, la pestaña SNMP muestra "Configure Communities/Users".
+Al realizar la configuración inicial, la página muestra "Configurar comunidades/usuarios".
 
 . Seleccione *Configurar comunidades/usuarios*.
 +
@@ -62,7 +61,7 @@ En función de lo que seleccione, se abrirá el cuadro de diálogo Configurar co
 
 
 
-. En la página Alertas con la ficha SNMP seleccionada, haga clic en *Añadir destinos de captura*.
+. Haz clic en *Add Trap Destinations*.
 +
 Se abre el cuadro de diálogo Añadir destinos de captura.
 
@@ -70,7 +69,7 @@ Se abre el cuadro de diálogo Añadir destinos de captura.
 +
 ** *Destino de captura* -- Introduzca una dirección IPv4 o IPv6 del servidor que ejecuta un servicio SNMP.
 ** *Nombre de comunidad o Nombre de usuario* -- en el menú desplegable, seleccione el nombre de comunidad (SNMPv2c) o el nombre de usuario (SNMPv3) para este destino de captura. (Si ha definido sólo uno, el nombre ya aparecerá en este campo.)
-** *Enviar captura de fallo de autenticación* -- Seleccione esta opción (la casilla de verificación) si desea alertar al destino de la captura cada vez que se rechace una solicitud SNMP debido a un nombre de comunidad o de usuario no reconocido. Después de hacer clic en *Agregar*, los destinos de captura y los nombres asociados aparecen en la ficha *SNMP* de la página *Alertas*.
+** *Enviar trap de error de autenticación* -- selecciona esta opción (la casilla de verificación) si deseas avisar al destinatario de la trap cada vez que se rechace una solicitud SNMP debido a un nombre de comunidad o de usuario no reconocido. Después de hacer clic en *Add*, los destinos de las traps y los nombres asociados aparecen en la página *SNMP alerts*.
 
 
 . Para asegurarse de que una captura es válida, seleccione un destino de captura de la tabla y, a continuación, haga clic en *probar destino de captura* para enviar una captura de prueba a la dirección configurada.

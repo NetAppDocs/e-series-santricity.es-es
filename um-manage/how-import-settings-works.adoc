@@ -15,6 +15,7 @@ Es posible usar SANtricity Unified Manager para importar la configuración de un
 
 
 
+[[settings-available-for-import]]
 == Configuración disponible para la importación
 
 Las siguientes configuraciones pueden importarse en varias cabinas:
@@ -40,6 +41,7 @@ Las siguientes configuraciones pueden importarse en varias cabinas:
 
 
 
+[[configuration-workflow]]
 == Flujo de trabajo de configuración
 
 Para importar la configuración, siga este flujo de trabajo:

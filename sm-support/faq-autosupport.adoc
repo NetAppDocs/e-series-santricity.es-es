@@ -16,6 +16,7 @@ Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respue
 
 
 
+[[what-data-am-i-collecting]]
 == ¿Qué datos recojo?
 
 La función AutoSupport y la función manual Support Data Collection proporcionan medios para recoger datos en un bundle de soporte al cliente a fin de que el soporte técnico solucione y analice problemas de forma remota.
@@ -24,6 +25,7 @@ El bundle de soporte al cliente reúne todos los tipos de información acerca de
 
 
 
+[[what-does-unreadable-sectors-data-show-me]]
 == ¿Qué indican los datos de sectores ilegibles?
 
 Es posible visualizar datos detallados sobre sectores ilegibles detectados en las unidades de la cabina de almacenamiento.
@@ -104,6 +106,7 @@ Muestra uno de los siguientes tipos de fallos:
 |===
 
 
+[[what-is-a-health-image]]
 == ¿Qué es una imagen de estado?
 
 Una imagen de estado es un volcado de datos sin formato de la memoria del procesador de la controladora que el soporte técnico puede utilizar para diagnosticar un problema con una controladora.
@@ -112,6 +115,7 @@ El firmware genera automáticamente una imagen de estado cuando detecta ciertos 
 
 
 
+[[what-do-the-autosupport-features-do]]
 == ¿Qué hacen las funciones de AutoSupport?
 
 La función AutoSupport cuenta con tres funciones individuales que se habilitan por separado.
@@ -123,6 +127,7 @@ La función AutoSupport cuenta con tres funciones individuales que se habilitan 
 
 
 
+[[what-type-of-data-is-collected-through-the-autosupport-feature]]
 == ¿Qué tipo de datos se recopilan mediante la función AutoSupport?
 
 La función AutoSupport contiene tres tipos de mensajes estándares: Mensajes de evento, mensajes programados y mensajes de diagnóstico bajo demanda y remotos.
@@ -157,6 +162,7 @@ La función AutoSupport envía automáticamente varios mensajes con una programa
 
 
 
+[[how-do-i-configure-the-delivery-method-for-the-autosupport-feature]]
 == ¿Cómo se configura el método de entrega para la función AutoSupport?
 
 La función AutoSupport admite los protocolos HTTPS y SMTP para entregar mensajes de AutoSupport al soporte técnico.
@@ -179,7 +185,7 @@ Revise los diferentes protocolos:
 
 ====
 .Pasos
-. En el panel izquierdo, selecciona menú:Support[Support Center > AutoSupport] tab.
+. En el panel de la izquierda, selecciona el menú: asistencia [AutoSupport].
 . Seleccione *Configurar método de entrega de AutoSupport*.
 +
 Se muestra un cuadro de diálogo con una lista de los métodos de entrega de mensajes.
@@ -213,6 +219,7 @@ Si la prueba de configuración falla, compruebe los ajustes de configuración y 
 
 
 
+[[what-is-configuration-data]]
 == ¿Qué son los datos de configuración?
 
 Al seleccionar recopilar datos de configuración, el sistema guarda el estado actual de la base de datos de configuración RAID.
@@ -221,6 +228,7 @@ La base de datos de configuración de RAID incluye todos los datos para grupos d
 
 
 
+[[what-do-i-need-to-know-before-upgrading-the-santricity-os-software]]
 == ¿Qué se debe saber para actualizar el software del SO SANtricity?
 
 Antes de actualizar el software y firmware de la controladora, tenga en cuenta estos puntos.
@@ -268,6 +276,7 @@ CAUTION: No haga cambios en la cabina de almacenamiento mientras se realiza la a
 
 
 
+[[what-do-i-need-to-know-before-suspending-iom-auto-synchronization]]
 == ¿Qué debo saber antes de suspender la sincronización automática de IOM?
 
 La suspensión de la sincronización automática de IOM impide que el firmware de IOM se actualice la próxima vez que se produzca una actualización de software de la controladora del sistema operativo SANtricity.
@@ -276,6 +285,7 @@ Por lo general, el software de la controladora y el firmware del IOM se actualiz
 
 
 
+[[why-is-my-firmware-upgrade-progressing-so-slowly]]
 == ¿Por qué se procesa tan lentamente la actualización del firmware?
 
 El progreso de la actualización del firmware depende de la carga general del sistema.
@@ -284,6 +294,7 @@ Si, en el marco de una actualización en línea del firmware de la unidad, se ll
 
 
 
+[[what-do-i-need-to-know-before-upgrading-drive-firmware]]
 == ¿Qué debo saber antes de actualizar el firmware de la unidad?
 
 Antes de actualizar el firmware de la unidad, tenga en cuenta los siguientes puntos.
@@ -298,6 +309,7 @@ Antes de actualizar el firmware de la unidad, tenga en cuenta los siguientes pun
 
 
 
+[[how-do-i-choose-which-type-of-upgrade-to-perform]]
 == ¿Cómo selecciono el tipo de actualización que debo realizar?
 
 El tipo de actualización a realizar en la unidad se selecciona según el estado del pool o el grupo de volúmenes.

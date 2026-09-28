@@ -15,8 +15,7 @@ summary: Puede agregar hasta 256 nombres de comunidad para las trampas SNMPv2c.
 Puede agregar hasta 256 nombres de comunidad para las trampas SNMPv2c.
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Settings[Alerts].
-. Seleccione la ficha *SNMP*.
+. En el panel de la izquierda, selecciona el menú:Alertas[Alertas SNMP].
 +
 Los destinos de capturas y los nombres de comunidad aparecen en la tabla.
 
@@ -29,4 +28,4 @@ Se abre el cuadro de diálogo Configurar comunidades.
 
 
 .Resultados
-El nuevo nombre de la comunidad se muestra en la pestaña SNMP de la página Alertas.
+El nuevo nombre de la comunidad aparece en la página de alertas SNMP.

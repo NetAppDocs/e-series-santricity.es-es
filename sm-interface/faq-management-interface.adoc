@@ -16,6 +16,7 @@ Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respue
 
 
 
+[[what-are-the-supported-browsers]]
 == ¿Qué exploradores son compatibles?
 
 En el administrador del sistema de SANtricity se admiten las siguientes versiones de exploradores.
@@ -54,12 +55,14 @@ Microsoft Edge
 |===
 
 
+[[what-are-the-keyboard-shortcuts]]
 == ¿Cuáles son los métodos abreviados de teclado?
 
 Es posible navegar por SANtricity System Manager usando solo el teclado.
 
 
 
+[[overall-navigation]]
 === Navegación general
 
 [cols="1a,1a"]
@@ -117,6 +120,7 @@ Introduzca
 |===
 
 
+[[table-navigation]]
 === Navegación por tablas
 
 [cols="1a,1a"]
@@ -146,6 +150,7 @@ Tabulador para seleccionar el encabezado de una columna, luego presionar Intro
 |===
 
 
+[[calendar-navigation]]
 === Navegación por calendario
 
 [cols="1a,1a"]
@@ -245,6 +250,7 @@ Escape
 |===
 
 
+[[how-do-performance-statistics-for-individual-volumes-relate-to-the-total]]
 == ¿Cómo se relacionan las estadísticas de rendimiento de volúmenes individuales con el total?
 
 Las estadísticas de pools y grupos de volúmenes se calculan sumando todos los volúmenes, incluidos los volúmenes de capacidad reservada.
@@ -255,6 +261,7 @@ Sin embargo, para las estadísticas de aplicaciones y cargas de trabajo, solo se
 
 
 
+[[why-does-data-display-as-zero-in-the-graphs-and-table]]
 == ¿Por qué los datos se muestran como cero en los gráficos y la tabla?
 
 Cuando se muestra un cero en un punto de datos en los gráficos y la tabla, significa que no hay actividad de I/o del objeto en ese momento específico. Esta situación podría ocurrir porque el host no inicia operaciones de I/o en ese objeto, o podría haber un problema con el objeto en sí.
@@ -315,6 +322,7 @@ Cabina de almacenamiento
 |===
 
 
+[[what-does-the-latency-graph-show]]
 == ¿Qué se muestra en el gráfico de latencia?
 
 El gráfico de latencia proporciona estadísticas de latencia, en milisegundos (ms), para volúmenes, grupos de volúmenes, pools, aplicaciones y cargas de trabajo. Este gráfico aparece en las pestañas vista lógica, vista física y aplicaciones y cargas de trabajo vista.
@@ -328,9 +336,10 @@ La latencia se refiere a cualquier demora que ocurre mientras se leen o se escri
 
 
 
+[[what-does-the-iops-graph-show]]
 == ¿Qué se muestra en el gráfico de IOPS?
 
-El gráfico IOPS muestra estadísticas de operaciones de entrada/salida por segundo. En la página de inicio, este gráfico muestra estadísticas para el array de almacenamiento. En las pestañas Logical View, Physical View y Applications and workloads View de la página Performance, este gráfico muestra estadísticas para el array de almacenamiento, volúmenes, grupos de volúmenes, pools, aplicaciones y cargas de trabajo.
+El gráfico de IOPS muestra estadísticas sobre las operaciones de entrada/salida por segundo. En el panel de control, este gráfico muestra estadísticas sobre la matriz de almacenamiento. En las pestañas Vista lógica, Vista física y Aplicaciones y cargas de trabajo de la página Rendimiento, este gráfico muestra estadísticas de la matriz de almacenamiento, los volúmenes, los grupos de volúmenes, los pools, las aplicaciones y las cargas de trabajo.
 
 IOPS es la abreviatura en inglés de operaciones _entrada/salida (I/o) por segundo_. Pase el cursor por un punto del gráfico para ver los siguientes valores de ese momento específico:
 
@@ -341,9 +350,10 @@ IOPS es la abreviatura en inglés de operaciones _entrada/salida (I/o) por segun
 
 
 
+[[what-does-the-mibs-graph-show]]
 == ¿Qué se muestra en el gráfico de MIB/s?
 
-El gráfico MiB/s muestra estadísticas de velocidad de transferencia en mebibytes por segundo. En la página Home, este gráfico muestra estadísticas para la storage array. En las pestañas Logical View, Physical View y Applications and workloads View de la página Performance, este gráfico muestra estadísticas para la storage array, los volumes, volume groups, pools, applications y workloads.
+El gráfico MiB/s muestra estadísticas de velocidad de transferencia en mebibytes por segundo. En el panel de control, este gráfico muestra estadísticas sobre la matriz de almacenamiento. En las pestañas Vista lógica, Vista física y Aplicaciones y cargas de trabajo de la página Rendimiento, este gráfico muestra estadísticas de la matriz de almacenamiento, los volúmenes, los grupos de volúmenes, los pools, las aplicaciones y las cargas de trabajo.
 
 MIB/s es la abreviatura de _mebibytes por segundo_ o 1,048,576 bytes por segundo. Pase el cursor por un punto del gráfico para ver los siguientes valores de ese momento específico:
 
@@ -354,22 +364,25 @@ MIB/s es la abreviatura de _mebibytes por segundo_ o 1,048,576 bytes por segundo
 
 
 
+[[what-does-the-cpu-graph-show]]
 == ¿Qué se muestra en el gráfico de CPU?
 
-El gráfico CPU muestra estadísticas de capacidad de procesamiento para cada controlador (controlador A y controlador B). CPU es una abreviatura de _central processing unit_. En la página de inicio, este gráfico muestra estadísticas para la matriz de almacenamiento. En la pestaña Vista física de la página Rendimiento, este gráfico muestra estadísticas para la matriz de almacenamiento y las unidades.
+El gráfico de la CPU muestra estadísticas sobre la capacidad de procesamiento de cada controlador (controlador A y controlador B). CPU es la abreviatura de _central processing unit_. En el panel de control, este gráfico muestra estadísticas sobre la matriz de almacenamiento. En la pestaña Vista física de la página Rendimiento, este gráfico muestra estadísticas sobre la matriz de almacenamiento y las unidades.
 
 En el gráfico de la CPU, se muestra el porcentaje de la capacidad de procesamiento de la CPU que se usa para operaciones de la cabina. Aun cuando no se produzcan operaciones de I/o externas, es posible que el porcentaje de utilización de CPU no sea cero, debido a que el sistema operativo de almacenamiento podría estar realizando operaciones en segundo plano y supervisión. Pase el cursor por un punto del gráfico para ver un porcentaje de la funcionalidad de procesamiento que se está utilizando en ese momento específico.
 
 
 
+[[what-does-the-headroom-graph-show]]
 == ¿Qué se muestra en el gráfico de margen adicional?
 
-El gráfico Headroom está relacionado con la capacidad de rendimiento restante de los controladores de la matriz de almacenamiento. Este gráfico es visible en la página de inicio y en la pestaña Physical View de la página Performance.
+El gráfico «Headroom» está relacionado con la capacidad de rendimiento restante de los controladores de la matriz de almacenamiento. Este gráfico es visible en el panel de control y en la pestaña «Vista física» de la página de Rendimiento.
 
 En el gráfico margen adicional, se muestra la funcionalidad de rendimiento restante de los objetos físicos del sistema de almacenamiento. Pase el cursor por un punto del gráfico para ver los porcentajes de funcionalidad de IOPS y MIB/s restante para la controladora A y la controladora B.
 
 
 
+[[where-can-i-find-more-information-about-display-preferences]]
 == ¿Dónde puedo obtener más información sobre las preferencias de presentación?
 
 Para obtener información acerca de las opciones de visualización disponibles:

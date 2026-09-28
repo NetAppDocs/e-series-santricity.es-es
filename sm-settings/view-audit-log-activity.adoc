@@ -18,8 +18,7 @@ Al ver los registros de auditoría, los usuarios que tienen permisos de administ
 Debe iniciar sesión con un perfil de usuario que cuente con permisos de administración de seguridad. De lo contrario, no se mostrarán las funciones de Access Management.
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Settings[Access Management].
-. Seleccione la ficha **Registro de auditoría**.
+. En el panel de la izquierda, selecciona menú:Monitoring[Audit log].
 +
 La actividad de registro de auditoría aparece en una tabla de resultados, que incluye las siguientes columnas de información:
 
@@ -33,7 +32,7 @@ La actividad de registro de auditoría aparece en una tabla de resultados, que i
 ** *Descripción* -- Información adicional sobre el evento, si corresponde.
 
 
-. Use las selecciones de la página Registro de auditoría para ver y gestionar eventos.
+. Utiliza las opciones de la página de registro de auditoría para ver y gestionar eventos.
 +
 .Detalles de selección
 [%collapsible]
@@ -99,7 +98,7 @@ Haga clic en el icono de columna *Mostrar/Ocultar* image:../media/sam-1140-ss-ac
  a| 
 Alternar filtros de columnas
  a| 
-Haga clic en el icono * Alternar * image:../media/sam-1140-ss-access-toggle.gif["Alternar"]para abrir los campos de filtrado de cada columna. Introduzca los caracteres en un campo de columna para limitar los eventos que se muestran con esos caracteres. Vuelva a hacer clic en el icono para cerrar los campos de filtrado.
+Haz clic en el icono *Toggle* image:../media/sam-1140-ss-access-toggle.gif["Alternar"] para abrir los campos de filtrado de cada columna. Escribe caracteres en un campo de columna para limitar los eventos que se muestran por esos caracteres. Haz clic de nuevo en el icono para cerrar los campos de filtrado.
 
 
 

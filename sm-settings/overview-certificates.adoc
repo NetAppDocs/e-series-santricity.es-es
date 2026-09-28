@@ -15,6 +15,7 @@ Es posible utilizar System Manager de SANtricity para crear solicitudes de firma
 
 
 
+[[what-are-certificates]]
 == ¿Qué son los certificados?
 
 _Certificates_ son archivos digitales que identifican entidades en línea, como sitios web y servidores, para comunicaciones seguras en Internet. Existen dos tipos de certificados: Un _certificado firmado_ es validado por una entidad de certificación (CA) y un _certificado autofirmado_ es validado por el propietario de la entidad en lugar de por un tercero.
@@ -27,6 +28,7 @@ Obtenga más información:
 
 
 
+[[how-do-i-configure-signed-certificates]]
 == ¿Cómo se configuran los certificados firmados?
 
 Es posible generar una solicitud de firma desde System Manager o de forma externa mediante una pareja de claves pública y privada. La solicitud de firma se envía a una CA para generar los archivos de certificado. Una vez que la CA devuelve los archivos de certificado, se deben importar mediante System Manager.
@@ -39,6 +41,7 @@ Obtenga más información:
 
 
 
+[[related-information]]
 == Información relacionada
 
 Obtenga más información acerca de las tareas relacionadas con los certificados:

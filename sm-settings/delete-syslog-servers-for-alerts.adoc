@@ -15,8 +15,7 @@ summary: Es posible eliminar un servidor de syslog para que no siga recibiendo a
 Es posible eliminar un servidor de syslog para que no siga recibiendo alertas.
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Settings[Alerts].
-. Seleccione la ficha *Syslog*.
+. En el panel de la izquierda, selecciona el menú: alertas [syslog alerts].
 . Seleccione una dirección de servidor de syslog y haga clic en *Quitar* en la parte superior derecha.
 +
 Se abrirá el cuadro de diálogo Confirmar eliminación de servidor de syslog.

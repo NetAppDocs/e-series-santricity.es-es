@@ -23,14 +23,14 @@ Si se configura Access Management con las funcionalidades del lenguaje de marcad
 
 ====
 .Pasos
-. En el panel izquierdo, selecciona menú:Settings[System].
+. En el panel de la izquierda, selecciona *System*.
 . En la sección General, seleccione *Habilitar/deshabilitar tiempo de espera de la sesión*.
 +
 Se abre el cuadro de diálogo Habilitar/deshabilitar tiempo de espera de la sesión.
 
 . Utilice los controles de desplazamiento para aumentar o disminuir el tiempo en minutos.
 +
-El tiempo de espera mínimo que puede configurarse para System Manager es de 15 minutos.
+El tiempo de espera mínimo que puedes establecer para System Manager es de 10 minutos.
 
 +
 [NOTE]

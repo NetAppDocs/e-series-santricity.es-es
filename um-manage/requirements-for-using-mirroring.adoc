@@ -16,6 +16,7 @@ Si planea configurar el mirroring, tenga en cuenta los siguientes requisitos.
 
 
 
+[[unified-manager]]
 == Unified Manager
 
 * El proxy de servicios web se encuentra en ejecución.
@@ -25,6 +26,7 @@ Si planea configurar el mirroring, tenga en cuenta los siguientes requisitos.
 
 
 
+[[storage-arrays]]
 == Cabinas de almacenamiento
 
 [NOTE]
@@ -44,6 +46,7 @@ La duplicación síncrona no está disponible en la matriz de almacenamiento EF8
 
 
 
+[[connectivity-requirements]]
 == Requisitos de conectividad
 
 El mirroring (asíncrono o síncrono) a través de una interfaz de FC requiere lo siguiente:
@@ -66,9 +69,16 @@ NOTE: Los controladores E4000 no admiten la duplicación iSCSI.
 ** VLAN: Tanto los sistemas locales como los remotos deben tener el mismo valor de VLAN para comunicarse
 ** Puertos de escucha iSCSI
 ** Tramas gigantes
-** Prioridad para Ethernet
 
 
+
+
+[NOTE]
+====
+Se recomienda el uso de tramas gigantes para mejorar el rendimiento de la CPU y el rendimiento global.
+
+====
+* Prioridad para Ethernet
 
 
 [NOTE]
@@ -78,6 +88,7 @@ La comunicación entre las controladoras iSCSI debe utilizar un puerto con conex
 ====
 
 
+[[mirrored-volume-candidates]]
 == Candidatos de volumen reflejado
 
 * El nivel de RAID, los parámetros de almacenamiento en caché y el tamaño de los segmentos pueden ser diferentes en los volúmenes primario y secundario de una pareja reflejada.
@@ -96,11 +107,12 @@ NOTE: Para las controladoras EF600 y EF300, los volúmenes primario y secundario
 ** Si el volumen primario no utiliza Drive Security, el volumen secundario no debe usar Drive Security.
 
 
-* Los volúmenes primarios y secundarios no deben tener habilitada la partición de recursos.
+* Los volúmenes primarios y secundarios no deben tener habilitado Resource Provisioning.
 
 
 
 
+[[reserved-capacity]]
 == Capacidad reservada
 
 Mirroring asíncrono:
@@ -117,6 +129,7 @@ Mirroring síncrono:
 
 
 
+[[drive-security-feature]]
 == Función Drive Security
 
 * Si utiliza unidades compatibles con la función de seguridad, tanto el volumen primario como el secundario deben tener una configuración de seguridad compatible. Esta restricción no se aplica; por lo tanto, debe verificarlo por su cuenta.

@@ -46,7 +46,7 @@ NOTE: Todos los volúmenes nuevos que se creen en el pool serán compatibles con
 ====
 .Pasos
 . En el panel izquierdo, selecciona menú:Storage[Pools y grupos de volúmenes].
-. Selecciona el pool o la caché SSD y luego haz clic en el icono del menú:ellipsis icon[Remove capacity].
+. Busca el pool o la caché SSD y, a continuación, haz clic en el icono de los tres puntos del menú [Eliminar capacidad].
 +
 Se muestra el cuadro de diálogo Eliminar capacidad.
 

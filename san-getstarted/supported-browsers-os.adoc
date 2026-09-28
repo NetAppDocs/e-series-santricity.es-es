@@ -15,6 +15,7 @@ El software SANtricity admite varios tipos de exploradores y sistemas operativos
 
 
 
+[[browsers]]
 == Exploradores
 
 Se admiten los siguientes exploradores en las versiones mencionadas.
@@ -58,6 +59,7 @@ Para Unified Manager, el proxy de servicios web debe estar instalado y disponibl
 ====
 
 
+[[operating-systems]]
 == Sistemas operativos
 
 Se admiten los sistemas operativos y las versiones siguientes.

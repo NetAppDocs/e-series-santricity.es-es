@@ -17,7 +17,7 @@ Detecte varias cabinas para descubrir todas las cabinas de almacenamiento de la 
 .Antes de empezar
 * Inició sesión con un perfil de usuario que cuenta con permisos de administración de seguridad.
 * La cabina de almacenamiento debe estar instalada y configurada correctamente.
-* Las contraseñas de las matrices de almacenamiento deben configurarse usando la página de Access Management de System Manager.
+* Las contraseñas de la matriz de almacenamiento deben configurarse mediante la categoría de Autenticación de System Manager.
 * Para resolver certificados que no son de confianza, debe tener archivos de certificado de confianza de una entidad de certificación (CA) y los archivos de certificado están disponibles en el sistema local.
 
 
@@ -25,6 +25,7 @@ La detección de cabinas es un procedimiento de varios pasos.
 
 
 
+[[step-1-enter-network-address]]
 == Paso 1: Introduzca la dirección de red
 
 Se debe introducir un rango de direcciones de red para buscar dentro de la subred local. Todas las cabinas a las que se puede acceder correctamente se muestran en la página detectar, y se pueden añadir al dominio de gestión.
@@ -57,6 +58,7 @@ Unified Manager comprueba las credenciales de cada cabina que se añade al domin
 
 
 
+[[step-2-resolve-self-signed-certificates-during-discovery]]
 == Paso 2: Resuelva los certificados autofirmados durante la detección
 
 Como parte del proceso de detección, el sistema comprueba que las cabinas de almacenamiento estén usando certificados de un origen de confianza.
@@ -73,6 +75,7 @@ Como parte del proceso de detección, el sistema comprueba que las cabinas de al
 
 
 
+[[step-3-resolve-untrusted-certificates-during-discovery]]
 == Paso 3: Resolver certificados que no son de confianza durante la detección
 
 Los certificados dejan de ser de confianza cuando una cabina de almacenamiento intenta establecer una conexión con Unified Manager, pero no se confirma que la conexión sea segura. Durante el proceso de detección de cabinas, puede resolver certificados que no son de confianza al importar un certificado de una entidad de certificación (CA) (o certificado firmado por CA) que emitió un tercero de confianza.
@@ -109,6 +112,7 @@ Si una cabina de almacenamiento tiene problemas de certificados que no son de co
 
 
 
+[[step-4-provide-passwords]]
 == Paso 4: Proporcionar contraseñas
 
 Debe introducir las contraseñas de las cabinas de almacenamiento que desea añadir al dominio de gestión.

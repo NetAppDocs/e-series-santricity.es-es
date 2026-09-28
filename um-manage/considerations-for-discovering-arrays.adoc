@@ -15,12 +15,14 @@ Para poder mostrar y gestionar los recursos de almacenamiento, SANtricity Unifie
 
 
 
+[[discovering-multiple-storage-arrays]]
 == Detección de varias cabinas de almacenamiento
 
 Si decide detectar varias cabinas de almacenamiento, debe introducir un rango de direcciones IP de red. A continuación, Unified Manager intentar establecer conexiones individuales con cada dirección IP de ese rango. Cada cabina de almacenamiento a la que se accedió correctamente se muestra en la página detectar y se puede añadir al dominio de gestión.
 
 
 
+[[discovering-a-single-storage-array]]
 == Detección de una sola cabina de almacenamiento
 
 Si decide detectar una sola cabina de almacenamiento, debe introducir la dirección IP única para una de las controladoras de la cabina de almacenamiento. A continuación, se añade la cabina de almacenamiento individual.
@@ -32,12 +34,14 @@ Unified Manager detecta y muestra solamente la dirección IP única o la direcci
 ====
 
 
+[[user-credentials]]
 == Credenciales de usuario
 
 Como parte del proceso de detección, debe suministrar la contraseña de administrador para cada cabina de almacenamiento que desee añadir.
 
 
 
+[[web-services-certificates]]
 == Certificados de servicios web
 
 Como parte del proceso de detección, Unified Manager verifica que las cabinas de almacenamiento detectadas utilicen certificados de un origen de confianza. Unified Manager utiliza dos tipos de autenticación basada en certificados para todas las conexiones que establece con el explorador:

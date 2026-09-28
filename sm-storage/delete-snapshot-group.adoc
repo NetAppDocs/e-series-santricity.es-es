@@ -18,8 +18,7 @@ El grupo Snapshot se elimina cuando desea eliminar de forma permanente los datos
 Cuando se elimina un grupo Snapshot, también se eliminan todas las imágenes Snapshot en el grupo.
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Storage[Pools y grupos de volúmenes].
-. Haga clic en la pestaña *capacidad reservada*.
+. En el panel de la izquierda, selecciona el menú: almacenamiento [Capacidad reservada].
 . Selecciona el grupo de instantáneas que quieres eliminar y luego haz clic en el icono menu:ellipsis[Delete].
 +
 Se muestra el cuadro de diálogo Confirmar eliminación de grupo Snapshot.

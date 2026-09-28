@@ -23,7 +23,7 @@ Realice esta operación solo cuando el soporte técnico se lo indique.
 
 ====
 .Pasos
-. En el panel izquierdo, selecciona menú:Support[Support Center > Diagnostics] tab.
+. En el panel de la izquierda, selecciona menú:Support[Diagnostics].
 . Seleccione *recuperar búferes de seguimiento*.
 . Seleccione la casilla junto a cada controladora para la que desee recuperar búferes de seguimiento.
 +

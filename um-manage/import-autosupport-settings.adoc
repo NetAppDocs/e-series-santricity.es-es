@@ -15,8 +15,8 @@ summary: Es posible importar la configuración de AutoSupport desde una cabina d
 Es posible importar la configuración de AutoSupport desde una cabina de almacenamiento a otras cabinas de almacenamiento. Esta operación en lote permite ahorrar tiempo cuando se necesitan configurar varias matrices en la red.
 
 .Antes de empezar
-* AutoSupport se configura en la instancia de System Manager correspondiente a la cabina de almacenamiento que se quiere usar como origen (MENU:Support[Support Center]).
-* La configuración actual de las cabinas de almacenamiento objetivo cuenta con una copia de seguridad en System Manager (menú:Configuración[sistema > Guardar configuración de la cabina de almacenamiento]).
+* AutoSupport está configurado en System Manager para la matriz de almacenamiento que deseas utilizar como origen (menú:Support[AutoSupport]).
+* La configuración actual de las matrices de almacenamiento de destino se respalda en System Manager (menú:System[Save storage array configuration]).
 
 
 .Acerca de esta tarea

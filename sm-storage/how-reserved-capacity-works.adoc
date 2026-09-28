@@ -17,6 +17,7 @@ El objetivo de la capacidad reservada es almacenar cambios de datos en estos vol
 
 
 
+[[copy-service-objects-that-use-reserved-capacity]]
 == Copiar objetos de servicio que utilizan capacidad reservada
 
 La capacidad reservada es el mecanismo de almacenamiento subyacente que utilizan estos objetos de servicio de copia:
@@ -31,6 +32,7 @@ Cuando se crean o se expanden estos objetos de servicio de copia, es necesario c
 
 
 
+[[thin-volumes-and-reserved-capacity]]
 == Volúmenes finos y capacidad reservada
 
 Para un volumen fino, si se alcanzó la capacidad máxima informada de 256 TIB, no se puede aumentar la capacidad. Asegúrese de que la capacidad reservada del volumen fino esté configurada con un tamaño más grande que la capacidad máxima informada. (Un volumen fino siempre es de aprovisionamiento fino; esto significa que la capacidad se asigna a medida que se escriben los datos en el volumen.)
@@ -43,6 +45,7 @@ Si crea capacidad reservada con un volumen fino en un pool, repase las acciones 
 
 
 
+[[capacity-alerts]]
 == Alertas de capacidad
 
 El objeto del servicio de copia tiene un umbral de advertencia y alerta de capacidad configurable, además de una respuesta configurable cuando la capacidad reservada está llena.
@@ -51,16 +54,18 @@ Cuando la capacidad reservada de un volumen de objeto de servicio de copia está
 
 
 
+[[orphaned-reserved-capacity-volumes]]
 == Volúmenes huérfanos de capacidad reservada
 
 Un volumen huérfano de capacidad reservada es un volumen que ya no almacena datos para operaciones de servicio de copia porque se eliminó su objeto de servicio de copia asociado. Cuando se eliminó el objeto de servicio de copia, su volumen de capacidad reservada también debió haberse eliminado. Sin embargo, el volumen de capacidad reservada no pudo eliminarse.
 
 Como ningún host puede acceder a los volúmenes huérfanos de capacidad reservada, estos son candidatos a la recuperación. Elimine manualmente el volumen huérfano de capacidad reservada para poder usar su capacidad en otras operaciones.
 
-System Manager envía alertas sobre los volúmenes huérfanos de capacidad reservada con el mensaje "reclamar capacidad no utilizada" en el área Notifications de la página Inicio. Puede hacer clic en *reclamar capacidad no utilizada* para mostrar el cuadro de diálogo reclamar capacidad no utilizada, donde puede eliminar el volumen huérfano de capacidad reservada.
+System Manager te avisa de la existencia de volúmenes de capacidad reservada huérfanos mediante el mensaje «Recuperar capacidad no utilizada» en el área de notificaciones, a la que se accede a través del icono de la campana situado en la esquina superior de la ventana. Puedes hacer clic en *Recuperar capacidad no utilizada* para abrir el cuadro de diálogo «Recuperar capacidad no utilizada», donde puedes eliminar el volumen de capacidad reservada huérfano.
 
 
 
+[[characteristics-of-reserved-capacity]]
 == Características de la capacidad reservada
 
 * La capacidad asignada a la capacidad reservada debe considerarse durante la creación de volúmenes, con el fin de conservar suficiente capacidad libre.

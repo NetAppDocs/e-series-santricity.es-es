@@ -20,7 +20,7 @@ Tenga en cuenta estas directrices al asignar volúmenes a hosts:
 * Es posible asignar un volumen a un solo host o clúster de hosts al mismo tiempo.
 * Los volúmenes asignados se comparten entre controladoras de la cabina de almacenamiento.
 * El host o un clúster de hosts no pueden usar el mismo número de unidad lógica (LUN) dos veces para acceder a un volumen. Se debe usar un LUN único.
-* En el caso de los grupos de volúmenes nuevos, si espera hasta que se crean e inicializan todos los volúmenes antes de asignarles un host, se reduce el tiempo de inicialización del volumen. Tenga en cuenta que, una vez asignado un volumen asociado con el grupo de volúmenes, _All_ Volumes revertirá la inicialización más lenta. Puede comprobar el progreso de inicialización desde el menú:Inicio[Operaciones en curso].
+* En el caso de los nuevos grupos de volúmenes, si esperas a que todos los volúmenes se hayan creado e inicializado antes de asignarlos a un host, se reduce el tiempo de inicialización de los volúmenes. Ten en cuenta que una vez que un volumen asociado con el grupo de volúmenes esté asignado, _todos_ los volúmenes volverán a la inicialización más lenta. Puedes comprobar el progreso de la inicialización desde menu:Monitoring[Operaciones en curso].
 
 
 La asignación de un volumen falla en las siguientes condiciones:

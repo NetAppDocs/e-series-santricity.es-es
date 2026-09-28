@@ -50,6 +50,7 @@ Volúmenes finos
 |===
 
 
+[[thin-volume-restrictions]]
 == Restricciones de los volúmenes finos
 
 Los volúmenes finos admiten todas las mismas operaciones que los volúmenes gruesos, con las siguientes excepciones:

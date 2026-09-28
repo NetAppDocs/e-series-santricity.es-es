@@ -24,6 +24,7 @@ El uso de certificados firmados por CA implica un procedimiento de tres pasos.
 
 
 
+[[step-1-complete-csrs-for-the-controllers]]
 == Paso 1: Completar los CSR para las controladoras
 
 Primero, es necesario generar un archivo de solicitud de firma de certificación (CSR) para cada controladora de la cabina de almacenamiento.
@@ -37,8 +38,7 @@ También puede generar un archivo CSR con una herramienta como OpenSSL y puede s
 
 ====
 .Pasos
-. En el panel izquierdo, selecciona menú:Settings[Certificates].
-. En la ficha Administración de matrices, seleccione *completar CSR*.
+. En el panel de la izquierda, selecciona el menú:Certificates[Gestión de certificados de la cabina], y luego selecciona *Completar CSR*.
 +
 [NOTE]
 ====
@@ -85,6 +85,7 @@ Para una sola controladora, se descarga un archivo CSR en el sistema local. Para
 
 
 
+[[step-2-submit-the-csr-files]]
 == Paso 2: Envíe los archivos CSR
 
 Después de crear los archivos de solicitud de firma de certificación (CSR), envíe los archivos a una CA. Los sistemas E-Series requieren el formato PEM (codificación ASCII Base64) para certificados firmados, que incluye los siguientes tipos de archivo: pem, .crt, .cer o .key.
@@ -103,6 +104,7 @@ Después de crear los archivos de solicitud de firma de certificación (CSR), en
 
 
 
+[[step-3-import-signed-certificates-for-controllers]]
 == Paso 3: Importar certificados firmados para las controladoras
 
 Después de recibir los certificados firmados de la entidad de certificación (CA), importe los archivos para las controladoras.
@@ -114,8 +116,7 @@ Después de recibir los certificados firmados de la entidad de certificación (C
 
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Settings[Certificates]
-. En la ficha Administración de matrices, seleccione *Importar*.
+. En el panel de la izquierda, selecciona menú:Certificates[Gestión de certificados de la cabina], y luego selecciona *Importar*.
 +
 Se abre un cuadro de diálogo para importar los archivos de certificado.
 

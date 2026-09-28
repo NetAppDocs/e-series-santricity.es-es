@@ -16,6 +16,7 @@ Es posible configurar Drive Security y la gestión de claves desde la página Ge
 
 
 
+[[what-is-drive-security]]
 == ¿Qué es Drive Security?
 
 _Drive Security_ es una función que evita el acceso no autorizado a datos almacenados en unidades con la función de seguridad habilitada cuando la unidad se quita de la cabina de almacenamiento. Estas unidades pueden ser unidades de cifrado de disco completo (FDE) o de estándar de procesamiento de información federal (FIPS). Cuando se retiran físicamente, las unidades FDE o FIPS de la cabina no pueden operar hasta que se instalan en otra cabina, instancia en la cual las unidades tendrán el estado Security Locked hasta que se proporcione la clave de seguridad correcta. Un _Security Key_ es una cadena de caracteres que se comparte entre estos tipos de unidades y las controladoras en una cabina de almacenamiento.
@@ -29,9 +30,10 @@ Obtenga más información:
 
 
 
+[[how-do-i-configure-key-management]]
 == ¿Cómo se configura la gestión de claves?
 
-Para implementar Drive Security, debe tener instaladas unidades FDE o FIPS en la cabina. Para configurar la gestión de claves para estas unidades, vaya a menú:Configuración[sistema > Gestión de claves de seguridad] donde se puede crear una clave interna desde la memoria persistente de la controladora o una clave externa desde un servidor de gestión de claves. Por último, si desea habilitar Drive Security para pools y grupos de volúmenes, seleccione la opción "compatible con la función de seguridad" en la configuración del volumen.
+Para implementar Drive Security, debes tener instaladas en la matriz unidades FDE o unidades FIPS. Para configurar la gestión de claves para estas unidades, ve al menú:System[Security key management] donde puedes crear una clave interna desde la memoria persistente del controlador o una clave externa desde un servidor de gestión de claves. Por último, habilita Drive Security para los pools y los grupos de volúmenes seleccionando "secure-capable" en la configuración del volumen.
 
 Obtenga más información:
 
@@ -43,6 +45,7 @@ Obtenga más información:
 
 
 
+[[how-do-i-unlock-drives]]
 == ¿Cómo se desbloquearán unidades?
 
 Si se configuró la gestión de claves y luego se mueven unidades con la función de seguridad habilitada de una cabina de almacenamiento a otra, se debe volver a asignar la clave de seguridad a la nueva cabina de almacenamiento para acceder a los datos cifrados en las unidades.
@@ -55,6 +58,7 @@ Obtenga más información:
 
 
 
+[[related-information]]
 == Información relacionada
 
 Obtenga más información sobre tareas relacionadas con la gestión de claves:

@@ -2,7 +2,7 @@
 permalink: sm-storage/actions-you-can-perform-on-volumes.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, volumes 
-summary: 'Se pueden realizar varias acciones distintas en un volumen: Aumentar la capacidad, eliminar, copiar, inicializar, redistribuir, cambio de propiedad, cambio de la configuración de la caché y cambio de configuración de análisis de medios.' 
+summary: Puedes realizar varias acciones diferentes en un volumen. Aumentar la capacidad, eliminar, copiar, inicializar, redistribuir, cambiar la titularidad, cambiar la configuración de la caché y cambiar la configuración del análisis de soportes. 
 ---
 = Acciones que puede realizar en volúmenes en SANtricity System Manager
 :allow-uri-read: 
@@ -16,6 +16,7 @@ Se pueden realizar varias acciones distintas en un volumen: Aumentar la capacida
 
 
 
+[[increase-capacity]]
 == Aumente la capacidad
 
 Es posible expandir la capacidad de un volumen de dos maneras:
@@ -26,7 +27,7 @@ Agregas capacidad a un volumen seleccionando menu:Storage[Volumes] desde el pane
 
 * Añadir capacidad sin asignar (en la forma de unidades sin utilizar) en el pool o el grupo de volúmenes del volumen. Use esta opción cuando no existe capacidad libre en el pool o el grupo de volúmenes.
 +
-Añades capacidad no asignada al pool o grupo de volúmenes seleccionando menú:Storage[Pools and Volume Groups > Add capacity].
+Añades capacidad no asignada al pool o grupo de volúmenes seleccionando menú:Storage[Pools and volume groups > Add capacity].
 
 +
 Si no hay capacidad libre disponible en el pool o el grupo de volúmenes, no es posible aumentar la capacidad del volumen. Debe aumentar el tamaño del pool o grupo de volúmenes en primer lugar o eliminar volúmenes sin usar.
@@ -37,6 +38,7 @@ Después de expandir la capacidad del volumen, debe aumentar manualmente el tama
 
 
 
+[[delete]]
 == Eliminar
 
 Por lo general, debe eliminar volúmenes si se crearon con los parámetros o la capacidad equivocados, ya no satisfacen las necesidades de configuración del almacenamiento o son imágenes Snapshot que ya no se necesitan para backup o prueba de aplicaciones. Al eliminar un volumen, aumenta la capacidad libre en el pool o el grupo de volúmenes.
@@ -45,12 +47,14 @@ Al eliminar volúmenes, se pierden todos los datos que contienen. Al eliminar un
 
 
 
+[[copy]]
 == Copiar
 
 Al copiar volúmenes, creas una copia de un momento específico de dos volúmenes separados, el volumen de origen y el volumen de destino, en la misma matriz de almacenamiento. Puedes copiar volúmenes seleccionando menu:Storage[Volumes] y luego seleccionando el icono menu:ellipsis[Copy volume].
 
 
 
+[[initialize]]
 == Inicializar
 
 Al inicializar un volumen, se borran todos los datos del volumen. Un volumen se inicializa automáticamente cuando se crea por primera vez. Sin embargo, es posible que Recovery Guru recomiende inicializar manualmente un volumen para la recuperación de ciertas condiciones de fallo. Cuando se inicializa un volumen, este conserva su configuración de WWN, asignaciones de hosts, capacidad asignada y capacidad reservada. También conserva la misma configuración de Data Assurance (DA) y de seguridad.
@@ -59,6 +63,7 @@ Puedes inicializar los volúmenes seleccionando menú:Storage[Volumes > ellipsis
 
 
 
+[[redistribute]]
 == Redistribuir
 
 Es posible redistribuir volúmenes para moverlos nuevamente a sus propietarios de controladoras preferidos. Por lo general, los controladores multivía mueven volúmenes de su propietario de controladora preferido cuando se produce un problema en la ruta de datos entre el host y la cabina de almacenamiento.
@@ -69,14 +74,16 @@ Puedes redistribuir volúmenes seleccionando menu:Storage[Volumes > ellipsis ico
 
 
 
+[[change-volume-ownership]]
 == Cambiar la propiedad de un volumen
 
-Cambiar la propiedad de un volumen cambia la propiedad preferida del controlador del volumen. El propietario preferido del controlador de un volumen aparece en menu:Storage[Volumes > ellipsis icon > Edit settings].
+Al cambiar la titularidad de un volumen, se modifica la titularidad del controlador preferido de dicho volumen. La titularidad del controlador preferido de un volumen aparece en menu:Storage[Volúmenes > icono de tres puntos > Ver configuración].
 
 Puedes cambiar la propiedad de un volumen seleccionando menu:Storage[Volumes > ellipsis icon > Change volume ownership].
 
 
 
+[[mirroring-and-volume-ownership]]
 === Mirroring y propiedad de volumen
 
 Si el volumen primario de la pareja reflejada pertenece a la controladora A, el volumen secundario también pertenecerá a la controladora A en la cabina De almacenamiento remota. Al cambiar el propietario del volumen primario, se modificará automáticamente el propietario del volumen secundario para garantizar que los dos volúmenes pertenezcan a la misma controladora. Los cambios de propiedad actuales en el lado primario se propagan automáticamente a los cambios de propiedad correspondientes en el lado secundario.
@@ -85,6 +92,7 @@ Si un grupo de coherencia de reflejos contiene un volumen secundario local y se 
 
 
 
+[[copy-volume-and-volume-ownership]]
 === Copia de volumen y propiedad de volumen
 
 Durante una operación de copia de volumen, la misma controladora debe ser la propietaria del volumen de origen y del volumen objetivo. A veces, ambos volúmenes no tienen la misma controladora preferida cuando se inicia la operación de copia de volumen. Por lo tanto, la propiedad del volumen objetivo se transfiere automáticamente a la controladora preferida del volumen de origen. Cuando la copia de volumen se completa o se detiene, la propiedad del volumen objetivo se restaura a su controladora preferida.
@@ -93,6 +101,7 @@ Si la propiedad del volumen de origen se cambia durante la operación de copia d
 
 
 
+[[change-cache-settings]]
 == Cambiar configuración de caché
 
 La memoria caché es un área de almacenamiento volátil temporal (RAM) en la controladora que tiene un tiempo de acceso menor que los medios con unidades. Con el uso de la memoria caché, es posible aumentar el rendimiento general de las operaciones de I/o por las siguientes razones:
@@ -120,13 +129,14 @@ En el caso de volumen fino, la captura previa de la lectura de caché dinámica 
 
 
 
+[[change-media-scan-settings]]
 == Cambiar configuración de análisis de medios
 
 En los análisis de medios, se detectan y reparan errores de medios en bloques de discos que las aplicaciones leen con poca frecuencia. Este análisis puede evitar la pérdida de datos si se producen errores en otras unidades del pool o grupo de volúmenes a medida que se reconstruyen los datos de las unidades con error mediante información de redundancia y datos de otras unidades del pool o grupo de volúmenes.
 
 Los análisis de medios se ejecutan continuamente a una tasa constante sobre la base de la capacidad que se analizará y la duración del análisis. Una tarea que se ejecuta en segundo plano de mayor prioridad puede suspender temporalmente los análisis que se ejecutan en segundo plano (por ejemplo, una reconstrucción), pero se reanudan a la misma velocidad constante.
 
-Es posible habilitar y establecer la duración de la ejecución del análisis de medios. Para ello, seleccione MENU:almacenamiento[volúmenes > más > Cambiar configuración de análisis de medios].
+Puedes activar el análisis de soportes y configurar la duración del análisis seleccionando el menú: Storage [Volumes > icono de tres puntos > Change media scan settings].
 
 Un volumen solo se analiza cuando está habilitada la opción de análisis de medios para la cabina de almacenamiento y para ese volumen. Si también se habilita la verificación de redundancia para ese volumen, la información de redundancia del volumen se verifica para ver si coincide con los datos, siempre y cuando el volumen tenga redundancia. El análisis de medios con verificación de redundancia está habilitado de forma predeterminada para cada volumen cuando se crea.
 

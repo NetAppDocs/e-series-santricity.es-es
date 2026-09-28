@@ -15,7 +15,7 @@ summary: Es posible ver información detallada sobre las conexiones iSCSI a la c
 Es posible ver información detallada sobre las conexiones iSCSI a la cabina de almacenamiento. Se pueden realizar sesiones iSCSI con hosts o cabinas de almacenamiento remotas en una relación de reflejo asíncrono.
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Support[Support Center > Diagnostics] tab.
+. En el panel de la izquierda, selecciona menú:Support[Diagnostics].
 . Seleccione *Ver/finalizar sesiones iSCSI*.
 +
 Se muestra una lista de las sesiones iSCSI actuales.

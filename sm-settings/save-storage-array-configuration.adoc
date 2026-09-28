@@ -40,14 +40,14 @@ Esta operación _not_ guarda estos valores:
 
 ====
 .Pasos
-. En el panel izquierdo, selecciona menú:Settings[System].
-. Seleccione *Guardar configuración de la matriz de almacenamiento*.
+. En el panel de la izquierda, selecciona *System*.
+. Selecciona *Guardar configuración de la matriz de almacenamiento*.
 . Seleccione los elementos de la configuración que desea guardar:
 +
 ** Configuración de cabina de almacenamiento
 ** Configuración de volúmenes
 ** Configuración de hosts
-** Asignaciones de host a volumen
+** Asignaciones de host a volumen (requiere configuración de volumen y host)
 
 
 +

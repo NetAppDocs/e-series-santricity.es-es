@@ -25,7 +25,7 @@ La configuración y las funciones iSCSI solamente aparecen si la cabina de almac
 
 ====
 .Pasos
-. En el panel izquierdo, selecciona menú:Settings[System].
+. En el panel de la izquierda, selecciona *System*.
 . En *Configuración iSCSI*, seleccione *Configurar puertos iSCSI*.
 +
 [NOTE]

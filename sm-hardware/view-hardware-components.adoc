@@ -26,7 +26,7 @@ La página hardware presenta funciones de ordenación y filtrado que facilitan l
  a| 
 Vistas de unidades, controladoras y componentes
  a| 
-Para cambiar entre las vistas frontal y trasera de la bandeja, seleccione * Unidades * o * Controladores y componentes * en el extremo derecho (el enlace que aparece depende de la vista actual). La vista *Drives* muestra las unidades y las bahías de unidades vacías. La vista *Controladores y componentes* muestra los controladores y cualquier módulo IOM (ESM), contenedores de alimentación/ventilador o bahías de controlador vacías. En la parte inferior de la página, también puede seleccionar *Mostrar todas las unidades*.
+Para alternar entre las vistas de unidades y de bastidores de controladores, selecciona menu:Hardware[Unidades] o menu:Hardware[Controladores y componentes] en el panel izquierdo. La vista *Unidades* muestra las unidades y las bahías de unidades vacías. La vista *Controladores y componentes* muestra los controladores, así como los módulos IOM (ESM), los módulos de alimentación/ventilador o las bahías de controlador vacías. En la vista *Unidades*, también puedes seleccionar *Mostrar todas las unidades*.
 
 
 

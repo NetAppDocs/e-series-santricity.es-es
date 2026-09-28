@@ -23,6 +23,7 @@ Cuando la función Automatic Load Balancing está habilitada, ejecuta las siguie
 
 
 
+[[enabling-and-disabling-automatic-load-balancing]]
 == Habilitar y deshabilitar Automatic Load Balancing
 
 La función Automatic Load Balancing está habilitada de forma predeterminada en todas las cabinas de almacenamiento.
@@ -35,6 +36,7 @@ Puede ser conveniente deshabilitar Automatic Load Balancing en la cabina de alma
 
 
 
+[[host-types-that-support-the-automatic-load-balancing-feature]]
 == Los tipos de hosts compatibles con la función Automatic Load Balancing
 
 Aunque la función Automatic Load Balancing está habilitada en el nivel de la cabina de almacenamiento, el tipo de host que se selecciona para un host o clúster de hosts tiene una influencia directa sobre la forma en que opera la función.
@@ -82,6 +84,7 @@ Consulte https://mysupport.netapp.com/matrix["Herramienta de matriz de interoper
 
 
 
+[[verifying-os-compatibility-with-the-automatic-load-balancing-feature]]
 == Comprobación de la compatibilidad del sistema operativo con la función Automatic Load Balancing
 
 Compruebe la compatibilidad del sistema operativo con la función Automatic Load Balancing antes de configurar un sistema nuevo o migrar uno existente.

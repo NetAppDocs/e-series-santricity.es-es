@@ -16,6 +16,7 @@ Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respue
 
 
 
+[[what-settings-will-be-imported]]
 == ¿Qué configuración se importará?
 
 La función Importar configuración es una operación en lote que carga las configuraciones desde una cabina de almacenamiento a varias cabinas de almacenamiento. La configuración que se importe durante esta operación dependerá de cómo esté configurada la cabina de almacenamiento de origen en SANtricity System Manager.
@@ -33,6 +34,7 @@ Las siguientes configuraciones pueden importarse a varias cabinas:
 
 
 
+[[why-dont-i-see-all-of-my-storage-arrays]]
 == ¿Por qué no se muestran todas las cabinas de almacenamiento?
 
 Durante la operación Importar configuración, es posible que algunas cabinas de almacenamiento no estén disponibles en el cuadro de diálogo de selección de objetivos.

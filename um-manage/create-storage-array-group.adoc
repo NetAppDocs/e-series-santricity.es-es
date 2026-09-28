@@ -18,6 +18,7 @@ La configuración de grupos es un procedimiento de dos pasos.
 
 
 
+[[step-1-create-group]]
 == Paso 1: Crear grupo
 
 En primer lugar, cree un grupo. El grupo de almacenamiento define las unidades que proporcionan el almacenamiento con el que se compone el volumen.
@@ -31,6 +32,7 @@ En primer lugar, cree un grupo. El grupo de almacenamiento define las unidades q
 
 
 
+[[step-2-add-storage-array-to-group]]
 == Paso 2: Añadir una cabina de almacenamiento a un grupo
 
 Es posible añadir una o varias cabinas de almacenamiento a un grupo creado por un usuario.

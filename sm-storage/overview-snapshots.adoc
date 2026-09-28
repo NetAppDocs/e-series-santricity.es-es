@@ -16,6 +16,7 @@ La función Snapshot permite crear imágenes de un momento específico de los vo
 
 
 
+[[what-are-snapshot-images]]
 == ¿Qué son las imágenes Snapshot?
 
 Un _snapshot image_ es una copia lógica de datos de volúmenes capturados en un momento específico. Al igual que un punto de restauración, las imágenes Snapshot permiten revertir a un conjunto de datos bien conocidos. Si bien el host puede acceder a la imagen Snapshot, no puede leer ni escribir allí directamente.
@@ -31,9 +32,10 @@ Obtenga más información:
 
 
 
+[[how-do-i-create-snapshots]]
 == ¿Cómo se crean las snapshots?
 
-Es posible crear manualmente una imagen Snapshot desde un volumen base o un grupo de coherencia Snapshot. Este procedimiento está disponible en el menú:almacenamiento[instantáneas].
+Puedes crear manualmente una imagen de instantánea a partir de un volumen base o de un grupo de consistencia de instantáneas. Este procedimiento está disponible en el menú: Snapshots [Snapshot images].
 
 Obtenga más información:
 
@@ -47,9 +49,10 @@ Obtenga más información:
 
 
 
+[[how-do-i-roll-back-data-from-a-snapshot]]
 == ¿Cómo revertir los datos de una copia Snapshot?
 
-Un _rollback_ es el proceso de devolver los datos de un volumen base a un momento específico anterior. Es posible revertir los datos de las instantáneas desde MENU:Storage[Snapshots].
+Un _rollback_ es el proceso de devolver los datos de un volumen base a un punto anterior en el tiempo. Puedes revertir los datos de una instantánea desde menu:Snapshots[Snapshot images].
 
 Obtenga más información:
 
@@ -60,6 +63,7 @@ Obtenga más información:
 
 
 
+[[related-information]]
 == Información relacionada
 
 Obtenga más información acerca de las tareas relacionadas con las instantáneas:

@@ -16,6 +16,7 @@ Es posible crear un volumen como contenedor en el cual las aplicaciones, las bas
 
 
 
+[[what-are-volumes-and-workloads]]
 == ¿Qué son los volúmenes y las cargas de trabajo?
 
 A _volume_ es el componente lógico creado con capacidad específica al que debe acceder el host. Aunque es posible que un volumen conste de más de una unidad, un volumen aparece como un componente lógico para el host. Una vez definido un volumen, puede añadirlo a una carga de trabajo. Un _Workload_ es un objeto de almacenamiento que admite una aplicación, como SQL Server o Exchange, que se puede utilizar para optimizar el almacenamiento para esa aplicación.
@@ -31,6 +32,7 @@ Obtenga más información:
 
 
 
+[[how-do-you-create-volumes-and-workloads]]
 == ¿Cómo crea volúmenes y cargas de trabajo?
 
 En primer lugar, debe crear una carga de trabajo. Vaya a MENU:Storage[Volumes] y abra un asistente que le guiará por los pasos. A continuación, se crea un volumen a partir de la capacidad disponible en un pool o un grupo de volúmenes y, luego, se asigna la carga de trabajo que se creó.
@@ -45,6 +47,7 @@ Obtenga más información:
 
 
 
+[[related-information]]
 == Información relacionada
 
 Más información acerca de conceptos relacionados con los volúmenes:

@@ -12,16 +12,18 @@ summary: Use el centro de actualización para descargar las versiones más recie
 
 
 [role="lead"]
-Use el centro de actualización para descargar las versiones más recientes de software y firmware, y para actualizar las controladoras y las unidades.
+Utiliza el Upgrade center para descargar el software y el firmware más recientes y para actualizar tus controladores y unidades.
 
 
 
+[[controller-upgrade-overview]]
 == Información general de la actualización de la controladora
 
 Es posible actualizar el software y el firmware de la cabina de almacenamiento para obtener todas las funciones y las correcciones de errores más recientes.
 
 
 
+[[components-included-in-the-os-controller-upgrade]]
 === Componentes que se incluyen en la actualización de la controladora de un sistema operativo
 
 Varios componentes de la cabina de almacenamiento contienen software o hardware que puede ser conveniente actualizar de vez en cuando.
@@ -37,18 +39,20 @@ image::../media/sam1130-dwg-upgrade-firmware-locations.gif[Actualizar las ubicac
 
 Bandeja de controladoras esta 1; bandeja de unidades esta 2; software de esta versión 3, firmware de la controladora, NVSRAM de la controladora, Software de supervisor; firmware de la unidad de esta 4; firmware de esta 5 IOM; firmware de la unidad de esta versión 6
 
-Se pueden ver las versiones de software y firmware actuales en el cuadro de diálogo Inventario de software y firmware. Vaya al menú:Soporte[Centro de actualización] y, a continuación, haga clic en el vínculo *Inventario de software y firmware*.
+Puedes consultar las versiones actuales de tu software y firmware en la página de inventario de software y firmware. Ve al menú:Soporte[Upgrade center], y luego haz clic en el enlace para *software y firmware inventory*.
 
 Como parte del proceso de actualización, es posible que el controlador de conmutación al nodo de respaldo/multivía del host o el controlador de HBA también deban actualizarse para que el host pueda interactuar con las controladoras correctamente. Para determinar si este es el caso, consulte https://imt.netapp.com/matrix/#welcome["Herramienta de matriz de interoperabilidad de NetApp"^].
 
 
 
+[[when-to-stop-io]]
 === Cuándo detener las operaciones de I/O.
 
 Si la cabina de almacenamiento contiene dos controladoras y existe un controlador multivía instalado, la cabina de almacenamiento puede seguir procesando las operaciones de I/o mientras se realiza la actualización. Durante la actualización, la controladora A conmuta todos los volúmenes a la controladora B, se actualiza, retira todos sus volúmenes y los de la controladora B, y después actualiza la controladora B.
 
 
 
+[[pre-upgrade-health-check]]
 === Comprobación del estado previa a la actualización
 
 Como parte del proceso de actualización, se ejecuta una comprobación del estado previa a la actualización. La comprobación del estado antes de la actualización evalúa todos los componentes de la cabina de almacenamiento para garantizar que se pueda proceder con la actualización. Las siguientes condiciones podrían evitar la actualización:
@@ -68,12 +72,14 @@ También se puede ejecutar la comprobación del estado antes de la actualizació
 
 
 
+[[drive-upgrade-overview]]
 == Información general de la actualización de la unidad
 
 El firmware de la unidad controla las características de operación de bajo nivel. Periódicamente, los fabricantes de unidades publican actualizaciones del firmware de la unidad para añadir nuevas funciones, mejorar el rendimiento y corregir defectos.
 
 
 
+[[online-and-offline-drive-firmware-upgrades]]
 === Actualización del firmware de la unidad en línea y sin conexión
 
 Existen dos tipos de métodos de actualización del firmware de la unidad: En línea y sin conexión.
@@ -113,6 +119,7 @@ Las siguientes unidades DEBEN utilizar el método sin conexión:
 
 
 
+[[compatibility]]
 === Compatibilidad
 
 Cada archivo de firmware de la unidad contiene información sobre el tipo de unidad en el que se ejecuta el firmware. Es posible descargar el archivo de firmware específico solo en una unidad compatible. System Manager comprueba automáticamente la compatibilidad durante el proceso de actualización.

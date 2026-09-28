@@ -56,4 +56,4 @@ System Manager realiza lo siguiente:
 * Borra los índices de bloque, lo que provoca que los bloques no escritos se lean como si estuvieran llenos de ceros (el volumen aparecerá como completamente vacío).
 
 
-Selecciona menú:Storage[Operations in Progress] para ver el progreso de la operación de inicialización que se está ejecutando actualmente para el volumen seleccionado. Esta operación puede ser larga y podría afectar el rendimiento del sistema.
+Selecciona el menú: Monitoring [Operaciones en curso] para ver el progreso de la operación de inicialización que se está ejecutando actualmente para el volumen seleccionado. Es posible que esta operación demore y que afecte el rendimiento del sistema.

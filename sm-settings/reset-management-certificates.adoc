@@ -23,8 +23,7 @@ Es posible revertir los certificados que se usan en las controladoras de los cer
 La función Restablecer elimina los archivos de certificados firmados por CA actuales de cada controladora. A continuación, las controladoras revierten al uso de certificados autofirmados.
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Settings[Certificates].
-. En la ficha Administración de matrices, seleccione *Restablecer*.
+. En el panel de la izquierda, selecciona el menú: Certificates[Array management certificates], y luego selecciona *Reset*.
 +
 Se abre el cuadro de diálogo Confirmar restablecimiento de certificados de gestión.
 

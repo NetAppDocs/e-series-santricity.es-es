@@ -23,11 +23,11 @@ Es posible actualizar el firmware de las unidades para asegurarse de tener todas
 
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Support[Upgrade Center].
+. En el panel de la izquierda, selecciona el menú: soporte [Upgrade center].
 . Descargue los archivos nuevos del sitio de soporte en el cliente de gestión.
-. En actualización del firmware de la unidad, haga clic en *comenzar actualización*.
+. En «actualización del firmware de la unidad», haz clic en *Iniciar actualización del firmware de la unidad*.
 +
-Se muestra un cuadro de diálogo que enumera los archivos de firmware de la unidad actualmente en uso.
+Aparece la página «Actualización del firmware de la unidad», que muestra los archivos de firmware de la unidad que se están utilizando actualmente.
 
 . Extraiga (descomprima) los archivos que descargó del sitio de soporte.
 . Haga clic en *examinar* y seleccione los nuevos archivos de firmware de la unidad que descargó del sitio de soporte.
@@ -39,7 +39,7 @@ Es posible seleccionar hasta cuatro archivos de firmware de la unidad, uno por v
 
 . Haga clic en *Siguiente*.
 +
-Aparece el cuadro de diálogo *Seleccionar unidades*, que enumera las unidades que se pueden actualizar con los archivos seleccionados.
+Aparece el paso *Seleccionar unidades*, en el que se muestran las unidades que puedes actualizar con los archivos seleccionados.
 
 +
 Solo se muestran las unidades que son compatibles.
@@ -49,8 +49,8 @@ El firmware seleccionado para la unidad aparece en el área de información firm
 
 . Seleccione el tipo de actualización que desea realizar:
 +
-** *En línea (predeterminado)* -- muestra las unidades que pueden admitir una descarga de firmware _mientras la matriz de almacenamiento procesa E/S_. No se deben detener las operaciones de I/o de los volúmenes asociados mediante estas unidades cuando se selecciona este método de actualización. Estas unidades se actualizan una por vez mientras la cabina de almacenamiento procesa la actividad de I/o de esas unidades.
-** *Sin conexión (paralelo)* -- muestra las unidades que pueden admitir una descarga de firmware _only mientras toda la actividad de I/o se detiene_ en cualquier volumen que utilice las unidades. Cuando se selecciona este método de actualización, se debe detener toda la actividad de I/o en cualquier volumen que use las unidades que se están actualizando. Las unidades que no tienen redundancia deben procesarse como una operación sin conexión. Este requisito incluye cualquier unidad asociada con caché SSD, un grupo de volúmenes RAID 0 o cualquier pool o grupo de volúmenes que esté degradado. La actualización sin conexión (paralelo) suele ser más rápida que el método en línea (predeterminado).
+** *Actualizar todas las unidades en línea* -- Muestra las unidades que admiten la descarga de firmware _mientras la matriz de almacenamiento procesa I/O_. No tienes que detener el I/O a los volúmenes asociados que usan estas unidades cuando seleccionas este método de actualización. Estas unidades se actualizan una a la vez mientras la matriz de almacenamiento procesa I/O en esas unidades.
+** *Actualizar todas las unidades fuera de línea (en paralelo)* -- Muestra las unidades que pueden admitir una descarga de firmware _únicamente mientras toda la actividad de E/S esté detenida_ en cualquier volumen que utilice dichas unidades. Debes detener toda la actividad de E/S en cualquier volumen que utilice las unidades que vas a actualizar cuando selecciones este método de actualización. Las unidades que no tengan redundancia deben procesarse como una operación fuera de línea. Este requisito incluye cualquier unidad asociada con caché SSD, un grupo de volúmenes RAID 0 o cualquier pool o grupo de volúmenes que esté degradado. La actualización fuera de línea (paralela) suele ser más rápida que el método en línea.
 
 
 . En la primera columna de la tabla, seleccione la o las unidades que desea actualizar.
@@ -64,7 +64,7 @@ Si necesita detener la actualización, haga clic en *Detener*. Se completa cualq
 Si se detiene la actualización del firmware de la unidad, podrían producirse la pérdida de datos o la falta de disponibilidad de las unidades.
 
 ====
-. *Opcional:* para ver una lista de lo que se actualizó, haga clic en *Guardar registro*.
+. *Opcional:* Para ver una lista de los elementos que se actualizaron, haz clic en *Guardar registro*.
 +
 El archivo se guarda en la carpeta de descargas del explorador con el nombre `drive_upgrade_log-timestamp.txt`.
 

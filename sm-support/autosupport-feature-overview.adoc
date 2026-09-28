@@ -19,6 +19,7 @@ Los datos de AutoSupport incluyen información sobre la configuración, el estad
 
 
 
+[[key-benefits]]
 == Ventajas clave
 
 Algunas de las ventajas clave de la función AutoSupport son las siguientes:
@@ -33,6 +34,7 @@ Algunas de las ventajas clave de la función AutoSupport son las siguientes:
 
 
 
+[[individual-autosupport-features]]
 == Funciones individuales de AutoSupport
 
 La función AutoSupport cuenta con tres funciones individuales que se habilitan por separado.
@@ -44,6 +46,7 @@ La función AutoSupport cuenta con tres funciones individuales que se habilitan 
 
 
 
+[[difference-between-autosupport-and-collect-support-data]]
 == Diferencia entre AutoSupport y recoger datos de soporte
 
 Existen dos métodos para recoger datos de soporte en la cabina de almacenamiento:

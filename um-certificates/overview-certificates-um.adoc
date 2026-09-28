@@ -15,6 +15,7 @@ La gestión de certificados permite crear solicitudes de firma de certificados (
 
 
 
+[[what-are-certificates]]
 == ¿Qué son los certificados?
 
 _Certificates_ son archivos digitales que identifican entidades en línea, como sitios web y servidores, para comunicaciones seguras en Internet. Existen dos tipos de certificados: Un _certificado firmado_ es validado por una entidad de certificación (CA) y un _certificado autofirmado_ es validado por el propietario de la entidad en lugar de por un tercero.
@@ -27,6 +28,7 @@ Obtenga más información:
 
 
 
+[[how-do-i-configure-certificates]]
 == ¿Cómo se configuran los certificados?
 
 En Certificate Management, es posible configurar certificados para la estación de gestión donde se aloja Unified Manager e importar también certificados para las controladoras en las cabinas.

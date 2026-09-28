@@ -15,12 +15,14 @@ Unified Manager de SANtricity es una interfaz basada en Web que permite gestiona
 
 
 
+[[main-page]]
 == Página principal
 
 Al iniciar sesión en Unified Manager, la página principal se abre en *gestionar - todo*. En esta página, puede desplazarse por una lista de cabinas de almacenamiento detectadas en la red, ver su estado y realizar operaciones en una sola cabina o en un grupo de cabinas.
 
 
 
+[[navigation-sidebar]]
 == Barra lateral Navegación
 
 Puede acceder a las funciones y funciones de Unified Manager desde la barra lateral de navegación.
@@ -71,12 +73,14 @@ Vea opciones de soporte técnico, recursos y contactos.
 |===
 
 
+[[interface-settings-and-help]]
 == La configuración de la interfaz y la ayuda
 
 En la parte superior derecha de la interfaz, puede acceder a la Ayuda y a otra documentación. También puede acceder a las opciones de administración que están disponibles en el menú desplegable junto a su nombre de inicio de sesión.
 
 
 
+[[user-logins-and-passwords]]
 == Inicios de sesión y contraseñas de usuario
 
 El usuario actual que ha iniciado sesión en el sistema se muestra en la configuración de usuario.

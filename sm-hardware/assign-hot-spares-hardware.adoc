@@ -34,18 +34,14 @@ Las piezas de repuesto también pueden asignarse desde el asistente de configura
 
 ====
 .Pasos
-. En el panel izquierdo, selecciona *Hardware*.
-. Si el gráfico muestra los controladores, haga clic en la pestaña *Drives*.
-+
-El gráfico cambia y muestra las unidades en lugar de las controladoras.
-
+. En el panel de la izquierda, selecciona el menú: Hardware [Drives].
 . Seleccione una unidad sin asignar (color gris) que desee usar como pieza de repuesto.
 +
 Se abre el menú contextual de la unidad.
 
 . Seleccione *asignar pieza de repuesto*.
 +
-Si la unidad tiene la función de seguridad habilitada, se abre el cuadro de diálogo secure erase drive? Para usar una unidad con la función de seguridad habilitada como pieza de repuesto, debe ejecutarse la operación Secure Erase, con el fin de eliminar todos sus datos y restablecer sus atributos de seguridad.
+Si la unidad tiene activada la función de seguridad, se abre el cuadro de diálogo «Borrado seguro de la unidad». Para usar una unidad con la función de seguridad activada como repuesto en caliente, primero debes realizar una operación de borrado seguro para eliminar todos sus datos y restablecer sus atributos de seguridad.
 
 +
 [CAUTION]
@@ -54,7 +50,7 @@ Si la unidad tiene la función de seguridad habilitada, se abre el cuadro de di�
 
 ====
 +
-Si la unidad tiene *no* la función de seguridad habilitada, se abre el cuadro de diálogo Confirmar asignación de unidad de repuesto.
+Si la unidad *no* tiene activada la función de seguridad, se abre el cuadro de diálogo Asignar unidad de repuesto activa.
 
 . Revise el texto en el cuadro de diálogo y confirme la operación.
 +

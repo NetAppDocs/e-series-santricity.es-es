@@ -14,12 +14,12 @@ summary: El espacio de los volúmenes finos se puede supervisar, y se pueden gen
 [role="lead"]
 El espacio de los volúmenes finos se puede supervisar, y se pueden generar alertas adecuadas para evitar condiciones de falta de capacidad.
 
-Los entornos con Thin-Provisioning pueden asignar más espacio lógico del almacenamiento físico subyacente que tienen. Se puede seleccionar menú:almacenamiento[volúmenes > Supervisión de volumen fino] para supervisar el crecimiento de los volúmenes finos antes de que alcancen el límite máximo de la capacidad asignada.
+Los entornos con thin provisioning pueden asignar más espacio lógico del que disponen en el almacenamiento físico subyacente. Puedes seleccionar menú:Almacenamiento[Supervisión de volúmenes thin] para supervisar cuánto crecen tus volúmenes thin antes de que alcancen el límite máximo de capacidad asignada.
 
 La vista Supervisión de volumen fino se puede usar para llevar a cabo las siguientes acciones:
 
 * Definir el límite que restringe la capacidad asignada a la que un volumen fino se puede expandir automáticamente
-* Establecer el porcentaje en el que se envía una alerta (umbral de advertencia superado) al área Notificaciones de la página Inicio cuando un volumen fino está cerca del límite máximo de capacidad asignada
+* Establece el punto porcentual a partir del cual se envía una alerta (umbral de advertencia superado) al área de notificaciones, accesible a través del icono de la campana situado en la esquina superior de la ventana, cuando un volumen thin está cerca del límite máximo de capacidad asignada.
 
 
 Para aumentar la capacidad de un volumen fino, se debe aumentar su capacidad notificada.

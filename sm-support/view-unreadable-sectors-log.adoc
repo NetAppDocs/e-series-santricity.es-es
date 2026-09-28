@@ -35,7 +35,7 @@ Estas acciones incluyen escrituras RAID 5 y RAID 6 que se habrían realizado cor
 
 ====
 .Pasos
-. En el panel izquierdo, selecciona menú:Support[Support Center > Diagnostics] tab.
+. En el panel de la izquierda, selecciona menú:Support[Diagnostics].
 . Seleccione *Ver/borrar sectores ilegibles*.
 . Para guardar el registro de sectores ilegibles:
 +

@@ -40,13 +40,13 @@ La configuración de la autenticación SAML es un procedimiento de varios pasos.
 
 
 
+[[step-1-upload-the-idp-metadata-file]]
 == Paso 1: Cargue el archivo de metadatos de IDP
 
 Para brindar información de conexión de IDP a la cabina de almacenamiento, se deben importar los metadatos de IDP en System Manager. El sistema IDP necesita los metadatos para redirigir las solicitudes de autenticación a la URL correcta y validar las respuestas recibidas. Solamente es necesario cargar un solo archivo de metadatos para la cabina de almacenamiento, incluso si hay dos controladoras.
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Settings[Access Management].
-. Seleccione la pestaña *SAML*.
+. En el panel de la izquierda, selecciona el menú: autenticación [SAML].
 +
 La página muestra información general de los pasos de configuración.
 
@@ -63,6 +63,7 @@ Una vez seleccionado el archivo, se muestra el ID de entidad IDP.
 
 
 
+[[step-2-export-service-provider-files]]
 == Paso 2: Exporte los archivos del proveedor de servicios
 
 Para establecer una relación de confianza entre IDP y la cabina de almacenamiento, se deben importar los metadatos del proveedor de servicios en IDP. IDP necesita estos metadatos para establecer una relación de confianza con las controladoras y procesar las solicitudes de autorización. El archivo incluye información, como el nombre de dominio de la controladora o la dirección IP, por lo que IDP se puede comunicar con los proveedores de servicios.
@@ -85,6 +86,7 @@ Hay un archivo con formato XML por controladora.
 
 
 
+[[step-3-map-roles]]
 == Paso 3: Asignar roles
 
 Para proporcionar autorización y acceso a System Manager a los usuarios, se deben asignar los atributos de usuario IDP y las membresías de grupo a los roles predefinidos de la cabina de almacenamiento.
@@ -162,6 +164,7 @@ Es posible modificar las asignaciones de roles después de haber habilitado SAML
 
 
 
+[[step-4-test-sso-login]]
 == Paso 4: Probar el inicio de sesión SSO
 
 Para garantizar la comunicación entre el sistema IDP y la cabina de almacenamiento, de manera opcional, se puede probar un inicio de sesión SSO. Esa prueba también se puede llevar a cabo durante el paso final para habilitar SAML.
@@ -194,6 +197,7 @@ Si el análisis no se realiza correctamente, se muestra un mensaje de error con 
 
 
 
+[[step-5-enable-saml]]
 == Paso 5: Habilite SAML
 
 El paso final es completar la configuración de SAML para la autenticación de usuarios. Durante este proceso, el sistema también le indica que pruebe un inicio de sesión SSO. El proceso de prueba de inicio de sesión con SSO se describe en el paso anterior.
@@ -210,7 +214,7 @@ El paso final es completar la configuración de SAML para la autenticación de u
 
 ====
 .Pasos
-. En la ficha *SAML*, seleccione el enlace *Habilitar SAML*.
+. Selecciona el enlace *Enable SAML*.
 +
 Se abre el cuadro de diálogo Confirmar acción de habilitar SAML.
 

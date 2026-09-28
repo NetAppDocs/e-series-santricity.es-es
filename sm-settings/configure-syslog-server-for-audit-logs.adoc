@@ -21,8 +21,7 @@ Si desea archivar registros de auditoría en un servidor de syslog externo, pued
 
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Settings[Access Management].
-. En la ficha Registro de auditoría, seleccione *Configurar servidores de syslog*.
+. En el panel de la izquierda, selecciona menú:Supervisión[Registro de auditoría], y luego selecciona *Configurar servidores syslog*.
 +
 Se abre el cuadro de diálogo Configurar servidores de syslog.
 
@@ -38,7 +37,7 @@ Se abre el cuadro de diálogo Añadir servidor de syslog.
 +
 [NOTE]
 ====
-Si la certificación ya no es válida en el futuro, el apretón de manos de TSL fallará. Como resultado, se publica un mensaje de error en el registro de auditoría y ya no se envían mensajes al servidor de syslog. Para resolver este problema, debe corregir la certificación en el servidor de syslog y, a continuación, ir a menú:Configuración[Registro de auditoría > Configurar servidores de syslog > probar todo].
+Si el certificado deja de ser válido posteriormente, el apretón de manos TLS fallará. Como resultado, se publica un mensaje de error en el registro de auditoría y los mensajes ya no se envían al servidor syslog. Para resolver este problema, debes corregir el certificado en el servidor syslog y luego ir a menú:Monitoring[Audit log > Configure Syslog Servers > Test All].
 
 ====
 ** *Puerto* -- Introduzca el número de puerto para el receptor de syslog. Después de hacer clic en *Agregar*, se abre el cuadro de diálogo Configurar servidores de syslog y se muestra el servidor de syslog configurado en la página.

@@ -22,7 +22,7 @@ La configuración y la autenticación de usuarios funcionan de la siguiente mane
 La primera vez que se inicia sesión, el nombre de usuario `admin` se muestra automáticamente y no se puede cambiar. La `admin` el usuario tiene acceso completo a todas las funciones del sistema.
 
 ====
-. El administrador navega hasta Access Management en la interfaz de usuario. La cabina de almacenamiento está preconfigurada para utilizar roles de usuario local, que son una implementación de capacidades RBAC (control de acceso basado en roles).
+. El administrador accede a la sección «Autenticación» de la interfaz de usuario. La matriz de almacenamiento está preconfigurada para utilizar roles de usuario locales, que son una implementación de las capacidades de RBAC (control de acceso basado en roles).
 . El administrador configura uno o varios de los siguientes métodos de autenticación:
 +
 ** *Roles de usuario local* -- la autenticación se gestiona a través de capacidades RBAC aplicadas en la cabina de almacenamiento. Los roles de usuario local incluyen perfiles de usuario predefinidos con permisos de acceso específicos. Los administradores pueden usar estos roles de usuario local como el único método de autenticación o usarlos en combinación con un servicio de directorio. No hace falta configurar nada más allá de las contraseñas de los usuarios.
@@ -52,6 +52,7 @@ Durante el inicio de sesión, el sistema realiza las siguientes tareas en segund
 
 
 
+[[tasks-available-in-system-manager]]
 == Tareas disponibles en System Manager
 
 El acceso a las tareas depende de los roles asignados a un usuario, entre los cuales se encuentran los siguientes:
@@ -66,6 +67,7 @@ Una tarea no disponible está atenuada o no aparece en la interfaz de usuario. P
 
 
 
+[[limitations-in-unified-manager-and-storage-manager]]
 == Limitaciones en Unified Manager y Storage Manager
 
 Si se configura SAML para una cabina de almacenamiento, los usuarios no pueden detectar ni gestionar el almacenamiento de esa cabina desde las interfaces de Unified Manager o heredada de Storage Manager.

@@ -13,10 +13,11 @@ summary: La jerarquía de almacenamiento en la interfaz principal ofrece una vis
 [role="lead"]
 La jerarquía de almacenamiento en la interfaz principal ofrece una vista organizada de los distintos componentes de hardware y objetos de almacenamiento gestionados por la cabina de almacenamiento.
 
-Para ver la jerarquía de almacenamiento, vaya a la página Inicio y haga clic en la flecha desplegable de un componente de la cabina de almacenamiento u objeto de almacenamiento. Una cabina de almacenamiento está compuesta por un conjunto de componentes físicos y lógicos.
+Para ver la jerarquía de almacenamiento, ve al Dashboard y haz clic en la flecha desplegable de un componente de la matriz de almacenamiento o de un objeto de almacenamiento. Una matriz de almacenamiento consiste en una colección de componentes físicos y componentes lógicos.
 
 
 
+[[physical-components]]
 == Componentes físicos
 
 En esta tabla, se describen los componentes físicos de una cabina de almacenamiento.
@@ -81,6 +82,7 @@ Un cliente de gestión es el equipo donde se instala un explorador para acceder 
 |===
 
 
+[[logical-components]]
 == Componentes lógicos
 
 Las unidades de la cabina de almacenamiento proporcionan capacidad de almacenamiento físico para los datos. System Manager se utiliza para configurar la capacidad física en los componentes lógicos, como pools, grupos de volúmenes y volúmenes. Estos componentes son las herramientas que se utilizan para configurar, almacenar, mantener y conservar datos en la cabina de almacenamiento. En esta tabla, se describen los componentes lógicos de una cabina de almacenamiento.

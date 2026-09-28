@@ -23,7 +23,7 @@ Revise la siguiente información sobre parejas reflejadas huérfanas:
 
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Storage[Asynchronous Mirroring].
+. En el panel de la izquierda, selecciona el menú: Mirroring [Asynchronous mirrored pairs].
 . Seleccione la ficha *par reflejado*.
 +
 Se muestra la tabla Mirrored Pairs con todas las parejas reflejadas asociadas con la cabina de almacenamiento.

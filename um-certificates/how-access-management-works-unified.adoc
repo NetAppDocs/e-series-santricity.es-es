@@ -15,6 +15,7 @@ Utilice Access Management para establecer la autenticación de usuario en SANtri
 
 
 
+[[configuration-workflow]]
 == Flujo de trabajo de configuración
 
 La configuración de Access Management funciona de la siguiente manera:
@@ -47,6 +48,7 @@ La primera vez que se inicia sesión, el nombre de usuario `admin` se muestra au
 
 
 
+[[functions-available-in-unified-manager]]
 == Funciones disponibles en Unified Manager
 
 El acceso a las funciones depende de los roles asignados a un usuario, entre los cuales se encuentran los siguientes:

@@ -16,6 +16,7 @@ Las unidades de la cabina de almacenamiento proporcionan capacidad de almacenami
 
 
 
+[[using-capacity-to-create-and-expand-volumes]]
 == Usar la capacidad para crear y expandir volúmenes
 
 Es posible crear volúmenes a partir de la capacidad sin asignar o de la capacidad libre en un pool o grupo de volúmenes.
@@ -28,6 +29,7 @@ Después de expandir la capacidad del volumen, debe aumentar manualmente el tama
 
 
 
+[[capacity-types-for-thick-volumes-and-thin-volumes]]
 == Tipos de capacidad para volúmenes gruesos y volúmenes finos
 
 Es posible crear volúmenes gruesos o finos. La capacidad notificada y la capacidad asignada son iguales en los volúmenes gruesos, pero son diferentes en los volúmenes finos.
@@ -49,6 +51,7 @@ System Manager de SANtricity no proporciona ninguna opción para crear volúmene
 ====
 
 
+[[capacity-limits-for-thick-volumes]]
 == Límites de capacidad para volúmenes gruesos
 
 La capacidad mínima para un volumen grueso es 1 MIB y la capacidad máxima se determina en función de la cantidad de unidades en el pool o el grupo de volúmenes y su capacidad.
@@ -65,6 +68,7 @@ Al crear un volumen, se asigna previamente algo de capacidad adicional para la m
 
 
 
+[[capacity-limits-for-thin-volumes]]
 == Límites de capacidad para volúmenes finos
 
 Es posible crear volúmenes finos con una gran capacidad notificada y una capacidad asignada relativamente pequeña, lo que es positivo para la eficiencia y la utilización del almacenamiento. Los volúmenes finos simplifican la administración del almacenamiento, ya que permiten aumentar la capacidad asignada a medida que las necesidades de las aplicaciones cambian, sin interrumpir la aplicación, lo que mejora la utilización del almacenamiento.
@@ -99,6 +103,6 @@ Para un volumen fino, si se alcanzó la capacidad máxima informada de 256 TIB, 
 
 El sistema expande automáticamente la capacidad asignada de acuerdo con el límite de capacidad establecido. El límite de capacidad establecido permite limitar el crecimiento automático del volumen fino por debajo de la capacidad notificada. Cuando la cantidad de datos escritos se acerca a la capacidad asignada, es posible cambiar el límite de capacidad establecido.
 
-Para modificar el límite de capacidad asignada, seleccione MENU:almacenamiento[volúmenes > pestaña Supervisión de volumen fino > Cambiar límite].
+Para modificar el límite de capacidad asignada, selecciona el menú: Storage [Supervisión de volúmenes Thin > Modificar límite].
 
 Como System Manager no asigna toda la capacidad al crear un volumen fino, la capacidad libre en el pool puede ser insuficiente. El espacio insuficiente puede bloquear las escrituras en el pool, no solo para los volúmenes finos, sino también para otras operaciones en las que se requiere capacidad del pool (por ejemplo, imágenes Snapshot o volúmenes Snapshot). No obstante, es posible realizar operaciones de lectura desde el pool. En esta situación, puede recibir una advertencia de umbral de alerta.

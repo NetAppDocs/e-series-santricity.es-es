@@ -15,6 +15,7 @@ Es posible comprobar el estado de los componentes en la página hardware y reali
 
 
 
+[[which-components-can-i-manage]]
 == ¿Qué componentes puedo gestionar?
 
 Es posible comprobar el estado de los componentes y realizar algunas funciones relacionadas con estos componentes:
@@ -32,9 +33,10 @@ Obtenga más información:
 
 
 
+[[how-do-i-view-hardware-components]]
 == ¿Cómo puedo ver los componentes de hardware?
 
-Vaya a la página hardware, que ofrece una descripción gráfica de los componentes físicos de la cabina de almacenamiento. Es posible alternar entre las vistas frontal y trasera de las bandejas de cabinas si se selecciona la pestaña *Unidades* o *Controladores* en la esquina superior derecha de la vista de bandeja.
+Accede a la página «Hardware», que ofrece una representación gráfica de los componentes físicos de la matriz de almacenamiento. Puedes alternar entre las vistas frontal y trasera de los bastidores de la matriz seleccionando la pestaña *Unidades* o *Controladores y componentes* de la esquina superior derecha de la vista del bastidor.
 
 Obtenga más información:
 

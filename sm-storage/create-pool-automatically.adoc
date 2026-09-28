@@ -51,6 +51,13 @@ System Manager realiza las siguientes tareas:
 ** Añade las unidades del mismo tipo al pool existente y usa los otros tipos de unidades para crear distintos pools si las unidades nuevas son de distinto tipo.
 
 
+
+
+[NOTE]
+====
+En los sistemas EF80 y EF50, las unidades SSD NVMe de rendimiento y de capacidad se consideran tipos de unidades distintos. System Manager crea grupos diferenciados para las unidades de rendimiento y de capacidad y no las mezcla en un mismo grupo. El tamaño mínimo de un grupo es de 6 unidades para las de rendimiento y de 12 unidades para las de capacidad.
+
+====
 . Para ver características adicionales de la agrupación, haz clic en el nombre de la agrupación que aparece.
 +
 Se muestra información acerca del tipo de unidad, la función de seguridad, la funcionalidad Data Assurance (DA), la protección contra pérdida de bandeja y la protección contra pérdida de cajón.

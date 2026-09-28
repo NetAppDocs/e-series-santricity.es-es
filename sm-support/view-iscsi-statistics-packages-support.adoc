@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, iscsi, statistics, packages 
 summary: Es posible ver datos sobre las conexiones iSCSI con la cabina de almacenamiento. 
 ---
-= Ver paquetes de estadísticas iSCSI en SANtricity System Manager
+= Ver estadísticas de iSCSI en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -32,8 +32,8 @@ NOTE: Los tipos de estadísticas que se muestran en System Manager se basan en l
 Es posible ver cada una de las estadísticas como estadísticas sin configurar o estadísticas de base. Las estadísticas sin configurar son todas las estadísticas recogidas desde que se iniciaron las controladoras. Las estadísticas de base son las estadísticas de un momento específico que se recogen desde el establecimiento de la hora de la línea de base.
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Support[Support Center > Diagnostics] tab.
-. Seleccione *Ver paquetes de estadísticas iSCSI*.
+. En el panel de la izquierda, selecciona *System*.
+. Selecciona *Ver estadísticas de iSCSI*.
 . Haga clic en una pestaña para ver los diferentes conjuntos de estadísticas.
 . Para establecer la línea de base, haga clic en *establecer nueva línea de base*.
 +

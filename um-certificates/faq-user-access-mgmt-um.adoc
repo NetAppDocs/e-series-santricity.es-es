@@ -16,6 +16,7 @@ Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respue
 
 
 
+[[why-cant-i-log-in]]
 == ¿Por qué no puedo iniciar sesión?
 
 Si recibe un error al intentar iniciar sesión, revise estas causas posibles.
@@ -30,6 +31,7 @@ Los errores de inicio de sesión pueden ocurrir por uno de estos motivos:
 
 
 
+[[what-do-i-need-to-know-before-adding-a-directory-server]]
 == ¿Qué debo saber antes de añadir un servidor de directorio?
 
 Antes de añadir un servidor de directorio en Access Management, debe cumplir ciertos requisitos.
@@ -41,6 +43,7 @@ Antes de añadir un servidor de directorio en Access Management, debe cumplir ci
 
 
 
+[[what-do-i-need-to-know-about-mapping-to-storage-array-roles]]
 == ¿Qué debo saber acerca de la asignación de roles de la cabina de almacenamiento?
 
 Antes de asignar grupos a roles, revise las directrices.
@@ -66,6 +69,7 @@ Si usa un servidor de protocolo ligero de acceso a directorios (LDAP) y servicio
 
 
 
+[[saml]]
 === SAML
 
 Si usa las funcionalidades de lenguaje de marcado de aserción de seguridad (SAML) incorporadas en la cabina de almacenamiento, asegúrese de que:
@@ -83,12 +87,14 @@ Si usa las funcionalidades de lenguaje de marcado de aserción de seguridad (SAM
 
 
 
+[[what-do-i-need-to-know-before-configuring-and-enabling-saml]]
 == ¿Qué debo saber antes de configurar y habilitar SAML?
 
 Antes de configurar y habilitar las funcionalidades de lenguaje de marcado de aserción de seguridad (SAML) para la autenticación, asegúrese de cumplir con los siguientes requisitos y comprender las restricciones de SAML.
 
 
 
+[[requirements]]
 === Requisitos
 
 Antes de comenzar, compruebe lo siguiente:
@@ -103,6 +109,7 @@ Antes de comenzar, compruebe lo siguiente:
 
 
 
+[[restrictions]]
 === Restricciones
 
 Además de los requisitos mencionados más arriba, asegúrese de comprender las siguientes restricciones:
@@ -124,6 +131,7 @@ Además de los requisitos mencionados más arriba, asegúrese de comprender las 
 
 
 
+[[what-are-the-local-users]]
 == ¿De qué se tratan los usuarios locales?
 
 Los usuarios locales están predefinidos en el sistema e incluyen permisos específicos.

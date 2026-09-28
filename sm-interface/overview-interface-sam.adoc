@@ -15,9 +15,10 @@ System Manager de SANtricity es una interfaz basada en Web que permite gestionar
 
 
 
-== Página de inicio
+[[dashboard]]
+== Consola
 
-La página Inicio ofrece una vista de consola para la gestión cotidiana de la cabina de almacenamiento. Cuando se inicia sesión en System Manager, la página Inicio es la primera pantalla que aparece.
+El panel de control ofrece una vista de resumen para la administración diaria de tu matriz de almacenamiento. Al iniciar sesión en System Manager, el panel de control es la primera pantalla que aparece.
 
 La vista de consola comprende tres áreas de resumen que contienen información clave sobre el estado y la salud de tu matriz de almacenamiento. Puedes encontrar más información en el área de resumen.
 
@@ -48,18 +49,21 @@ El área de jerarquía de almacenamiento ofrece una vista organizada de los dist
 |===
 
 
+[[notifications-area]]
 == Área de notificaciones
 
 El área de Notificaciones está disponible a través del icono de campana en la esquina superior de la ventana. El área de Notificaciones muestra notificaciones de problemas que indican el estado de la matriz de almacenamiento y sus componentes. Además, esta sección muestra alertas automatizadas que pueden ayudarte a solucionar problemas antes de que afecten a otras áreas de tu entorno de almacenamiento.
 
 
 
+[[interface-settings]]
 == Configuración de la interfaz
 
 Puede cambiar las preferencias de presentación y otras configuraciones desde la interfaz principal.
 
 
 
+[[user-logins-and-passwords]]
 == Inicios de sesión y contraseñas de usuario
 
 El usuario actual que ha iniciado sesión en el sistema se muestra en la configuración de usuario.

@@ -28,25 +28,25 @@ Es posible habilitar la siguiente configuración relacionada con la detección d
 
 [NOTE]
 ====
-La configuración y las funciones de iSCSI solo aparecen en la página Configuración si la cabina de almacenamiento es compatible con iSCSI.
+Los ajustes y funciones de iSCSI solo se muestran en la página Sistema si tu matriz de almacenamiento es compatible con iSCSI.
 
 ====
 .Pasos
-. En el panel izquierdo, selecciona menú:Settings[System].
-. En *Configuración de iSCSI*, haga clic en *Ver/editar configuración de detección de objetivos*.
+. En el panel de la izquierda, selecciona *System*.
+. En *Configuración de iSCSI*, haz clic en *Configurar los parámetros de detección de destinos*.
 +
-Se muestra el cuadro de diálogo Configuración de detección de objetivos. Debajo del *Activar servidor iSNS*... campo, el cuadro de diálogo indica si la controladora ya está registrada.
+Aparece la página «Configurar los ajustes de detección de destinos iSCSI». Debajo del campo «*Habilitar servidor iSNS*...», la página indica si el controlador ya está registrado.
 
 . Para registrar el controlador, seleccione *Activar servidor iSNS para registrar mi destino* y, a continuación, seleccione una de las siguientes opciones:
 +
-** *Obtener automáticamente la configuración del servidor DHCP* -- Seleccione esta opción si desea configurar el servidor iSNS usando un servidor DHCP (Dynamic Host Configuration Protocol). Tenga en cuenta que, si usa esta opción, todos los puertos iSCSI en la controladora también deben configurarse para usar DHCP. Si es necesario, actualice el puerto iSCSI de la controladora para habilitar esta opción.
+** *Obtener la dirección IPv4 del servidor automáticamente del servidor DHCP* -- Selecciona esta opción si quieres configurar el servidor iSNS usando un servidor DHCP (Protocolo de configuración dinámica de host). Ten en cuenta que si usas esta opción, todos los puertos iSCSI del controlador también deben estar configurados para usar DHCP. Si es necesario, actualiza la configuración de los puertos iSCSI de tu controlador para habilitar esta opción.
 +
 [NOTE]
 ====
 Para que el servidor DHCP proporcione la dirección del servidor iSNS, debe configurar el servidor DHCP para que utilice la opción 43 -- ""Información específica del proveedor"." Esta opción debe incluir la dirección IPv4 del servidor iSNS en los bytes de datos 0xa-0xd (10-13).
 
 ====
-** *Especificar manualmente la configuración estática* -- Seleccione esta opción si desea introducir una dirección IP estática para el servidor iSNS. (Si lo desea, puede cortar y pegar direcciones en los campos.) En el campo, introduzca una dirección IPv4 o IPv6. Si configuró ambas, IPv4 es la predeterminada. Introduzca además un puerto de escucha TCP (utilice 3205, que es el predeterminado, o especifique un valor entre 49 49152 y 65 65535).
+** *Especificar manualmente la dirección IPv4 del servidor* -- Selecciona esta opción si quieres introducir una dirección IP estática para el servidor iSNS. (Si quieres, puedes copiar y pegar direcciones en los campos.) En el campo, introduce una dirección IPv4 o una dirección IPv6. Si configuraste ambas, IPv4 es la predeterminada. También introduce un puerto de escucha TCP (usa el valor predeterminado de 3205 o introduce un valor entre 49152 y 65535).
 
 
 . Para permitir que la cabina de almacenamiento participe en sesiones de detección sin nombre, seleccione *Habilitar sesiones de detección sin nombre*.

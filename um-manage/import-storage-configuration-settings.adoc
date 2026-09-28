@@ -16,7 +16,7 @@ Es posible importar la configuración de almacenamiento de una cabina de almacen
 
 .Antes de empezar
 * El almacenamiento se configura en la instancia de SANtricity System Manager correspondiente a la cabina de almacenamiento que se quiere usar como origen.
-* La configuración actual de las cabinas de almacenamiento objetivo cuenta con una copia de seguridad en System Manager (menú:Configuración[sistema > Guardar configuración de la cabina de almacenamiento]).
+* La configuración actual de las matrices de almacenamiento de destino se respalda en System Manager (menú:System[Save storage array configuration]).
 * Las cabinas de origen y objetivo deben cumplir con los siguientes requisitos:
 +
 ** Las bandejas donde residan las controladoras deben ser idénticas.

@@ -16,6 +16,7 @@ Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respue
 
 
 
+[[how-does-asynchronous-mirroring-differ-from-synchronous-mirroring]]
 == ¿En qué se diferencia el mirroring asíncrono del mirroring síncrono?
 
 La función Asynchronous Mirroring es diferente de la función Synchronous Mirroring en un aspecto esencial: Captura el estado de un volumen de origen en un momento específico en particular, y copia solo los datos que cambiaron desde la última captura de imagen.
@@ -112,6 +113,7 @@ Generalmente debe estar dentro de una distancia de 10 km (6.2 millas) aproximada
 |===
 
 
+[[why-cant-i-access-my-chosen-mirroring-feature]]
 == ¿Por qué no puedo acceder a la función de duplicación que elegí?
 
 La función de mirroring se configura en la interfaz de SANtricity Unified Manager.
@@ -137,6 +139,7 @@ Para obtener instrucciones de configuración, consulte lo siguiente:
 
 
 
+[[what-do-i-need-to-know-before-creating-a-mirror-consistency-group]]
 == ¿Qué debo saber antes de crear un grupo de coherencia de reflejos?
 
 Siga estas directrices para poder crear un grupo de coherencia de reflejos.
@@ -167,6 +170,7 @@ También debe cumplir con los siguientes requisitos para las cabinas de almacena
 
 
 
+[[asynchronous-mirroring-what-do-i-need-to-know-before-creating-a-mirrored-pair]]
 == Mirroring asíncrono: ¿Qué debo saber antes de crear una pareja reflejada?
 
 Las parejas reflejadas se configuran en la interfaz de SANtricity Unified Manager y, posteriormente, se gestionan en SANtricity System Manager.
@@ -187,6 +191,7 @@ Antes de crear una pareja reflejada, siga estas directrices.
 
 
 
+[[what-do-i-need-to-know-before-increasing-my-reserved-capacity-on-a-mirrored-pair-volume]]
 == ¿Qué debo saber antes de aumentar la capacidad reservada en un volumen de parejas reflejadas?
 
 Por lo general, se debe aumentar la capacidad reservada cuando se recibe una advertencia que indica que la capacidad reservada para una pareja reflejada está por completarse. Es posible aumentar la capacidad reservada únicamente en incrementos de 8 GIB.
@@ -208,6 +213,7 @@ Si no hay capacidad libre en ningún pool o grupo de volúmenes, es posible aña
 
 
 
+[[why-cant-i-increase-reserved-capacity-with-my-requested-amount]]
 == ¿Por qué no puedo aumentar la capacidad reservada con la cantidad solicitada?
 
 Es posible aumentar la capacidad reservada únicamente en incrementos de 4 GIB.
@@ -226,6 +232,7 @@ Para las operaciones de mirroring asíncrono, generalmente es el 20 % del volume
 
 
 
+[[why-would-i-change-this-percentage]]
 == ¿Por qué debería cambiar este porcentaje?
 
 En general, la capacidad reservada constituye el 40 % del volumen base para operaciones Snapshot y el 20 % del volumen base para operaciones de mirroring asíncrono.
@@ -240,6 +247,7 @@ Por lo general, se debe seleccionar un porcentaje alto de capacidad reservada si
 
 
 
+[[why-do-i-see-more-than-one-reserved-capacity-candidate]]
 == ¿Por qué se muestra más de un candidato de capacidad reservada?
 
 Si existe más de un volumen en un pool o grupo de volúmenes que cumple con el porcentaje de capacidad seleccionado para el objeto de almacenamiento, se mostrarán varios candidatos.
@@ -248,6 +256,7 @@ Para actualizar la lista de candidatos recomendados, es posible modificar el por
 
 
 
+[[why-do-i-see-not-available-values-displayed-in-the-table]]
 == ¿Por qué se muestran valores no disponibles en la tabla?
 
 En la tabla se enumeran los valores no disponible cuando la visualización de los datos ubicados en la cabina de almacenamiento remota no se encuentra disponible.
@@ -256,6 +265,7 @@ Para visualizar los datos de la cabina de almacenamiento remota, ejecute System 
 
 
 
+[[why-dont-i-see-all-of-my-pools-and-volume-groups]]
 == ¿Por qué no veo todos mis pools y grupos de volúmenes?
 
 Cuando se crea un volumen secundario para la pareja reflejada asíncrona, el sistema muestra una lista de todos los pools y los grupos de volúmenes elegibles para esa pareja reflejada asíncrona. En esa lista, no se muestra ningún pool o grupo de volúmenes que no sea elegible para su uso.
@@ -269,6 +279,7 @@ Los pools o grupos de volúmenes pueden no ser elegibles por cualquiera de los m
 
 
 
+[[asynchronous-mirroring-why-dont-i-see-all-my-volumes]]
 == Duplicación asincrónica: ¿por qué no veo todos mis volúmenes?
 
 Cuando se selecciona un volumen primario para una pareja reflejada, se muestra una lista con todos los volúmenes elegibles.
@@ -285,6 +296,7 @@ NOTE: Para las controladoras EF600 y EF300, los volúmenes primario y secundario
 
 
 
+[[asynchronous-mirroring-why-dont-i-see-all-the-volumes-on-the-remote-storage-array]]
 == Duplicación asincrónica: ¿por qué no veo todos los volúmenes en la matriz de almacenamiento remota?
 
 Cuando se selecciona un volumen secundario en la cabina de almacenamiento remota, se muestra una lista de todos los volúmenes elegibles para esa pareja reflejada.
@@ -304,6 +316,7 @@ Todos los volúmenes que no son elegibles no aparecen en esa lista. Es posible q
 
 
 
+[[why-would-i-update-my-remote-storage-arrays-ip-address]]
 == ¿Por qué debería actualizar la dirección IP de mi matriz de almacenamiento remota?
 
 La dirección IP de la cabina de almacenamiento remota se actualiza cuando cambia la dirección IP de un puerto iSCSI y la cabina de almacenamiento local no puede comunicarse con la cabina de almacenamiento remota.

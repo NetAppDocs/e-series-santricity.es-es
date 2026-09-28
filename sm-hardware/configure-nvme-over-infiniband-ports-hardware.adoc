@@ -24,18 +24,14 @@ La configuración y las funciones de NVMe over InfiniBand aparecen solamente si 
 
 ====
 .Pasos
-. En el panel izquierdo, selecciona *Hardware*.
-. Si el gráfico muestra las unidades, haga clic en la pestaña * Controladores y componentes *.
-+
-El gráfico cambia y muestra las controladoras en lugar de las unidades.
-
+. En el panel izquierdo, selecciona menú:Hardware[Controllers and components].
 . Haga clic en la controladora que tenga el puerto NVMe over InfiniBand que desea configurar.
 +
 Aparece el menú contextual de la controladora.
 
 . Seleccione *Configurar puertos NVMe over InfiniBand*.
 +
-Se abre el cuadro de diálogo Configurar puertos NVMe over InfiniBand.
+Se abre el cuadro de diálogo Configurar puertos NVMe sobre InfiniBand.
 
 . Seleccione el puerto de HIC que desea configurar de la lista desplegable e introduzca la dirección IP.
 +

@@ -15,6 +15,7 @@ Para gestionar los recursos de almacenamiento, primero se deben detectar las cab
 
 
 
+[[how-do-i-discover-arrays]]
 == ¿Cómo se detectan cabinas?
 
 Utilice la página Añadir/detectar para encontrar y añadir las cabinas de almacenamiento que desea gestionar en la red de la organización. Es posible detectar varias cabinas de almacenamiento o una sola. Para hacerlo, debe introducir direcciones IP de red y, a continuación, Unified Manager intentar establecer conexiones individuales con cada dirección IP de ese rango.
@@ -28,6 +29,7 @@ Obtenga más información:
 
 
 
+[[how-do-i-manage-arrays]]
 == ¿Cómo se gestionan las cabinas?
 
 Después de descubrir las matrices, vaya a la página *gestionar - todo*. En esta página, puede desplazarse por una lista de cabinas de almacenamiento detectadas en la red, ver su estado y realizar operaciones en una sola cabina o en un grupo de cabinas.

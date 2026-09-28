@@ -28,10 +28,10 @@ Si desea deshabilitar una función excepcional, debe utilizar el comando Deshabi
 
 ====
 .Pasos
-. En el panel izquierdo, selecciona menú:Settings[System].
-. En *Complementos*, seleccione *Activar característica Premium*.
+. En el panel de la izquierda, selecciona *System*.
+. En *Complementos*, selecciona *Activar función premium*.
 +
-Se abre el cuadro de diálogo Habilitar una función prémium.
+Se abre el cuadro de diálogo «Habilitar una función premium».
 
 . Haga clic en *examinar* y, a continuación, seleccione el archivo de claves.
 +

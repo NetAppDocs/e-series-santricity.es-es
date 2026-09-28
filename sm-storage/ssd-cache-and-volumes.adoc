@@ -15,6 +15,7 @@ Es posible añadir un volumen a la caché SSD como una manera de aumentar el ren
 
 
 
+[[volumes]]
 == Volúmenes
 
 Se utilizan mecanismos de I/o de volúmenes simples para transferir datos desde y hacia la caché SSD. Después de almacenar datos en la caché y en la unidad SSD, las lecturas posteriores de esos datos se realizan en la caché SSD, por lo que se elimina la necesidad de acceder al volumen de la unidad de disco duro.
@@ -34,6 +35,7 @@ Cualquier volumen asignado para utilizar una caché SSD de una controladora no e
 ====
 
 
+[[drive-security-feature]]
 == Función Drive Security
 
 Para usar la caché SSD en un volumen que también utiliza Drive Security (es decir, con la función de seguridad habilitada), las funcionalidades de Drive Security del volumen y de la caché SSD deben coincidir. Si no coinciden, el volumen no tendrá la función de seguridad habilitada.

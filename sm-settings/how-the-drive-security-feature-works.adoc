@@ -17,6 +17,7 @@ Cuando estas unidades se usan con la función Drive Security, se requiere una cl
 
 
 
+[[how-to-implement-drive-security]]
 == Cómo implementar Drive Security
 
 Para implementar Drive Security, siga estos pasos.
@@ -33,6 +34,7 @@ Para implementar Drive Security, siga estos pasos.
 
 
 
+[[how-drive-security-works-at-the-drive-level]]
 == Cómo funciona Drive Security en el nivel de unidad
 
 Una unidad compatible con la función de seguridad, FDE o FIPS, cifra los datos durante la escritura y descifra los datos durante la lectura. Estas operaciones de cifrado y descifrado no afectan al rendimiento ni al flujo de trabajo del usuario. Cada unidad tiene su propia clave de cifrado, que jamás puede transferirse de la unidad.
@@ -41,6 +43,7 @@ La función Drive Security ofrece una capa adicional de protección en unidades 
 
 
 
+[[how-drive-security-works-at-the-storage-array-level]]
 == Cómo funciona Drive Security en el nivel de cabina de almacenamiento
 
 Con la función Drive Security, se crea una clave de seguridad que se comparte entre las unidades con la función de seguridad habilitada y las controladoras en una cabina de almacenamiento. Siempre que se encienden y se apagan las unidades, las unidades con la función de seguridad habilitada cambian al estado Security Locked hasta que la controladora aplica la clave de seguridad.
@@ -54,6 +57,7 @@ Para la gestión de claves internas, la clave de seguridad se almacena en una ub
 ====
 
 
+[[how-drive-security-works-at-the-volume-level]]
 == Cómo funciona Drive Security en el nivel de volumen
 
 Al crear un pool o un grupo de volúmenes desde unidades compatibles con la función de seguridad, también es posible habilitar Drive Security para estos pools o grupos de volúmenes. La opción Drive Security permite que las unidades y los pools y los grupos de volúmenes asociados tengan la función de seguridad-_enabled_.

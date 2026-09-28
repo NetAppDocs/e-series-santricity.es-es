@@ -28,8 +28,7 @@ Si el volumen Snapshot o el volumen Snapshot de grupo de coherencia Snapshot for
 
 ====
 .Pasos
-. En el panel izquierdo, selecciona menú:Storage[Snapshots].
-. Seleccione la ficha *volúmenes Snapshot*.
+. En el panel de la izquierda, selecciona el menú: instantáneas [Snapshot volumes].
 +
 Se muestra la tabla volúmenes Snapshot con todos los volúmenes Snapshot asociados con la cabina de almacenamiento.
 

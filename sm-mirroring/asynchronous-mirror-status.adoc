@@ -15,6 +15,7 @@ El estado de reflejo define el estado de los grupos de coherencia de reflejos y 
 
 
 
+[[status-for-mirror-consistency-groups]]
 == Estado para grupos de coherencia de reflejos
 
 [cols="25h,~"]
@@ -97,6 +98,7 @@ No se permite una promoción forzada al resolver un conflicto de roles.
 |===
 
 
+[[status-for-mirrored-pairs]]
 == Estado para parejas reflejadas
 
 El estado de una pareja reflejada indica si los datos en el volumen primario y en el volumen secundario están sincronizados.

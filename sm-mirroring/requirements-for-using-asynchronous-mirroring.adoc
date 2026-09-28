@@ -16,6 +16,7 @@ Si planea utilizar la función de mirroring asíncrono, tenga en cuenta los sigu
 
 
 
+[[unified-manager]]
 == Unified Manager
 
 Para habilitar y configurar el mirroring entre dos cabinas, debe usar la interfaz de Unified Manager. Unified Manager debe estar instalado en un sistema host junto con el proxy de servicios web.
@@ -27,6 +28,7 @@ Para habilitar y configurar el mirroring entre dos cabinas, debe usar la interfa
 
 
 
+[[storage-arrays]]
 == Cabinas de almacenamiento
 
 * Debe tener dos cabinas de almacenamiento.
@@ -41,6 +43,7 @@ Para habilitar y configurar el mirroring entre dos cabinas, debe usar la interfa
 
 
 
+[[supported-connections]]
 == Conexiones admitidas
 
 En el mirroring asíncrono, se pueden usar las conexiones FC o iSCSI, o ambas, para la comunicación entre los sistemas de almacenamiento local y remoto. Cuando se crea un grupo de coherencia de reflejos, el administrador puede seleccionar FC o iSCSI para ese grupo si se establecen ambas conexiones en la cabina de almacenamiento remota. No existe conmutación al nodo de respaldo de un tipo de canal al otro.
@@ -71,6 +74,12 @@ Los puertos iSCSI se configuran en el nivel de la cabina, puerto por puerto. La 
 ** VLAN: Tanto los sistemas locales como los remotos deben tener el mismo valor de VLAN para comunicarse
 ** Puertos de escucha iSCSI
 ** Tramas gigantes
++
+[NOTE]
+====
+Se recomienda usar Jumbo Frames para mejorar el rendimiento de la CPU, el rendimiento y la estabilidad funcional.
+
+====
 ** Prioridad para Ethernet
 +
 [NOTE]
@@ -92,6 +101,7 @@ E4000 no admite la duplicación asincrónica mientras se utiliza el protocolo iS
 ====
 
 
+[[mirrored-volume-candidates]]
 == Candidatos de volumen reflejado
 
 * El nivel de RAID, los parámetros de almacenamiento en caché y el tamaño de los segmentos pueden ser diferentes en los volúmenes primario y secundario de una pareja reflejada asíncrona.
@@ -109,11 +119,12 @@ NOTE: Para las controladoras EF600 y EF300, los volúmenes primario y secundario
 
 
 * Los volúmenes primario y secundario deben compartir el mismo tipo de unidad. No se admite la combinación de unidades NVMe y SAS entre volúmenes primarios y secundarios.
-* Los volúmenes primarios y secundarios no deben tener habilitada la partición de recursos.
+* Los volúmenes primarios y secundarios no deben tener habilitado Resource Provisioning.
 
 
 
 
+[[reserved-capacity]]
 == Capacidad reservada
 
 * Se requiere un volumen de capacidad reservada en el volumen primario y en el volumen secundario de una pareja reflejada para registrar la información de escritura que se utiliza en la recuperación de los restablecimientos de la controladora y otras interrupciones temporales.
@@ -128,6 +139,7 @@ NOTE: Para las controladoras EF600 y EF300, los volúmenes primario y secundario
 
 
 
+[[drive-security-feature]]
 == Función Drive Security
 
 * Si utiliza unidades compatibles con la función de seguridad, tanto el volumen primario como el secundario deben tener una configuración de seguridad compatible. Esta restricción no se aplica; por lo tanto, debe verificarlo por su cuenta.

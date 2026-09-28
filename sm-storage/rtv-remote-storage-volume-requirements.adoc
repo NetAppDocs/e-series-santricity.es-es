@@ -15,6 +15,7 @@ Los volúmenes utilizados para las importaciones deben cumplir los requisitos de
 
 
 
+[[remote-storage-volume]]
 == Volumen de almacenamiento remoto
 
 El volumen de origen de una importación se denomina "volumen de almacenamiento remoto". Este volumen debe cumplir con los siguientes criterios:
@@ -41,6 +42,7 @@ Cada volumen de almacenamiento remoto se asocia con un solo objeto de almacenami
 
 
 
+[[target-volume-candidates]]
 == Candidatos de volumen objetivo
 
 El volumen de destino es el volumen de destino en el sistema E-Series local. El volumen de destino debe cumplir con los siguientes criterios:

@@ -18,7 +18,7 @@ Es posible asignar una pieza de repuesto como unidad en espera para protección 
 * Debe haber disponible una unidad que cumpla los siguientes criterios:
 +
 ** Sin asignar, con estado óptima.
-** El mismo tipo de medio que las unidades del grupo de volúmenes (por ejemplo, SSD).
+** El mismo tipo de soporte y de unidad que las unidades del grupo de volúmenes (por ejemplo, SSD). En los sistemas EF80 y EF50, las unidades de repuesto en caliente también deben coincidir con el tipo de unidad Capacity.
 ** El mismo tipo de interfaz que las unidades del grupo de volúmenes (por ejemplo, SAS).
 ** Una capacidad igual o mayor que la capacidad utilizada de las unidades en el grupo de volúmenes.
 
@@ -34,11 +34,7 @@ Las piezas de repuesto también pueden asignarse desde el asistente de configura
 
 ====
 .Pasos
-. En el panel izquierdo, selecciona *Hardware*.
-. Si el gráfico muestra los controladores, haga clic en la pestaña *Drives*.
-+
-El gráfico cambia y muestra las unidades en lugar de las controladoras.
-
+. En el panel de la izquierda, selecciona el menú: Hardware [Drives].
 . Seleccione una unidad sin asignar (color gris) que desee usar como pieza de repuesto.
 +
 Se abre el menú contextual de la unidad.
@@ -64,6 +60,7 @@ La unidad aparece de color rosa en la página hardware, lo que indica que ahora 
 
 
 
+[[results]]
 == Resultados
 
 Si falla una unidad dentro de un grupo de volúmenes RAID 1, RAID 5 o RAID 6, la controladora utiliza automáticamente datos de redundancia para reconstruir los datos de la unidad con error en la pieza de repuesto.

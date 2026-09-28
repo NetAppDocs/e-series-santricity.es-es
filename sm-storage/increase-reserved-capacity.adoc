@@ -41,8 +41,7 @@ No es posible aumentar la capacidad reservada para un volumen Snapshot de solo l
 
 ====
 .Pasos
-. En el panel izquierdo, selecciona menú:Storage[Pools y grupos de volúmenes].
-. Seleccione la pestaña *capacidad reservada*.
+. En el panel de la izquierda, selecciona el menú: almacenamiento [Capacidad reservada].
 . Selecciona el objeto de almacenamiento para el que quieres aumentar la capacidad reservada y luego haz clic en el icono de menú:ellipsis icon[Aumentar capacidad reservada].
 +
 Se muestra el cuadro de diálogo aumentar la capacidad reservada.

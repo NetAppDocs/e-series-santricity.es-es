@@ -24,6 +24,7 @@ Si bien los certificados firmados por CA aumentan la protección de seguridad (p
 ====
 
 
+[[signed-certificates]]
 == Certificados firmados
 
 Un certificado firmado es validado por una entidad de certificación (CA), que es una organización de terceros de confianza. Los certificados firmados incluyen detalles sobre el propietario de la entidad (generalmente, un servidor o sitio web), la fecha de emisión y de vencimiento del certificado, los dominios válidos de la entidad, y una firma digital compuesta por letras y números.
@@ -39,6 +40,7 @@ La CA toma las medidas necesarias para verificar las identidades durante el proc
 
 
 
+[[self-signed-certificates]]
 == Certificados autofirmados
 
 Cada controladora de la cabina de almacenamiento incluye un certificado autofirmado preinstalado. Un certificado autofirmado es similar a un certificado firmado por CA, excepto que es validado por el propietario de la entidad y no por un tercero. Al igual que un certificado firmado por CA, un certificado autofirmado contiene su propia clave privada, y también garantiza que los datos se cifren y se envíen a través de una conexión HTTPS entre un servidor y un cliente. Sin embargo, un certificado autofirmado no utiliza la misma cadena de confianza que un certificado firmado por CA.
@@ -47,6 +49,7 @@ Los certificados autofirmados no son «'de confianza'» por parte de los navegad
 
 
 
+[[certificates-used-for-key-management-server]]
 == Certificados usados para el servidor de gestión de claves
 
 Si usa un servidor de gestión de claves externo con la función Drive Security, también puede gestionar los certificados para la autenticación entre ese servidor y las controladoras.

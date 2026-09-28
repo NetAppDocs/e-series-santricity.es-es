@@ -15,6 +15,7 @@ Es posible crear volúmenes a través de un pool o de un grupo de volúmenes. La
 
 
 
+[[reasons-to-choose-a-pool-or-volume-group]]
 == Motivos para elegir un pool o un grupo de volúmenes
 
 *Elegir una piscina*
@@ -40,6 +41,7 @@ Debido a que los pools pueden coexistir con los grupos de volúmenes, una cabina
 ====
 
 
+[[feature-differences-between-pools-and-volume-groups]]
 == Diferencias de funciones entre pools y grupos de volúmenes
 
 En la siguiente tabla, se incluye una comparación entre grupos de volúmenes y pools.
@@ -149,6 +151,7 @@ Sí
 |===
 
 
+[[functional-comparison-of-pools-and-volume-groups]]
 == Comparación funcional de pools y grupos de volúmenes
 
 La función y el objetivo de un pool y un grupo de volúmenes son los mismos. Ambos objetos son un conjunto de unidades agrupadas lógicamente en una cabina de almacenamiento, y se usan para crear volúmenes a los que puede acceder un host.

@@ -2,7 +2,7 @@
 permalink: sm-settings/view-local-user-roles.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, view, local, user, roles, 
-summary: 'Desde la pestaña roles de usuario local, es posible ver las asignaciones de los perfiles de usuario a los roles predeterminados. Estas asignaciones forman parte de los controles de acceso basados en roles (RBAC) aplicados en la cabina de almacenamiento.' 
+summary: 'Desde la página «Roles de usuario locales» puedes consultar las asignaciones de los perfiles de usuario a los roles predeterminados. Estas asignaciones forman parte del RBAC (controles de acceso basado en roles) que se aplica en el sistema de almacenamiento.' 
 ---
 = Ver roles de usuarios locales en SANtricity System Manager
 :allow-uri-read: 
@@ -12,7 +12,7 @@ summary: 'Desde la pestaña roles de usuario local, es posible ver las asignacio
 
 
 [role="lead"]
-Desde la pestaña roles de usuario local, es posible ver las asignaciones de los perfiles de usuario a los roles predeterminados. Estas asignaciones forman parte de los controles de acceso basados en roles (RBAC) aplicados en la cabina de almacenamiento.
+Desde la página «Roles de usuario locales» puedes consultar las asignaciones de los perfiles de usuario a los roles predeterminados. Estas asignaciones forman parte del RBAC (controles de acceso basado en roles) que se aplica en el sistema de almacenamiento.
 
 .Antes de empezar
 Debe iniciar sesión con un perfil de usuario que cuente con permisos de administración de seguridad. De lo contrario, no se mostrarán las funciones de Access Management.
@@ -21,8 +21,7 @@ Debe iniciar sesión con un perfil de usuario que cuente con permisos de adminis
 Los perfiles de usuario y las asignaciones no pueden cambiarse. Solo las contraseñas pueden modificarse.
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Settings[Access Management].
-. Seleccione la ficha *roles de usuario local*.
+. En el panel de la izquierda, selecciona el menú: autenticación [Roles de usuario local].
 +
 Los perfiles de usuario se muestran en la tabla:
 

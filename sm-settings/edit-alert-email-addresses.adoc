@@ -15,11 +15,10 @@ summary: Es posible cambiar las direcciones de correo electrónico de los destin
 Es posible cambiar las direcciones de correo electrónico de los destinatarios que recibieron alertas por correo electrónico.
 
 .Antes de empezar
-Las direcciones de correo electrónico que pretende editar deben estar definidas en la pestaña correo electrónico de la página Alertas.
+La dirección de correo electrónico que deseas modificar debe estar definida en la página de alertas por correo electrónico.
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Settings[Alerts].
-. Seleccione la ficha *correo electrónico*.
+. En el panel de la izquierda, selecciona el menú: alertas [Alertas por correo electrónico].
 . En la tabla *Dirección de correo electrónico*, seleccione la dirección que desea cambiar y, a continuación, haga clic en el icono *Edición* (lápiz) situado en el extremo derecho.
 +
 La fila se convierte en un campo editable.
@@ -34,4 +33,4 @@ Si desea cancelar los cambios, seleccione el icono *Cancelar* (X).
 
 
 .Resultados
-La pestaña correo electrónico de la página Alertas muestra las direcciones de correo electrónico actualizadas.
+La página «Alertas por correo electrónico» muestra las direcciones de correo electrónico actualizadas.

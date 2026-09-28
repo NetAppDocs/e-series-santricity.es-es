@@ -2,7 +2,7 @@
 permalink: sm-settings/view-imported-certificates.html 
 sidebar: sidebar 
 keywords: SANtricity, System Manager, E-Series, view, imported, certificate, information, 
-summary: Desde la página certificados, es posible ver el tipo de certificado, la entidad emisora y el rango válido de fechas de los certificados para la cabina de almacenamiento. 
+summary: En la categoría «Certificados», puedes consultar el tipo de certificado, la autoridad emisora y el periodo de validez de los certificados del storage array. 
 ---
 = Ver la información del certificado importado en SANtricity System Manager
 :allow-uri-read: 
@@ -12,29 +12,29 @@ summary: Desde la página certificados, es posible ver el tipo de certificado, l
 
 
 [role="lead"]
-Desde la página certificados, es posible ver el tipo de certificado, la entidad emisora y el rango válido de fechas de los certificados para la cabina de almacenamiento.
+En la categoría «Certificados», puedes consultar el tipo de certificado, la autoridad emisora y el periodo de validez de los certificados del storage array.
 
 .Antes de empezar
 Debe iniciar sesión con un perfil de usuario que cuente con permisos de administración de seguridad. De lo contrario, no se mostrarán las funciones de certificación.
 
 .Pasos
-. En el panel izquierdo, selecciona menú:Settings[Certificates].
-. Seleccione una de las pestañas para ver información sobre los certificados.
+. En el panel de la izquierda, selecciona *Certificates*.
+. Selecciona una de las siguientes páginas para consultar la información sobre los certificados.
 +
 [cols="25h,~"]
 |===
-| Pestaña | Descripción 
+| Página | Descripción 
 
 
  a| 
-Gestión de cabinas
+menú:Certificados[Array management certificates]
  a| 
 Vea información sobre los certificados firmados por CA importados para cada controladora, incluido el archivo raíz, los archivos intermedios y los archivos de servidor.
 
 
 
  a| 
-De confianza
+menú:Certificates[Trusted certificates]
  a| 
 Vea información sobre los otros tipos de certificados importados para las controladoras. Utilice el campo de filtro en *Mostrar certificados...* para ver certificados instalados por el usuario o instalados previamente.
 
@@ -45,7 +45,7 @@ Vea información sobre los otros tipos de certificados importados para las contr
 
 
  a| 
-Gestión de claves
+menú:Certificados[Certificados de gestión de claves]
  a| 
 Vea información sobre los certificados firmados por CA importados para un servidor de gestión de claves externo.
 

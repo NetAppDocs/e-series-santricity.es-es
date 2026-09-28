@@ -15,6 +15,7 @@ Obtenga información acerca de las restricciones en el uso de la caché SSD en u
 
 
 
+[[restrictions]]
 == Restricciones
 
 * Cualquier volumen asignado para utilizar una caché SSD de una controladora no es elegible para una transferencia de equilibrio de carga automática.
@@ -27,6 +28,7 @@ Obtenga información acerca de las restricciones en el uso de la caché SSD en u
 
 
 
+[[restrictions-with-drive-security]]
 == Restricciones con Drive Security
 
 * Solo es posible habilitar la seguridad en la caché SSD cuando se crea la caché SSD. No se puede habilitar la seguridad posteriormente como en un volumen.

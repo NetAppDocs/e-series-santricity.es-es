@@ -24,6 +24,7 @@ Revise la siguiente información sobre la operación de cambio de roles:
 
 
 
+[[force-role-change]]
 == Forzar cambio de rol
 
 Es posible forzar un cambio de rol entre los grupos de coherencia de reflejos cuando un problema de comunicación entre la cabina de almacenamiento local y la cabina de almacenamiento remota impide la promoción de los volúmenes miembro dentro del grupo de coherencia de reflejos secundario o la degradación de los volúmenes miembro dentro de la coherencia de reflejos primario grupo.
@@ -32,6 +33,7 @@ Se puede forzar la transición del grupo de coherencia de reflejos en el lado se
 
 
 
+[[when-is-a-forced-promotion-allowed-and-not-allowed]]
 == ¿Cuándo se permite y no se permite una promoción forzada?
 
 La promoción forzada de un grupo de coherencia de reflejos solo se permite si todos los volúmenes miembro del grupo de coherencia de reflejos están sincronizados y tienen puntos de recuperación consistentes.
@@ -46,6 +48,7 @@ La promoción forzada de un grupo de coherencia de reflejos no se permite en las
 
 
 
+[[mirror-group-role-conflict]]
 == Conflicto de roles del grupo de reflejos
 
 Cuando se resuelve un problema de comunicación entre las cabinas de almacenamiento local y remota, se produce una condición de conflicto de roles en grupo de reflejos. Utilice Recovery Guru para recuperar el sistema de este error. No se permite la promoción forzada para resolver un conflicto de doble rol.
@@ -54,6 +57,7 @@ Para evitar la condición de conflicto de roles en grupo de reflejos y los pasos
 
 
 
+[[role-change-in-progress-state]]
 == Estado de cambio de rol en curso
 
 Si se desconectan dos cabinas de almacenamiento en una configuración de mirroring, y se fuerza la degradación del lado primario de un grupo de coherencia de reflejos al rol secundario y la promoción del lado secundario de un grupo de coherencia de reflejos al rol primario, A continuación, cuando se restaura la comunicación, los grupos de coherencia de reflejos en ambas cabinas de almacenamiento se colocan en el estado de cambio de rol en curso.

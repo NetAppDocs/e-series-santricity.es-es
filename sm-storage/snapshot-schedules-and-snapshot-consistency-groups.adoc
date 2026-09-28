@@ -21,12 +21,14 @@ Para gestionar de forma fácil las operaciones Snapshot en volúmenes base, es p
 
 
 
+[[snapshot-schedule]]
 == Programación Snapshot
 
 Si desea capturar Snapshot automáticamente para un volumen base, puede crear una programación. Por ejemplo, puede definir una programación para capturar imágenes Snapshot todos los sábados a la medianoche, el primer día de cada mes o en las fechas y los horarios que decida. Al alcanzar el máximo de 32 Snapshot para una sola programación, puede suspender las Snapshot programadas, aumentar la capacidad reservada o eliminar Snapshot. Es posible eliminar Snapshot manualmente o mediante la automatización del proceso de eliminación. Cuando se elimina una imagen Snapshot, se puede reutilizar la capacidad reservada adicional disponible.
 
 
 
+[[snapshot-consistency-group]]
 == Grupo de coherencia Snapshot
 
 Si desea que se capturen imágenes Snapshot de varios volúmenes al mismo tiempo, puede crear un grupo de coherencia Snapshot. Las acciones de imágenes Snapshot se realizan en el grupo de coherencia Snapshot en conjunto. Por ejemplo, puede programar Snapshot sincronizadas de todos los volúmenes con la misma Marca de hora. Los grupos de coherencia Snapshot son ideales para las aplicaciones que abarcan varios volúmenes, como las aplicaciones de base de datos que almacenan los registros en un volumen y los archivos de base de datos en otro volumen.

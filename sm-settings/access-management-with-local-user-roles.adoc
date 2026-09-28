@@ -15,6 +15,7 @@ Para Access Management, los administradores pueden usar las capacidades RBAC (co
 
 
 
+[[configuration-workflow]]
 == Flujo de trabajo de configuración
 
 Los roles de usuario local están preconfigurados para la cabina de almacenamiento. Para usar roles de usuario local con fines de autenticación, los administradores pueden hacer lo siguiente:
@@ -33,6 +34,7 @@ La `admin` el usuario tiene acceso completo a todas las funciones del sistema.
 
 
 
+[[management]]
 == Gestión
 
 Al utilizar solamente los roles de usuario local para la autenticación, los administradores pueden realizar las siguientes tareas de gestión:
