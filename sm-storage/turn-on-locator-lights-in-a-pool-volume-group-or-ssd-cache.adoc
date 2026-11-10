@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, lights, LEDs 
 summary: Se pueden localizar las unidades para identificar físicamente todas las unidades que conforman una caché SSD, un pool o un grupo de volúmenes seleccionado. En cada unidad, se enciende un indicador LED en la caché SSD, el pool o el grupo de volúmenes seleccionado. 
 ---
-= Encienda las luces de localización en un grupo, grupo de volúmenes o caché SSD en SANtricity System Manager
+= Activa las luces de localización de un pool, un grupo de volúmenes o una caché SSD en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

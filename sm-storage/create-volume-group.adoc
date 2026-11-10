@@ -32,9 +32,6 @@ Revise estas directrices para poder crear un grupo de volúmenes:
 
 
 
-
-NOTE: No se admite la combinación de unidades FDE y FIPS dentro de la misma matriz de almacenamiento. Todas las unidades con capacidad de seguridad en el sistema deben ser del mismo tipo.
-
 .Pasos
 . En el panel izquierdo, selecciona menú:Storage[Pools y grupos de volúmenes].
 . Haga clic en MENU:Create[Grupo de volúmenes].

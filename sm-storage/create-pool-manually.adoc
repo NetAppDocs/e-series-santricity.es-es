@@ -83,9 +83,6 @@ Indica si este candidato de pool se compone íntegramente de unidades compatible
 
 
 
-NOTE: No se admite la combinación de unidades FDE y FIPS dentro de la misma matriz de almacenamiento. Todas las unidades con capacidad de seguridad en el sistema deben ser del mismo tipo.
-
-
 
  a| 
 Habilitar seguridad?

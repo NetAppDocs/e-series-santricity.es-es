@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: host protocol change, EF50, EF80 
 summary: Puedes cambiar el protocolo en los módulos de E/S de host para tus controladores cuando necesites un protocolo diferente en tus módulos de E/S existentes, como parte de una actualización de módulos de E/S, o cuando el protocolo predeterminado en los nuevos controladores, ya sea como parte de una nueva instalación de sistema de almacenamiento o de una actualización de controlador, no sea el protocolo que quieres. 
 ---
-= Cambiar el protocolo del módulo de E/S host
+= Cambiar el protocolo del módulo de E/S del host en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

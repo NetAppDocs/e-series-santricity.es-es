@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: Estas preguntas frecuentes pueden ser de ayuda si solo está buscando una respuesta rápida a una pregunta. 
 ---
-= Preguntas frecuentes sobre la duplicación de sincronización para SANtricity System Manager
+= Preguntas frecuentes sobre la duplicación síncrona para SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

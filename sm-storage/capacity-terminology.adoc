@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, capacity terms 
 summary: Conozca la forma en que los términos de capacidad se aplican a su cabina de almacenamiento. 
 ---
-= Aprenda sobre la terminología de capacidad en el software SANtricity
+= Terminología de capacidad en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

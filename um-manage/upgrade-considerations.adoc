@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, upgrade, considerations 
 summary: Antes de usar Unified Manager para actualizar varias cabinas de almacenamiento, revise las consideraciones fundamentales como parte de la planificación. 
 ---
-= Obtenga información sobre cómo actualizar varias matrices de almacenamiento con SANtricity Unified Manager
+= Descubre cómo actualizar las cabinas de almacenamiento con SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

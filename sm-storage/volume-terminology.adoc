@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, volume, terms 
 summary: Conozca la forma en que los términos de volúmenes se aplican a su cabina de almacenamiento. 
 ---
-= Aprenda sobre la terminología de volumen en el software SANtricity
+= Terminología relacionada con los volúmenes en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

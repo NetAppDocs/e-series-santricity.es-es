@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remove, directory, server, 
 summary: Para interrumpir la conexión entre un servidor de directorios y la matriz de almacenamiento, puedes eliminar la información del servidor en la página de servicios de directorio. Quizá quieras realizar esta tarea si configuraste un servidor nuevo y luego quieres eliminar el anterior. 
 ---
-= Eliminar el servidor de directorio en SANtricity System Manager
+= Eliminar un servidor de directorios en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font
