@@ -24,7 +24,7 @@ Obtenga más información:
 
 * link:considerations-for-discovering-arrays.html["Consideraciones sobre la detección de cabinas"]
 * link:discover-multiple-arrays.html["Detectar varias cabinas de almacenamiento"]
-* link:discover-single-array.html["Descubre una única matriz de almacenamiento"]
+* link:discover-single-array.html["Detectar una sola cabina"]
 
 
 
@@ -40,5 +40,5 @@ Obtenga más información:
 
 * link:launch-considerations.html["Consideraciones para acceder a System Manager"]
 * link:launch-system-manager.html["Gestione una cabina de almacenamiento individual"]
-* link:storage-array-status.html["Estado de la cabina de almacenamiento"]
+* link:storage-array-status.html["Ver el estado de la matriz de almacenamiento"]
 

@@ -40,7 +40,7 @@ El mirroring síncrono o asíncrono se debe configurar en Unified Manager y, pos
 
 Obtenga más información:
 
-* link:mirroring-configuration-workflow.html["Flujos de trabajo de configuración del mirroring"]
+* link:mirroring-configuration-workflow.html["Flujo de trabajo de configuración de mirroring"]
 * link:requirements-for-using-mirroring.html["Requisitos para usar el mirroring"]
 * link:create-asynchronous-mirrored-pair-um.html["Cree una pareja reflejada asíncrona"]
 * link:create-synchronous-mirrored-pair-um.html["Cree una pareja reflejada síncrona"]

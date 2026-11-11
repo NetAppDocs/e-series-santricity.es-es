@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, mirroring, terminology 
 summary: Conozca la forma en que los términos de mirroring se aplican a su cabina de almacenamiento. 
 ---
-= Terminología relacionada con la duplicación en SANtricity Unified Manager
+= Conoce la terminología de la duplicación en SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

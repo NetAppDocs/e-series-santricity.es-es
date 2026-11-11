@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, view certificates 
 summary: 'Es posible ver información resumida de un certificado, incluida la organización que utiliza el certificado, la entidad que lo emite, el periodo de validez y las huellas digitales (identificadores únicos).' 
 ---
-= Ver certificados en SANtricity Unified Manager
+= Ver certificados
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

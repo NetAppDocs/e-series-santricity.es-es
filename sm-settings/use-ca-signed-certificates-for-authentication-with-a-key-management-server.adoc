@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, ca-signed, certificates, authentication, key, management, server, 
 summary: Para establecer comunicaciones seguras entre un servidor de gestión de claves y las controladoras de la cabina de almacenamiento, debe configurar los conjuntos de certificados adecuados. 
 ---
-= Utiliza certificados firmados por una autoridad de certificación (CA) para la autenticación del servidor de gestión de claves en SANtricity System Manager
+= Usa certificados firmados por CA para la autenticación con un servidor de gestión de claves en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

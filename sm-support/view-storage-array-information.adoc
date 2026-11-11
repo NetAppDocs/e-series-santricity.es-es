@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, view, storage, array, 
 summary: Es posible ver el perfil de la cabina de almacenamiento y las versiones de firmware para cada componente de la cabina de almacenamiento. 
 ---
-= Información sobre la cabina de almacenamiento en SANtricity System Manager
+= Ver la información de una cabina de almacenamiento en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

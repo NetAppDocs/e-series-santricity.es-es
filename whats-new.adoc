@@ -16,13 +16,6 @@ La siguiente tabla describe las nuevas funciones en SANtricity System Manager 12
 
 
 
-[[new-features-in-version-12-10r1]]
-== Novedades en la versión 12.10R1
-
-Esta versión solo contiene cambios menores y ninguna función nueva. Para más información sobre los cambios en esta versión, consulta el archivo README de E-Series SANtricity OS 12.10R1.
-
-
-
 [[new-features-in-version-12-10]]
 == Novedades en la versión 12.10
 
@@ -138,6 +131,6 @@ Para los Dynamic Disk Pools en sistemas basados en SSD y NVMe, el tamaño de seg
  a| 
 El editor de scripts ya está disponible en SANtricity System Manager
  a| 
-Ahora tienes disponible un nuevo editor de secuencias de comandos dentro de SANtricity System Manager. El editor de secuencias de comandos te permite crear o editar un archivo de secuencia de comandos, guardar un archivo de secuencia de comandos en el disco local de la estación de gestión de almacenamiento o cargar un archivo de secuencia de comandos desde el disco. El editor de secuencias de comandos ofrece comprobación de sintaxis y capacidades de ejecución de comandos para gestionar tu sistema de almacenamiento. Para obtener más información, consulta link:sm-support/use-script-editor.html["Utiliza el editor de scripts en SANtricity System Manager"^].
+Ahora tienes disponible un nuevo editor de secuencias de comandos dentro de SANtricity System Manager. El editor de secuencias de comandos te permite crear o editar un archivo de secuencia de comandos, guardar un archivo de secuencia de comandos en el disco local de la estación de gestión de almacenamiento o cargar un archivo de secuencia de comandos desde el disco. El editor de secuencias de comandos ofrece comprobación de sintaxis y capacidades de ejecución de comandos para gestionar tu sistema de almacenamiento. Para obtener más información, consulta link:sm-support/use-script-editor.html["Usar el editor de scripts"^].
 
 |===

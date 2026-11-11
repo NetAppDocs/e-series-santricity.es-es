@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, requirements, replicating, storage, configurations 
 summary: Antes de importar una configuración de almacenamiento desde una cabina de almacenamiento a otra, revise los requisitos y las directrices. 
 ---
-= Requisitos de replicación de la configuración de almacenamiento en SANtricity Unified Manager
+= Requisitos para replicar configuraciones de almacenamiento en SANtricity Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

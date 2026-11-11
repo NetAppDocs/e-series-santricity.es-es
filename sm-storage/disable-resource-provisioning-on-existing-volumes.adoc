@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, disable, resource provisioning, 
 summary: Es posible habilitar o deshabilitar el aprovisionamiento de recursos en un pool o un grupo de volúmenes existente. 
 ---
-= Activar o desactivar el aprovisionamiento de recursos en los volúmenes existentes en SANtricity System Manager
+= Habilita o deshabilita el aprovisionamiento de recursos en grupos de volúmenes y pools existentes en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

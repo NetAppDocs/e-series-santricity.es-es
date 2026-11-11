@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, suspend, resume, synchronization, mirror, consistency, group, 
 summary: Se puede suspender o reanudar la sincronización de datos en todas las parejas reflejadas dentro de un grupo de coherencia de reflejos, que es más eficiente que hacerlo en parejas reflejadas individuales. 
 ---
-= Suspender o reanudar la sincronización del grupo de consistencia de espejo en SANtricity System Manager
+= Suspende o reanuda la sincronización para grupos de consistencia de reflejo en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

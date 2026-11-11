@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, access management, saml 
 summary: 'Para Access Management, los administradores pueden usar las funcionalidades de lenguaje de marcado de aserción de seguridad (SAML) 2.0 que están integradas en la cabina.' 
 ---
-= Gestión de accesos con SAML en SANtricity System Manager
+= Configura la gestión de acceso con SAML en SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

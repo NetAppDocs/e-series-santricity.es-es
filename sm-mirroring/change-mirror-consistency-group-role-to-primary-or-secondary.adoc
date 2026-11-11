@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, mirror, consistency group, primary, secondary 
 summary: Es posible cambiar el rol entre grupos de coherencia de reflejos para fines administrativos o en el caso de un desastre en la cabina de almacenamiento local. 
 ---
-= Cambiar la función del grupo de consistencia de espejos en SANtricity System Manager
+= Cambia la función del grupo de coherencia de réplica a primaria o secundaria en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

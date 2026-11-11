@@ -64,6 +64,9 @@ Unidades compatibles con la función de seguridad
 Las unidades compatibles con la función de seguridad pueden ser unidades de cifrado de disco completo (FDE) o de estándar de procesamiento de información federal (FIPS) que cifran datos durante la escritura y descifran datos durante la lectura. Estas unidades se consideran Secure-_capable_ porque se pueden usar para obtener más seguridad mediante la función Drive Security. Si está habilitada la función Drive Security para los grupos de volúmenes y pools que se utilizan con estas unidades, las unidades pasan a tener habilitada la función de seguridad-_enabled_.
 
 
+NOTE: No se admite la combinación de unidades FDE y FIPS dentro de la misma matriz de almacenamiento. Todas las unidades con capacidad de seguridad en el sistema deben ser del mismo tipo.
+
+
 
  a| 
 Unidades con la función de seguridad habilitada

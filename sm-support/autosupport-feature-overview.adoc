@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, autosupport, ASUP 
 summary: La función AutoSupport supervisa el estado de una cabina de almacenamiento y envía mensajes automáticos al soporte técnico. 
 ---
-= Más información sobre AutoSupport en SANtricity System Manager
+= Conoce AutoSupport para E-Series
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, remote, storage, volume, requirements 
 summary: Los volúmenes utilizados para las importaciones deben cumplir los requisitos de tamaño, estado y otros criterios. 
 ---
-= Requisitos de volumen de Remote Storage en el software SANtricity
+= Conoce los requisitos de volumen de Remote Storage en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

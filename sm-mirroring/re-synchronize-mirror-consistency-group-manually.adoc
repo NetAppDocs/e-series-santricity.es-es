@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, re-synchronize, mirror, consistency, group, manually, 
 summary: Es posible iniciar manualmente la resincronización de todas las parejas reflejadas dentro de un grupo de coherencia de reflejos. 
 ---
-= Resincronizar manualmente un grupo de consistencia de espejo en SANtricity System Manager
+= Vuelve a sincronizar manualmente los grupos de coherencia de réplica en SANtricity System Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

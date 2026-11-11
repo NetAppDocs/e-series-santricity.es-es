@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, software, firmware, upgrade, errors 
 summary: Se pueden producir errores durante la actualización del software de la controladora o la actualización del firmware de la unidad. 
 ---
-= Errores en la actualización del software y el firmware en SANtricity System Manager
+= Conoce los errores de actualización de software y firmware de SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

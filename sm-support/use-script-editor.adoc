@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, script editor, script file, execute script 
 summary: Usa el editor de secuencias de comandos para crear o editar un archivo de secuencia de comandos, guardar un archivo de secuencia de comandos en el disco local de la estación de gestión del almacenamiento o cargar un archivo de secuencia de comandos desde el disco. 
 ---
-= Utiliza el editor de scripts en SANtricity System Manager
+= Usar el editor de scripts
 :allow-uri-read: 
 :experimental: 
 :icons: font

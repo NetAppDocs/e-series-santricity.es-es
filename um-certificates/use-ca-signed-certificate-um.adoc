@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, ca-signed, certificates 
 summary: Es posible obtener e importar certificados firmados por CA para establecer un acceso seguro al sistema de gestión donde se aloja Unified Manager. 
 ---
-= Utiliza certificados firmados por una autoridad de certificación (CA) para SANtricity Unified Manager
+= Utilice certificados firmados por CA para el sistema de gestión
 :allow-uri-read: 
 :experimental: 
 :icons: font

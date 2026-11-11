@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, asynchronous, mirroring, terms, 
 summary: Conozca la forma en que los términos de mirroring asíncrono se aplican a su cabina de almacenamiento. 
 ---
-= Terminología relativa a la duplicación asíncrona en el software SANtricity
+= Conoce la terminología de la duplicación asíncrona en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

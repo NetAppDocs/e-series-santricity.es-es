@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, Unified Manager, E-Series, resolve, untrusted, certificates 
 summary: Los certificados dejan de ser de confianza cuando una cabina de almacenamiento intenta establecer una conexión con SANtricity Unified Manager, pero no se confirma que la conexión sea segura. 
 ---
-= Resuelve certificados no fiables en SANtricity Unified Manager
+= Resuelva los certificados que no son de confianza
 :allow-uri-read: 
 :experimental: 
 :icons: font

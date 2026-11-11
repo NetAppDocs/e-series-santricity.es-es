@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, role, change, mirror, consistency, group, secondary, mirror, consistency, group, 
 summary: Es posible cambiar el rol entre las parejas reflejadas de un grupo de coherencia de reflejos. Para ello, se puede degradar el grupo de coherencia de reflejos primario al rol secundario o promocionar el grupo de coherencia de reflejos secundario al rol primario. 
 ---
-= Cómo funcionan los cambios de rol de los grupos de consistencia de espejo en el software SANtricity
+= Cambia las funciones del grupo de coherencia de réplica en el software SANtricity
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

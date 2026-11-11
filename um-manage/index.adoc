@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= Obtenga más información sobre SANtricity Unified Manager
+= SANtricity Unified Manager 8
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

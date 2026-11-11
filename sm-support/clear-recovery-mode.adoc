@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SANtricity, System Manager, E-Series, clear, recovery, mode 
 summary: Después de restaurar la configuración de una cabina de almacenamiento, use la operación Clear Recovery Mode para reanudar las operaciones de I/o en la cabina de almacenamiento y restablecer las operaciones normales. 
 ---
-= Borrar el modo de recuperación en SANtricity System Manager
+= Borrar el modo de recuperación en SANtricity software
 :allow-uri-read: 
 :experimental: 
 :icons: font
